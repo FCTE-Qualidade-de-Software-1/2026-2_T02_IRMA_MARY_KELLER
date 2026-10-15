@@ -19,12 +19,26 @@ Acompanhar a execução do projeto, como os marcos principais sendo Entrega 1 (2
 
 #### O1: verificar se a equipe está concluindo as atividades planejadas dentro do prazo.
 
-|Categoria | Medida Base QME | Medida Derivada | Fórmula | Indicador |
+| Atributo | Medida Base QME | Medida Derivada | Fórmula | Indicador |
 |---|---|---|---|---|
-| Progresso das atividades | [Atividades](#unidade-de-trabalho) concluídas (Ac) <br> [Atividades](#unidade-de-trabalho) planejadas (Ap) | Percentual de progresso planejado cumprido. (Ppc) | Ppc = (Ac ÷ Ap)  × 100	|Adequado: 90% <= Ppc <= 100% <br> Bom: 80% <= Ppc < 90% <br> Insuficiente: 60% <= Ppc < 80% <br> Crítico: Ppc < 60% |
-| Cumprimento do prazo | [Atividades](#unidade-de-trabalho) concluídas no prazo ÷ [Atividades](#unidade-de-trabalho) concluídas × 100 | Adequado: 90% - 100% ao fim do projeto <br> Bom: 80% -90% ao fim do projeto <br> Insuficiente: 60% - 70% ao fim do projeto <br> Crítico: Menos de 60% ao fim do projeto |
+| Progresso das atividades (CP1) | [Atividades](#unidade-de-trabalho) concluídas (Ac) <br> [Atividades](#unidade-de-trabalho) planejadas (Ap) | Percentual de progresso planejado cumprido. (Ppc) | Ppc = (Ac ÷ Ap) × 100	|Adequado: 90% ≤ Ppc ≤ 100% <br> Bom: 80% ≤ Ppc < 90% <br> Insuficiente: 60% ≤ Ppc < 80% <br> Crítico: Ppc < 60% |
+| Cumprimento do prazo (CP2) | [Atividades](#unidade-de-trabalho) concluídas no prazo (Acp) <br> [Atividades](#unidade-de-trabalho) concluídas (Ac) | Percentual de atividades com registro de esforço. (PaRe) | PaRe = (Acp ÷ Ac) × 100 | Adequado: 90% ≤ PaRe ≤ 100% <br> Bom: 80% ≤ PaRe < 90% <br> Insuficiente: 60% ≤ PaRe < 80% <br> Crítico: PaRe < 60% |
+
+
 | Desvio de prazo | Data real de conclusão − data planejada	0 dias para marcos críticos
 | Entregas concluídas | versus comprometidas	Itens aceitos ÷ itens previstos para o período × 100	≥ 90% em cada revisão
+
+
+### 2.2 Desempenho dos Processos
+
+#### O2: verificar a eficiência, a efetividade e a conformidade dos processos de trabalho da equipe.
+
+| Atributo | Medida Base QME | Medida Derivada | Fórmula | Indicador |
+|---|---|---|---|---|
+| Eficiência do processo (DP1) | Issue reaberta (Ir) <br> Issue com label `correção` (Ic) <br> Issue fechada (If) | Percentual de issues fechadas que apresentaram retrabalho (Prt) | Prt = [(Ir || Ic) ÷ If] × 100 | Adequado: Prt ≤ 15% <br> Bom: 15% < Ptr ≤ 35% <br> Insuficiente: 35% < Prt < 50% <br> Crítico: Prt ≥ 50% |
+
+| Efetividade do processo (DP2) | Critérios avaliados como Insuficiente (Ci), Satisfatório (Cs), Bom (Cb) ou Excelente (Ce); Total de critérios avaliados (Ct) | Quantidade de critérios abaixo de Bom (Cab); Percentual de critérios no nível Excelente (Pce) | Cab = Ci + Cs <br> Pce = (Ce ÷ Ct) × 100 | Verde: nenhum critério abaixo de Bom <br> Amarelo: 1 a 2 critérios abaixo de Bom <br> Vermelho: 3 ou mais critérios abaixo de Bom <br> Meta da equipe: Pce = 100% |
+| Conformidade do processo (DP3) | PRs integrados com revisão de outra pessoa (Pr); Total de PRs integrados (Pi) | Percentual de PRs integrados com revisão independente (Pri) | Pri = (Pr ÷ Pi) × 100 | Verde: Pri = 100% <br> Amarelo: 80% ≤ Pri < 100% <br> Vermelho: Pri < 80% |
 
 ## 3. Unidade de trabalho e convenções
 
@@ -50,12 +64,14 @@ Os nomes dos conceitos mensuráveis seguem o catálogo do PSM; confirmar com o m
 
 | Id | Categoria | Conceito mensurável | Entidade | Medida base | Medida derivada | Indicador e limiares | Coleta |
 |---|---|---|---|---|---|---|---|
-| CP1 | Calendário e Progresso | Milestone Completion | Marco (PC1, E1) | data de conclusão do marco (fechamento da última issue); data prevista | marcos concluídos no prazo / marcos com prazo vencido | Verde: 100%. Vermelho: abaixo de 100% | Automática |
-| CP2 | Calendário e Progresso | Work Unit Progress | Issue | issues fechadas; issues previstas até a data (campo Janela) | fechadas / previstas até a data | Verde: 100% ou mais. Amarelo: 80 a 99%. Vermelho: abaixo de 80% | Automática |
-| CP3 | Calendário e Progresso | Milestone Completion (desvio de prazo) | Issue | data real de fechamento; data prevista | desvio em dias por issue (média, máximo, quantas passam de 1 dia) | Verde: nenhuma acima de 1 dia. Amarelo: 1 a 2. Vermelho: 3 ou mais | Automática |
+
+
 | DP1 | Desempenho dos Processos | Process Efficiency | Issue | issues reabertas; issues com label `correcao`; issues fechadas | (reabertas + correção) / fechadas | Verde: abaixo de 20%. Amarelo: 20 a 39%. Vermelho: 40% ou mais | Automática |
+
 | DP2 | Desempenho dos Processos | Process Effectiveness | Critério da professora (F1-C1 a C11; F2-C1 a C12) | nível atingido na autoavaliação (1 Insuficiente, 2 Satisfatório, 3 Bom, 4 Excelente) | critérios abaixo de Bom; critérios no nível Excelente (%), por fase | Verde: nenhum abaixo de Bom. Amarelo: 1 a 2. Vermelho: 3 ou mais. Meta da equipe: 100% no nível Excelente na E1 | Semiautomática (CSV preenchido na revisão) |
+
 | DP3 | Desempenho dos Processos | Process Compliance | Pull request | PRs integrados; PRs integrados com revisão de outra pessoa | revisados / integrados | Verde: 100%. Amarelo: 80 a 99%. Vermelho: abaixo de 80% | Automática |
+
 | RC1 | Recursos e Custos | Personnel Effort | Issue | horas reais; horas planejadas | desvio = reais / planejadas menos 1, nas issues concluídas | Verde: nenhuma fora de ±20%. Amarelo: 1 a 2. Vermelho: 3 ou mais | Automática |
 | RC2 | Recursos e Custos | Personnel Effort | Membro | horas por membro | percentual do total e desvio em relação à média | Verde: ninguém além de ±50% da média. Amarelo: 1 pessoa. Vermelho: 2 ou mais | Automática (base da Tabela de contribuição) |
 
