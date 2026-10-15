@@ -8,3 +8,7 @@ nav:
   - Fase 1:
     - Início: fase-1/fase1_inicio.md
   - Fase 2: fase-2/index.md
+
+  - Gestão:
+    - Plano de Medição: gestao/plano_de_medicao.md
+    - Uso de IA: gestao/uso_de_ia.md
