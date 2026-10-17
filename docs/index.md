@@ -51,6 +51,5 @@ As Fases 3 e 4 (planejamento e execução da avaliação) serão publicadas na E
 
 | Versão | Data | Descrição | Responsável | Revisor | Commit |
 |---|---|---|---|---|---|
-| 0.1 | 14/10/2026 | Criação da página inicial | [Pedro Lucas](https://github.com/Pwdrinho) | | [ 
-d791d43](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/commit/d791d43d9bf73a2ce9fdaf0a73260e730d511e8b) |
+| 0.1 | 14/10/2026 | Criação da página inicial | [Pedro Lucas](https://github.com/Pwdrinho) | | [d791d43](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/commit/d791d43d9bf73a2ce9fdaf0a73260e730d511e8b) |
 |  |  |  |  | | |
