@@ -13,3 +13,6 @@ nav:
     - Plano de Medição: gestao/plano_de_medicao.md
     - Uso de IA: gestao/uso_de_ia.md
     - Registro de Horas: gestao/horas.md
+    - Critérios:
+      - Fase 1: criterios/fase1.md
+      - Fase 2: criterios/fase2.md

@@ -13,7 +13,7 @@ Este registro é a fonte de dados das medições de **Recursos e Custos** do [Pl
 1. Tenha o seu arquivo `assets/dados/gestao/horas/<usuario>.csv`, em que `<usuario>` é o seu usuário do GitHub. O cabeçalho é sempre `data,atividade,horas`.
 2. Acrescente **uma linha por dia e por issue** em que trabalhou:
    - `data`: no formato `AAAA-MM-DD`.
-   - `atividade`: o ID que está entre colchetes no título da issue, sem os colchetes (título `[F1-02] ...` vira `F1-02`).
+   - `atividade`: número da issue sem o `#` (`#1` vira `1`).
    - `horas`: número decimal com ponto, em múltiplos de 0,25 (por exemplo, `1.5`, `0.75`).
 3. Lance as horas **até as 12h do dia de cada ponto de medição** (M-1 a M-5; datas no plano).
 4. Versione o arquivo no repositório.
