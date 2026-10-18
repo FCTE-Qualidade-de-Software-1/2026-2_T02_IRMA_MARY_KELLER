@@ -84,26 +84,13 @@ Como parte da avaliação de acessibilidade da experiência do usuário, a plata
 - **MacOS**: testes com o leitor de tela nativo **VoiceOver**;
 - **Linux (Ubuntu, Fedora, Arch, OpenSUSE)**: testes com o leitor de tela nativo **Orca**.
 
-A Tabela 2 sintetiza a matriz de ambientes de teste, combinando sistemas operacionais, famílias, motores web, navegadores de referência e leitores de tela.
-
-| Sistema operacional | Família / Base | Motor web | Navegador referência | Leitor de tela avaliado | Ambiente de execução |
-|---|---|---|---|---|---|
-| **Windows** | Microsoft Windows | Blink / Gecko | Google Chrome / Mozilla Firefox | NVDA | Máquina Virtual restrita (RAM/CPU) |
-| **MacOS** | Apple Darwin | WebKit / Blink | Apple Safari / Google Chrome | VoiceOver | Máquina Virtual restrita (RAM/CPU) |
-| **Ubuntu** | Linux (Debian) | Gecko / Blink | Mozilla Firefox / Google Chrome | Orca | Máquina Virtual restrita (RAM/CPU) |
-| **Fedora** | Linux (Red Hat) | Gecko / Blink | Mozilla Firefox / Google Chrome | Orca | Máquina Virtual restrita (RAM/CPU) |
-| **Arch Linux** | Linux (Independente) | Gecko / Blink | Mozilla Firefox / Google Chrome | Orca | Máquina Virtual restrita (RAM/CPU) |
-| **OpenSUSE** | Linux (SUSE) | Gecko / Blink | Mozilla Firefox / Google Chrome | Orca | Máquina Virtual restrita (RAM/CPU) |
-
-<p style="text-align: center;"><em>Tabela 2. Matriz de ambientes de teste: sistemas operacionais, motores web e tecnologias assistivas.</em><br>Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></p>
-
 <a id="profundidade"></a>
 
 ## 3. Profundidade da avaliação
 
 A profundidade estabelece o nível de detalhe técnico e o tipo de observação empregado em cada subcaracterística. A avaliação é conduzida sob a modalidade **caixa-preta (*black-box*)**, fundamentada na observação de comportamentos externos e na medição instrumental em ambiente virtualizado controlado.
 
-A Tabela 3 detalha a profundidade, os artefatos observados e as técnicas de medição previstas para cada subcaracterística.
+A Tabela 2 detalha a profundidade, os artefatos observados e as técnicas de medição previstas para cada subcaracterística.
 
 | Característica | Subcaracterística | Nível de profundidade | Artefatos e elementos observados | Técnicas e instrumentos de medição |
 |---|---|---|---|---|
@@ -113,13 +100,13 @@ A Tabela 3 detalha a profundidade, os artefatos observados e as técnicas de med
 | **Usabilidade** | Apreensibilidade | Análise de esforço cognitivo e facilidade de aprendizagem | Fluxo de navegação inicial de alunos novos e painel dos pais | Execução de tarefas guiadas com contagem de passos, cliques e registro de dúvidas/bloqueios |
 | **Usabilidade** | Acessibilidade | Inspeção normativa e teste empírico assistivo | Rótulos de botões, foco visual de teclado, transcrições e leitura de fórmulas | Auditoria automatizada (Lighthouse) e testes práticos com leitores de tela (NVDA, VoiceOver e Orca) |
 
-<p style="text-align: center;"><em>Tabela 3. Profundidade da avaliação e técnicas de medição por subcaracterística.</em><br>Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></p>
+<p style="text-align: center;"><em>Tabela 2. Profundidade da avaliação e técnicas de medição por subcaracterística.</em><br>Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></p>
 
 <a id="fora-do-escopo"></a>
 
 ## 4. Elementos fora do escopo e justificativas dos cortes
 
-A delimitação das fronteiras da avaliação é essencial para assegurar que a equipe atue dentro dos recursos humanos e do calendário disponível, sem perder o rigor científico. A Tabela 4 explicita os elementos que ficam fora do escopo e o racional detalhado de cada corte.
+A delimitação das fronteiras da avaliação é essencial para assegurar que a equipe atue dentro dos recursos humanos e do calendário disponível, sem perder o rigor científico. A Tabela 3 explicita os elementos que ficam fora do escopo e o racional detalhado de cada corte.
 
 | Elemento fora do escopo | Categoria | Racional e justificativa do corte |
 |---|---|---|
@@ -130,13 +117,13 @@ A delimitação das fronteiras da avaliação é essencial para assegurar que a 
 | **Qualidade e exatidão do conteúdo pedagógico** | Conteúdo | O objeto de estudo é a qualidade do software segundo as normas ISO/IEC 25000 (SQuaRE), e não a pertinência curricular ou didática do material instrucional. |
 | **APIs internas não documentadas** | Interface | A equipe atua exclusivamente pela interface gráfica acessível ao público geral, sem invadir rotas privadas de comunicação interna da aplicação. |
 
-<p style="text-align: center;"><em>Tabela 4. Elementos fora do escopo da avaliação e justificativa dos cortes.</em><br>Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></p>
+<p style="text-align: center;"><em>Tabela 3. Elementos fora do escopo da avaliação e justificativa dos cortes.</em><br>Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></p>
 
 <a id="limites-de-validade"></a>
 
 ## 5. Limites de validade dos resultados
 
-Para assegurar a validade científica das conclusões, é necessário explicitar os limites da amostra e das condições sob as quais as evidências serão colhidas. A Tabela 5 declara os parâmetros fixados e as restrições de generalização dos resultados.
+Para assegurar a validade científica das conclusões, é necessário explicitar os limites da amostra e das condições sob as quais as evidências serão colhidas. A Tabela 4 declara os parâmetros fixados e as restrições de generalização dos resultados.
 
 | Parâmetro | Condição adotada na avaliação | Limite de generalização dos resultados |
 |---|---|---|
@@ -146,7 +133,7 @@ Para assegurar a validade científica das conclusões, é necessário explicitar
 | **Perfis e tecnologias assistivas** | Roteiros operados com leitores de tela NVDA, VoiceOver e Orca, com navegação estrita por teclado | Não generaliza para outras tecnologias assistivas não testadas (ex.: leitores comerciais como JAWS, softwares proprietários de linha braille ou controle por movimento ocular). |
 | **Navegadores e versões** | Versões estáveis vigentes do Chrome, Firefox e Safari | Não permite generalizar para navegadores alternativos ou versões antigas não suportadas. |
 
-<p style="text-align: center;"><em>Tabela 5. Limites de validade e restrições de generalização dos resultados.</em><br>Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></p>
+<p style="text-align: center;"><em>Tabela 4. Limites de validade e restrições de generalização dos resultados.</em><br>Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></p>
 
 <a id="ods"></a>
 
@@ -154,14 +141,14 @@ Para assegurar a validade científica das conclusões, é necessário explicitar
 
 Os Objetivos de Desenvolvimento Sustentável (ODS) da [Agenda 2030 da ONU](https://brasil.un.org/pt-br/sdgs) orientam políticas para a erradicação da pobreza e redução das desigualdades. Sendo a Khan Academy uma ferramenta de educação pública e gratuita, a presente avaliação relaciona-se diretamente a dois ODS centrais: **ODS 4 (Educação de Qualidade)** e **ODS 10 (Redução das Desigualdades)**.
 
-A Tabela 6 estabelece a correspondência entre os ODS selecionados, suas metas e indicadores oficiais (segundo a ONU e o IPEA), e o vínculo direto com o software e as características de qualidade avaliadas.
+A Tabela 5 estabelece a correspondência entre os ODS selecionados, suas metas e indicadores oficiais (segundo a ONU e o IPEA), e o vínculo direto com o software e as características de qualidade avaliadas.
 
 | ODS | Meta oficial (ONU / IPEA) | Indicador oficial | Vínculo com a avaliação da Khan Academy |
 |---|---|---|---|
 | **ODS 4: Educação de Qualidade** | **Meta 4.5**: Até 2030, eliminar as disparidades de gênero na educação e garantir a igualdade de acesso a todos os níveis de educação e formação profissional para os mais vulneráveis, incluindo as pessoas com deficiência, povos indígenas e as crianças em situação de vulnerabilidade. | **Indicador 4.5.1**: Índices de paridade (gênero, deficiência, renda) na participação e aproveitamento educacional. | Avaliar a **Usabilidade (Acessibilidade)** por meio de testes práticos com leitores de tela (NVDA, VoiceOver e Orca) e navegação por teclado nos fluxos de cursos e exercícios assegura que estudantes com deficiência visual possam utilizar a plataforma com autonomia, removendo barreiras tecnológicas de acesso à educação de qualidade. |
 | **ODS 10: Redução das Desigualdades** | **Meta 10.2**: Até 2030, empoderar e promover a inclusão social, econômica e política de todos, independentemente da idade, gênero, deficiência, raça, etnia, origem, religião, condição econômica ou outra. | **Indicador 10.2.1**: Proporção de pessoas em situação de vulnerabilidade com acesso efetivo a serviços essenciais e oportunidades de inclusão digital. | Avaliar a **Eficiência de Desempenho (Utilização de Recursos e Comportamento Temporal)** sob restrições severas de hardware em máquinas virtuais e a **Portabilidade (Adaptabilidade)** em quatro distribuições Linux livres (Ubuntu, Fedora, Arch e OpenSUSE) garante que a plataforma seja acessível a escolas públicas e famílias de baixa renda que operam computadores antigos ou de baixo custo, mitigando a exclusão digital decorrente de limitações econômicas. |
 
-<p style="text-align: center;"><em>Tabela 6. Alinhamento entre os Objetivos de Desenvolvimento Sustentável (ODS), metas oficiais e características avaliadas.</em><br>Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a>, com base em ONU Brasil e IPEA</p>
+<p style="text-align: center;"><em>Tabela 5. Alinhamento entre os Objetivos de Desenvolvimento Sustentável (ODS), metas oficiais e características avaliadas.</em><br>Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a>, com base em ONU Brasil e IPEA</p>
 
 A avaliação demonstra que subcaracterísticas técnicas de qualidade de software, como consumo comedido de memória e aderência a padrões de acessibilidade, constituem requisitos primordiais para a concretização de direitos sociais e educacionais universais.
 
@@ -169,7 +156,7 @@ A avaliação demonstra que subcaracterísticas técnicas de qualidade de softwa
 
 ## 7. Rastreabilidade com critérios e requisitos da avaliação
 
-A Tabela 7 apresenta a rastreabilidade entre os requisitos de avaliação definidos em [Requisitos de avaliação](requisitos-de-avaliacao.md) (`R1` a `R5`), os fluxos principais e as decisões apoiadas (`D1` a `D3`), assegurando a coerência interna do planejamento.
+A Tabela 6 apresenta a rastreabilidade entre os requisitos de avaliação definidos em [Requisitos de avaliação](requisitos-de-avaliacao.md) (`R1` a `R5`), os fluxos principais e as decisões apoiadas (`D1` a `D3`), assegurando a coerência interna do planejamento.
 
 | ID | Requisito de avaliação | Subcaracterística | Fluxos contemplados | Decisão apoiada | Atendimento no escopo |
 |---|---|---|---|---|---|
@@ -179,7 +166,7 @@ A Tabela 7 apresenta a rastreabilidade entre os requisitos de avaliação defini
 | `R4` | Acessibilidade digital assistiva | Usabilidade: acessibilidade | Realização de cursos e acompanhamento | `D2` | Testes práticos com NVDA, VoiceOver e Orca, e auditoria automatizada WCAG |
 | `R5` | Apreensibilidade dos fluxos | Usabilidade: apreensibilidade | Realização de cursos e painéis | `D3` | Ensaios de tarefas com novos alunos e pais com foco em facilidade de aprendizado |
 
-<p style="text-align: center;"><em>Tabela 7. Rastreabilidade entre requisitos de avaliação, subcaracterísticas, fluxos e decisões apoiadas.</em><br>Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></p>
+<p style="text-align: center;"><em>Tabela 6. Rastreabilidade entre requisitos de avaliação, subcaracterísticas, fluxos e decisões apoiadas.</em><br>Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></p>
 
 ## Referências
 
@@ -199,4 +186,4 @@ WORLD WIDE WEB CONSORTIUM (W3C). **Web Content Accessibility Guidelines (WCAG) 2
 
 | Versão | Data | Descrição | Responsável | Revisor | Commit |
 |---|---|---|---|---|---|
-| 1.0 | 18/10/2026 | Criação do documento de escopo da avaliação: definição de objetos, fluxos (cursos, aluno e pais), ambientes em VMs restritas (6 SOs, 3 engines e leitores de tela), profundidade, cortes, limites de validade e alinhamento com ODS 4 e 10 | [José Augusto](https://github.com/JAugustoM) | | [](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/commit/) |
+| 1.0 | 18/10/2026 | Criação do documento de escopo da avaliação: definição de objetos, fluxos (cursos, aluno e pais), ambientes em VMs restritas (6 SOs, 3 engines e leitores de tela), profundidade, cortes, limites de validade e alinhamento com ODS 4 e 10 | [José Augusto](https://github.com/JAugustoM) | | [3f89756](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/commit/3f897567cf857b0b82120baead52195847e65af2) |
