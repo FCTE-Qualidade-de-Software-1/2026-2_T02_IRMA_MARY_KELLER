@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-labelledby="title desc">
+  <title id="title">Diagrama de contexto da Khan Academy</title>
+  <desc id="desc">Pessoas e condições externas interagem com as interfaces web e móvel dentro da fronteira observável da Khan Academy. As interfaces dão acesso a conta, conteúdos, aprendizagem e progresso. A equipe avaliadora observa externamente as interfaces.</desc>
+  <defs>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#315aa8"/>
+    </marker>
+    <marker id="arrowAmber" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#a85d12"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#087965"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#13233a" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .canvas { fill: #f8fafc; }
+      .section-title { font: 700 18px Arial, sans-serif; fill: #223552; letter-spacing: 0.2px; }
+      .boundary-title { font: 700 22px Arial, sans-serif; fill: #064e3b; }
+      .node-title { font: 700 17px Arial, sans-serif; fill: #172554; }
+      .node-title-green { font: 700 17px Arial, sans-serif; fill: #064e3b; }
+      .node-title-teal { font: 700 16px Arial, sans-serif; fill: #134e4a; }
+      .node-title-amber { font: 700 15px Arial, sans-serif; fill: #451a03; }
+      .small { font: 400 13px Arial, sans-serif; fill: #475569; }
+      .legend { font: 400 14px Arial, sans-serif; fill: #334155; }
+      .actor { fill: #eef5ff; stroke: #1d4ed8; stroke-width: 2; }
+      .external { fill: #fff7e6; stroke: #b45309; stroke-width: 2; }
+      .interface { fill: #ecfdf5; stroke: #047857; stroke-width: 2.5; }
+      .function { fill: #f0fdfa; stroke: #0f766e; stroke-width: 2; }
+      .capability-group { fill: #f8fffd; stroke: #6aa99c; stroke-width: 1.5; }
+      .boundary { fill: #ffffff; stroke: #0f766e; stroke-width: 3; stroke-dasharray: 10 7; }
+      .edge-blue { fill: none; stroke: #315aa8; stroke-width: 2; marker-end: url(#arrowBlue); }
+      .edge-amber { fill: none; stroke: #a85d12; stroke-width: 2; marker-end: url(#arrowAmber); }
+      .edge-green { fill: none; stroke: #087965; stroke-width: 2; marker-end: url(#arrowGreen); }
+      .edge-observe { fill: none; stroke: #315aa8; stroke-width: 2; stroke-dasharray: 7 6; marker-end: url(#arrowBlue); }
+    </style>
+  </defs>
+
+  <rect class="canvas" width="1440" height="900"/>
+  <text x="44" y="52" class="section-title">Pessoas e papéis externos</text>
+  <text x="390" y="52" class="section-title">Condições e dependências externas</text>
+
+  <!-- Pessoas -->
+  <g filter="url(#shadow)">
+    <rect class="actor" x="44" y="92" width="260" height="82" rx="41"/>
+    <text x="174" y="127" class="node-title" text-anchor="middle">Estudante</text>
+    <text x="174" y="151" class="small" text-anchor="middle">usuário primário</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect class="actor" x="44" y="214" width="260" height="82" rx="41"/>
+    <text x="174" y="249" class="node-title" text-anchor="middle">Professor</text>
+    <text x="174" y="273" class="small" text-anchor="middle">usuário de apoio</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect class="actor" x="44" y="336" width="260" height="82" rx="41"/>
+    <text x="174" y="371" class="node-title" text-anchor="middle">Responsável</text>
+    <text x="174" y="395" class="small" text-anchor="middle">usuário de apoio</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect class="actor" x="44" y="458" width="260" height="82" rx="41"/>
+    <text x="174" y="493" class="node-title" text-anchor="middle">Equipe avaliadora</text>
+    <text x="174" y="517" class="small" text-anchor="middle">observação externa</text>
+  </g>
+
+  <!-- Condições externas -->
+  <g filter="url(#shadow)">
+    <rect class="external" x="390" y="78" width="205" height="70" rx="12"/>
+    <text x="492.5" y="108" class="node-title-amber" text-anchor="middle">Navegador</text>
+    <text x="492.5" y="130" class="small" text-anchor="middle">e versão suportada</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect class="external" x="618" y="78" width="220" height="70" rx="12"/>
+    <text x="728" y="108" class="node-title-amber" text-anchor="middle">Dispositivo e SO</text>
+    <text x="728" y="130" class="small" text-anchor="middle">hardware e viewport</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect class="external" x="861" y="78" width="205" height="70" rx="12"/>
+    <text x="963.5" y="108" class="node-title-amber" text-anchor="middle">Conectividade</text>
+    <text x="963.5" y="130" class="small" text-anchor="middle">rede e sincronização</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect class="external" x="1089" y="78" width="300" height="70" rx="12"/>
+    <text x="1239" y="108" class="node-title-amber" text-anchor="middle">Tecnologia assistiva</text>
+    <text x="1239" y="130" class="small" text-anchor="middle">leitor de tela e configurações</text>
+  </g>
+
+  <!-- Fronteira do produto -->
+  <rect class="boundary" x="390" y="190" width="999" height="585" rx="22"/>
+  <text x="434" y="232" class="boundary-title">Fronteira observável da Khan Academy</text>
+
+  <!-- Interfaces -->
+  <g filter="url(#shadow)">
+    <rect class="interface" x="450" y="275" width="270" height="105" rx="14"/>
+    <text x="585" y="317" class="node-title-green" text-anchor="middle">Interface web</text>
+    <text x="585" y="344" class="small" text-anchor="middle">acesso por navegador</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect class="interface" x="450" y="505" width="270" height="105" rx="14"/>
+    <text x="585" y="545" class="node-title-green" text-anchor="middle">Aplicativos móveis</text>
+    <text x="585" y="572" class="small" text-anchor="middle">Android e iOS</text>
+  </g>
+
+  <rect class="capability-group" x="780" y="270" width="570" height="380" rx="18"/>
+  <text x="810" y="306" class="section-title">Áreas funcionais observáveis</text>
+  <g filter="url(#shadow)">
+    <rect class="function" x="820" y="335" width="220" height="92" rx="12"/>
+    <text x="930" y="372" class="node-title-teal" text-anchor="middle">Conta, perfil</text>
+    <text x="930" y="397" class="small" text-anchor="middle">e papéis</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect class="function" x="1090" y="335" width="220" height="92" rx="12"/>
+    <text x="1200" y="372" class="node-title-teal" text-anchor="middle">Cursos e conteúdos</text>
+    <text x="1200" y="397" class="small" text-anchor="middle">localização e organização</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect class="function" x="820" y="490" width="220" height="92" rx="12"/>
+    <text x="930" y="527" class="node-title-teal" text-anchor="middle">Aprendizagem</text>
+    <text x="930" y="552" class="small" text-anchor="middle">vídeos, artigos e exercícios</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect class="function" x="1090" y="490" width="220" height="92" rx="12"/>
+    <text x="1200" y="527" class="node-title-teal" text-anchor="middle">Progresso e apoio</text>
+    <text x="1200" y="552" class="small" text-anchor="middle">atividades e painéis</text>
+  </g>
+
+  <!-- Arestas das pessoas -->
+  <path class="edge-blue" d="M304 122 C350 122, 352 307, 450 317"/>
+  <path class="edge-blue" d="M304 145 C352 162, 353 540, 450 550"/>
+  <path class="edge-blue" d="M304 255 C360 255, 376 326, 450 326"/>
+  <path class="edge-blue" d="M304 377 C365 377, 388 342, 450 342"/>
+  <path class="edge-observe" d="M304 490 C366 468, 380 363, 450 356"/>
+  <path class="edge-observe" d="M304 516 C365 532, 382 576, 450 576"/>
+
+  <!-- Arestas das condições externas -->
+  <path class="edge-amber" d="M493 148 L493 184"/>
+  <path class="edge-amber" d="M728 148 L728 184"/>
+  <path class="edge-amber" d="M964 148 L964 184"/>
+  <path class="edge-amber" d="M1239 148 L1239 184"/>
+
+  <!-- Arestas das interfaces às áreas funcionais -->
+  <path class="edge-green" d="M720 347 C748 347, 762 365, 776 381"/>
+  <path class="edge-green" d="M720 557 C748 557, 762 541, 776 526"/>
+
+  <!-- Legenda -->
+  <line x1="392" y1="828" x2="460" y2="828" class="edge-blue"/>
+  <text x="477" y="833" class="legend">interação de uso</text>
+  <line x1="655" y1="828" x2="723" y2="828" class="edge-amber"/>
+  <text x="740" y="833" class="legend">condição sobre a fronteira</text>
+  <line x1="1000" y1="828" x2="1068" y2="828" class="edge-observe"/>
+  <text x="1085" y="833" class="legend">observação da avaliação</text>
+  <text x="390" y="870" class="small">As áreas funcionais representam capacidades visíveis ao usuário, não componentes da arquitetura interna.</text>
+</svg>
+
