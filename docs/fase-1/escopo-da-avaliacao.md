@@ -109,7 +109,7 @@ A delimitação das fronteiras da avaliação é essencial para assegurar que a 
 
 <!-- | **Aplicativos móveis nativos (Android e iOS)** | Plataforma | A equipe optou por focar integralmente na plataforma web para viabilizar um ambiente homogêneo de máquinas virtuais com controle rígido de RAM e núcleos de CPU. Incluir emuladores ou dispositivos móveis físicos multiplicaria as variáveis experimentais além do tempo disponível na disciplina. | -->
 
-*Tabela 3. Elementos fora do escopo da avaliação e justificativa dos cortes. Elaborada por: [José Augusto](https://github.com/JAugustoM)*
+*Tabela 2. Elementos fora do escopo da avaliação e justificativa dos cortes. Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
 <a id="limites-de-validade"></a>
 
@@ -125,7 +125,7 @@ Para assegurar a validade científica das conclusões, é necessário explicitar
 | **Perfis e tecnologias assistivas** | Roteiros operados com leitores de tela NVDA, VoiceOver e Orca, com navegação estrita por teclado | Não generaliza para outras tecnologias assistivas não testadas (ex.: leitores comerciais como JAWS, softwares proprietários de linha braille ou controle por movimento ocular). |
 | **Navegadores e versões** | Versões estáveis vigentes do Chrome, Firefox e Safari | Não permite generalizar para navegadores alternativos ou versões antigas não suportadas. |
 
-*Tabela 4. Limites de validade e restrições de generalização dos resultados. Elaborada por: [José Augusto](https://github.com/JAugustoM)*
+*Tabela 3. Limites de validade e restrições de generalização dos resultados. Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
 <a id="ods"></a>
 
@@ -140,7 +140,7 @@ A Tabela 5 estabelece a correspondência entre os ODS selecionados, suas metas e
 | **ODS 4: Educação de Qualidade** | **Meta 4.5**: Até 2030, eliminar as disparidades de gênero na educação e garantir a igualdade de acesso a todos os níveis de educação e formação profissional para os mais vulneráveis, incluindo as pessoas com deficiência, povos indígenas e as crianças em situação de vulnerabilidade. | **Indicador 4.5.1**: Índices de paridade (gênero, deficiência, renda) na participação e aproveitamento educacional. | Avaliar a **Usabilidade (Acessibilidade)** por meio de testes práticos com leitores de tela (NVDA, VoiceOver e Orca) e navegação por teclado nos fluxos de cursos e exercícios assegura que estudantes com deficiência visual possam utilizar a plataforma com autonomia, removendo barreiras tecnológicas de acesso à educação de qualidade. |
 | **ODS 10: Redução das Desigualdades** | **Meta 10.2**: Até 2030, empoderar e promover a inclusão social, econômica e política de todos, independentemente da idade, gênero, deficiência, raça, etnia, origem, religião, condição econômica ou outra. | **Indicador 10.2.1**: Proporção de pessoas em situação de vulnerabilidade com acesso efetivo a serviços essenciais e oportunidades de inclusão digital. | Avaliar a **Eficiência de Desempenho (Utilização de Recursos e Comportamento Temporal)** sob restrições severas de hardware em máquinas virtuais e a **Portabilidade (Adaptabilidade)** em quatro distribuições Linux livres (Ubuntu, Fedora, Arch e OpenSUSE) garante que a plataforma seja acessível a escolas públicas e famílias de baixa renda que operam computadores antigos ou de baixo custo, mitigando a exclusão digital decorrente de limitações econômicas. |
 
-*Tabela 5. Alinhamento entre os Objetivos de Desenvolvimento Sustentável (ODS), metas oficiais e características avaliadas. Elaborada por: [José Augusto](https://github.com/JAugustoM)*
+*Tabela 4. Alinhamento entre os Objetivos de Desenvolvimento Sustentável (ODS), metas oficiais e características avaliadas. Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
 A avaliação demonstra que subcaracterísticas técnicas de qualidade de software, como consumo comedido de memória e aderência a padrões de acessibilidade, constituem requisitos primordiais para a concretização de direitos sociais e educacionais universais.
 
@@ -158,7 +158,7 @@ A Tabela 6 apresenta a rastreabilidade entre os requisitos de avaliação defini
 | `R4` | Acessibilidade digital assistiva | Usabilidade: acessibilidade | Realização de cursos e acompanhamento | `D2` | Testes práticos com NVDA, VoiceOver e Orca, e auditoria automatizada WCAG |
 | `R5` | Apreensibilidade dos fluxos | Usabilidade: apreensibilidade | Realização de cursos e painéis | `D3` | Ensaios de tarefas com novos alunos e pais com foco em facilidade de aprendizado |
 
-*Tabela 6. Rastreabilidade entre requisitos de avaliação, subcaracterísticas, fluxos e decisões apoiadas. Elaborada por: [José Augusto](https://github.com/JAugustoM)*
+*Tabela 5. Rastreabilidade entre requisitos de avaliação, subcaracterísticas, fluxos e decisões apoiadas. Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
 ## Referências
 
@@ -179,4 +179,4 @@ A Tabela 6 apresenta a rastreabilidade entre os requisitos de avaliação defini
 | Versão | Data | Descrição | Responsável | Revisor | Commit |
 |---|---|---|---|---|---|
 | 1.0 | 18/10/2026 | Criação do documento de escopo da avaliação: definição de objetos, fluxos (cursos, aluno e pais), ambientes em VMs restritas (6 SOs, 3 engines e leitores de tela), profundidade, cortes, limites de validade e alinhamento com ODS 4 e 10 | [José Augusto](https://github.com/JAugustoM) | | [3f89756](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/commit/3f897567cf857b0b82120baead52195847e65af2) |
-| 1.1 | 18/10/2026 | Padronização de tabelas e referências | [José Augusto](https://github.com/JAugustoM) | | |
+| 1.1 | 18/10/2026 | Padronização de tabelas e referências | [José Augusto](https://github.com/JAugustoM) | | [35604cf](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/pull/10/changes/35604cfb381bc90752a3d5679e6a073349d99179) |
