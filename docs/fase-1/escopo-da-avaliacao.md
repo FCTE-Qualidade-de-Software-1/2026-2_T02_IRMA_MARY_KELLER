@@ -40,7 +40,7 @@ A Tabela 1 detalha os módulos, os fluxos correspondentes, as entradas do usuár
 | **Painel do Aluno** | Acompanhamento de progresso pelo estudante | Navegação entre abas de perfil, seleção de filtros de disciplinas e histórico | Exibição de gráficos de domínio, medalhas conquistadas e tempo de dedicação |
 | **Painel dos Pais** | Acompanhamento do desempenho dos filhos | Seleção da conta dependente, consulta a relatórios temporais e por disciplina | Relatório consolidado de horas estudadas, nível de domínio e recomendações de apoio |
 
-<p style="text-align: center;"><em>Tabela 1. Módulos e fluxos principais avaliados na Khan Academy.</em><br>Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></p>
+*Tabela 1. Módulos e fluxos principais avaliados na Khan Academy. Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
 <a id="ambientes-de-teste"></a>
 
@@ -64,6 +64,7 @@ Para averiguar a adaptabilidade da aplicação web em múltiplos ecossistemas, f
 4. **Fedora**: distribuição Linux de base Red Hat, representativa de ambientes corporativos;
 5. **Arch Linux**: distribuição Linux independente com modelo de lançamento contínuo (*rolling release*);
 6. **OpenSUSE**: distribuição Linux de base SUSE, tradicional no mercado europeu e em servidores/estações de trabalho.
+7. **Android**: sistema operacional *mobile* baseado no kernel Linux, representando os usuários de dispositivos móveis.
 
 A inclusão de quatro distribuições Linux livres (Ubuntu, Fedora, Arch e OpenSUSE), ao lado dos dois sistemas proprietários (Windows e MacOS), visa averiguar a portabilidade da Khan Academy em sistemas de código aberto frequentemente adotados em escolas públicas, universidades e por usuários que buscam alternativas livres de licenciamento.
 
@@ -90,17 +91,7 @@ Como parte da avaliação de acessibilidade da experiência do usuário, a plata
 
 A profundidade estabelece o nível de detalhe técnico e o tipo de observação empregado em cada subcaracterística. A avaliação é conduzida sob a modalidade **caixa-preta (*black-box*)**, fundamentada na observação de comportamentos externos e na medição instrumental em ambiente virtualizado controlado.
 
-A Tabela 2 detalha a profundidade, os artefatos observados e as técnicas de medição previstas para cada subcaracterística.
-
-| Característica | Subcaracterística | Nível de profundidade | Artefatos e elementos observados | Técnicas e instrumentos de medição |
-|---|---|---|---|---|
-| **Eficiência de desempenho** | Comportamento temporal | Medição quantitativa de tempos de resposta e renderização | Páginas de lições, player de vídeo, transição de exercícios e dashboards | Ferramentas de perfilamento do navegador (DevTools: Performance e Network) e Lighthouse |
-| **Eficiência de desempenho** | Utilização de recursos | Medição contínua do consumo de recursos na VM restrita | Ciclos de processamento de CPU e memória RAM durante os 3 fluxos | Monitoramento de consumo de processos no sistema convidado da VM (`top`/`htop`/Gerenciador de Tarefas) |
-| **Portabilidade** | Adaptabilidade | Inspeção comparativa entre ambientes | Layout de tela, posicionamento de botões, renderização de equações e reprodução | Matriz de testes funcional e visual cruzada nos 6 SOs e nos 3 motores de navegação |
-| **Usabilidade** | Apreensibilidade | Análise de esforço cognitivo e facilidade de aprendizagem | Fluxo de navegação inicial de alunos novos e painel dos pais | Execução de tarefas guiadas com contagem de passos, cliques e registro de dúvidas/bloqueios |
-| **Usabilidade** | Acessibilidade | Inspeção normativa e teste empírico assistivo | Rótulos de botões, foco visual de teclado, transcrições e leitura de fórmulas | Auditoria automatizada (Lighthouse) e testes práticos com leitores de tela (NVDA, VoiceOver e Orca) |
-
-<p style="text-align: center;"><em>Tabela 2. Profundidade da avaliação e técnicas de medição por subcaracterística.</em><br>Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></p>
+A lista de características que serão abrangidas nos testes, assim como as subcaracteristicas escolhidas e a justificativa por trás da seleção de cada uma podem ser vistas no [documento de requisitos de avaliação](requisitos-de-avaliacao.md).
 
 <a id="fora-do-escopo"></a>
 
@@ -110,14 +101,15 @@ A delimitação das fronteiras da avaliação é essencial para assegurar que a 
 
 | Elemento fora do escopo | Categoria | Racional e justificativa do corte |
 |---|---|---|
-| **Aplicativos móveis nativos (Android e iOS)** | Plataforma | A equipe optou por focar integralmente na plataforma web para viabilizar um ambiente homogêneo de máquinas virtuais com controle rígido de RAM e núcleos de CPU. Incluir emuladores ou dispositivos móveis físicos multiplicaria as variáveis experimentais além do tempo disponível na disciplina. |
 | **Backend, servidores e código-fonte proprietário** | Arquitetura | O código de servidor e os bancos de dados da Khan Academy são fechados e proprietários. A avaliação externa não tem acesso privilegiado à infraestrutura de nuvem, limitando-se ao comportamento observável no navegador. |
 | **Segurança e testes de intrusão** | Característica | Varreduras de vulnerabilidade ativas ou testes de penetração violariam os termos de uso do serviço e a legislação aplicável. O foco do projeto é estritamente a experiência do usuário final. |
 | **Confiabilidade e tolerância a falhas do servidor** | Característica | Analisar a disponibilidade de infraestrutura ou recuperação de quedas demandaria testes de estresse não autorizados contra os servidores de produção da Khan Academy. |
 | **Qualidade e exatidão do conteúdo pedagógico** | Conteúdo | O objeto de estudo é a qualidade do software segundo as normas ISO/IEC 25000 (SQuaRE), e não a pertinência curricular ou didática do material instrucional. |
 | **APIs internas não documentadas** | Interface | A equipe atua exclusivamente pela interface gráfica acessível ao público geral, sem invadir rotas privadas de comunicação interna da aplicação. |
 
-<p style="text-align: center;"><em>Tabela 3. Elementos fora do escopo da avaliação e justificativa dos cortes.</em><br>Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></p>
+<!-- | **Aplicativos móveis nativos (Android e iOS)** | Plataforma | A equipe optou por focar integralmente na plataforma web para viabilizar um ambiente homogêneo de máquinas virtuais com controle rígido de RAM e núcleos de CPU. Incluir emuladores ou dispositivos móveis físicos multiplicaria as variáveis experimentais além do tempo disponível na disciplina. | -->
+
+*Tabela 3. Elementos fora do escopo da avaliação e justificativa dos cortes. Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
 <a id="limites-de-validade"></a>
 
@@ -133,7 +125,7 @@ Para assegurar a validade científica das conclusões, é necessário explicitar
 | **Perfis e tecnologias assistivas** | Roteiros operados com leitores de tela NVDA, VoiceOver e Orca, com navegação estrita por teclado | Não generaliza para outras tecnologias assistivas não testadas (ex.: leitores comerciais como JAWS, softwares proprietários de linha braille ou controle por movimento ocular). |
 | **Navegadores e versões** | Versões estáveis vigentes do Chrome, Firefox e Safari | Não permite generalizar para navegadores alternativos ou versões antigas não suportadas. |
 
-<p style="text-align: center;"><em>Tabela 4. Limites de validade e restrições de generalização dos resultados.</em><br>Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></p>
+*Tabela 4. Limites de validade e restrições de generalização dos resultados. Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
 <a id="ods"></a>
 
@@ -148,7 +140,7 @@ A Tabela 5 estabelece a correspondência entre os ODS selecionados, suas metas e
 | **ODS 4: Educação de Qualidade** | **Meta 4.5**: Até 2030, eliminar as disparidades de gênero na educação e garantir a igualdade de acesso a todos os níveis de educação e formação profissional para os mais vulneráveis, incluindo as pessoas com deficiência, povos indígenas e as crianças em situação de vulnerabilidade. | **Indicador 4.5.1**: Índices de paridade (gênero, deficiência, renda) na participação e aproveitamento educacional. | Avaliar a **Usabilidade (Acessibilidade)** por meio de testes práticos com leitores de tela (NVDA, VoiceOver e Orca) e navegação por teclado nos fluxos de cursos e exercícios assegura que estudantes com deficiência visual possam utilizar a plataforma com autonomia, removendo barreiras tecnológicas de acesso à educação de qualidade. |
 | **ODS 10: Redução das Desigualdades** | **Meta 10.2**: Até 2030, empoderar e promover a inclusão social, econômica e política de todos, independentemente da idade, gênero, deficiência, raça, etnia, origem, religião, condição econômica ou outra. | **Indicador 10.2.1**: Proporção de pessoas em situação de vulnerabilidade com acesso efetivo a serviços essenciais e oportunidades de inclusão digital. | Avaliar a **Eficiência de Desempenho (Utilização de Recursos e Comportamento Temporal)** sob restrições severas de hardware em máquinas virtuais e a **Portabilidade (Adaptabilidade)** em quatro distribuições Linux livres (Ubuntu, Fedora, Arch e OpenSUSE) garante que a plataforma seja acessível a escolas públicas e famílias de baixa renda que operam computadores antigos ou de baixo custo, mitigando a exclusão digital decorrente de limitações econômicas. |
 
-<p style="text-align: center;"><em>Tabela 5. Alinhamento entre os Objetivos de Desenvolvimento Sustentável (ODS), metas oficiais e características avaliadas.</em><br>Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a>, com base em ONU Brasil e IPEA</p>
+*Tabela 5. Alinhamento entre os Objetivos de Desenvolvimento Sustentável (ODS), metas oficiais e características avaliadas. Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
 A avaliação demonstra que subcaracterísticas técnicas de qualidade de software, como consumo comedido de memória e aderência a padrões de acessibilidade, constituem requisitos primordiais para a concretização de direitos sociais e educacionais universais.
 
@@ -166,24 +158,25 @@ A Tabela 6 apresenta a rastreabilidade entre os requisitos de avaliação defini
 | `R4` | Acessibilidade digital assistiva | Usabilidade: acessibilidade | Realização de cursos e acompanhamento | `D2` | Testes práticos com NVDA, VoiceOver e Orca, e auditoria automatizada WCAG |
 | `R5` | Apreensibilidade dos fluxos | Usabilidade: apreensibilidade | Realização de cursos e painéis | `D3` | Ensaios de tarefas com novos alunos e pais com foco em facilidade de aprendizado |
 
-<p style="text-align: center;"><em>Tabela 6. Rastreabilidade entre requisitos de avaliação, subcaracterísticas, fluxos e decisões apoiadas.</em><br>Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></p>
+*Tabela 6. Rastreabilidade entre requisitos de avaliação, subcaracterísticas, fluxos e decisões apoiadas. Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
 ## Referências
 
-BRASIL. Instituto de Pesquisa Econômica Aplicada (IPEA). **Metas e Indicadores Nacionais dos Objetivos de Desenvolvimento Sustentável**. Brasília: IPEA, 2024. Disponível em: <https://www.ipea.gov.br/ods/>. Acesso em: 18 out. 2026.
+> BRASIL. Instituto de Pesquisa Econômica Aplicada (IPEA). **Metas e Indicadores Nacionais dos Objetivos de Desenvolvimento Sustentável**. Brasília: IPEA, 2024. Disponível em: <https://www.ipea.gov.br/ods/>. Acesso em: 18 out. 2026.
 
-INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25010:2011**: Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models. Genebra: ISO, 2011.
+> INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25010:2011**: Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models. Genebra: ISO, 2011.
 
-INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25023:2016**: Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Measurement of system and software product quality. Genebra: ISO, 2016.
+> INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25023:2016**: Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Measurement of system and software product quality. Genebra: ISO, 2016.
 
-INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25040:2011**: Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Evaluation process. Genebra: ISO, 2011.
+> INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25040:2011**: Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Evaluation process. Genebra: ISO, 2011.
 
-ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU). **Transformando Nosso Mundo: A Agenda 2030 para o Desenvolvimento Sustentável**. Nova York: ONU, 2015. Disponível em: <https://brasil.un.org/pt-br/sdgs>. Acesso em: 18 out. 2026.
+> ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU). **Transformando Nosso Mundo: A Agenda 2030 para o Desenvolvimento Sustentável**. Nova York: ONU, 2015. Disponível em: <https://brasil.un.org/pt-br/sdgs>. Acesso em: 18 out. 2026.
 
-WORLD WIDE WEB CONSORTIUM (W3C). **Web Content Accessibility Guidelines (WCAG) 2.1**. W3C Recommendation, 2018. Disponível em: <https://www.w3.org/TR/WCAG21/>. Acesso em: 18 out. 2026.
+> WORLD WIDE WEB CONSORTIUM (W3C). **Web Content Accessibility Guidelines (WCAG) 2.1**. W3C Recommendation, 2018. Disponível em: <https://www.w3.org/TR/WCAG21/>. Acesso em: 18 out. 2026.
 
 ## Histórico de versões
 
 | Versão | Data | Descrição | Responsável | Revisor | Commit |
 |---|---|---|---|---|---|
 | 1.0 | 18/10/2026 | Criação do documento de escopo da avaliação: definição de objetos, fluxos (cursos, aluno e pais), ambientes em VMs restritas (6 SOs, 3 engines e leitores de tela), profundidade, cortes, limites de validade e alinhamento com ODS 4 e 10 | [José Augusto](https://github.com/JAugustoM) | | [3f89756](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/commit/3f897567cf857b0b82120baead52195847e65af2) |
+| 1.1 | 18/10/2026 | Padronização de tabelas e referências | [José Augusto](https://github.com/JAugustoM) | | |
