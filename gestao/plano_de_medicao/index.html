@@ -81,7 +81,7 @@
                         
                             
 <li >
-    <a href="../../fase-1/fase1_inicio/">Início</a>
+    <a href="../../fase-1/">Visão geral</a>
 </li>
 
                         
@@ -227,12 +227,12 @@
         <div class="col-md-9" role="main">
 
 <h1 id="plano-de-medicao-psmcid">Plano de medição PSM/CID</h1>
-<p>Versão 1.2</p>
+<p>Versão 1.4</p>
 <hr />
 <h2 id="1-finalidade">1. Finalidade</h2>
 <p>Acompanhar a execução do projeto, como os marcos principais sendo Entrega 1 (26/10/2026) e Entrega 2 (18/11/2026), passando pelos pontos de controle PC1({19 - 21}/10/2026) e PC2({04 - 09}/11/2026) com medidas do modelo PSM/CID nas três categorias exigidas: <em>Calendário e Progresso</em>, <em>Desempenho dos Processos</em> e <em>Recursos e Custos</em>. Cada medição é registrada com sua interpretação e com as decisões de gestão que ela provocou (ver <a href="../medicoes/">Medições e decisões</a>).</p>
 <h2 id="2-necessidades-de-informacao">2. Necessidades de informação</h2>
-<p>No PSM/CID, a medição parte de uma necessidade de informação e não das medidas disponíveis. Por isso, cada <em>objetivo de medição</em> (O1 a O3) está associado a uma <em>categoria</em> e a uma <em>pergunta de gestão</em> (pergunta orientadora), que serve de guia para escolher as medidas da seção 3. A Tabela X reúne esses elementos.</p>
+<p>No PSM/CID, a medição parte de uma necessidade de informação e não das medidas disponíveis. Por isso, cada <em>objetivo de medição</em> (O1 a O3) está associado a uma <em>categoria</em> e a uma <em>pergunta de gestão</em> (pergunta orientadora), que serve de guia para escolher as medidas da seção 3. A Tabela 1 reúne esses elementos.</p>
 <table>
 <thead>
 <tr>
@@ -282,14 +282,14 @@
 <td><a href="#unidade-de-trabalho">Atividades</a> concluídas (<code>Ac</code>) <br> <a href="#unidade-de-trabalho">Atividades</a> planejadas (<code>Ap</code>)</td>
 <td>Percentual de progresso planejado cumprido. (<code>Ppc</code>)</td>
 <td><code>Ppc = (Ac ÷ Ap) × 100</code></td>
-<td>Adequado: <code>90% ≤ Ppc ≤ 100%</code> <br> Bom: <code>80% ≤ Ppc &lt; 90%</code> <br> Insuficiente: <code>60% ≤ Ppc &lt; 80%</code> <br> Crítico: <code>Ppc &lt; 60%</code></td>
+<td>Adequado: <code>Ppc ≥ 90%</code> <br> Bom: <code>80% ≤ Ppc &lt; 90%</code> <br> Insuficiente: <code>60% ≤ Ppc &lt; 80%</code> <br> Crítico: <code>Ppc &lt; 60%</code></td>
 </tr>
 <tr>
 <td>Cumprimento do prazo (<code>CP2</code>)</td>
 <td><a href="#unidade-de-trabalho">Atividades</a> concluídas no prazo (<code>Acp</code>) <br> <a href="#unidade-de-trabalho">Atividades</a> concluídas (<code>Ac</code>)</td>
-<td>Percentual de atividades com registro de esforço. (<code>PaRe</code>)</td>
-<td><code>PaRe = (Acp ÷ Ac) × 100</code></td>
-<td>Adequado: <code>90% ≤ PaRe ≤ 100%</code> <br> Bom: <code>80% ≤ PaRe &lt; 90%</code> <br> Insuficiente: <code>60% ≤ PaRe &lt; 80%</code> <br> Crítico: <code>PaRe &lt; 60%</code></td>
+<td>percentual de atividades concluídas no prazo (<code>Pcp</code>)</td>
+<td><code>Pcp = (Acp ÷ Ac) × 100</code></td>
+<td>Adequado: <code>90% ≤ Pcp ≤ 100%</code> <br> Bom: <code>80% ≤ Pcp &lt; 90%</code> <br> Insuficiente: <code>60% ≤ Pcp &lt; 80%</code> <br> Crítico: <code>Pcp &lt; 60%</code></td>
 </tr>
 </tbody>
 </table>
@@ -311,17 +311,17 @@
 <tbody>
 <tr>
 <td>Eficiência do processo (<code>DP1</code>)</td>
-<td>Issue reaberta (<code>Ir</code>) <br> Issue com label <code>correção</code> (<code>Ic</code>) <br> Issue fechada (<code>If</code>)</td>
+<td>Issue reaberta (<code>Ir</code>) <br> Issue com label <code>correcao</code> (<code>Ic</code>) <br> Issue fechada (<code>If</code>)</td>
 <td>Percentual de issues fechadas que apresentaram retrabalho (<code>Prt</code>)</td>
-<td><code>Prt = [(Ir v Ic) ÷ If] × 100</code></td>
-<td>Adequado: <code>Prt ≤ 15%</code> <br> Bom: <code>15% &lt; Ptr ≤ 35%</code> <br> Insuficiente: <code>35% &lt; Prt &lt; 50%</code> <br> Crítico: <code>Prt ≥ 50%</code></td>
+<td><code>Prt = [(Ir ∪ Ic) ÷ If] × 100</code></td>
+<td>Adequado: <code>Prt ≤ 15%</code> <br> Bom: <code>15% &lt; Prt ≤ 35%</code> <br> Insuficiente: <code>35% &lt; Prt &lt; 50%</code> <br> Crítico: <code>Prt ≥ 50%</code></td>
 </tr>
 <tr>
 <td>Efetividade do processo (<code>DP2</code>)</td>
 <td>Critérios avaliados como {Insuficiente (<code>Ci</code>) <br>  Regular (<code>Cr</code>) <br> Satisfatório (<code>Cs</code>) <br> Excelente (<code>Ce</code>)} <br> Total de critérios avaliados (<code>Ct</code>)</td>
 <td>Quantidade de critérios iguais ou abaixo de Regular (<code>Ciar</code>) <br> Percentual de critérios no nível Excelente (<code>Pce</code>)</td>
 <td><code>Ciar = Ci + Cr</code> <br> <code>Pce = (Ce ÷ Ct) × 100</code></td>
-<td>Adequado: <code>Ciar ≤ 0</code>  <br> Bom: <code>1 ≤ Ciar ≤ 2</code> <br> Insuficiente: <code>Ciar &gt; 3</code> <br> Adequado: <code>90% ≤ Pce ≤ 100%</code> <br> Bom: <code>75% ≤ Pce &lt; 90%</code> <br> Insuficiente: <code>Pce &lt; 75%</code></td>
+<td>Adequado: <code>Ciar ≤ 0</code>  <br> Bom: <code>1 ≤ Ciar ≤ 2</code> <br> Insuficiente: <code>Ciar ≥ 3</code> <br> Adequado: <code>90% ≤ Pce ≤ 100%</code> <br> Bom: <code>75% ≤ Pce &lt; 90%</code> <br> Insuficiente: <code>Pce &lt; 75%</code></td>
 </tr>
 </tbody>
 </table>
@@ -360,7 +360,7 @@
 <td>Atividades concluídas com horas registradas (<code>Ar</code>) <br> Total de atividades concluídas (<code>Ac</code>)</td>
 <td>Percentual de atividades com esforço registrado (<code>Pa</code>)</td>
 <td><code>Pa = (Ar ÷ Ac) × 100</code></td>
-<td>Adequado: <code>90% ≤ Pa ≤ 100%</code> <br> Bom: <code>75% ≤ Pa &lt; 90%</code> <br> Insuficiente: <code>60% ≤Pa &lt; 75%</code> <br> Crítico: <code>Pa &lt; 60%</code></td>
+<td>Adequado: <code>90% ≤ Pa ≤ 100%</code> <br> Bom: <code>75% ≤ Pa &lt; 90%</code> <br> Insuficiente: <code>60% ≤ Pa &lt; 75%</code> <br> Crítico: <code>Pa &lt; 60%</code></td>
 </tr>
 </tbody>
 </table>
@@ -372,7 +372,7 @@
 <h3 id="41-unidade-de-trabalho">4.1 Unidade de trabalho</h3>
 <p>A unidade de trabalho é a <strong>issue</strong> do GitHub. O corpo da issue traz <strong>Janela</strong> (data prevista de conclusão), <strong>Estimativa</strong> (horas) e o(os) ID dos critérios (por exemplo, <code>F1-02</code>). Uma issue sem ID, sem Janela ou sem Estimativa não entra nas medições de forma confiável e deve ser corrigida antes da próxima medição.</p>
 <h3 id="42-definicoes-operacionais">4.2 Definições operacionais</h3>
-<p>A Tabela X define, de forma operacional, os termos usados nas fórmulas da <a href="#3-medidas-e-indicadores-por-categoria">seção 3</a>.</p>
+<p>A Tabela 5 define, de forma operacional, os termos usados nas fórmulas da <a href="#3-medidas-e-indicadores-por-categoria">seção 3</a>.</p>
 <table>
 <thead>
 <tr>
@@ -387,7 +387,7 @@
 </tr>
 <tr>
 <td>Concluída (<code>Ac</code>)</td>
-<td>Issue fechada com os critérios de aceite atendidos e com revisão da dupla revisora registrada no pull request. Issue fechada sem revisão não conta como concluída</td>
+<td>Issue fechada com os critérios de aceite atendidos e com revisão do revisor registrada no pull request. Issue fechada sem revisão não conta como concluída</td>
 </tr>
 <tr>
 <td>Concluída no prazo (<code>Acp</code>)</td>
@@ -407,7 +407,7 @@
 </tr>
 <tr>
 <td>Esforço realizado (<code>Hr</code>, <code>Hi</code>)</td>
-<td>Horas registradas em <code>assets/dados/gestao/horas/&lt;usuario&gt;.csv</code>, em múltiplos de 0,25 h, ligadas ao ID da issue. Em trabalho de dupla, cada integrante lança as próprias horas</td>
+<td>Horas registradas em <code>assets/dados/gestao/horas/&lt;usuario&gt;.csv</code>, em múltiplos de 0,25 h, ligadas ao ID da issue. Em trabalho em dupla, cada integrante lança as próprias horas</td>
 </tr>
 <tr>
 <td>Escopo do <code>RC2</code></td>
@@ -416,10 +416,6 @@
 <tr>
 <td>Horas sem issue</td>
 <td>Reuniões e atividades de gestão também precisam de issue de apoio, com Estimativa. Horas sem ID válido não são atribuídas a nenhuma atividade e reduzem o <code>RC3</code></td>
-</tr>
-<tr>
-<td>Valor de referência da hora (<code>Vh</code>)</td>
-<td>Usado só para o custo equivalente: <code>custo = Et × Vh</code>. Valor e fonte <strong>a definir pela equipe</strong>; enquanto não definidos, o custo não é calculado. Não é indicador e não tem limiar</td>
 </tr>
 <tr>
 <td>Denominador zero</td>
@@ -469,7 +465,7 @@
 <h3 id="51-logica-de-escolha">5.1 Lógica de escolha</h3>
 <p>O PSM parte da necessidade de informação, não da medida disponível. Por isso há uma pergunta de gestão para cada categoria <a href="#2-necessidades-de-informação">(seção 2)</a> e um conjunto pequeno de medidas que a responde diretamente. Foram preferidas medidas que o próprio fluxo de trabalho já produz (issues, pull requests, horas e autoavaliação), para que a coleta não vire uma tarefa à parte e possa ser conferida no repositório.</p>
 <h3 id="52-medidas-e-indicadores">5.2 Medidas e indicadores</h3>
-<p>A Tabela X apresenta, para cada medida, a razão da escolha, a razão das faixas do indicador e a limitação a considerar.</p>
+<p>A Tabela 7 apresenta, para cada medida, a razão da escolha, a razão das faixas do indicador e a limitação a considerar.</p>
 <table>
 <thead>
 <tr>
@@ -507,14 +503,14 @@
 <tr>
 <td><code>RC1</code> Esforço</td>
 <td>Base do <a href="#objetivo-3">O3</a>: sem o total e a distribuição das horas não há como falar de custo nem de equilíbrio entre os membros</td>
-<td>O total é informativo porque não há valor de referência confiável de "esforço certo". O equilíbrio usa a faixa de <code>±50%</code> da média, definida pela equipe como limite para rebalancear issues</td>
-<td>A média esconde diferenças de tipo de tarefa (escrita, revisão, código); a faixa é ampla de propósito para não gerar alerta por variações normais</td>
+<td>O total é informativo porque não há valor de referência confiável de "esforço certo".</td>
+<td>A média esconde diferenças de tipo de tarefa (escrita, revisão, código), a faixa é ampla de propósito para não gerar alerta por variações normais</td>
 </tr>
 <tr>
 <td><code>RC2</code> Variação</td>
 <td>Responde à parte do <a href="#objetivo-3">O3</a> sobre o esforço conferir com o planejado e alimenta a reestimativa das próximas issues</td>
 <td>Faixas de <code>10/20%</code> são critério da equipe, razoáveis para estimativas de estudantes sem histórico prévio</td>
-<td>O valor absoluto perde o sentido da variação (subestimou ou superestimou) <br> Registrar o sentido na interpretação</td>
+<td>O valor absoluto perde o sentido da variação (subestimou ou superestimou) <br> Registra o sentido na interpretação</td>
 </tr>
 <tr>
 <td><code>RC3</code> Cobertura</td>
@@ -526,10 +522,10 @@
 </table>
 <p><em>Tabela 7. Justificativa das medidas e dos indicadores. Fonte: Elaborado por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a></em></p>
 <h3 id="53-origem-e-revisao-dos-limiares">5.3 Origem e revisão dos limiares</h3>
-<p>O PSM/CID não prescreve valores de limiar e não foi encontrada referência normativa a citar. Os limiares acima são <strong>critérios definidos pela equipe</strong>, assumidos como hipóteses de trabalho. Serão reavaliados em <a href="#pontos">M-2</a>, com os primeiros dados reais. Qualquer mudança é registrada no histórico de versões, e as medições anteriores ficam marcadas com a versão do plano sob a qual foram feitas.</p>
+<p>O PSM/CID não prescreve valores de limiar e não foi encontrada referência normativa a citar. Os limiares acima são <strong>critérios definidos pela equipe</strong>, assumidos como hipóteses de trabalho. Serão reavaliados em <a href="#pontos">Mg-2</a>, com os primeiros dados reais. Qualquer mudança é registrada no histórico de versões, e as medições anteriores ficam marcadas com a versão do plano sob a qual foram feitas.</p>
 <p><a id="regras"></a></p>
 <h2 id="6-regras-de-decisao">6. Regras de decisão</h2>
-<p>Esta seção define o que a equipe faz quando uma medida cai em amarelo ou vermelho, para que a medição leve a uma decisão e não apenas a um registro. A Tabela X relaciona cada situação à decisão correspondente.</p>
+<p>Esta seção define o que a equipe faz quando uma medida cai em amarelo ou vermelho, para que a medição leve a uma decisão e não apenas a um registro. A Tabela 8 relaciona cada situação à decisão correspondente.</p>
 <p>Toda decisão é registrada em <code>docs/gestao/medicoes.md</code>, com data, responsável e prazo, e vira issue de ação quando houver trabalho a fazer.</p>
 <table>
 <thead>
@@ -578,9 +574,9 @@
 <h2 id="7-procedimento-de-medicao">7. Procedimento de medição</h2>
 <p>Esta seção descreve como a medição é executada: quais dados entram, o passo a passo de cada rodada e em que datas ela ocorre.</p>
 <p><a id="responsavel"></a></p>
-<p><strong>Responsável pela execução:</strong> Rodízio a definir pelo grupo. Todos os membros lançam as horas até as 12h do dia da medição.</p>
+<p>**Responsável pela execução:**A equipe definirá, antes de cada ponto de medição, o integrante responsável pela coleta, validação e consolidação dos dados. Todos os integrantes devem registrar suas horas até as 12h do dia da medição. O responsável verifica as pendências, executa o script, registra os resultados e documenta as decisões decorrentes.</p>
 <h3 id="71-dados-de-entrada">7.1 Dados de entrada</h3>
-<p>A Tabela X lista os dados necessários, onde ficam, quem os alimenta e quais medidas dependem deles.</p>
+<p>A Tabela 9 lista os dados necessários, onde ficam, quem os alimenta e quais medidas dependem deles.</p>
 <table>
 <thead>
 <tr>
@@ -610,7 +606,7 @@
 <td>Nível por critério da rubrica</td>
 <td><code>assets/dados/gestao/autoavaliacao.csv</code> (colunas <code>data,criterio,nivel,evidencia</code>)</td>
 <td>Revisor</td>
-<td>Em <a href="#pontos">M-2</a> (Fase 1) e <a href="#pontos">M-3</a> (Fase 2)</td>
+<td>Em <a href="#pontos">Mg-3</a></td>
 <td><code>DP2</code></td>
 </tr>
 <tr>
@@ -628,21 +624,21 @@
 <p>Os passos abaixo são seguidos a cada ponto de medição.</p>
 <ol>
 <li>Até as 12h do dia da medição, cada membro lança suas horas no seu CSV.</li>
-<li>A <a href="#responsavel">Dupla do rodizio</a> confere as pré-condições: issues fechadas com Janela, Estimativa e revisão registrada; horas sem ID válido; labels <code>correcao</code> aplicadas onde devidas. Pendências são cobradas das duplas donas antes do cálculo.</li>
-<li>A <a href="#responsavel">Dupla do rodizio</a> roda <code>python3 scripts/coletar_psm.py --data AAAA-MM-DD</code> na raiz do repositório. O script deve implementar as fórmulas da <a href="#3-medidas-e-indicadores-por-categoria">seção 3</a>. A cada medição, conferir à mão ao menos uma medida (por exemplo, o <code>CP1</code>) contra o resultado do script.</li>
-<li>A <a href="#responsavel">Dupla do rodizio</a> cola a tabela no registro de <code>docs/gestao/medicoes.md</code>, com, para cada medida: ponto de medição, data, valores das medidas base, valor derivado, nível e cor.</li>
-<li>Em <a href="#pontos">M-2 e M-3</a>, a dupla revisora preenche o <code>autoavaliacao.csv</code> para a fase correspondente, com um nível e uma evidência (link para o trecho do artigo, da GitPage ou do repositório) por critério. Antes disso, a <a href="#responsavel">Dupla do rodizio</a> confere o <a href="../uso_de_ia/">registro de uso de IA</a>.</li>
-<li>A <a href="#responsavel">Dupla do rodizio</a> interpreta cada medida amarela ou vermelha: registra causa provável e decisão conforme a <a href="#regras">seção 6</a>, e abre issue de ação quando houver trabalho a fazer.</li>
+<li>O <a href="#responsavel">Responsável</a> confere as pré-condições: issues fechadas com Janela, Estimativa e revisão registrada; horas sem ID válido; labels <code>correcao</code> aplicadas onde devidas. Pendências são cobradas das duplas donas antes do cálculo.</li>
+<li>A <a href="#responsavel">Responsável</a> roda <code>python3 scripts/coletar_psm.py --data AAAA-MM-DD</code> na raiz do repositório. O script deve implementar as fórmulas da <a href="#3-medidas-e-indicadores-por-categoria">seção 3</a>. A cada medição, conferir à mão ao menos uma medida (por exemplo, o <code>CP1</code>) contra o resultado do script.</li>
+<li>O <a href="#responsavel">Responsável</a> cola a tabela no registro de <code>docs/gestao/medicoes.md</code>, com, para cada medida: ponto de medição, data, valores das medidas base, valor derivado, nível e cor.</li>
+<li>Em <a href="#pontos">Mg-2 e Mg-3</a>, o revisor, preenche o <code>autoavaliacao.csv</code> para a fase correspondente, com um nível e uma evidência (link para o trecho do artigo, da GitPage ou do repositório) por critério. Antes disso, o <a href="#responsavel">Responsável</a> confere o <a href="../uso_de_ia/">registro de uso de IA</a>.</li>
+<li>O <a href="#responsavel">Responsável</a> interpreta cada medida amarela ou vermelha: registra causa provável e decisão conforme a <a href="#regras">seção 6</a>, e abre issue de ação quando houver trabalho a fazer.</li>
 <li>Medidas "sem dados" ou "com ressalva" são registradas como tal, com o motivo.</li>
 <li>O resultado é comunicado ao grupo no mesmo dia e commitado por pull request.</li>
 </ol>
 <p><a id="pontos"></a></p>
 <h3 id="73-pontos-de-medicao">7.3 Pontos de medição</h3>
-<p>A Tabela X apresenta as datas das medições, sua finalidade e as medidas calculadas em cada uma.</p>
+<p>A Tabela 10 apresenta as datas das medições, sua finalidade e as medidas calculadas em cada uma. Até o momento as datas estão referentes apenas a entrega 1.    </p>
 <table>
 <thead>
 <tr>
-<th>Id da issue</th>
+<th>Id da Medição</th>
 <th>Data</th>
 <th>Finalidade</th>
 <th>Medidas</th>
@@ -650,31 +646,25 @@
 </thead>
 <tbody>
 <tr>
-<td>M-1</td>
-<td>17/10 (sáb)</td>
+<td>Mg-1</td>
+<td>20/10 (ter)</td>
 <td>Primeira medição, para os slides do PC1</td>
 <td><code>CP1</code>, <code>CP2</code>, <code>DP1</code>, <code>RC1</code>, <code>RC2</code>, <code>RC3</code></td>
 </tr>
 <tr>
-<td>M-2</td>
-<td>21/10 (qua)</td>
+<td>Mg-2</td>
+<td>22/10 (qui)</td>
 <td>Após o PC1: replanejar com o feedback; inclui DP2 da Fase 1</td>
 <td>Todas, com <code>DP2</code> (Fase 1)</td>
 </tr>
 <tr>
-<td>M-3</td>
-<td>23/10 (sex)</td>
-<td>Congelamento de conteúdo; inclui DP2 da Fase 2</td>
-<td>Todas, com <code>DP2</code> (Fase 2)</td>
-</tr>
-<tr>
-<td>M-4</td>
+<td>Mg-3</td>
 <td>25/10 (dom)</td>
 <td>Pré-entrega</td>
 <td><code>CP1</code>, <code>CP2</code>, <code>DP1</code>, <code>RC1</code>, <code>RC2</code>, <code>RC3</code></td>
 </tr>
 <tr>
-<td>M-5</td>
+<td>Mg-4</td>
 <td>26/10 (seg)</td>
 <td>Fechamento e lições para a Entrega 2</td>
 <td><code>CP1</code>, <code>CP2</code>, <code>DP1</code>, <code>RC1</code>, <code>RC2</code>, <code>RC3</code></td>
@@ -682,7 +672,8 @@
 </tbody>
 </table>
 <p><em>Tabela 10. Pontos de medição previstos. Fonte: Elaborado por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a></em></p>
-<p>As medições de M-1 usam poucas issues concluídas e podem cair em "sem dados" ou oscilar muito; isso é esperado e deve constar na interpretação.</p>
+<p>Os pontos de medição apresentados nesta tabela correspondem à Entrega 1. O acompanhamento da Entrega 2, prevista para 18/11/2026, deverá ser detalhado em um cronograma complementar, caso esteja incluído no escopo de execução deste plano.</p>
+<p>As medições de Mg-1 usam poucas issues concluídas e podem cair em "sem dados" ou oscilar muito; isso é esperado e deve constar na interpretação.</p>
 <h2 id="8-evidencias-no-git">8. Evidências no Git</h2>
 <p>Esta seção indica onde ficam armazenadas as evidências que permitem conferir as medições no repositório (Tabela 11).</p>
 <table>
@@ -726,11 +717,11 @@
 <p><em>Tabela 11. Evidências das medições e sua localização. Fonte: Elaborado por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a></em></p>
 <h2 id="referencias">Referências</h2>
 <blockquote>
-<p>BASILI, Victor R.; CALDIERA, Gianluigi; ROMBACH, H. Dieter. The Goal Question Metric Approach. In: MARCINIAK, John J. (ed.). <em>Encyclopedia of Software Engineering</em>. v. 1. New York: John Wiley &amp; Sons, 1994. p. 528-532.</p>
-<p>ISO/IEC 25010:2023. <em>Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Product quality model</em>. Geneva: ISO, 2023.</p>
-<p>ISO/IEC/IEEE 15939:2017. <em>Systems and software engineering — Measurement process</em>. Geneva: ISO, 2017.</p>
+<p>BASILI, Victor R.; CALDIERA, Gianluigi; ROMBACH, H. Dieter. The Goal Question Metric Approach. In: MARCINIAK, John J. (ed.). <em>Encyclopedia of Software Engineering</em>. v. 1. New York: John Wiley &amp; Sons, 1994. p. 528–532.</p>
+<p>INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. <em>ISO/IEC/IEEE 15939:2017: Systems and software engineering — Measurement process</em>. Geneva: ISO, 2017.</p>
+<p>JONES, Cheryl L. et al. <em>Practical Software and Systems Measurement: Continuous Iterative Development Measurement Framework — Part 1</em>. Version 2.1. PSM; NDIA; INCOSE, 2021.</p>
+<p>JONES, Cheryl L. et al. <em>Practical Software and Systems Measurement: Continuous Iterative Development Measurement Framework — Part 2: Measurement Specifications and Enterprise Measures</em>. Version 2.1. PSM; NDIA; INCOSE, 2021.</p>
 <p>MCGARRY, John et al. <em>Practical Software Measurement: Objective Information for Decision Makers</em>. Boston: Addison-Wesley, 2002.</p>
-<p>PRACTICAL SOFTWARE AND SYSTEMS MEASUREMENT. <em>PSM: Practical Software and Systems Measurement</em>. Disponível em: https://www.psmsc.com. Acesso em: 15 out. 2026.</p>
 </blockquote>
 <hr />
 <p><a id="historico-de-versoes"></a></p>
@@ -743,7 +734,6 @@
 <th>Descrição</th>
 <th>Responsável</th>
 <th>Revisor</th>
-<th>Commit</th>
 </tr>
 </thead>
 <tbody>
@@ -752,24 +742,35 @@
 <td>15/10/2026</td>
 <td>Criação do Plano de Medição</td>
 <td><a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
-<td></td>
-<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/commit/"></a></td>
+<td><a href="https://github.com/GeovannaUmbelino">Geovanna Umbelino</a></td>
 </tr>
 <tr>
 <td>1.1</td>
 <td>15/10/2026</td>
 <td>Atualização do Plano de Medição</td>
 <td><a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
-<td></td>
-<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/commit/"></a></td>
+<td><a href="https://github.com/GeovannaUmbelino">Geovanna Umbelino</a></td>
 </tr>
 <tr>
 <td>1.2</td>
 <td>16/10/2026</td>
 <td>Padronização das tabelas e estruturação dos textos das seções</td>
 <td><a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
-<td></td>
-<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/commit/"></a></td>
+<td><a href="https://github.com/GeovannaUmbelino">Geovanna Umbelino</a></td>
+</tr>
+<tr>
+<td>1.3</td>
+<td>19/10/2026</td>
+<td>Corrige datas e numero das tabelas</td>
+<td><a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
+<td><a href="https://github.com/GeovannaUmbelino">Geovanna Umbelino</a></td>
+</tr>
+<tr>
+<td>1.4</td>
+<td>19/10/2026</td>
+<td>Correções nas métricas e algumas nomeclaturas</td>
+<td><a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
+<td><a href="https://github.com/GeovannaUmbelino">Geovanna Umbelino</a></td>
 </tr>
 </tbody>
 </table></div>
