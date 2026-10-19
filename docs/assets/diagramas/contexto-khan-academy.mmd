@@ -1,0 +1,56 @@
+flowchart LR
+    subgraph pessoas["Pessoas e papéis externos"]
+        estudante([Estudante])
+        professor([Professor])
+        responsavel([Responsável])
+        avaliador([Equipe avaliadora])
+    end
+
+    subgraph ambiente["Condições e dependências externas"]
+        navegador[Navegador suportado]
+        dispositivo[Dispositivo e sistema operacional]
+        rede[Conectividade]
+        assistiva[Tecnologia assistiva]
+    end
+
+    subgraph produto["Fronteira observável da Khan Academy"]
+        web[Interface web]
+        aplicativo[Aplicativos Android e iOS]
+        conta[Conta, perfil e papéis]
+        conteudo[Cursos e conteúdos]
+        aprendizagem[Vídeos, artigos e exercícios]
+        progresso[Atividades, progresso e painéis]
+    end
+
+    estudante --> web
+    estudante --> aplicativo
+    professor --> web
+    responsavel --> web
+    avaliador -. observação externa .-> web
+    avaliador -. observação externa .-> aplicativo
+
+    navegador --> web
+    dispositivo --> web
+    dispositivo --> aplicativo
+    rede --> web
+    rede --> aplicativo
+    assistiva --> web
+
+    web --> conta
+    web --> conteudo
+    web --> aprendizagem
+    web --> progresso
+    aplicativo --> conta
+    aplicativo --> conteudo
+    aplicativo --> aprendizagem
+    aplicativo --> progresso
+
+    classDef actor fill:#eef5ff,stroke:#1d4ed8,color:#172554,stroke-width:1.5px
+    classDef external fill:#fff7e6,stroke:#b45309,color:#451a03,stroke-width:1.5px
+    classDef interface fill:#ecfdf5,stroke:#047857,color:#064e3b,stroke-width:2px
+    classDef function fill:#f0fdfa,stroke:#0f766e,color:#134e4a,stroke-width:1.5px
+    class estudante,professor,responsavel,avaliador actor
+    class navegador,dispositivo,rede,assistiva external
+    class web,aplicativo interface
+    class conta,conteudo,aprendizagem,progresso function
+
