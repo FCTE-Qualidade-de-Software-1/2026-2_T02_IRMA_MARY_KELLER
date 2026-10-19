@@ -1,6 +1,6 @@
 # Plano de medição PSM/CID
 
-Versão 1.2
+Versão 1.4
 
 ---
 
@@ -34,8 +34,8 @@ Trata do ritmo de execução: se as atividades planejadas estão sendo concluíd
 
 | Atributo | Medida Base QME | Medida Derivada | Fórmula | Indicador |
 |---|---|---|---|---|
-| Progresso das atividades (`CP1`) | [Atividades](#unidade-de-trabalho) concluídas (`Ac`) <br> [Atividades](#unidade-de-trabalho) planejadas (`Ap`) | Percentual de progresso planejado cumprido. (`Ppc`) | `Ppc = (Ac ÷ Ap) × 100`	|Adequado: `90% ≤ Ppc ≤ 100%` <br> Bom: `80% ≤ Ppc < 90%` <br> Insuficiente: `60% ≤ Ppc < 80%` <br> Crítico: `Ppc < 60%` |
-| Cumprimento do prazo (`CP2`) | [Atividades](#unidade-de-trabalho) concluídas no prazo (`Acp`) <br> [Atividades](#unidade-de-trabalho) concluídas (`Ac`) | Percentual de atividades com registro de esforço. (`PaRe`) | `PaRe = (Acp ÷ Ac) × 100` | Adequado: `90% ≤ PaRe ≤ 100%` <br> Bom: `80% ≤ PaRe < 90%` <br> Insuficiente: `60% ≤ PaRe < 80%` <br> Crítico: `PaRe < 60%` |
+| Progresso das atividades (`CP1`) | [Atividades](#unidade-de-trabalho) concluídas (`Ac`) <br> [Atividades](#unidade-de-trabalho) planejadas (`Ap`) | Percentual de progresso planejado cumprido. (`Ppc`) | `Ppc = (Ac ÷ Ap) × 100`	|Adequado: `Ppc ≥ 90%` <br> Bom: `80% ≤ Ppc < 90%` <br> Insuficiente: `60% ≤ Ppc < 80%` <br> Crítico: `Ppc < 60%` |
+| Cumprimento do prazo (`CP2`) | [Atividades](#unidade-de-trabalho) concluídas no prazo (`Acp`) <br> [Atividades](#unidade-de-trabalho) concluídas (`Ac`) | percentual de atividades concluídas no prazo (`Pcp`) | `Pcp = (Acp ÷ Ac) × 100` | Adequado: `90% ≤ Pcp ≤ 100%` <br> Bom: `80% ≤ Pcp < 90%` <br> Insuficiente: `60% ≤ Pcp < 80%` <br> Crítico: `Pcp < 60%` |
 
 *Tabela 2. Medidas e indicadores de Calendário e Progresso (O1). Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
 
@@ -49,8 +49,8 @@ Trata de como o trabalho é produzido: o retrabalho que o processo gera (`DP1`) 
 
 | Atributo | Medida Base QME | Medida Derivada | Fórmula | Indicador |
 |---|---|---|---|---|
-| Eficiência do processo (`DP1`) | Issue reaberta (`Ir`) <br> Issue com label `correção` (`Ic`) <br> Issue fechada (`If`) | Percentual de issues fechadas que apresentaram retrabalho (`Prt`) | `Prt = [(Ir v Ic) ÷ If] × 100` | Adequado: `Prt ≤ 15%` <br> Bom: `15% < Ptr ≤ 35%` <br> Insuficiente: `35% < Prt < 50%` <br> Crítico: `Prt ≥ 50%` |
-| Efetividade do processo (`DP2`) | Critérios avaliados como {Insuficiente (`Ci`) <br>  Regular (`Cr`) <br> Satisfatório (`Cs`) <br> Excelente (`Ce`)} <br> Total de critérios avaliados (`Ct`) | Quantidade de critérios iguais ou abaixo de Regular (`Ciar`) <br> Percentual de critérios no nível Excelente (`Pce`) | `Ciar = Ci + Cr` <br> `Pce = (Ce ÷ Ct) × 100` | Adequado: `Ciar ≤ 0`  <br> Bom: `1 ≤ Ciar ≤ 2` <br> Insuficiente: `Ciar > 3` <br> Adequado: `90% ≤ Pce ≤ 100%` <br> Bom: `75% ≤ Pce < 90%` <br> Insuficiente: `Pce < 75%` |
+| Eficiência do processo (`DP1`) | Issue reaberta (`Ir`) <br> Issue com label `correcao` (`Ic`) <br> Issue fechada (`If`) | Percentual de issues fechadas que apresentaram retrabalho (`Prt`) | `Prt = [(Ir ∪ Ic) ÷ If] × 100` | Adequado: `Prt ≤ 15%` <br> Bom: `15% < Prt ≤ 35%` <br> Insuficiente: `35% < Prt < 50%` <br> Crítico: `Prt ≥ 50%` |
+| Efetividade do processo (`DP2`) | Critérios avaliados como {Insuficiente (`Ci`) <br>  Regular (`Cr`) <br> Satisfatório (`Cs`) <br> Excelente (`Ce`)} <br> Total de critérios avaliados (`Ct`) | Quantidade de critérios iguais ou abaixo de Regular (`Ciar`) <br> Percentual de critérios no nível Excelente (`Pce`) | `Ciar = Ci + Cr` <br> `Pce = (Ce ÷ Ct) × 100` | Adequado: `Ciar ≤ 0`  <br> Bom: `1 ≤ Ciar ≤ 2` <br> Insuficiente: `Ciar ≥ 3` <br> Adequado: `90% ≤ Pce ≤ 100%` <br> Bom: `75% ≤ Pce < 90%` <br> Insuficiente: `Pce < 75%` |
 
 *Tabela 3. Medidas e indicadores de Desempenho dos Processos (O2). Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
 
@@ -66,7 +66,7 @@ Trata do esforço da equipe: horas dedicadas (`RC1`), variação em relação ao
 |---|---|---|---|---|
 | Esforço de desenvolvimento (`RC1`) | Horas estimadas por atividade (`He`) <br> Horas efetivamente trabalhadas por atividade (`Hr`) | Esforço total realizado (`Et`) | `Et = Σ Hr` | Informativo: registrar o total de horas da equipe e a distribuição por atividade e integrante. |
 | Variação do esforço estimado (`RC2`) | Esforço estimado total (`Ee`) <br> Esforço realizado total (`Er`) | Variação percentual do esforço (`Ve`) | `Ve = ( |Er − Ee| ÷ Ee ) × 100` | Adequado: `Ve ≤ 10%` <br> Bom: `10% < Ve ≤ 20%` <br> Insuficiente: `Ve > 20%` |
-| Cobertura do registro de esforço (`RC3`) | Atividades concluídas com horas registradas (`Ar`) <br> Total de atividades concluídas (`Ac`) | Percentual de atividades com esforço registrado (`Pa`) | `Pa = (Ar ÷ Ac) × 100` | Adequado: `90% ≤ Pa ≤ 100%` <br> Bom: `75% ≤ Pa < 90%` <br> Insuficiente: `60% ≤Pa < 75%` <br> Crítico: `Pa < 60%` |
+| Cobertura do registro de esforço (`RC3`) | Atividades concluídas com horas registradas (`Ar`) <br> Total de atividades concluídas (`Ac`) | Percentual de atividades com esforço registrado (`Pa`) | `Pa = (Ar ÷ Ac) × 100` | Adequado: `90% ≤ Pa ≤ 100%` <br> Bom: `75% ≤ Pa < 90%` <br> Insuficiente: `60% ≤ Pa < 75%` <br> Crítico: `Pa < 60%` |
 
 *Tabela 4. Medidas e indicadores de Recursos e Custos (O3). Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
 
@@ -144,7 +144,7 @@ A Tabela 7 apresenta, para cada medida, a razão da escolha, a razão das faixas
 
 ### 5.3 Origem e revisão dos limiares
  
-O PSM/CID não prescreve valores de limiar e não foi encontrada referência normativa a citar. Os limiares acima são **critérios definidos pela equipe**, assumidos como hipóteses de trabalho. Serão reavaliados em [M-2](#pontos), com os primeiros dados reais. Qualquer mudança é registrada no histórico de versões, e as medições anteriores ficam marcadas com a versão do plano sob a qual foram feitas.
+O PSM/CID não prescreve valores de limiar e não foi encontrada referência normativa a citar. Os limiares acima são **critérios definidos pela equipe**, assumidos como hipóteses de trabalho. Serão reavaliados em [Mg-2](#pontos), com os primeiros dados reais. Qualquer mudança é registrada no histórico de versões, e as medições anteriores ficam marcadas com a versão do plano sob a qual foram feitas.
  
 <a id="regras"></a>
 
@@ -175,8 +175,8 @@ Esta seção descreve como a medição é executada: quais dados entram, o passo
  
 <a id="responsavel"></a>
 
-**Responsável pela execução:** Rodízio a definir pelo grupo. Todos os membros lançam as horas até as 12h do dia da medição.
- 
+**Responsável pela execução:**A equipe definirá, antes de cada ponto de medição, o integrante responsável pela coleta, validação e consolidação dos dados. Todos os integrantes devem registrar suas horas até as 12h do dia da medição. O responsável verifica as pendências, executa o script, registra os resultados e documenta as decisões decorrentes.
+
 ### 7.1 Dados de entrada
 
 A Tabela 9 lista os dados necessários, onde ficam, quem os alimenta e quais medidas dependem deles.
@@ -185,7 +185,7 @@ A Tabela 9 lista os dados necessários, onde ficam, quem os alimenta e quais med
 |---|---|---|---|---|
 | ID, Janela, Estimativa, estado, datas de fechamento e reabertura, labels | Issues e pull requests do GitHub | Responsável pela issue | Ao criar, fechar ou reabrir a issue | `CP1`, `CP2`, `DP1`, `RC2`, `RC3` |
 | Horas por integrante e por issue | `assets/dados/gestao/horas/<usuario>.csv` (colunas `data,atividade,horas`; ver [Registro de Horas](horas.md)) | Cada integrante | Até 12h do dia da medição | `RC1`, `RC2`, `RC3` |
-| Nível por critério da rubrica | `assets/dados/gestao/autoavaliacao.csv` (colunas `data,criterio,nivel,evidencia`) | Revisor | Em [M-3](#pontos) | `DP2` |
+| Nível por critério da rubrica | `assets/dados/gestao/autoavaliacao.csv` (colunas `data,criterio,nivel,evidencia`) | Revisor | Em [Mg-3](#pontos) | `DP2` |
 | Uso de IA | [Uso de IA](uso_de_ia.md) | Quem usou a ferramenta | No momento do uso | Evidência para os critérios de uso de IA na autoavaliação (`DP2`) |
  
 *Tabela 9. Dados de entrada das medições. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
@@ -200,7 +200,7 @@ Os passos abaixo são seguidos a cada ponto de medição.
 2. O [Responsável](#responsavel) confere as pré-condições: issues fechadas com Janela, Estimativa e revisão registrada; horas sem ID válido; labels `correcao` aplicadas onde devidas. Pendências são cobradas das duplas donas antes do cálculo.
 3. A [Responsável](#responsavel) roda `python3 scripts/coletar_psm.py --data AAAA-MM-DD` na raiz do repositório. O script deve implementar as fórmulas da [seção 3](#3-medidas-e-indicadores-por-categoria). A cada medição, conferir à mão ao menos uma medida (por exemplo, o `CP1`) contra o resultado do script.
 4. O [Responsável](#responsavel) cola a tabela no registro de `docs/gestao/medicoes.md`, com, para cada medida: ponto de medição, data, valores das medidas base, valor derivado, nível e cor.
-5. Em [M-2 e M-3](#pontos), o revisor, preenche o `autoavaliacao.csv` para a fase correspondente, com um nível e uma evidência (link para o trecho do artigo, da GitPage ou do repositório) por critério. Antes disso, o [Responsável](#responsavel) confere o [registro de uso de IA](uso_de_ia.md).
+5. Em [Mg-2 e Mg-3](#pontos), o revisor, preenche o `autoavaliacao.csv` para a fase correspondente, com um nível e uma evidência (link para o trecho do artigo, da GitPage ou do repositório) por critério. Antes disso, o [Responsável](#responsavel) confere o [registro de uso de IA](uso_de_ia.md).
 6. O [Responsável](#responsavel) interpreta cada medida amarela ou vermelha: registra causa provável e decisão conforme a [seção 6](#regras), e abre issue de ação quando houver trabalho a fazer.
 7. Medidas "sem dados" ou "com ressalva" são registradas como tal, com o motivo.
 8. O resultado é comunicado ao grupo no mesmo dia e commitado por pull request.
@@ -211,16 +211,18 @@ Os passos abaixo são seguidos a cada ponto de medição.
 
 A Tabela 10 apresenta as datas das medições, sua finalidade e as medidas calculadas em cada uma. Até o momento as datas estão referentes apenas a entrega 1.    
 
-| Id da issue | Data | Finalidade | Medidas |
+| Id da Medição | Data | Finalidade | Medidas |
 |---|---|---|---|
-| M-1 | 20/10 (ter) | Primeira medição, para os slides do PC1 | `CP1`, `CP2`, `DP1`, `RC1`, `RC2`, `RC3` |
-| M-2 | 22/10 (qui) | Após o PC1: replanejar com o feedback; inclui DP2 da Fase 1 | Todas, com `DP2` (Fase 1) |
-| M-3 | 25/10 (dom) | Pré-entrega | `CP1`, `CP2`, `DP1`, `RC1`, `RC2`, `RC3` |
-| M-4 | 26/10 (seg) | Fechamento e lições para a Entrega 2 | `CP1`, `CP2`, `DP1`, `RC1`, `RC2`, `RC3` |
+| Mg-1 | 20/10 (ter) | Primeira medição, para os slides do PC1 | `CP1`, `CP2`, `DP1`, `RC1`, `RC2`, `RC3` |
+| Mg-2 | 22/10 (qui) | Após o PC1: replanejar com o feedback; inclui DP2 da Fase 1 | Todas, com `DP2` (Fase 1) |
+| Mg-3 | 25/10 (dom) | Pré-entrega | `CP1`, `CP2`, `DP1`, `RC1`, `RC2`, `RC3` |
+| Mg-4 | 26/10 (seg) | Fechamento e lições para a Entrega 2 | `CP1`, `CP2`, `DP1`, `RC1`, `RC2`, `RC3` |
 
 *Tabela 10. Pontos de medição previstos. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
 
-As medições de M-1 usam poucas issues concluídas e podem cair em "sem dados" ou oscilar muito; isso é esperado e deve constar na interpretação.
+Os pontos de medição apresentados nesta tabela correspondem à Entrega 1. O acompanhamento da Entrega 2, prevista para 18/11/2026, deverá ser detalhado em um cronograma complementar, caso esteja incluído no escopo de execução deste plano.
+
+As medições de Mg-1 usam poucas issues concluídas e podem cair em "sem dados" ou oscilar muito; isso é esperado e deve constar na interpretação.
  
 ## 8. Evidências no Git
 
@@ -240,15 +242,15 @@ Esta seção indica onde ficam armazenadas as evidências que permitem conferir 
 
 ## Referências
 
-> BASILI, Victor R.; CALDIERA, Gianluigi; ROMBACH, H. Dieter. The Goal Question Metric Approach. In: MARCINIAK, John J. (ed.). *Encyclopedia of Software Engineering*. v. 1. New York: John Wiley & Sons, 1994. p. 528-532.
+> BASILI, Victor R.; CALDIERA, Gianluigi; ROMBACH, H. Dieter. The Goal Question Metric Approach. In: MARCINIAK, John J. (ed.). *Encyclopedia of Software Engineering*. v. 1. New York: John Wiley & Sons, 1994. p. 528–532.
 
-> ISO/IEC 25010:2023. *Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Product quality model*. Geneva: ISO, 2023.
+> INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. *ISO/IEC/IEEE 15939:2017: Systems and software engineering — Measurement process*. Geneva: ISO, 2017.
 
-> ISO/IEC/IEEE 15939:2017. *Systems and software engineering — Measurement process*. Geneva: ISO, 2017.
+> JONES, Cheryl L. et al. *Practical Software and Systems Measurement: Continuous Iterative Development Measurement Framework — Part 1*. Version 2.1. PSM; NDIA; INCOSE, 2021.
+
+> JONES, Cheryl L. et al. *Practical Software and Systems Measurement: Continuous Iterative Development Measurement Framework — Part 2: Measurement Specifications and Enterprise Measures*. Version 2.1. PSM; NDIA; INCOSE, 2021.
 
 > MCGARRY, John et al. *Practical Software Measurement: Objective Information for Decision Makers*. Boston: Addison-Wesley, 2002.
-
-> PRACTICAL SOFTWARE AND SYSTEMS MEASUREMENT. *PSM: Practical Software and Systems Measurement*. Disponível em: https://www.psmsc.com. Acesso em: 15 out. 2026.
 
 ---
 <a id="historico-de-versoes"></a>
@@ -261,3 +263,4 @@ Esta seção indica onde ficam armazenadas as evidências que permitem conferir 
 | 1.1 | 15/10/2026 | Atualização do Plano de Medição | [Pedro Lucas](https://github.com/Pwdrinho) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
 | 1.2 | 16/10/2026 | Padronização das tabelas e estruturação dos textos das seções | [Pedro Lucas](https://github.com/Pwdrinho) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
 | 1.3 | 19/10/2026 | Corrige datas e numero das tabelas | [Pedro Lucas](https://github.com/Pwdrinho) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
+| 1.4 | 19/10/2026 | Correções nas métricas e algumas nomeclaturas | [Pedro Lucas](https://github.com/Pwdrinho) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
