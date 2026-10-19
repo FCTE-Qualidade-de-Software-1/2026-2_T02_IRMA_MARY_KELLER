@@ -7,8 +7,10 @@ nav:
 
   - Fase 1:
     - Início: fase-1/fase1_inicio.md
+    - Produto e contexto: fase-1/produto-e-contexto.md
     - Requisitos de avaliação: fase-1/requisitos-de-avaliacao.md
     - Escopo da avaliação: fase-1/escopo-da-avaliacao.md
+
   - Fase 2: fase-2/index.md
 
   - Gestão:
