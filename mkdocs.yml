@@ -8,7 +8,14 @@ nav:
   - Fase 1:
     - Início: fase-1/fase1_inicio.md
     - Requisitos de avaliação: fase-1/requisitos-de-avaliacao.md
-  - Fase 2: fase-2/index.md
+  - Fase 2: 
+    - Visão geral: fase-2/index.md
+    - Objetivos de medição: fase-2/objetivos.md
+    - Questões e hipóteses: fase-2/questoes-hipoteses.md
+    - Métricas: fase-2/metricas.md
+    - Critérios de julgamento: fase-2/criterios-julgamento.md
+    - Gráfico GQM: fase-2/grafico-gqm.md
+    - Rastreabilidade: fase-2/rastreabilidade.md
 
   - Gestão:
     - Plano de Medição: gestao/plano_de_medicao.md
