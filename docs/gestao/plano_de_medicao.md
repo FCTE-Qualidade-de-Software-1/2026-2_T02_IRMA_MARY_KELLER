@@ -10,7 +10,7 @@ Acompanhar a execução do projeto, como os marcos principais sendo Entrega 1 (2
 
 ## 2. Necessidades de informação
 
-No PSM/CID, a medição parte de uma necessidade de informação e não das medidas disponíveis. Por isso, cada *objetivo de medição* (O1 a O3) está associado a uma *categoria* e a uma *pergunta de gestão* (pergunta orientadora), que serve de guia para escolher as medidas da seção 3. A Tabela X reúne esses elementos.
+No PSM/CID, a medição parte de uma necessidade de informação e não das medidas disponíveis. Por isso, cada *objetivo de medição* (O1 a O3) está associado a uma *categoria* e a uma *pergunta de gestão* (pergunta orientadora), que serve de guia para escolher as medidas da seção 3. A Tabela 1 reúne esses elementos.
 
 | Objetivo | Categoria | Pergunta de gestão |
 |---|---|---|
@@ -84,20 +84,19 @@ A unidade de trabalho é a **issue** do GitHub. O corpo da issue traz **Janela**
  
 ### 4.2 Definições operacionais
 
-A Tabela X define, de forma operacional, os termos usados nas fórmulas da [seção 3](#3-medidas-e-indicadores-por-categoria).
+A Tabela 5 define, de forma operacional, os termos usados nas fórmulas da [seção 3](#3-medidas-e-indicadores-por-categoria).
  
 | Termo | Definição operacional |
 |---|---|
 | Planejada até a data (`Ap`) | Issue dos milestones das entregas cuja Janela é igual ou anterior à data da medição |
-| Concluída (`Ac`) | Issue fechada com os critérios de aceite atendidos e com revisão da dupla revisora registrada no pull request. Issue fechada sem revisão não conta como concluída |
+| Concluída (`Ac`) | Issue fechada com os critérios de aceite atendidos e com revisão do revisor registrada no pull request. Issue fechada sem revisão não conta como concluída |
 | Concluída no prazo (`Acp`) | Issue concluída em data igual ou anterior à sua **Janela original** |
 | Janela original | Valor da Janela no momento da criação da issue. Quando o prazo é revisto, a nova data vai em comentário (`Janela revista`) e serve só ao replanejamento. O `CP2` sempre compara com a original, para que o atraso não desapareça da medição |
 | Retrabalho (`Ir`, `Ic`) | Issue reaberta depois de fechada (`Ir`) ou issue com a label `correcao` (`Ic`). A issue que cumpre as duas condições conta uma vez só (união) |
 | Estimativa congelada | A Estimativa registrada na criação da issue é a usada no `RC2`. Reestimativas vão em comentário e não sobrescrevem o valor original |
-| Esforço realizado (`Hr`, `Hi`) | Horas registradas em `assets/dados/gestao/horas/<usuario>.csv`, em múltiplos de 0,25 h, ligadas ao ID da issue. Em trabalho de dupla, cada integrante lança as próprias horas |
+| Esforço realizado (`Hr`, `Hi`) | Horas registradas em `assets/dados/gestao/horas/<usuario>.csv`, em múltiplos de 0,25 h, ligadas ao ID da issue. Em trabalho em dupla, cada integrante lança as próprias horas |
 | Escopo do `RC2` | Calculado apenas sobre issues concluídas (`Ee` e `Er` do mesmo conjunto), para que issues em andamento não distorçam a comparação. As horas de issues em andamento entram no `RC1` |
 | Horas sem issue | Reuniões e atividades de gestão também precisam de issue de apoio, com Estimativa. Horas sem ID válido não são atribuídas a nenhuma atividade e reduzem o `RC3` |
-| Valor de referência da hora (`Vh`) | Usado só para o custo equivalente: `custo = Et × Vh`. Valor e fonte **a definir pela equipe**; enquanto não definidos, o custo não é calculado. Não é indicador e não tem limiar |
 | Denominador zero | Se `Ap`, `Ac`, `If`, `Ee` ou `Ct` for zero na data, a medida é registrada como "sem dados" e não recebe nível |
  
 *Tabela 5. Definições operacionais dos termos usados nas medições. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
@@ -129,7 +128,7 @@ O PSM parte da necessidade de informação, não da medida disponível. Por isso
  
 ### 5.2 Medidas e indicadores
 
-A Tabela X apresenta, para cada medida, a razão da escolha, a razão das faixas do indicador e a limitação a considerar.
+A Tabela 7 apresenta, para cada medida, a razão da escolha, a razão das faixas do indicador e a limitação a considerar.
 
 | Medida | Por que foi escolhida | Por que este indicador | Limitação a considerar |
 |---|---|---|---|
@@ -137,8 +136,8 @@ A Tabela X apresenta, para cada medida, a razão da escolha, a razão das faixas
 | `CP2` Prazo | Complementa o `CP1`: uma issue pode estar concluída, mas fora do prazo. O `CP1` mostra quanto foi feito; o `CP2`, se foi feito na hora certa | Mesmas faixas do `CP1`, por consistência da categoria | Compara com a Janela original; replanejar não "limpa" o atraso, o que é intencional |
 | `DP1` Eficiência | Retrabalho (issue reaberta ou corrigida) é um indício direto de que o processo de produzir e revisar não acertou de primeira | Faixas de `15/35/50%` são critério da equipe, mais tolerantes que as de prazo porque revisão faz parte de um trabalho acadêmico | Depende da disciplina de reabrir a issue ou usar a label `correcao`. <br> Retrabalho feito dentro do pull request antes do fechamento não aparece |
 | `DP2` Efetividade | Responde à parte do [O2](#objetivo-2) sobre atender aos critérios da professora. A nota real só chega depois da entrega, então a equipe se autoavalia nos critérios da rubrica a cada fase | Dois indicadores porque medem coisas distintas: `Ciar` destaca os critérios mais fracos (gera ação); `Pce` mede a proximidade do objetivo de alcançar a última opção em cada critério. Com a rubrica atual (11 critérios na [Fase 1](../criterios/fase1.md) e 12 na [Fase 2](../criterios/fase2.md)), `Pce ≥ 90%` admite no máximo um critério abaixo de Excelente | Autoavaliação é subjetiva. <br> Mitigação: quem avalia é o revisor, não o autor, e cada nível exige evidência no `autoavaliacao.csv` |
-| `RC1` Esforço | Base do [O3](#objetivo-3): sem o total e a distribuição das horas não há como falar de custo nem de equilíbrio entre os membros | O total é informativo porque não há valor de referência confiável de "esforço certo". O equilíbrio usa a faixa de `±50%` da média, definida pela equipe como limite para rebalancear issues | A média esconde diferenças de tipo de tarefa (escrita, revisão, código); a faixa é ampla de propósito para não gerar alerta por variações normais |
-| `RC2` Variação | Responde à parte do [O3](#objetivo-3) sobre o esforço conferir com o planejado e alimenta a reestimativa das próximas issues | Faixas de `10/20%` são critério da equipe, razoáveis para estimativas de estudantes sem histórico prévio | O valor absoluto perde o sentido da variação (subestimou ou superestimou) <br> Registrar o sentido na interpretação |
+| `RC1` Esforço | Base do [O3](#objetivo-3): sem o total e a distribuição das horas não há como falar de custo nem de equilíbrio entre os membros | O total é informativo porque não há valor de referência confiável de "esforço certo". | A média esconde diferenças de tipo de tarefa (escrita, revisão, código), a faixa é ampla de propósito para não gerar alerta por variações normais |
+| `RC2` Variação | Responde à parte do [O3](#objetivo-3) sobre o esforço conferir com o planejado e alimenta a reestimativa das próximas issues | Faixas de `10/20%` são critério da equipe, razoáveis para estimativas de estudantes sem histórico prévio | O valor absoluto perde o sentido da variação (subestimou ou superestimou) <br> Registra o sentido na interpretação |
 | `RC3` Cobertura | Valida o `RC1` e o `RC2`: se muitas issues concluídas não têm horas, esses valores não são confiáveis | Faixas de `90/75/60%` um pouco mais brandas que as de prazo, porque o lançamento é manual | Mede se há registro, não se o registro é correto |
 
 *Tabela 7. Justificativa das medidas e dos indicadores. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
@@ -151,7 +150,7 @@ O PSM/CID não prescreve valores de limiar e não foi encontrada referência nor
 
 ## 6. Regras de decisão
 
-Esta seção define o que a equipe faz quando uma medida cai em amarelo ou vermelho, para que a medição leve a uma decisão e não apenas a um registro. A Tabela X relaciona cada situação à decisão correspondente.
+Esta seção define o que a equipe faz quando uma medida cai em amarelo ou vermelho, para que a medição leve a uma decisão e não apenas a um registro. A Tabela 8 relaciona cada situação à decisão correspondente.
  
 Toda decisão é registrada em `docs/gestao/medicoes.md`, com data, responsável e prazo, e vira issue de ação quando houver trabalho a fazer.
 
@@ -180,13 +179,13 @@ Esta seção descreve como a medição é executada: quais dados entram, o passo
  
 ### 7.1 Dados de entrada
 
-A Tabela X lista os dados necessários, onde ficam, quem os alimenta e quais medidas dependem deles.
+A Tabela 9 lista os dados necessários, onde ficam, quem os alimenta e quais medidas dependem deles.
  
 | Dado | Fonte | Quem alimenta | Quando | Medidas que usam |
 |---|---|---|---|---|
 | ID, Janela, Estimativa, estado, datas de fechamento e reabertura, labels | Issues e pull requests do GitHub | Responsável pela issue | Ao criar, fechar ou reabrir a issue | `CP1`, `CP2`, `DP1`, `RC2`, `RC3` |
 | Horas por integrante e por issue | `assets/dados/gestao/horas/<usuario>.csv` (colunas `data,atividade,horas`; ver [Registro de Horas](horas.md)) | Cada integrante | Até 12h do dia da medição | `RC1`, `RC2`, `RC3` |
-| Nível por critério da rubrica | `assets/dados/gestao/autoavaliacao.csv` (colunas `data,criterio,nivel,evidencia`) | Revisor | Em [M-2](#pontos) (Fase 1) e [M-3](#pontos) (Fase 2) | `DP2` |
+| Nível por critério da rubrica | `assets/dados/gestao/autoavaliacao.csv` (colunas `data,criterio,nivel,evidencia`) | Revisor | Em [M-3](#pontos) | `DP2` |
 | Uso de IA | [Uso de IA](uso_de_ia.md) | Quem usou a ferramenta | No momento do uso | Evidência para os critérios de uso de IA na autoavaliação (`DP2`) |
  
 *Tabela 9. Dados de entrada das medições. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
@@ -198,11 +197,11 @@ No `autoavaliacao.csv`, `criterio` é o código da rubrica (por exemplo, `F1-C6`
 Os passos abaixo são seguidos a cada ponto de medição.
  
 1. Até as 12h do dia da medição, cada membro lança suas horas no seu CSV.
-2. A [Dupla do rodizio](#responsavel) confere as pré-condições: issues fechadas com Janela, Estimativa e revisão registrada; horas sem ID válido; labels `correcao` aplicadas onde devidas. Pendências são cobradas das duplas donas antes do cálculo.
-3. A [Dupla do rodizio](#responsavel) roda `python3 scripts/coletar_psm.py --data AAAA-MM-DD` na raiz do repositório. O script deve implementar as fórmulas da [seção 3](#3-medidas-e-indicadores-por-categoria). A cada medição, conferir à mão ao menos uma medida (por exemplo, o `CP1`) contra o resultado do script.
-4. A [Dupla do rodizio](#responsavel) cola a tabela no registro de `docs/gestao/medicoes.md`, com, para cada medida: ponto de medição, data, valores das medidas base, valor derivado, nível e cor.
-5. Em [M-2 e M-3](#pontos), a dupla revisora preenche o `autoavaliacao.csv` para a fase correspondente, com um nível e uma evidência (link para o trecho do artigo, da GitPage ou do repositório) por critério. Antes disso, a [Dupla do rodizio](#responsavel) confere o [registro de uso de IA](uso_de_ia.md).
-6. A [Dupla do rodizio](#responsavel) interpreta cada medida amarela ou vermelha: registra causa provável e decisão conforme a [seção 6](#regras), e abre issue de ação quando houver trabalho a fazer.
+2. O [Responsável](#responsavel) confere as pré-condições: issues fechadas com Janela, Estimativa e revisão registrada; horas sem ID válido; labels `correcao` aplicadas onde devidas. Pendências são cobradas das duplas donas antes do cálculo.
+3. A [Responsável](#responsavel) roda `python3 scripts/coletar_psm.py --data AAAA-MM-DD` na raiz do repositório. O script deve implementar as fórmulas da [seção 3](#3-medidas-e-indicadores-por-categoria). A cada medição, conferir à mão ao menos uma medida (por exemplo, o `CP1`) contra o resultado do script.
+4. O [Responsável](#responsavel) cola a tabela no registro de `docs/gestao/medicoes.md`, com, para cada medida: ponto de medição, data, valores das medidas base, valor derivado, nível e cor.
+5. Em [M-2 e M-3](#pontos), o revisor, preenche o `autoavaliacao.csv` para a fase correspondente, com um nível e uma evidência (link para o trecho do artigo, da GitPage ou do repositório) por critério. Antes disso, o [Responsável](#responsavel) confere o [registro de uso de IA](uso_de_ia.md).
+6. O [Responsável](#responsavel) interpreta cada medida amarela ou vermelha: registra causa provável e decisão conforme a [seção 6](#regras), e abre issue de ação quando houver trabalho a fazer.
 7. Medidas "sem dados" ou "com ressalva" são registradas como tal, com o motivo.
 8. O resultado é comunicado ao grupo no mesmo dia e commitado por pull request.
 
@@ -210,15 +209,14 @@ Os passos abaixo são seguidos a cada ponto de medição.
 
 ### 7.3 Pontos de medição
 
-A Tabela X apresenta as datas das medições, sua finalidade e as medidas calculadas em cada uma.
+A Tabela 10 apresenta as datas das medições, sua finalidade e as medidas calculadas em cada uma. Até o momento as datas estão referentes apenas a entrega 1.    
 
 | Id da issue | Data | Finalidade | Medidas |
 |---|---|---|---|
-| M-1 | 17/10 (sáb) | Primeira medição, para os slides do PC1 | `CP1`, `CP2`, `DP1`, `RC1`, `RC2`, `RC3` |
-| M-2 | 21/10 (qua) | Após o PC1: replanejar com o feedback; inclui DP2 da Fase 1 | Todas, com `DP2` (Fase 1) |
-| M-3 | 23/10 (sex) | Congelamento de conteúdo; inclui DP2 da Fase 2 | Todas, com `DP2` (Fase 2) |
-| M-4 | 25/10 (dom) | Pré-entrega | `CP1`, `CP2`, `DP1`, `RC1`, `RC2`, `RC3` |
-| M-5 | 26/10 (seg) | Fechamento e lições para a Entrega 2 | `CP1`, `CP2`, `DP1`, `RC1`, `RC2`, `RC3` |
+| M-1 | 20/10 (ter) | Primeira medição, para os slides do PC1 | `CP1`, `CP2`, `DP1`, `RC1`, `RC2`, `RC3` |
+| M-2 | 22/10 (qui) | Após o PC1: replanejar com o feedback; inclui DP2 da Fase 1 | Todas, com `DP2` (Fase 1) |
+| M-3 | 25/10 (dom) | Pré-entrega | `CP1`, `CP2`, `DP1`, `RC1`, `RC2`, `RC3` |
+| M-4 | 26/10 (seg) | Fechamento e lições para a Entrega 2 | `CP1`, `CP2`, `DP1`, `RC1`, `RC2`, `RC3` |
 
 *Tabela 10. Pontos de medição previstos. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
 
@@ -257,8 +255,9 @@ Esta seção indica onde ficam armazenadas as evidências que permitem conferir 
 
 ## Histórico de versões
 
-| Versão | Data | Descrição | Responsável | Revisor | Commit |
-|---|---|---|---|---|---|
-| 1.0 | 15/10/2026 | Criação do Plano de Medição | [Pedro Lucas](https://github.com/Pwdrinho) | | [](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/commit/) |
-| 1.1 | 15/10/2026 | Atualização do Plano de Medição | [Pedro Lucas](https://github.com/Pwdrinho) | | [](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/commit/) |
-| 1.2 | 16/10/2026 | Padronização das tabelas e estruturação dos textos das seções | [Pedro Lucas](https://github.com/Pwdrinho) | | [](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/commit/) |
+| Versão | Data | Descrição | Responsável | Revisor |
+|---|---|---|---|---|
+| 1.0 | 15/10/2026 | Criação do Plano de Medição | [Pedro Lucas](https://github.com/Pwdrinho) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
+| 1.1 | 15/10/2026 | Atualização do Plano de Medição | [Pedro Lucas](https://github.com/Pwdrinho) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
+| 1.2 | 16/10/2026 | Padronização das tabelas e estruturação dos textos das seções | [Pedro Lucas](https://github.com/Pwdrinho) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
+| 1.3 | 19/10/2026 | Corrige datas e numero das tabelas | [Pedro Lucas](https://github.com/Pwdrinho) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
