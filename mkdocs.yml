@@ -6,7 +6,7 @@ nav:
   - Início: index.md
 
   - Fase 1:
-    - Início: fase-1/fase1_inicio.md
+    - Visão geral: fase-1/index.md
     - Produto e contexto: fase-1/produto-e-contexto.md
     - Requisitos de avaliação: fase-1/requisitos-de-avaliacao.md
     - Escopo da avaliação: fase-1/escopo-da-avaliacao.md
