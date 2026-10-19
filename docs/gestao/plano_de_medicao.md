@@ -18,7 +18,7 @@ No PSM/CID, a medição parte de uma necessidade de informação e não das medi
 | [O2](#objetivo-2) | Desempenho dos Processos | O processo de produzir e revisar gera entregas que atendem aos critérios da professora, sem muito retrabalho? |
 | [O3](#objetivo-3) | Recursos e Custos | O esforço gasto confere com o planejado e está equilibrado entre os membros? |
 
-*Tabela X. Necessidades de informação por objetivo de medição. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
+*Tabela 1. Necessidades de informação por objetivo de medição. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
 
 ## 3. Medidas e indicadores por categoria
 
@@ -37,7 +37,7 @@ Trata do ritmo de execução: se as atividades planejadas estão sendo concluíd
 | Progresso das atividades (`CP1`) | [Atividades](#unidade-de-trabalho) concluídas (`Ac`) <br> [Atividades](#unidade-de-trabalho) planejadas (`Ap`) | Percentual de progresso planejado cumprido. (`Ppc`) | `Ppc = (Ac ÷ Ap) × 100`	|Adequado: `90% ≤ Ppc ≤ 100%` <br> Bom: `80% ≤ Ppc < 90%` <br> Insuficiente: `60% ≤ Ppc < 80%` <br> Crítico: `Ppc < 60%` |
 | Cumprimento do prazo (`CP2`) | [Atividades](#unidade-de-trabalho) concluídas no prazo (`Acp`) <br> [Atividades](#unidade-de-trabalho) concluídas (`Ac`) | Percentual de atividades com registro de esforço. (`PaRe`) | `PaRe = (Acp ÷ Ac) × 100` | Adequado: `90% ≤ PaRe ≤ 100%` <br> Bom: `80% ≤ PaRe < 90%` <br> Insuficiente: `60% ≤ PaRe < 80%` <br> Crítico: `PaRe < 60%` |
 
-*Tabela X. Medidas e indicadores de Calendário e Progresso (O1). Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
+*Tabela 2. Medidas e indicadores de Calendário e Progresso (O1). Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
 
 ### 3.2 Desempenho dos Processos
 
@@ -52,7 +52,7 @@ Trata de como o trabalho é produzido: o retrabalho que o processo gera (`DP1`) 
 | Eficiência do processo (`DP1`) | Issue reaberta (`Ir`) <br> Issue com label `correção` (`Ic`) <br> Issue fechada (`If`) | Percentual de issues fechadas que apresentaram retrabalho (`Prt`) | `Prt = [(Ir v Ic) ÷ If] × 100` | Adequado: `Prt ≤ 15%` <br> Bom: `15% < Ptr ≤ 35%` <br> Insuficiente: `35% < Prt < 50%` <br> Crítico: `Prt ≥ 50%` |
 | Efetividade do processo (`DP2`) | Critérios avaliados como {Insuficiente (`Ci`) <br>  Regular (`Cr`) <br> Satisfatório (`Cs`) <br> Excelente (`Ce`)} <br> Total de critérios avaliados (`Ct`) | Quantidade de critérios iguais ou abaixo de Regular (`Ciar`) <br> Percentual de critérios no nível Excelente (`Pce`) | `Ciar = Ci + Cr` <br> `Pce = (Ce ÷ Ct) × 100` | Adequado: `Ciar ≤ 0`  <br> Bom: `1 ≤ Ciar ≤ 2` <br> Insuficiente: `Ciar > 3` <br> Adequado: `90% ≤ Pce ≤ 100%` <br> Bom: `75% ≤ Pce < 90%` <br> Insuficiente: `Pce < 75%` |
 
-*Tabela X. Medidas e indicadores de Desempenho dos Processos (O2). Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
+*Tabela 3. Medidas e indicadores de Desempenho dos Processos (O2). Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
 
 ### 3.3 Recursos e Custos
 
@@ -68,7 +68,7 @@ Trata do esforço da equipe: horas dedicadas (`RC1`), variação em relação ao
 | Variação do esforço estimado (`RC2`) | Esforço estimado total (`Ee`) <br> Esforço realizado total (`Er`) | Variação percentual do esforço (`Ve`) | `Ve = ( |Er − Ee| ÷ Ee ) × 100` | Adequado: `Ve ≤ 10%` <br> Bom: `10% < Ve ≤ 20%` <br> Insuficiente: `Ve > 20%` |
 | Cobertura do registro de esforço (`RC3`) | Atividades concluídas com horas registradas (`Ar`) <br> Total de atividades concluídas (`Ac`) | Percentual de atividades com esforço registrado (`Pa`) | `Pa = (Ar ÷ Ac) × 100` | Adequado: `90% ≤ Pa ≤ 100%` <br> Bom: `75% ≤ Pa < 90%` <br> Insuficiente: `60% ≤Pa < 75%` <br> Crítico: `Pa < 60%` |
 
-*Tabela X. Medidas e indicadores de Recursos e Custos (O3). Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
+*Tabela 4. Medidas e indicadores de Recursos e Custos (O3). Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
 
 **Procedimento de coleta:** cada integrante registra as horas dedicadas às atividades em andamento e concluídas (ver [Registro de Horas](horas.md)), vinculando-as às respectivas issues. A equipe consolida os registros periodicamente, compara o esforço real com o estimado e utiliza o valor de referência da hora profissional apenas para calcular o custo equivalente do trabalho.
 
@@ -100,7 +100,7 @@ A Tabela X define, de forma operacional, os termos usados nas fórmulas da [seç
 | Valor de referência da hora (`Vh`) | Usado só para o custo equivalente: `custo = Et × Vh`. Valor e fonte **a definir pela equipe**; enquanto não definidos, o custo não é calculado. Não é indicador e não tem limiar |
 | Denominador zero | Se `Ap`, `Ac`, `If`, `Ee` ou `Ct` for zero na data, a medida é registrada como "sem dados" e não recebe nível |
  
-*Tabela X. Definições operacionais dos termos usados nas medições. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
+*Tabela 5. Definições operacionais dos termos usados nas medições. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
 
 ### 4.3 Níveis e cores
  
@@ -113,7 +113,7 @@ Os indicadores usam níveis; as regras de decisão [(seção 6)](#regras) usam a
 | Crítico | Vermelho | Ação corretiva imediata conforme a seção 6 |
 | Informativo | Sem cor | Apenas registrar e acompanhar |
 
-*Tabela X. Níveis dos indicadores, cores e significado. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
+*Tabela 6. Níveis dos indicadores, cores e significado. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
  
 Nos indicadores que não têm nível Crítico (`DP2`, `RC2` e o equilíbrio do `RC1`), o pior nível possível é Insuficiente (amarelo).
  
@@ -141,7 +141,7 @@ A Tabela X apresenta, para cada medida, a razão da escolha, a razão das faixas
 | `RC2` Variação | Responde à parte do [O3](#objetivo-3) sobre o esforço conferir com o planejado e alimenta a reestimativa das próximas issues | Faixas de `10/20%` são critério da equipe, razoáveis para estimativas de estudantes sem histórico prévio | O valor absoluto perde o sentido da variação (subestimou ou superestimou) <br> Registrar o sentido na interpretação |
 | `RC3` Cobertura | Valida o `RC1` e o `RC2`: se muitas issues concluídas não têm horas, esses valores não são confiáveis | Faixas de `90/75/60%` um pouco mais brandas que as de prazo, porque o lançamento é manual | Mede se há registro, não se o registro é correto |
 
-*Tabela X. Justificativa das medidas e dos indicadores. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
+*Tabela 7. Justificativa das medidas e dos indicadores. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
 
 ### 5.3 Origem e revisão dos limiares
  
@@ -166,7 +166,7 @@ Toda decisão é registrada em `docs/gestao/medicoes.md`, com data, responsável
 | `RC2` amarelo (`Ve > 20%`) | Reestimar issues parecidas e registrar o motivo do desvio e o sentido (subestimou ou superestimou) |
 | `RC3` amarelo ou vermelho | Lançar as horas pendentes no mesmo dia e repetir o cálculo; enquanto o `RC3` estiver abaixo de 75%, marcar `RC1` e `RC2` como "com ressalva" |
  
-*Tabela X. Regras de decisão por situação de medição. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
+*Tabela 8. Regras de decisão por situação de medição. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
 
 A regra de que nenhuma issue é fechada sem revisão é uma convenção permanente ([seção 4.2](#unidade-de-trabalho), definição de "Concluída"), e não uma condição de medição.
  
@@ -189,7 +189,7 @@ A Tabela X lista os dados necessários, onde ficam, quem os alimenta e quais med
 | Nível por critério da rubrica | `assets/dados/gestao/autoavaliacao.csv` (colunas `data,criterio,nivel,evidencia`) | Revisor | Em [M-2](#pontos) (Fase 1) e [M-3](#pontos) (Fase 2) | `DP2` |
 | Uso de IA | [Uso de IA](uso_de_ia.md) | Quem usou a ferramenta | No momento do uso | Evidência para os critérios de uso de IA na autoavaliação (`DP2`) |
  
-*Tabela X. Dados de entrada das medições. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
+*Tabela 9. Dados de entrada das medições. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
  
 No `autoavaliacao.csv`, `criterio` é o código da rubrica (por exemplo, `F1-C6`) e `nivel` é um de Insuficiente, Regular, Satisfatório ou Excelente, que correspondem, nesta ordem, às quatro opções da rubrica da professora, da primeira à última.
  
@@ -220,7 +220,7 @@ A Tabela X apresenta as datas das medições, sua finalidade e as medidas calcul
 | M-4 | 25/10 (dom) | Pré-entrega | `CP1`, `CP2`, `DP1`, `RC1`, `RC2`, `RC3` |
 | M-5 | 26/10 (seg) | Fechamento e lições para a Entrega 2 | `CP1`, `CP2`, `DP1`, `RC1`, `RC2`, `RC3` |
 
-*Tabela X. Pontos de medição previstos. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
+*Tabela 10. Pontos de medição previstos. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
 
 As medições de M-1 usam poucas issues concluídas e podem cair em "sem dados" ou oscilar muito; isso é esperado e deve constar na interpretação.
  
@@ -238,7 +238,7 @@ Esta seção indica onde ficam armazenadas as evidências que permitem conferir 
 | [Script de coleta](../../src/coletar_psm.py) | `scripts/coletar_psm.py` |
 | [Uso de IA](../gestao/uso_de_ia.md) | `docs/gestao/uso_de_ia.md` |
 
-*Tabela x. Evidências das medições e sua localização. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
+*Tabela 11. Evidências das medições e sua localização. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
 
 ## Referências
 
