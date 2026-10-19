@@ -2,69 +2,71 @@
 
 # Questões e hipóteses — nível operacional
 
-Para detalhar os três objetivos GQM definidos para a avaliação da Khan Academy, formulamos cinco questões de avaliação. Cada questão está associada a uma hipótese de trabalho e à métrica que será utilizada para respondê-la.
+## Convenção e situação da proposta
 
-As hipóteses foram definidas **antes da coleta** e devem orientar a interpretação dos resultados, mas **não representam conclusões sobre a qualidade real da plataforma**. Quando houver necessidade de limiares quantitativos para sustentação ou rejeição das hipóteses, esses valores deverão estar justificados e aprovados antes da execução da Fase 4.
+Os identificadores Q1–Q5 e H1–H5 são mantidos como famílias. Seus desdobramentos identificam os atributos avaliados. A adoção dos sufixos permanece sujeita ao alinhamento com a issue #6. M2 já contém medidas distintas, explicitadas pelos sufixos.
 
-**Tabela 1 — Relação entre objetivos, questões, hipóteses e métricas da Fase 2.**
+As hipóteses abaixo são **propostas de expectativas da equipe**, derivadas das necessidades R1–R5. Não há resultados preliminares que comprovem o comportamento da Khan Academy. As normas definem características e requisitos de referência; não demonstram que a plataforma atenderá a eles. A equipe deverá ratificar as expectativas antes de atribuí-las a si mesma.
 
-| **Objetivo** | **Questão** | **Hipótese** | **Métrica** |
-|---|---|---|---|
-| [G1 — Eficiência de desempenho](objetivos.md) | **Q1 — Tempo observado de execução.** Em que medida os tempos observados nos fluxos educacionais definidos permitem caracterizar o comportamento temporal da plataforma nas condições avaliadas? | **H1:** os fluxos avaliados tendem a apresentar tempos de execução compatíveis com o uso regular da plataforma nas condições de teste, segundo critérios a definir antes da coleta. | [M1](metricas.md) |
-| [G1 — Eficiência de desempenho](objetivos.md) | **Q2 — Consumo de recursos.** Qual é o consumo observável de recursos durante a execução dos fluxos previstos? | **H2:** o consumo de recursos durante os fluxos avaliados tende a permanecer em níveis operacionais aceitáveis para o contexto de uso considerado, conforme limites a definir e justificar pela equipe. | [M2](metricas.md) |
-| [G2 — Portabilidade](objetivos.md) | **Q3 — Execução entre ambientes.** Em quais ambientes avaliados os fluxos permanecem executáveis sem alteração da plataforma? | **H3:** a maioria das combinações ambiente–fluxo previstas no escopo tende a permanecer executável sem necessidade de ajustes adicionais na plataforma. | [M3](metricas.md) |
-| [G3 — Usabilidade](objetivos.md) | **Q4 — Acessibilidade dos fluxos principais.** Em que medida os fluxos principais permanecem executáveis com os recursos de acessibilidade considerados na Fase 1? | **H4:** os fluxos principais tendem a ser executáveis, ao menos em parte, com as tecnologias assistivas e formas de navegação previstas no escopo, embora possam surgir barreiras pontuais a serem registradas. | [M4](metricas.md) |
-| [G3 — Usabilidade](objetivos.md) | **Q5 — Aprendizagem de estudantes novos.** Em que medida estudantes novos conseguem aprender a executar os fluxos definidos sem auxílio adicional? | **H5:** estudantes novos tendem a conseguir executar os fluxos definidos com autonomia predominante, ainda que dificuldades de navegação ou interpretação possam ocorrer em etapas específicas. | [M5](metricas.md) |
+“Adequado” nas hipóteses significa obter pontuação de questão **pelo menos 2**, pelas regras dos [critérios de julgamento](criterios-julgamento.md), em todos os grupos obrigatórios da questão, com cobertura completa do plano, inclusive combinações complementares. “Inconclusivo” não confirma nem contraria uma hipótese. Trata-se de verificação descritiva no escopo ensaiado, sem alegar teste estatístico ou generalização populacional.
 
-*Fonte: elaboração da equipe para a Fase 2, com base em `docs/fase-1/requisitos-de-avaliacao.md` e `docs/fase-1/escopo-da-avaliacao.md`.*
+A Tabela 1 cobre os atributos documentados. Os tamanhos de janela pertencem à adaptabilidade; ampliação e contraste, à acessibilidade.
 
-## G1 — Eficiência de desempenho
+**Tabela 1 — Cobertura de atributos, questões, hipóteses e medidas.**
 
-### Q1 — Em que medida os tempos observados nos fluxos educacionais definidos permitem caracterizar o comportamento temporal da plataforma nas condições avaliadas?
+| Origem e objetivo | Atributo | Questão qualitativa e operacional | Hipótese proposta | Medida |
+|---|---|---|---|---|
+| R1 / G1 | Espera para carregar páginas, iniciar vídeo e obter resposta de exercício | **Q1:** A espera nas etapas dos fluxos permite utilizar o conteúdo sem prejudicar a continuidade da atividade, em cada ambiente obrigatório? | **H1:** Em cada ambiente obrigatório, a espera atende aos limites aceitáveis previamente definidos para as etapas avaliadas. | M1, por etapa e ambiente |
+| R2 / G1 | CPU | **Q2.1:** A plataforma permite concluir os fluxos sem sobrecarregar a capacidade de processamento disponível em cada ambiente? | **H2.1:** A mediana das médias temporais de CPU das execuções comparáveis permanece dentro do orçamento aceitável em cada grupo obrigatório, sem bloqueio impeditivo atribuível à sobrecarga conforme o protocolo. | M2.CPU |
+| R2 / G1 | Memória | **Q2.2:** Os fluxos podem ser utilizados dentro da memória disponível, sem interrupção por esgotamento desse recurso? | **H2.2:** A mediana dos picos de memória entre sessões permanece no orçamento aceitável nos grupos obrigatórios, respeitada a regra prévia para eventual limite rígido de capacidade, sem interrupção atribuível ao esgotamento observado. | M2.RAM |
+| R2 / G1 | Dados de rede | **Q2.3:** O volume de dados exigido pelos fluxos é compatível com o orçamento de acesso definido para o cenário? | **H2.3:** A mediana do tráfego total das execuções comparáveis de cada fluxo padronizado permanece dentro do orçamento aceitável em cada grupo obrigatório. | M2.REDE |
+| R3 / G2 | Adaptação entre SOs e navegadores | **Q3.1:** O estudante consegue concluir os fluxos essenciais nos ambientes selecionados sem ajustes extraordinários? | **H3.1:** Todas as combinações essenciais de fluxo, SO e navegador são concluídas, sem ajustes extraordinários. | M3.AMB |
+| R3 / G2 | Adaptação a tamanhos de janela | **Q3.2:** O conteúdo e os controles essenciais continuam utilizáveis nos tamanhos de janela selecionados para computadores? | **H3.2:** Todas as combinações essenciais de ambiente, janela e fluxo permanecem executáveis, sem perda de controles ou conteúdo necessário. | M3.JAN |
+| R4 / G3 | Operação por teclado | **Q4.1:** Uma pessoa que utiliza apenas teclado consegue concluir os fluxos essenciais sem bloqueios de navegação? | **H4.1:** Todos os fluxos essenciais são concluídos por teclado, sem armadilha de foco ou controle essencial inacessível. | M4.TEC |
+| R4 / G3 | Uso de leitor de tela | **Q4.2:** Uma pessoa que utiliza leitor de tela recebe as informações necessárias e consegue concluir os fluxos essenciais? | **H4.2:** Todas as combinações essenciais de tarefa, leitor de tela e ambiente podem ser concluídas, com informações necessárias perceptíveis. | M4.LEI |
+| R4 / G3 | Ampliação | **Q4.3:** A pessoa que amplia o texto consegue ler e operar os fluxos sem perder conteúdo ou funcionalidade? | **H4.3:** Os fluxos essenciais permanecem utilizáveis com texto ampliado até 200%, observadas as exceções do critério WCAG 1.4.4. | M4.AMP |
+| R4 / G3 | Contraste e uso em configuração de alto contraste | **Q4.4:** A apresentação visual permite distinguir informações e controles necessários nos fluxos essenciais? | **H4.4:** Os elementos essenciais satisfazem os critérios de contraste selecionados e permanecem utilizáveis na configuração de alto contraste definida no protocolo. | M4.CON |
+| R5 / G3 | Aprendizagem inicial com autonomia | **Q5:** Estudantes novos conseguem compreender como iniciar e concluir as tarefas essenciais sem orientação adicional? | **H5:** A conclusão autônoma alcança os patamares aceitáveis previamente definidos para cada tarefa essencial e para o conjunto avaliado. | M5, por tarefa e agregado |
 
-A questão Q1 investiga o comportamento temporal observável da Khan Academy nos fluxos delimitados na Fase 1, como navegação em cursos com vídeos, exercícios e acesso aos painéis previstos no escopo. A análise será conduzida por meio da [M1](metricas.md), que registra o intervalo entre marcos previamente definidos de início e fim de cada execução válida.
+*Fonte: proposta elaborada com apoio de ChatGPT a partir dos requisitos R1–R5, do escopo e dos objetivos existentes. Para acessibilidade: WCAG 2.1, critérios selecionados; as expectativas de atendimento são suposições a ratificar pela equipe.*
 
-A hipótese H1 expressa a expectativa de que os tempos observados sejam compatíveis com o uso regular da plataforma no contexto avaliado. Como os critérios quantitativos ainda dependem de fundamentação da equipe, a sustentação dessa hipótese ficará condicionada aos limiares que forem formalizados antes da coleta.
+As definições de essencial, complementar e cobertura completa seguem os [critérios de julgamento](criterios-julgamento.md#plano-e-cobertura). H4.1–H4.4 são verificadas nas combinações essenciais de ambiente, recurso e tarefa; a ausência de ensaios complementares mantém o julgamento completo inconclusivo.
 
-### Q2 — Qual é o consumo observável de recursos durante a execução dos fluxos previstos?
+## Fundamentação das hipóteses
 
-A questão Q2 complementa a análise de desempenho ao observar o consumo de recursos computacionais durante a execução dos fluxos escolhidos. Dependendo da instrumentação disponível, poderão ser registradas medidas de CPU, memória e tráfego de rede, sem agregá-las indevidamente em uma única medida.
+- **H1:** R1 prioriza a continuidade do estudo diante da espera. A expectativa é uma suposição orientada à necessidade do usuário; não há baseline coletada nem prazo universal fornecido pela ISO.
+- **H2.1:** R2 e o limite de hardware do escopo justificam verificar folga de processamento. O orçamento depende da capacidade e instrumentação reais da VM; não assumir que “100%” tem o mesmo significado entre ferramentas.
+- **H2.2:** R2 prevê pouca memória e o escopo prevê VMs com até 4 GB. Isso fundamenta testar limites, mas não autoriza escolher um orçamento de sessão sem reservar memória para SO, navegador e outros processos.
+- **H2.3:** R2 identifica o custo de dados de rede. O orçamento depende do fluxo e da decisão do cenário; vídeo exige duração, qualidade e cache padronizados. Não comparar tráfego de vídeos diferentes.
+- **H3.1:** R3 e G2 exigem continuidade de uso entre ambientes. A expectativa de sucesso nos essenciais decorre dessa necessidade, sem comprovar compatibilidade real da plataforma.
+- **H3.2:** A Fase 1 inclui tamanhos de tela entre os atributos de adaptabilidade. Testar janelas em computadores mantém o recorte web existente; não representa ensaio em smartphones.
+- **H4.1:** WCAG 2.1, 2.1.1 e 2.1.2, fornecem referência para operação por teclado e ausência de armadilha de teclado. Aplicar as exceções pertinentes do critério 2.1.1.
+- **H4.2:** WCAG 2.1, 1.3.1 e 4.1.2, fundamentam informações relacionais e identificação de controles para tecnologias assistivas. A execução real com leitor complementa as verificações; não confundir sucesso da tarefa com conformidade integral.
+- **H4.3:** WCAG 2.1, 1.4.4, explicita ampliação de texto até 200% sem perda de conteúdo ou funcionalidade, com suas exceções. Não tratar simples captura de tela ampliada como teste suficiente.
+- **H4.4:** WCAG 2.1, 1.4.3, adota contraste mínimo de 4,5:1 para texto normal e 3:1 para texto grande, com exceções; 1.4.11 prevê 3:1 para componentes e informação gráfica abrangidos pelo critério. Registrar a definição normativa de texto grande e as exceções no checklist. Alto contraste do SO é um ensaio adicional e não substitui medir essas relações.
+- **H5:** R5 e D3 justificam observar se é necessário planejar orientação inicial. A expectativa de autonomia é suposição a ratificar. M5 mede sucesso na primeira utilização como indicador limitado de apreensibilidade; não mede retenção nem curva de aprendizagem.
 
-A [M2](metricas.md) será utilizada para descrever esse comportamento. A hipótese H2 considera que o consumo de recursos tende a permanecer em níveis operacionais adequados ao contexto de uso definido na Fase 1, mas a equipe ainda precisa documentar os limites de interpretação para cada tipo de recurso efetivamente observado.
+## Verificação das hipóteses
 
-## G2 — Portabilidade
+Cada H1, H2.1–H2.3, H3.1–H3.2, H4.1–H4.4 e H5 é sustentada descritivamente quando sua questão tem nota pelo menos 2 e cobertura obrigatória completa. É contrariada na amostra quando a nota é 0 ou 1, e inconclusiva quando faltam dados obrigatórios ou parâmetros aprovados. H2, H3 e H4 identificam somente as famílias correspondentes. H1, H2.1–H2.3 e H5 ainda dependem de parâmetros fundamentados e aprovados para verificação operacional.
 
-### Q3 — Em quais ambientes avaliados os fluxos permanecem executáveis sem alteração da plataforma?
+O julgamento de produto e o status da hipótese devem aparecer em colunas distintas. As hipóteses adotadas preveem atendimento no patamar 2. H3.1–H3.2 e H4.1–H4.4 se referem às combinações essenciais: uma falha complementar pode reduzir a pontuação para 2 sem contrariá-las, desde que a cobertura do plano esteja completa. Uma hipótese de sucesso de todas as combinações exigiria nota 3 e não é adotada aqui.
 
-A questão Q3 trata da adaptabilidade da plataforma web da Khan Academy nos ambientes delimitados pela Fase 1. A intenção é verificar em quais combinações de sistema operacional e navegador os fluxos selecionados podem ser executados sem necessidade de modificações na plataforma ou de procedimentos extraordinários.
+Exemplo exclusivamente lógico: se CPU recebe 3, RAM recebe 1 e rede recebe 2, Q2 recebe 1. H2.2 é contrariada, H2.1 e H2.3 são sustentadas, e G1 não poderá superar 1. Se faltar coleta de rede, Q2/G1 ficam inconclusivos, embora a insuficiência de RAM já esteja documentada. **As notas do exemplo não são resultados do projeto.**
 
-A [M3](metricas.md) registrará a proporção de combinações ambiente–fluxo consideradas executáveis na amostra efetivamente testada. A hipótese H3 expressa a expectativa de que a maior parte dessas combinações permaneça utilizável, respeitando-se os limites práticos do escopo e das combinações realmente avaliáveis na Fase 3.
+## Referência de acessibilidade
 
-## G3 — Usabilidade
+[W3C — WCAG 2.1, recomendação de 5 de junho de 2018](https://www.w3.org/TR/2018/REC-WCAG21-20180605/). A seleção de critérios não permite declarar conformidade WCAG integral.
 
-### Q4 — Em que medida os fluxos principais permanecem executáveis com os recursos de acessibilidade considerados na Fase 1?
-
-A questão Q4 focaliza a acessibilidade dos fluxos principais, levando em conta as tecnologias assistivas e formas de navegação previstas na Fase 1, como navegação por teclado e uso de leitores de tela nas combinações viáveis. O interesse está em observar barreiras perceptíveis durante a realização dos fluxos, sem extrapolar os resultados para toda a plataforma ou para todos os perfis de usuário.
-
-A [M4](metricas.md) será utilizada para registrar a proporção de fluxos executáveis nas combinações de acessibilidade consideradas. A hipótese H4 admite que a plataforma tende a permitir a execução de parte relevante dos fluxos, embora a própria avaliação possa revelar barreiras específicas que deverão ser relatadas.
-
-### Q5 — Em que medida estudantes novos conseguem aprender a executar os fluxos definidos sem auxílio adicional?
-
-A questão Q5 aborda a apreensibilidade, isto é, a facilidade com que estudantes sem familiaridade prévia com a plataforma conseguem compreender e executar os fluxos definidos no escopo. A observação deverá se concentrar nas interações necessárias para concluir tarefas básicas de navegação e uso, em contexto compatível com a avaliação externa prevista.
-
-A [M5](metricas.md) indicará a proporção de participantes ou execuções em que houve conclusão autônoma dos fluxos definidos. A hipótese H5 expressa a expectativa de que estudantes novos consigam realizar essas tarefas com autonomia predominante, ainda que dificuldades pontuais possam ser identificadas e registradas.
-
-## Interpretação das hipóteses
-
-Consideraremos uma hipótese **sustentada** quando a métrica correspondente indicar resultado compatível com o critério previamente definido para a questão, desde que haja dados suficientes e condições de coleta adequadas. Quando o resultado não atender ao critério estabelecido, a hipótese será considerada **não sustentada**. Na ausência de dados suficientes, de combinações viáveis ou de condições mínimas de avaliação, o resultado deverá ser registrado como **inconclusivo**.
-
-A interpretação final de cada hipótese dependerá da métrica calculada, das exclusões justificadas, do ambiente de teste, da amostra observada e dos critérios de julgamento definidos pela equipe. Esses elementos devem permanecer coerentes com a [rastreabilidade da Fase 2](rastreabilidade.md) e com os [critérios de julgamento](criterios-julgamento.md).
 
 ## Histórico de versões
 
 | Versão | Data | Descrição | Responsável | Revisor |
 | :---: | :---: | :--- | :--- | :--- | 
 | 1.0 | 18/10/2026 | Elaboração das questões e hipóteses GQM e organização da tabela de correspondência com os objetivos e métricas. | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) | [Pedro Lucas](https://github.com/Pwdrinho)| 
+| 1.1 | 19/10/2026 | Detalhamento das 11 questões e hipóteses por atributo e de suas regras de verificação; proposta pendente de ratificação. | Camila Silva (apoio de Codex) | Revisão humana pendente |
+| 1.2 | 19/10/2026 | Ajustes complementares da issue #7: observações e grupos, repetições, cobertura, hipóteses e figuras sincronizadas, com apoio de Codex. | Camila Silva | Revisão humana pendente |
+| 1.3 | 19/10/2026 | Alinhamento das hipóteses de CPU e rede aos resumos por mediana dos grupos. | Camila Silva | Revisão humana pendente |
 
 ---
 

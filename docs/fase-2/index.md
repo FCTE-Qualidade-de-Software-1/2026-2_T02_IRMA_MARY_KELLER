@@ -17,6 +17,8 @@ Os requisitos priorizados na Fase 1 são: `R1` comportamento temporal (alta), `R
 As métricas a seguir são **especificações operacionais propostas com referência à ISO/IEC 25023:2016**, adaptadas ao contexto da plataforma. Seus nomes e fórmulas não devem ser interpretados como transcrições literais da norma. A correspondência com medidas normativas específicas permanece pendente de conferência documental.
 
 
+**Limitação de D1:** o escopo é web em computadores. Os resultados não permitem decidir entre aplicativo e navegador nem generalizar para celulares. A divergência com o cenário móvel da Fase 1 precisa ser revista pela equipe; esta proposta não amplia o escopo.
+
 ## Organização da Fase 2
 
 Os documentos abaixo compõem a especificação GQM. Os resultados ainda não foram coletados.
@@ -24,13 +26,13 @@ Os documentos abaixo compõem a especificação GQM. Os resultados ainda não fo
 | Página | Conteúdo |
 |---|---|
 | [Objetivos de medição](objetivos.md) | G1–G3 e seus cinco elementos GQM, derivados da Fase 1. |
-| [Questões e hipóteses](questoes-hipoteses.md) | Q1–Q5 e H1–H5 vinculadas aos objetivos. |
-| [Especificação das métricas](metricas.md) | M1–M5 em tabelas, com definição, cálculo, fonte, coleta, interpretação e análise de validade. |
-| [Critérios de julgamento](criterios-julgamento.md) | Escala comum, faixas ainda pendentes de fundamentação. |
-| [Gráfico GQM](grafico-gqm.md) | Figura 1 com as relações entre G, Q e M. |
+| [Questões e hipóteses](questoes-hipoteses.md) | Cinco famílias Q1–Q5/H1–H5, com 11 questões e hipóteses vinculadas aos objetivos. |
+| [Especificação das métricas](metricas.md) | M1–M5 em tabelas, com definição, cálculo, fonte, coleta, interpretação, unidades de observação, grupos de julgamento e análise de validade. |
+| [Critérios de julgamento](criterios-julgamento.md) | Escala 0–3, regras parametrizadas e agregação; parâmetros pendentes de fundamentação e aprovação. |
+| [Gráfico GQM](grafico-gqm.md) | Figura 1 com as cinco famílias e Figuras 2–4 com as 11 ligações individuais G–Q/H–M. |
 | [Rastreabilidade](rastreabilidade.md) | Correspondência entre R1–R5, stakeholders e elementos GQM. |
 
-A especificação reúne três objetivos, cinco questões, cinco hipóteses e cinco métricas. As fichas das métricas não trazem resultados de testes, pois esses valores devem ser coletados na Fase 4.
+A especificação reúne três objetivos e cinco famílias de questões, hipóteses e métricas, desdobradas em 11 questões operacionais e 11 hipóteses. A numeração de tabelas é local a cada página. A convenção dos sufixos precisa de alinhamento com a issue #6; hipóteses, parâmetros e regras de agregação aguardam ratificação da equipe. O critério F2-C5 permanece pendente enquanto faltarem parâmetros obrigatórios fundamentados. As fichas das métricas não trazem resultados de testes, pois esses valores devem ser coletados na Fase 4.
 
 
 
@@ -42,8 +44,12 @@ A especificação reúne três objetivos, cinco questões, cinco hipóteses e ci
 - Enunciado e critérios de avaliação da Fase 2 da disciplina Qualidade de Software 1, semestre 2026/2.
 
 
+
+
 ## Histórico de versões
 
 | Versão | Data | Descrição | Responsável | Revisor | 
 | :---: | :---: | :--- | :--- | :--- | 
-| 1.0 | 17/10/2026 | Estruturação da Fase 2, apresentação da metodologia GQM e organização das seções da documentação. | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |[Pedro Lucas](https://github.com/Pwdrinho) | 
+| 1.0 | 17/10/2026 | Estruturação da Fase 2, apresentação da metodologia GQM e organização das seções da documentação. | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |[Pedro Lucas](https://github.com/Pwdrinho) |
+| 1.1 | 19/10/2026 | Atualização da cobertura GQM, situação de aprovação e limite de aplicação à decisão D1. | Camila Silva (apoio de Codex) | Revisão humana pendente |
+| 1.2 | 19/10/2026 | Ajustes complementares da issue #7: observações e grupos, repetições, cobertura, hipóteses e figuras sincronizadas, com apoio de Codex. | Camila Silva | Revisão humana pendente |
