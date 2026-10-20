@@ -32,6 +32,8 @@ Registre **no momento do uso**, não no fim do projeto: reconstruir o que foi fe
 | `2026-10-18` | [Enzo Menali](https://github.com/menali17) | Codex | Cruzamento de documentos e formatação do MkDocs | [#2](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/2), `docs/fase-1/produto-contexto.md` | | |
 | | | | | | | |
 
+| `2026-10-18` | Responsável humano a confirmar | ChatGPT (OpenAI) | Apoio na estruturação, revisão ortográfica e verificação de links| [#7](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/7) `docs/fase-2`| | |
+
 ### 3.1 Regras
 
 - Nunca incorporar texto, figura ou tabela gerados sem revisão e reescrita pela equipe.

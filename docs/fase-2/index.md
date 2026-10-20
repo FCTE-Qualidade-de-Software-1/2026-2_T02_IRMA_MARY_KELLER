@@ -2,7 +2,7 @@
 
 A Fase 2 transforma as características priorizadas na [Fase 1](../fase-1/index.md) em uma estrutura de medição por meio do método *Goal–Question–Metric* (GQM). Cada objetivo de medição é desdobrado em questões de avaliação, relacionadas a hipóteses de investigação e respondidas por métricas. Para interpretar as medidas, também são previstos níveis de pontuação e critérios de julgamento.
 
-Nesta etapa, são especificados **3 objetivos (G1–G3), 11 questões (Q1–Q11), 11 hipóteses (H1–H11) e 5 métricas (M1–M5)**. A Fase 2 estabelece como a qualidade será avaliada; os resultados das medições permanecem **a coletar na Fase 4**.
+Nesta etapa, são especificados **3 objetivos (G1–G3), 11 questões (Q1–Q11), 11 hipóteses (H1–H11) e 5 famílias de métricas (M1–M5)**. A Fase 2 estabelece como a qualidade será avaliada; os resultados das medições permanecem **a coletar na Fase 4**.
 
 ## Organização da Fase 2
 
@@ -16,7 +16,7 @@ A **Tabela 1** apresenta os temas da documentação, a pessoa responsável pela 
 | Questões e hipóteses (Q1–Q11 / H1–H11) | [Camila Cavalcante](https://github.com/CamilaSilvaC)  | [Questões e hipóteses](questoes-hipoteses.md) |
 | Especificação das métricas (M1–M5) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) | [Métricas](metricas.md) |
 | Níveis de pontuação e critérios de julgamento | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) e [Camila Cavalcante](https://github.com/CamilaSilvaC)  | [Critérios de julgamento](criterios-julgamento.md) |
-| Hierarquia e representação gráfica GQM | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) | [Gráfico GQM](grafico-gqm.md) |
+| Hierarquia e representação gráfica GQM | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) e [Camila Cavalcante](https://github.com/CamilaSilvaC) | [Gráfico GQM](grafico-gqm.md) |
 
 
 *Fonte: organização da documentação da [issue #6](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/6).* A indicação de responsabilidade refere-se à elaboração da documentação desta issue; não substitui a revisão coletiva nem atribui a outras pessoas tarefas não confirmadas.
@@ -48,6 +48,7 @@ As métricas da Fase 2 são **adaptações propostas tomando a ISO/IEC 25023:201
 
 ## Histórico de versões
 
-| Versão | Data | Descrição | Responsável | Revisor | 
-| :---: | :---: | :--- | :--- | :--- | 
-| 1.0 | 17/10/2026 | Estruturação da Fase 2, apresentação da metodologia GQM e organização das seções da documentação. | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |[Pedro Lucas](https://github.com/Pwdrinho) | 
+| Versão | Data | Descrição | Responsável | Revisor |
+| :---: | :---: | :--- | :--- | :--- |
+| 1.0 | 17/10/2026 | Estruturação da Fase 2, apresentação da metodologia GQM e organização das seções da documentação. | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |[Pedro Lucas](https://github.com/Pwdrinho) |
+| 1.1 | 20/10/2026 | Ajustes na especificação e organização | [Camila Cavalcante](https://github.com/CamilaSilvaC) | [Pedro Lucas](https://github.com/Pwdrinho) |
