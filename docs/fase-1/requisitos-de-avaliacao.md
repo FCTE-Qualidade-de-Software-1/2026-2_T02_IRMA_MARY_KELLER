@@ -23,7 +23,7 @@ O requisitante da avaliação é a coordenação da escola do cenário da seçã
 | `D1` | Recomendar ou não a plataforma para alunos com celular de entrada e rede limitada, e em qual forma de acesso (navegador ou aplicativo) | Coordenação da escola e professores | Comportamento temporal, utilização de recursos e adaptabilidade em cada ambiente avaliado |
 | `D2` | Indicar a plataforma a alunos com baixa visão ou que usam leitor de tela, e com quais ajustes | Professores e responsáveis | Achados de acessibilidade nos fluxos principais |
 | `D3` | Planejar uma aula introdutória sobre como usar a plataforma, ou dispensá-la | Professores | Facilidade de aprendizado dos fluxos principais por um aluno novo |
-| `D4` | Definir objetivos, questões e métricas da Fase 2 e o rigor de cada parte da avaliação | Equipe avaliadora | Prioridades da [seção 2.3](#priorizacao) e rastreabilidade da [seção 4](#rastreabilidade) |
+| `D4` | Definir objetivos, questões e métricas da Fase 2 e o rigor de cada parte da avaliação | Equipe avaliadora | Prioridades da [seção 2.4](#priorizacao) e rastreabilidade da [seção 4](#rastreabilidade) |
 
 *Tabela 1. Decisões apoiadas pela avaliação. Fonte: Elaborada por: [Luisa de Souza](https://github.com/luisa12ll)*
 
@@ -58,7 +58,7 @@ Os termos em português da versão de 2011 seguem a tradução da ABNT; os da ve
 
 O modelo geral da ISO/IEC 25010:2011 propõe uma estrutura abrangente voltada a qualquer produto de software. No entanto, uma avaliação externa (caixa-preta) focada na adoção da Khan Academy no contexto de escolas públicas requer uma adaptação deliberada. Um modelo genérico não reflete, por si só, os desafios de alunos que utilizam dispositivos móveis de baixo custo em conexões móveis instáveis, tampouco as limitações metodológicas de uma equipe avaliadora sem acesso ao código-fonte proprietário da plataforma.
 
-Dessa forma, a decisão de adaptar o modelo sustenta-se nas seguintes razões práticas e autoevidentes:
+Dessa forma, a decisão de adaptar o modelo sustenta-se nas seguintes razões técnicas e metodológicas:
 
 1. **Poda e exclusão justificada:** Características que exigem acesso interno ao código-fonte proprietário (*Manutenibilidade*), testes de intrusão não autorizados em ambiente de terceiros (*Segurança*), observação temporal contínua e extensa (*Confiabilidade*) ou auditoria de matriz curricular (*Adequação Funcional*) foram descartadas por inviabilidade técnica ou desconexão com a avaliação externa do software (detalhadas na Seção 2.6).
 2. **Foco nas subcaracterísticas críticas:** Das características mantidas, foram selecionadas estritamente aquelas que respondem às decisões concretas `D1` a `D3`. Em Usabilidade, por exemplo, o escopo prioriza *Acessibilidade* (inclusão de alunos com baixa visão ou usuários de tecnologias assistivas) e *Apreensibilidade* (capacidade de estudo autônomo sem exigir sobrecarga de orientação do professor), deixando de fora aspectos de estética visual ou operabilidade genérica.
@@ -142,16 +142,16 @@ A Tabela 5 registra por que as demais características da ISO/IEC 25010:2011 fic
 A tríade de características selecionadas alinha-se estritamente à viabilidade técnica de uma avaliação externa e ao cenário da escola pública:
 
 - **Eficiência de desempenho:** Como a Khan Academy baseia-se em vídeo e interação dinâmica, a restrição de banda e memória é o primeiro obstáculo a superar. Medir tempos e tráfego subsidia a decisão `D1` quanto à viabilidade prática de estudo em redes móveis sem consumir excessivamente a franquia.
-- **Portabilidade:** Ao focar em adaptabilidade, assegura-se que a plataforma mantenha integridade visual e funcional em múltiplos navegadores e formatos de tela (computadores escolares compartilhados vs. smartphones pessoais), respondendo à recomendação de forma de acesso de `D1`.
-- **Usabilidade:** Ao priorizar acessibilidade e apreensibilidade, atende-se às decisões `D2` e `D3`, garantindo inclusão de alunos com deficiência visual e avaliando a necessidade de suporte pedagógico inicial para o uso autônomo da ferramenta.
+- **Portabilidade:** Ao focar em adaptabilidade, a avaliação verifica se a plataforma mantém integridade visual e funcional em múltiplos navegadores e formatos de tela (computadores escolares compartilhados vs. smartphones pessoais), respondendo à recomendação de forma de acesso de `D1`.
+- **Usabilidade:** Ao priorizar acessibilidade e apreensibilidade, a avaliação produz evidências para as decisões `D2` e `D3` sobre barreiras enfrentadas por alunos com deficiência visual e sobre a necessidade de suporte pedagógico inicial para o uso autônomo da ferramenta.
 
 <a id="rastreabilidade"></a>
 
 ## 4. Rastreabilidade: característica, interessado e justificativa
 
-A Tabela 6 liga cada subcaracterística selecionada aos interessados que dependem dela, à justificativa e à decisão que apoia. Os identificadores `R1` a `R5` são os requisitos de avaliação que orientam a elaboração dos objetivos de medição no planejamento da avaliação. A coluna de objetivo GQM é uma proposta inicial; a redação final dos objetivos será consolidada nas etapas posteriores do estudo.
+A Tabela 6 liga cada subcaracterística selecionada aos interessados que dependem dela, à justificativa e à decisão que apoia. Os identificadores `R1` a `R5` são os requisitos de avaliação que orientam os objetivos de medição. Os objetivos `G1` a `G3` já estão consolidados na [Fase 2](../fase-2/objetivos.md) e mantêm correspondência explícita com esses requisitos.
 
-| ID | Característica: subcaracterística | Prioridade | Interessados | Justificativa | Decisão | Objetivo GQM proposto |
+| ID | Característica: subcaracterística | Prioridade | Interessados | Justificativa | Decisão | Objetivo GQM relacionado |
 |---|---|---|---|---|---|---|
 | `R1` | Eficiência de desempenho: comportamento temporal | Alta | Estudantes; coordenação e professores | Carregamento lento de páginas e vídeos em rede móvel impede o estudo antes de chegar ao conteúdo | `D1` | `G1` Eficiência de desempenho |
 | `R2` | Eficiência de desempenho: utilização de recursos | Alta | Estudantes; responsáveis | Aparelhos de entrada têm pouca memória e o consumo de dados pesa no custo do pacote | `D1` | `G1` Eficiência de desempenho |
