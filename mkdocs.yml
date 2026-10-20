@@ -2,20 +2,23 @@ site_name: 2026-2_T02_IRMA_MARY_KELLER
 theme:
   name: null
   custom_dir: 'cinder'
+
 nav:
   - Início: index.md
 
   - Fase 1:
-    - Início: fase-1/fase1_inicio.md
+    - Visão geral: fase-1/index.md
+    - Produto e contexto: fase-1/produto-e-contexto.md
     - Requisitos de avaliação: fase-1/requisitos-de-avaliacao.md
-  - Fase 2: 
+    - Escopo da avaliação: fase-1/escopo-da-avaliacao.md
+
+  - Fase 2:
     - Visão geral: fase-2/index.md
-    - Objetivos de medição: fase-2/objetivos.md
+    - Objetivos de Medição: fase-2/objetivos.md
     - Questões e hipóteses: fase-2/questoes-hipoteses.md
     - Métricas: fase-2/metricas.md
     - Critérios de julgamento: fase-2/criterios-julgamento.md
     - Gráfico GQM: fase-2/grafico-gqm.md
-    - Rastreabilidade: fase-2/rastreabilidade.md
 
   - Gestão:
     - Plano de Medição: gestao/plano_de_medicao.md

@@ -27,7 +27,9 @@ Registre **no momento do uso**, não no fim do projeto: reconstruir o que foi fe
 | `2026-10-15` | [Pedro Lucas](https://github.com/Pwdrinho) | Claude | Estruturação dos artefatos | [#1](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/1) |  |  |
 | `2026-10-16` | [Pedro Lucas](https://github.com/Pwdrinho) | Claude | Formatação dos Critérios para tabela | [#1](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/1)   |  |  |  |
 | `2026-10-18` | [Luisa de Souza](https://github.com/luisa12ll) | Claude | Correção de erros ortográfico e sugestão de estrutura | [#3](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/3), `docs/fase-1/requisitos-de-avaliacao.md` | | |
-| `2026-10-18` | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) | ChatGPT (OpenAI) |  Apoio na estruturação e organização dos arquivos, especialmente na formatação das tabelas e revisão textual.   |[#6](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/6), `docs/fase-2` |  |  |
+| `2026-10-18` | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) | ChatGPT (OpenAI) | Apoio na estruturação e organização dos arquivos, especialmente na formatação das tabelas e revisão textual. | [#6](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/6), `docs/fase-2` | | |
+| `2026-10-18` | [José Augusto](https://github.com/JAugustoM) | Gemini | Ajuda na estruturação do documento de escopo e correções ortográficas | [#5](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/5) | | |
+| `2026-10-18` | [Enzo Menali](https://github.com/menali17) | Codex | Cruzamento de documentos e formatação do MkDocs | [#2](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/2), `docs/fase-1/produto-contexto.md` | | |
 | | | | | | | |
 
 ### 3.1 Regras
