@@ -1,9 +1,9 @@
 # Produto e contexto de uso da Khan Academy
 
-Este documento caracteriza o produto e o contexto de uso necessários aos critérios
-[`F1-C2`](../criterios/fase1.md) e [`F1-C3`](../criterios/fase1.md). A caracterização
-foi elaborada a partir de documentação pública oficial da Khan Academy, consultada em
-**18 de outubro de 2026**.
+Este documento caracteriza o produto e o contexto de uso da Khan Academy, delimitando
+suas áreas funcionais observáveis, interfaces externas, dependências de ambiente e os
+perfis de usuários considerados na avaliação. A caracterização foi elaborada a partir
+de documentação pública oficial da plataforma, consultada em **18 de outubro de 2026**.
 
 As três marcações abaixo diferenciam a natureza das informações:
 
@@ -51,8 +51,7 @@ não devem ser presumidos como parte do objeto de avaliação:
   alternativa em parceria, e não como a interface web ou o aplicativo móvel principal
   [S3].
 
-Essa fronteira é apenas uma base de descrição. A definição do escopo deve estabelecer
-quais superfícies e fluxos serão efetivamente incluídos.
+Essa fronteira documenta o ecossistema oficial do produto, contemplando tanto a interface web quanto os aplicativos móveis oficiais para Android e iOS. Os recortes e superfícies selecionados para os ensaios práticos são deliberados em [Escopo da avaliação](escopo-da-avaliacao.md).
 
 ## 2. Requisitante e partes interessadas
 
@@ -68,8 +67,8 @@ a mesma convenção e distingue dois planos:
 1. **Demandante acadêmico:** a disciplina Qualidade de Software 1, representada pela
    docente, determina a realização do trabalho e seus critérios de entrega.
 2. **Requisitante da avaliação:** a coordenação da escola pública que, no cenário
-   hipotético definido para C1, decidiria se recomenda o produto. Nenhuma escola real
-   contratou ou solicitou o estudo.
+   hipotético adotado, decidiria se recomenda o produto como apoio ao ensino. Nenhuma
+   escola real contratou ou solicitou o estudo.
 
 A Khan Academy **não é o requisitante**: não houve contato formal nem solicitação da
 organização. Ela é fornecedora/mantenedora do produto observado e possível destinatária
@@ -191,11 +190,16 @@ caso a equipe obtenha participantes com consentimento e condições adequadas.
 
 ## 5. Diagrama de contexto
 
-A Figura 1 representa atores, condições externas, interfaces e áreas funcionais
-observáveis. As caixas internas são agrupamentos da experiência do usuário, **não
-componentes da arquitetura interna**.
+O diagrama de contexto apresentado na Figura 1 mapeia o ecossistema no qual a avaliação se insere, contemplando quatro dimensões essenciais para a compreensão do sistema e de suas fronteiras:
 
-![Diagrama de contexto da Khan Academy: estudantes, professores, responsáveis, equipe avaliadora, ambientes externos e as interfaces web e móvel dentro da fronteira do produto.](../assets/img/diagrama-contexto-khan-academy.svg)
+1. **Atores externos:** Diferencia os usuários operacionais da plataforma (estudantes como usuários primários; professores e responsáveis como usuários de apoio) e os agentes da avaliação (a equipe avaliadora conduzindo a observação externa e a coordenação pedagógica como parte requisitante das decisões `D1` a `D4`).
+2. **Condições e dependências do ambiente:** Representa os fatores externos necessários para a execução observável (dispositivos móveis e computadores de mesa, navegadores homologados, restrições de conectividade móvel/Wi-Fi e tecnologias assistivas).
+3. **Fronteira observável do produto:** Delimita a aplicação Khan Academy sob uma abordagem externa (caixa-preta), abrangendo a interface web e os aplicativos móveis oficiais para Android e iOS, decomposta em áreas funcionais externas da experiência do usuário (e não módulos arquiteturais internos).
+4. **Fluxo da avaliação externa:** Destaca a observação não-intrusiva das métricas no cliente pela equipe avaliadora e a entrega do relatório de evidências para subsidiar a decisão pedagógica da coordenação.
+
+Entre os elementos que não farão parte da avaliação estão aqueles ligados a aspectos internos da plataforma, a qual a equipe de avaliação não tem acesso. A especificação detalhada do que está fora de escopo, assim como as justificativas por trás de cada exclusão, está no [documento de escopo](./escopo-da-avaliacao.md#4-elementos-fora-do-escopo-e-justificativas-dos-cortes).
+
+![Diagrama de Contexto](../assets/img/diagrama-contexto-khan-academy.svg)
 
 *Figura 1. Diagrama de contexto da Khan Academy para a avaliação. Fonte: Elaborada por: [Enzo Menali](https://github.com/menali17), com base em [S1] a [S9]*
 
@@ -218,26 +222,37 @@ sem autorização e qualquer afirmação de certificação do produto.
 
 ## Referências
 
+<a id="s1"></a>
 > **[S1] KHAN ACADEMY.** *About*. Disponível em: <https://www.khanacademy.org/about>. Data de atualização não informada. Acesso em: 18 out. 2026.
 
+<a id="s2"></a>
 > **[S2] KHAN ACADEMY.** *Khan Academy for Teachers*. Disponível em: <https://www.khanacademy.org/teachers>. Data de atualização não informada. Acesso em: 18 out. 2026.
 
+<a id="s3"></a>
 > **[S3] KHAN ACADEMY.** *Downloads*. Disponível em: <https://www.khanacademy.org/downloads>. Data de atualização não informada. Acesso em: 18 out. 2026.
 
+<a id="s4"></a>
 > **[S4] KHAN ACADEMY HELP CENTER.** *Which browsers are supported?* Disponível em: <https://support.khanacademy.org/hc/en-us/articles/204795660-Which-browsers-are-supported>. Atualizado em: 31 jan. 2023. Acesso em: 18 out. 2026.
 
+<a id="s5"></a>
 > **[S5] KHAN ACADEMY HELP CENTER.** *What is my Learner Home page, and what can I do there?* Disponível em: <https://support.khanacademy.org/hc/en-us/articles/360030629852-What-is-my-Learner-Home-page-and-what-can-I-do-there>. Atualizado em: 13 ago. 2024. Acesso em: 18 out. 2026.
 
+<a id="s6"></a>
 > **[S6] KHAN ACADEMY HELP CENTER.** *How can I edit my account settings?* Disponível em: <https://support.khanacademy.org/hc/en-us/articles/204707040-How-can-I-edit-my-account-settings>. Atualizado em: 9 jun. 2025. Acesso em: 18 out. 2026.
 
+<a id="s7"></a>
 > **[S7] KHAN ACADEMY HELP CENTER.** *How do I create or link child accounts to my parent account?* Disponível em: <https://support.khanacademy.org/hc/en-us/articles/202262994-How-do-I-create-or-link-child-accounts-to-my-parent-account>. Atualizado em: 3 fev. 2026. Acesso em: 18 out. 2026.
 
+<a id="s8"></a>
 > **[S8] KHAN ACADEMY HELP CENTER.** *Khan Academy's accessibility settings*. Disponível em: <https://support.khanacademy.org/hc/en-us/articles/360015623271-Khan-Academy-s-accessibility-settings>. Atualizado em: 20 ago. 2025. Acesso em: 18 out. 2026.
 
+<a id="s9"></a>
 > **[S9] KHAN ACADEMY HELP CENTER.** *Can Khan Academy be used with a screen reader or read-aloud tools?* Disponível em: <https://support.khanacademy.org/hc/en-us/articles/360015349472-Can-Khan-Academy-be-used-with-a-screen-reader-or-read-aloud-tools>. Atualizado em: 20 jul. 2026. Acesso em: 18 out. 2026.
 
+<a id="s10"></a>
 > **[S10] KHAN ACADEMY HELP CENTER.** *How do I set up a new user account?* Disponível em: <https://support.khanacademy.org/hc/en-us/articles/202487450-How-do-I-set-up-a-new-user-account>. Atualizado em: 7 nov. 2025. Acesso em: 18 out. 2026.
 
+<a id="s11"></a>
 > **[S11] KHAN ACADEMY HELP CENTER.** *What reports can I use as a parent to monitor my child's activity on Khan Academy?* Disponível em: <https://support.khanacademy.org/hc/en-us/articles/36120531499789-What-reports-can-I-use-as-a-parent-to-monitor-my-child-s-activity-on-Khan-Academy>. Atualizado em: 9 jun. 2025. Acesso em: 18 out. 2026.
 
 ## Histórico de versões

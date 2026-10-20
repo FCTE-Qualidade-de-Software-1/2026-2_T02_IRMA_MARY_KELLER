@@ -25,7 +25,7 @@ O requisitante da avaliação é a coordenação da escola do cenário da seçã
 | `D3` | Planejar uma aula introdutória sobre como usar a plataforma, ou dispensá-la | Professores | Facilidade de aprendizado dos fluxos principais por um aluno novo |
 | `D4` | Definir objetivos, questões e métricas da Fase 2 e o rigor de cada parte da avaliação | Equipe avaliadora | Prioridades da [seção 2.3](#priorizacao) e rastreabilidade da [seção 4](#rastreabilidade) |
 
-<p style="text-align: center;"><em>Tabela 1. Decisões apoiadas pela avaliação.</em><br>Elaborada por: <a href="https://github.com/luisa12ll">Luisa de Souza</a></p>
+*Tabela 1. Decisões apoiadas pela avaliação. Fonte: Elaborada por: [Luisa de Souza](https://github.com/luisa12ll)*
 
 A equipe de produto da Khan Academy é uma destinatária potencial dos achados, que podem indicar correções prioritárias. Como não há contato formal com a empresa, ela não é tratada como tomadora de decisão nesta avaliação.
 
@@ -50,11 +50,25 @@ A avaliação usa o modelo de qualidade de produto da **ISO/IEC 25010:2011**. Es
 | Usabilidade: apreensibilidade | Capacidade de interação: aprendizibilidade | Característica renomeada |
 | Usabilidade: acessibilidade | Capacidade de interação: inclusividade e assistência ao usuário | Subcaracterística dividida em duas |
 
-<p style="text-align: center;"><em>Tabela 2. Correspondência entre os nomes da ISO/IEC 25010:2011 e da ISO/IEC 25010:2023 para as características selecionadas.</em><br>Elaborada por: <a href="https://github.com/luisa12ll">Luisa de Souza</a>, com base em ISO/IEC 25010:2011 e ISO/IEC 25010:2023</p>
+*Tabela 2. Correspondência entre os nomes da ISO/IEC 25010:2011 e da ISO/IEC 25010:2023 para as características selecionadas. Fonte: Elaborada por: [Luisa de Souza](https://github.com/luisa12ll), com base em ISO/IEC 25010:2011 e ISO/IEC 25010:2023*
 
 Os termos em português da versão de 2011 seguem a tradução da ABNT; os da versão de 2023 são tradução da equipe.
 
-### 2.2 Características, subcaracterísticas e normas
+### 2.2 Adaptação do modelo de qualidade e representação gráfica
+
+O modelo geral da ISO/IEC 25010:2011 propõe uma estrutura abrangente voltada a qualquer produto de software. No entanto, uma avaliação externa (caixa-preta) focada na adoção da Khan Academy no contexto de escolas públicas requer uma adaptação deliberada. Um modelo genérico não reflete, por si só, os desafios de alunos que utilizam dispositivos móveis de baixo custo em conexões móveis instáveis, tampouco as limitações metodológicas de uma equipe avaliadora sem acesso ao código-fonte proprietário da plataforma.
+
+Dessa forma, a decisão de adaptar o modelo sustenta-se nas seguintes razões práticas e autoevidentes:
+
+1. **Poda e exclusão justificada:** Características que exigem acesso interno ao código-fonte proprietário (*Manutenibilidade*), testes de intrusão não autorizados em ambiente de terceiros (*Segurança*), observação temporal contínua e extensa (*Confiabilidade*) ou auditoria de matriz curricular (*Adequação Funcional*) foram descartadas por inviabilidade técnica ou desconexão com a avaliação externa do software (detalhadas na Seção 2.6).
+2. **Foco nas subcaracterísticas críticas:** Das características mantidas, foram selecionadas estritamente aquelas que respondem às decisões concretas `D1` a `D3`. Em Usabilidade, por exemplo, o escopo prioriza *Acessibilidade* (inclusão de alunos com baixa visão ou usuários de tecnologias assistivas) e *Apreensibilidade* (capacidade de estudo autônomo sem exigir sobrecarga de orientação do professor), deixando de fora aspectos de estética visual ou operabilidade genérica.
+3. **Refinamento operacional para a Khan Academy:** Cada subcaracterística ganha significado prático no contexto do produto, conectando-se diretamente aos atores e às decisões apoiadas, conforme estruturado na Figura 1.
+
+![Modelo de Qualidade](../assets/img/modelo_qualidade.svg)
+
+*Figura 1. Modelo de qualidade adaptado da ISO/IEC 25010:2011 para a avaliação da Khan Academy. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
+
+### 2.3 Características, subcaracterísticas e normas
 
 A Tabela 3 lista as três características e as cinco subcaracterísticas selecionadas, com a norma que define cada uma e a norma que fornecerá as medidas.
 
@@ -66,11 +80,11 @@ A Tabela 3 lista as três características e as cinco subcaracterísticas seleci
 | Usabilidade | Apreensibilidade | Facilidade de um aluno novo aprender a encontrar um conteúdo, assistir a uma aula e resolver um exercício | ISO/IEC 25010:2011 | ISO/IEC 25023:2016, medidas de apreensibilidade |
 | Usabilidade | Acessibilidade | Uso dos fluxos principais com leitor de tela, ampliação e alto contraste | ISO/IEC 25010:2011 | ISO/IEC 25023:2016, medidas de acessibilidade |
 
-<p style="text-align: center;"><em>Tabela 3. Características e subcaracterísticas selecionadas, com as normas de referência.</em><br>Elaborada por: <a href="https://github.com/luisa12ll">Luisa de Souza</a>, com base em ISO/IEC 25010:2011 e ISO/IEC 25023:2016</p>
+*Tabela 3. Características e subcaracterísticas selecionadas, com as normas de referência. Fonte: Elaborada por: [Luisa de Souza](https://github.com/luisa12ll), com base em ISO/IEC 25010:2011 e ISO/IEC 25023:2016*
 
 <a id="priorizacao"></a>
 
-### 2.3 Método de priorização
+### 2.4 Método de priorização
 
 As subcaracterísticas foram priorizadas por uma matriz ponderada com três critérios, cada um pontuado de 1 (baixo) a 3 (alto):
 
@@ -88,7 +102,7 @@ A pontuação é `P = 3 × Impacto + 2 × Risco + 1 × Viabilidade`, com máximo
 | Acessibilidade | 3 | 2 | 2 | 15 | Alta |
 | Apreensibilidade | 2 | 2 | 2 | 12 | Média |
 
-<p style="text-align: center;"><em>Tabela 4. Matriz de priorização das subcaracterísticas.</em><br>Elaborada por: <a href="https://github.com/luisa12ll">Luisa de Souza</a></p>
+*Tabela 4. Matriz de priorização das subcaracterísticas. Fonte: Elaborada por: [Luisa de Souza](https://github.com/luisa12ll)*
 
 Razões das notas que mais pesam no resultado:
 
@@ -99,7 +113,7 @@ Razões das notas que mais pesam no resultado:
 
 Agregando por característica, a ordem de prioridade é: (1) eficiência de desempenho, (2) portabilidade e (3) usabilidade, em que a acessibilidade tem prioridade alta e a apreensibilidade, média.
 
-### 2.4 Trade-offs e consequências da priorização
+### 2.5 Trade-offs e consequências da priorização
 
 A prioridade define o rigor de cada parte da avaliação, conforme previsto na ISO/IEC 25040:
 
@@ -107,7 +121,7 @@ A prioridade define o rigor de cada parte da avaliação, conforme previsto na I
 - **Eficiência no aplicativo móvel.** Se as ferramentas para medir consumo no aplicativo não estiverem disponíveis, a utilização de recursos fica restrita ao navegador. A decisão `D1` perde parte da comparação entre formas de acesso, e essa limitação será declarada.
 - **Acessibilidade automática contra manual.** Verificar todos os fluxos com leitor de tela seria mais completo, mas custa tempo. A verificação manual fica nos fluxos principais definidos no escopo da avaliação, e o restante é coberto por ferramenta automática.
 
-### 2.5 Características não selecionadas
+### 2.6 Características não selecionadas
 
 A Tabela 5 registra por que as demais características da ISO/IEC 25010:2011 ficaram de fora.
 
@@ -119,23 +133,23 @@ A Tabela 5 registra por que as demais características da ISO/IEC 25010:2011 fic
 | Segurança | Testes de segurança em um sistema de terceiros exigem autorização do responsável pelo sistema |
 | Manutenibilidade | Exige acesso ao código-fonte, que é proprietário |
 
-<p style="text-align: center;"><em>Tabela 5. Características da ISO/IEC 25010:2011 não selecionadas e motivo.</em><br>Elaborada por: <a href="https://github.com/luisa12ll">Luisa de Souza</a></p>
+*Tabela 5. Características da ISO/IEC 25010:2011 não selecionadas e motivo. Fonte: Elaborada por: [Luisa de Souza](https://github.com/luisa12ll)*
 
 <a id="justificativa"></a>
 
 ## 3. Justificativa da seleção
 
-**Eficiência de desempenho.** A Khan Academy entrega boa parte do conteúdo em vídeo e exercícios interativos, que dependem de rede e de processamento no aparelho. Para o aluno do cenário, a lentidão é a primeira barreira: se a aula não carrega no intervalo disponível ou consome o pacote de dados, o aluno desiste antes de chegar ao conteúdo. O comportamento temporal e a utilização de recursos respondem diretamente à decisão `D1`, e são observáveis de fora, com o navegador e o aparelho, sem acesso ao código.
+A tríade de características selecionadas alinha-se estritamente à viabilidade técnica de uma avaliação externa e ao cenário da escola pública:
 
-**Portabilidade.** O mesmo aluno pode alternar entre o celular, o computador da escola e o de casa, com sistemas operacionais e navegadores diferentes. A adaptabilidade verifica se os fluxos principais continuam funcionando nesses ambientes sem que o aluno precise instalar ou configurar nada. Responde à parte de `D1` sobre a forma de acesso. Instalabilidade e substituibilidade foram descartadas porque a versão web não é instalada e a substituição de outro produto não faz parte do propósito.
-
-**Usabilidade.** A acessibilidade decide se alunos com baixa visão conseguem estudar na plataforma, base da decisão `D2`, e conversa com os perfis de alunos levantados pelo grupo. A apreensibilidade indica se o aluno consegue começar sozinho ou se o professor precisa reservar tempo de aula para ensinar a usar a plataforma, base da decisão `D3`. As demais subcaracterísticas da usabilidade, como operabilidade e estética da interface, ficaram de fora para manter a avaliação dentro do prazo.
+- **Eficiência de desempenho:** Como a Khan Academy baseia-se em vídeo e interação dinâmica, a restrição de banda e memória é o primeiro obstáculo a superar. Medir tempos e tráfego subsidia a decisão `D1` quanto à viabilidade prática de estudo em redes móveis sem consumir excessivamente a franquia.
+- **Portabilidade:** Ao focar em adaptabilidade, assegura-se que a plataforma mantenha integridade visual e funcional em múltiplos navegadores e formatos de tela (computadores escolares compartilhados vs. smartphones pessoais), respondendo à recomendação de forma de acesso de `D1`.
+- **Usabilidade:** Ao priorizar acessibilidade e apreensibilidade, atende-se às decisões `D2` e `D3`, garantindo inclusão de alunos com deficiência visual e avaliando a necessidade de suporte pedagógico inicial para o uso autônomo da ferramenta.
 
 <a id="rastreabilidade"></a>
 
 ## 4. Rastreabilidade: característica, interessado e justificativa
 
-A Tabela 6 liga cada subcaracterística selecionada aos interessados que dependem dela, à justificativa e à decisão que apoia. Os identificadores `R1` a `R5` são os requisitos de avaliação; na Fase 2, cada objetivo GQM deve citar o requisito de que deriva (critério [`F2-C11`](../criterios/fase2.md)). A coluna de objetivo GQM é uma proposta; a redação final dos objetivos fica para a Fase 2.
+A Tabela 6 liga cada subcaracterística selecionada aos interessados que dependem dela, à justificativa e à decisão que apoia. Os identificadores `R1` a `R5` são os requisitos de avaliação que orientam a elaboração dos objetivos de medição no planejamento da avaliação. A coluna de objetivo GQM é uma proposta inicial; a redação final dos objetivos será consolidada nas etapas posteriores do estudo.
 
 | ID | Característica: subcaracterística | Prioridade | Interessados | Justificativa | Decisão | Objetivo GQM proposto |
 |---|---|---|---|---|---|---|
@@ -145,19 +159,19 @@ A Tabela 6 liga cada subcaracterística selecionada aos interessados que depende
 | `R4` | Usabilidade: acessibilidade | Alta | Estudantes com baixa visão ou que usam leitor de tela; professores; responsáveis | Uma barreira de acessibilidade bloqueia o uso por completo para esse grupo | `D2` | `G3` Usabilidade |
 | `R5` | Usabilidade: apreensibilidade | Média | Estudantes novos; professores | Se o aluno não aprende a usar sozinho, o professor precisa planejar uma aula de introdução | `D3` | `G3` Usabilidade |
 
-<p style="text-align: center;"><em>Tabela 6. Rastreabilidade entre requisitos de avaliação, interessados, justificativas e decisões.</em><br>Elaborada por: <a href="https://github.com/luisa12ll">Luisa de Souza</a></p>
+*Tabela 6. Rastreabilidade entre requisitos de avaliação, interessados, justificativas e decisões. Fonte: Elaborada por: [Luisa de Souza](https://github.com/luisa12ll)*
 
 A equipe avaliadora é interessada em todos os requisitos, por meio da decisão `D4`, e por isso não aparece linha a linha.
 
 ## Referências
 
-INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25010:2011**: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - System and software quality models. Genebra: ISO, 2011.
+> INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25010:2011**: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - System and software quality models. Genebra: ISO, 2011.
 
-INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25010:2023**: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - Product quality model. Genebra: ISO, 2023.
+> INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25010:2023**: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - Product quality model. Genebra: ISO, 2023.
 
-INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25023:2016**: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - Measurement of system and software product quality. Genebra: ISO, 2016.
+> INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25023:2016**: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - Measurement of system and software product quality. Genebra: ISO, 2016.
 
-INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25040:2011**: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - Evaluation process. Genebra: ISO, 2011.
+> INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25040:2011**: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - Evaluation process. Genebra: ISO, 2011.
 
 ## Histórico de versões
 
