@@ -6,177 +6,180 @@
 
 ### 1.1 Foco da avaliação
 
-O escopo desta avaliação é centrado na **experiência do usuário (UX)**, analisando a qualidade do produto de software da [Khan Academy](https://pt.khanacademy.org/) a partir de aspectos observáveis de **usabilidade**, **portabilidade** e **eficiência de desempenho (performance)**. 
+A avaliação examina a qualidade externa da [Khan Academy](https://pt.khanacademy.org/) nas características **Eficiência de desempenho**, **Portabilidade** e **Usabilidade**, conforme as subcaracterísticas selecionadas nos [Requisitos de avaliação](requisitos-de-avaliacao.md): comportamento temporal, utilização de recursos, adaptabilidade, acessibilidade e apreensibilidade.
 
-A avaliação adota o modelo da **ISO/IEC 25010:2011**, concentrando-se nas subcaracterísticas selecionadas e priorizadas no documento de [Requisitos de avaliação](requisitos-de-avaliacao.md): **apreensibilidade**, **acessibilidade**, **adaptabilidade**, **comportamento temporal** e **utilização de recursos**.
+O objeto é exclusivamente a **plataforma web acessada por navegadores em computadores**. A equipe observa comportamentos disponíveis pela interface pública, sem acesso ao código-fonte, à infraestrutura de servidores ou a dados internos. Aplicativos nativos e navegadores de celulares não fazem parte da avaliação.
 
-A análise restringe-se exclusivamente à **plataforma web** da Khan Academy acessada por navegadores, examinando como a aplicação se comporta quando executada sob restrições severas de hardware e quando utilizada por pessoas que dependem de tecnologias assistivas.
+Os perfis de estudantes e as condições de uso que fundamentam esse recorte estão descritos em [Produto e contexto](produto-e-contexto.md). O escopo não pressupõe que a plataforma atende a esses perfis; ele define como produzir evidências sobre as barreiras e os comportamentos observáveis relevantes.
 
-### 1.2 Módulos e fluxos principais avaliados
+### 1.2 Fluxos avaliados
 
-A avaliação delimita os ensaios a três fluxos principais de interação do usuário na plataforma web:
+Os ensaios utilizam quatro fluxos identificados de `FL1` a `FL4`. Os três primeiros representam a jornada central de estudo e recebem maior profundidade. O quarto é secundário e serve para verificar a consulta ao próprio progresso.
 
-1. **Realização de cursos**:
-   - Autenticação e acesso à página do curso;
-   - Navegação na árvore curricular e seleção de unidades de ensino;
-   - Assistir a videoaulas no player multimídia (reprodução, pausa, ajuste de velocidade, legendas e transcrição);
-   - Resolução de exercícios e atividades práticas (inserção de respostas textuais/numéricas, consulta a dicas pedagógicas e envio para verificação imediata com cálculo de domínio).
-2. **Acompanhamento de métricas pelo aluno**:
-   - Acesso ao painel do estudante (*Dashboard* do aluno);
-   - Consulta a pontos de energia acumulados, medalhas e domínio de habilidades por disciplina;
-   - Histórico de tempo de estudo e lições completadas;
-   - Consulta a recomendações personalizadas de estudo sugeridas pela plataforma.
-3. **Acompanhamento feito pelos pais e responsáveis**:
-   - Acesso ao painel dos pais (*Parent Dashboard*);
-   - Vinculação e alternância entre perfis de filhos dependentes;
-   - Consulta a relatórios consolidados de tempo semanal de estudo, evolução curricular e diagnóstico de tópicos com dificuldades ou facilidades.
-
-A Tabela 1 detalha os módulos, os fluxos correspondentes, as entradas do usuário e os comportamentos observáveis esperados.
-
-| Módulo | Fluxo principal | Entradas do usuário | Comportamentos e saídas esperadas |
+| ID | Módulo | Tarefa delimitada | Saída observável |
 |---|---|---|---|
-| **Cursos (Vídeos)** | Assistir a aulas e vídeos expositivos | Seleção da aula, comandos de reprodução de vídeo, ativação de legendas/transcrição | Carregamento fluido do vídeo, sincronia de áudio/legendas e registro de progresso da aula |
-| **Cursos (Exercícios)** | Resolução de questões e lições interativas | Preenchimento de resposta, solicitação de dicas, envio para conferência | Validação da resposta, exibição de feedback imediato e atualização dos pontos de domínio |
-| **Painel do Aluno** | Acompanhamento de progresso pelo estudante | Navegação entre abas de perfil, seleção de filtros de disciplinas e histórico | Exibição de gráficos de domínio, medalhas conquistadas e tempo de dedicação |
-| **Painel dos Pais** | Acompanhamento do desempenho dos filhos | Seleção da conta dependente, consulta a relatórios temporais e por disciplina | Relatório consolidado de horas estudadas, nível de domínio e recomendações de apoio |
+| `FL1` | Navegação em cursos | Localizar uma disciplina, abrir um curso e selecionar uma unidade ou aula | Conteúdo selecionado apresentado pela interface |
+| `FL2` | Videoaulas | Iniciar e pausar uma videoaula e, quando disponíveis, acionar legenda ou transcrição | Estado do reprodutor e recursos selecionados apresentados ao usuário |
+| `FL3` | Exercícios | Informar uma resposta, solicitar uma dica quando disponível e enviar a resposta | Retorno da plataforma sobre a resposta e continuidade da atividade |
+| `FL4` | Progresso do estudante | Abrir a área do estudante e consultar o progresso exibido pela plataforma | Informações de progresso disponíveis para a própria conta de teste |
 
-*Tabela 1. Módulos e fluxos principais avaliados na Khan Academy. Elaborada por: [José Augusto](https://github.com/JAugustoM)*
+*Tabela 1. Fluxos e saídas observáveis incluídos na avaliação. Fonte: Elaborada por: [Enzo Menali](https://github.com/menali17)*
+
+A autenticação é uma precondição dos ensaios, não um objeto de avaliação. Será utilizada uma conta de teste controlada pela equipe, sem dados pessoais de estudantes menores de idade. O painel de pais ou responsáveis não integra os fluxos principais porque acrescentaria outro papel, vinculação entre contas e tarefas que não são necessárias para avaliar a jornada central do estudante.
 
 <a id="ambientes-de-teste"></a>
 
-## 2. Ambientes de teste e infraestrutura experimental
+## 2. Ambientes de teste
 
-### 2.1 Plataforma e motores de renderização web
+### 2.1 Navegadores e motores de renderização
 
-A avaliação é executada **estritamente em navegadores web**, descartando aplicativos nativos para dispositivos móveis ou desktop. Para cobrir os principais os navegadores de maior uso, os testes serão realizados nos navegadores de referência das três principais *engines* (motores de renderização) do mercado:
+A adaptabilidade será observada nos três motores de renderização contemplados pela matriz de ambientes:
 
-- **Blink**: testado via **Google Chrome** (*engine* compartilhado com Microsoft Edge, Brave, Opera e Chromium);
-- **Gecko**: testado via **Mozilla Firefox**;
-- **WebKit**: testado via **Apple Safari**.
+- **Blink**, por meio do Google Chrome;
+- **Gecko**, por meio do Mozilla Firefox;
+- **WebKit**, por meio do Apple Safari.
 
-### 2.2 Sistemas operacionais avaliados
+As versões exatas serão registradas na coleta. A escolha de versões estáveis vigentes evita fixar antecipadamente números que podem mudar antes dos ensaios.
 
-Para averiguar a adaptabilidade da aplicação web em múltiplos ecossistemas, foram selecionados **seis sistemas operacionais**:
+### 2.2 Matriz direcionada de ambientes
 
-1. **Windows**: principal sistema operacional comercial em computadores pessoais;
-2. **MacOS**: sistema operacional proprietário representativo do ecossistema Apple e do motor WebKit;
-3. **Ubuntu**: distribuição Linux baseada em Debian, amplamente empregada no meio acadêmico e institucional;
-4. **Fedora**: distribuição Linux de base Red Hat, representativa de ambientes corporativos;
-5. **Arch Linux**: distribuição Linux independente com modelo de lançamento contínuo (*rolling release*);
-6. **OpenSUSE**: distribuição Linux de base SUSE, tradicional no mercado europeu e em servidores/estações de trabalho.
-7. **Android**: sistema operacional *mobile* baseado no kernel Linux, representando os usuários de dispositivos móveis.
+A Tabela 2 define combinações com finalidade específica. A avaliação não executará o produto cartesiano de todos os navegadores, sistemas, fluxos e técnicas, pois isso reduziria a profundidade e a repetibilidade dentro do calendário disponível.
 
-A inclusão de quatro distribuições Linux livres (Ubuntu, Fedora, Arch e OpenSUSE), ao lado dos dois sistemas proprietários (Windows e MacOS), visa averiguar a portabilidade da Khan Academy em sistemas de código aberto frequentemente adotados em escolas públicas, universidades e por usuários que buscam alternativas livres de licenciamento.
+| ID | Sistema operacional | Navegador | Finalidade principal | Tecnologia assistiva |
+|---|---|---|---|---|
+| `A1` | Windows | Google Chrome | Ambiente de referência para eficiência de desempenho, adaptabilidade e acessibilidade | NVDA e navegação por teclado |
+| `A2` | Windows | Mozilla Firefox | Comparação de adaptabilidade com o motor Gecko | Navegação por teclado |
+| `A3` | macOS | Apple Safari | Adaptabilidade no motor WebKit e acessibilidade no ecossistema Apple | VoiceOver e navegação por teclado |
+| `A4` | Ubuntu LTS | Mozilla Firefox | Adaptabilidade em sistema livre e acessibilidade no Linux | Orca e navegação por teclado |
 
-### 2.3 Máquinas virtuais com restrição de hardware
+*Tabela 2. Matriz direcionada de ambientes e finalidade de cada combinação. Fonte: Elaborada por: [Enzo Menali](https://github.com/menali17)*
 
-Para isolar variáveis externas e simular as condições de alunos de escolas públicas que utilizam computadores de entrada ou máquinas antigas, **todos os testes serão realizados exclusivamente em Máquinas Virtuais (VMs) com restrição intencional de memória RAM e núcleos de CPU**:
+Windows e macOS serão executados em computadores reais disponíveis à equipe. O Ubuntu poderá ser executado em computador real ou máquina virtual; a modalidade e os recursos alocados serão registrados antes da coleta. Essa diferença será considerada na interpretação, sem comparar diretamente consumo de recursos entre máquinas distintas.
 
-- **Hipervisor padronizado**: KVM/QEMU (Gnome Boxes);
-- **Memória RAM alocada**: limite de 4 GB por máquina virtual;
-- **Processamento alocado**: limite de 6 vCPUs por máquina virtual;
-- **Condições de aceleração gráfica**: emulação de vídeo padrão do hipervisor sem GPU física dedicada.
+### 2.3 Ambiente de referência para desempenho
 
-### 2.4 Testes com leitores de tela
+O cenário da escola pública motiva a observação de comportamento temporal e utilização de recursos, pois limitações de processamento, memória ou conectividade podem impedir a execução dos fluxos de estudo. Para tornar essa preocupação verificável sem presumir as condições de todas as escolas, os ensaios serão concentrados em um ambiente de referência documentado e em dois perfis de rede reproduzíveis.
 
-Como parte da avaliação de acessibilidade da experiência do usuário, a plataforma web será submetida a testes operacionais práticos com tecnologias assistivas de leitura de tela, associados à navegação estrita por teclado:
+Comportamento temporal e utilização de recursos serão medidos somente no ambiente `A1`. Antes da coleta serão registrados processador, memória, sistema operacional, versão do navegador, resolução e processos relevantes em segundo plano.
 
-- **Windows**: testes com o leitor de tela **NVDA**;
-- **MacOS**: testes com o leitor de tela nativo **VoiceOver**;
-- **Linux (Ubuntu, Fedora, Arch, OpenSUSE)**: testes com o leitor de tela nativo **Orca**.
+Cada tarefa dos fluxos `FL1` a `FL3` terá uma execução de aquecimento, não contabilizada, e cinco repetições válidas em cada condição de rede. Serão usadas duas condições: conexão sem limitação artificial e perfil controlado de conexão limitada. A largura de banda, a latência e eventual perda de pacotes do perfil limitado serão fixadas no plano de medição e registradas junto às evidências. A conta, o conteúdo, a sequência de passos e a configuração do navegador serão mantidos constantes entre repetições. As cinco repetições são um critério metodológico da equipe para reduzir o peso de ocorrências isoladas, não um mínimo prescrito pelas normas citadas.
+
+Esse desenho permite comparação interna sob condições controladas, mas não transforma o computador utilizado em representante de todos os equipamentos de escolas públicas.
+
+### 2.4 Acessibilidade e apreensibilidade
+
+Os fluxos `FL1` a `FL3` serão percorridos manualmente com teclado e leitores de tela nas combinações `A1`, `A3` e `A4`. Uma inspeção automatizada baseada nas WCAG será usada como apoio nas mesmas páginas, sem substituir a verificação de que as tarefas podem ser executadas com tecnologia assistiva.
+
+A apreensibilidade será observada nos fluxos `FL1` a `FL3`, no ambiente `A1`, com três a cinco participantes adultos que declarem não ter experiência anterior com a Khan Academy. Serão registrados conclusão da tarefa, erros observáveis, pedidos de ajuda e percepção relatada ao final. Os participantes serão identificados apenas por códigos e deverão consentir com a atividade. A quantidade é uma escolha da equipe compatível com uma investigação exploratória, não uma amostra estatística. Se a equipe não conseguir recrutar a amostra planejada, não será apresentada conclusão sobre estudantes reais; a inspeção da equipe será identificada como evidência exploratória.
 
 <a id="profundidade"></a>
 
 ## 3. Profundidade da avaliação
 
-A profundidade estabelece o nível de detalhe técnico e o tipo de observação empregado em cada subcaracterística. A avaliação é conduzida sob a modalidade **caixa-preta (*black-box*)**, fundamentada na observação de comportamentos externos e na medição instrumental em ambiente virtualizado controlado.
+A avaliação é externa e de caixa-preta. A Tabela 3 relaciona cada subcaracterística à profundidade planejada e às evidências que deverão permitir reprodução e auditoria dos resultados.
 
-A lista de características que serão abrangidas nos testes, assim como as subcaracteristicas escolhidas e a justificativa por trás da seleção de cada uma podem ser vistas no [documento de requisitos de avaliação](requisitos-de-avaliacao.md).
+| Subcaracterística | Objetos e ambientes | Profundidade planejada | Evidências previstas |
+|---|---|---|---|
+| Comportamento temporal | `FL1` a `FL3` em `A1` | Uma execução de aquecimento e cinco repetições válidas por tarefa e condição de rede | Marcações de início e fim, exportações de rede, configuração do perfil e planilha de resultados brutos |
+| Utilização de recursos | `FL1` a `FL3` em `A1` | Cinco repetições com a mesma conta e conteúdo, registrando os recursos definidos no plano de medição | Registros do navegador ou sistema operacional, configuração do computador e planilha de resultados brutos |
+| Adaptabilidade | `FL1` a `FL4` em `A1` a `A4` | Execução funcional dirigida em resoluções de referência de 1366 × 768 e 1920 × 1080, sem alterar o produto | Lista de verificação por ambiente, capturas e descrição de divergências reproduzíveis |
+| Acessibilidade | `FL1` a `FL3` em `A1`, `A3` e `A4` | Navegação por teclado e leitor de tela, complementada por inspeção automatizada nas páginas avaliadas | Roteiro executado, gravações ou capturas permitidas, achados manuais e relatório automatizado |
+| Apreensibilidade | `FL1` a `FL3` em `A1` | Três a cinco participantes adultos novos na plataforma, com tarefas e instruções iguais | Formulário anonimizado de execução, erros, ajuda solicitada e percepção relatada |
+
+*Tabela 3. Profundidade planejada e evidências por subcaracterística. Fonte: Elaborada por: [Enzo Menali](https://github.com/menali17)*
+
+As resoluções são condições experimentais definidas pela equipe para comparar uma área de visualização menor e outra maior em computadores. Elas não são apresentadas como estimativa da distribuição de telas da população. Métricas, fórmulas e critérios de julgamento serão especificados na Fase 2; este documento delimita os objetos, ambientes e intensidade dos ensaios.
 
 <a id="fora-do-escopo"></a>
 
 ## 4. Elementos fora do escopo e justificativas dos cortes
 
-A delimitação das fronteiras da avaliação é essencial para assegurar que a equipe atue dentro dos recursos humanos e do calendário disponível, sem perder o rigor científico. A Tabela 3 explicita os elementos que ficam fora do escopo e o racional detalhado de cada corte.
+A Tabela 4 explicita os cortes que mantêm a avaliação compatível com o propósito, a autorização e os recursos da equipe.
 
-| Elemento fora do escopo | Categoria | Racional e justificativa do corte |
+| Elemento fora do escopo | Categoria | Justificativa do corte |
 |---|---|---|
-| **Backend, servidores e código-fonte proprietário** | Arquitetura | O código de servidor e os bancos de dados da Khan Academy são fechados e proprietários. A avaliação externa não tem acesso privilegiado à infraestrutura de nuvem, limitando-se ao comportamento observável no navegador. |
-| **Segurança e testes de intrusão** | Característica | Varreduras de vulnerabilidade ativas ou testes de penetração violariam os termos de uso do serviço e a legislação aplicável. O foco do projeto é estritamente a experiência do usuário final. |
-| **Confiabilidade e tolerância a falhas do servidor** | Característica | Analisar a disponibilidade de infraestrutura ou recuperação de quedas demandaria testes de estresse não autorizados contra os servidores de produção da Khan Academy. |
-| **Qualidade e exatidão do conteúdo pedagógico** | Conteúdo | O objeto de estudo é a qualidade do software segundo as normas ISO/IEC 25000 (SQuaRE), e não a pertinência curricular ou didática do material instrucional. |
-| **APIs internas não documentadas** | Interface | A equipe atua exclusivamente pela interface gráfica acessível ao público geral, sem invadir rotas privadas de comunicação interna da aplicação. |
+| Aplicativos nativos para Android, iOS ou computadores | Plataforma | O objeto definido é a plataforma web; incluir aplicativos exigiria ferramentas, interfaces e procedimentos próprios |
+| Navegadores de celulares e tablets | Plataforma | A avaliação foi delimitada a navegadores em computadores para reduzir a matriz e aprofundar os ensaios selecionados |
+| Painéis de pais, responsáveis, professores e administradores | Fluxo | Esses painéis envolvem outros papéis, permissões e tarefas; a avaliação prioriza a jornada central do estudante |
+| Cadastro, recuperação de conta e autenticação como objeto | Fluxo | A conta de teste é apenas precondição para acessar os fluxos; segurança de identidade não integra as decisões apoiadas |
+| Backend, servidores, código-fonte e arquitetura interna | Arquitetura | A equipe não possui acesso privilegiado e não deve inferir estruturas internas a partir da interface pública |
+| APIs internas não documentadas | Interface | A avaliação utiliza somente interfaces públicas destinadas ao usuário final |
+| Testes ativos de segurança | Característica | Não há autorização do responsável pelo serviço para executar varreduras ou testes de intrusão |
+| Carga, estresse, disponibilidade e recuperação de servidores | Característica | Induzir carga ou falhas em produção não é autorizado e não é necessário para responder às decisões `D1` a `D3` |
+| Correção e qualidade pedagógica do conteúdo | Conteúdo | O objeto é a qualidade do produto de software, não a validade curricular ou didática das aulas |
+| Outros sistemas, navegadores e tecnologias assistivas | Ambiente | O recorte usa as combinações disponíveis e mais distintas para manter os ensaios reproduzíveis no prazo |
 
-<!-- | **Aplicativos móveis nativos (Android e iOS)** | Plataforma | A equipe optou por focar integralmente na plataforma web para viabilizar um ambiente homogêneo de máquinas virtuais com controle rígido de RAM e núcleos de CPU. Incluir emuladores ou dispositivos móveis físicos multiplicaria as variáveis experimentais além do tempo disponível na disciplina. | -->
-
-*Tabela 2. Elementos fora do escopo da avaliação e justificativa dos cortes. Elaborada por: [José Augusto](https://github.com/JAugustoM)*
+*Tabela 4. Elementos fora do escopo e justificativas dos cortes. Fonte: Elaborada por: [Enzo Menali](https://github.com/menali17)*
 
 <a id="limites-de-validade"></a>
 
 ## 5. Limites de validade dos resultados
 
-Para assegurar a validade científica das conclusões, é necessário explicitar os limites da amostra e das condições sob as quais as evidências serão colhidas. A Tabela 4 declara os parâmetros fixados e as restrições de generalização dos resultados.
+Os limites da Tabela 5 orientam a redação das conclusões e impedem generalizações que as evidências não sustentam.
 
-| Parâmetro | Condição adotada na avaliação | Limite de generalização dos resultados |
+| Dimensão | Condição adotada | Limite de generalização |
 |---|---|---|
-| **Versão da aplicação** | Plataforma web pública em português do Brasil acessível no domínio `pt.khanacademy.org` entre outubro e novembro de 2026 | As conclusões não são válidas para versões anteriores ou atualizações que alterem a arquitetura de front-end após as datas de coleta. |
-| **Período de coleta** | Entre outubro e novembro de 2026 | Métricas de tempo de resposta dependem das rotas de rede e do tráfego nos servidores da Khan Academy nas datas dos testes. |
-| **Amostra de hardware** | Máquinas virtuais com memória RAM restrita a 4 GB e processamento limitado a 6 vCPUs | Não reflete o desempenho em dispositivos com aceleradores gráficos físicos dedicados ou máquinas com hardware moderno abundante. |
-| **Perfis e tecnologias assistivas** | Roteiros operados com leitores de tela NVDA, VoiceOver e Orca, com navegação estrita por teclado | Não generaliza para outras tecnologias assistivas não testadas (ex.: leitores comerciais como JAWS, softwares proprietários de linha braille ou controle por movimento ocular). |
-| **Navegadores e versões** | Versões estáveis vigentes do Chrome, Firefox e Safari | Não permite generalizar para navegadores alternativos ou versões antigas não suportadas. |
+| Produto e período | Plataforma web pública em português do Brasil, nas datas registradas entre outubro e novembro de 2026 | Atualizações posteriores podem alterar os comportamentos observados |
+| Fluxos | `FL1` a `FL3` como fluxos centrais e `FL4` como fluxo secundário | Os resultados não representam módulos, papéis e tarefas excluídos |
+| Ambientes | Combinações `A1` a `A4`, nas versões registradas | Não representam outros sistemas, navegadores, versões antigas, aplicativos ou navegadores móveis |
+| Desempenho | Computador de referência `A1` e dois perfis de rede controlados | Não estima o desempenho de toda a população de computadores e conexões; permite apenas comparação nas condições registradas |
+| Tecnologias assistivas | NVDA, VoiceOver e Orca, com navegação por teclado | Não comprova conformidade integral com as WCAG nem representa todas as deficiências e tecnologias assistivas |
+| Apreensibilidade | Três a cinco adultos voluntários sem experiência prévia declarada | A amostra é exploratória e não representa estatisticamente estudantes de escolas públicas ou menores de idade |
+| Serviço externo | Infraestrutura de produção fora do controle da equipe | Variações de rota, carga do serviço e conteúdo disponível podem influenciar as medições |
 
-*Tabela 3. Limites de validade e restrições de generalização dos resultados. Elaborada por: [José Augusto](https://github.com/JAugustoM)*
+*Tabela 5. Condições e limites de validade dos resultados. Fonte: Elaborada por: [Enzo Menali](https://github.com/menali17)*
 
 <a id="ods"></a>
 
-## 6. Alinhamento com os Objetivos de Desenvolvimento Sustentável (ODS)
+## 6. Alinhamento com os Objetivos de Desenvolvimento Sustentável
 
-Os Objetivos de Desenvolvimento Sustentável (ODS) da [Agenda 2030 da ONU](https://brasil.un.org/pt-br/sdgs) orientam políticas para a erradicação da pobreza e redução das desigualdades. Sendo a Khan Academy uma ferramenta de educação pública e gratuita, a presente avaliação relaciona-se diretamente a dois ODS centrais: **ODS 4 (Educação de Qualidade)** e **ODS 10 (Redução das Desigualdades)**.
+A relação com os Objetivos de Desenvolvimento Sustentável (ODS) é contextual e indireta. A avaliação produz evidências técnicas sobre barreiras de acesso ao software, mas não mede resultados educacionais, renda ou os indicadores populacionais oficiais. A Tabela 6 explicita essa distinção.
 
-A Tabela 5 estabelece a correspondência entre os ODS selecionados, suas metas e indicadores oficiais (segundo a ONU e o IPEA), e o vínculo direto com o software e as características de qualidade avaliadas.
-
-| ODS | Meta oficial (ONU / IPEA) | Indicador oficial | Vínculo com a avaliação da Khan Academy |
+| ODS e meta | Indicador oficial | Pertinência para o software e evidência produzida | Limite da relação |
 |---|---|---|---|
-| **ODS 4: Educação de Qualidade** | **Meta 4.5**: Até 2030, eliminar as disparidades de gênero na educação e garantir a igualdade de acesso a todos os níveis de educação e formação profissional para os mais vulneráveis, incluindo as pessoas com deficiência, povos indígenas e as crianças em situação de vulnerabilidade. | **Indicador 4.5.1**: Índices de paridade (gênero, deficiência, renda) na participação e aproveitamento educacional. | Avaliar a **Usabilidade (Acessibilidade)** por meio de testes práticos com leitores de tela (NVDA, VoiceOver e Orca) e navegação por teclado nos fluxos de cursos e exercícios assegura que estudantes com deficiência visual possam utilizar a plataforma com autonomia, removendo barreiras tecnológicas de acesso à educação de qualidade. |
-| **ODS 10: Redução das Desigualdades** | **Meta 10.2**: Até 2030, empoderar e promover a inclusão social, econômica e política de todos, independentemente da idade, gênero, deficiência, raça, etnia, origem, religião, condição econômica ou outra. | **Indicador 10.2.1**: Proporção de pessoas em situação de vulnerabilidade com acesso efetivo a serviços essenciais e oportunidades de inclusão digital. | Avaliar a **Eficiência de Desempenho (Utilização de Recursos e Comportamento Temporal)** sob restrições severas de hardware em máquinas virtuais e a **Portabilidade (Adaptabilidade)** em quatro distribuições Linux livres (Ubuntu, Fedora, Arch e OpenSUSE) garante que a plataforma seja acessível a escolas públicas e famílias de baixa renda que operam computadores antigos ou de baixo custo, mitigando a exclusão digital decorrente de limitações econômicas. |
+| **ODS 4, Meta 4.5:** eliminar disparidades na educação e assegurar acesso aos níveis de ensino e à formação para grupos vulneráveis, incluindo pessoas com deficiência | **4.5.1:** índices de paridade entre grupos, como sexo, localização, renda e deficiência, aplicados aos indicadores educacionais que possam ser desagregados | Os ensaios de acessibilidade e apreensibilidade podem identificar barreiras técnicas enfrentadas ao localizar conteúdo, assistir a aulas e responder a exercícios | O estudo não calcula índices de paridade nem mede matrícula, permanência, conclusão ou aprendizagem |
+| **ODS 10, Meta 10.2:** promover a inclusão social, econômica e política de todas as pessoas, independentemente de características pessoais ou condição econômica | **10.2.1:** proporção de pessoas que vivem abaixo de 50% da renda mediana, por sexo, idade e pessoas com deficiência | Ensaios de eficiência e adaptabilidade em condições documentadas podem revelar barreiras técnicas associadas a computadores e conexões limitados | O estudo não mede renda ou inclusão social da população e não demonstra impacto causal da plataforma sobre o indicador |
 
-*Tabela 4. Alinhamento entre os Objetivos de Desenvolvimento Sustentável (ODS), metas oficiais e características avaliadas. Elaborada por: [José Augusto](https://github.com/JAugustoM)*
+*Tabela 6. Relação entre ODS, metas, indicadores e evidências da avaliação. Fonte: Elaborada por: [Enzo Menali](https://github.com/menali17), com base na ONU e no IPEA*
 
-A avaliação demonstra que subcaracterísticas técnicas de qualidade de software, como consumo comedido de memória e aderência a padrões de acessibilidade, constituem requisitos primordiais para a concretização de direitos sociais e educacionais universais.
+Assim, os ODS orientam a relevância social das perguntas de avaliação, enquanto as conclusões permanecem restritas à qualidade observada do software nas condições declaradas.
 
 <a id="rastreabilidade"></a>
 
-## 7. Rastreabilidade com critérios e requisitos da avaliação
+## 7. Rastreabilidade com requisitos e decisões
 
-A Tabela 6 apresenta a rastreabilidade entre os requisitos de avaliação definidos em [Requisitos de avaliação](requisitos-de-avaliacao.md) (`R1` a `R5`), os fluxos principais e as decisões apoiadas (`D1` a `D3`), assegurando a coerência interna do planejamento.
+A Tabela 7 liga os requisitos `R1` a `R5` aos fluxos, ambientes e decisões definidos nos [Requisitos de avaliação](requisitos-de-avaliacao.md).
 
-| ID | Requisito de avaliação | Subcaracterística | Fluxos contemplados | Decisão apoiada | Atendimento no escopo |
+| ID | Subcaracterística | Fluxos | Ambientes | Decisão | Atendimento no escopo |
 |---|---|---|---|---|---|
-| `R1` | Comportamento temporal aceitável | Eficiência de desempenho: comportamento temporal | Realização de cursos, painel do aluno e painel dos pais | `D1` | Medições de tempo de carregamento de páginas e envio de exercícios via DevTools |
-| `R2` | Consumo comedido de recursos | Eficiência de desempenho: utilização de recursos | Realização de cursos e dashboards | `D1` | Monitoramento contínuo de CPU e memória RAM nas VMs com restrição de hardware |
-| `R3` | Adaptabilidade multiplataforma | Portabilidade: adaptabilidade | Todos os fluxos principais | `D1` | Matriz de ensaios cruzada nos 6 sistemas operacionais e nos 3 motores de renderização web |
-| `R4` | Acessibilidade digital assistiva | Usabilidade: acessibilidade | Realização de cursos e acompanhamento | `D2` | Testes práticos com NVDA, VoiceOver e Orca, e auditoria automatizada WCAG |
-| `R5` | Apreensibilidade dos fluxos | Usabilidade: apreensibilidade | Realização de cursos e painéis | `D3` | Ensaios de tarefas com novos alunos e pais com foco em facilidade de aprendizado |
+| `R1` | Comportamento temporal | `FL1` a `FL3` | `A1` | `D1` | Cinco repetições por tarefa e condição de rede no ambiente de referência |
+| `R2` | Utilização de recursos | `FL1` a `FL3` | `A1` | `D1` | Registros instrumentais repetidos, associados à configuração do computador |
+| `R3` | Adaptabilidade | `FL1` a `FL4` | `A1` a `A4` | `D1` | Verificação dirigida nos três motores, três sistemas e duas resoluções de computador |
+| `R4` | Acessibilidade | `FL1` a `FL3` | `A1`, `A3` e `A4` | `D2` | Ensaios com NVDA, VoiceOver e Orca, teclado e inspeção automatizada complementar |
+| `R5` | Apreensibilidade | `FL1` a `FL3` | `A1` | `D3` | Tarefas com três a cinco participantes adultos novos na plataforma, com registros anonimizados |
 
-*Tabela 5. Rastreabilidade entre requisitos de avaliação, subcaracterísticas, fluxos e decisões apoiadas. Elaborada por: [José Augusto](https://github.com/JAugustoM)*
+*Tabela 7. Rastreabilidade entre requisitos, fluxos, ambientes e decisões. Fonte: Elaborada por: [Enzo Menali](https://github.com/menali17)*
 
 ## Referências
 
-> BRASIL. Instituto de Pesquisa Econômica Aplicada (IPEA). **Metas e Indicadores Nacionais dos Objetivos de Desenvolvimento Sustentável**. Brasília: IPEA, 2024. Disponível em: <https://www.ipea.gov.br/ods/>. Acesso em: 18 out. 2026.
+> BRASIL. Instituto de Pesquisa Econômica Aplicada (IPEA). **Metas e Indicadores Nacionais dos Objetivos de Desenvolvimento Sustentável**. Brasília: IPEA, 2024. Disponível em: <https://www.ipea.gov.br/ods/>. Acesso em: 20 out. 2026.
 
-> INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25010:2011**: Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models. Genebra: ISO, 2011.
+> INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25010:2011**: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - System and software quality models. Genebra: ISO, 2011. Disponível em: <https://www.iso.org/standard/35733.html>. Acesso em: 20 out. 2026.
 
-> INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25023:2016**: Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Measurement of system and software product quality. Genebra: ISO, 2016.
+> INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25023:2016**: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - Measurement of system and software product quality. Genebra: ISO, 2016. Disponível em: <https://www.iso.org/standard/35747.html>. Acesso em: 20 out. 2026.
 
-> INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25040:2011**: Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Evaluation process. Genebra: ISO, 2011.
+> INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25040:2011**: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - Evaluation process. Genebra: ISO, 2011. Disponível em: <https://www.iso.org/standard/35765.html>. Acesso em: 20 out. 2026.
 
-> ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU). **Transformando Nosso Mundo: A Agenda 2030 para o Desenvolvimento Sustentável**. Nova York: ONU, 2015. Disponível em: <https://brasil.un.org/pt-br/sdgs>. Acesso em: 18 out. 2026.
+> ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU). **Indicadores dos Objetivos de Desenvolvimento Sustentável: Meta 4.5**. Nova York: Divisão de Estatística das Nações Unidas. Disponível em: <https://unstats.un.org/sdgs/metadata/?Goal=4&Target=4.5>. Acesso em: 20 out. 2026.
 
-> WORLD WIDE WEB CONSORTIUM (W3C). **Web Content Accessibility Guidelines (WCAG) 2.1**. W3C Recommendation, 2018. Disponível em: <https://www.w3.org/TR/WCAG21/>. Acesso em: 18 out. 2026.
+> ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU). **Indicadores dos Objetivos de Desenvolvimento Sustentável: Meta 10.2**. Nova York: Divisão de Estatística das Nações Unidas. Disponível em: <https://unstats.un.org/sdgs/metadata/?Goal=10&Target=10.2>. Acesso em: 20 out. 2026.
+
+> WORLD WIDE WEB CONSORTIUM (W3C). **Web Content Accessibility Guidelines (WCAG) 2.1**. W3C Recommendation, 2018. Disponível em: <https://www.w3.org/TR/WCAG21/>. Acesso em: 20 out. 2026.
 
 ## Histórico de versões
 
-| Versão | Data | Descrição | Responsável | Revisor | Commit |
-|---|---|---|---|---|---|
-| 1.0 | 18/10/2026 | Criação do documento de escopo da avaliação: definição de objetos, fluxos (cursos, aluno e pais), ambientes em VMs restritas (6 SOs, 3 engines e leitores de tela), profundidade, cortes, limites de validade e alinhamento com ODS 4 e 10 | [José Augusto](https://github.com/JAugustoM) | | [3f89756](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/commit/3f897567cf857b0b82120baead52195847e65af2) |
-| 1.1 | 18/10/2026 | Padronização de tabelas e referências | [José Augusto](https://github.com/JAugustoM) | | [35604cf](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/pull/10/changes/35604cfb381bc90752a3d5679e6a073349d99179) |
+| Versão | Data | Descrição | Responsável | Revisor |
+|---|---|---|---|---|
+| 1.0 | 18/10/2026 | Criação do documento com objetos, ambientes, profundidade, cortes, limites de validade e alinhamento com ODS 4 e 10 | [José Augusto](https://github.com/JAugustoM) | |
+| 1.1 | 18/10/2026 | Padronização de tabelas e referências | [José Augusto](https://github.com/JAugustoM) | |
+| 1.2 | 20/10/2026 | Delimitação da plataforma web em computadores, matriz direcionada de ambientes, profundidade por subcaracterística e revisão do vínculo com os ODS | [Enzo Menali](https://github.com/menali17) | |
