@@ -4,7 +4,7 @@
 
 O diagrama GQM apresentado nesta página resume a estrutura lógica da especificação elaborada na Fase 2. Ele organiza a relação entre os **objetivos de medição (G)**, as **questões de avaliação (Q)** e as **métricas (M)**, mantendo os mesmos identificadores utilizados nas demais páginas da documentação.
 
-Essa representação facilita a leitura integrada da Fase 2 e ajuda a verificar se cada métrica está, de fato, vinculada a uma questão e se cada questão deriva de um objetivo coerente com os requisitos priorizados na Fase 1. Assim, o gráfico complementa as páginas de [objetivos](objetivos.md), [questões e hipóteses](questoes-hipoteses.md), [métricas](metricas.md) e [rastreabilidade](rastreabilidade.md).
+Essa representação facilita a leitura integrada da Fase 2 e ajuda a verificar se cada métrica está, de fato, vinculada a uma questão e se cada questão deriva de um objetivo coerente com os requisitos priorizados na Fase 1. Assim, o gráfico complementa as páginas de [objetivos](objetivos.md), [questões e hipóteses](questoes-hipoteses.md), [métricas](metricas.md) e [rastreabilidade](objetivos.md).
 
 ![Diagrama hierárquico GQM com G1 a G3, Q1 a Q5 e M1 a M5](../assets/img/diagrama-gqm.svg)
 

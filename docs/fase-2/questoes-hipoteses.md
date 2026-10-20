@@ -58,7 +58,7 @@ A [M5](metricas.md) indicará a proporção de participantes ou execuções em q
 
 Consideraremos uma hipótese **sustentada** quando a métrica correspondente indicar resultado compatível com o critério previamente definido para a questão, desde que haja dados suficientes e condições de coleta adequadas. Quando o resultado não atender ao critério estabelecido, a hipótese será considerada **não sustentada**. Na ausência de dados suficientes, de combinações viáveis ou de condições mínimas de avaliação, o resultado deverá ser registrado como **inconclusivo**.
 
-A interpretação final de cada hipótese dependerá da métrica calculada, das exclusões justificadas, do ambiente de teste, da amostra observada e dos critérios de julgamento definidos pela equipe. Esses elementos devem permanecer coerentes com a [rastreabilidade da Fase 2](rastreabilidade.md) e com os [critérios de julgamento](criterios-julgamento.md).
+A interpretação final de cada hipótese dependerá da métrica calculada, das exclusões justificadas, do ambiente de teste, da amostra observada e dos critérios de julgamento definidos pela equipe. Esses elementos devem permanecer coerentes com a [rastreabilidade da Fase 2](objetivos.md) e com os [critérios de julgamento](criterios-julgamento.md).
 
 ## Histórico de versões
 
