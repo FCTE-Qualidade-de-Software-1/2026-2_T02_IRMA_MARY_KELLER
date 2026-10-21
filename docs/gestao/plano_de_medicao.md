@@ -168,7 +168,6 @@ Toda decisão é registrada em `docs/gestao/medicoes.md`, com data, responsável
 | `DP1` amarelo ou vermelho | Reforçar o critério de aceite e exigir verificação rigorosa antes de fechar qualquer issue. |
 | `DP2` com `Qcic ≥ 1` | Abrir uma issue `correcao` por critério Regular ou Insuficiente e priorizá-las antes de qualquer trabalho novo |
 | `DP2` com `Pce < 75%` | Revisar na reunião seguinte o que impede os critérios de chegar a Adequado e incluir as ações nas issues `correcao` |
-
 | `RC1` desequilibrado | Se esforço de um integrante (`Hi`) variar mais de 50% em relação á média do grupo (`Hm`), analisar a causa da disparidade e rebalancear a atribuição das próximas *issues* entre as duplas.|
 | `RC2` amarelo (`Ve > 20%`) | Reestimar issues parecidas e registrar o motivo do desvio e o sentido (subestimou ou superestimou) |
 | Cobertura de Dados Amarela (`Pa < 90%`) | Lançar as horas pendentes no mesmo dia; enquanto `Pa < 90%`, marcar `RC1` e `RC2` "com ressalva". |
