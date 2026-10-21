@@ -12,7 +12,7 @@ A **Figura 1** apresenta os níveis conceitual (G), operacional (Q e H) e quanti
 
 *Figura 1 — Hierarquia GQM por objetivo, com questões, hipóteses e componentes de medição. Fonte: elaboração de [Geovanna Umbelino](https://github.com/GeovannaUmbelino) e [Camila Cavalcante](https://github.com/CamilaSilvaC)  com base nos requisitos R1–R5 da Fase 1.*
 
-## Matriz resumida G–Q–H–M
+## 1. Matriz resumida G–Q–H–M
 
 A **Tabela 1** explicita as mesmas ligações da Figura 1. As métricas são analisadas individualmente, conforme suas respectivas [fichas das métricas](metricas.md).
 
@@ -34,6 +34,10 @@ A **Tabela 1** explicita as mesmas ligações da Figura 1. As métricas são ana
 
 *Fonte: elaboração de [Camila Cavalcante](https://github.com/CamilaSilvaC) e [Geovanna Umbelino](https://github.com/GeovannaUmbelino) para a Fase 2.*
 
+## Referências
+
+> BASILI, Victor R.; CALDIERA, Gianluigi; ROMBACH, H. Dieter. The Goal Question Metric Approach. In: **Encyclopedia of Software Engineering**. John Wiley & Sons, 1994. p. 528–532. 
+
 ## Histórico de versões
 
 | Versão | Data | Descrição | Responsável | Revisor | 
@@ -41,6 +45,7 @@ A **Tabela 1** explicita as mesmas ligações da Figura 1. As métricas são ana
 | 1.0 | 18/10/2026 | Elaboração do diagrama GQM e da matriz de correspondência entre objetivos, questões e métricas. | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) | [Pedro Lucas](https://github.com/Pwdrinho) | 
 | 1.1 | 19/10/2026 | Atualização técnica da figura e da matriz com G1–G3, Q1–Q11, H1–H11 e as famílias M1–M5. | [Camila Cavalcante](https://github.com/CamilaSilvaC) | [Pedro Lucas](https://github.com/Pwdrinho) |
 | 1.2 | 20/10/2026 | Renumeração das métricas para M1–M14 e atualização da figura e da matriz. | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) | Revisão pendente |
+| 1.3 | 21/10/2026 | Acrescenta referências bibliográficas usadas na elaboração do artefato | [Camila Cavalcante](https://github.com/CamilaSilvaC) | |
 
 ---
 

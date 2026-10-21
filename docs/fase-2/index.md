@@ -1,4 +1,4 @@
-# Fase 2 — Especificação da avaliação (GQM)
+# Fase 2: Especificação da avaliação (GQM)
 
 A Fase 2 transforma as características priorizadas na [Fase 1](../fase-1/index.md) em uma estrutura de medição por meio do método *Goal–Question–Metric* (GQM). Cada objetivo de medição é desdobrado em questões de avaliação, relacionadas a hipóteses de investigação e respondidas por métricas. Para interpretar as medidas, também são previstos níveis de pontuação e critérios de julgamento.
 
@@ -38,12 +38,12 @@ As métricas da Fase 2 são **adaptações propostas tomando a ISO/IEC 25023:201
 
 ## Referências
 
-- [Requisitos de avaliação — Fase 1](../fase-1/requisitos-de-avaliacao.md). Matriz de requisitos R1–R5, stakeholders e decisões documentadas pela equipe.
-- [Escopo da avaliação — Fase 1](../fase-1/escopo-da-avaliacao.md). Plataformas, módulos, ambientes e limites do estudo.
-- **ISO/IEC 25010:2011** — *Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models*.
-- **ISO/IEC 25023:2016** — *Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Measurement of system and software product quality*.
-- **Basili, V. R.; Caldiera, G.; Rombach, H. D. (1994).** *The Goal Question Metric Approach*. Referência metodológica para a estrutura GQM.
-- [Critérios de avaliação da Fase 2](../criterios/fase2.md), disciplina Qualidade de Software 1, UnB/FGA, 2026/2.
+> **Requisitos de avaliação — Fase 1**. Matriz de requisitos R1–R5, stakeholders e decisões documentadas pela equipe. Disponível em: [Requisitos de avaliação](../fase-1/requisitos-de-avaliacao.md).
+> **Escopo da avaliação — Fase 1**. Plataformas, módulos, ambientes e limites do estudo. Disponível em: [Escopo da avaliação](../fase-1/escopo-da-avaliacao.md).
+> INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25010:2011**: Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models. Genebra: ISO, 2011.
+> INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25023:2016**: Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Measurement of system and software product quality. Genebra: ISO, 2016. 
+> BASILI, Victor R.; CALDIERA, Gianluigi; ROMBACH, H. Dieter. The Goal Question Metric Approach. In: **Encyclopedia of Software Engineering**. John Wiley & Sons, 1994. p. 528–532. 
+> **Critérios de avaliação da Fase 2**. Disciplina Qualidade de Software 1, UnB/FGA, 2026/2. Disponível em: [Critérios de avaliação da Fase 2](../criterios/fase2.md).
 
 
 ## Histórico de versões
@@ -53,3 +53,4 @@ As métricas da Fase 2 são **adaptações propostas tomando a ISO/IEC 25023:201
 | 1.0 | 17/10/2026 | Estruturação da Fase 2, apresentação da metodologia GQM e organização das seções da documentação. | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |[Pedro Lucas](https://github.com/Pwdrinho) |
 | 1.1 | 20/10/2026 | Ajustes na especificação e organização | [Camila Cavalcante](https://github.com/CamilaSilvaC) | [Pedro Lucas](https://github.com/Pwdrinho) |
 | 1.2 | 21/10/2026 | Alinhamento da visão geral aos fluxos, ambientes e exclusões definidos na Fase 1. | [Enzo Menali](https://github.com/menali17) | |
+| 1.3 | 21/10/2026 | Ajustes na padronização | [Camila Cavalcante](https://github.com/CamilaSilvaC) | [Pedro Lucas](https://github.com/Pwdrinho) |
