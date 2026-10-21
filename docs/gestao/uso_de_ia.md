@@ -1,6 +1,6 @@
 # Uso de IA
 
-Versão 1.4
+Versão 1.2
 
 ## 1. Para que serve
 
@@ -30,9 +30,7 @@ Registre **no momento do uso**, não no fim do projeto: reconstruir o que foi fe
 | `2026-10-18` | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) | ChatGPT (OpenAI) | Apoio na estruturação e organização dos arquivos, especialmente na formatação das tabelas e revisão textual. | [#6](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/6), `docs/fase-2` | | |
 | `2026-10-18` | [José Augusto](https://github.com/JAugustoM) | Gemini | Ajuda na estruturação do documento de escopo e correções ortográficas | [#5](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/5) | | |
 | `2026-10-18` | [Enzo Menali](https://github.com/menali17) | Codex | Cruzamento de documentos e formatação do MkDocs | [#2](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/2), `docs/fase-1/produto-contexto.md` | | |
-| `2026-10-20` | [Enzo Menali](https://github.com/menali17) | Codex | Revisão crítica de priorização, escopo, ODS e recorte para o artigo | [#15](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/15), `docs/fase-1/requisitos-de-avaliacao.md`, `docs/fase-1/escopo-da-avaliacao.md` e artigo | | |
-| `2026-10-20` | [Enzo Menali](https://github.com/menali17) | Codex | Revisão da consistência entre propósito, stakeholders, decisões e recorte para o artigo | [#13](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/13), `docs/fase-1/produto-e-contexto.md` e artigo | | |
-| `2026-10-20` | [Enzo Menali](https://github.com/menali17) | Codex | Sugestão de estrutura e redação da visão geral da Fase 1 | `docs/fase-1/index.md` | | A página foi conferida com os três artefatos da Fase 1 e ajustada para refletir os requisitos, o escopo e a rastreabilidade vigentes. |
+| `2026-10-20` | [Enzo Menali](https://github.com/menali17) | Codex | Revisão crítica de priorização, escopo, ODS e recorte para o artigo | [#15](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/15), `docs/fase-1/requisitos-de-avaliacao.md`, `docs/fase-1/escopo-da-avaliacao.md` e artigo | ||
 
 ### 3.1 Regras
 
@@ -67,5 +65,3 @@ A última frase só deve permanecer se o registro a sustentar integralmente.
 | 1.0 | 14/10/2026 | Criação do registro | [Pedro Lucas](https://github.com/Pwdrinho) | |
 | 1.1 | 15/10/2026 | Colunas de issue e revisor, regras de preenchimento, conferência antes das medições e modelo de declaração | [Pedro Lucas](https://github.com/Pwdrinho) | |
 | 1.2 | 20/10/2026 | Registro do apoio de IA na revisão da priorização, do escopo, dos ODS e do recorte para o artigo | [Enzo Menali](https://github.com/menali17) | |
-| 1.3 | 20/10/2026 | Registro do apoio de IA na revisão do propósito, dos stakeholders e do recorte para o artigo | [Enzo Menali](https://github.com/menali17) | |
-| 1.4 | 20/10/2026 | Registro do apoio de IA na estruturação da visão geral da Fase 1 | [Enzo Menali](https://github.com/menali17) | |
