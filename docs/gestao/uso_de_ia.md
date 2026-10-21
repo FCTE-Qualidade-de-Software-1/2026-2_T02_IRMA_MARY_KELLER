@@ -30,11 +30,11 @@ Registre **no momento do uso**, não no fim do projeto: reconstruir o que foi fe
 | `2026-10-18` | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) | ChatGPT (OpenAI) | Apoio na estruturação e organização dos arquivos, especialmente na formatação das tabelas e revisão textual. | [#6](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/6), `docs/fase-2` | | |
 | `2026-10-18` | [José Augusto](https://github.com/JAugustoM) | Gemini | Ajuda na estruturação do documento de escopo e correções ortográficas | [#5](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/5) | | |
 | `2026-10-18` | [Enzo Menali](https://github.com/menali17) | Codex | Cruzamento de documentos e formatação do MkDocs | [#2](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/2), `docs/fase-1/produto-contexto.md` | | |
+| `2026-10-18` | [Camila Cavalcante](https://github.com/CamilaSilvaC) | ChatGPT (OpenAI) | Apoio na estruturação, revisão ortográfica e verificação de links| [#7](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/7) `docs/fase-2`| | |
 | `2026-10-20` | [Enzo Menali](https://github.com/menali17) | Codex | Revisão crítica de priorização, escopo, ODS e recorte para o artigo | [#15](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/15), `docs/fase-1/requisitos-de-avaliacao.md`, `docs/fase-1/escopo-da-avaliacao.md` e artigo | | |
 | `2026-10-20` | [Enzo Menali](https://github.com/menali17) | Codex | Revisão da consistência entre propósito, stakeholders, decisões e recorte para o artigo | [#13](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/13), `docs/fase-1/produto-e-contexto.md` e artigo | | |
 | `2026-10-20` | [Enzo Menali](https://github.com/menali17) | Codex | Sugestão de estrutura e redação da visão geral da Fase 1 | `docs/fase-1/index.md` | | |
-
-| `2026-10-18` | Responsável humano a confirmar | ChatGPT (OpenAI) | Apoio na estruturação, revisão ortográfica e verificação de links| [#7](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/7) `docs/fase-2`| | |
+| `2026-10-20` | [Pedro Lucas](https://github.com/Pwdrinho) | NotebookLm(gemini) | Utilizei como fonte de analise de consistência do plano de medição com a PSM/CID, para evitar refatoração maior que o necessário | [#12](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/12) | | |
 
 ### 3.1 Regras
 
