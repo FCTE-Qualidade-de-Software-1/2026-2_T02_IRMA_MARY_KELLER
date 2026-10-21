@@ -46,8 +46,8 @@ Para M1, M3–M5 e M14, **menor é melhor**. Os valores são faixas propostas pa
 
 ## Critérios técnicos de acessibilidade
 
-- **M10 — ampliação:** verificar preservação de conteúdo e funcionalidade com **texto ampliado até 200%**, conforme **WCAG 2.2, critério 1.4.4 (AA)**, com suas exceções. A meta de **300%**, se testada, é um critério extra **do estudo**, não exigência desse item WCAG. O percentual agregado de M10 não substitui a verificação de cada barreira.
-- **M11 — contraste:** classificar como **Alvo (2)** se todos os textos aplicáveis inspecionados cumprirem **WCAG AA: 4,5:1 (texto comum) e 3:1 (texto grande)**; como **Excelente (3)** se todos cumprirem **AAA: 7:1 e 4,5:1**, respectivamente; **1** se houver falha apenas em elemento não essencial e **0** se houver falha que comprometa informação essencial. Notas 0 ou 1 **não representam conformidade AA**. Registrar separadamente os testes de alto contraste.
+- **M10 — ampliação:** verificar preservação de conteúdo e funcionalidade com **texto ampliado até 200%**, conforme **WCAG 2.1, critério 1.4.4 (AA)**, com suas exceções. A meta de **300%**, se testada, é um critério extra **do estudo**, não exigência desse item WCAG. O percentual agregado de M10 não substitui a verificação de cada barreira.
+- **M11 — contraste:** classificar como **Alvo (2)** se todos os textos aplicáveis inspecionados cumprirem o **critério 1.4.3 da WCAG 2.1 (AA)**: 4,5:1 para texto comum e 3:1 para texto grande; como **Excelente (3)** se todos cumprirem o **critério 1.4.6 (AAA)**: 7:1 e 4,5:1, respectivamente; **1** se houver falha apenas em elemento não essencial e **0** se houver falha que comprometa informação essencial. Notas 0 ou 1 **não representam conformidade AA**. Registrar separadamente os testes de alto contraste.
 - **M8–M9:** conclusão de tarefas com teclado ou leitor de tela deve ser confrontada com barreiras encontradas; sucesso agregado não comprova conformidade WCAG da plataforma inteira.
 
 ## Regra de julgamento
@@ -62,7 +62,7 @@ Uma **questão** é considerada atendida quando seus indicadores principais atin
 
 As faixas percentuais e os limites de CPU, memória, tráfego e tempo de tarefa são **propostas metodológicas**, não limites oficiais da ISO/IEC 25023 ou da WCAG. A equipe deve aprovar e registrar sua justificativa e as condições de aplicação **antes da coleta**; sem essa validação, o resultado permanece inconclusivo.
 
-**Referências técnicas:** [Nielsen — Response Times](https://www.nngroup.com/articles/response-times-3-important-limits/); [W3C — WCAG 2.2](https://www.w3.org/TR/WCAG22/).
+**Referências técnicas:** [Nielsen — Response Times](https://www.nngroup.com/articles/response-times-3-important-limits/); [W3C — WCAG 2.1](https://www.w3.org/TR/WCAG21/).
 
 ## Histórico de versões
 
@@ -71,6 +71,7 @@ As faixas percentuais e os limites de CPU, memória, tráfego e tempo de tarefa 
 | 1.0 | 18/10/2026 | Estruturação inicial dos critérios GQM. | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) | [Pedro Lucas](https://github.com/Pwdrinho) |
 | 1.1| 20/10/2026 | Consolidação das faixas e justificativas dos critérios de julgamento. | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) | [Pedro Lucas](https://github.com/Pwdrinho)  |
 | 1.2 | 21/10/2026 | Correção da procedência das faixas de memória, mantidas como proposta metodológica sujeita à ratificação da equipe. | [Enzo Menali](https://github.com/menali17) | |
+| 1.3 | 21/10/2026 | Padronização dos critérios de ampliação e contraste conforme a WCAG 2.1 adotada na Fase 1. | [Enzo Menali](https://github.com/menali17) | |
 
 ---
 

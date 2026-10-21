@@ -204,7 +204,7 @@ A formulação das questões, a presença de hipótese para cada uma e o víncul
 - [Especificação das métricas — Fase 2](metricas.md) e [critérios de julgamento](criterios-julgamento.md), sincronizados com esta proposta, ainda sujeitos à revisão humana.
 - ISO/IEC 25010:2011 — modelo de qualidade adotado pelo projeto.
 - ISO/IEC 25023:2016 — referência geral de medição adotada pelo projeto; as medidas adaptadas não são apresentadas como transcrições literais da norma.
-- WORLD WIDE WEB CONSORTIUM (W3C). **Web Content Accessibility Guidelines (WCAG) 2.1**. Recomendação de 5 de junho de 2018. Disponível em: <https://www.w3.org/TR/2018/REC-WCAG21-20180605/>. Referência de acessibilidade já utilizada no projeto; a seleção dos critérios aplicáveis e de suas exceções deverá constar do protocolo.
+- WORLD WIDE WEB CONSORTIUM (W3C). **Web Content Accessibility Guidelines (WCAG) 2.1**. Recomendação de 5 de junho de 2018. Disponível em: <https://www.w3.org/TR/WCAG21/>. Referência de acessibilidade já utilizada no projeto; a seleção dos critérios aplicáveis e de suas exceções deverá constar do protocolo.
 
 
 ## Histórico de versões
@@ -214,6 +214,7 @@ A formulação das questões, a presença de hipótese para cada uma e o víncul
 | 1.0 | 18/10/2026 | Elaboração das questões e hipóteses GQM e organização da tabela de correspondência com os objetivos e métricas. | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) | [Pedro Lucas](https://github.com/Pwdrinho) | 
 | 1.1 | 20/10/2026 | Proposta de desdobramento dos objetivos em 11 questões e hipóteses, com cobertura por atributo, fundamentação e condições de verificação. | [Camila Cavalcante](https://github.com/CamilaSilvaC) | [Pedro Lucas](https://github.com/Pwdrinho) |
 | 1.2 | 21/10/2026 | Alinhamento da delimitação das questões aos fluxos e exclusões definidos na Fase 1. | [Enzo Menali](https://github.com/menali17) | |
+| 1.3 | 21/10/2026 | Padronização do endereço oficial da WCAG 2.1 com a referência adotada na Fase 1. | [Enzo Menali](https://github.com/menali17) | |
 
 ---
 
