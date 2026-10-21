@@ -8,15 +8,15 @@ A avaliação adota o modelo de qualidade de produto da **ISO/IEC 25010:2011** e
 
 A **Tabela 1** apresenta os temas da documentação, seus responsáveis e o acesso a cada página.
 
-**Tabela 1. Organização e responsáveis pela documentação da Fase 1.**
-
 | **Tema** | **Responsável** | **Página** |
 | :--- | :--- | :--- |
 | Caracterização do produto, contexto de uso, stakeholders e perfis de estudantes | [Enzo Menali](https://github.com/menali17) | [Produto e contexto](produto-e-contexto.md) |
 | Propósito, uso pretendido, modelo de qualidade e priorização das características | [Luisa de Souza](https://github.com/luisa12ll) | [Requisitos de avaliação](requisitos-de-avaliacao.md) |
 | Objetos, fluxos, ambientes, profundidade, exclusões, limites e relação com os ODS | [José Augusto](https://github.com/JAugustoM) | [Escopo da avaliação](escopo-da-avaliacao.md) |
 
-*Fonte: organização da documentação da Fase 1. A indicação de responsabilidade refere-se à elaboração principal de cada artefato; as contribuições e revisões posteriores permanecem registradas nos respectivos históricos de versões.*
+*Tabela 1. Organização e responsáveis pela documentação da Fase 1. Fonte: Elaborada por: [Enzo Menali](https://github.com/menali17)*
+
+A indicação de responsabilidade refere-se à elaboração principal de cada artefato; as contribuições e revisões posteriores permanecem registradas nos respectivos históricos de versões.
 
 ## Delimitação e relação com a Fase 2
 
@@ -40,4 +40,4 @@ Os requisitos definidos nesta etapa orientam a estrutura GQM da [Fase 2](../fase
 
 | Versão | Data | Descrição | Responsável | Revisor |
 | :---: | :---: | :--- | :--- | :--- |
-| 1.0 | 20/10/2026 | Estruturação da visão geral da Fase 1, organização dos artefatos e síntese da delimitação e da rastreabilidade com a Fase 2. | [Enzo Menali](https://github.com/menali17) | |
+| 1.0 | 20/10/2026 | Estruturação da visão geral da Fase 1, organização dos artefatos e síntese da delimitação e da rastreabilidade com a Fase 2. | [Enzo Menali](https://github.com/menali17) | [Luisa de Souza](https://github.com/luisa12ll) |

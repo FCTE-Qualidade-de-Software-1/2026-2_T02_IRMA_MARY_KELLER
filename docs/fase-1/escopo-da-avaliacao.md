@@ -140,6 +140,7 @@ A relação com os Objetivos de Desenvolvimento Sustentável (ODS) é contextual
 | ODS e meta | Indicador oficial | Pertinência para o software e evidência produzida | Limite da relação |
 |---|---|---|---|
 | **ODS 4, Meta 4.5:** eliminar disparidades na educação e assegurar acesso aos níveis de ensino e à formação para grupos vulneráveis, incluindo pessoas com deficiência | **4.5.1:** índices de paridade entre grupos, como sexo, localização, renda e deficiência, aplicados aos indicadores educacionais que possam ser desagregados | Os ensaios de acessibilidade e apreensibilidade podem identificar barreiras técnicas enfrentadas ao localizar conteúdo, assistir a aulas e responder a exercícios | O estudo não calcula índices de paridade nem mede matrícula, permanência, conclusão ou aprendizagem |
+| **ODS 4, Meta 4.a:** construir e melhorar instalações físicas para educação, apropriadas para crianças e sensíveis às deficiências e ao gênero, que proporcionem ambientes de aprendizagem seguros, não violentos, inclusivos e eficazes para todos | **4.a.1:** proporção de escolas com acesso a eletricidade, internet e computadores para fins pedagógicos e a infraestrutura e materiais adaptados para estudantes com deficiência, entre outros itens | O cenário de referência é o de uma escola que já dispõe de computadores e internet para fins pedagógicos; os ensaios indicam se a plataforma funciona nessas condições, inclusive com recursos de acessibilidade | O estudo não mede quantas escolas têm essa infraestrutura; apenas qualifica o uso do software quando ela existe |
 | **ODS 10, Meta 10.2:** promover a inclusão social, econômica e política de todas as pessoas, independentemente de características pessoais ou condição econômica | **10.2.1:** proporção de pessoas que vivem abaixo de 50% da renda mediana, por sexo, idade e pessoas com deficiência | Ensaios de eficiência e adaptabilidade em condições documentadas podem revelar barreiras técnicas associadas a computadores e conexões limitados | O estudo não mede renda ou inclusão social da população e não demonstra impacto causal da plataforma sobre o indicador |
 
 *Tabela 6. Relação entre ODS, metas, indicadores e evidências da avaliação. Fonte: Elaborada por: [Enzo Menali](https://github.com/menali17), com base na ONU e no IPEA*
@@ -174,6 +175,8 @@ A Tabela 7 liga os requisitos `R1` a `R5` aos fluxos, ambientes e decisões defi
 
 > ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU). **Indicadores dos Objetivos de Desenvolvimento Sustentável: Meta 4.5**. Nova York: Divisão de Estatística das Nações Unidas. Disponível em: <https://unstats.un.org/sdgs/metadata/?Goal=4&Target=4.5>. Acesso em: 20 out. 2026.
 
+> ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU). **Indicadores dos Objetivos de Desenvolvimento Sustentável: Meta 4.a**. Nova York: Divisão de Estatística das Nações Unidas. Disponível em: <https://unstats.un.org/sdgs/metadata/?Goal=4&Target=4.a>. Acesso em: 20 out. 2026.
+
 > ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU). **Indicadores dos Objetivos de Desenvolvimento Sustentável: Meta 10.2**. Nova York: Divisão de Estatística das Nações Unidas. Disponível em: <https://unstats.un.org/sdgs/metadata/?Goal=10&Target=10.2>. Acesso em: 20 out. 2026.
 
 > WORLD WIDE WEB CONSORTIUM (W3C). **Web Content Accessibility Guidelines (WCAG) 2.1**. W3C Recommendation, 2018. Disponível em: <https://www.w3.org/TR/WCAG21/>. Acesso em: 20 out. 2026.
@@ -185,4 +188,4 @@ A Tabela 7 liga os requisitos `R1` a `R5` aos fluxos, ambientes e decisões defi
 | 1.0 | 18/10/2026 | Criação do documento com objetos, ambientes, profundidade, cortes, limites de validade e alinhamento com ODS 4 e 10 | [José Augusto](https://github.com/JAugustoM) | |
 | 1.1 | 18/10/2026 | Padronização de tabelas e referências | [José Augusto](https://github.com/JAugustoM) | |
 | 1.2 | 20/10/2026 | Delimitação da plataforma web em computadores, matriz direcionada de ambientes, profundidade por subcaracterística e revisão do vínculo com os ODS | [Enzo Menali](https://github.com/menali17) | |
-| 1.3 | 20/10/2026 | Inclusão da inspeção delimitada para baixa visão com zoom e alto contraste no ambiente `A1` | [Enzo Menali](https://github.com/menali17) | |
+| 1.3 | 20/10/2026 | Inclusão da inspeção delimitada para baixa visão com zoom e alto contraste no ambiente `A1` | [Enzo Menali](https://github.com/menali17) | [Luisa de Souza](https://github.com/luisa12ll) |

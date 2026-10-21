@@ -95,7 +95,7 @@ precisam ser confirmados antes de orientar decisões definitivas de escopo.
 | Usuários de apoio | Pais e responsáveis | Vinculam contas de estudantes, especialmente crianças, acompanham atividade e progresso e orientam o uso [S6](#s6), [S7](#s7), [S11](#s11). | Receber informação sobre barreiras e ajustes de acessibilidade relevantes ao apoio do estudante <br> O painel de responsáveis permanece fora dos ensaios. | Participam da decisão `D2` e introduzem o cuidado com estudantes menores, sem tornar privacidade, segurança ou o painel de responsáveis objetos de teste. |
 | Fornecedor/mantenedor e destinatário potencial | Khan Academy e suas equipes de produto | Mantêm as interfaces públicas e podem, em tese, utilizar achados externos para melhoria. | Receber achados reproduzíveis, associados a versões, ambientes e passos, sem alegação de certificação. | A documentação e as versões públicas delimitam o que pode ser observado. Não há influência direta ou aceite formal nesta avaliação. |
 
-*Tabela 1. Matriz de partes interessadas e influência na avaliação. Fonte: Elaborado por: [Enzo Menali](https://github.com/menali17)*
+*Tabela 1. Matriz de partes interessadas e influência na avaliação. Fonte: Elaborada por: [Enzo Menali](https://github.com/menali17)*
 
 ### 2.3 Rastreabilidade com o propósito e o uso pretendido
 
@@ -138,7 +138,7 @@ módulos internos: são agrupamentos funcionais percebidos externamente.
 | Continuidade entre interfaces | Sincronização do progresso entre aplicativo e site quando há conta; download de vídeos para estudo off-line no aplicativo. | Estudantes | [S3](#s3) |
 | Preferências de acessibilidade | Opções para reduzir movimento, ocultar conteúdo que dependa de interação visual, remover cor de vídeos e exibir legendas, conforme disponibilidade documentada. | Estudantes com necessidades de acessibilidade | [S8](#s8) |
 
-*Tabela 2. Áreas funcionais observáveis do produto. Fonte: Elaborado por: [Enzo Menali](https://github.com/menali17), com base nas fontes indicadas*
+*Tabela 2. Áreas funcionais observáveis do produto. Fonte: Elaborada por: [Enzo Menali](https://github.com/menali17), com base nas fontes indicadas*
 
 ### 3.2 Interfaces externas
 
@@ -152,7 +152,7 @@ A Tabela 3 apresenta as principais interfaces externas do sistema e suas respect
 | Painéis de professor e responsável | Interfaces associadas a contas e papéis específicos para atribuição, acompanhamento e vínculo de estudantes [S2](#s2), [S6](#s6), [S7](#s7), [S11](#s11). | São elementos do contexto de uso, mas os respectivos fluxos permanecem fora dos ensaios. |
 | Tecnologia assistiva | Uso combinado com leitores de tela e recursos do sistema/navegador. A Khan Academy documenta combinações recomendadas e limitações para leitura de conteúdo e equações [S9](#s9). | Tecnologia assistiva, navegador, sistema e configurações formam um único ambiente de observação e devem ser registrados em conjunto. |
 
-*Tabela 3. Interfaces externas e implicações para a avaliação. Fonte: Elaborado por: [Enzo Menali](https://github.com/menali17), com base nas fontes indicadas*
+*Tabela 3. Interfaces externas e implicações para a avaliação. Fonte: Elaborada por: [Enzo Menali](https://github.com/menali17), com base nas fontes indicadas*
 
 ### 3.3 Dependências observáveis, ambientes e limitações de acesso
 
@@ -169,7 +169,7 @@ A Tabela 4 sintetiza as dependências e condições externas do sistema, acompan
 | Tecnologia assistiva e configurações | Leitores de tela, ampliação, contraste e preferências de acessibilidade interagem com site, navegador e sistema [S8](#s8), [S9](#s9). | Acessibilidade <br> Adaptabilidade. | A documentação oficial reconhece limitações de leitura. A avaliação externa não equivale a auditoria completa de conformidade. |
 | Infraestrutura de servidor | Serviços remotos processam e entregam os recursos acessados pelo cliente. | Pode influenciar tempos observados. | Topologia, banco de dados, algoritmos, capacidade, carga e consumo de recursos do servidor são **não observáveis** e não devem ser inferidos. |
 
-*Tabela 4. Dependências e condições externas relevantes. Fonte: Elaborado por: [Enzo Menali](https://github.com/menali17), com base nas fontes indicadas*
+*Tabela 4. Dependências e condições externas relevantes. Fonte: Elaborada por: [Enzo Menali](https://github.com/menali17), com base nas fontes indicadas*
 
 Os ambientes abaixo pertencem ao ecossistema caracterizado. A última coluna registra sua relação com o [escopo aprovado](escopo-da-avaliacao.md#escopo-e-objetos), evitando interpretar a descrição do produto como inclusão automática nos ensaios:
 
@@ -181,7 +181,7 @@ Os ambientes abaixo pertencem ao ecossistema caracterizado. A última coluna reg
 | Aplicativo iOS | Modelo do aparelho<br>iOS<br>Versão do aplicativo<br>Perfil de rede. | Adaptabilidade<br>Comportamento temporal<br>Utilização de recursos. | Excluído por exigir interface, ferramentas e procedimentos próprios. |
 | Web com tecnologia assistiva | Sistema<br>Navegador<br>Leitor de tela e versão<br>Ampliação<br>Contraste<br>Dispositivo de entrada. | Acessibilidade<br>Adaptabilidade. | Incluído com teclado e leitores de tela em `A1`, `A3` e `A4`; em `A1`, inclui inspeções separadas com zoom de 200% e alto contraste do Windows; inspeção automatizada apenas como apoio. |
 
-*Tabela 5. Ambientes do produto e tratamento no escopo da avaliação. Fonte: Elaborado por: [Enzo Menali](https://github.com/menali17)*
+*Tabela 5. Ambientes do produto e tratamento no escopo da avaliação. Fonte: Elaborada por: [Enzo Menali](https://github.com/menali17)*
 
 ## 4. Perfis candidatos de estudantes
 
@@ -199,7 +199,7 @@ contemplados parcialmente ou excluídos dos ensaios.
 | `P5` | Estudante com computador de recursos limitados | Executar os fluxos sem consumo que inviabilize a tarefa ou cause degradação incompatível com o equipamento. | Eficiência de desempenho: utilização de recursos e comportamento temporal<br>Portabilidade: adaptabilidade. | Contemplado pelas medições de CPU, memória, rede e tempo no computador de referência, cuja configuração limitará a validade dos resultados. |
 | `P6` | Estudante que alterna entre computador compartilhado, navegador móvel e aplicativo próprio | Retomar o estudo e reconhecer as mesmas funções essenciais em interfaces diferentes. | Portabilidade: adaptabilidade<br>Usabilidade: apreensibilidade. | Excluído porque navegadores móveis, aplicativos nativos e sincronização entre plataformas não integram o escopo. |
 
-*Tabela 6. Perfis candidatos relacionados às características de qualidade acordadas. Fonte: Elaborado por: [Enzo Menali](https://github.com/menali17)*
+*Tabela 6. Perfis candidatos relacionados às características de qualidade acordadas. Fonte: Elaborada por: [Enzo Menali](https://github.com/menali17)*
 
 ## 5. Diagrama de contexto
 
@@ -211,7 +211,7 @@ O diagrama de contexto apresentado na Figura 1 mapeia o ecossistema no qual a av
 
 1. **Atores externos:** Diferencia os usuários operacionais da plataforma (estudantes como usuários primários; professores e responsáveis como usuários de apoio) e os agentes da avaliação. A coordenação pedagógica é o requisitante da avaliação e destinatária dos resultados, enquanto a equipe avaliadora é responsável pela decisão [`D4`](requisitos-de-avaliacao.md#13-requisitante-e-destinatarios-dos-resultados). As decisões [`D1`](requisitos-de-avaliacao.md#13-requisitante-e-destinatarios-dos-resultados) a [`D3`](requisitos-de-avaliacao.md#13-requisitante-e-destinatarios-dos-resultados) permanecem atribuídas aos atores indicados no documento de requisitos.
 2. **Condições e dependências do ambiente:** Representa os fatores externos necessários para a execução observável (dispositivos móveis e computadores de mesa, navegadores homologados, restrições de conectividade móvel/Wi-Fi e tecnologias assistivas).
-3. **Fronteira observável do produto:** Delimita a aplicação Khan Academy sob uma abordagem externa (caixa-preta), abrangendo a interface web e os aplicativos móveis oficiais para Android e iOS, decomposta em áreas funcionais externas da experiência do usuário (e não módulos arquiteturais internos).
+3. **Fronteira observável do produto:** Delimita a aplicação Khan Academy sob uma abordagem externa (caixa-preta), abrangendo a interface web e os aplicativos móveis oficiais para Android e iOS, decomposta em áreas funcionais externas da experiência do usuário (e não módulos arquiteturais internos). O diagrama representa o ecossistema caracterizado; os ensaios ficam restritos à interface web em computadores, conforme o [escopo da avaliação](escopo-da-avaliacao.md#escopo-e-objetos).
 4. **Fluxo da avaliação externa:** Destaca a observação não-intrusiva das métricas no cliente pela equipe avaliadora e a entrega do relatório de evidências para subsidiar a decisão pedagógica da coordenação.
 
 Entre os elementos que não farão parte da avaliação estão aqueles ligados a aspectos internos da plataforma, a qual a equipe de avaliação não tem acesso. A especificação detalhada do que está fora de escopo, assim como as justificativas por trás de cada exclusão, está no [documento de escopo](escopo-da-avaliacao.md#fora-do-escopo).
@@ -224,11 +224,11 @@ A Tabela 7 sintetiza o que é observável externamente no estágio atual da aval
 |---|---|---|---|
 | Adaptabilidade | Presença, apresentação e conclusão de fluxos em combinações identificadas de interface, sistema, navegador, viewport e tecnologia assistiva. | Selecionar combinações, versões, tarefas e critério de equivalência funcional. | Compatibilidade universal ou paridade completa entre web, Android e iOS. |
 | Comportamento temporal | Tempos percebidos e eventos do cliente para páginas, vídeos e exercícios em condições controladas. | Definir pontos de início/fim, perfil de rede, aquecimento, repetições e limiar de aceitação. | Desempenho global do serviço, capacidade dos servidores ou causa interna de uma demora. |
-| Utilização de recursos | CPU, memória, armazenamento temporário e transferência de dados do cliente, quando as ferramentas permitirem. | Definir ferramentas, baseline, unidade, duração, repetição e aparelhos. | Consumo de infraestrutura da Khan Academy ou de serviços de terceiros. |
+| Utilização de recursos | CPU, memória, armazenamento temporário e transferência de dados do cliente, quando as ferramentas permitirem. | Definir ferramentas, baseline, unidade, duração, repetição e configuração do computador de referência. | Consumo de infraestrutura da Khan Academy ou de serviços de terceiros. |
 | Apreensibilidade | Desempenho e dificuldades de participantes novos em tarefas definidas, ou inspeção exploratória claramente identificada como tal. | Definir tarefas, protocolo, perfil e quantidade de participantes, consentimento e critério de sucesso. | Facilidade de aprendizado de toda a população a partir de opinião da equipe ou de uma única sessão. |
 | Acessibilidade | Barreiras observadas em fluxos selecionados por inspeção de teclado, ampliação, contraste e leitor de tela; achados automáticos como apoio. | Registrar navegador, resolução, zoom, contraste, leitor de tela e critérios de conclusão aplicáveis a cada ensaio. | Certificação integral de conformidade, ausência de barreiras em todo o produto ou validação apenas por ferramenta automática. |
 
-*Tabela 7. Mensurabilidade e limites da avaliação externa. Fonte: Elaborado por: [Enzo Menali](https://github.com/menali17)*
+*Tabela 7. Mensurabilidade e limites da avaliação externa. Fonte: Elaborada por: [Enzo Menali](https://github.com/menali17)*
 
 Esses limites sustentam uma avaliação **caixa-preta** e condicionada às versões,
 ambientes e perfis efetivamente observados. Também ficam fora desta caracterização a
@@ -279,4 +279,4 @@ sem autorização e qualquer afirmação de certificação do produto.
 | 1.2 | 18/10/2026 | Padronização de referências e legendas; rastreabilidade entre stakeholders, propósito e decisões D1 a D4; remoção de conteúdo redundante sobre convenções e pendências. | [Enzo Menali](https://github.com/menali17) | [Pedro Lucas](https://github.com/Pwdrinho) |
 | 1.3 | 20/10/2026 | Revisão da caracterização do produto, dos hyperlinks e da rastreabilidade para atendimento ao F1-C3. | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | [Enzo Menali](https://github.com/menali17) |
 | 1.4 | 20/10/2026 | Alinhamento dos stakeholders ao propósito, às decisões e ao escopo vigente da avaliação. | [Enzo Menali](https://github.com/menali17) | [Pedro Lucas](https://github.com/Pwdrinho) |
-| 1.5 | 20/10/2026 | Alinhamento do perfil de baixa visão ao recorte de acessibilidade definido no escopo. | [Enzo Menali](https://github.com/menali17) | |
+| 1.5 | 20/10/2026 | Alinhamento do perfil de baixa visão ao recorte de acessibilidade definido no escopo. | [Enzo Menali](https://github.com/menali17) | [Luisa de Souza](https://github.com/luisa12ll) |
