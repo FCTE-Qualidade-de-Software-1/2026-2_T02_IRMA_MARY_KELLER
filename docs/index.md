@@ -16,7 +16,7 @@ Este site documenta a avaliação da qualidade do Khan Academy, plataforma de es
 ## Sumário
 
 1. [Fase 1: Requisitos de avaliação](fase-1/index.md): propósito, produto, stakeholders e características selecionadas.
-2. [Fase 2: Definição das métricas](fase-2.md/index.md): objetivos, questões, hipóteses e métricas (GQM), níveis de pontuação e critérios de julgamento.
+2. [Fase 2: Definição das métricas](fase-2/index.md): objetivos, questões, hipóteses e métricas (GQM), níveis de pontuação e critérios de julgamento.
 3. [Gestão do projeto](gestao/plano_de_medicao.md): cronograma, medições PSM/CID, interpretações e decisões.
 4. [Artigo](artigo/QSW_Aval_Qualidade_de_Produto_Khan_Academy.pdf): versões do artigo em PDF.
 5. [Links do projeto](#links-do-projeto): repositório, releases e dados.
