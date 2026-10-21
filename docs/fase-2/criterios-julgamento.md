@@ -40,7 +40,7 @@ Para M1, M3–M5 e M14, **menor é melhor**. Os valores são faixas propostas pa
 **Justificativa e condições:**
 
 - **M1:** os marcos de **1 s e 10 s** são referências de Nielsen para resposta interativa; **3 s é uma faixa intermediária proposta pelo estudo**. Medir resposta da interface, não o tempo de assistir a vídeos ou resolver exercícios; relatar mediana e P90.
-- **M3–M4:** os limites de CPU são faixas operacionais propostas. Para M4, 512/1024/2048 MiB equivalem a cerca de 12,5%/25%/50% de **4 GiB de RAM**, perfil previsto na Fase 1 e que deve ser confirmado no plano de testes. Registrar consumo de outros processos.
+- **M3–M4:** os limites de CPU são faixas operacionais propostas. Para M4, 512/1024/2048 MiB equivalem a cerca de 12,5%/25%/50% de um perfil de **4 GiB de RAM proposto pela equipe**. Antes da coleta, a capacidade efetivamente disponível no ambiente `A1` deverá ser registrada, e as faixas deverão ser ratificadas ou ajustadas pela equipe. Registrar também o consumo de outros processos.
 - **M5:** os orçamentos de 5/10/20 MiB são propostas para **navegação e carregamento sem transferência integral de videoaulas**; usar fluxos equivalentes e mesma política de cache.
 - **M14:** os limites de 60/120/180 s são propostos apenas para **tarefas curtas e padronizadas**, como localizar um curso. Não incluem tempo de aprendizagem do conteúdo ou resolução pedagógica.
 
@@ -70,6 +70,7 @@ As faixas percentuais e os limites de CPU, memória, tráfego e tempo de tarefa 
 |:---:|:---:|---|---|---|
 | 1.0 | 18/10/2026 | Estruturação inicial dos critérios GQM. | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) | [Pedro Lucas](https://github.com/Pwdrinho) |
 | 1.1| 20/10/2026 | Consolidação das faixas e justificativas dos critérios de julgamento. | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) | [Pedro Lucas](https://github.com/Pwdrinho)  |
+| 1.2 | 21/10/2026 | Correção da procedência das faixas de memória, mantidas como proposta metodológica sujeita à ratificação da equipe. | [Enzo Menali](https://github.com/menali17) | |
 
 ---
 

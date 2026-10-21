@@ -10,7 +10,7 @@ As questões investigam a adequação dos fluxos às condições de uso, sem ant
 
 ## Delimitação e relação com os objetivos
 
-A avaliação mantém o escopo de observação externa (*caixa-preta*) da **versão web da Khan Academy em computadores**. Os fluxos abrangem cursos com videoaulas, cursos com exercícios, painel do aluno e painel dos pais ou responsáveis. As combinações de sistema operacional, navegador, configuração e recurso de acessibilidade deverão ser viáveis e previamente estabelecidas no plano de avaliação.
+A avaliação mantém o escopo de observação externa (*caixa-preta*) da **versão web da Khan Academy em computadores**. G1 e G3 abrangem `FL1` (navegação em cursos), `FL2` (videoaulas) e `FL3` (exercícios); G2 também abrange `FL4` (consulta ao progresso pelo próprio estudante). Painéis de pais, responsáveis, professores ou administradores permanecem fora do objeto. Responsáveis participam apenas como interessados nos resultados associados a R2, R4 e D2. As combinações de sistema operacional, navegador, configuração e recurso de acessibilidade deverão ser viáveis e previamente estabelecidas no plano de avaliação.
 
 As questões derivam dos seguintes focos:
 
@@ -213,6 +213,7 @@ A formulação das questões, a presença de hipótese para cada uma e o víncul
 | :---: | :---: | :--- | :--- | :--- |
 | 1.0 | 18/10/2026 | Elaboração das questões e hipóteses GQM e organização da tabela de correspondência com os objetivos e métricas. | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) | [Pedro Lucas](https://github.com/Pwdrinho) | 
 | 1.1 | 20/10/2026 | Proposta de desdobramento dos objetivos em 11 questões e hipóteses, com cobertura por atributo, fundamentação e condições de verificação. | [Camila Cavalcante](https://github.com/CamilaSilvaC) | [Pedro Lucas](https://github.com/Pwdrinho) |
+| 1.2 | 21/10/2026 | Alinhamento da delimitação das questões aos fluxos e exclusões definidos na Fase 1. | [Enzo Menali](https://github.com/menali17) | |
 
 ---
 
