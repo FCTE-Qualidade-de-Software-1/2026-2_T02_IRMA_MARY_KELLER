@@ -41,7 +41,7 @@ Os objetivos abaixo foram descritos segundo os **cinco elementos explícitos do 
 - **Do ponto de vista de:** Estudantes; coordenação escolar e professores; e responsáveis, conforme os interessados associados aos requisitos R1 e R2 da Fase 1.
 - **No contexto de:** Avaliação externa (*caixa-preta*) da versão web da Khan Academy em computadores e navegadores incluídos no escopo, com as restrições de hardware e as condições de rede documentadas nos ensaios.
 
-**Rastreabilidade:** requisitos **R1** (comportamento temporal) e **R2** (utilização de recursos); decisão **D1**. O objetivo se desdobra nas questões **Q1** e **Q2**, respondidas pelas métricas **M1** e **M2**.
+**Rastreabilidade:** requisitos **R1** (comportamento temporal) e **R2** (utilização de recursos); decisão **D1**. O objetivo se desdobra nas questões **Q1–Q4**, respondidas pelos indicadores **M1–M5**.
 
 ### Objetivo G2 — Portabilidade
 
@@ -51,7 +51,7 @@ Os objetivos abaixo foram descritos segundo os **cinco elementos explícitos do 
 - **Do ponto de vista de:** Estudantes; coordenação escolar e professores, conforme o requisito R3 da Fase 1.
 - **No contexto de:** Avaliação externa da Khan Academy em navegadores web e sistemas operacionais de computadores definidos no escopo, considerando somente as combinações efetivamente viáveis e registradas nos testes.
 
-**Rastreabilidade:** requisito **R3** (adaptabilidade); decisão **D1**. O objetivo se desdobra na questão **Q3**, respondida pela métrica **M3**.
+**Rastreabilidade:** requisito **R3** (adaptabilidade); decisão **D1**. O objetivo se desdobra nas questões **Q5** e **Q6**, respondidas pelos indicadores **M6** e **M7**.
 
 ### Objetivo G3 — Usabilidade
 
@@ -61,7 +61,7 @@ Os objetivos abaixo foram descritos segundo os **cinco elementos explícitos do 
 - **Do ponto de vista de:** Estudantes com baixa visão ou que utilizam leitores de tela; estudantes novos; professores e responsáveis, conforme os requisitos R4 e R5 da Fase 1.
 - **No contexto de:** Avaliação externa da versão web em computadores, com navegação por teclado e leitores de tela previstos no escopo (NVDA, VoiceOver e Orca, conforme as combinações viáveis), além da observação de tarefas executadas por estudantes novos segundo procedimentos e participantes a definir no plano de avaliação.
 
-**Rastreabilidade:** requisitos **R4** (acessibilidade) e **R5** (apreensibilidade); decisões **D2** e **D3**. O objetivo se desdobra nas questões **Q4** e **Q5**, respondidas pelas métricas **M4** e **M5**.
+**Rastreabilidade:** requisitos **R4** (acessibilidade) e **R5** (apreensibilidade); decisões **D2** e **D3**. O objetivo se desdobra nas questões **Q7–Q11**, respondidas pelos indicadores **M8–M14**.
 
 
 ## Histórico de versões

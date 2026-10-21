@@ -6,7 +6,7 @@ As questões desta seção desdobram os [objetivos de medição](objetivos.md) d
 
 As questões investigam a adequação dos fluxos às condições de uso, sem antecipar fórmulas de cálculo. Cada hipótese expressa o resultado esperado para a questão correspondente e indica a base utilizada para sua formulação. As expectativas são **propostas de trabalho sujeitas à ratificação da equipe**, formuladas antes da coleta final; não representam conclusões sobre a qualidade real da plataforma.
 
-**Situação:** proposta em revisão. **Resultados das medições:** a coletar na Fase 4. Os limites quantitativos ainda não fundamentados permanecem pendentes e deverão ser definidos e aprovados antes da coleta final.
+**Situação:** proposta em revisão. **Resultados das medições:** a coletar na Fase 4. Os limites quantitativos estão propostos em [critérios de julgamento](criterios-julgamento.md), com fundamentação, condições de aplicação e aprovação pela equipe ainda necessárias antes da coleta.
 
 ## Delimitação e relação com os objetivos
 
@@ -24,27 +24,27 @@ Nesta proposta, **combinação essencial** é aquela cujo atendimento é necess�
 
 ## Relação entre objetivos, atributos, questões e métricas
 
-A **Tabela 1** sintetiza a cobertura dos atributos e o vínculo proposto com as famílias de métricas existentes. As hipóteses possuem o mesmo número das questões correspondentes.
+A **Tabela 1** sintetiza a cobertura dos atributos e o vínculo com as métricas especificadas. As hipóteses possuem o mesmo número das questões correspondentes.
 
 **Tabela 1 — Rastreabilidade entre requisitos, objetivos, atributos, questões, hipóteses e métricas.**
 
-| Requisito | Objetivo | Atributo observado | Questão | Hipótese | Família de métrica |
+| Requisito | Objetivo | Atributo observado | Questão | Hipótese | Métrica(s) |
 |---|---|---|---|---|---|
-| R1 | G1 | Comportamento temporal | Q1 — Espera nas etapas dos fluxos | H1 | M1 — Tempo observado de execução |
-| R2 | G1 | Utilização de CPU | Q2 — Processamento disponível | H2 | M2 — Consumo de recursos, componente CPU |
-| R2 | G1 | Utilização de memória | Q3 — Memória disponível | H3 | M2 — Consumo de recursos, componente memória |
-| R2 | G1 | Consumo de dados de rede | Q4 — Orçamento de acesso | H4 | M2 — Consumo de recursos, componente tráfego |
-| R3 | G2 | Adaptação entre sistemas operacionais e navegadores | Q5 — Execução entre ambientes | H5 | M3 — Combinações ambiente–fluxo executáveis |
-| R3 | G2 | Adaptação a tamanhos de janela | Q6 — Conteúdo e controles nas janelas avaliadas | H6 | M3 — Combinações com tamanho de janela registrado |
-| R4 | G3 | Navegação por teclado | Q7 — Conclusão por teclado | H7 | M4 — Execução acessível, recurso teclado |
-| R4 | G3 | Utilização com leitor de tela | Q8 — Informação e conclusão com leitor de tela | H8 | M4 — Execução acessível, recurso leitor de tela |
-| R4 | G3 | Utilização com ampliação | Q9 — Preservação de conteúdo e funcionalidade | H9 | M4 — Execução acessível, recurso ampliação |
-| R4 | G3 | Contraste e alto contraste | Q10 — Distinção de informações e controles | H10 | M4 — Execução acessível, recurso contraste |
-| R5 | G3 | Apreensibilidade | Q11 — Autonomia de estudantes novos | H11 | M5 — Conclusão autônoma |
+| R1 | G1 | Comportamento temporal | Q1 — Espera nas etapas dos fluxos | H1 | M1 (tempo) e M2 (conclusão) |
+| R2 | G1 | Utilização de CPU | Q2 — Processamento disponível | H2 | M3 |
+| R2 | G1 | Utilização de memória | Q3 — Memória disponível | H3 | M4 |
+| R2 | G1 | Consumo de dados de rede | Q4 — Orçamento de acesso | H4 | M5 |
+| R3 | G2 | Adaptação entre sistemas operacionais e navegadores | Q5 — Execução entre ambientes | H5 | M6 |
+| R3 | G2 | Adaptação a tamanhos de janela | Q6 — Conteúdo e controles nas janelas avaliadas | H6 | M7 |
+| R4 | G3 | Navegação por teclado | Q7 — Conclusão por teclado | H7 | M8 |
+| R4 | G3 | Utilização com leitor de tela | Q8 — Informação e conclusão com leitor de tela | H8 | M9 |
+| R4 | G3 | Utilização com ampliação | Q9 — Preservação de conteúdo e funcionalidade | H9 | M10 |
+| R4 | G3 | Contraste e alto contraste | Q10 — Distinção de informações e controles | H10 | M11 |
+| R5 | G3 | Apreensibilidade | Q11 — Autonomia de estudantes novos | H11 | M12 (autonomia), M13 (erros) e M14 (tempo) |
 
 *Fonte: elaboração de [Camila Cavalcante](https://github.com/CamilaSilvaC) para a Fase 2*
 
-Os identificadores **G1–G3** e **M1–M5** são preservados. M2 e M4 respondem a mais de uma questão, mas seus componentes deverão ser registrados e interpretados separadamente. CPU, memória e tráfego não são somados, pois representam grandezas diferentes. Resultados obtidos com recursos de acessibilidade distintos também não devem ocultar barreiras específicas por meio de um único percentual agregado.
+Os identificadores **G1–G3** são preservados; os indicadores foram renumerados sequencialmente de **M1 a M14**. Cada indicador deve ser registrado e interpretado separadamente. CPU, memória e tráfego não são somados, pois representam grandezas diferentes. Resultados obtidos com recursos de acessibilidade distintos também não devem ocultar barreiras específicas por meio de um único percentual agregado.
 
 ## G1 — Eficiência de desempenho
 
@@ -68,7 +68,7 @@ O objetivo G1 analisa os fluxos web do ponto de vista de estudantes, coordenaç�
 
 **Fundamentação:** R2 e as restrições computacionais previstas no escopo justificam examinar a utilização de processamento. A expectativa de consumo aceitável é uma suposição proposta, a ser ratificada pela equipe.
 
-**Verificação prevista:** utilizar o componente de CPU de M2, com ferramenta, processos monitorados e significado do percentual documentados. Comparar o resultado definido na ficha da medida com o orçamento correspondente e registrar ocorrências de sobrecarga. A coincidência entre CPU elevada e interrupção não demonstra, isoladamente, uma relação de causa; a classificação deverá seguir o protocolo de evidências.
+**Verificação prevista:** utilizar o M3, com ferramenta, processos monitorados e significado do percentual documentados. Comparar o resultado definido na ficha da medida com o orçamento correspondente e registrar ocorrências de sobrecarga. A coincidência entre CPU elevada e interrupção não demonstra, isoladamente, uma relação de causa; a classificação deverá seguir o protocolo de evidências.
 
 ### Q3 — Utilização de memória
 
@@ -78,7 +78,7 @@ O objetivo G1 analisa os fluxos web do ponto de vista de estudantes, coordenaç�
 
 **Fundamentação:** R2 e a disponibilidade limitada de memória dos ambientes de teste justificam verificar se a sessão pode funcionar sem esgotar o recurso. A expectativa é uma suposição proposta, não um resultado observado.
 
-**Verificação prevista:** utilizar o componente de memória de M2 e registrar os picos de cada execução válida. O orçamento deverá considerar a capacidade disponível e as necessidades do sistema operacional e dos processos de apoio. Como H3 trata dos picos, uma média ou mediana não poderá ocultar violações individuais do orçamento sem revisão explícita da hipótese e do critério de julgamento.
+**Verificação prevista:** utilizar o M4 e registrar os picos de cada execução válida. O orçamento deverá considerar a capacidade disponível e as necessidades do sistema operacional e dos processos de apoio. Como H3 trata dos picos, uma média ou mediana não poderá ocultar violações individuais do orçamento sem revisão explícita da hipótese e do critério de julgamento.
 
 ### Q4 — Consumo de dados de rede
 
@@ -88,7 +88,7 @@ O objetivo G1 analisa os fluxos web do ponto de vista de estudantes, coordenaç�
 
 **Fundamentação:** R2 relaciona o consumo de dados às condições de acesso dos estudantes. A necessidade de avaliar esse consumo é documental; a expectativa de atendimento a um orçamento é uma suposição proposta para o cenário.
 
-**Verificação prevista:** utilizar o componente de tráfego de M2, mantendo comparáveis a duração e a qualidade dos vídeos, as tarefas e a configuração de cache. Comparar o tráfego com o orçamento previamente justificado. Uma execução interrompida que transfira poucos dados não deverá ser interpretada como uso eficiente.
+**Verificação prevista:** utilizar o M5, mantendo comparáveis a duração e a qualidade dos vídeos, as tarefas e a configuração de cache. Comparar o tráfego com o orçamento previamente justificado. Uma execução interrompida que transfira poucos dados não deverá ser interpretada como uso eficiente.
 
 ## G2 — Portabilidade
 
@@ -102,7 +102,7 @@ O objetivo G2 analisa a adaptabilidade dos fluxos do ponto de vista de estudante
 
 **Fundamentação:** R3 e G2 estabelecem a necessidade de continuidade de uso entre os ambientes selecionados. O sucesso esperado nas combinações essenciais é uma suposição proposta para a equipe; não constitui uma garantia de compatibilidade universal.
 
-**Verificação prevista:** utilizar M3 com identificação individual de ambiente e fluxo. O protocolo deverá distinguir a preparação normal do ensaio de um ajuste extraordinário necessário para utilizar o produto. Combinações inviáveis por incompatibilidade conhecida entre ferramentas e sistemas deverão ser tratadas no planejamento, sem serem registradas automaticamente como falhas da plataforma.
+**Verificação prevista:** utilizar M6 com identificação individual de ambiente e fluxo. O protocolo deverá distinguir a preparação normal do ensaio de um ajuste extraordinário necessário para utilizar o produto. Combinações inviáveis por incompatibilidade conhecida entre ferramentas e sistemas deverão ser tratadas no planejamento, sem serem registradas automaticamente como falhas da plataforma.
 
 ### Q6 — Adaptação a tamanhos de janela
 
@@ -112,7 +112,7 @@ O objetivo G2 analisa a adaptabilidade dos fluxos do ponto de vista de estudante
 
 **Fundamentação:** a adaptabilidade a diferentes tamanhos de tela aparece entre os atributos de R3 na Fase 1. A questão operacionaliza esse atributo por variações de janela nos computadores do escopo. O atendimento esperado é uma suposição proposta para ratificação.
 
-**Verificação prevista:** utilizar M3 com o tamanho de janela incluído na identificação da combinação. Registrar sucesso ou falha da tarefa e evidências de controles ou conteúdos inacessíveis. As combinações utilizadas em Q5 e Q6 deverão ser distinguidas no plano, sem dupla contagem indevida ou mistura dos resultados que respondem a questões diferentes.
+**Verificação prevista:** utilizar M7 com o tamanho de janela incluído na identificação da combinação. Registrar sucesso ou falha da tarefa e evidências de controles ou conteúdos inacessíveis. As combinações utilizadas em Q5 e Q6 deverão ser distinguidas no plano, sem dupla contagem indevida ou mistura dos resultados que respondem a questões diferentes.
 
 ## G3 — Usabilidade
 
@@ -126,7 +126,7 @@ O objetivo G3 reúne acessibilidade e apreensibilidade, contemplando estudantes 
 
 **Fundamentação:** R4 e os critérios de acessibilidade selecionados pelo projeto justificam avaliar a operação por teclado. A expectativa de que os fluxos atendam a essa necessidade é uma suposição proposta para a equipe.
 
-**Verificação prevista:** utilizar M4 nas combinações de ambiente e tarefa previstas para teclado. Registrar a sequência de navegação, os controles utilizados e eventuais bloqueios. A conclusão deverá ocorrer sem substituir a operação por teclado pelo uso do mouse durante a tarefa avaliada.
+**Verificação prevista:** utilizar M8 nas combinações de ambiente e tarefa previstas para teclado. Registrar a sequência de navegação, os controles utilizados e eventuais bloqueios. A conclusão deverá ocorrer sem substituir a operação por teclado pelo uso do mouse durante a tarefa avaliada.
 
 ### Q8 — Utilização com leitor de tela
 
@@ -136,7 +136,7 @@ O objetivo G3 reúne acessibilidade e apreensibilidade, contemplando estudantes 
 
 **Fundamentação:** R4 e G3 incluem pessoas que utilizam leitores de tela. A avaliação se apoia nos critérios de acessibilidade selecionados e nas combinações viáveis dos leitores previstos no escopo. O atendimento esperado é uma suposição proposta, sem resultado de teste preliminar.
 
-**Verificação prevista:** utilizar M4 com leitor de tela, navegador, sistema operacional e tarefa identificados. Registrar informações anunciadas, identificação dos controles e barreiras à conclusão. Os resultados serão limitados às combinações efetivamente examinadas; uma execução bem-sucedida não demonstra conformidade integral da plataforma com a WCAG.
+**Verificação prevista:** utilizar M9 com leitor de tela, navegador, sistema operacional e tarefa identificados. Registrar informações anunciadas, identificação dos controles e barreiras à conclusão. Os resultados serão limitados às combinações efetivamente examinadas; uma execução bem-sucedida não demonstra conformidade integral da plataforma com a WCAG.
 
 ### Q9 — Utilização com ampliação
 
@@ -146,7 +146,7 @@ O objetivo G3 reúne acessibilidade e apreensibilidade, contemplando estudantes 
 
 **Fundamentação:** R4 contempla estudantes com baixa visão e a utilização de recursos de ampliação. Os critérios de acessibilidade selecionados orientam as condições do ensaio. A expectativa de preservação do uso é uma suposição proposta para ratificação.
 
-**Verificação prevista:** utilizar M4 nas condições de ampliação previamente estabelecidas. Registrar o mecanismo utilizado, sua configuração e os efeitos sobre leitura e operação dos controles. Diferenciar a ampliação de Q9 da simples alteração de tamanho de janela de Q6. A avaliação deverá verificar a tarefa, além de produzir evidências visuais.
+**Verificação prevista:** utilizar M10 nas condições de ampliação previamente estabelecidas. Registrar o mecanismo utilizado, sua configuração e os efeitos sobre leitura e operação dos controles. Diferenciar a ampliação de Q9 da simples alteração de tamanho de janela de Q6. A avaliação deverá verificar a tarefa, além de produzir evidências visuais.
 
 ### Q10 — Contraste e alto contraste
 
@@ -156,7 +156,7 @@ O objetivo G3 reúne acessibilidade e apreensibilidade, contemplando estudantes 
 
 **Fundamentação:** as necessidades de baixa visão previstas em R4 e os critérios de contraste selecionados para o estudo fundamentam a investigação. A expectativa de atendimento é uma suposição proposta, sem comprovação empírica nesta etapa.
 
-**Verificação prevista:** utilizar M4 com um checklist aplicável aos elementos necessários à tarefa e com registro da configuração de alto contraste. A ativação de alto contraste não substitui a verificação dos critérios de contraste selecionados. O checklist deverá sustentar a classificação da combinação como bem-sucedida ou não, mantendo os achados individuais disponíveis.
+**Verificação prevista:** utilizar M11 com um checklist aplicável aos elementos necessários à tarefa e com registro da configuração de alto contraste. A ativação de alto contraste não substitui a verificação dos critérios de contraste selecionados. O checklist deverá sustentar a classificação da combinação como bem-sucedida ou não, mantendo os achados individuais disponíveis.
 
 ### Q11 — Apreensibilidade
 
@@ -166,7 +166,7 @@ O objetivo G3 reúne acessibilidade e apreensibilidade, contemplando estudantes 
 
 **Fundamentação:** R5 e a decisão D3 relacionam a aprendizagem inicial à necessidade de planejar orientação sobre o uso da plataforma. A expectativa de autonomia é uma suposição proposta para a equipe; não deriva de observação de participantes já realizada.
 
-**Verificação prevista:** utilizar M5 com estudantes elegíveis e instrução inicial padronizada. Registrar a primeira tentativa de cada par participante–tarefa, a conclusão e os pedidos de ajuda ou intervenções. Definir previamente os patamares de autonomia e a janela de observação. O sucesso inicial é um indicador limitado de apreensibilidade e não demonstra retenção ou aprendizagem ao longo do tempo.
+**Verificação prevista:** utilizar M12 com estudantes elegíveis e instrução inicial padronizada. Registrar a primeira tentativa de cada par participante–tarefa, a conclusão e os pedidos de ajuda ou intervenções. Definir previamente os patamares de autonomia e a janela de observação. O sucesso inicial é um indicador limitado de apreensibilidade e não demonstra retenção ou aprendizagem ao longo do tempo.
 
 ## Interpretação das hipóteses
 
@@ -190,7 +190,7 @@ Falhas de execução atribuíveis ao produto serão preservadas nos registros. A
 
 ## Consistência e integração da especificação
 
-A proposta cobre os três objetivos: **G1 recebe Q1–Q4; G2 recebe Q5–Q6; G3 recebe Q7–Q11**. Todas as questões possuem hipótese e associação proposta a uma família de métrica, conforme a Tabela 1. As métricas existentes são insumos para operacionalização; sua capacidade de responder a cada questão deverá ser confirmada nas fichas.
+A proposta cobre os três objetivos: **G1 recebe Q1–Q4; G2 recebe Q5–Q6; G3 recebe Q7–Q11**. Todas as questões possuem hipótese e associação às métricas correspondentes, conforme a Tabela 1. As métricas existentes são insumos para operacionalização; sua capacidade de responder a cada questão deverá ser confirmada nas fichas.
 
 A numeração Q1–Q11/H1–H11 substitui a organização anterior de cinco questões. Sua incorporação sincroniza os vínculos descritos em [objetivos](objetivos.md), [métricas](metricas.md), [gráfico GQM](grafico-gqm.md) e [visão geral da Fase 2](index.md), em alinhamento com a issue #6. Os artefatos foram sincronizados nesta alteração; a ratificação da proposta e dos parâmetros pela equipe permanece pendente.
 

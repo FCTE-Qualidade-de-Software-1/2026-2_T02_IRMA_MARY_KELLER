@@ -1,70 +1,75 @@
 [← Visão geral da Fase 2](index.md)
 
-# Escala de julgamento e limiares
+# Níveis de pontuação e critérios de julgamento
 
-Propõe-se uma **escala de julgamento comum**, sujeita à aprovação da equipe antes da coleta. A escala qualitativa abaixo **não constitui limiares numéricos já aprovados**. Como M1, M2 medem grandezas físicas e M3–M5 medem percentuais, **não é válido aplicar os mesmos cortes brutos a todas elas**. A solução metodológica proposta é normalizar o julgamento em uma escala ordinal comum, utilizando limiares próprios por métrica, definidos previamente e justificados.
+Os critérios avaliam a **versão web da Khan Academy em computadores**, conforme os requisitos R1–R5 da Fase 1 e as métricas M1–M14 da Fase 2. Os resultados se aplicam somente aos fluxos e ambientes testados. A escala é uma **proposta metodológica do estudo**: os limites operacionais não são prescritos pela ISO/IEC 25023:2016.
 
-A **Tabela 7** estabelece os níveis comuns de julgamento a serem utilizados quando os limites quantitativos forem fundamentados.
+## Escala de pontuação
 
-**Tabela 7 — Escala única de pontuação proposta e situação dos limiares por métrica.**
+| Nota | Nível | Interpretação |
+|:---:|---|---|
+| 3 | Excelente | Supera a meta do estudo ou atende ao nível técnico mais exigente especificado |
+| 2 | Alvo | Atende à meta definida para a avaliação |
+| 1 | Mínimo aceitável | Apresenta limitações e exige melhoria; não corresponde a aprovação plena |
+| 0 | Inaceitável | Não atende ao limite mínimo ou impede tarefa essencial |
+| — | Inconclusivo | Não há evidências válidas suficientes para julgamento |
 
-| Nível comum | Interpretação | Regra quantitativa aplicável a M1–M5 |
-|---|---|---|
-| 0 | Crítico | Pendente de critérios e limiares fundamentados |
-| 1 | Insuficiente | Pendente de critérios e limiares fundamentados |
-| 2 | Satisfatório | Pendente de critérios e limiares fundamentados |
-| 3 | Bom | Pendente de critérios e limiares fundamentados |
-| Sem pontuação | Julgamento inconclusivo: parâmetros, cobertura ou dados válidos insuficientes | Não emitir julgamento |
+## Métricas percentuais
 
-*Fonte: elaboração para a Fase 2. A escala não é uma tabela normativa da ISO/IEC 25023 e ainda requer aprovação da equipe.*
+Para M2, M6–M10 e M12, **maior é melhor**. As faixas de 100%, 90% e 75% são **metas operacionais escolhidas para distinguir atendimento integral, falhas pontuais e falhas recorrentes**; não são percentuais normativos. Registrar também as contagens absolutas e não considerar aprovado um fluxo essencial bloqueado.
 
-A Tabela 7 apresenta os níveis ordinais, mas as **faixas de cada métrica ainda não têm valores justificáveis no material recebido**. Para M1, o corte depende do prazo aceitável para abertura e conclusão de cada fluxo; para M2, dos limites por recurso e da instrumentação; para M3–M5, do nível mínimo de cobertura, acessibilidade ou conclusão autônoma requerido pelos tomadores de decisão. Esses limiares devem ser aprovados e documentados *antes da Fase 4*. Não é metodologicamente válido usar a matriz de priorização da Fase 1 (notas 12 a 18) como faixas de qualidade de resultados, pois aquela matriz classifica **prioridades de avaliação**, não desempenho observado.
+| Métricas | Excelente (3) | Alvo (2) | Mínimo aceitável (1) | Inaceitável (0) |
+|---|---:|---:|---:|---:|
+| M2, M6, M7, M8, M9, M10, M12 | 100% | 90% ≤ x < 100% | 75% ≤ x < 90% | x < 75% |
+| M13 — tentativas com erro (menor é melhor) | 0% | 0% < x ≤ 10% | 10% < x ≤ 25% | x > 25% |
 
-A **Tabela 8** explicita as lacunas de fundamentação para cada métrica. Os campos pendentes não representam resultados nem faixas aprovadas.
+Em M13, erro operacional do participante e falha técnica da plataforma devem ser registrados separadamente. As faixas de 10% e 25% também são decisões metodológicas, sujeitas ao protocolo de tarefas e participantes.
 
-**Tabela 8 — Limiares de pontuação a definir para cada métrica.**
+## Tempo e consumo de recursos
 
-| Métrica | Sentido desejável | Faixa 0 | Faixa 1 | Faixa 2 | Faixa 3 | Fundamentação necessária |
-|---|---|---|---|---|---|---|
-| M1 (s) | Menor | A definir | A definir | A definir | A definir | Tempo máximo aceitável por fluxo e rede |
-| M2 (CPU/RAM/tráfego) | Menor, mantendo o fluxo funcional | A definir | A definir | A definir | A definir | Referência por recurso, VM e tipo de fluxo |
-| M3 (%) | Maior | A definir | A definir | A definir | A definir | Cobertura mínima de ambientes essenciais |
-| M4 (%) | Maior | A definir | A definir | A definir | A definir | Criticidade das barreiras e tarefas essenciais |
-| M5 (%) | Maior | A definir | A definir | A definir | A definir | Nível mínimo de autonomia para dispensar orientação inicial |
+Para M1, M3–M5 e M14, **menor é melhor**. Os valores são faixas propostas para condições específicas e não limites universais de qualidade. Sem condições de coleta comparáveis e aprovação dos parâmetros, o julgamento será inconclusivo.
 
-*Fonte: elaboração para a Fase 2 a partir dos requisitos R1–R5.*
+| Métrica | Excelente (3) | Alvo (2) | Mínimo aceitável (1) | Inaceitável (0) |
+|---|---:|---:|---:|---:|
+| M1 — resposta da interface | ≤ 1 s | > 1 a 3 s | > 3 a 10 s | > 10 s |
+| M3 — CPU média | ≤ 25% | > 25% a 50% | > 50% a 75% | > 75% |
+| M4 — pico de memória | ≤ 512 MiB | > 512 a 1024 MiB | > 1024 a 2048 MiB | > 2048 MiB |
+| M5 — dados transferidos por fluxo | ≤ 5 MiB | > 5 a 10 MiB | > 10 a 20 MiB | > 20 MiB |
+| M14 — tempo de tarefa curta | ≤ 60 s | > 60 a 120 s | > 120 a 180 s | > 180 s |
 
-## Verificação de cada hipótese
+**Justificativa e condições:**
 
-A pontuação de qualidade e o estado da hipótese são registros distintos. Aplicar os estados da Tabela 2 de [questões e hipóteses](questoes-hipoteses.md#interpretacao-das-hipoteses), mantendo resultados **a coletar na Fase 4**. A Tabela 9 relaciona as condições de verificação; constitui proposta pendente de ratificação, sem criar cortes numéricos.
+- **M1:** os marcos de **1 s e 10 s** são referências de Nielsen para resposta interativa; **3 s é uma faixa intermediária proposta pelo estudo**. Medir resposta da interface, não o tempo de assistir a vídeos ou resolver exercícios; relatar mediana e P90.
+- **M3–M4:** os limites de CPU são faixas operacionais propostas. Para M4, 512/1024/2048 MiB equivalem a cerca de 12,5%/25%/50% de **4 GiB de RAM**, perfil previsto na Fase 1 e que deve ser confirmado no plano de testes. Registrar consumo de outros processos.
+- **M5:** os orçamentos de 5/10/20 MiB são propostas para **navegação e carregamento sem transferência integral de videoaulas**; usar fluxos equivalentes e mesma política de cache.
+- **M14:** os limites de 60/120/180 s são propostos apenas para **tarefas curtas e padronizadas**, como localizar um curso. Não incluem tempo de aprendizagem do conteúdo ou resolução pedagógica.
 
-**Tabela 9 — Condições para confrontar os dados com as hipóteses.**
+## Critérios técnicos de acessibilidade
 
-| Questão / hipótese | Medida e condição de verificação |
-|---|---|
-| Q1 / H1 | M1: medianas por etapa e condição dentro dos limites fundamentados, sem bloqueio essencial atribuível ao produto. |
-| Q2 / H2 | M2 CPU: orçamento e protocolo de sobrecarga, incluindo ocorrências que a média não revela. |
-| Q3 / H3 | M2 memória: picos de cada execução dentro do orçamento e ausência de interrupções atribuíveis ao esgotamento; médias ou medianas não substituem picos. |
-| Q4 / H4 | M2 tráfego: orçamento por condição e fluxo padronizado concluído; preservar interrupções. |
-| Q5 / H5 | M3 ambientes: todas as combinações essenciais SO–navegador–fluxo concluídas sem ajustes extraordinários. |
-| Q6 / H6 | M3 janelas: todas as combinações essenciais preservam conteúdo e controles necessários. |
-| Q7 / H7 | M4 teclado: todas as combinações essenciais concluídas sem armadilhas ou controles necessários inacessíveis. |
-| Q8 / H8 | M4 leitor de tela: informação necessária percebida e conclusão em todas as combinações essenciais. |
-| Q9 / H9 | M4 ampliação: conteúdo e funcionalidade necessários preservados em todas as combinações essenciais. |
-| Q10 / H10 | M4 contraste: elementos necessários atendem aos critérios selecionados e permanecem utilizáveis em alto contraste; manter checklist individual. |
-| Q11 / H11 | M5: autonomia na primeira tentativa alcança patamares por tarefa essencial e para o conjunto. |
+- **M10 — ampliação:** verificar preservação de conteúdo e funcionalidade com **texto ampliado até 200%**, conforme **WCAG 2.2, critério 1.4.4 (AA)**, com suas exceções. A meta de **300%**, se testada, é um critério extra **do estudo**, não exigência desse item WCAG. O percentual agregado de M10 não substitui a verificação de cada barreira.
+- **M11 — contraste:** classificar como **Alvo (2)** se todos os textos aplicáveis inspecionados cumprirem **WCAG AA: 4,5:1 (texto comum) e 3:1 (texto grande)**; como **Excelente (3)** se todos cumprirem **AAA: 7:1 e 4,5:1**, respectivamente; **1** se houver falha apenas em elemento não essencial e **0** se houver falha que comprometa informação essencial. Notas 0 ou 1 **não representam conformidade AA**. Registrar separadamente os testes de alto contraste.
+- **M8–M9:** conclusão de tarefas com teclado ou leitor de tela deve ser confrontada com barreiras encontradas; sucesso agregado não comprova conformidade WCAG da plataforma inteira.
 
-*Fonte: elaboração da equipe.*
+## Regra de julgamento
 
-Os limites, orçamentos, critérios de contraste aplicáveis, combinações essenciais, cobertura, repetições e critérios de sucesso devem ser fundamentados e aprovados antes da coleta final. Uma falha essencial documentada não pode ser ocultada por percentual agregado para sustentar H5–H9. H10 também exige atendimento de todas as condições expressas. Lacunas não são sucesso nem falha automática do produto. Sem evidência suficiente, o estado é inconclusivo e não se atribui pontuação. Não há aprovação da equipe documentada nesta alteração.
+Uma **questão** é considerada atendida quando seus indicadores principais atingem **nota 2 ou 3** e nenhuma tarefa essencial é impedida. A nota 1 indica atendimento apenas ao nível mínimo e **não** aprovação plena; resultados de indicadores complementares devem ser discutidos. Um **objetivo** é atendido quando todas as suas questões forem atendidas. As **hipóteses H1–H11** devem ser avaliadas conforme seus enunciados e evidências, e não apenas pela nota da métrica; podem ser sustentadas, não sustentadas ou inconclusivas.
+
+| Objetivo | Questões | Métricas | Requisitos |
+|---|---|---|---|
+| G1 — eficiência de desempenho | Q1–Q4 | M1–M5 | R1–R2 |
+| G2 — portabilidade | Q5–Q6 | M6–M7 | R3 |
+| G3 — usabilidade | Q7–Q11 | M8–M14 | R4–R5 |
+
+As faixas percentuais e os limites de CPU, memória, tráfego e tempo de tarefa são **propostas metodológicas**, não limites oficiais da ISO/IEC 25023 ou da WCAG. A equipe deve aprovar e registrar sua justificativa e as condições de aplicação **antes da coleta**; sem essa validação, o resultado permanece inconclusivo.
+
+**Referências técnicas:** [Nielsen — Response Times](https://www.nngroup.com/articles/response-times-3-important-limits/); [W3C — WCAG 2.2](https://www.w3.org/TR/WCAG22/).
 
 ## Histórico de versões
 
-| Versão | Data | Descrição | Responsável | Revisor | 
-| :---: | :---: | :--- | :--- | :--- | 
-| 1.0 | 18/10/2026 | Estruturação da escala de pontuação e dos critérios de julgamento das métricas, com identificação dos limiares pendentes de fundamentação. | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) | [Pedro Lucas](https://github.com/Pwdrinho)| 
-| 1.1 | 19/10/2026 | Correspondência dos critérios com H1–H11, preservando a escala e os parâmetros pendentes. | [Camila Cavalcante](https://github.com/CamilaSilvaC) | [Pedro Lucas](https://github.com/Pwdrinho) |
-
+| Versão | Data | Descrição | Responsável | Revisor |
+|:---:|:---:|---|---|---|
+| 1.0 | 18/10/2026 | Estruturação inicial dos critérios GQM. | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) | [Pedro Lucas](https://github.com/Pwdrinho) |
+| 1.1| 20/10/2026 | Consolidação das faixas e justificativas dos critérios de julgamento. | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) | [Pedro Lucas](https://github.com/Pwdrinho)  |
 
 ---
 
