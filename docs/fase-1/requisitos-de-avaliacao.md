@@ -18,12 +18,12 @@ Para que o resultado apoie uma decisão concreta, a avaliação adota o seguinte
 
 O requisitante da avaliação é a coordenação da escola do cenário da seção 1.2, que precisa decidir se recomenda a Khan Academy aos alunos. A Tabela 1 mostra cada decisão que a avaliação apoia, quem a toma e qual resultado a sustenta.
 
-| ID | Decisão apoiada | Quem decide | Resultado que apoia a decisão |
-|---|---|---|---|
-| `D1` | Recomendar ou não a plataforma web nos ambientes de computador avaliados e indicar as condições de acesso observadas | Coordenação da escola e professores | Comportamento temporal, utilização de recursos e adaptabilidade em cada ambiente avaliado |
-| `D2` | Indicar a plataforma a alunos com baixa visão ou que usam leitor de tela, e com quais ajustes | Professores e responsáveis | Achados de acessibilidade nos fluxos principais |
-| `D3` | Planejar uma aula introdutória sobre como usar a plataforma, ou dispensá-la | Professores | Facilidade de aprendizado dos fluxos principais por um aluno novo |
-| `D4` | Definir objetivos, questões e métricas da Fase 2 e o rigor de cada parte da avaliação | Equipe avaliadora | Prioridades da [seção 2.4](#priorizacao) e rastreabilidade da [seção 4](#rastreabilidade) |
+| ID | Decisão apoiada | Quem decide | Resultado que apoia a decisão | Desfechos possíveis |
+|---|---|---|---|---|
+| `D1` | Recomendar ou não a plataforma web nos ambientes de computador avaliados e indicar as condições de acesso observadas | Coordenação da escola e professores | Comportamento temporal, utilização de recursos e adaptabilidade em cada ambiente avaliado | Recomendar sem ressalvas; recomendar apenas nos navegadores, sistemas e condições de rede em que os fluxos foram concluídos; não recomendar |
+| `D2` | Indicar a plataforma a alunos com baixa visão ou que usam leitor de tela, e com quais ajustes | Professores e responsáveis | Achados de acessibilidade nos fluxos principais | Indicar com os ajustes que funcionaram (zoom, alto contraste ou leitor de tela); indicar com ressalvas por fluxo; não indicar |
+| `D3` | Planejar uma aula introdutória sobre como usar a plataforma, ou dispensá-la | Professores | Facilidade de aprendizado dos fluxos principais por um aluno novo | Dispensar a aula; prever uma introdução curta aos fluxos com mais erros; prever acompanhamento no primeiro uso |
+| `D4` | Definir objetivos, questões e métricas da Fase 2 e o rigor de cada parte da avaliação | Equipe avaliadora | Prioridades da [seção 2.4](#priorizacao) e rastreabilidade da [seção 4](#rastreabilidade) | Manter, aumentar ou reduzir a profundidade de cada requisito na Fase 2 |
 
 *Tabela 1. Decisões apoiadas pela avaliação. Fonte: Elaborada por: [Luisa de Souza](https://github.com/luisa12ll)*
 
@@ -60,8 +60,8 @@ O modelo geral da ISO/IEC 25010:2011 propõe uma estrutura abrangente voltada a 
 
 Dessa forma, a decisão de adaptar o modelo sustenta-se nas seguintes razões técnicas e metodológicas:
 
-1. **Poda e exclusão justificada:** Características que exigem acesso interno ao código-fonte proprietário (*Manutenibilidade*), testes de intrusão não autorizados em ambiente de terceiros (*Segurança*), observação temporal contínua e extensa (*Confiabilidade*) ou auditoria de matriz curricular (*Adequação Funcional*) foram descartadas por inviabilidade técnica ou desconexão com a avaliação externa do software (detalhadas na Seção 2.6).
-2. **Foco nas subcaracterísticas críticas:** Das características mantidas, foram selecionadas estritamente aquelas que respondem às decisões concretas `D1` a `D3`. Em Usabilidade, por exemplo, o escopo prioriza *Acessibilidade* (inclusão de alunos com baixa visão ou usuários de tecnologias assistivas) e *Apreensibilidade* (capacidade de estudo autônomo sem exigir sobrecarga de orientação do professor), deixando de fora aspectos de estética visual ou operabilidade genérica.
+1. **Poda e exclusão justificada:** Características que exigem acesso interno ao código-fonte proprietário (*Manutenibilidade*), testes de intrusão não autorizados em ambiente de terceiros (*Segurança*), observação temporal contínua e extensa (*Confiabilidade*) ou auditoria de matriz curricular (*Adequação Funcional*) foram descartadas por inviabilidade técnica ou desconexão com a avaliação externa do software (detalhadas na Tabela 4, seção 2.4).
+2. **Foco nas subcaracterísticas críticas:** Das características mantidas, foram selecionadas estritamente aquelas que respondem às decisões concretas `D1` a `D3`. Em Usabilidade, por exemplo, o escopo prioriza *Acessibilidade* (inclusão de alunos com baixa visão ou usuários de tecnologias assistivas) e *Apreensibilidade* (capacidade de estudo autônomo sem exigir sobrecarga de orientação do professor), deixando de fora aspectos de estética visual ou operabilidade genérica (ver Tabela 6).
 3. **Refinamento operacional para a Khan Academy:** Cada subcaracterística ganha significado prático no contexto do produto, conectando-se diretamente aos atores e às decisões apoiadas, conforme estruturado na Figura 1.
 
 ![Modelo de Qualidade](../assets/img/modelo_qualidade.svg)
@@ -72,13 +72,11 @@ Dessa forma, a decisão de adaptar o modelo sustenta-se nas seguintes razões t�
 
 A Tabela 3 lista as três características e as cinco subcaracterísticas selecionadas, com a norma que define cada uma e a norma que fornecerá as medidas.
 
-A Usabilidade permanece na seleção por decisão da equipe, com base na autorização específica comunicada pela professora ao grupo. Essa exceção deve ser interpretada junto à rubrica da turma, que, como regra geral, orienta a seleção de características diferentes de Usabilidade.
-
 | Característica | Subcaracterística | O que será observado na Khan Academy | Modelo | Medidas |
 |---|---|---|---|---|
 | Eficiência de desempenho | Comportamento temporal | Tempo para carregar páginas, iniciar vídeos e responder a exercícios | ISO/IEC 25010:2011 | ISO/IEC 25023:2016, medidas de comportamento temporal |
 | Eficiência de desempenho | Utilização de recursos | Consumo de CPU, memória e dados de rede durante os fluxos principais | ISO/IEC 25010:2011 | ISO/IEC 25023:2016, medidas de utilização de recursos |
-| Portabilidade | Adaptabilidade | Funcionamento dos fluxos principais em diferentes sistemas operacionais, navegadores e tamanhos de tela, sem alteração do produto | ISO/IEC 25010:2011 | ISO/IEC 25023:2016, medidas de adaptabilidade |
+| Portabilidade | Adaptabilidade | Funcionamento dos fluxos principais em diferentes sistemas operacionais, navegadores e resoluções de computador, sem alteração do produto | ISO/IEC 25010:2011 | ISO/IEC 25023:2016, medidas de adaptabilidade |
 | Usabilidade | Apreensibilidade | Facilidade de um aluno novo aprender a encontrar um conteúdo, assistir a uma aula e resolver um exercício | ISO/IEC 25010:2011 | ISO/IEC 25023:2016, medidas de apreensibilidade |
 | Usabilidade | Acessibilidade | Uso dos fluxos principais com leitor de tela, ampliação e alto contraste | ISO/IEC 25010:2011 | ISO/IEC 25023:2016, medidas de acessibilidade |
 
@@ -86,15 +84,38 @@ A Usabilidade permanece na seleção por decisão da equipe, com base na autoriz
 
 <a id="priorizacao"></a>
 
-### 2.4 Método de priorização
+### 2.4 Seleção e priorização
 
-As subcaracterísticas foram priorizadas por uma matriz ponderada com três critérios, cada um pontuado de 1 (baixo) a 3 (alto):
+A seleção e a priorização usam o mesmo método, aplicado em duas etapas: primeiro às oito características da ISO/IEC 25010:2011, para decidir quais entram na avaliação; depois às subcaracterísticas selecionadas, para definir a profundidade de cada uma. Nas duas etapas, cada item recebe nota de 1 (baixo) a 3 (alto) em três critérios:
 
-- **Impacto no aluno (peso 3):** quanto um problema nessa subcaracterística impede o aluno do cenário da seção 1.2 de estudar. Tem o maior peso porque o propósito da avaliação é apoiar decisões sobre esses alunos.
+- **Impacto no aluno (peso 3):** quanto um problema nesse item impede o aluno do cenário da seção 1.2 de estudar. Tem o maior peso porque o propósito da avaliação é apoiar decisões sobre esses alunos.
 - **Risco no contexto (peso 2):** quanto é provável que o problema apareça nas condições do cenário (computador com recursos limitados, rede lenta, variação entre ambientes e necessidade de acessibilidade).
 - **Viabilidade de evidência (peso 1):** quanto a equipe consegue produzir evidência com os dispositivos, as ferramentas e o tempo disponíveis, sem acesso ao código-fonte. Tem o menor peso para que a facilidade de medir não decida sozinha a prioridade.
 
-A pontuação é `P = 3 × Impacto + 2 × Risco + 1 × Viabilidade`, com máximo de 18. Prioridade **alta** quando `P ≥ 15`, **média** quando `12 ≤ P ≤ 14` e **baixa** quando `P ≤ 11`. Os pesos, as notas e as faixas são critério da equipe, não da norma.
+A pontuação é `P = 3 × Impacto + 2 × Risco + 1 × Viabilidade`, com máximo de 18. Os pesos, as notas e as faixas são critério da equipe, não da norma.
+
+#### Etapa 1: seleção das características
+
+Na primeira etapa, a pontuação de cada característica é convertida em uma classe MoSCoW: **Must have** quando `P ≥ 15`, **Should have** quando `12 ≤ P ≤ 14`, **Could have** quando `10 ≤ P ≤ 11` e **Won't have** quando `P ≤ 9`. Uma característica com viabilidade 1 também fica como Won't have, porque a equipe não consegue produzir evidência sobre ela, qualquer que seja o impacto. A Tabela 4 apresenta o resultado.
+
+| Característica | Impacto (×3) | Risco (×2) | Viabilidade (×1) | `P` | MoSCoW | Justificativa |
+|---|---|---|---|---|---|---|
+| Eficiência de desempenho | 3 | 3 | 3 | 18 | Must have | Lentidão e consumo de recursos são a primeira barreira em computadores limitados e conexão lenta; responde a `D1` |
+| Portabilidade | 3 | 2 | 2 | 15 | Must have | O aluno depende do sistema operacional e do navegador disponíveis; responde a `D1` |
+| Usabilidade | 3 | 2 | 2 | 15 | Must have | Barreiras de acessibilidade e de aprendizado do uso afetam diretamente o estudo; responde a `D2` e `D3` |
+| Confiabilidade | 2 | 2 | 1 | 11 | Won't have | Avaliar disponibilidade, recuperação e tolerância a falhas exigiria observação prolongada ou indução de falhas fora da autorização e do prazo da equipe |
+| Adequação funcional | 2 | 1 | 1 | 9 | Won't have | Verificar completude e correção funcional exigiria uma especificação autoritativa não disponível à equipe; a avaliação também não julga a correção pedagógica dos conteúdos |
+| Segurança | 2 | 1 | 1 | 9 | Won't have | A equipe não possui autorização para realizar testes ativos de segurança no serviço de terceiros |
+| Compatibilidade | 1 | 1 | 2 | 7 | Won't have | Interoperabilidade depende de integrações externas não incluídas e coexistência com outros programas não responde às decisões `D1` a `D3` |
+| Manutenibilidade | 1 | 1 | 1 | 6 | Won't have | A avaliação externa não dispõe do código-fonte e dos artefatos internos necessários |
+
+*Tabela 4. Seleção das características da ISO/IEC 25010:2011 por MoSCoW com pesos. Fonte: Elaborada por: [Luisa de Souza](https://github.com/luisa12ll)*
+
+As três características classificadas como Must have formam a seleção. Nenhuma ficou como Should have ou Could have: a confiabilidade alcança 11 pontos, mas a viabilidade 1 a coloca como Won't have.
+
+#### Etapa 2: priorização das subcaracterísticas
+
+Dentro das três características selecionadas, a mesma matriz define a profundidade de cada subcaracterística avaliada. As faixas de pontuação são as mesmas da etapa 1: prioridade **alta** quando `P ≥ 15`, **média** quando `12 ≤ P ≤ 14` e **baixa** quando `P ≤ 11`. A Tabela 5 apresenta o resultado.
 
 | Subcaracterística | Impacto (×3) | Risco (×2) | Viabilidade (×1) | `P` | Prioridade |
 |---|---|---|---|---|---|
@@ -104,7 +125,7 @@ A pontuação é `P = 3 × Impacto + 2 × Risco + 1 × Viabilidade`, com máximo
 | Acessibilidade | 3 | 2 | 2 | 15 | Alta |
 | Apreensibilidade | 2 | 2 | 2 | 12 | Média |
 
-*Tabela 4. Matriz de priorização das subcaracterísticas. Fonte: Elaborada por: [Luisa de Souza](https://github.com/luisa12ll)*
+*Tabela 5. Matriz de priorização das subcaracterísticas. Fonte: Elaborada por: [Luisa de Souza](https://github.com/luisa12ll)*
 
 Razões das notas que mais pesam no resultado:
 
@@ -115,6 +136,22 @@ Razões das notas que mais pesam no resultado:
 
 A ordem operacional decorre das pontuações das subcaracterísticas, não da soma simples por característica. Eficiência de desempenho vem primeiro, com 18 e 17 pontos; adaptabilidade e acessibilidade compartilham a prioridade seguinte, com 15 pontos; e apreensibilidade recebe profundidade menor, com 12 pontos.
 
+As demais subcaracterísticas dessas três características não entram na avaliação. A Tabela 6 registra cada uma e o motivo do corte.
+
+| Característica | Subcaracterística não selecionada | Motivo do corte |
+|---|---|---|
+| Eficiência de desempenho | Capacidade | Medir os limites de usuários ou de dados exigiria gerar carga no servidor de produção, o que não é autorizado; o escopo já exclui testes de carga |
+| Portabilidade | Instalabilidade | A plataforma web é usada pelo navegador e não é instalada |
+| Portabilidade | Substituibilidade | Substituir outro produto pela Khan Academy não faz parte das decisões `D1` a `D3` |
+| Usabilidade | Reconhecimento de adequação | O cenário já parte de uma plataforma educacional escolhida pela coordenação; reconhecer se ela é adequada não altera as decisões |
+| Usabilidade | Operabilidade | Fica coberta em parte pela navegação por teclado, na acessibilidade, e pelas tarefas da apreensibilidade; avaliá-la à parte ampliaria os ensaios sem apoiar uma decisão nova |
+| Usabilidade | Proteção contra erros do usuário | Exigiria provocar erros de forma sistemática em todos os fluxos, o que não cabe no prazo da avaliação |
+| Usabilidade | Estética da interface do usuário | Depende de julgamento subjetivo e não apoia nenhuma das decisões `D1` a `D4` |
+
+*Tabela 6. Subcaracterísticas não selecionadas nas características escolhidas e motivo do corte. Fonte: Elaborada por: [Luisa de Souza](https://github.com/luisa12ll)*
+
+Para verificar se o resultado depende dos pesos escolhidos, as notas das Tabelas 4 e 5 foram recalculadas em dois cenários alternativos: com pesos iguais (`I + R + V`) e sem o critério de viabilidade (`3 × I + 2 × R`). Nas subcaracterísticas, as pontuações ficam 9, 8, 7, 7 e 6 no primeiro cenário e 15, 15, 13, 13 e 10 no segundo; a ordem se mantém: eficiência de desempenho primeiro, adaptabilidade e acessibilidade em seguida e apreensibilidade por último. Nas características, as três selecionadas continuam à frente das demais nos dois cenários, com 7 pontos ou mais contra no máximo 5 no primeiro e 13 pontos ou mais contra no máximo 10 no segundo. A seleção e a priorização, portanto, não dependem de um ajuste fino dos pesos.
+
 ### 2.5 Trade-offs e consequências da priorização
 
 A prioridade define o rigor de cada parte da avaliação, conforme previsto na ISO/IEC 25040:
@@ -122,20 +159,7 @@ A prioridade define o rigor de cada parte da avaliação, conforme previsto na I
 - **Amplitude contra profundidade.** Executar todas as subcaracterísticas em todas as combinações de navegador e sistema produziria uma matriz incompatível com o prazo. O comportamento temporal e a utilização de recursos serão medidos no ambiente de referência; adaptabilidade e acessibilidade usarão combinações direcionadas, definidas no escopo.
 - **Cobertura de ambientes contra repetibilidade.** A seleção de Windows, macOS e Ubuntu cobre os três motores de navegador e os leitores de tela disponíveis, mas não representa todas as versões de sistemas e navegadores. O corte permite repetir os ensaios e conservar evidências comparáveis.
 - **Acessibilidade automática contra manual.** A inspeção automatizada amplia a cobertura de páginas, mas não demonstra que uma tarefa pode ser concluída com tecnologia assistiva. Os fluxos centrais serão verificados manualmente com teclado e leitores de tela; a ferramenta automática será apenas complementar.
-
-### 2.6 Características não selecionadas
-
-A Tabela 5 registra por que as demais características da ISO/IEC 25010:2011 ficaram de fora.
-
-| Característica | Motivo de não seleção |
-|---|---|
-| Adequação funcional | Verificar completude e correção funcional exigiria uma especificação autoritativa não disponível à equipe; a avaliação também não julga a correção pedagógica dos conteúdos |
-| Compatibilidade | Interoperabilidade depende de integrações externas não incluídas e coexistência com outros programas não responde às decisões `D1` a `D3` |
-| Confiabilidade | Avaliar disponibilidade, recuperação e tolerância a falhas exigiria observação prolongada ou indução de falhas fora da autorização e do prazo da equipe |
-| Segurança | A equipe não possui autorização para realizar testes ativos de segurança no serviço de terceiros |
-| Manutenibilidade | A avaliação externa não dispõe do código-fonte e dos artefatos internos necessários |
-
-*Tabela 5. Características da ISO/IEC 25010:2011 não selecionadas e motivo. Fonte: Elaborada por: [Luisa de Souza](https://github.com/luisa12ll)*
+- **Apreensibilidade com amostra exploratória.** Por ter prioridade média, a apreensibilidade recebe a menor profundidade: três a cinco participantes, apenas no ambiente de referência. A amostra é suficiente para identificar dificuldades recorrentes nos fluxos centrais e apoiar a decisão `D3`, mas não permite generalizar para todos os estudantes; se o recrutamento não for possível, o resultado será apresentado como inspeção exploratória da equipe.
 
 <a id="justificativa"></a>
 
@@ -151,7 +175,7 @@ A tríade de características selecionadas alinha-se estritamente à viabilidade
 
 ## 4. Rastreabilidade: característica, interessado e justificativa
 
-A Tabela 6 liga cada subcaracterística selecionada aos interessados que dependem dela, à justificativa e à decisão que apoia. Os identificadores `R1` a `R5` são os requisitos de avaliação que orientam os objetivos de medição. Os objetivos `G1` a `G3` já estão consolidados na [Fase 2](../fase-2/objetivos.md) e mantêm correspondência explícita com esses requisitos.
+A Tabela 7 liga cada subcaracterística selecionada aos interessados que dependem dela, à justificativa e à decisão que apoia. Os identificadores `R1` a `R5` são os requisitos de avaliação que orientam os objetivos de medição. Os objetivos `G1` a `G3` já estão consolidados na [Fase 2](../fase-2/objetivos.md) e mantêm correspondência explícita com esses requisitos.
 
 | ID | Característica: subcaracterística | Prioridade | Interessados | Justificativa | Decisão | Objetivo GQM relacionado |
 |---|---|---|---|---|---|---|
@@ -161,7 +185,7 @@ A Tabela 6 liga cada subcaracterística selecionada aos interessados que depende
 | `R4` | Usabilidade: acessibilidade | Alta | Estudantes com baixa visão ou que usam leitor de tela; professores; responsáveis | Uma barreira de acessibilidade bloqueia o uso por completo para esse grupo | `D2` | `G3` Usabilidade |
 | `R5` | Usabilidade: apreensibilidade | Média | Estudantes novos; professores | Se o aluno não aprende a usar sozinho, o professor precisa planejar uma aula de introdução | `D3` | `G3` Usabilidade |
 
-*Tabela 6. Rastreabilidade entre requisitos de avaliação, interessados, justificativas e decisões. Fonte: Elaborada por: [Luisa de Souza](https://github.com/luisa12ll)*
+*Tabela 7. Rastreabilidade entre requisitos de avaliação, interessados, justificativas e decisões. Fonte: Elaborada por: [Luisa de Souza](https://github.com/luisa12ll)*
 
 A equipe avaliadora é interessada em todos os requisitos, por meio da decisão `D4`, e por isso não aparece linha a linha.
 
@@ -179,5 +203,6 @@ A equipe avaliadora é interessada em todos os requisitos, por meio da decisão 
 
 | Versão | Data | Descrição | Responsável | Revisor |
 |---|---|---|---|---|
-| 1.0 | 17/10/2026 | Criação do documento: propósito, características com norma e prioridade, justificativa e rastreabilidade, com base na ISO/IEC 25010:2011 e nota sobre a versão de 2023 | [Luisa de Souza](https://github.com/luisa12ll) | |
-| 1.1 | 20/10/2026 | Alinhamento da priorização e dos trade-offs ao recorte da plataforma web em navegadores de computador | [Enzo Menali](https://github.com/menali17) | |
+| 1.0 | 17/10/2026 | Criação do documento: propósito, características com norma e prioridade, justificativa e rastreabilidade, com base na ISO/IEC 25010:2011 e nota sobre a versão de 2023 | [Luisa de Souza](https://github.com/luisa12ll) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
+| 1.1 | 20/10/2026 | Adaptação do modelo de qualidade com a Figura 1, padronização das legendas e das referências e síntese da justificativa | [José Augusto](https://github.com/JAugustoM) | [Luisa de Souza](https://github.com/luisa12ll) |
+| 1.2 | 20/10/2026 | Alinhamento da priorização e dos trade-offs ao recorte da plataforma web em navegadores de computador | [Enzo Menali](https://github.com/menali17) | [Luisa de Souza](https://github.com/luisa12ll) |
