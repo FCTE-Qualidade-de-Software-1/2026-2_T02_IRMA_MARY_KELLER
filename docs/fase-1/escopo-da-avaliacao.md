@@ -70,6 +70,8 @@ Esse desenho permite comparação interna sob condições controladas, mas não 
 
 Os fluxos `FL1` a `FL3` serão percorridos manualmente com teclado e leitores de tela nas combinações `A1`, `A3` e `A4`. Uma inspeção automatizada baseada nas WCAG será usada como apoio nas mesmas páginas, sem substituir a verificação de que as tarefas podem ser executadas com tecnologia assistiva.
 
+Para o perfil de baixa visão, `FL1` a `FL3` também serão inspecionados em `A1`, na resolução de 1366 × 768, com duas configurações aplicadas separadamente: zoom do navegador em 200% e tema de alto contraste do Windows. A equipe verificará se textos, controles, foco e feedback permanecem perceptíveis, se há sobreposição ou corte de conteúdo e se cada tarefa pode ser concluída sem desativar a configuração. Serão registradas a configuração utilizada, capturas de tela e barreiras observadas. Esse procedimento é um recorte operacional da equipe e não representa todas as pessoas com baixa visão nem comprova conformidade integral com as WCAG.
+
 A apreensibilidade será observada nos fluxos `FL1` a `FL3`, no ambiente `A1`, com três a cinco participantes adultos que declarem não ter experiência anterior com a Khan Academy. Serão registrados conclusão da tarefa, erros observáveis, pedidos de ajuda e percepção relatada ao final. Os participantes serão identificados apenas por códigos e deverão consentir com a atividade. A quantidade é uma escolha da equipe compatível com uma investigação exploratória, não uma amostra estatística. Se a equipe não conseguir recrutar a amostra planejada, não será apresentada conclusão sobre estudantes reais; a inspeção da equipe será identificada como evidência exploratória.
 
 <a id="profundidade"></a>
@@ -83,7 +85,7 @@ A avaliação é externa e de caixa-preta. A Tabela 3 relaciona cada subcaracter
 | Comportamento temporal | `FL1` a `FL3` em `A1` | Uma execução de aquecimento e cinco repetições válidas por tarefa e condição de rede | Marcações de início e fim, exportações de rede, configuração do perfil e planilha de resultados brutos |
 | Utilização de recursos | `FL1` a `FL3` em `A1` | Cinco repetições com a mesma conta e conteúdo, registrando os recursos definidos no plano de medição | Registros do navegador ou sistema operacional, configuração do computador e planilha de resultados brutos |
 | Adaptabilidade | `FL1` a `FL4` em `A1` a `A4` | Execução funcional dirigida em resoluções de referência de 1366 × 768 e 1920 × 1080, sem alterar o produto | Lista de verificação por ambiente, capturas e descrição de divergências reproduzíveis |
-| Acessibilidade | `FL1` a `FL3` em `A1`, `A3` e `A4` | Navegação por teclado e leitor de tela, complementada por inspeção automatizada nas páginas avaliadas | Roteiro executado, gravações ou capturas permitidas, achados manuais e relatório automatizado |
+| Acessibilidade | `FL1` a `FL3` em `A1`, `A3` e `A4` | Navegação por teclado e leitor de tela; em `A1`, inspeções separadas com zoom de 200% e alto contraste do Windows; inspeção automatizada apenas como apoio | Roteiro executado, configurações registradas, gravações ou capturas permitidas, achados manuais e relatório automatizado |
 | Apreensibilidade | `FL1` a `FL3` em `A1` | Três a cinco participantes adultos novos na plataforma, com tarefas e instruções iguais | Formulário anonimizado de execução, erros, ajuda solicitada e percepção relatada |
 
 *Tabela 3. Profundidade planejada e evidências por subcaracterística. Fonte: Elaborada por: [Enzo Menali](https://github.com/menali17)*
@@ -123,7 +125,7 @@ Os limites da Tabela 5 orientam a redação das conclusões e impedem generaliza
 | Fluxos | `FL1` a `FL3` como fluxos centrais e `FL4` como fluxo secundário | Os resultados não representam módulos, papéis e tarefas excluídos |
 | Ambientes | Combinações `A1` a `A4`, nas versões registradas | Não representam outros sistemas, navegadores, versões antigas, aplicativos ou navegadores móveis |
 | Desempenho | Computador de referência `A1` e dois perfis de rede controlados | Não estima o desempenho de toda a população de computadores e conexões; permite apenas comparação nas condições registradas |
-| Tecnologias assistivas | NVDA, VoiceOver e Orca, com navegação por teclado | Não comprova conformidade integral com as WCAG nem representa todas as deficiências e tecnologias assistivas |
+| Tecnologias assistivas e baixa visão | NVDA, VoiceOver e Orca, com navegação por teclado; em `A1`, zoom de 200% e alto contraste do Windows aplicados separadamente | Não comprova conformidade integral com as WCAG nem representa todas as deficiências, tecnologias assistivas ou pessoas com baixa visão |
 | Apreensibilidade | Três a cinco adultos voluntários sem experiência prévia declarada | A amostra é exploratória e não representa estatisticamente estudantes de escolas públicas ou menores de idade |
 | Serviço externo | Infraestrutura de produção fora do controle da equipe | Variações de rota, carga do serviço e conteúdo disponível podem influenciar as medições |
 
@@ -155,7 +157,7 @@ A Tabela 7 liga os requisitos `R1` a `R5` aos fluxos, ambientes e decisões defi
 | `R1` | Comportamento temporal | `FL1` a `FL3` | `A1` | `D1` | Cinco repetições por tarefa e condição de rede no ambiente de referência |
 | `R2` | Utilização de recursos | `FL1` a `FL3` | `A1` | `D1` | Registros instrumentais repetidos, associados à configuração do computador |
 | `R3` | Adaptabilidade | `FL1` a `FL4` | `A1` a `A4` | `D1` | Verificação dirigida nos três motores, três sistemas e duas resoluções de computador |
-| `R4` | Acessibilidade | `FL1` a `FL3` | `A1`, `A3` e `A4` | `D2` | Ensaios com NVDA, VoiceOver e Orca, teclado e inspeção automatizada complementar |
+| `R4` | Acessibilidade | `FL1` a `FL3` | `A1`, `A3` e `A4` | `D2` | Ensaios com NVDA, VoiceOver e Orca e teclado; em `A1`, inspeções separadas com zoom de 200% e alto contraste; inspeção automatizada complementar |
 | `R5` | Apreensibilidade | `FL1` a `FL3` | `A1` | `D3` | Tarefas com três a cinco participantes adultos novos na plataforma, com registros anonimizados |
 
 *Tabela 7. Rastreabilidade entre requisitos, fluxos, ambientes e decisões. Fonte: Elaborada por: [Enzo Menali](https://github.com/menali17)*
@@ -183,3 +185,4 @@ A Tabela 7 liga os requisitos `R1` a `R5` aos fluxos, ambientes e decisões defi
 | 1.0 | 18/10/2026 | Criação do documento com objetos, ambientes, profundidade, cortes, limites de validade e alinhamento com ODS 4 e 10 | [José Augusto](https://github.com/JAugustoM) | |
 | 1.1 | 18/10/2026 | Padronização de tabelas e referências | [José Augusto](https://github.com/JAugustoM) | |
 | 1.2 | 20/10/2026 | Delimitação da plataforma web em computadores, matriz direcionada de ambientes, profundidade por subcaracterística e revisão do vínculo com os ODS | [Enzo Menali](https://github.com/menali17) | |
+| 1.3 | 20/10/2026 | Inclusão da inspeção delimitada para baixa visão com zoom e alto contraste no ambiente `A1` | [Enzo Menali](https://github.com/menali17) | |
