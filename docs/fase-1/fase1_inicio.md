@@ -1,106 +1,27 @@
 # Fase 1 — Estabelecer Requisitos de Avaliação
 
-Divisão das duplas
-1.
-2.
-3.
-
-Elaboração dos tópicos referente a Fase 1 entrega para dia 12/10/2026
-
 
 ## 1. Propósito da avaliação 
 
-O propósito da avaliação é **analisar a qualidade do site da Khan Academy sob a perspectiva de usuários que utilizam a plataforma para fins educacionais**, considerando aspectos relacionados à facilidade de uso, à adaptação a diferentes ambientes de acesso e ao funcionamento conjunto com diferentes softwares e componentes.
-
-A avaliação será orientada pelo modelo de qualidade da **ISO/IEC 25010**, sendo selecionadas as características **Usabilidade, Portabilidade e Compatibilidade**. A escolha considera tanto a relevância dessas características para uma plataforma educacional disponibilizada pela Web quanto a viabilidade de sua avaliação com os recursos e informações acessíveis à equipe.
-
-O objetivo não será avaliar a qualidade geral da [Khan Academy](https://pt.khanacademy.org/), mas **delimitar e analisar aspectos observáveis dessas três características no produto disponível aos usuários**.
-
----
+FEITO E VERIFICADO
 
 ## 2. Tipo de produto
 
 ### 2.1 Produto avaliado
 
-**Khan Academy — plataforma educacional online**
-
-A Khan Academy é uma plataforma educacional acessível pela Web que disponibiliza conteúdos de aprendizagem, exercícios e outros recursos educacionais aos seus usuários.
-
-### 2.2 Caracterização do produto
-
-O produto pode ser caracterizado como uma **aplicação Web educacional**, acessada principalmente por meio de navegadores em computadores e dispositivos móveis.
-
-Entre os recursos que podem fazer parte do escopo da avaliação estão:
-
-- acesso à plataforma;
-    
-- navegação entre conteúdos;
-    
-- busca por conteúdos educacionais;
-    
-- acesso a cursos e aulas;
-    
-- reprodução de conteúdos multimídia;
-    
-- realização de exercícios;
-    
-- acompanhamento do progresso;
-    
-- utilização da plataforma em diferentes dispositivos e navegadores.
-    
+FEITO E VERIFICADO
 
 ### 2.3 Escopo
 
-O escopo será limitado à **interface e ao comportamento observável da plataforma disponibilizada aos usuários**, não abrangendo aspectos internos da infraestrutura da Khan Academy que não possam ser diretamente observados ou avaliados pela equipe.
-
-Por exemplo, não será objetivo avaliar diretamente:
-
-- arquitetura interna dos servidores;
-    
-- código-fonte proprietário;
-    
-- desempenho interno dos bancos de dados;
-    
-- segurança da infraestrutura;
-    
-- escalabilidade dos servidores;
-    
-- algoritmos internos.
-    
-
-Essa delimitação é importante porque a escolha das características deve considerar a **disponibilidade das informações necessárias para realizar a avaliação**.
-
----
+FEITO (VERIFICAR)
 
 ## 3. Interessados (Stakeholders)
 
-Para uma plataforma educacional como a Khan Academy, existem diferentes grupos interessados na qualidade do produto.
-
-|Interessado|Interesse na qualidade|
-|---|---|
-|**Estudantes**|Conseguir acessar conteúdos, realizar atividades e acompanhar sua aprendizagem de maneira adequada|
-|**Professores/educadores**|Utilizar a plataforma como apoio ao processo de ensino e aprendizagem|
-|**Responsáveis**|Ter uma plataforma acessível e adequada para o uso educacional|
-|**Khan Academy**|Garantir que a plataforma ofereça uma experiência adequada aos seus usuários|
-|**Equipe de desenvolvimento**|Identificar problemas e oportunidades de melhoria no produto|
-|**Equipe avaliadora**|Obter evidências para analisar as características de qualidade selecionadas|
-
-Para esta avaliação, **estudantes/usuários da plataforma serão considerados os principais interessados**, pois as três características escolhidas possuem impacto direto na experiência de utilização do produto.
-
----
+FEITO E VERIFICADO
 
 # 4. Modelo de qualidade
 
-A avaliação será baseada no modelo de qualidade da **ISO/IEC 25010**, com foco nas características **Usabilidade, Portabilidade e Compatibilidade**.
-
-A seleção das subcaracterísticas considera dois critérios principais:
-
-1. **Relevância** para o contexto de uma plataforma educacional Web;
-    
-2. **Viabilidade**, considerando se a equipe possui acesso às informações e aos ambientes necessários para produzir evidências.
-    
-
----
+FEITO (VERIFICAR)
 
 ## 4.1 Usabilidade
 
@@ -339,11 +260,3 @@ FASE 1 — ESTABELECER REQUISITOS DE AVALIAÇÃO
 
 6. Matriz de requisitos de avaliação
 ```
-
-## Síntese da decisão
-
-A avaliação da Khan Academy será delimitada às características **Usabilidade, Portabilidade e Compatibilidade**, selecionadas por sua relevância para uma plataforma educacional Web e pela possibilidade de obtenção de evidências diretamente acessíveis à equipe.
-
-A **Usabilidade** será avaliada por meio de aspectos diretamente relacionados à interação do usuário. A **Portabilidade** será concentrada na **Adaptabilidade** da plataforma a diferentes ambientes de acesso. A **Compatibilidade** será analisada por meio da **Coexistência** e, de forma limitada aos aspectos observáveis, da **Interoperabilidade**.
-
-Essa delimitação busca garantir que as características escolhidas sejam **relevantes, observáveis e viáveis de avaliar** dentro do tempo e dos recursos disponíveis para a equipe.
