@@ -108,8 +108,47 @@
                 
                 
                 
-                    <li >
-                        <a href="../../fase-2/">Fase 2</a>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fase 2 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../fase-2/">Visão geral</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../fase-2/objetivos/">Objetivos de Medição</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../fase-2/questoes-hipoteses/">Questões e hipóteses</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../fase-2/metricas/">Métricas</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../fase-2/criterios-julgamento/">Critérios de julgamento</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../fase-2/grafico-gqm/">Gráfico GQM</a>
+</li>
+
+                        
+                        </ul>
                     </li>
                 
                 
@@ -179,11 +218,120 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#7-procedimento-de-medicao">7. Procedimento de medição</a></li>
+            <li class="second-level"><a href="#71-dados-de-entrada">7.1 Dados de entrada</a></li>
+                
+            <li class="second-level"><a href="#72-passos">7.2 Passos</a></li>
+                
+            <li class="second-level"><a href="#73-pontos-de-medicao">7.3 Pontos de medição</a></li>
+                
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-</div>
+<h2 id="7-procedimento-de-medicao">7. Procedimento de medição</h2>
+<p>Esta seção descreve como a medição é executada: quais dados entram, o passo a passo de cada rodada e em que datas ela ocorre.</p>
+<p><a id="responsavel"></a></p>
+<p>**Responsável pela execução:**A equipe definirá, antes de cada ponto de medição, o integrante responsável pela coleta, validação e consolidação dos dados. Todos os integrantes devem registrar suas horas até as 12h do dia da medição. O responsável verifica as pendências, executa o script, registra os resultados e documenta as decisões decorrentes.</p>
+<h3 id="71-dados-de-entrada">7.1 Dados de entrada</h3>
+<p>A Tabela 9 lista os dados necessários, onde ficam, quem os alimenta e quais medidas dependem deles.</p>
+<table>
+<thead>
+<tr>
+<th>Dado</th>
+<th>Fonte</th>
+<th>Quem alimenta</th>
+<th>Quando</th>
+<th>Medidas que usam</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID, Janela, Estimativa, estado, datas de fechamento e reabertura, labels</td>
+<td>Issues e pull requests do GitHub</td>
+<td>Responsável pela issue</td>
+<td>Ao criar, fechar ou reabrir a issue</td>
+<td><code>CP1</code>, <code>CP2</code>, <code>DP1</code>, <code>RC2</code></td>
+</tr>
+<tr>
+<td>Horas por integrante e por issue</td>
+<td><code>assets/dados/gestao/horas/&lt;usuario&gt;.csv</code> (colunas <code>data,atividade,horas</code>; ver <a href="../horas/">Registro de Horas</a>)</td>
+<td>Cada integrante</td>
+<td>Até 12h do dia da medição</td>
+<td><code>RC1</code>, <code>RC2</code></td>
+</tr>
+<tr>
+<td>Nível por critério da rubrica</td>
+<td><code>assets/dados/gestao/autoavaliacao.csv</code> (colunas <code>data,criterio,nivel,evidencia</code>)</td>
+<td>Revisor</td>
+<td>Em <a href="#pontos">Mg-3</a></td>
+<td><code>DP2</code></td>
+</tr>
+<tr>
+<td>Uso de IA</td>
+<td><a href="../uso_de_ia/">Uso de IA</a></td>
+<td>Quem usou a ferramenta</td>
+<td>No momento do uso</td>
+<td>Evidência para os critérios de uso de IA na autoavaliação (<code>DP2</code>)</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 9. Dados de entrada das medições. Fonte: Elaborado por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a></em></p>
+<p>No <code>autoavaliacao.csv</code>, <code>criterio</code> é o código da rubrica (por exemplo, <code>F1-C6</code>) e <code>nivel</code> é um de Insuficiente, Regular, Satisfatório ou Excelente, que correspondem, nesta ordem, às quatro opções da rubrica da professora, da primeira à última.</p>
+<h3 id="72-passos">7.2 Passos</h3>
+<p>Os passos abaixo são seguidos a cada ponto de medição.</p>
+<ol>
+<li>Até as 12h do dia da medição, cada membro lança suas horas no seu CSV.</li>
+<li>O <a href="#responsavel">Responsável</a> confere as pré-condições: issues fechadas com Janela, Estimativa e revisão registrada; horas sem ID válido; labels <code>correcao</code> aplicadas onde devidas. Pendências são cobradas das duplas donas antes do cálculo.</li>
+<li>A <a href="#responsavel">Responsável</a> roda <code>python3 scripts/coletar_psm.py --data AAAA-MM-DD</code> na raiz do repositório. O script deve implementar as fórmulas da <a href="#3-medidas-e-indicadores-por-categoria">seção 3</a>. A cada medição, conferir à mão ao menos uma medida (por exemplo, o <code>CP1</code>) contra o resultado do script.</li>
+<li>O <a href="#responsavel">Responsável</a> cola a tabela no registro de <code>docs/gestao/medicoes.md</code>, com, para cada medida: ponto de medição, data, valores das medidas base, valor derivado, nível e cor.</li>
+<li>Em <a href="#pontos">Mg-2 e Mg-3</a>, o revisor, preenche o <code>autoavaliacao.csv</code> para a fase correspondente, com um nível e uma evidência (link para o trecho do artigo, da GitPage ou do repositório) por critério. Antes disso, o <a href="#responsavel">Responsável</a> confere o <a href="../uso_de_ia/">registro de uso de IA</a>.</li>
+<li>O <a href="#responsavel">Responsável</a> interpreta cada medida amarela ou vermelha: registra causa provável e decisão conforme a <a href="#regras">seção 6</a>, e abre issue de ação quando houver trabalho a fazer.</li>
+<li>Medidas "sem dados" ou "com ressalva" são registradas como tal, com o motivo.</li>
+<li>O resultado é comunicado ao grupo no mesmo dia e commitado por pull request.</li>
+</ol>
+<p><a id="pontos"></a></p>
+<h3 id="73-pontos-de-medicao">7.3 Pontos de medição</h3>
+<p>A Tabela 10 apresenta as datas das medições, sua finalidade e as medidas calculadas em cada uma. Até o momento as datas estão referentes apenas a entrega 1.    </p>
+<table>
+<thead>
+<tr>
+<th>Id da Medição</th>
+<th>Data</th>
+<th>Finalidade</th>
+<th>Medidas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mg-1</td>
+<td>20/10 (ter)</td>
+<td>Primeira medição, para os slides do PC1</td>
+<td><code>CP1</code>, <code>CP2</code>, <code>DP1</code>, <code>RC1</code>, <code>RC2</code></td>
+</tr>
+<tr>
+<td>Mg-2</td>
+<td>22/10 (qui)</td>
+<td>Após o PC1: replanejar com o feedback; inclui DP2 da Fase 1</td>
+<td>Todas, com <code>DP2</code> (Fase 1)</td>
+</tr>
+<tr>
+<td>Mg-3</td>
+<td>25/10 (dom)</td>
+<td>Pré-entrega</td>
+<td><code>CP1</code>, <code>CP2</code>, <code>DP1</code>, <code>RC1</code>, <code>RC2</code></td>
+</tr>
+<tr>
+<td>Mg-4</td>
+<td>26/10 (seg)</td>
+<td>Fechamento e lições para a Entrega 2</td>
+<td><code>CP1</code>, <code>CP2</code>, <code>DP1</code>, <code>RC1</code>, <code>RC2</code></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 10. Pontos de medição previstos. Fonte: Elaborado por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a></em></p>
+<p>Os pontos de medição apresentados nesta tabela correspondem à Entrega 1. O acompanhamento da Entrega 2, prevista para 18/11/2026, deverá ser detalhado em um cronograma complementar, caso esteja incluído no escopo de execução deste plano.</p>
+<p>As medições de Mg-1 usam poucas issues concluídas e podem cair em "sem dados" ou oscilar muito; isso é esperado e deve constar na interpretação.</p></div>
         
         
     </div>

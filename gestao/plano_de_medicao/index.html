@@ -108,8 +108,47 @@
                 
                 
                 
-                    <li >
-                        <a href="../../fase-2/">Fase 2</a>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fase 2 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../fase-2/">Visão geral</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../fase-2/objetivos/">Objetivos de Medição</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../fase-2/questoes-hipoteses/">Questões e hipóteses</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../fase-2/metricas/">Métricas</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../fase-2/criterios-julgamento/">Critérios de julgamento</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../fase-2/grafico-gqm/">Gráfico GQM</a>
+</li>
+
+                        
+                        </ul>
                     </li>
                 
                 
@@ -170,7 +209,7 @@
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../../fase-2/">
+                        <a rel="prev" href="../../fase-2/grafico-gqm/">
                             <i class="fas fa-arrow-left"></i> Previous
                         </a>
                     </li>
@@ -208,15 +247,9 @@
                 
                 <li class="third-level"><a href="#51-logica-de-escolha">5.1 Lógica de escolha</a></li>
                 <li class="third-level"><a href="#52-medidas-e-indicadores">5.2 Medidas e indicadores</a></li>
-                <li class="third-level"><a href="#53-origem-e-revisao-dos-limiares">5.3 Origem e revisão dos limiares</a></li>
             <li class="second-level"><a href="#6-regras-de-decisao">6. Regras de decisão</a></li>
                 
-            <li class="second-level"><a href="#7-procedimento-de-medicao">7. Procedimento de medição</a></li>
-                
-                <li class="third-level"><a href="#71-dados-de-entrada">7.1 Dados de entrada</a></li>
-                <li class="third-level"><a href="#72-passos">7.2 Passos</a></li>
-                <li class="third-level"><a href="#73-pontos-de-medicao">7.3 Pontos de medição</a></li>
-            <li class="second-level"><a href="#8-evidencias-no-git">8. Evidências no Git</a></li>
+            <li class="second-level"><a href="#7-evidencias-no-git">7. Evidências no Git</a></li>
                 
             <li class="second-level"><a href="#referencias">Referências</a></li>
                 
@@ -227,18 +260,18 @@
         <div class="col-md-9" role="main">
 
 <h1 id="plano-de-medicao-psmcid">Plano de medição PSM/CID</h1>
-<p>Versão 1.4</p>
+<p>Versão 1.6</p>
 <hr />
 <h2 id="1-finalidade">1. Finalidade</h2>
-<p>Acompanhar a execução do projeto, como os marcos principais sendo Entrega 1 (26/10/2026) e Entrega 2 (18/11/2026), passando pelos pontos de controle PC1({19 - 21}/10/2026) e PC2({04 - 09}/11/2026) com medidas do modelo PSM/CID nas três categorias exigidas: <em>Calendário e Progresso</em>, <em>Desempenho dos Processos</em> e <em>Recursos e Custos</em>. Cada medição é registrada com sua interpretação e com as decisões de gestão que ela provocou (ver <a href="../medicoes/">Medições e decisões</a>).</p>
+<p>Este artefato estabelece o Plano de Medição do projeto de avaliação de qualidade de software, integrando as diretrizes do modelo <em>Practical Software and Systems Measurement</em> (PSM) <a href="#s1">S1</a>, <a href="#s3">S3</a>, <a href="#s4">S4</a> e a norma <em>ISO/IEC/IEEE 15939:2017</em> <a href="#s2">S2</a>. O objetivo é acompanhar a execução do projeto ao longo dos marcos principais: <strong>Entrega 1</strong> (26/10/2026) e <strong>Entrega 2</strong> (18/11/2026), além dos pontos de controle <strong>PC1</strong> (19 a 21/10/2026) e <strong>PC2</strong> (04 a 09/11/2026). A medição atua como um sistema de controle por realimentação (<em>feedback control system</em>) <a href="#s1">S1</a>, <a href="#s2">S2</a>, estruturado em três categorias essenciais: <a href="#31-calendário-e-progresso"><strong>Calendário e Progresso</strong></a>, <a href="#32-desempenho-dos-processos"><strong>Desempenho dos Processos</strong></a> e <a href="#33-recursos-e-custos"><strong>Recursos e Custos</strong></a>. Cada medição realizada é registrada com sua interpretação técnica e com as <a href="#6-regras-de-decisão">decisões corretivas e preventivas</a> de gestão provocadas pelos indicadores.</p>
 <h2 id="2-necessidades-de-informacao">2. Necessidades de informação</h2>
-<p>No PSM/CID, a medição parte de uma necessidade de informação e não das medidas disponíveis. Por isso, cada <em>objetivo de medição</em> (O1 a O3) está associado a uma <em>categoria</em> e a uma <em>pergunta de gestão</em> (pergunta orientadora), que serve de guia para escolher as medidas da seção 3. A Tabela 1 reúne esses elementos.</p>
+<p>Em conformidade com a abordagem <em>Goal Question Metric</em> (GQM) <a href="#s5">S5</a> e os princípios do PSM <a href="#s1">S1</a>, <a href="#s3">S3</a>, a medição deriva de necessidades concretas de informação, e não da disponibilidade fortuita de dados. Cada objetivo de medição (<strong>O1</strong> a <strong>O3</strong>) apresentados na Tabela 1, vincula-se a uma categoria e a uma pergunta orientadora de gestão que serve de guia para escolher as medidas da <a href="#3-medidas-e-indicadores-por-categoria">seção 3</a>.</p>
 <table>
 <thead>
 <tr>
 <th>Objetivo</th>
 <th>Categoria</th>
-<th>Pergunta de gestão</th>
+<th>Pergunta orientadora de gestão</th>
 </tr>
 </thead>
 <tbody>
@@ -261,9 +294,10 @@
 </table>
 <p><em>Tabela 1. Necessidades de informação por objetivo de medição. Fonte: Elaborado por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a></em></p>
 <h2 id="3-medidas-e-indicadores-por-categoria">3. Medidas e indicadores por categoria</h2>
-<p>Esta seção detalha como cada objetivo de medição será respondido. Em cada categoria há um objetivo (O1 a O3) e uma tabela que parte do atributo observado, passa pelas medidas base e pela medida derivada, apresenta a fórmula de cálculo e termina no indicador, que traduz o resultado em um nível de julgamento. A seção se divide em três subseções, uma por categoria do PSM/CID: <a href="#31-calendário-e-progresso">3.1 Calendário e Progresso (O1)</a>, <a href="#32-desempenho-dos-processos">3.2 Desempenho dos Processos (O2)</a> e <a href="#33-recursos-e-custos">3.3 Recursos e Custos (O3)</a>. Os termos usados nas fórmulas são definidos na <a href="#unidade-de-trabalho">seção 4</a> e a justificativa das medidas e dos limiares está na <a href="#justificativa">seção 5</a>.</p>
+<p>Esta seção detalha como cada objetivo de medição será respondido. A estrutura operacional segue a cadeia analítica da ISO/IEC/IEEE 15939 <a href="#s2">S2</a>: mapeamento do <strong>Atributo</strong>, definição das <strong>Medidas Base (QME)</strong>, cálculo da <strong>Medida Derivada</strong>, aplicação da <strong>Fórmula</strong> e enquadramento no <strong>Indicador</strong> de julgamento. </p>
+<p>A seção se divide em três subseções, uma por categoria do PSM/CID: <a href="#31-calendário-e-progresso">3.1 Calendário e Progresso (O1)</a>, <a href="#32-desempenho-dos-processos">3.2 Desempenho dos Processos (O2)</a> e <a href="#33-recursos-e-custos">3.3 Recursos e Custos (O3)</a>. Os termos usados nas fórmulas são definidos na <a href="#unidade-de-trabalho">seção 4</a> e a justificativa teóricas e operacionais das medidas encontram-se na <a href="#justificativa">seção 5</a>.</p>
 <h3 id="31-calendario-e-progresso">3.1 Calendário e Progresso</h3>
-<p>Trata do ritmo de execução: se as atividades planejadas estão sendo concluídas (<code>CP1</code>) e se estão sendo concluídas dentro do prazo (<code>CP2</code>).</p>
+<p>Mede o ritmo de execução volumétrico (<code>CP1</code>) e a pontualidade em relação à linha de base original de cronograma (<code>CP2</code>) <a href="#s3">S3</a>, que podem ser observados na Tabela 2.</p>
 <p><a id="objetivo-1"></a></p>
 <h4 id="o1-verificar-se-a-equipe-esta-concluindo-as-atividades-planejadas-dentro-do-prazo">O1: verificar se a equipe está concluindo as atividades planejadas dentro do prazo.</h4>
 <table>
@@ -280,22 +314,22 @@
 <tr>
 <td>Progresso das atividades (<code>CP1</code>)</td>
 <td><a href="#unidade-de-trabalho">Atividades</a> concluídas (<code>Ac</code>) <br> <a href="#unidade-de-trabalho">Atividades</a> planejadas (<code>Ap</code>)</td>
-<td>Percentual de progresso planejado cumprido. (<code>Ppc</code>)</td>
-<td><code>Ppc = (Ac ÷ Ap) × 100</code></td>
-<td>Adequado: <code>Ppc ≥ 90%</code> <br> Bom: <code>80% ≤ Ppc &lt; 90%</code> <br> Insuficiente: <code>60% ≤ Ppc &lt; 80%</code> <br> Crítico: <code>Ppc &lt; 60%</code></td>
+<td>Percentual de Progresso do Planejado. (<code>Ppp</code>)</td>
+<td><code>Ppp = (Ac ÷ Ap) × 100</code></td>
+<td>Adequado: <code>Ppp ≥ 90%</code> <br> Bom: <code>80% ≤ Ppp &lt; 90%</code> <br> Insuficiente: <code>60% ≤ Ppp &lt; 80%</code> <br> Crítico: <code>Ppp &lt; 60%</code></td>
 </tr>
 <tr>
 <td>Cumprimento do prazo (<code>CP2</code>)</td>
 <td><a href="#unidade-de-trabalho">Atividades</a> concluídas no prazo (<code>Acp</code>) <br> <a href="#unidade-de-trabalho">Atividades</a> concluídas (<code>Ac</code>)</td>
-<td>percentual de atividades concluídas no prazo (<code>Pcp</code>)</td>
-<td><code>Pcp = (Acp ÷ Ac) × 100</code></td>
-<td>Adequado: <code>90% ≤ Pcp ≤ 100%</code> <br> Bom: <code>80% ≤ Pcp &lt; 90%</code> <br> Insuficiente: <code>60% ≤ Pcp &lt; 80%</code> <br> Crítico: <code>Pcp &lt; 60%</code></td>
+<td>Percentual de Atividades Concluídas no Prazo (<code>Pacp</code>)</td>
+<td><code>Pacp = (Acp ÷ Ac) × 100</code></td>
+<td>Adequado: <code>90% ≤ Pacp ≤ 100%</code> <br> Bom: <code>80% ≤ Pacp &lt; 90%</code> <br> Insuficiente: <code>60% ≤ Pacp &lt; 80%</code> <br> Crítico: <code>Pacp &lt; 60%</code></td>
 </tr>
 </tbody>
 </table>
 <p><em>Tabela 2. Medidas e indicadores de Calendário e Progresso (O1). Fonte: Elaborado por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a></em></p>
 <h3 id="32-desempenho-dos-processos">3.2 Desempenho dos Processos</h3>
-<p>Trata de como o trabalho é produzido: o retrabalho que o processo gera (<code>DP1</code>) e o quanto as entregas atendem aos critérios da rubrica (<code>DP2</code>).</p>
+<p>Avalia a estabilidade técnica do fluxo de trabalho em relação ao retrabalho (<code>DP1</code>) e a efetividade das entregas frente à rubrica acadêmica (<code>DP2</code>) <a href="#s4">S4</a>, que podem ser observados na Tabela 3.</p>
 <p><a id="objetivo-2"></a></p>
 <h4 id="o2-verificar-a-eficiencia-a-efetividade-e-a-conformidade-dos-processos-de-trabalho-da-equipe">O2: verificar a eficiência, a efetividade e a conformidade dos processos de trabalho da equipe.</h4>
 <table>
@@ -312,22 +346,22 @@
 <tr>
 <td>Eficiência do processo (<code>DP1</code>)</td>
 <td>Issue reaberta (<code>Ir</code>) <br> Issue com label <code>correcao</code> (<code>Ic</code>) <br> Issue fechada (<code>If</code>)</td>
-<td>Percentual de issues fechadas que apresentaram retrabalho (<code>Prt</code>)</td>
-<td><code>Prt = [(Ir ∪ Ic) ÷ If] × 100</code></td>
-<td>Adequado: <code>Prt ≤ 15%</code> <br> Bom: <code>15% &lt; Prt ≤ 35%</code> <br> Insuficiente: <code>35% &lt; Prt &lt; 50%</code> <br> Crítico: <code>Prt ≥ 50%</code></td>
+<td>Percentual de Retrabalho em Issues (<code>Pri</code>)</td>
+<td><code>Pri = [(Ir ∪ Ic) ÷ If] × 100</code></td>
+<td>Adequado: <code>Pri ≤ 15%</code> <br> Bom: <code>15% &lt; Pri ≤ 35%</code> <br> Insuficiente: <code>35% &lt; Pri &lt; 50%</code> <br> Crítico: <code>Pri ≥ 50%</code></td>
 </tr>
 <tr>
 <td>Efetividade do processo (<code>DP2</code>)</td>
-<td>Critérios avaliados como {Insuficiente (<code>Ci</code>) <br>  Regular (<code>Cr</code>) <br> Satisfatório (<code>Cs</code>) <br> Excelente (<code>Ce</code>)} <br> Total de critérios avaliados (<code>Ct</code>)</td>
-<td>Quantidade de critérios iguais ou abaixo de Regular (<code>Ciar</code>) <br> Percentual de critérios no nível Excelente (<code>Pce</code>)</td>
-<td><code>Ciar = Ci + Cr</code> <br> <code>Pce = (Ce ÷ Ct) × 100</code></td>
-<td>Adequado: <code>Ciar ≤ 0</code>  <br> Bom: <code>1 ≤ Ciar ≤ 2</code> <br> Insuficiente: <code>Ciar ≥ 3</code> <br> Adequado: <code>90% ≤ Pce ≤ 100%</code> <br> Bom: <code>75% ≤ Pce &lt; 90%</code> <br> Insuficiente: <code>Pce &lt; 75%</code></td>
+<td>Critérios avaliados como {Crítico (<code>Cc</code>) <br>  Insuficiente (<code>Ci</code>) <br> Bom (<code>Cb</code>) <br> Adequado (<code>Ca</code>)} <br> Total de critérios avaliados (<code>Ct</code>)</td>
+<td>Quantidade de Critérios Insuficientes/Críticos (<code>Qcic</code>) <br> Percentual Critérios Adequados (<code>PCa</code>)</td>
+<td><code>Qcic = Ci + Cc</code> <br> <code>Pce = (Ca ÷ Ct) × 100</code></td>
+<td>Adequado: <code>Qcic ≤ 0</code>  <br> Bom: <code>1 ≤ Qcic ≤ 2</code> <br> Insuficiente: <code>Qcic ≥ 3</code> <br> Adequado: <code>90% ≤ PCa ≤ 100%</code> <br> Bom: <code>75% ≤ PCa &lt; 90%</code> <br> Insuficiente: <code>PCa &lt; 75%</code></td>
 </tr>
 </tbody>
 </table>
 <p><em>Tabela 3. Medidas e indicadores de Desempenho dos Processos (O2). Fonte: Elaborado por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a></em></p>
 <h3 id="33-recursos-e-custos">3.3 Recursos e Custos</h3>
-<p>Trata do esforço da equipe: horas dedicadas (<code>RC1</code>), variação em relação ao estimado (<code>RC2</code>) e cobertura do registro de horas (<code>RC3</code>).</p>
+<p>Trata da alocação do esforço humano da equipe (<code>RC1</code>) e da precisão das estimativas de tempo (<code>RC2</code>), garantindo o acompanhamento de custos e o equilíbrio da carga de trabalho <a href="#s1">S1</a>, <a href="#s3">S3</a>, que podem ser observados na Tabela 3.</p>
 <p><a id="objetivo-3"></a></p>
 <h4 id="o3-monitorar-o-esforco-dedicado-ao-desenvolvimento-do-projeto-e-estimar-seu-custo-com-base-nas-horas-trabalhadas">O3: monitorar o esforço dedicado ao desenvolvimento do projeto e estimar seu custo com base nas horas trabalhadas.</h4>
 <table>
@@ -350,29 +384,22 @@
 </tr>
 <tr>
 <td>Variação do esforço estimado (<code>RC2</code>)</td>
-<td>Esforço estimado total (<code>Ee</code>) <br> Esforço realizado total (<code>Er</code>)</td>
+<td>Esforço estimado total em concluídas (<code>Ee</code>) <br> Esforço realizado total nas mesmas (<code>Er</code>)</td>
 <td>Variação percentual do esforço (<code>Ve</code>)</td>
 <td><code>Ve = ( |Er − Ee| ÷ Ee ) × 100</code></td>
 <td>Adequado: <code>Ve ≤ 10%</code> <br> Bom: <code>10% &lt; Ve ≤ 20%</code> <br> Insuficiente: <code>Ve &gt; 20%</code></td>
 </tr>
-<tr>
-<td>Cobertura do registro de esforço (<code>RC3</code>)</td>
-<td>Atividades concluídas com horas registradas (<code>Ar</code>) <br> Total de atividades concluídas (<code>Ac</code>)</td>
-<td>Percentual de atividades com esforço registrado (<code>Pa</code>)</td>
-<td><code>Pa = (Ar ÷ Ac) × 100</code></td>
-<td>Adequado: <code>90% ≤ Pa ≤ 100%</code> <br> Bom: <code>75% ≤ Pa &lt; 90%</code> <br> Insuficiente: <code>60% ≤ Pa &lt; 75%</code> <br> Crítico: <code>Pa &lt; 60%</code></td>
-</tr>
 </tbody>
 </table>
 <p><em>Tabela 4. Medidas e indicadores de Recursos e Custos (O3). Fonte: Elaborado por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a></em></p>
-<p><strong>Procedimento de coleta:</strong> cada integrante registra as horas dedicadas às atividades em andamento e concluídas (ver <a href="../horas/">Registro de Horas</a>), vinculando-as às respectivas issues. A equipe consolida os registros periodicamente, compara o esforço real com o estimado e utiliza o valor de referência da hora profissional apenas para calcular o custo equivalente do trabalho.</p>
+<p><strong>Procedimento de coleta:</strong> Cada integrante registra as horas dedicadas às atividades em seu arquivo CSV individual. A equipe consolida os registros periodicamente e avalia a estabilidade das estimativas <a href="#s1">S1</a>. Conforme a norma ISO/IEC/IEEE 15939 <a href="#s2">S2</a>, a verificação de presença do registro de horas (taxa de cobertura <code>Pa ≥ 90%</code>) atua como pré-condição operacional de qualidade dos dados, garantindo a confiabilidade dos indicadores <code>RC1</code> e <code>RC2</code>.</p>
 <h2 id="4-unidade-de-trabalho-e-convencoes">4. Unidade de trabalho e convenções</h2>
-<p>Esta seção fixa as regras que tornam as medições repetíveis: o que conta como unidade de trabalho, como cada termo das fórmulas é interpretado e como os níveis dos indicadores se traduzem em cores. Assim, qualquer integrante chega ao mesmo valor ao calcular uma medida.</p>
+<p>Esta seção fixa as regras que tornam as medições repetíveis conforme a norma ISO/IEC/IEEE 15939:2017 <a href="#s2">S2</a>: o que conta como unidade de trabalho, como cada termo das fórmulas é interpretado e como os níveis dos indicadores se traduzem em cores.</p>
 <p><a id="unidade-de-trabalho"></a></p>
 <h3 id="41-unidade-de-trabalho">4.1 Unidade de trabalho</h3>
-<p>A unidade de trabalho é a <strong>issue</strong> do GitHub. O corpo da issue traz <strong>Janela</strong> (data prevista de conclusão), <strong>Estimativa</strong> (horas) e o(os) ID dos critérios (por exemplo, <code>F1-02</code>). Uma issue sem ID, sem Janela ou sem Estimativa não entra nas medições de forma confiável e deve ser corrigida antes da próxima medição.</p>
+<p>A unidade de trabalho é a <strong>issue</strong> do GitHub. O corpo da issue traz <strong>Janela</strong> (data prevista de conclusão), <strong>Estimativa</strong> (horas em múltiplos de 0,25 h) e o(s) ID dos critérios (por exemplo, <code>F1-02</code>). Uma issue sem ID, sem Janela ou sem Estimativa não entra nas medições de forma confiável e deve ser corrigida antes da próxima medição.</p>
 <h3 id="42-definicoes-operacionais">4.2 Definições operacionais</h3>
-<p>A Tabela 5 define, de forma operacional, os termos usados nas fórmulas da <a href="#3-medidas-e-indicadores-por-categoria">seção 3</a>.</p>
+<p>A Tabela 5 define, de forma operacional, os termos e variáveis utilizados tanto nas fórmulas das medidas da <a href="#3-medidas-e-indicadores-por-categoria">seção 3</a> quanto nas regras de decisão e governança da <a href="#regras">seção 6</a> <a href="#s2">S2</a>.</p>
 <table>
 <thead>
 <tr>
@@ -383,11 +410,11 @@
 <tbody>
 <tr>
 <td>Planejada até a data (<code>Ap</code>)</td>
-<td>Issue dos milestones das entregas cuja Janela é igual ou anterior à data da medição</td>
+<td>Issue dos milestones das entregas cuja Janela é igual ou anterior à data da medição.</td>
 </tr>
 <tr>
 <td>Concluída (<code>Ac</code>)</td>
-<td>Issue fechada com os critérios de aceite atendidos e com revisão do revisor registrada no pull request. Issue fechada sem revisão não conta como concluída</td>
+<td>Issue fechada com os critérios de aceite atendidos e com revisão do revisor registrada no pull request. Issue fechada sem revisão não conta como concluída.</td>
 </tr>
 <tr>
 <td>Concluída no prazo (<code>Acp</code>)</td>
@@ -395,11 +422,11 @@
 </tr>
 <tr>
 <td>Janela original</td>
-<td>Valor da Janela no momento da criação da issue. Quando o prazo é revisto, a nova data vai em comentário (<code>Janela revista</code>) e serve só ao replanejamento. O <code>CP2</code> sempre compara com a original, para que o atraso não desapareça da medição</td>
+<td>Valor da Janela no momento da criação da issue. Quando o prazo é revisto, a nova data vai em comentário (<code>Janela revista</code>) e serve só ao replanejamento. O <code>CP2</code> sempre compara com a original, para que o atraso não desapareça da medição<a href="#s3">S3</a>.</td>
 </tr>
 <tr>
 <td>Retrabalho (<code>Ir</code>, <code>Ic</code>)</td>
-<td>Issue reaberta depois de fechada (<code>Ir</code>) ou issue com a label <code>correcao</code> (<code>Ic</code>). A issue que cumpre as duas condições conta uma vez só (união)</td>
+<td>Issue reaberta depois de fechada (<code>Ir</code>) ou issue com a label <code>correcao</code> (<code>Ic</code>). A união (`Ir ∪ Ic`) previne dupla contagem.</td>
 </tr>
 <tr>
 <td>Estimativa congelada</td>
@@ -411,11 +438,15 @@
 </tr>
 <tr>
 <td>Escopo do <code>RC2</code></td>
-<td>Calculado apenas sobre issues concluídas (<code>Ee</code> e <code>Er</code> do mesmo conjunto), para que issues em andamento não distorçam a comparação. As horas de issues em andamento entram no <code>RC1</code></td>
+<td>Calculado apenas sobre issues concluídas (<code>Ee</code> e <code>Er</code> do mesmo conjunto <code>Ac</code>), para que issues em andamento não distorçam a comparação. As horas de issues em andamento entram no <code>RC1</code></td>
+</tr>
+<tr>
+<td>Cobertura de dados (<code>Pa</code>)</td>
+<td>Porcentagem de atividades concluídas com horas registradas no CSV (<code>Pa = (Ar ÷ Ac) × 100</code>). Atua como indicador de higiene dos dados.</td>
 </tr>
 <tr>
 <td>Horas sem issue</td>
-<td>Reuniões e atividades de gestão também precisam de issue de apoio, com Estimativa. Horas sem ID válido não são atribuídas a nenhuma atividade e reduzem o <code>RC3</code></td>
+<td>Atividades sem ID de issue válido reduzem a taxa de cobertura do registro (<code>Pa</code>).</td>
 </tr>
 <tr>
 <td>Denominador zero</td>
@@ -425,7 +456,7 @@
 </table>
 <p><em>Tabela 5. Definições operacionais dos termos usados nas medições. Fonte: Elaborado por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a></em></p>
 <h3 id="43-niveis-e-cores">4.3 Níveis e cores</h3>
-<p>Os indicadores usam níveis; as regras de decisão <a href="#regras">(seção 6)</a> usam as cores correspondentes para preenchimento no planilha de controle.</p>
+<p>Os indicadores apresentados na Tabela 6 usam níveis de desempenho e cores correspondentes para as regras de decisão <a href="#regras">(seção 6)</a>, cores essas que auxiliam o preenchimento na planilha e nos relatórios de controle.</p>
 <table>
 <thead>
 <tr>
@@ -443,12 +474,12 @@
 <tr>
 <td>Insuficiente</td>
 <td>Amarelo</td>
-<td>Ação corretiva conforme a seção 6</td>
+<td>Ação corretiva conforme a <a href="#regras">regras</a></td>
 </tr>
 <tr>
 <td>Crítico</td>
 <td>Vermelho</td>
-<td>Ação corretiva imediata conforme a seção 6</td>
+<td>Ação corretiva imediata conforme a <a href="#regras">regras</a></td>
 </tr>
 <tr>
 <td>Informativo</td>
@@ -461,11 +492,18 @@
 <p>Nos indicadores que não têm nível Crítico (<code>DP2</code>, <code>RC2</code> e o equilíbrio do <code>RC1</code>), o pior nível possível é Insuficiente (amarelo).</p>
 <p><a id="justificativa"></a></p>
 <h2 id="5-justificativa-das-medicoes-e-dos-indicadores">5. Justificativa das medições e dos indicadores</h2>
-<p>Esta seção explica por que cada medida e cada indicador foram escolhidos, quais limitações precisam ser consideradas na interpretação e de onde vêm os limiares usados.</p>
+<p>Esta seção explica a lógica de escolha das medidas, as adaptações contextuais (<em>tailoring</em>) em relação ao modelo PSM/CID tradicional, os fundamentos teóricos de cada indicador e a origem dos limiares operacionais <a href="#s1">S1</a>, <a href="#s2">S2</a>, <a href="#s3">S3</a>, <a href="#s4">S4</a>, <a href="#s5">S5</a>.</p>
 <h3 id="51-logica-de-escolha">5.1 Lógica de escolha</h3>
-<p>O PSM parte da necessidade de informação, não da medida disponível. Por isso há uma pergunta de gestão para cada categoria <a href="#2-necessidades-de-informação">(seção 2)</a> e um conjunto pequeno de medidas que a responde diretamente. Foram preferidas medidas que o próprio fluxo de trabalho já produz (issues, pull requests, horas e autoavaliação), para que a coleta não vire uma tarefa à parte e possa ser conferida no repositório.</p>
+<p>O PSM parte da necessidade de informação, não da medida disponível<a href="#s1">S1</a>,<a href="#s5">S5</a>. Por isso há uma pergunta de gestão para cada categoria <a href="#2-necessidades-de-informação">(seção 2)</a> e um conjunto pequeno de medidas que a responde diretamente. Foram preferidas medidas que o próprio fluxo de trabalho já produz (issues, pull requests, horas), para que a coleta não vire uma tarefa à parte e possa ser conferida no repositório<a href="#s3">S3</a>.</p>
+<p>Para adequar o modelo PSM/CID <a href="#s1">S1</a>, <a href="#s3">S3</a> e a ISO/IEC/IEEE 15939:2017 <a href="#s2">S2</a> ao contexto acadêmico, realizaram-se quatro adaptações (*tailoring*):</p>
+<ol>
+<li><strong>Unidade de Trabalho:</strong> Adotou-se a <em>issue</em> do GitHub (com Janela, Estimativa e ID do critério) em vez de pacotes de trabalho ou pontos de função complexos do PSM industrial <a href="#s1">S1</a>, <a href="#s3">S3</a>.</li>
+<li><strong>Categoria de Custos:</strong> Substituiu-se o controle financeiro/orçamentário pelo rastreamento do esforço em horas trabalhadas por integrante <a href="#s1">S1</a>, <a href="#s3">S3</a>. </li>
+<li><strong>Origem dos Limiares:</strong> Os limiares foram definidos pela própria equipe como hipóteses operacionais iniciais <a href="#s1">S1</a>, a serem calibradas com dados reais no ponto <a href="../medicoes/#pontos">Mg-2</a>. </li>
+<li><strong>Qualidade do Produto:</strong> Traduziu-se a qualidade por meio da autoavaliação fundamentada em evidências contra a rubrica da disciplina (<code>DP2</code>), em vez de medições puramente técnicas de código <a href="#s4">S4</a>.</li>
+</ol>
 <h3 id="52-medidas-e-indicadores">5.2 Medidas e indicadores</h3>
-<p>A Tabela 7 apresenta, para cada medida, a razão da escolha, a razão das faixas do indicador e a limitação a considerar.</p>
+<p>A Tabela 7 apresenta, para cada medida, a razão da escolha, a fundamentação dos limiares e a limitação a considerar.</p>
 <table>
 <thead>
 <tr>
@@ -478,54 +516,47 @@
 <tbody>
 <tr>
 <td><code>CP1</code> Progresso</td>
-<td>Responde diretamente ao <a href="#objetivo-1">O1</a>: compara o que deveria estar pronto na data com o que está</td>
-<td>Faixas de <code>90/80/60%</code> são critério da equipe. <code>90%</code> admite uma pendência em cerca de dez atividades; abaixo de <code>60%</code> o prazo de uma entrega fica ameaçado</td>
-<td>Todas as issues pesam igual, independentemente do tamanho. Com poucas issues, cada uma vale muitos pontos percentuais: interpretar junto com os valores de <code>Ac</code> e <code>Ap</code></td>
+<td>Responde ao <a href="#objetivo-1">O1</a>: compara o volume de trabalho entregue até a data com o planejado<a href="#s3">S3</a>.</td>
+<td>Faixas de <code>90/80/60%</code> são critério da equipe. Abaixo de <code>60%</code> o prazo de uma entrega fica ameaçado</td>
+<td>Issues possuem portes diferentes. Mitigação: interpretar junto com os valores de <code>Ac</code> e <code>Ap</code>.</td>
 </tr>
 <tr>
 <td><code>CP2</code> Prazo</td>
-<td>Complementa o <code>CP1</code>: uma issue pode estar concluída, mas fora do prazo. O <code>CP1</code> mostra quanto foi feito; o <code>CP2</code>, se foi feito na hora certa</td>
+<td>Complementa o <code>CP1</code>: avalia se a conclusão ocorreu dentro da linha de base de tempo original <a href="#s3">S3</a>.</td>
 <td>Mesmas faixas do <code>CP1</code>, por consistência da categoria</td>
-<td>Compara com a Janela original; replanejar não "limpa" o atraso, o que é intencional</td>
+<td>Compara com a Janela original <br> Replanejar não "limpa" o atraso, o que é intencional</td>
 </tr>
 <tr>
 <td><code>DP1</code> Eficiência</td>
-<td>Retrabalho (issue reaberta ou corrigida) é um indício direto de que o processo de produzir e revisar não acertou de primeira</td>
-<td>Faixas de <code>15/35/50%</code> são critério da equipe, mais tolerantes que as de prazo porque revisão faz parte de um trabalho acadêmico</td>
+<td>Retrabalho (issue reaberta ou corrigida) é um indício direto de instabilidade no processo de elaboração ou revisão <a href="#s4">S4</a>.</td>
+<td>Faixas de <code>15/35/50%</code> são critério da equipe, mais tolerantes que as de prazo porque revisão faz parte de um trabalho acadêmico normais. Acima de <code>50%</code> indica processo ineficaz.</td>
 <td>Depende da disciplina de reabrir a issue ou usar a label <code>correcao</code>. <br> Retrabalho feito dentro do pull request antes do fechamento não aparece</td>
 </tr>
 <tr>
 <td><code>DP2</code> Efetividade</td>
-<td>Responde à parte do <a href="#objetivo-2">O2</a> sobre atender aos critérios da professora. A nota real só chega depois da entrega, então a equipe se autoavalia nos critérios da rubrica a cada fase</td>
-<td>Dois indicadores porque medem coisas distintas: <code>Ciar</code> destaca os critérios mais fracos (gera ação); <code>Pce</code> mede a proximidade do objetivo de alcançar a última opção em cada critério. Com a rubrica atual (11 critérios na <a href="../../criterios/fase1/">Fase 1</a> e 12 na <a href="../../criterios/fase2/">Fase 2</a>), <code>Pce ≥ 90%</code> admite no máximo um critério abaixo de Excelente</td>
-<td>Autoavaliação é subjetiva. <br> Mitigação: quem avalia é o revisor, não o autor, e cada nível exige evidência no <code>autoavaliacao.csv</code></td>
+<td>Responde à parte do <a href="#objetivo-2">O2</a>, avalia a aderência qualitativa e técnica das entregas frente aos critérios da rubrica acadêmica <a href="#s4">S4</a>.</td>
+<td><code>Qcic</code> destaca os critérios mais fracos (gera ação), <code>Qcic ≤ 0</code> garante ausência de critérios fracos. <br> <code>Pce</code> mede a proximidade do objetivo de alcançar a última opção em cada critério  <code>PCa ≥ 90%</code> busca a excelência acadêmica.</td>
+<td>Autoavaliação possui subjetividade. <br> Mitigação: exige revisão por pares e evidência no <code>autoavaliacao.csv</code></td>
 </tr>
 <tr>
 <td><code>RC1</code> Esforço</td>
-<td>Base do <a href="#objetivo-3">O3</a>: sem o total e a distribuição das horas não há como falar de custo nem de equilíbrio entre os membros</td>
+<td>Base do <a href="#objetivo-3">O3</a>: fornece visibilidade sobre o volume total de trabalho e o equilíbrio de carga entre membros <a href="#s1">S1</a>.</td>
 <td>O total é informativo porque não há valor de referência confiável de "esforço certo".</td>
-<td>A média esconde diferenças de tipo de tarefa (escrita, revisão, código), a faixa é ampla de propósito para não gerar alerta por variações normais</td>
+<td>Horas totais não medem complexidade isoladamente.</td>
 </tr>
 <tr>
 <td><code>RC2</code> Variação</td>
-<td>Responde à parte do <a href="#objetivo-3">O3</a> sobre o esforço conferir com o planejado e alimenta a reestimativa das próximas issues</td>
+<td>Avalia a acurácia das estimativas de tempo e a maturidade de dimensionamento da equipe <a href="#s3">S3</a>.</td>
 <td>Faixas de <code>10/20%</code> são critério da equipe, razoáveis para estimativas de estudantes sem histórico prévio</td>
-<td>O valor absoluto perde o sentido da variação (subestimou ou superestimou) <br> Registra o sentido na interpretação</td>
-</tr>
-<tr>
-<td><code>RC3</code> Cobertura</td>
-<td>Valida o <code>RC1</code> e o <code>RC2</code>: se muitas issues concluídas não têm horas, esses valores não são confiáveis</td>
-<td>Faixas de <code>90/75/60%</code> um pouco mais brandas que as de prazo, porque o lançamento é manual</td>
-<td>Mede se há registro, não se o registro é correto</td>
+<td>O valor absoluto perde o sentido da variação (subestimou ou superestimou).</td>
 </tr>
 </tbody>
 </table>
 <p><em>Tabela 7. Justificativa das medidas e dos indicadores. Fonte: Elaborado por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a></em></p>
-<h3 id="53-origem-e-revisao-dos-limiares">5.3 Origem e revisão dos limiares</h3>
-<p>O PSM/CID não prescreve valores de limiar e não foi encontrada referência normativa a citar. Os limiares acima são <strong>critérios definidos pela equipe</strong>, assumidos como hipóteses de trabalho. Serão reavaliados em <a href="#pontos">Mg-2</a>, com os primeiros dados reais. Qualquer mudança é registrada no histórico de versões, e as medições anteriores ficam marcadas com a versão do plano sob a qual foram feitas.</p>
+<hr />
 <p><a id="regras"></a></p>
 <h2 id="6-regras-de-decisao">6. Regras de decisão</h2>
-<p>Esta seção define o que a equipe faz quando uma medida cai em amarelo ou vermelho, para que a medição leve a uma decisão e não apenas a um registro. A Tabela 8 relaciona cada situação à decisão correspondente.</p>
+<p>Esta seção define as ações de governança quando uma medida atinge o nível amarelo ou vermelho, garantindo o ciclo de controle do PSM <a href="#s1">S1</a>. A Tabela 8 relaciona cada situação à decisão correspondente.</p>
 <p>Toda decisão é registrada em <code>docs/gestao/medicoes.md</code>, com data, responsável e prazo, e vira issue de ação quando houver trabalho a fazer.</p>
 <table>
 <thead>
@@ -537,144 +568,32 @@
 <tbody>
 <tr>
 <td><code>CP2</code> amarelo</td>
-<td>Os responsáveis das issues atrasadas informa nova Janela na própria issue (comentário <code>Janela revista</code>), registra a causa do atraso e reordena o trabalho em até 24 horas</td>
+<td>Os responsáveis das issues atrasadas informa nova Janela na própria issue (<code>Janela revista</code>), registra a causa do atraso e reordena o trabalho em até 24 horas</td>
 </tr>
 <tr>
 <td><code>CP2</code> vermelho ou <code>CP1</code> vermelho</td>
-<td>Reunião de 15 minutos em até 24 horas; replanejar cortando ou adiando o que não pesa nos critérios, redistribuir issues entre equipe e reestimar as issues que dependem das atrasadas; registrar a decisão</td>
+<td>Reunião emergencial (15 minutos) em até 24 horas. <br> Replanejar cortando ou adiando o que não pesa nos critérios, redistribuir issues entre equipe e reestimar as issues que dependem das atrasadas.</td>
 </tr>
 <tr>
 <td><code>DP1</code> amarelo ou vermelho</td>
-<td>Reforçar o critério de aceite e exigir revisão antes de fechar a issue</td>
+<td>Reforçar o critério de aceite e exigir verificação rigorosa antes de fechar qualquer issue.</td>
 </tr>
 <tr>
-<td><code>DP2</code> com <code>Ciar ≥ 1</code></td>
+<td><code>DP2</code> com <code>Qcic ≥ 1</code></td>
 <td>Abrir uma issue <code>correcao</code> por critério Regular ou Insuficiente e priorizá-las antes de qualquer trabalho novo</td>
 </tr>
 <tr>
 <td><code>DP2</code> com <code>Pce &lt; 75%</code></td>
-<td>Revisar na reunião seguinte o que impede os critérios de chegar a Excelente e incluir as ações nas issues <code>correcao</code></td>
-</tr>
-<tr>
-<td><code>RC1</code> com <code>Hi</code> fora de ±50% de <code>Hm</code></td>
-<td>Rebalancear as próximas issues entre as duplas</td>
-</tr>
-<tr>
-<td><code>RC2</code> amarelo (<code>Ve &gt; 20%</code>)</td>
-<td>Reestimar issues parecidas e registrar o motivo do desvio e o sentido (subestimou ou superestimou)</td>
-</tr>
-<tr>
-<td><code>RC3</code> amarelo ou vermelho</td>
-<td>Lançar as horas pendentes no mesmo dia e repetir o cálculo; enquanto o <code>RC3</code> estiver abaixo de 75%, marcar <code>RC1</code> e <code>RC2</code> como "com ressalva"</td>
+<td>Revisar na reunião seguinte o que impede os critérios de chegar a Adequado e incluir as ações nas issues <code>correcao</code></td>
 </tr>
 </tbody>
 </table>
+<p>| <code>RC1</code> desequilibrado | Se esforço de um integrante (<code>Hi</code>) variar mais de 50% em relação á média do grupo (<code>Hm</code>), analisar a causa da disparidade e rebalancear a atribuição das próximas <em>issues</em> entre as duplas.|
+| <code>RC2</code> amarelo (<code>Ve &gt; 20%</code>) | Reestimar issues parecidas e registrar o motivo do desvio e o sentido (subestimou ou superestimou) |
+| Cobertura de Dados Amarela (<code>Pa &lt; 90%</code>) | Lançar as horas pendentes no mesmo dia; enquanto <code>Pa &lt; 90%</code>, marcar <code>RC1</code> e <code>RC2</code> "com ressalva". |</p>
 <p><em>Tabela 8. Regras de decisão por situação de medição. Fonte: Elaborado por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a></em></p>
 <p>A regra de que nenhuma issue é fechada sem revisão é uma convenção permanente (<a href="#unidade-de-trabalho">seção 4.2</a>, definição de "Concluída"), e não uma condição de medição.</p>
-<h2 id="7-procedimento-de-medicao">7. Procedimento de medição</h2>
-<p>Esta seção descreve como a medição é executada: quais dados entram, o passo a passo de cada rodada e em que datas ela ocorre.</p>
-<p><a id="responsavel"></a></p>
-<p>**Responsável pela execução:**A equipe definirá, antes de cada ponto de medição, o integrante responsável pela coleta, validação e consolidação dos dados. Todos os integrantes devem registrar suas horas até as 12h do dia da medição. O responsável verifica as pendências, executa o script, registra os resultados e documenta as decisões decorrentes.</p>
-<h3 id="71-dados-de-entrada">7.1 Dados de entrada</h3>
-<p>A Tabela 9 lista os dados necessários, onde ficam, quem os alimenta e quais medidas dependem deles.</p>
-<table>
-<thead>
-<tr>
-<th>Dado</th>
-<th>Fonte</th>
-<th>Quem alimenta</th>
-<th>Quando</th>
-<th>Medidas que usam</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ID, Janela, Estimativa, estado, datas de fechamento e reabertura, labels</td>
-<td>Issues e pull requests do GitHub</td>
-<td>Responsável pela issue</td>
-<td>Ao criar, fechar ou reabrir a issue</td>
-<td><code>CP1</code>, <code>CP2</code>, <code>DP1</code>, <code>RC2</code>, <code>RC3</code></td>
-</tr>
-<tr>
-<td>Horas por integrante e por issue</td>
-<td><code>assets/dados/gestao/horas/&lt;usuario&gt;.csv</code> (colunas <code>data,atividade,horas</code>; ver <a href="../horas/">Registro de Horas</a>)</td>
-<td>Cada integrante</td>
-<td>Até 12h do dia da medição</td>
-<td><code>RC1</code>, <code>RC2</code>, <code>RC3</code></td>
-</tr>
-<tr>
-<td>Nível por critério da rubrica</td>
-<td><code>assets/dados/gestao/autoavaliacao.csv</code> (colunas <code>data,criterio,nivel,evidencia</code>)</td>
-<td>Revisor</td>
-<td>Em <a href="#pontos">Mg-3</a></td>
-<td><code>DP2</code></td>
-</tr>
-<tr>
-<td>Uso de IA</td>
-<td><a href="../uso_de_ia/">Uso de IA</a></td>
-<td>Quem usou a ferramenta</td>
-<td>No momento do uso</td>
-<td>Evidência para os critérios de uso de IA na autoavaliação (<code>DP2</code>)</td>
-</tr>
-</tbody>
-</table>
-<p><em>Tabela 9. Dados de entrada das medições. Fonte: Elaborado por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a></em></p>
-<p>No <code>autoavaliacao.csv</code>, <code>criterio</code> é o código da rubrica (por exemplo, <code>F1-C6</code>) e <code>nivel</code> é um de Insuficiente, Regular, Satisfatório ou Excelente, que correspondem, nesta ordem, às quatro opções da rubrica da professora, da primeira à última.</p>
-<h3 id="72-passos">7.2 Passos</h3>
-<p>Os passos abaixo são seguidos a cada ponto de medição.</p>
-<ol>
-<li>Até as 12h do dia da medição, cada membro lança suas horas no seu CSV.</li>
-<li>O <a href="#responsavel">Responsável</a> confere as pré-condições: issues fechadas com Janela, Estimativa e revisão registrada; horas sem ID válido; labels <code>correcao</code> aplicadas onde devidas. Pendências são cobradas das duplas donas antes do cálculo.</li>
-<li>A <a href="#responsavel">Responsável</a> roda <code>python3 scripts/coletar_psm.py --data AAAA-MM-DD</code> na raiz do repositório. O script deve implementar as fórmulas da <a href="#3-medidas-e-indicadores-por-categoria">seção 3</a>. A cada medição, conferir à mão ao menos uma medida (por exemplo, o <code>CP1</code>) contra o resultado do script.</li>
-<li>O <a href="#responsavel">Responsável</a> cola a tabela no registro de <code>docs/gestao/medicoes.md</code>, com, para cada medida: ponto de medição, data, valores das medidas base, valor derivado, nível e cor.</li>
-<li>Em <a href="#pontos">Mg-2 e Mg-3</a>, o revisor, preenche o <code>autoavaliacao.csv</code> para a fase correspondente, com um nível e uma evidência (link para o trecho do artigo, da GitPage ou do repositório) por critério. Antes disso, o <a href="#responsavel">Responsável</a> confere o <a href="../uso_de_ia/">registro de uso de IA</a>.</li>
-<li>O <a href="#responsavel">Responsável</a> interpreta cada medida amarela ou vermelha: registra causa provável e decisão conforme a <a href="#regras">seção 6</a>, e abre issue de ação quando houver trabalho a fazer.</li>
-<li>Medidas "sem dados" ou "com ressalva" são registradas como tal, com o motivo.</li>
-<li>O resultado é comunicado ao grupo no mesmo dia e commitado por pull request.</li>
-</ol>
-<p><a id="pontos"></a></p>
-<h3 id="73-pontos-de-medicao">7.3 Pontos de medição</h3>
-<p>A Tabela 10 apresenta as datas das medições, sua finalidade e as medidas calculadas em cada uma. Até o momento as datas estão referentes apenas a entrega 1.    </p>
-<table>
-<thead>
-<tr>
-<th>Id da Medição</th>
-<th>Data</th>
-<th>Finalidade</th>
-<th>Medidas</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Mg-1</td>
-<td>20/10 (ter)</td>
-<td>Primeira medição, para os slides do PC1</td>
-<td><code>CP1</code>, <code>CP2</code>, <code>DP1</code>, <code>RC1</code>, <code>RC2</code>, <code>RC3</code></td>
-</tr>
-<tr>
-<td>Mg-2</td>
-<td>22/10 (qui)</td>
-<td>Após o PC1: replanejar com o feedback; inclui DP2 da Fase 1</td>
-<td>Todas, com <code>DP2</code> (Fase 1)</td>
-</tr>
-<tr>
-<td>Mg-3</td>
-<td>25/10 (dom)</td>
-<td>Pré-entrega</td>
-<td><code>CP1</code>, <code>CP2</code>, <code>DP1</code>, <code>RC1</code>, <code>RC2</code>, <code>RC3</code></td>
-</tr>
-<tr>
-<td>Mg-4</td>
-<td>26/10 (seg)</td>
-<td>Fechamento e lições para a Entrega 2</td>
-<td><code>CP1</code>, <code>CP2</code>, <code>DP1</code>, <code>RC1</code>, <code>RC2</code>, <code>RC3</code></td>
-</tr>
-</tbody>
-</table>
-<p><em>Tabela 10. Pontos de medição previstos. Fonte: Elaborado por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a></em></p>
-<p>Os pontos de medição apresentados nesta tabela correspondem à Entrega 1. O acompanhamento da Entrega 2, prevista para 18/11/2026, deverá ser detalhado em um cronograma complementar, caso esteja incluído no escopo de execução deste plano.</p>
-<p>As medições de Mg-1 usam poucas issues concluídas e podem cair em "sem dados" ou oscilar muito; isso é esperado e deve constar na interpretação.</p>
-<h2 id="8-evidencias-no-git">8. Evidências no Git</h2>
+<h2 id="7-evidencias-no-git">7. Evidências no Git</h2>
 <p>Esta seção indica onde ficam armazenadas as evidências que permitem conferir as medições no repositório (Tabela 11).</p>
 <table>
 <thead>
@@ -716,15 +635,27 @@
 </table>
 <p><em>Tabela 11. Evidências das medições e sua localização. Fonte: Elaborado por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a></em></p>
 <h2 id="referencias">Referências</h2>
+<p><a id="s1"></a></p>
+<blockquote>
+<p>MCGARRY, John et al. Practical Software Measurement: Objective Information for Decision Makers. Version 4.0. Naval Undersea Warfare Center Division, 2001.</p>
+</blockquote>
+<p><a id="s2"></a></p>
+<blockquote>
+<p>INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. <em>ISO/IEC/IEEE 15939:2017: Systems and software engineering — Measurement process</em>. Geneva: ISO, 2017.</p>
+</blockquote>
+<p><a id="s3"></a></p>
+<blockquote>
+<p>JONES, Cheryl L. et al. <em>Practical Software and Systems Measurement: Continuous Iterative Development Measurement Framework — Part 1</em>. Version 2.1. PSM; NDIA; INCOSE, 2021.</p>
+</blockquote>
+<p><a id="s4"></a></p>
+<blockquote>
+<p>JONES, Cheryl L. et al. <em>Practical Software and Systems Measurement: Continuous Iterative Development Measurement Framework — Part 2: Measurement Specifications and Enterprise Measures</em>. Version 2.1. PSM; NDIA; INCOSE, 2021.</p>
+</blockquote>
+<p><a id="s5"></a></p>
 <blockquote>
 <p>BASILI, Victor R.; CALDIERA, Gianluigi; ROMBACH, H. Dieter. The Goal Question Metric Approach. In: MARCINIAK, John J. (ed.). <em>Encyclopedia of Software Engineering</em>. v. 1. New York: John Wiley &amp; Sons, 1994. p. 528–532.</p>
-<p>INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. <em>ISO/IEC/IEEE 15939:2017: Systems and software engineering — Measurement process</em>. Geneva: ISO, 2017.</p>
-<p>JONES, Cheryl L. et al. <em>Practical Software and Systems Measurement: Continuous Iterative Development Measurement Framework — Part 1</em>. Version 2.1. PSM; NDIA; INCOSE, 2021.</p>
-<p>JONES, Cheryl L. et al. <em>Practical Software and Systems Measurement: Continuous Iterative Development Measurement Framework — Part 2: Measurement Specifications and Enterprise Measures</em>. Version 2.1. PSM; NDIA; INCOSE, 2021.</p>
-<p>MCGARRY, John et al. <em>Practical Software Measurement: Objective Information for Decision Makers</em>. Boston: Addison-Wesley, 2002.</p>
 </blockquote>
 <hr />
-<p><a id="historico-de-versoes"></a></p>
 <h2 id="historico-de-versoes">Histórico de versões</h2>
 <table>
 <thead>
@@ -769,6 +700,20 @@
 <td>1.4</td>
 <td>19/10/2026</td>
 <td>Correções nas métricas e algumas nomeclaturas</td>
+<td><a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
+<td><a href="https://github.com/GeovannaUmbelino">Geovanna Umbelino</a></td>
+</tr>
+<tr>
+<td>1.5</td>
+<td>21/10/2026</td>
+<td>Refatoração do Plano de Medição para adequação à PSM/CID</td>
+<td><a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
+<td><a href="https://github.com/GeovannaUmbelino">Geovanna Umbelino</a></td>
+</tr>
+<tr>
+<td>1.6</td>
+<td>21/10/2026</td>
+<td>Remoção do processo de medição</td>
 <td><a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
 <td><a href="https://github.com/GeovannaUmbelino">Geovanna Umbelino</a></td>
 </tr>

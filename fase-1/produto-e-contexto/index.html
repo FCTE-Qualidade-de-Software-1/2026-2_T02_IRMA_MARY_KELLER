@@ -108,8 +108,47 @@
                 
                 
                 
-                    <li >
-                        <a href="../../fase-2/">Fase 2</a>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fase 2 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../fase-2/">Visão geral</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../fase-2/objetivos/">Objetivos de Medição</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../fase-2/questoes-hipoteses/">Questões e hipóteses</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../fase-2/metricas/">Métricas</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../fase-2/criterios-julgamento/">Critérios de julgamento</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../fase-2/grafico-gqm/">Gráfico GQM</a>
+</li>
+
+                        
+                        </ul>
                     </li>
                 
                 
@@ -218,10 +257,10 @@
         <div class="col-md-9" role="main">
 
 <h1 id="produto-e-contexto-de-uso-da-khan-academy">Produto e contexto de uso da Khan Academy</h1>
-<p>Este documento caracteriza o produto e o contexto de uso necessários aos critérios
-<a href="../../criterios/fase1/"><code>F1-C2</code></a> e <a href="../../criterios/fase1/"><code>F1-C3</code></a>. A caracterização
-foi elaborada a partir de documentação pública oficial da Khan Academy, consultada em
-<strong>18 de outubro de 2026</strong>.</p>
+<p>Este documento caracteriza o produto e o contexto de uso da Khan Academy, delimitando
+suas áreas funcionais observáveis, interfaces externas, dependências de ambiente e os
+perfis de usuários considerados na avaliação. A caracterização foi elaborada a partir
+de documentação pública oficial da plataforma, consultada em <strong>18 de outubro de 2026</strong>.</p>
 <p>As três marcações abaixo diferenciam a natureza das informações:</p>
 <ul>
 <li><strong>Documentado:</strong> informação sustentada por fonte oficial;</li>
@@ -230,23 +269,17 @@ foi elaborada a partir de documentação pública oficial da Khan Academy, consu
 <li><strong>Não observável:</strong> elemento para o qual não há evidência pública ou acesso técnico
   suficiente.</li>
 </ul>
-<p>O <a href="../requisitos-de-avaliacao/">propósito e as características de qualidade</a> são
-mantidos no documento específico de requisitos. A definição definitiva de objetos,
-ambientes, tarefas, participantes e exclusões pertence à atividade de definição do
-escopo. Portanto, os recortes deste documento são insumos para essa decisão, e não uma
-antecipação do escopo.</p>
+<p>O <a href="../requisitos-de-avaliacao/">propósito e as características de qualidade</a> são mantidos no documento específico de requisitos. Os objetos, ambientes, tarefas, participantes e exclusões selecionados para os ensaios estão definidos no <a href="../escopo-da-avaliacao/">Escopo da avaliação</a>. Esta caracterização apresenta o ecossistema mais amplo do produto e fornece rastreabilidade para essas decisões, sem ampliar o escopo estabelecido.</p>
 <h2 id="1-classificacao-e-finalidade-do-produto">1. Classificação e finalidade do produto</h2>
 <p>A Khan Academy é classificada, para esta avaliação, como um <strong>produto de software
 educacional interativo, disponibilizado como serviço on-line por interface web e por
-aplicativos móveis oficiais</strong>. A classificação descreve a forma observável de entrega
-e uso; não implica conhecimento da arquitetura interna nem de relações contratuais do
-serviço.</p>
+aplicativos móveis oficiais</strong>. A classificação descreve a forma observável de entrega e uso, sob a perspectiva de caixa preta; não implica conhecimento da arquitetura interna nem de relações contratuais do serviço.</p>
 <p>Segundo a organização, sua missão é oferecer educação gratuita e de alta qualidade a
 qualquer pessoa, em qualquer lugar. O produto disponibiliza cursos e recursos para
 estudantes, professores e responsáveis, com conteúdos do ensino básico ao início do
-ensino superior [S1]. No contexto desta avaliação, <strong>estudantes são os usuários
+ensino superior <a href="#s1">S1</a>. No contexto desta avaliação, <strong>estudantes são os usuários
 primários</strong>. Professores e responsáveis são usuários de apoio porque podem organizar
-atividades, acompanhar progresso e orientar o uso [S2], [S6], [S7] e [S11].</p>
+atividades, acompanhar progresso e orientar o uso <a href="#s2">S2</a>, <a href="#s6">S6</a>, <a href="#s7">S7</a> e <a href="#s11">S11</a>.</p>
 <h3 id="11-fronteira-adotada-para-caracterizacao">1.1 Fronteira adotada para caracterização</h3>
 <p>A fronteira documental abrange o site principal da Khan Academy e seus aplicativos
 oficiais para Android e iOS, além das funções diretamente expostas por essas
@@ -254,38 +287,46 @@ interfaces. Os itens abaixo são ofertas ou formas de distribuição relacionada
 não devem ser presumidos como parte do objeto de avaliação:</p>
 <ul>
 <li><strong>Khan Academy Kids</strong>, produto voltado a crianças de dois a oito anos e divulgado
-  separadamente [S1], [S3];</li>
+  separadamente <a href="#s1">S1</a>, <a href="#s3">S3</a>;</li>
 <li><strong>Khanmigo</strong>, oferta de tutoria e apoio com inteligência artificial apresentada
-  separadamente pela organização [S1];</li>
+  separadamente pela organização <a href="#s1">S1</a>;</li>
 <li><strong>Khan Academy Districts</strong>, oferta institucional não necessária aos fluxos gerais
-  de estudantes, professores e responsáveis [S1];</li>
+  de estudantes, professores e responsáveis <a href="#s1">S1</a>;</li>
 <li>distribuição por <strong>Kolibri</strong> para contextos sem conectividade, indicada como uma
   alternativa em parceria, e não como a interface web ou o aplicativo móvel principal
-  [S3].</li>
+  <a href="#s3">S3</a>.</li>
 </ul>
-<p>Essa fronteira é apenas uma base de descrição. A definição do escopo deve estabelecer
-quais superfícies e fluxos serão efetivamente incluídos.</p>
+<p>Essa fronteira documenta o ecossistema oficial do produto, contemplando tanto a interface web quanto os aplicativos móveis oficiais para Android e iOS. Os recortes e superfícies selecionados para os ensaios práticos são deliberados em <a href="../escopo-da-avaliacao/">Escopo da avaliação</a>.</p>
 <h2 id="2-requisitante-e-partes-interessadas">2. Requisitante e partes interessadas</h2>
+<p>Para contextualizar os papéis, o propósito é produzir evidências que apoiem a
+coordenação do cenário de escola pública a decidir se recomenda a Khan Academy Web
+em computadores e sob quais condições, além de orientar decisões sobre
+acessibilidade, introdução ao uso e desenho da medição. A formulação completa e as
+decisões <code>D1</code> a <code>D4</code> permanecem no <a href="../requisitos-de-avaliacao/#proposito">documento de requisitos</a>, evitando duplicar sua definição normativa.</p>
 <h3 id="21-distincao-entre-os-papeis">2.1 Distinção entre os papéis</h3>
 <p>O <a href="../requisitos-de-avaliacao/#proposito">Propósito da avaliação e uso pretendido</a>
-define o cenário de escola pública, o requisitante e as decisões <code>D1</code> a <code>D4</code> que os
+define o cenário de escola pública, o requisitante e as decisões <a href="../requisitos-de-avaliacao/#13-requisitante-e-destinatarios-dos-resultados"><code>D1</code></a> a <a href="../requisitos-de-avaliacao/#13-requisitante-e-destinatarios-dos-resultados"><code>D4</code></a> que os
 resultados devem apoiar. Esta seção detalha as partes interessadas desse cenário sem
 redefinir o propósito. No documento de requisitos, a coordenação da escola pública é
-o <strong>requisitante da avaliação</strong>. Para manter a consistência, esta caracterização adota
+o <strong><a href="../requisitos-de-avaliacao/#13-requisitante-e-destinatarios-dos-resultados">requisitante da avaliação</a></strong>. Para manter a consistência, esta caracterização adota
 a mesma convenção e distingue dois planos:</p>
 <ol>
 <li><strong>Demandante acadêmico:</strong> a disciplina Qualidade de Software 1, representada pela
    docente, determina a realização do trabalho e seus critérios de entrega.</li>
 <li><strong>Requisitante da avaliação:</strong> a coordenação da escola pública que, no cenário
-   hipotético definido para C1, decidiria se recomenda o produto. Nenhuma escola real
-   contratou ou solicitou o estudo.</li>
+   hipotético adotado, decidiria se recomenda o produto como apoio ao ensino. Nenhuma
+   escola real contratou ou solicitou o estudo.</li>
 </ol>
 <p>A Khan Academy <strong>não é o requisitante</strong>: não houve contato formal nem solicitação da
 organização. Ela é fornecedora/mantenedora do produto observado e possível destinatária
 dos resultados. Os avaliadores são os integrantes da equipe; os estudantes,
-professores e responsáveis são usuários ou representantes do contexto de uso.</p>
+professores e responsáveis são usuários ou representantes do contexto de uso.
+Não foi identificado comprador, contratante ou operador institucional real. Criar esses
+papéis apenas para completar uma classificação produziria uma relação inexistente; no
+cenário hipotético, a coordenação exerce o papel de requisitante e tomadora da decisão
+de adoção.</p>
 <h3 id="22-matriz-de-stakeholders">2.2 Matriz de stakeholders</h3>
-<p>Os critérios de sucesso abaixo são <strong>propostas da equipe</strong>, derivadas da rubrica, do
+<p>Os critérios de sucesso na tabela 1 abaixo são <strong>propostas da equipe</strong>, derivadas da rubrica, do
 cenário de aplicação e da documentação oficial. Não foram obtidos por entrevista e
 precisam ser confirmados antes de orientar decisões definitivas de escopo.</p>
 <table>
@@ -303,43 +344,43 @@ precisam ser confirmados antes de orientar decisões definitivas de escopo.</p>
 <td>Demandante acadêmico</td>
 <td>Disciplina Qualidade de Software 1, representada pela docente</td>
 <td>Determina a realização de uma avaliação de produto baseada na família SQuaRE e verifica a entrega acadêmica.</td>
-<td>Processo rastreável; escolhas justificadas; evidências verificáveis; atendimento à rubrica e aos prazos.</td>
+<td>Processo rastreável <br> escolhas justificadas <br> evidências verificáveis <br> atendimento à rubrica e aos prazos.</td>
 <td>Define critérios de qualidade do trabalho, entregas e restrições metodológicas.</td>
 </tr>
 <tr>
 <td>Requisitante da avaliação (cenário hipotético)</td>
 <td>Coordenação da escola pública definida no documento de requisitos</td>
-<td>No cenário de C1, precisa decidir se e como recomendar a Khan Academy aos estudantes nas condições consideradas.</td>
-<td>Receber evidências delimitadas por ambiente e perfil, com limitações explícitas, suficientes para fundamentar a recomendação.</td>
-<td>Orienta a comparação entre formas de acesso, a seleção de condições de uso e a apresentação dos resultados; não representa uma solicitação de escola real.</td>
+<td>No cenário, precisa decidir se e em quais condições recomendar a Khan Academy Web aos estudantes.</td>
+<td>Receber evidências delimitadas por ambiente, fluxo e perfil, com limitações explícitas, suficientes para fundamentar a recomendação.</td>
+<td>Toma a decisão <code>D1</code> e orienta a seleção de computadores, navegadores e condições de rede, além da forma de apresentar os resultados <br> <strong>Não</strong> representa uma solicitação de escola real.</td>
 </tr>
 <tr>
 <td>Avaliadores</td>
 <td>Integrantes da equipe do projeto</td>
 <td>Planejam, executam, registram e interpretam a avaliação externa dentro do prazo e dos recursos disponíveis.</td>
-<td>Procedimento viável, reproduzível e coerente com as normas; separação entre fatos, hipóteses e evidências coletadas.</td>
-<td>Definem o desenho final, os instrumentos e o rigor; limitações de ferramentas, participantes e dispositivos restringem a validade dos resultados.</td>
+<td>Procedimento viável, reproduzível e coerente com as normas <br> Separação entre fatos, hipóteses e evidências coletadas.</td>
+<td>Tomam a decisão <code>D4</code> e definem instrumentos e rigor <br> Limitações de ferramentas, participantes e equipamentos determinam os cortes e os limites de validade.</td>
 </tr>
 <tr>
 <td>Usuários primários</td>
 <td>Estudantes, inclusive iniciantes, pessoas com baixa visão e usuários de tecnologia assistiva</td>
-<td>Precisam localizar conteúdos, estudar e realizar atividades nas condições de acesso disponíveis [S1], [S5], [S8], [S9].</td>
+<td>Precisam localizar conteúdos, estudar e realizar atividades nas condições de acesso disponíveis <a href="#s1">S1</a>, <a href="#s5">S5</a>, <a href="#s8">S8</a>, <a href="#s9">S9</a>.</td>
 <td>Concluir os fluxos selecionados sem barreiras impeditivas e com desempenho aceitável segundo métricas que ainda serão operacionalizadas.</td>
-<td>Fundamentam os perfis candidatos e a escolha de apreensibilidade, acessibilidade, adaptabilidade e eficiência de desempenho.</td>
+<td>Suas necessidades fundamentam as decisões <code>D1</code> a <code>D3</code>, os fluxos <code>FL1</code> a <code>FL4</code> e a seleção de desempenho, adaptabilidade, acessibilidade e apreensibilidade.</td>
 </tr>
 <tr>
 <td>Usuários de apoio</td>
 <td>Professores</td>
-<td>Organizam turmas, atribuem atividades e acompanham o progresso para apoiar estudantes [S2], [S6].</td>
-<td>Obter informação suficiente para orientar o acesso e intervir quando necessário; funções docentes só serão avaliadas se o escopo definitivo as incluir.</td>
-<td>Influenciam o cenário de recomendação, as tarefas introdutórias e a interpretação de dificuldades de aprendizagem do uso.</td>
+<td>Organizam turmas, atribuem atividades e acompanham o progresso para apoiar estudantes <a href="#s2">S2</a>, <a href="#s6">S6</a>.</td>
+<td>Receber informação suficiente para recomendar as condições de acesso e decidir se o estudante necessita de introdução ao uso <br> O painel docente permanece fora dos ensaios.</td>
+<td>Participam das decisões <code>D1</code> e <code>D3</code>; influenciam as tarefas introdutórias e a interpretação de dificuldades de aprendizagem do uso.</td>
 </tr>
 <tr>
 <td>Usuários de apoio</td>
 <td>Pais e responsáveis</td>
-<td>Vinculam contas de estudantes, especialmente crianças, acompanham atividade e progresso e orientam o uso [S6], [S7], [S11].</td>
-<td>Conseguir apoiar o estudante e compreender o progresso nas funções documentadas; funções de responsável dependem do escopo final.</td>
-<td>Introduzem contexto de contas vinculadas e cuidado com estudantes menores, sem tornar privacidade ou segurança objeto de teste não autorizado.</td>
+<td>Vinculam contas de estudantes, especialmente crianças, acompanham atividade e progresso e orientam o uso <a href="#s6">S6</a>, <a href="#s7">S7</a>, <a href="#s11">S11</a>.</td>
+<td>Receber informação sobre barreiras e ajustes de acessibilidade relevantes ao apoio do estudante <br> O painel de responsáveis permanece fora dos ensaios.</td>
+<td>Participam da decisão <code>D2</code> e introduzem o cuidado com estudantes menores, sem tornar privacidade, segurança ou o painel de responsáveis objetos de teste.</td>
 </tr>
 <tr>
 <td>Fornecedor/mantenedor e destinatário potencial</td>
@@ -350,23 +391,28 @@ precisam ser confirmados antes de orientar decisões definitivas de escopo.</p>
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 1. Matriz de partes interessadas e influência na avaliação. Fonte: Elaborado por: <a href="https://github.com/menali17">Enzo Menali</a></em></p>
+<p><em>Tabela 1. Matriz de partes interessadas e influência na avaliação. Fonte: Elaborada por: <a href="https://github.com/menali17">Enzo Menali</a></em></p>
 <h3 id="23-rastreabilidade-com-o-proposito-e-o-uso-pretendido">2.3 Rastreabilidade com o propósito e o uso pretendido</h3>
 <p>A relação entre os stakeholders desta caracterização e as decisões definidas no
 <a href="../requisitos-de-avaliacao/#proposito">documento de requisitos</a> é direta:</p>
 <ul>
-<li><code>D1</code>: coordenação, professores e estudantes fundamentam a decisão sobre recomendar
-  a plataforma em dispositivos de entrada e redes limitadas;</li>
-<li><code>D2</code>: estudantes com baixa visão ou que usam leitor de tela, professores e
+<li><a href="../requisitos-de-avaliacao/#13-requisitante-e-destinatarios-dos-resultados"><code>D1</code></a>: coordenação, professores e estudantes fundamentam a decisão sobre recomendar
+  a plataforma web nos computadores, navegadores e condições de rede avaliados;</li>
+<li><a href="../requisitos-de-avaliacao/#13-requisitante-e-destinatarios-dos-resultados"><code>D2</code></a>: estudantes com baixa visão ou que usam leitor de tela, professores e
   responsáveis fundamentam a decisão sobre indicação e ajustes de acessibilidade;</li>
-<li><code>D3</code>: estudantes novos e professores fundamentam a decisão sobre a necessidade de
+<li><a href="../requisitos-de-avaliacao/#13-requisitante-e-destinatarios-dos-resultados"><code>D3</code></a>: estudantes novos e professores fundamentam a decisão sobre a necessidade de
   uma introdução ao uso da plataforma;</li>
-<li><code>D4</code>: a equipe avaliadora utiliza necessidades, prioridades e limitações dos demais
+<li><a href="../requisitos-de-avaliacao/#13-requisitante-e-destinatarios-dos-resultados"><code>D4</code></a>: a equipe avaliadora utiliza necessidades, prioridades e limitações dos demais
   stakeholders para definir objetivos, questões, métricas e rigor da avaliação.</li>
 </ul>
-<p>A coordenação corresponde ao requisitante da seção 1.3 do documento de requisitos. A
+<p>A coordenação corresponde ao requisitante da <a href="../requisitos-de-avaliacao/#13-requisitante-e-destinatarios-dos-resultados">seção 1.3</a> do documento de requisitos. A
 Khan Academy permanece apenas como destinatária potencial dos achados, sem se tornar
-tomadora das decisões <code>D1</code> a <code>D4</code>.</p>
+tomadora das decisões <a href="../requisitos-de-avaliacao/#13-requisitante-e-destinatarios-dos-resultados"><code>D1</code></a> a <a href="../requisitos-de-avaliacao/#13-requisitante-e-destinatarios-dos-resultados"><code>D4</code></a>.</p>
+<p>Essa influência aparece materialmente no escopo: as necessidades dos estudantes
+determinam os fluxos <code>FL1</code> a <code>FL4</code>; a decisão de recomendação da coordenação direciona
+os ambientes de computador e as condições de rede; os perfis de acessibilidade
+determinam as combinações com teclado e leitores de tela; e os recursos disponíveis
+aos avaliadores limitam a quantidade de ambientes, repetições e participantes.</p>
 <h2 id="3-descricao-estruturada-do-software">3. Descrição estruturada do software</h2>
 <h3 id="31-areas-funcionais-observaveis">3.1 Áreas funcionais observáveis</h3>
 <p>A Tabela 2 organiza funções públicas por área de uso. A palavra “área” evita inferir
@@ -385,48 +431,49 @@ módulos internos: são agrupamentos funcionais percebidos externamente.</p>
 <td>Conta, perfil e papéis</td>
 <td>Criação e edição de conta; seleção de papéis de estudante, professor ou responsável; vinculação opcional a provedores de identidade.</td>
 <td>Estudantes, professores e responsáveis</td>
-<td>[S6], [S10]</td>
+<td><a href="#s6">S6</a>, <a href="#s10">S10</a></td>
 </tr>
 <tr>
 <td>Localização e organização de conteúdos</td>
 <td>Seleção de cursos, visualização de conteúdos e organização da página inicial do estudante.</td>
 <td>Estudantes</td>
-<td>[S1], [S5]</td>
+<td><a href="#s1">S1</a>, <a href="#s5">S5</a></td>
 </tr>
 <tr>
 <td>Aprendizagem</td>
 <td>Acesso a vídeos, artigos, exercícios interativos e prática com níveis de domínio.</td>
 <td>Estudantes</td>
-<td>[S1], [S3]</td>
+<td><a href="#s1">S1</a>, <a href="#s3">S3</a></td>
 </tr>
 <tr>
 <td>Atividades e metas</td>
 <td>Exibição de tarefas atribuídas e metas de domínio na página inicial e nos aplicativos.</td>
 <td>Estudantes e professores</td>
-<td>[S2], [S3], [S5]</td>
+<td><a href="#s2">S2</a>, <a href="#s3">S3</a>, <a href="#s5">S5</a></td>
 </tr>
 <tr>
 <td>Progresso e apoio</td>
 <td>Acompanhamento de atividade e progresso pelo estudante; painéis para professores; vinculação e acompanhamento por responsáveis.</td>
 <td>Estudantes, professores e responsáveis</td>
-<td>[S2], [S5], [S7], [S11]</td>
+<td><a href="#s2">S2</a>, <a href="#s5">S5</a>, <a href="#s7">S7</a>, <a href="#s11">S11</a></td>
 </tr>
 <tr>
 <td>Continuidade entre interfaces</td>
 <td>Sincronização do progresso entre aplicativo e site quando há conta; download de vídeos para estudo off-line no aplicativo.</td>
 <td>Estudantes</td>
-<td>[S3]</td>
+<td><a href="#s3">S3</a></td>
 </tr>
 <tr>
 <td>Preferências de acessibilidade</td>
 <td>Opções para reduzir movimento, ocultar conteúdo que dependa de interação visual, remover cor de vídeos e exibir legendas, conforme disponibilidade documentada.</td>
 <td>Estudantes com necessidades de acessibilidade</td>
-<td>[S8]</td>
+<td><a href="#s8">S8</a></td>
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 2. Áreas funcionais observáveis do produto. Fonte: Elaborado por: <a href="https://github.com/menali17">Enzo Menali</a>, com base nas fontes indicadas</em></p>
+<p><em>Tabela 2. Áreas funcionais observáveis do produto. Fonte: Elaborada por: <a href="https://github.com/menali17">Enzo Menali</a>, com base nas fontes indicadas</em></p>
 <h3 id="32-interfaces-externas">3.2 Interfaces externas</h3>
+<p>A Tabela 3 apresenta as principais interfaces externas do sistema e suas respectivas implicações para o escopo e ambiente da avaliação.</p>
 <table>
 <thead>
 <tr>
@@ -438,33 +485,34 @@ módulos internos: são agrupamentos funcionais percebidos externamente.</p>
 <tbody>
 <tr>
 <td>Interface web</td>
-<td>Acesso ao site pelas versões atuais de Chrome, Edge, Firefox e Safari; navegadores antigos podem não oferecer todas as funções [S4].</td>
+<td>Acesso ao site pelas versões atuais de Chrome, Edge, Firefox e Safari; navegadores antigos podem não oferecer todas as funções <a href="#s4">S4</a>.</td>
 <td>A adaptação a diferentes resoluções e tamanhos de tela permanece objeto da avaliação. Navegador, sistema operacional, viewport e versão precisam ser registrados.</td>
 </tr>
 <tr>
 <td>Aplicativo Android</td>
-<td>Aplicativo oficial distribuído pelo Google Play, com exercícios, atividades, sincronização e download de vídeos [S3].</td>
-<td>Pode diferir da web e do iOS; versão do aplicativo, aparelho e versão do Android devem compor a evidência.</td>
+<td>Aplicativo oficial distribuído pelo Google Play, com exercícios, atividades, sincronização e download de vídeos <a href="#s3">S3</a>.</td>
+<td>Pode diferir da web e do iOS, mas permanece fora dos ensaios definidos no escopo.</td>
 </tr>
 <tr>
 <td>Aplicativo iOS</td>
-<td>Aplicativo oficial distribuído pela App Store, com funções móveis documentadas [S3].</td>
-<td>Requer ambiente iOS disponível; sua ausência deve ser declarada, e não simulada como equivalência com Android.</td>
+<td>Aplicativo oficial distribuído pela App Store, com funções móveis documentadas <a href="#s3">S3</a>.</td>
+<td>Requer ambiente iOS próprio, mas permanece fora dos ensaios definidos no escopo.</td>
 </tr>
 <tr>
 <td>Painéis de professor e responsável</td>
-<td>Interfaces associadas a contas e papéis específicos para atribuição, acompanhamento e vínculo de estudantes [S2], [S6], [S7], [S11].</td>
-<td>Não devem ser incluídas por consequência automática: a definição do escopo deve estabelecer se são objetos ou apenas elementos do contexto.</td>
+<td>Interfaces associadas a contas e papéis específicos para atribuição, acompanhamento e vínculo de estudantes <a href="#s2">S2</a>, <a href="#s6">S6</a>, <a href="#s7">S7</a>, <a href="#s11">S11</a>.</td>
+<td>São elementos do contexto de uso, mas os respectivos fluxos permanecem fora dos ensaios.</td>
 </tr>
 <tr>
 <td>Tecnologia assistiva</td>
-<td>Uso combinado com leitores de tela e recursos do sistema/navegador. A Khan Academy documenta combinações recomendadas e limitações para leitura de conteúdo e equações [S9].</td>
+<td>Uso combinado com leitores de tela e recursos do sistema/navegador. A Khan Academy documenta combinações recomendadas e limitações para leitura de conteúdo e equações <a href="#s9">S9</a>.</td>
 <td>Tecnologia assistiva, navegador, sistema e configurações formam um único ambiente de observação e devem ser registrados em conjunto.</td>
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 3. Interfaces externas e implicações para a avaliação. Fonte: Elaborado por: <a href="https://github.com/menali17">Enzo Menali</a>, com base nas fontes indicadas</em></p>
+<p><em>Tabela 3. Interfaces externas e implicações para a avaliação. Fonte: Elaborada por: <a href="https://github.com/menali17">Enzo Menali</a>, com base nas fontes indicadas</em></p>
 <h3 id="33-dependencias-observaveis-ambientes-e-limitacoes-de-acesso">3.3 Dependências observáveis, ambientes e limitações de acesso</h3>
+<p>A Tabela 4 sintetiza as dependências e condições externas do sistema, acompanhadas de seus respectivos limites operacionais. Em seguida, a Tabela 5 distingue os ambientes selecionados daqueles mantidos apenas como contexto do produto.</p>
 <table>
 <thead>
 <tr>
@@ -478,43 +526,43 @@ módulos internos: são agrupamentos funcionais percebidos externamente.</p>
 <tr>
 <td>Dispositivo e sistema operacional</td>
 <td>Computador ou dispositivo móvel capaz de executar navegador ou aplicativo compatível.</td>
-<td>Adaptabilidade; comportamento temporal; utilização de recursos.</td>
-<td>A equipe ainda deve inventariar aparelhos e versões reais disponíveis. “Celular de entrada” precisa de especificação operacional, não apenas do rótulo comercial.</td>
+<td>Adaptabilidade <br> Comportamento temporal <br> Utilização de recursos.</td>
+<td>Os ensaios foram delimitados a computadores; configurações, sistemas e versões efetivamente utilizados devem ser registrados.</td>
 </tr>
 <tr>
 <td>Navegador</td>
-<td>Versão atual de Chrome, Edge, Firefox ou Safari para a interface web [S4].</td>
-<td>Adaptabilidade; comportamento temporal; acessibilidade, inclusive na combinação com leitor de tela.</td>
+<td>Versão atual de Chrome, Edge, Firefox ou Safari para a interface web <a href="#s4">S4</a>.</td>
+<td>Adaptabilidade <br> Comportamento temporal <br> Acessibilidade, inclusive na combinação com leitor de tela.</td>
 <td>Não é possível afirmar equivalência entre navegadores sem observação; versões antigas estão fora do suporte documentado.</td>
 </tr>
 <tr>
 <td>Conectividade</td>
-<td>Acesso à rede para carregar e sincronizar dados; aplicativos permitem baixar vídeos para uso off-line [S3].</td>
-<td>Comportamento temporal; utilização de dados; adaptabilidade a condições de acesso.</td>
-<td>O recurso off-line documentado não autoriza presumir que exercícios e todas as funções funcionem sem rede. Perfis de rede devem ser definidos e controlados na definição do escopo.</td>
+<td>Acesso à rede para carregar e sincronizar dados; aplicativos permitem baixar vídeos para uso off-line <a href="#s3">S3</a>.</td>
+<td>Comportamento temporal <br> Utilização de dados <br> Adaptabilidade a condições de acesso.</td>
+<td>O recurso off-line documentado não autoriza presumir que exercícios e todas as funções funcionem sem rede. O escopo prevê uma conexão sem limitação artificial e um perfil limitado cujos parâmetros serão fixados no plano de medição.</td>
 </tr>
 <tr>
 <td>Conta e sessão</td>
-<td>Algumas funções de progresso, turmas, vínculos e sincronização dependem de conta e papel configurados [S5], [S6], [S7].</td>
-<td>Apreensibilidade; adaptabilidade; definição reproduzível dos fluxos.</td>
-<td>Não se deve usar dados reais de menores nem contornar controles de acesso. Contas e dados de teste precisam ser planejados.</td>
+<td>Algumas funções de progresso, turmas, vínculos e sincronização dependem de conta e papel configurados <a href="#s5">S5</a>, <a href="#s6">S6</a>, <a href="#s7">S7</a>.</td>
+<td>Apreensibilidade <br> Adaptabilidade <br> Definição reproduzível dos fluxos.</td>
+<td>A autenticação é precondição, não objeto avaliado. Será utilizada conta de teste controlada, sem dados pessoais de estudantes menores de idade.</td>
 </tr>
 <tr>
 <td>Provedores de identidade</td>
-<td>A página de configurações documenta vínculos opcionais com Google, Facebook, Clever, ClassLink, Apple, Microsoft ou e-mail [S6].</td>
+<td>A página de configurações documenta vínculos opcionais com Google, Facebook, Clever, ClassLink, Apple, Microsoft ou e-mail <a href="#s6">S6</a>.</td>
 <td>Pode afetar o fluxo inicial e sua apreensibilidade.</td>
 <td>Serviços terceiros não devem ser testados como se fossem componentes internos da Khan Academy; o método de autenticação deve ser fixado ou excluído do fluxo.</td>
 </tr>
 <tr>
 <td>Mídia e reprodução</td>
-<td>Vídeos e legendas dependem do cliente, da rede e dos controles disponibilizados [S3], [S8].</td>
-<td>Comportamento temporal; utilização de recursos; acessibilidade.</td>
+<td>Vídeos e legendas dependem do cliente, da rede e dos controles disponibilizados <a href="#s3">S3</a>, <a href="#s8">S8</a>.</td>
+<td>Comportamento temporal <br> Utilização de recursos <br> Acessibilidade.</td>
 <td>CDN, codificação e infraestrutura de mídia são internas ou externas não controladas; só a resposta percebida no cliente é mensurável.</td>
 </tr>
 <tr>
 <td>Tecnologia assistiva e configurações</td>
-<td>Leitores de tela, ampliação, contraste e preferências de acessibilidade interagem com site, navegador e sistema [S8], [S9].</td>
-<td>Acessibilidade; adaptabilidade.</td>
+<td>Leitores de tela, ampliação, contraste e preferências de acessibilidade interagem com site, navegador e sistema <a href="#s8">S8</a>, <a href="#s9">S9</a>.</td>
+<td>Acessibilidade <br> Adaptabilidade.</td>
 <td>A documentação oficial reconhece limitações de leitura. A avaliação externa não equivale a auditoria completa de conformidade.</td>
 </tr>
 <tr>
@@ -525,51 +573,56 @@ módulos internos: são agrupamentos funcionais percebidos externamente.</p>
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 4. Dependências e condições externas relevantes. Fonte: Elaborado por: <a href="https://github.com/menali17">Enzo Menali</a>, com base nas fontes indicadas</em></p>
-<p>Os ambientes abaixo são candidatos para discussão durante a definição do escopo, e
-não uma matriz de testes aprovada:</p>
+<p><em>Tabela 4. Dependências e condições externas relevantes. Fonte: Elaborada por: <a href="https://github.com/menali17">Enzo Menali</a>, com base nas fontes indicadas</em></p>
+<p>Os ambientes abaixo pertencem ao ecossistema caracterizado. A última coluna registra sua relação com o <a href="../escopo-da-avaliacao/#escopo-e-objetos">escopo aprovado</a>, evitando interpretar a descrição do produto como inclusão automática nos ensaios:</p>
 <table>
 <thead>
 <tr>
-<th>Ambiente candidato</th>
-<th>Componentes a especificar antes da execução</th>
+<th>Ambiente do produto</th>
+<th>Componentes relevantes</th>
 <th>Características relacionadas</th>
+<th>Tratamento no escopo</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Web em computador</td>
-<td>Hardware; sistema operacional; navegador e versão; resolução; tipo e perfil de rede.</td>
-<td>Adaptabilidade; comportamento temporal; utilização de recursos; apreensibilidade.</td>
+<td>Hardware<br>Sistema operacional<br>Navegador e versão<br>Resolução<br>Tipo e perfil de rede.</td>
+<td>Adaptabilidade<br>Comportamento temporal<br>Utilização de recursos<br>Apreensibilidade.</td>
+<td>Incluído nas combinações <code>A1</code> a <code>A4</code>; desempenho concentrado em <code>A1</code>.</td>
 </tr>
 <tr>
 <td>Web em dispositivo móvel</td>
-<td>Aparelho; memória disponível; sistema; navegador; viewport; perfil de rede móvel.</td>
-<td>Adaptabilidade; comportamento temporal; utilização de recursos; apreensibilidade.</td>
+<td>Aparelho<br>Memória disponível<br>Sistema<br>Navegador<br>Viewport<br>Perfil de rede móvel.</td>
+<td>Adaptabilidade<br>Comportamento temporal<br>Utilização de recursos<br>Apreensibilidade.</td>
+<td>Excluído para reduzir a matriz experimental e aprofundar os ensaios em computadores.</td>
 </tr>
 <tr>
 <td>Aplicativo Android</td>
-<td>Modelo do aparelho; Android; versão do aplicativo; armazenamento/memória; perfil de rede.</td>
-<td>Adaptabilidade; comportamento temporal; utilização de recursos.</td>
+<td>Modelo do aparelho<br>Android<br>Versão do aplicativo<br>Armazenamento/memória<br>Perfil de rede.</td>
+<td>Adaptabilidade<br>Comportamento temporal<br>Utilização de recursos.</td>
+<td>Excluído por exigir interface, ferramentas e procedimentos próprios.</td>
 </tr>
 <tr>
 <td>Aplicativo iOS</td>
-<td>Modelo do aparelho; iOS; versão do aplicativo; perfil de rede.</td>
-<td>Adaptabilidade; comportamento temporal; utilização de recursos.</td>
+<td>Modelo do aparelho<br>iOS<br>Versão do aplicativo<br>Perfil de rede.</td>
+<td>Adaptabilidade<br>Comportamento temporal<br>Utilização de recursos.</td>
+<td>Excluído por exigir interface, ferramentas e procedimentos próprios.</td>
 </tr>
 <tr>
 <td>Web com tecnologia assistiva</td>
-<td>Sistema; navegador; leitor de tela e versão; ampliação; contraste; dispositivo de entrada.</td>
-<td>Acessibilidade; adaptabilidade.</td>
+<td>Sistema<br>Navegador<br>Leitor de tela e versão<br>Ampliação<br>Contraste<br>Dispositivo de entrada.</td>
+<td>Acessibilidade<br>Adaptabilidade.</td>
+<td>Incluído com teclado e leitores de tela em <code>A1</code>, <code>A3</code> e <code>A4</code>; em <code>A1</code>, inclui inspeções separadas com zoom de 200% e alto contraste do Windows; inspeção automatizada apenas como apoio.</td>
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 5. Ambientes candidatos a serem deliberados no escopo. Fonte: Elaborado por: <a href="https://github.com/menali17">Enzo Menali</a></em></p>
+<p><em>Tabela 5. Ambientes do produto e tratamento no escopo da avaliação. Fonte: Elaborada por: <a href="https://github.com/menali17">Enzo Menali</a></em></p>
 <h2 id="4-perfis-candidatos-de-estudantes">4. Perfis candidatos de estudantes</h2>
-<p>Os perfis da Tabela 6 são <strong>personas analíticas provisórias</strong>. Eles não representam
-pessoas entrevistadas, não estimam prevalência e não comprovam problemas no produto.
-Servem para tornar explícitas condições que podem orientar o escopo e o recrutamento,
-caso a equipe obtenha participantes com consentimento e condições adequadas.</p>
+<p>Os perfis da Tabela 6 são <strong>personas analíticas</strong>. Eles não representam pessoas
+entrevistadas, não estimam prevalência e não comprovam problemas no produto. Servem
+para explicitar as condições que orientaram o escopo e distinguir perfis contemplados,
+contemplados parcialmente ou excluídos dos ensaios.</p>
 <table>
 <thead>
 <tr>
@@ -577,7 +630,7 @@ caso a equipe obtenha participantes com consentimento e condições adequadas.</
 <th>Perfil candidato e contexto</th>
 <th>Necessidade relevante</th>
 <th>Características relacionadas</th>
-<th>Observação candidata, a definir no escopo definitivo</th>
+<th>Tratamento no escopo definido</th>
 </tr>
 </thead>
 <tbody>
@@ -586,53 +639,59 @@ caso a equipe obtenha participantes com consentimento e condições adequadas.</
 <td>Estudante novo, com pouca familiaridade com plataformas educacionais</td>
 <td>Compreender a navegação, encontrar um conteúdo e iniciar uma atividade sem treinamento desproporcional.</td>
 <td>Usabilidade: apreensibilidade.</td>
-<td>Sucesso, erros, pedidos de ajuda, tempo e percepção durante tarefas introdutórias; instrumento e participantes ainda não definidos.</td>
+<td>Contemplado em <code>FL1</code> a <code>FL3</code>, com três a cinco participantes adultos sem experiência anterior declarada.</td>
 </tr>
 <tr>
 <td><code>P2</code></td>
 <td>Estudante com baixa visão que usa ampliação, contraste ou ajustes de apresentação</td>
 <td>Perceber conteúdo, controles, foco e feedback com ampliação e configurações necessárias.</td>
-<td>Usabilidade: acessibilidade; Portabilidade: adaptabilidade.</td>
-<td>Inspeção manual de fluxos selecionados com zoom, contraste e configurações documentadas; não substitui avaliação por usuário real.</td>
+<td>Usabilidade: acessibilidade<br>Portabilidade: adaptabilidade.</td>
+<td>Contemplado parcialmente em <code>FL1</code> a <code>FL3</code>, no ambiente <code>A1</code> e na resolução de 1366 × 768, por inspeções separadas com zoom de 200% e alto contraste do Windows; não substitui avaliação com usuário real.</td>
 </tr>
 <tr>
 <td><code>P3</code></td>
 <td>Estudante que depende de leitor de tela e navegação por teclado</td>
 <td>Acessar estrutura, rótulos, ordem de foco, conteúdo matemático, instruções e feedback sem dependência visual.</td>
-<td>Usabilidade: acessibilidade; Portabilidade: adaptabilidade.</td>
-<td>Fluxos com combinação documentada de leitor de tela, navegador e sistema [S9]; avaliação com participante é preferível e depende de viabilidade ética e logística.</td>
+<td>Usabilidade: acessibilidade<br>Portabilidade: adaptabilidade.</td>
+<td>Contemplado em <code>FL1</code> a <code>FL3</code>, com teclado e combinações documentadas de NVDA, VoiceOver e Orca <a href="#s9">S9</a>.</td>
 </tr>
 <tr>
 <td><code>P4</code></td>
-<td>Estudante que acessa por rede móvel lenta, instável ou com franquia de dados</td>
+<td>Estudante que acessa por conexão lenta ou instável</td>
 <td>Iniciar e manter o estudo com tempos e transferência de dados compatíveis com a condição disponível.</td>
 <td>Eficiência de desempenho: comportamento temporal e utilização de recursos.</td>
-<td>Tempos percebidos, falhas e volume de dados em perfil de rede controlado; limites aceitáveis ainda devem ser definidos.</td>
+<td>Contemplado por comparação entre conexão sem limitação artificial e perfil controlado de conexão limitada em <code>A1</code>.</td>
 </tr>
 <tr>
 <td><code>P5</code></td>
-<td>Estudante com dispositivo de recursos limitados</td>
-<td>Executar os fluxos sem consumo que inviabilize a tarefa ou cause degradação incompatível com o aparelho.</td>
-<td>Eficiência de desempenho: utilização de recursos e comportamento temporal; Portabilidade: adaptabilidade.</td>
-<td>CPU, memória, transferência de dados e tempos de resposta do cliente, se as ferramentas disponíveis permitirem medição válida.</td>
+<td>Estudante com computador de recursos limitados</td>
+<td>Executar os fluxos sem consumo que inviabilize a tarefa ou cause degradação incompatível com o equipamento.</td>
+<td>Eficiência de desempenho: utilização de recursos e comportamento temporal<br>Portabilidade: adaptabilidade.</td>
+<td>Contemplado pelas medições de CPU, memória, rede e tempo no computador de referência, cuja configuração limitará a validade dos resultados.</td>
 </tr>
 <tr>
 <td><code>P6</code></td>
 <td>Estudante que alterna entre computador compartilhado, navegador móvel e aplicativo próprio</td>
 <td>Retomar o estudo e reconhecer as mesmas funções essenciais em interfaces diferentes.</td>
-<td>Portabilidade: adaptabilidade; Usabilidade: apreensibilidade.</td>
-<td>Presença e conclusão dos fluxos selecionados, diferenças de navegação e sincronização documentada; não implica exigir paridade total entre plataformas.</td>
+<td>Portabilidade: adaptabilidade<br>Usabilidade: apreensibilidade.</td>
+<td>Excluído porque navegadores móveis, aplicativos nativos e sincronização entre plataformas não integram o escopo.</td>
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 6. Perfis candidatos relacionados às características de qualidade acordadas. Fonte: Elaborado por: <a href="https://github.com/menali17">Enzo Menali</a></em></p>
+<p><em>Tabela 6. Perfis candidatos relacionados às características de qualidade acordadas. Fonte: Elaborada por: <a href="https://github.com/menali17">Enzo Menali</a></em></p>
 <h2 id="5-diagrama-de-contexto">5. Diagrama de contexto</h2>
-<p>A Figura 1 representa atores, condições externas, interfaces e áreas funcionais
-observáveis. As caixas internas são agrupamentos da experiência do usuário, <strong>não
-componentes da arquitetura interna</strong>.</p>
-<p><img alt="Diagrama de contexto da Khan Academy: estudantes, professores, responsáveis, equipe avaliadora, ambientes externos e as interfaces web e móvel dentro da fronteira do produto." src="../../assets/img/diagrama-contexto-khan-academy.svg" /></p>
-<p><em>Figura 1. Diagrama de contexto da Khan Academy para a avaliação. Fonte: Elaborada por: <a href="https://github.com/menali17">Enzo Menali</a>, com base em [S1] a [S9]</em></p>
+<p>O diagrama de contexto apresentado na Figura 1 mapeia o ecossistema no qual a avaliação se insere, contemplando quatro dimensões essenciais para a compreensão do sistema e de suas fronteiras:</p>
+<p><img alt="Diagrama de Contexto" src="../../assets/img/diagrama-contexto-khan-academy.svg" /></p>
+<p><em>Figura 1. Diagrama de contexto da Khan Academy para a avaliação. Fonte: Elaborada por: <a href="https://github.com/menali17">Enzo Menali</a>, com base em <a href="#s1">S1</a> a <a href="#s9">S9</a></em></p>
+<ol>
+<li><strong>Atores externos:</strong> Diferencia os usuários operacionais da plataforma (estudantes como usuários primários; professores e responsáveis como usuários de apoio) e os agentes da avaliação. A coordenação pedagógica é o requisitante da avaliação e destinatária dos resultados, enquanto a equipe avaliadora é responsável pela decisão <a href="../requisitos-de-avaliacao/#13-requisitante-e-destinatarios-dos-resultados"><code>D4</code></a>. As decisões <a href="../requisitos-de-avaliacao/#13-requisitante-e-destinatarios-dos-resultados"><code>D1</code></a> a <a href="../requisitos-de-avaliacao/#13-requisitante-e-destinatarios-dos-resultados"><code>D3</code></a> permanecem atribuídas aos atores indicados no documento de requisitos.</li>
+<li><strong>Condições e dependências do ambiente:</strong> Representa os fatores externos necessários para a execução observável (dispositivos móveis e computadores de mesa, navegadores homologados, restrições de conectividade móvel/Wi-Fi e tecnologias assistivas).</li>
+<li><strong>Fronteira observável do produto:</strong> Delimita a aplicação Khan Academy sob uma abordagem externa (caixa-preta), abrangendo a interface web e os aplicativos móveis oficiais para Android e iOS, decomposta em áreas funcionais externas da experiência do usuário (e não módulos arquiteturais internos). O diagrama representa o ecossistema caracterizado; os ensaios ficam restritos à interface web em computadores, conforme o <a href="../escopo-da-avaliacao/#escopo-e-objetos">escopo da avaliação</a>.</li>
+<li><strong>Fluxo da avaliação externa:</strong> Destaca a observação não-intrusiva das métricas no cliente pela equipe avaliadora e a entrega do relatório de evidências para subsidiar a decisão pedagógica da coordenação.</li>
+</ol>
+<p>Entre os elementos que não farão parte da avaliação estão aqueles ligados a aspectos internos da plataforma, a qual a equipe de avaliação não tem acesso. A especificação detalhada do que está fora de escopo, assim como as justificativas por trás de cada exclusão, está no <a href="../escopo-da-avaliacao/#fora-do-escopo">documento de escopo</a>.</p>
 <h2 id="6-implicacoes-diretas-para-a-avaliacao">6. Implicações diretas para a avaliação</h2>
+<p>A Tabela 7 sintetiza o que é observável externamente no estágio atual da avaliação, os pontos que exigem decisão prévia ou preparação técnica e os limites das conclusões que podem ser tiradas.</p>
 <table>
 <thead>
 <tr>
@@ -658,7 +717,7 @@ componentes da arquitetura interna</strong>.</p>
 <tr>
 <td>Utilização de recursos</td>
 <td>CPU, memória, armazenamento temporário e transferência de dados do cliente, quando as ferramentas permitirem.</td>
-<td>Definir ferramentas, baseline, unidade, duração, repetição e aparelhos.</td>
+<td>Definir ferramentas, baseline, unidade, duração, repetição e configuração do computador de referência.</td>
 <td>Consumo de infraestrutura da Khan Academy ou de serviços de terceiros.</td>
 </tr>
 <tr>
@@ -670,28 +729,59 @@ componentes da arquitetura interna</strong>.</p>
 <tr>
 <td>Acessibilidade</td>
 <td>Barreiras observadas em fluxos selecionados por inspeção de teclado, ampliação, contraste e leitor de tela; achados automáticos como apoio.</td>
-<td>Escolher WCAG/regras de referência, combinações assistivas e forma de participação de usuários com deficiência.</td>
+<td>Registrar navegador, resolução, zoom, contraste, leitor de tela e critérios de conclusão aplicáveis a cada ensaio.</td>
 <td>Certificação integral de conformidade, ausência de barreiras em todo o produto ou validação apenas por ferramenta automática.</td>
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 7. Mensurabilidade e limites da avaliação externa. Fonte: Elaborado por: <a href="https://github.com/menali17">Enzo Menali</a></em></p>
+<p><em>Tabela 7. Mensurabilidade e limites da avaliação externa. Fonte: Elaborada por: <a href="https://github.com/menali17">Enzo Menali</a></em></p>
 <p>Esses limites sustentam uma avaliação <strong>caixa-preta</strong> e condicionada às versões,
 ambientes e perfis efetivamente observados. Também ficam fora desta caracterização a
 eficácia pedagógica dos conteúdos, a comparação com concorrentes, testes de segurança
 sem autorização e qualquer afirmação de certificação do produto.</p>
 <h2 id="referencias">Referências</h2>
+<p><a id="s1"></a></p>
 <blockquote>
 <p><strong>[S1] KHAN ACADEMY.</strong> <em>About</em>. Disponível em: <a href="https://www.khanacademy.org/about">https://www.khanacademy.org/about</a>. Data de atualização não informada. Acesso em: 18 out. 2026.</p>
+</blockquote>
+<p><a id="s2"></a></p>
+<blockquote>
 <p><strong>[S2] KHAN ACADEMY.</strong> <em>Khan Academy for Teachers</em>. Disponível em: <a href="https://www.khanacademy.org/teachers">https://www.khanacademy.org/teachers</a>. Data de atualização não informada. Acesso em: 18 out. 2026.</p>
+</blockquote>
+<p><a id="s3"></a></p>
+<blockquote>
 <p><strong>[S3] KHAN ACADEMY.</strong> <em>Downloads</em>. Disponível em: <a href="https://www.khanacademy.org/downloads">https://www.khanacademy.org/downloads</a>. Data de atualização não informada. Acesso em: 18 out. 2026.</p>
+</blockquote>
+<p><a id="s4"></a></p>
+<blockquote>
 <p><strong>[S4] KHAN ACADEMY HELP CENTER.</strong> <em>Which browsers are supported?</em> Disponível em: <a href="https://support.khanacademy.org/hc/en-us/articles/204795660-Which-browsers-are-supported">https://support.khanacademy.org/hc/en-us/articles/204795660-Which-browsers-are-supported</a>. Atualizado em: 31 jan. 2023. Acesso em: 18 out. 2026.</p>
+</blockquote>
+<p><a id="s5"></a></p>
+<blockquote>
 <p><strong>[S5] KHAN ACADEMY HELP CENTER.</strong> <em>What is my Learner Home page, and what can I do there?</em> Disponível em: <a href="https://support.khanacademy.org/hc/en-us/articles/360030629852-What-is-my-Learner-Home-page-and-what-can-I-do-there">https://support.khanacademy.org/hc/en-us/articles/360030629852-What-is-my-Learner-Home-page-and-what-can-I-do-there</a>. Atualizado em: 13 ago. 2024. Acesso em: 18 out. 2026.</p>
+</blockquote>
+<p><a id="s6"></a></p>
+<blockquote>
 <p><strong>[S6] KHAN ACADEMY HELP CENTER.</strong> <em>How can I edit my account settings?</em> Disponível em: <a href="https://support.khanacademy.org/hc/en-us/articles/204707040-How-can-I-edit-my-account-settings">https://support.khanacademy.org/hc/en-us/articles/204707040-How-can-I-edit-my-account-settings</a>. Atualizado em: 9 jun. 2025. Acesso em: 18 out. 2026.</p>
+</blockquote>
+<p><a id="s7"></a></p>
+<blockquote>
 <p><strong>[S7] KHAN ACADEMY HELP CENTER.</strong> <em>How do I create or link child accounts to my parent account?</em> Disponível em: <a href="https://support.khanacademy.org/hc/en-us/articles/202262994-How-do-I-create-or-link-child-accounts-to-my-parent-account">https://support.khanacademy.org/hc/en-us/articles/202262994-How-do-I-create-or-link-child-accounts-to-my-parent-account</a>. Atualizado em: 3 fev. 2026. Acesso em: 18 out. 2026.</p>
+</blockquote>
+<p><a id="s8"></a></p>
+<blockquote>
 <p><strong>[S8] KHAN ACADEMY HELP CENTER.</strong> <em>Khan Academy's accessibility settings</em>. Disponível em: <a href="https://support.khanacademy.org/hc/en-us/articles/360015623271-Khan-Academy-s-accessibility-settings">https://support.khanacademy.org/hc/en-us/articles/360015623271-Khan-Academy-s-accessibility-settings</a>. Atualizado em: 20 ago. 2025. Acesso em: 18 out. 2026.</p>
+</blockquote>
+<p><a id="s9"></a></p>
+<blockquote>
 <p><strong>[S9] KHAN ACADEMY HELP CENTER.</strong> <em>Can Khan Academy be used with a screen reader or read-aloud tools?</em> Disponível em: <a href="https://support.khanacademy.org/hc/en-us/articles/360015349472-Can-Khan-Academy-be-used-with-a-screen-reader-or-read-aloud-tools">https://support.khanacademy.org/hc/en-us/articles/360015349472-Can-Khan-Academy-be-used-with-a-screen-reader-or-read-aloud-tools</a>. Atualizado em: 20 jul. 2026. Acesso em: 18 out. 2026.</p>
+</blockquote>
+<p><a id="s10"></a></p>
+<blockquote>
 <p><strong>[S10] KHAN ACADEMY HELP CENTER.</strong> <em>How do I set up a new user account?</em> Disponível em: <a href="https://support.khanacademy.org/hc/en-us/articles/202487450-How-do-I-set-up-a-new-user-account">https://support.khanacademy.org/hc/en-us/articles/202487450-How-do-I-set-up-a-new-user-account</a>. Atualizado em: 7 nov. 2025. Acesso em: 18 out. 2026.</p>
+</blockquote>
+<p><a id="s11"></a></p>
+<blockquote>
 <p><strong>[S11] KHAN ACADEMY HELP CENTER.</strong> <em>What reports can I use as a parent to monitor my child's activity on Khan Academy?</em> Disponível em: <a href="https://support.khanacademy.org/hc/en-us/articles/36120531499789-What-reports-can-I-use-as-a-parent-to-monitor-my-child-s-activity-on-Khan-Academy">https://support.khanacademy.org/hc/en-us/articles/36120531499789-What-reports-can-I-use-as-a-parent-to-monitor-my-child-s-activity-on-Khan-Academy</a>. Atualizado em: 9 jun. 2025. Acesso em: 18 out. 2026.</p>
 </blockquote>
 <h2 id="historico-de-versoes">Histórico de versões</h2>
@@ -707,9 +797,9 @@ sem autorização e qualquer afirmação de certificação do produto.</p>
 </thead>
 <tbody>
 <tr>
-<td>1.2</td>
+<td>1.0</td>
 <td>18/10/2026</td>
-<td>Padronização de referências e legendas; rastreabilidade entre stakeholders, propósito e decisões D1 a D4; remoção de conteúdo redundante sobre convenções e pendências.</td>
+<td>Caracterização do produto e do contexto, matriz de stakeholders, perfis candidatos, diagrama e limites de mensurabilidade para F1-C2 e F1-C3.</td>
 <td><a href="https://github.com/menali17">Enzo Menali</a></td>
 <td><a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
 </tr>
@@ -721,11 +811,32 @@ sem autorização e qualquer afirmação de certificação do produto.</p>
 <td><a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
 </tr>
 <tr>
-<td>1.0</td>
+<td>1.2</td>
 <td>18/10/2026</td>
-<td>Caracterização do produto e do contexto, matriz de stakeholders, perfis candidatos, diagrama e limites de mensurabilidade para F1-C2 e F1-C3.</td>
+<td>Padronização de referências e legendas; rastreabilidade entre stakeholders, propósito e decisões D1 a D4; remoção de conteúdo redundante sobre convenções e pendências.</td>
 <td><a href="https://github.com/menali17">Enzo Menali</a></td>
 <td><a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
+</tr>
+<tr>
+<td>1.3</td>
+<td>20/10/2026</td>
+<td>Revisão da caracterização do produto, dos hyperlinks e da rastreabilidade para atendimento ao F1-C3.</td>
+<td><a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+</tr>
+<tr>
+<td>1.4</td>
+<td>20/10/2026</td>
+<td>Alinhamento dos stakeholders ao propósito, às decisões e ao escopo vigente da avaliação.</td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td><a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
+</tr>
+<tr>
+<td>1.5</td>
+<td>20/10/2026</td>
+<td>Alinhamento do perfil de baixa visão ao recorte de acessibilidade definido no escopo.</td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td><a href="https://github.com/luisa12ll">Luisa de Souza</a></td>
 </tr>
 </tbody>
 </table></div>

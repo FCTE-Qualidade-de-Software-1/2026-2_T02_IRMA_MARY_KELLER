@@ -108,8 +108,47 @@
                 
                 
                 
-                    <li >
-                        <a href="../fase-2/">Fase 2</a>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fase 2 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../fase-2/">Visão geral</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../fase-2/objetivos/">Objetivos de Medição</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../fase-2/questoes-hipoteses/">Questões e hipóteses</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../fase-2/metricas/">Métricas</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../fase-2/criterios-julgamento/">Critérios de julgamento</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../fase-2/grafico-gqm/">Gráfico GQM</a>
+</li>
+
+                        
+                        </ul>
                     </li>
                 
                 
@@ -189,11 +228,86 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#fase-1-planejamento-da-avaliacao">Fase 1: Planejamento da avaliação</a></li>
+            <li class="second-level"><a href="#organizacao-da-fase-1">Organização da Fase 1</a></li>
+                
+            <li class="second-level"><a href="#delimitacao-e-relacao-com-a-fase-2">Delimitação e relação com a Fase 2</a></li>
+                
+            <li class="second-level"><a href="#referencias">Referências</a></li>
+                
+            <li class="second-level"><a href="#historico-de-versoes">Histórico de versões</a></li>
+                
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-</div>
+<h1 id="fase-1-planejamento-da-avaliacao">Fase 1: Planejamento da avaliação</h1>
+<p>A Fase 1 estabelece os requisitos da avaliação da Khan Academy. Nesta etapa, são definidos o propósito e o uso pretendido dos resultados, o produto e seu contexto de uso, as partes interessadas, as características de qualidade priorizadas e o recorte dos ensaios. A documentação também explicita o que pode ser observado externamente, os elementos excluídos e os limites de validade das conclusões.</p>
+<p>A avaliação adota o modelo de qualidade de produto da <strong>ISO/IEC 25010:2011</strong> e prioriza <strong>eficiência de desempenho</strong>, <strong>portabilidade</strong> e <strong>usabilidade</strong>. Essas características são detalhadas em cinco requisitos de avaliação, <code>R1</code> a <code>R5</code>, relacionados às decisões <code>D1</code> a <code>D4</code>. A Fase 1 planeja a avaliação; não apresenta resultados de testes.</p>
+<h2 id="organizacao-da-fase-1">Organização da Fase 1</h2>
+<p>A <strong>Tabela 1</strong> apresenta os temas da documentação, seus responsáveis e o acesso a cada página.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Tema</strong></th>
+<th style="text-align: left;"><strong>Responsável</strong></th>
+<th style="text-align: left;"><strong>Página</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Caracterização do produto, contexto de uso, stakeholders e perfis de estudantes</td>
+<td style="text-align: left;"><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td style="text-align: left;"><a href="produto-e-contexto/">Produto e contexto</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Propósito, uso pretendido, modelo de qualidade e priorização das características</td>
+<td style="text-align: left;"><a href="https://github.com/luisa12ll">Luisa de Souza</a></td>
+<td style="text-align: left;"><a href="requisitos-de-avaliacao/">Requisitos de avaliação</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Objetos, fluxos, ambientes, profundidade, exclusões, limites e relação com os ODS</td>
+<td style="text-align: left;"><a href="https://github.com/JAugustoM">José Augusto</a></td>
+<td style="text-align: left;"><a href="escopo-da-avaliacao/">Escopo da avaliação</a></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 1. Organização e responsáveis pela documentação da Fase 1. Fonte: Elaborada por: <a href="https://github.com/menali17">Enzo Menali</a></em></p>
+<p>A indicação de responsabilidade refere-se à elaboração principal de cada artefato; as contribuições e revisões posteriores permanecem registradas nos respectivos históricos de versões.</p>
+<h2 id="delimitacao-e-relacao-com-a-fase-2">Delimitação e relação com a Fase 2</h2>
+<p>O propósito da avaliação é produzir evidências que apoiem, em um cenário hipotético, a decisão de uma coordenação de escola pública sobre recomendar a Khan Academy Web em computadores e indicar as condições de acesso observadas. Estudantes são os usuários primários; professores e responsáveis são usuários de apoio; a equipe avaliadora define o desenho de medição; e a Khan Academy é fornecedora do produto e destinatária potencial dos achados.</p>
+<p>O objeto dos ensaios é a <strong>plataforma web acessada por navegadores em computadores</strong>, sob uma abordagem externa de caixa-preta. Os fluxos incluem localizar conteúdo, reproduzir uma videoaula, responder a um exercício e consultar o progresso da própria conta. Aplicativos nativos, navegadores móveis, painéis de professores e responsáveis, infraestrutura interna, testes ativos de segurança e avaliação pedagógica do conteúdo permanecem fora do escopo.</p>
+<p>Os ambientes <code>A1</code> a <code>A4</code> contemplam combinações dirigidas de Windows, macOS e Ubuntu com Chrome, Firefox e Safari. A acessibilidade inclui navegação por teclado e leitores de tela nas combinações previstas e, no ambiente <code>A1</code>, inspeções separadas com zoom de 200% e alto contraste do Windows para o perfil de baixa visão. Esses procedimentos não representam todas as pessoas com deficiência nem comprovam conformidade integral com as WCAG.</p>
+<p>Os requisitos definidos nesta etapa orientam a estrutura GQM da <a href="../fase-2/">Fase 2</a>: <code>R1</code> e <code>R2</code> fundamentam <code>G1</code>, <code>R3</code> fundamenta <code>G2</code>, e <code>R4</code> e <code>R5</code> fundamentam <code>G3</code>. Assim, objetivos, questões e métricas devem permanecer coerentes com o propósito, os stakeholders, os fluxos, os ambientes e os limites estabelecidos na Fase 1.</p>
+<h2 id="referencias">Referências</h2>
+<ul>
+<li><a href="produto-e-contexto/">Produto e contexto</a>. Caracterização da Khan Academy, stakeholders, interfaces, dependências e perfis de estudantes.</li>
+<li><a href="requisitos-de-avaliacao/">Requisitos de avaliação</a>. Propósito, decisões <code>D1</code> a <code>D4</code>, características priorizadas e requisitos <code>R1</code> a <code>R5</code>.</li>
+<li><a href="escopo-da-avaliacao/">Escopo da avaliação</a>. Objetos, fluxos, ambientes, profundidade, exclusões, limites de validade e relação com os ODS.</li>
+<li><a href="../criterios/fase1/">Critérios de avaliação da Fase 1</a>, disciplina Qualidade de Software 1, UnB/FGA, 2026/2.</li>
+<li><strong>ISO/IEC 25010:2011</strong>: <em>Systems and software engineering: Systems and software Quality Requirements and Evaluation (SQuaRE): System and software quality models</em>.</li>
+</ul>
+<h2 id="historico-de-versoes">Histórico de versões</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Versão</th>
+<th style="text-align: center;">Data</th>
+<th style="text-align: left;">Descrição</th>
+<th style="text-align: left;">Responsável</th>
+<th style="text-align: left;">Revisor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;">20/10/2026</td>
+<td style="text-align: left;">Estruturação da visão geral da Fase 1, organização dos artefatos e síntese da delimitação e da rastreabilidade com a Fase 2.</td>
+<td style="text-align: left;"><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td style="text-align: left;"><a href="https://github.com/luisa12ll">Luisa de Souza</a></td>
+</tr>
+</tbody>
+</table></div>
         
         
     </div>

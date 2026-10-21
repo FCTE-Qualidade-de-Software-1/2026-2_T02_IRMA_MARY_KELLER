@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1460" viewBox="0 0 1000 1460" role="img" aria-labelledby="title desc">
+<title id="title">GQM — 3 objetivos, 11 questões e hipóteses, 5 famílias de métricas</title>
+<desc id="desc">G1 liga Q1 a Q4; G2 liga Q5 e Q6; G3 liga Q7 a Q11. Cada questão liga sua hipótese e a métrica correspondente. Níveis conceitual, operacional e quantitativo.</desc>
+<rect width="1000" height="1460" fill="white"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="#536477"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="20" fill="#263445">Nível conceitual · G1 — Eficiência de desempenho</text>
+<text x="280" y="84" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">Nível operacional · Questões e hipóteses</text>
+<text x="800" y="84" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">Nível quantitativo · Métricas</text>
+<rect x="40" y="102" width="300" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="190.0" y="130" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">Q1 · Tempo mediano</text>
+<rect x="390" y="102" width="90" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="435.0" y="130" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">H1</text>
+<rect x="670" y="102" width="270" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="805.0" y="130" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">M1 / M2</text>
+<path d="M340,124 L390,124" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+<path d="M480,124 L670,124" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+<text x="18" y="130" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="11" fill="#263445">G1</text>
+<path d="M28,124 L40,124" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+<rect x="40" y="200" width="300" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="190.0" y="228" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">Q2 · CPU</text>
+<rect x="390" y="200" width="90" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="435.0" y="228" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">H2</text>
+<rect x="670" y="200" width="270" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="805.0" y="228" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">M3</text>
+<path d="M340,222 L390,222" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+<path d="M480,222 L670,222" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+<text x="18" y="228" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="11" fill="#263445">G1</text>
+<path d="M28,222 L40,222" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+<rect x="40" y="298" width="300" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="190.0" y="326" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">Q3 · Picos de memória</text>
+<rect x="390" y="298" width="90" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="435.0" y="326" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">H3</text>
+<rect x="670" y="298" width="270" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="805.0" y="326" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">M4</text>
+<path d="M340,320 L390,320" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+<path d="M480,320 L670,320" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+<text x="18" y="326" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="11" fill="#263445">G1</text>
+<path d="M28,320 L40,320" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+<rect x="40" y="396" width="300" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="190.0" y="424" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">Q4 · Tráfego</text>
+<rect x="390" y="396" width="90" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="435.0" y="424" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">H4</text>
+<rect x="670" y="396" width="270" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="805.0" y="424" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">M5</text>
+<path d="M340,418 L390,418" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+<path d="M480,418 L670,418" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+<text x="18" y="424" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="11" fill="#263445">G1</text>
+<path d="M28,418 L40,418" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+<text x="500" y="544" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="20" fill="#263445">Nível conceitual · G2 — Portabilidade</text>
+<text x="280" y="588" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">Nível operacional · Questões e hipóteses</text>
+<text x="800" y="588" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">Nível quantitativo · Métricas</text>
+<rect x="40" y="606" width="300" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="190.0" y="634" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">Q5 · SO e navegador</text>
+<rect x="390" y="606" width="90" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="435.0" y="634" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">H5</text>
+<rect x="670" y="606" width="270" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="805.0" y="634" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">M6</text>
+<path d="M340,628 L390,628" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+<path d="M480,628 L670,628" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+<text x="18" y="634" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="11" fill="#263445">G2</text>
+<path d="M28,628 L40,628" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+<rect x="40" y="704" width="300" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="190.0" y="732" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">Q6 · Tamanho de janela</text>
+<rect x="390" y="704" width="90" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="435.0" y="732" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">H6</text>
+<rect x="670" y="704" width="270" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="805.0" y="732" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">M7</text>
+<path d="M340,726 L390,726" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+<path d="M480,726 L670,726" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+<text x="18" y="732" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="11" fill="#263445">G2</text>
+<path d="M28,726 L40,726" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+<text x="500" y="852" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="20" fill="#263445">Nível conceitual · G3 — Usabilidade</text>
+<text x="280" y="896" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">Nível operacional · Questões e hipóteses</text>
+<text x="800" y="896" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">Nível quantitativo · Métricas</text>
+<rect x="40" y="914" width="300" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="190.0" y="942" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">Q7 · Teclado</text>
+<rect x="390" y="914" width="90" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="435.0" y="942" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">H7</text>
+<rect x="670" y="914" width="270" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="805.0" y="942" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">M8</text>
+<path d="M340,936 L390,936" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+<path d="M480,936 L670,936" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+<text x="18" y="942" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="11" fill="#263445">G3</text>
+<path d="M28,936 L40,936" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+<rect x="40" y="1012" width="300" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="190.0" y="1040" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">Q8 · Leitor de tela</text>
+<rect x="390" y="1012" width="90" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="435.0" y="1040" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">H8</text>
+<rect x="670" y="1012" width="270" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="805.0" y="1040" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">M9</text>
+<path d="M340,1034 L390,1034" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+<path d="M480,1034 L670,1034" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+<text x="18" y="1040" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="11" fill="#263445">G3</text>
+<path d="M28,1034 L40,1034" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+<rect x="40" y="1110" width="300" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="190.0" y="1138" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">Q9 · Ampliação</text>
+<rect x="390" y="1110" width="90" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="435.0" y="1138" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">H9</text>
+<rect x="670" y="1110" width="270" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="805.0" y="1138" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">M10</text>
+<path d="M340,1132 L390,1132" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+<path d="M480,1132 L670,1132" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+<text x="18" y="1138" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="11" fill="#263445">G3</text>
+<path d="M28,1132 L40,1132" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+<rect x="40" y="1208" width="300" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="190.0" y="1236" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">Q10 · Contraste</text>
+<rect x="390" y="1208" width="90" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="435.0" y="1236" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">H10</text>
+<rect x="670" y="1208" width="270" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="805.0" y="1236" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">M11</text>
+<path d="M340,1230 L390,1230" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+<path d="M480,1230 L670,1230" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+<text x="18" y="1236" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="11" fill="#263445">G3</text>
+<path d="M28,1230 L40,1230" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+<rect x="40" y="1306" width="300" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="190.0" y="1334" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">Q11 · Autonomia inicial</text>
+<rect x="390" y="1306" width="90" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="435.0" y="1334" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">H11</text>
+<rect x="670" y="1306" width="270" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
+<text x="805.0" y="1334" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">M12 / M13 / M14</text>
+<path d="M340,1328 L390,1328" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+<path d="M480,1328 L670,1328" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+<text x="18" y="1334" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="11" fill="#263445">G3</text>
+<path d="M28,1328 L40,1328" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
+</svg>
