@@ -1,14 +1,14 @@
 [← Visão geral da Fase 2](index.md)
 
-# Fase 2 — Fichas das métricas GQM
+# Fichas das métricas GQM
 
 As fichas abaixo especificam as métricas externas propostas para a avaliação **exclusivamente da versão web da Khan Academy em computadores**. Cada ficha segue a organização do exemplo fornecido: questão respondida, definição, fórmula, unidade, fonte, procedimento de coleta, interpretação, justificativa e níveis. Os 14 indicadores M1–M14 correspondem às questões Q1–Q11.
 
 **Situação:** proposta de especificação, sem resultados coletados. Os níveis quantitativos estão definidos como **proposta operacional do estudo** em [critérios de julgamento](criterios-julgamento.md), incluindo fundamentação e condições de aplicação. Não constituem limites oficiais da ISO/IEC 25023:2016;
 
-## Métricas detalhadas
+## 1. Métricas detalhadas
 
-### M1 — Tempo observável por etapa
+### 1.1 M1: Tempo observável por etapa
 
 **Questão respondida:** Q1 / H1.
 
@@ -30,7 +30,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 ---
 
-### M2 — Taxa de conclusão dos fluxos
+### 1.2 M2: Taxa de conclusão dos fluxos
 
 **Questão respondida:** Q1 / H1.
 
@@ -52,7 +52,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 ---
 
-### M3 — Utilização de CPU
+### 1.3 M3: Utilização de CPU
 
 **Questão respondida:** Q2 / H2.
 
@@ -74,7 +74,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 ---
 
-### M4 — Pico de memória
+### 1.4 M4: Pico de memória
 
 **Questão respondida:** Q3 / H3.
 
@@ -96,7 +96,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 ---
 
-### M5 — Dados transferidos
+### 1.5 M5: Dados transferidos
 
 **Questão respondida:** Q4 / H4.
 
@@ -118,7 +118,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 ---
 
-### M6 — Execução por ambiente
+### 1.6 M6: Execução por ambiente
 
 **Questão respondida:** Q5 / H5.
 
@@ -140,7 +140,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 ---
 
-### M7 — Adaptação ao tamanho da janela
+### 1.7 M7: Adaptação ao tamanho da janela
 
 **Questão respondida:** Q6 / H6.
 
@@ -162,7 +162,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 ---
 
-### M8 — Execução por teclado
+### 1.8 M8: Execução por teclado
 
 **Questão respondida:** Q7 / H7.
 
@@ -184,7 +184,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 ---
 
-### M9 — Execução com leitor de tela
+### 1.9 M9: Execução com leitor de tela
 
 **Questão respondida:** Q8 / H8.
 
@@ -206,7 +206,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 ---
 
-### M10 — Preservação com ampliação
+### 1.10 M10: Preservação com ampliação
 
 **Questão respondida:** Q9 / H9.
 
@@ -228,7 +228,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 ---
 
-### M11 — Conformidade de contraste
+### 1.11 M11: Conformidade de contraste
 
 **Questão respondida:** Q10 / H10.
 
@@ -250,7 +250,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 ---
 
-### M12 — Conclusão autônoma por estudantes novos
+### 1.12 M12: Conclusão autônoma por estudantes novos
 
 **Questão respondida:** Q11 / H11.
 
@@ -272,7 +272,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 ---
 
-### M13 — Taxa de erros operacionais
+### 1.13 M13: Taxa de erros operacionais
 
 **Questão respondida:** Q11 / H11.
 
@@ -294,7 +294,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 ---
 
-### M14 — Tempo de conclusão autônoma
+### 1.14 M14: Tempo de conclusão autônoma
 
 **Questão respondida:** Q11 / H11.
 
@@ -314,8 +314,14 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), propostas para aprovação antes da coleta.
 
----
+## Referências
 
+> INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25023:2016**: Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Measurement of system and software product quality. Genebra: ISO, 2016.
+> INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. **ISO 9241-11:2018**: Ergonomics of human-system interaction — Part 11: Usability: Definitions and concepts. Genebra: ISO, 2018.
+> NIELSEN, Jakob. **Response times: the 3 important limits**. Nielsen Norman Group, 1 jan. 1993.
+> WORLD WIDE WEB CONSORTIUM (W3C). **Web Content Accessibility Guidelines (WCAG) 2.2**. W3C Recommendation, 12 dez. 2024.
+> GOOGLE. **Performance monitor panel**. Chrome for Developers, 16 maio 2024. Disponível em: <https://developer.chrome.com/docs/devtools/performance-monitor>. Acesso em: 17 out. 2026.
+> GOOGLE. **Network features reference**. Chrome for Developers, 16 jul. 2024. Disponível em: <https://developer.chrome.com/docs/devtools/network/reference>. Acesso em: 17 out. 2026.
 
 ## Histórico de versões
 
@@ -324,6 +330,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 | :---: | :---: | :--- | :--- | :--- |
 | 1.0 | 17/10/2026 | Especificação das métricas de qualidade, incluindo definições, fórmulas, fontes de dados, procedimentos de coleta e critérios de interpretação. | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) | [Pedro Lucas](https://github.com/Pwdrinho) |
 | 1.1 | 20/10/2026 | Inclusão dos indicadores complementares de conclusão, erros e tempo sem alterar Q1–Q11. | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |[Pedro Lucas](https://github.com/Pwdrinho)   |
+| 1.2 | 21/10/2026 | Inclusão das referências utilizadas para elaborar o artefato |  [Camila Cavalcante](https://github.com/CamilaSilvaC) |[Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
 
 
 ---
