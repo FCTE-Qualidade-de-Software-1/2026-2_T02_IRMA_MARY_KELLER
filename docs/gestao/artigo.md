@@ -1,5 +1,9 @@
 # Artefato: Decisão sobre o Modelo de Artigo Científico
 
+**Versão 1.1**
+
+**[Artigo em PDF](../artigo/QSW_Aval_Qualidade_de_Produto_Khan_Academy_Entrega_1.pdf)**
+
 ## 1. Contextualização
 
 Para a elaboração do relatório de avaliação da qualidade do produto de software Khan Academy, a equipe analisou os modelos de artigos científicos disponibilizados pela Sociedade Brasileira de Computação (SBC), Association for Computing Machinery (ACM) e Institute of Electrical and Electronics Engineers (IEEE). A análise teve como objetivo selecionar um modelo que atendesse às necessidades de apresentação do trabalho, considerando a organização do conteúdo, a facilidade de edição e a adequação ao contexto acadêmico.
