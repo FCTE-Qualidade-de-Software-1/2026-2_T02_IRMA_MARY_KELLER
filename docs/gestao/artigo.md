@@ -37,3 +37,4 @@ Dessa forma, a adoção do modelo ACM foi definida como uma decisão coletiva, a
 | Versão | Data | Descrição | Responsável | Revisor |
 |---|---|---|---|---|
 | 1.0 | 15/10/2026 | Criação do artefato artigo com contextualização e justificativa | [Pedro Lucas](https://github.com/Pwdrinho) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
+| 1.1 | 26/10/2026 | Adiciona pdf do artigo entrega 1 | [Pedro Lucas](https://github.com/Pwdrinho) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |

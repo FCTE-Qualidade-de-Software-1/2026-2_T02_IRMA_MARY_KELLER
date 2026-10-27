@@ -18,13 +18,14 @@ nav:
       - Gráfico GQM: fase-2/grafico-gqm.md
   - Gestão:
     - Artigo: gestao/artigo.md
-      - Plano de Medição: gestao/plano_de_medicao.md
-      - Uso de IA: gestao/uso_de_ia.md
-      - Registro de Horas: gestao/horas.md
-      - Horas Cadastradas: gestao/horas_consolidadas.md
-      - Critérios:
-          - Fase 1: criterios/fase1.md
-          - Fase 2: criterios/fase2.md
+    - Plano de Medição: gestao/plano_de_medicao.md
+    - Uso de IA: gestao/uso_de_ia.md
+    - Registro de Horas: gestao/horas.md
+    - Horas Cadastradas: gestao/horas_consolidadas.md
+    - Critérios:
+        - Fase 1: criterios/fase1.md
+        - Fase 2: criterios/fase2.md
+        
 plugins:
   - gen-files:
       scripts:

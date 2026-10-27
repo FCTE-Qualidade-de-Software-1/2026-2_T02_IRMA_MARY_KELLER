@@ -1,8 +1,6 @@
+# Procedimento de medição
 
-
-## 7. Procedimento de medição
-
-Esta seção descreve como a medição é executada: quais dados entram, o passo a passo de cada rodada e em que datas ela ocorre.
+Este artefato descreve como a medição é executada: quais dados entram, o passo a passo de cada rodada e em que datas ela ocorre.
  
 <a id="responsavel"></a>
 
@@ -44,10 +42,9 @@ A Tabela 10 apresenta as datas das medições, sua finalidade e as medidas calcu
 
 | Id da Medição | Data | Finalidade | Medidas |
 |---|---|---|---|
-| Mg-1 | 20/10 (ter) | Primeira medição, para os slides do PC1 | `CP1`, `CP2`, `DP1`, `RC1`, `RC2` |
-| Mg-2 | 22/10 (qui) | Após o PC1: replanejar com o feedback; inclui DP2 da Fase 1 | Todas, com `DP2` (Fase 1) |
-| Mg-3 | 25/10 (dom) | Pré-entrega | `CP1`, `CP2`, `DP1`, `RC1`, `RC2` |
-| Mg-4 | 26/10 (seg) | Fechamento e lições para a Entrega 2 | `CP1`, `CP2`, `DP1`, `RC1`, `RC2` |
+| Mg-1 | 26/10 (seg) | Medição Entrega 1 | `CP1`, `CP2`, `DP1`, `DP2`, `RC1`, `RC2` |
+| Mg-2 | XX/11 () | A definir para Entrega 2 | --- |
+| Mg-3 | XX/11 () | A definir para Entrega 2 | --- |
 
 *Tabela 10. Pontos de medição previstos. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
 
