@@ -159,6 +159,12 @@
                         
                             
 <li >
+    <a href="../../gestao/artigo/">Artigo</a>
+</li>
+
+                        
+                            
+<li >
     <a href="../../gestao/plano_de_medicao/">Plano de Medição</a>
 </li>
 
@@ -172,6 +178,12 @@
                             
 <li >
     <a href="../../gestao/horas/">Registro de Horas</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../gestao/horas_consolidadas/">Horas Cadastradas</a>
 </li>
 
                         
@@ -203,11 +215,6 @@
                 </ul>
 
             <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                            <i class="fas fa-search"></i> Search
-                        </a>
-                    </li>
                     <li >
                         <a rel="prev" href="../produto-e-contexto/">
                             <i class="fas fa-arrow-left"></i> Previous
@@ -255,6 +262,10 @@
         <div class="col-md-9" role="main">
 
 <h1 id="requisitos-de-avaliacao">Requisitos de avaliação</h1>
+<p><strong>Versão 1.3</strong></p>
+<p>Este artefato estabelece os requisitos para avaliação da qualidade do produto de software Khan Academy, apresentando o propósito do estudo, o uso dos resultados e as características que fundamentam o processo. Essas definições orientam o planejamento da avaliação e estabelecem a base para a elaboração dos objetivos, das questões e das métricas da <a href="../../fase-2/">Fase 2</a>.</p>
+<p>A seleção das características selecionadas são fundamentadas no modelo de qualidade da ISO/IEC 25010:2011 <a href="#s1">S1</a> adotado para o estudo e justificadas nas seções específicas deste documento.</p>
+<p>O artefato complementa a <a href="../produto-e-contexto/">Caracterização do produto e do contexto de uso</a> e o <a href="../produto-e-contexto/">Escopo da avaliação</a>, garantindo rastreabilidade entre o contexto de uso e as medições planejadas, sem antecipar o escopo do estudo.</p>
 <p><a id="proposito"></a></p>
 <h2 id="1-proposito-da-avaliacao-e-uso-pretendido">1. Propósito da avaliação e uso pretendido</h2>
 <h3 id="11-por-que-avaliar">1.1 Por que avaliar</h3>
@@ -263,7 +274,8 @@
 <h3 id="12-cenario-de-aplicacao">1.2 Cenário de aplicação</h3>
 <p>Para que o resultado apoie uma decisão concreta, a avaliação adota o seguinte cenário: <em>a coordenação de uma escola pública, cujos alunos utilizam computadores com diferentes sistemas operacionais, recursos limitados e conexão instável, decide se recomenda a Khan Academy Web como apoio às aulas e em quais condições de acesso</em>. O cenário é uma hipótese de trabalho da equipe, usada para orientar as escolhas.</p>
 <h3 id="13-requisitante-e-destinatarios-dos-resultados">1.3 Requisitante e destinatários dos resultados</h3>
-<p>O requisitante da avaliação é a coordenação da escola do cenário da seção 1.2, que precisa decidir se recomenda a Khan Academy aos alunos. A Tabela 1 mostra cada decisão que a avaliação apoia, quem a toma e qual resultado a sustenta.</p>
+<p><a id="requisitante"></a></p>
+<p>O requisitante da avaliação é a coordenação da escola do cenário da <a href="#12-cenario-de-aplicacao">seção 1.2</a>, que precisa decidir se recomenda a Khan Academy aos alunos. A Tabela 1 mostra cada decisão que a avaliação apoia, quem a toma e qual resultado a sustenta.</p>
 <table>
 <thead>
 <tr>
@@ -312,13 +324,13 @@
 <p><a id="caracteristicas"></a></p>
 <h2 id="2-caracteristicas-selecionadas">2. Características selecionadas</h2>
 <h3 id="21-modelo-de-referencia-e-versao">2.1 Modelo de referência e versão</h3>
-<p>A avaliação usa o modelo de qualidade de produto da <strong>ISO/IEC 25010:2011</strong>. Essa versão foi escolhida por três motivos: é a usada no material da disciplina, tem tradução da ABNT e é a base da ISO/IEC 25023:2016, norma de medição que fornecerá as métricas da Fase 2. Assim, modelo e medidas usam os mesmos nomes.</p>
-<p><strong>Existe uma versão mais nova, a ISO/IEC 25010:2023</strong>, que substitui a de 2011. Ela renomeou duas das características escolhidas e dividiu uma subcaracterística, como mostra a Tabela 2. A troca de versão não muda o que será avaliado, só os nomes. A Tabela 2 serve para quem consultar a versão de 2023 encontrar as características correspondentes.</p>
+<p>A avaliação usa o modelo de qualidade de produto da <strong>ISO/IEC 25010:2011</strong> <a href="#s1">S1</a>. Essa versão foi escolhida por três motivos: é a usada no material da disciplina, tem tradução da ABNT e é a base da ISO/IEC 25023:2016 <a href="#s3">S3</a>, norma de medição que fornecerá as métricas da Fase 2. Assim, modelo e medidas usam os mesmos nomes.</p>
+<p><strong>Existe uma versão mais nova, a ISO/IEC 25010:2023</strong> <a href="#s2">S2</a>, que substitui a de 2011. Ela renomeou duas das características escolhidas e dividiu uma subcaracterística, como mostra a Tabela 2. A troca de versão não muda o que será avaliado, só os nomes. A Tabela 2 serve para quem consultar a versão de 2023 encontrar as características correspondentes.</p>
 <table>
 <thead>
 <tr>
-<th>ISO/IEC 25010:2011</th>
-<th>ISO/IEC 25010:2023</th>
+<th>ISO/IEC 25010:2011 <a href="#s1">S1</a></th>
+<th>ISO/IEC 25010:2023 <a href="#s2">S2</a></th>
 <th>Mudança</th>
 </tr>
 </thead>
@@ -345,18 +357,18 @@
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 2. Correspondência entre os nomes da ISO/IEC 25010:2011 e da ISO/IEC 25010:2023 para as características selecionadas. Fonte: Elaborada por: <a href="https://github.com/luisa12ll">Luisa de Souza</a>, com base em ISO/IEC 25010:2011 e ISO/IEC 25010:2023</em></p>
-<p>Os termos em português da versão de 2011 seguem a tradução da ABNT; os da versão de 2023 são tradução da equipe.</p>
+<p><em>Tabela 2. Correspondência entre os nomes da ISO/IEC 25010:2011 <a href="#s1">S1</a> e da ISO/IEC 25010:2023 <a href="#s2">S2</a> para as características selecionadas. Fonte: Elaborada por: <a href="https://github.com/luisa12ll">Luisa de Souza</a>, com base em <a href="#s1">S1</a> e <a href="#s2">S2</a></em></p>
+<p>Os termos em português da versão de 2011 seguem a tradução da ABNT, e, os da versão de 2023 são tradução da equipe.</p>
 <h3 id="22-adaptacao-do-modelo-de-qualidade-e-representacao-grafica">2.2 Adaptação do modelo de qualidade e representação gráfica</h3>
-<p>O modelo geral da ISO/IEC 25010:2011 propõe uma estrutura abrangente voltada a qualquer produto de software. No entanto, uma avaliação externa (caixa-preta) focada na adoção da Khan Academy no contexto de escolas públicas requer uma adaptação deliberada. Um modelo genérico não reflete, por si só, os desafios de alunos que utilizam computadores com recursos limitados e conexões instáveis, tampouco as limitações metodológicas de uma equipe avaliadora sem acesso ao código-fonte proprietário da plataforma.</p>
+<p>O modelo geral da ISO/IEC 25010:2011 <a href="#s1">S1</a> propõe uma estrutura abrangente voltada a qualquer produto de software. No entanto, uma avaliação externa (caixa-preta) focada na adoção da Khan Academy no contexto de escolas públicas requer uma adaptação deliberada. Um modelo genérico não reflete, por si só, os desafios de alunos que utilizam computadores com recursos limitados e conexões instáveis, tampouco as limitações metodológicas de uma equipe avaliadora sem acesso ao código-fonte proprietário da plataforma.</p>
 <p>Dessa forma, a decisão de adaptar o modelo sustenta-se nas seguintes razões técnicas e metodológicas:</p>
 <ol>
-<li><strong>Poda e exclusão justificada:</strong> Características que exigem acesso interno ao código-fonte proprietário (<em>Manutenibilidade</em>), testes de intrusão não autorizados em ambiente de terceiros (<em>Segurança</em>), observação temporal contínua e extensa (<em>Confiabilidade</em>) ou auditoria de matriz curricular (<em>Adequação Funcional</em>) foram descartadas por inviabilidade técnica ou desconexão com a avaliação externa do software (detalhadas na Tabela 4, seção 2.4).</li>
-<li><strong>Foco nas subcaracterísticas críticas:</strong> Das características mantidas, foram selecionadas estritamente aquelas que respondem às decisões concretas <code>D1</code> a <code>D3</code>. Em Usabilidade, por exemplo, o escopo prioriza <em>Acessibilidade</em> (inclusão de alunos com baixa visão ou usuários de tecnologias assistivas) e <em>Apreensibilidade</em> (capacidade de estudo autônomo sem exigir sobrecarga de orientação do professor), deixando de fora aspectos de estética visual ou operabilidade genérica (ver Tabela 6).</li>
+<li><strong>Poda e exclusão justificada:</strong> Características que exigem acesso interno ao código-fonte proprietário (<em>Manutenibilidade</em>), testes de intrusão não autorizados em ambiente de terceiros (<em>Segurança</em>), observação temporal contínua e extensa (<em>Confiabilidade</em>) ou auditoria de matriz curricular (<em>Adequação Funcional</em>) foram descartadas por inviabilidade técnica ou desconexão com a avaliação externa do software (detalhadas na Tabela 4, <a href="#priorizacao">seção 2.4</a>).</li>
+<li><strong>Foco nas subcaracterísticas críticas:</strong> Das características mantidas, foram selecionadas estritamente aquelas que respondem às decisões concretas <a href="#requisitante"><code>D1</code></a> a <a href="#requisitante"><code>D3</code></a>. Em Usabilidade, por exemplo, o escopo prioriza <em>Acessibilidade</em> (inclusão de alunos com baixa visão ou usuários de tecnologias assistivas) e <em>Apreensibilidade</em> (capacidade de estudo autônomo sem exigir sobrecarga de orientação do professor), deixando de fora aspectos de estética visual ou operabilidade genérica (ver <a href="#tab6">Tabela 6</a>).</li>
 <li><strong>Refinamento operacional para a Khan Academy:</strong> Cada subcaracterística ganha significado prático no contexto do produto, conectando-se diretamente aos atores e às decisões apoiadas, conforme estruturado na Figura 1.</li>
 </ol>
 <p><img alt="Modelo de Qualidade" src="../../assets/img/modelo_qualidade.svg" /></p>
-<p><em>Figura 1. Modelo de qualidade adaptado da ISO/IEC 25010:2011 para a avaliação da Khan Academy. Fonte: Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<p><em>Figura 1. Modelo de qualidade adaptado da ISO/IEC 25010:2011 <a href="#s1">S1</a> para a avaliação da Khan Academy. Fonte: Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
 <h3 id="23-caracteristicas-subcaracteristicas-e-normas">2.3 Características, subcaracterísticas e normas</h3>
 <p>A Tabela 3 lista as três características e as cinco subcaracterísticas selecionadas, com a norma que define cada uma e a norma que fornecerá as medidas.</p>
 <table>
@@ -374,45 +386,45 @@
 <td>Eficiência de desempenho</td>
 <td>Comportamento temporal</td>
 <td>Tempo para carregar páginas, iniciar vídeos e responder a exercícios</td>
-<td>ISO/IEC 25010:2011</td>
-<td>ISO/IEC 25023:2016, medidas de comportamento temporal</td>
+<td>ISO/IEC 25010:2011 <a href="#s1">S1</a></td>
+<td>ISO/IEC 25023:2016 <a href="#s3">S3</a>, medidas de comportamento temporal</td>
 </tr>
 <tr>
 <td>Eficiência de desempenho</td>
 <td>Utilização de recursos</td>
 <td>Consumo de CPU, memória e dados de rede durante os fluxos principais</td>
-<td>ISO/IEC 25010:2011</td>
-<td>ISO/IEC 25023:2016, medidas de utilização de recursos</td>
+<td>ISO/IEC 25010:2011 <a href="#s1">S1</a></td>
+<td>ISO/IEC 25023:2016 <a href="#s3">S3</a>, medidas de utilização de recursos</td>
 </tr>
 <tr>
 <td>Portabilidade</td>
 <td>Adaptabilidade</td>
 <td>Funcionamento dos fluxos principais em diferentes sistemas operacionais, navegadores e resoluções de computador, sem alteração do produto</td>
-<td>ISO/IEC 25010:2011</td>
-<td>ISO/IEC 25023:2016, medidas de adaptabilidade</td>
+<td>ISO/IEC 25010:2011 <a href="#s1">S1</a></td>
+<td>ISO/IEC 25023:2016 <a href="#s3">S3</a>, medidas de adaptabilidade</td>
 </tr>
 <tr>
 <td>Usabilidade</td>
 <td>Apreensibilidade</td>
 <td>Facilidade de um aluno novo aprender a encontrar um conteúdo, assistir a uma aula e resolver um exercício</td>
-<td>ISO/IEC 25010:2011</td>
-<td>ISO/IEC 25023:2016, medidas de apreensibilidade</td>
+<td>ISO/IEC 25010:2011 <a href="#s1">S1</a></td>
+<td>ISO/IEC 25023:2016 <a href="#s3">S3</a>, medidas de apreensibilidade</td>
 </tr>
 <tr>
 <td>Usabilidade</td>
 <td>Acessibilidade</td>
 <td>Uso dos fluxos principais com leitor de tela, ampliação e alto contraste</td>
-<td>ISO/IEC 25010:2011</td>
-<td>ISO/IEC 25023:2016, medidas de acessibilidade</td>
+<td>ISO/IEC 25010:2011 <a href="#s1">S1</a></td>
+<td>ISO/IEC 25023:2016 <a href="#s3">S3</a>, medidas de acessibilidade</td>
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 3. Características e subcaracterísticas selecionadas, com as normas de referência. Fonte: Elaborada por: <a href="https://github.com/luisa12ll">Luisa de Souza</a>, com base em ISO/IEC 25010:2011 e ISO/IEC 25023:2016</em></p>
+<p><em>Tabela 3. Características e subcaracterísticas selecionadas, com as normas de referência. Fonte: Elaborada por: <a href="https://github.com/luisa12ll">Luisa de Souza</a>, com base em <a href="#s1">S1</a> e <a href="#s3">S3</a></em></p>
 <p><a id="priorizacao"></a></p>
 <h3 id="24-selecao-e-priorizacao">2.4 Seleção e priorização</h3>
-<p>A seleção e a priorização usam o mesmo método, aplicado em duas etapas: primeiro às oito características da ISO/IEC 25010:2011, para decidir quais entram na avaliação; depois às subcaracterísticas selecionadas, para definir a profundidade de cada uma. Nas duas etapas, cada item recebe nota de 1 (baixo) a 3 (alto) em três critérios:</p>
+<p>A seleção e a priorização usam o mesmo método, aplicado em duas etapas: primeiro às oito características da ISO/IEC 25010:2011 <a href="#s1">S1</a>, para decidir quais entram na avaliação; depois às subcaracterísticas selecionadas, para definir a profundidade de cada uma. Nas duas etapas, cada item recebe nota de 1 (baixo) a 3 (alto) em três critérios:</p>
 <ul>
-<li><strong>Impacto no aluno (peso 3):</strong> quanto um problema nesse item impede o aluno do cenário da seção 1.2 de estudar. Tem o maior peso porque o propósito da avaliação é apoiar decisões sobre esses alunos.</li>
+<li><strong>Impacto no aluno (peso 3):</strong> quanto um problema nesse item impede o aluno do cenário da <a href="#12-cenario-de-aplicacao">seção 1.2</a> de estudar. Tem o maior peso porque o propósito da avaliação é apoiar decisões sobre esses alunos.</li>
 <li><strong>Risco no contexto (peso 2):</strong> quanto é provável que o problema apareça nas condições do cenário (computador com recursos limitados, rede lenta, variação entre ambientes e necessidade de acessibilidade).</li>
 <li><strong>Viabilidade de evidência (peso 1):</strong> quanto a equipe consegue produzir evidência com os dispositivos, as ferramentas e o tempo disponíveis, sem acesso ao código-fonte. Tem o menor peso para que a facilidade de medir não decida sozinha a prioridade.</li>
 </ul>
@@ -439,7 +451,7 @@
 <td>3</td>
 <td>18</td>
 <td>Must have</td>
-<td>Lentidão e consumo de recursos são a primeira barreira em computadores limitados e conexão lenta; responde a <code>D1</code></td>
+<td>Lentidão e consumo de recursos são a primeira barreira em computadores limitados e conexão lenta; responde a <a href="#requisitante"><code>D1</code></a></td>
 </tr>
 <tr>
 <td>Portabilidade</td>
@@ -448,7 +460,7 @@
 <td>2</td>
 <td>15</td>
 <td>Must have</td>
-<td>O aluno depende do sistema operacional e do navegador disponíveis; responde a <code>D1</code></td>
+<td>O aluno depende do sistema operacional e do navegador disponíveis; responde a <a href="#requisitante"><code>D1</code></a></td>
 </tr>
 <tr>
 <td>Usabilidade</td>
@@ -457,7 +469,7 @@
 <td>2</td>
 <td>15</td>
 <td>Must have</td>
-<td>Barreiras de acessibilidade e de aprendizado do uso afetam diretamente o estudo; responde a <code>D2</code> e <code>D3</code></td>
+<td>Barreiras de acessibilidade e de aprendizado do uso afetam diretamente o estudo; responde a <a href="#requisitante"><code>D2</code></a> e <a href="#requisitante"><code>D3</code></a></td>
 </tr>
 <tr>
 <td>Confiabilidade</td>
@@ -493,7 +505,7 @@
 <td>2</td>
 <td>7</td>
 <td>Won't have</td>
-<td>Interoperabilidade depende de integrações externas não incluídas e coexistência com outros programas não responde às decisões <code>D1</code> a <code>D3</code></td>
+<td>Interoperabilidade depende de integrações externas não incluídas e coexistência com outros programas não responde às decisões <a href="#requisitante"><code>D1</code></a> a <a href="#requisitante"><code>D3</code></a></td>
 </tr>
 <tr>
 <td>Manutenibilidade</td>
@@ -506,7 +518,7 @@
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 4. Seleção das características da ISO/IEC 25010:2011 por MoSCoW com pesos. Fonte: Elaborada por: <a href="https://github.com/luisa12ll">Luisa de Souza</a></em></p>
+<p><em>Tabela 4. Seleção das características da ISO/IEC 25010:2011 <a href="#s1">S1</a> por MoSCoW com pesos. Fonte: Elaborada por: <a href="https://github.com/luisa12ll">Luisa de Souza</a></em></p>
 <p>As três características classificadas como Must have formam a seleção. Nenhuma ficou como Should have ou Could have: a confiabilidade alcança 11 pontos, mas a viabilidade 1 a coloca como Won't have.</p>
 <h4 id="etapa-2-priorizacao-das-subcaracteristicas">Etapa 2: priorização das subcaracterísticas</h4>
 <p>Dentro das três características selecionadas, a mesma matriz define a profundidade de cada subcaracterística avaliada. As faixas de pontuação são as mesmas da etapa 1: prioridade <strong>alta</strong> quando <code>P ≥ 15</code>, <strong>média</strong> quando <code>12 ≤ P ≤ 14</code> e <strong>baixa</strong> quando <code>P ≤ 11</code>. A Tabela 5 apresenta o resultado.</p>
@@ -570,10 +582,11 @@
 <li><strong>Comportamento temporal e utilização de recursos</strong> recebem risco 3 porque o cenário combina recursos computacionais limitados e conexão lenta. A viabilidade do comportamento temporal é 3, pois o navegador permite controlar a rede e registrar tempos sem equipamento adicional; a da utilização de recursos é 2 porque a medição exige isolar processos concorrentes e registrar a configuração do computador de referência.</li>
 <li><strong>Adaptabilidade</strong> tem impacto 3, pois o aluno depende do sistema operacional e do navegador disponíveis. O risco é 2 porque diferenças entre motores de renderização, sistemas operacionais e resoluções de computador podem afetar a execução dos fluxos e precisam ser observadas, sem presumir previamente que a interface se adapta corretamente.</li>
 <li><strong>Acessibilidade</strong> tem impacto 3, pois uma barreira de acessibilidade impede completamente o uso por quem depende de leitor de tela, ainda que esse grupo seja menor. A viabilidade é 2 porque ferramentas automáticas encontram só parte dos problemas e o restante exige verificação manual.</li>
-<li><strong>Apreensibilidade</strong> tem impacto 2, pois uma dificuldade inicial pode ser contornada com orientação do professor (decisão <code>D3</code>), ao contrário de uma barreira técnica ou de acessibilidade.</li>
+<li><strong>Apreensibilidade</strong> tem impacto 2, pois uma dificuldade inicial pode ser contornada com orientação do professor (decisão <a href="#requisitante"><code>D3</code></a>), ao contrário de uma barreira técnica ou de acessibilidade.</li>
 </ul>
 <p>A ordem operacional decorre das pontuações das subcaracterísticas, não da soma simples por característica. Eficiência de desempenho vem primeiro, com 18 e 17 pontos; adaptabilidade e acessibilidade compartilham a prioridade seguinte, com 15 pontos; e apreensibilidade recebe profundidade menor, com 12 pontos.</p>
 <p>As demais subcaracterísticas dessas três características não entram na avaliação. A Tabela 6 registra cada uma e o motivo do corte.</p>
+<p><a id="tab6"></a></p>
 <table>
 <thead>
 <tr>
@@ -596,7 +609,7 @@
 <tr>
 <td>Portabilidade</td>
 <td>Substituibilidade</td>
-<td>Substituir outro produto pela Khan Academy não faz parte das decisões <code>D1</code> a <code>D3</code></td>
+<td>Substituir outro produto pela Khan Academy não faz parte das decisões <a href="#requisitante"><code>D1</code></a> a <a href="#requisitante"><code>D3</code></a></td>
 </tr>
 <tr>
 <td>Usabilidade</td>
@@ -616,31 +629,31 @@
 <tr>
 <td>Usabilidade</td>
 <td>Estética da interface do usuário</td>
-<td>Depende de julgamento subjetivo e não apoia nenhuma das decisões <code>D1</code> a <code>D4</code></td>
+<td>Depende de julgamento subjetivo e não apoia nenhuma das decisões <a href="#requisitante"><code>D1</code></a> a <a href="#requisitante"><code>D4</code></a></td>
 </tr>
 </tbody>
 </table>
 <p><em>Tabela 6. Subcaracterísticas não selecionadas nas características escolhidas e motivo do corte. Fonte: Elaborada por: <a href="https://github.com/luisa12ll">Luisa de Souza</a></em></p>
 <p>Para verificar se o resultado depende dos pesos escolhidos, as notas das Tabelas 4 e 5 foram recalculadas em dois cenários alternativos: com pesos iguais (<code>I + R + V</code>) e sem o critério de viabilidade (<code>3 × I + 2 × R</code>). Nas subcaracterísticas, as pontuações ficam 9, 8, 7, 7 e 6 no primeiro cenário e 15, 15, 13, 13 e 10 no segundo; a ordem se mantém: eficiência de desempenho primeiro, adaptabilidade e acessibilidade em seguida e apreensibilidade por último. Nas características, as três selecionadas continuam à frente das demais nos dois cenários, com 7 pontos ou mais contra no máximo 5 no primeiro e 13 pontos ou mais contra no máximo 10 no segundo. A seleção e a priorização, portanto, não dependem de um ajuste fino dos pesos.</p>
 <h3 id="25-trade-offs-e-consequencias-da-priorizacao">2.5 Trade-offs e consequências da priorização</h3>
-<p>A prioridade define o rigor de cada parte da avaliação, conforme previsto na ISO/IEC 25040:</p>
+<p>A prioridade define o rigor de cada parte da avaliação, conforme previsto na ISO/IEC 25040 <a href="#s4">S4</a>:</p>
 <ul>
 <li><strong>Amplitude contra profundidade.</strong> Executar todas as subcaracterísticas em todas as combinações de navegador e sistema produziria uma matriz incompatível com o prazo. O comportamento temporal e a utilização de recursos serão medidos no ambiente de referência; adaptabilidade e acessibilidade usarão combinações direcionadas, definidas no escopo.</li>
 <li><strong>Cobertura de ambientes contra repetibilidade.</strong> A seleção de Windows, macOS e Ubuntu cobre os três motores de navegador e os leitores de tela disponíveis, mas não representa todas as versões de sistemas e navegadores. O corte permite repetir os ensaios e conservar evidências comparáveis.</li>
 <li><strong>Acessibilidade automática contra manual.</strong> A inspeção automatizada amplia a cobertura de páginas, mas não demonstra que uma tarefa pode ser concluída com tecnologia assistiva. Os fluxos centrais serão verificados manualmente com teclado e leitores de tela; a ferramenta automática será apenas complementar.</li>
-<li><strong>Apreensibilidade com amostra exploratória.</strong> Por ter prioridade média, a apreensibilidade recebe a menor profundidade: três a cinco participantes, apenas no ambiente de referência. A amostra é suficiente para identificar dificuldades recorrentes nos fluxos centrais e apoiar a decisão <code>D3</code>, mas não permite generalizar para todos os estudantes; se o recrutamento não for possível, o resultado será apresentado como inspeção exploratória da equipe.</li>
+<li><strong>Apreensibilidade com amostra exploratória.</strong> Por ter prioridade média, a apreensibilidade recebe a menor profundidade: três a cinco participantes, apenas no ambiente de referência. A amostra é suficiente para identificar dificuldades recorrentes nos fluxos centrais e apoiar a decisão <a href="#requisitante"><code>D3</code></a>, mas não permite generalizar para todos os estudantes; se o recrutamento não for possível, o resultado será apresentado como inspeção exploratória da equipe.</li>
 </ul>
 <p><a id="justificativa"></a></p>
 <h2 id="3-justificativa-da-selecao">3. Justificativa da seleção</h2>
 <p>A tríade de características selecionadas alinha-se estritamente à viabilidade técnica de uma avaliação externa e ao cenário da escola pública:</p>
 <ul>
-<li><strong>Eficiência de desempenho:</strong> Como a Khan Academy utiliza vídeo e interação dinâmica, restrições de processamento, memória e conexão podem impedir o acesso ao conteúdo. Essa possibilidade é especialmente relevante no cenário de referência da escola pública, em que lentidão, travamentos ou consumo elevado de recursos podem inviabilizar o uso mesmo quando a funcionalidade está disponível. Medir tempos e recursos no ambiente de referência subsidia a decisão <code>D1</code> sobre a viabilidade prática de uso da plataforma web, sem generalizar o resultado para todas as escolas.</li>
-<li><strong>Portabilidade:</strong> Ao focar em adaptabilidade, a avaliação verifica se os fluxos selecionados permanecem executáveis em navegadores, sistemas operacionais e resoluções de computador definidos no escopo, respondendo à decisão <code>D1</code>.</li>
-<li><strong>Usabilidade:</strong> Ao priorizar acessibilidade e apreensibilidade, a avaliação produz evidências para as decisões <code>D2</code> e <code>D3</code> sobre barreiras enfrentadas por alunos com deficiência visual e sobre a necessidade de suporte pedagógico inicial para o uso autônomo da ferramenta.</li>
+<li><strong>Eficiência de desempenho:</strong> Como a Khan Academy utiliza vídeo e interação dinâmica, restrições de processamento, memória e conexão podem impedir o acesso ao conteúdo. Essa possibilidade é especialmente relevante no cenário de referência da escola pública, em que lentidão, travamentos ou consumo elevado de recursos podem inviabilizar o uso mesmo quando a funcionalidade está disponível. Medir tempos e recursos no ambiente de referência subsidia a decisão <a href="#requisitante"><code>D1</code></a> sobre a viabilidade prática de uso da plataforma web, sem generalizar o resultado para todas as escolas.</li>
+<li><strong>Portabilidade:</strong> Ao focar em adaptabilidade, a avaliação verifica se os fluxos selecionados permanecem executáveis em navegadores, sistemas operacionais e resoluções de computador definidos no escopo, respondendo à decisão <a href="#requisitante"><code>D1</code></a>.</li>
+<li><strong>Usabilidade:</strong> Ao priorizar acessibilidade e apreensibilidade, a avaliação produz evidências para as decisões <a href="#requisitante"><code>D2</code></a> e <a href="#requisitante"><code>D3</code></a> sobre barreiras enfrentadas por alunos com deficiência visual e sobre a necessidade de suporte pedagógico inicial para o uso autônomo da ferramenta.</li>
 </ul>
 <p><a id="rastreabilidade"></a></p>
 <h2 id="4-rastreabilidade-caracteristica-interessado-e-justificativa">4. Rastreabilidade: característica, interessado e justificativa</h2>
-<p>A Tabela 7 liga cada subcaracterística selecionada aos interessados que dependem dela, à justificativa e à decisão que apoia. Os identificadores <code>R1</code> a <code>R5</code> são os requisitos de avaliação que orientam os objetivos de medição. Os objetivos <code>G1</code> a <code>G3</code> já estão consolidados na <a href="../../fase-2/objetivos/">Fase 2</a> e mantêm correspondência explícita com esses requisitos.</p>
+<p>A Tabela 7 liga cada subcaracterística selecionada aos interessados que dependem dela, à justificativa e à decisão que apoia. Os identificadores <code>R1</code> a <code>R5</code> são os requisitos de avaliação que orientam os objetivos de medição. Os objetivos <a href="../../fase-2/objetivos/#g1"><code>G1</code></a> a <a href="../../fase-2/objetivos/#g3"><code>G3</code></a> já estão consolidados na <a href="../../fase-2/objetivos/">Fase 2</a> e mantêm correspondência explícita com esses requisitos.</p>
 <table>
 <thead>
 <tr>
@@ -660,8 +673,8 @@
 <td>Alta</td>
 <td>Estudantes; coordenação e professores</td>
 <td>Carregamento lento de páginas e vídeos em conexão limitada impede o estudo antes de chegar ao conteúdo</td>
-<td><code>D1</code></td>
-<td><code>G1</code> Eficiência de desempenho</td>
+<td><a href="#requisitante"><code>D1</code></a></td>
+<td><a href="../../fase-2/objetivos/#g1"><code>G1</code></a> Eficiência de desempenho</td>
 </tr>
 <tr>
 <td><code>R2</code></td>
@@ -669,8 +682,8 @@
 <td>Alta</td>
 <td>Estudantes; responsáveis</td>
 <td>Computadores com pouca memória ou processamento podem limitar a execução dos fluxos</td>
-<td><code>D1</code></td>
-<td><code>G1</code> Eficiência de desempenho</td>
+<td><a href="#requisitante"><code>D1</code></a></td>
+<td><a href="../../fase-2/objetivos/#g1"><code>G1</code></a> Eficiência de desempenho</td>
 </tr>
 <tr>
 <td><code>R3</code></td>
@@ -678,8 +691,8 @@
 <td>Alta</td>
 <td>Estudantes; coordenação e professores</td>
 <td>O aluno depende do computador e do navegador disponíveis; a recomendação precisa indicar os ambientes efetivamente avaliados</td>
-<td><code>D1</code></td>
-<td><code>G2</code> Portabilidade</td>
+<td><a href="#requisitante"><code>D1</code></a></td>
+<td><a href="../../fase-2/objetivos/#g2"><code>G2</code></a> Portabilidade</td>
 </tr>
 <tr>
 <td><code>R4</code></td>
@@ -687,8 +700,8 @@
 <td>Alta</td>
 <td>Estudantes com baixa visão ou que usam leitor de tela; professores; responsáveis</td>
 <td>Uma barreira de acessibilidade bloqueia o uso por completo para esse grupo</td>
-<td><code>D2</code></td>
-<td><code>G3</code> Usabilidade</td>
+<td><a href="#requisitante"><code>D2</code></a></td>
+<td><a href="../../fase-2/objetivos/#g3"><code>G3</code></a> Usabilidade</td>
 </tr>
 <tr>
 <td><code>R5</code></td>
@@ -696,19 +709,29 @@
 <td>Média</td>
 <td>Estudantes novos; professores</td>
 <td>Se o aluno não aprende a usar sozinho, o professor precisa planejar uma aula de introdução</td>
-<td><code>D3</code></td>
-<td><code>G3</code> Usabilidade</td>
+<td><a href="#requisitante"><code>D3</code></a></td>
+<td><a href="../../fase-2/objetivos/#g3"><code>G3</code></a> Usabilidade</td>
 </tr>
 </tbody>
 </table>
 <p><em>Tabela 7. Rastreabilidade entre requisitos de avaliação, interessados, justificativas e decisões. Fonte: Elaborada por: <a href="https://github.com/luisa12ll">Luisa de Souza</a></em></p>
-<p>A equipe avaliadora é interessada em todos os requisitos, por meio da decisão <code>D4</code>, e por isso não aparece linha a linha.</p>
+<p>A equipe avaliadora é interessada em todos os requisitos, por meio da decisão <a href="#requisitante"><code>D4</code></a>, e por isso não aparece linha a linha.</p>
 <h2 id="referencias">Referências</h2>
+<p><a id="s1"></a></p>
 <blockquote>
-<p>INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. <strong>ISO/IEC 25010:2011</strong>: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - System and software quality models. Genebra: ISO, 2011. Disponível em: <a href="https://www.iso.org/standard/35733.html">https://www.iso.org/standard/35733.html</a>. Acesso em: 20 out. 2026.</p>
-<p>INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. <strong>ISO/IEC 25010:2023</strong>: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - Product quality model. Genebra: ISO, 2023. Disponível em: <a href="https://www.iso.org/standard/78176.html">https://www.iso.org/standard/78176.html</a>. Acesso em: 20 out. 2026.</p>
-<p>INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. <strong>ISO/IEC 25023:2016</strong>: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - Measurement of system and software product quality. Genebra: ISO, 2016. Disponível em: <a href="https://www.iso.org/standard/35747.html">https://www.iso.org/standard/35747.html</a>. Acesso em: 20 out. 2026.</p>
-<p>INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. <strong>ISO/IEC 25040:2011</strong>: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - Evaluation process. Genebra: ISO, 2011. Disponível em: <a href="https://www.iso.org/standard/35765.html">https://www.iso.org/standard/35765.html</a>. Acesso em: 20 out. 2026.</p>
+<p>[S1] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. <strong>ISO/IEC 25010:2011</strong>: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - System and software quality models. Genebra: ISO, 2011. Disponível em: <a href="https://www.iso.org/standard/35733.html">https://www.iso.org/standard/35733.html</a>. Acesso em: 20 out. 2026.</p>
+</blockquote>
+<p><a id="s2"></a></p>
+<blockquote>
+<p>[S2] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. <strong>ISO/IEC 25010:2023</strong>: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - Product quality model. Genebra: ISO, 2023. Disponível em: <a href="https://www.iso.org/standard/78176.html">https://www.iso.org/standard/78176.html</a>. Acesso em: 20 out. 2026.</p>
+</blockquote>
+<p><a id="s3"></a></p>
+<blockquote>
+<p>[S3] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. <strong>ISO/IEC 25023:2016</strong>: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - Measurement of system and software product quality. Genebra: ISO, 2016. Disponível em: <a href="https://www.iso.org/standard/35747.html">https://www.iso.org/standard/35747.html</a>. Acesso em: 20 out. 2026.</p>
+</blockquote>
+<p><a id="s4"></a></p>
+<blockquote>
+<p>[S4] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. <strong>ISO/IEC 25040:2011</strong>: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - Evaluation process. Genebra: ISO, 2011. Disponível em: <a href="https://www.iso.org/standard/35765.html">https://www.iso.org/standard/35765.html</a>. Acesso em: 20 out. 2026.</p>
 </blockquote>
 <h2 id="historico-de-versoes">Histórico de versões</h2>
 <table>
@@ -743,6 +766,13 @@
 <td><a href="https://github.com/menali17">Enzo Menali</a></td>
 <td><a href="https://github.com/luisa12ll">Luisa de Souza</a></td>
 </tr>
+<tr>
+<td>1.3</td>
+<td>26/10/2026</td>
+<td>Padronização e introdução do artefato</td>
+<td><a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
+<td><a href="https://github.com/luisa12ll">Luisa de Souza</a></td>
+</tr>
 </tbody>
 </table></div>
         
@@ -775,35 +805,10 @@
     <script>var base_url = "../.."</script>
     
     <script src="../../js/base.js"></script>
-    <script src="../../search/main.js"></script>
+    <script src="../../js/mathjax.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">
-                    <span aria-hidden="true">&times;</span>
-                    <span class="sr-only">Close</span>
-                </button>
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-            </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

@@ -1,21 +1,20 @@
-%%
 %% This is file `sigconf.tex',
 %% generated with the docstrip utility.
 %%
 %% The original source files were:
 %%
 %% samples.dtx  (with options: `all,proceedings,sigconf')
-%% 
+%%
 %% IMPORTANT NOTICE:
-%% 
+%%
 %% For the copyright see the source file.
-%% 
+%%
 %% Any modified versions of this file must be renamed
 %% with new filenames distinct from sigconf.tex.
-%% 
+%%
 %% For distribution of the original source see the terms
 %% for copying and modification in the file samples.dtx.
-%% 
+%%
 %% This generated file may be distributed as long as the
 %% original source files, as listed above, are part of the
 %% same distribution. (The sources need not necessarily be
@@ -44,7 +43,8 @@
 %% for your publication.
 %%
 %%
-\documentclass[sigconf]{acmart}
+\PassOptionsToPackage{draft}{microtype}
+\documentclass[sigconf, language=english, language=brazilian,natbib=false]{acmart}
 %%
 %% \BibTeX command to typeset BibTeX logo in the docs
 \AtBeginDocument{%
@@ -56,13 +56,19 @@
 %% values in them; it is your responsibility as an author to replace
 %% the commands and values with those provided to you when you
 %% complete the rights form.
-\setcopyright{acmlicensed}
-\copyrightyear{2018}
-\acmYear{2018}
-\acmDOI{XXXXXXX.XXXXXXX}
-%% These commands are for a PROCEEDINGS abstract or paper.
-\acmConference[Qualidade de Software 2026/2]
-  {Qualidade de Software 2026/2}{2026}{Universidade de Brasília, Brasília, DF}
+\setcopyright{none}                          % remove o bloco de direitos autorais
+\settopmatter{printacmref=false}             % remove o "ACM Reference Format"
+\renewcommand\footnotetextcopyrightpermission[1]{} % remove o rodapé de permissão
+\settopmatter{printfolios=true}
+\acmConference[Qualidade de Software 2026/2]{Qualidade de Software 2026/2}{}{}
+% cabeçalho: evita as vírgulas sobrando (data e local vazios)
+\makeatletter
+\AtBeginDocument{%
+  \fancyhead[LE]{\ACM@linecountL\@headfootfont\footnotesize Qualidade de Software 2026/2}%
+  \fancyhead[RO]{\@headfootfont Qualidade de Software 2026/2\ACM@linecountR}%
+}
+\makeatother
+
 
 %%
 %% For managing citations, it is recommended to use bibliography
@@ -88,7 +94,14 @@
 %% the next command will enable that style.
 %%\citestyle{acmauthoryear}
 
-
+\usepackage[
+    backend=biber,
+    style=acmnumeric,
+    sorting=none
+]{biblatex}
+\usepackage{float}
+\usepackage{placeins}
+\addbibresource{sigconf.bib}
 %%
 %% end of the preamble, start of the body of the document source.
 \begin{document}
@@ -96,79 +109,48 @@
 %%
 %% The "title" command has an optional parameter,
 %% allowing the author to define a "short title" to be used in page headers.
-\title{Avaliação da Qualidade de Produto de Software \\ \large Khan Academy}
+\title[Avaliação da Qualidade de Produto - Khan Academy]{Avaliação da Qualidade de Produto de Software \\ \large Khan Academy}
 
-
-%%
-%% The "author" command and its associated commands are used to define
-%% the authors and their affiliations.
-%% Of note is the shared affiliation of the first two authors, and the
-%% "authornote" and "authornotemark" commands
-%% used to denote shared contribution to the research.
 \author{Camila Silva Cavalcante}
-%%matricula 232013944
 \email{camilacsc08@gmail.com}
-%% esse affiliation seria legal mas n sei não
 \affiliation{%
-  \institution{Institute for Clarity in Documentation}
-  \city{Dublin}
-  \state{Ohio}
-  \country{USA}
+  \institution{Matrícula 232013944}
+  \country{Brazil}
 }
 
 \author{Enzo Menali Vettorato Toledo}
-%%matricula 241011054
 \email{enzomenali@gmail.com}
-%% esse affiliation seria legal mas n sei não
 \affiliation{%
-  \institution{Institute for Clarity in Documentation}
-  \city{Dublin}
-  \state{Ohio}
-  \country{USA}
+  \institution{Matrícula 241011054}
+  \country{Brazil}
 }
 
 \author{Geovanna Alves Umbelino}
-%%matricula 232014450
 \email{geovannaalves.u@gmail.com}
-%% esse affiliation seria legal mas n sei não
 \affiliation{%
-  \institution{Institute for Clarity in Documentation}
-  \city{Dublin}
-  \state{Ohio}
-  \country{USA}
+  \institution{Matrícula 232014450}
+  \country{Brazil}
 }
 
 \author{José Augusto Alves de Moraes}
-%%matricula 231026429
 \email{joseaugustomoraes@protonmail.com}
-%% esse affiliation seria legal mas n sei não
 \affiliation{%
-  \institution{Institute for Clarity in Documentation}
-  \city{Dublin}
-  \state{Ohio}
-  \country{USA}
+  \institution{Matrícula 231026429}
+  \country{Brazil}
 }
 
-\author{Luisa de Souza Ferreira}
-%%matricula 232014807
+\author{Luísa de Souza Ferreira}
 \email{luisasouzalinda90@gmail.com}
-%% esse affiliation seria legal mas n sei não
 \affiliation{%
-  \institution{Institute for Clarity in Documentation}
-  \city{Dublin}
-  \state{Ohio}
-  \country{USA}
+  \institution{Matrícula 232014807}
+  \country{Brazil}
 }
 
 \author{Pedro Lucas Barbosa da Silva}
-%%matricula 241025710
 \email{21pedrolucas21@gmail.com}
-%% esse affiliation seria legal mas n sei não
 \affiliation{%
-  \institution{Institute for Clarity in Documentation}
-  \city{Dublin}
-  \state{Ohio}
-  \country{USA}
+  \institution{Matrícula 241025710}
+  \country{Brazil}
 }
 
 \renewcommand{\shortauthors}{Irmã Mary Keller}
@@ -176,14 +158,14 @@
 %%
 %% The abstract is a short summary of the work to be presented in the
 %% article.
+
 \begin{abstract}
-  A clear and well-documented \LaTeX\ document is presented as an
-  article formatted for publication by ACM in a conference proceedings
-  or journal publication. Based on the ``acmart'' document class, this
-  article presents and explains many of the common variations, as well
-  as many of the formatting elements an author may use in the
-  preparation of the documentation of their work.
+Este trabalho avalia a qualidade da plataforma web da Khan Academy segundo a família de normas ISO/IEC 25000 (SQuaRE), com foco em eficiência de desempenho, portabilidade e usabilidade, selecionadas por uma matriz ponderada com classificação MoSCoW. A especificação segue a abordagem \textit{Goal Question Metric} (GQM), com três objetivos, 11 questões e 14 métricas, a serem aplicadas por testes externos de caixa-preta em navegadores de computador.
 \end{abstract}
+
+\begin{translatedabstract}{english}
+This paper evaluates the quality of Khan Academy's web platform according to the ISO/IEC 25000 (SQuaRE) series, focusing on performance efficiency, portability, and usability, selected through a weighted matrix with MoSCoW classification. The specification follows the \textit{Goal Question Metric} (GQM) approach, with three goals, 11 questions, and 14 metrics, to be applied through external black-box testing on desktop browsers.
+\end{translatedabstract}
 
 %%
 %% The code below is generated by the tool at http://dl.acm.org/ccs.cfm.
@@ -191,641 +173,693 @@
 %%
 \begin{CCSXML}
 <ccs2012>
- <concept>
-  <concept_id>00000000.0000000.0000000</concept_id>
-  <concept_desc>Do Not Use This Code, Generate the Correct Terms for Your Paper</concept_desc>
-  <concept_significance>500</concept_significance>
- </concept>
- <concept>
-  <concept_id>00000000.00000000.00000000</concept_id>
-  <concept_desc>Do Not Use This Code, Generate the Correct Terms for Your Paper</concept_desc>
-  <concept_significance>300</concept_significance>
- </concept>
- <concept>
-  <concept_id>00000000.00000000.00000000</concept_id>
-  <concept_desc>Do Not Use This Code, Generate the Correct Terms for Your Paper</concept_desc>
-  <concept_significance>100</concept_significance>
- </concept>
- <concept>
-  <concept_id>00000000.00000000.00000000</concept_id>
-  <concept_desc>Do Not Use This Code, Generate the Correct Terms for Your Paper</concept_desc>
-  <concept_significance>100</concept_significance>
- </concept>
+<concept>
+<concept_id>10011007.10011074.10011099.10011693</concept_id>
+<concept_desc>Software and its engineering~Empirical software validation</concept_desc>
+<concept_significance>500</concept_significance>
+</concept>
+<concept>
+<concept_id>10003120.10003121.10003122.10010854</concept_id>
+<concept_desc>Human-centered computing~Usability testing</concept_desc>
+<concept_significance>500</concept_significance>
+</concept>
+<concept>
+<concept_id>10003120.10011738.10011774</concept_id>
+<concept_desc>Human-centered computing~Accessibility design and evaluation methods</concept_desc>
+<concept_significance>500</concept_significance>
+</concept>
+<concept>
+<concept_id>10010405.10010489.10010495</concept_id>
+<concept_desc>Applied computing~E-learning</concept_desc>
+<concept_significance>500</concept_significance>
+</concept>
 </ccs2012>
 \end{CCSXML}
 
-\ccsdesc[500]{Do Not Use This Code~Generate the Correct Terms for Your Paper}
-\ccsdesc[300]{Do Not Use This Code~Generate the Correct Terms for Your Paper}
-\ccsdesc{Do Not Use This Code~Generate the Correct Terms for Your Paper}
-\ccsdesc[100]{Do Not Use This Code~Generate the Correct Terms for Your Paper}
+\ccsdesc[500]{Software and its engineering~Empirical software validation}
+\ccsdesc[500]{Human-centered computing~Usability testing}
+\ccsdesc[500]{Human-centered computing~Accessibility design and evaluation methods}
+\ccsdesc[500]{Applied computing~E-learning}
 
 %%
 %% Keywords. The author(s) should pick words that accurately describe
 %% the work being presented. Separate the keywords with commas.
-\keywords{Do, Not, Use, This, Code, Put, the, Correct, Terms, for,
-  Your, Paper}
-%% A "teaser" image appears between the author and affiliation
-%% information and the body of the document, and typically spans the
-%% page.
-\begin{teaserfigure}
- \includegraphics[width=\textwidth]{sampleteaser}
-  \caption{Seattle Mariners at Spring Training, 2010.}
-  \Description{Enjoying the baseball game from the third-base
-  seats. Ichiro Suzuki preparing to bat.}
-  \label{fig:teaser}
-\end{teaserfigure}
 
-\received{20 February 2007}
-\received[revised]{12 March 2009}
-\received[accepted]{5 June 2009}
-
+\keywords{SQuaRE, ISO/IEC 25010, GQM, Eficiência de Desempenho, Portabilidade, Usabilidade, Khan Academy}
 %%
 %% This command processes the author and affiliation and title
 %% information and builds the first part of the formatted document.
 \maketitle
 
 
-\section{Introduction}
-ACM's consolidated article template, introduced in 2017, provides a
-consistent \LaTeX\ style for use across ACM publications, and
-incorporates accessibility and metadata-extraction functionality
-necessary for future Digital Library endeavors. Numerous ACM and
-SIG-specific \LaTeX\ templates have been examined, and their unique
-features incorporated into this single new template.
+\section{Introdução}
+O uso de plataformas digitais na educação tem ampliado as possibilidades de acesso ao conhecimento e de acompanhamento da aprendizagem. Entretanto, a adoção dessas ferramentas exige atenção à qualidade do software, especialmente em aspectos como desempenho, acessibilidade e adaptação a diferentes ambientes computacionais. Essas características são particularmente relevantes em contextos educacionais com limitações de infraestrutura tecnológica.
 
-If you are new to publishing with ACM, this document is a valuable
-guide to the process of preparing your work for publication. If you
-have published with ACM before, this document provides insight and
-instruction into more recent changes to the article template.
+A Khan Academy é uma plataforma educacional que oferece videoaulas, exercícios interativos e recursos de acompanhamento do progresso dos estudantes. Considerando a diversidade de usuários e condições de acesso, torna-se importante avaliar se a plataforma apresenta características de qualidade adequadas às necessidades de estudantes, professores e responsáveis.
 
-The ``\verb|acmart|'' document class can be used to prepare articles
-for any ACM publication --- conference or journal, and for any stage
-of publication, from review to final ``camera-ready'' copy, to the
-author's own version, with {\itshape very} few changes to the source.
+Diante desse cenário, este trabalho tem como objetivo avaliar a qualidade da versão web da Khan Academy, com foco em três características da \textbf{ISO/IEC 25010:2011 \cite{iso25010}: eficiência de desempenho, portabilidade e usabilidade.} A avaliação contempla comportamento temporal, utilização de recursos, adaptabilidade, acessibilidade e apreensibilidade, considerando os fluxos de navegação em cursos, reprodução de videoaulas, resolução de exercícios e consulta ao progresso do estudante.
 
-\input{fase1-planejamento}
+Para conduzir a avaliação, adota-se o processo de avaliação de produtos de software da família SQuaRE \cite{iso25000,iso25040}, utilizando a abordagem GQM para relacionar objetivos, questões e métricas, com referência à ISO/IEC 25023:2016 \cite{iso25023}. A investigação será realizada por meio de testes externos à plataforma web, com foco em comportamentos observáveis, buscando identificar limitações e oportunidades de melhoria fundamentadas nas evidências coletadas.
 
-\section{Template Overview}
-As noted in the introduction, the ``\verb|acmart|'' document class can
-be used to prepare many different kinds of documentation --- a
-double-anonymous initial submission of a full-length technical paper, a
-two-page SIGGRAPH Emerging Technologies abstract, a ``camera-ready''
-journal article, a SIGCHI Extended Abstract, and more --- all by
-selecting the appropriate {\itshape template style} and {\itshape
-  template parameters}.
 
-This document will explain the major features of the document
-class. For further information, the {\itshape \LaTeX\ User's Guide} is
-available from
-\url{https://www.acm.org/publications/proceedings-template}.
+\section{Referencial Teórico}
 
-\subsection{Template Styles}
+\subsection{Qualidade de Software e Modelo SQuaRE}
 
-The primary parameter given to the ``\verb|acmart|'' document class is
-the {\itshape template style} which corresponds to the kind of publication
-or SIG publishing the work. This parameter is enclosed in square
-brackets and is a part of the {\verb|documentclass|} command:
-\begin{verbatim}
-  \documentclass[STYLE]{acmart}
-\end{verbatim}
+A qualidade de software está relacionada à capacidade de um produto atender às necessidades e expectativas de seus usuários, considerando características que influenciam seu funcionamento e sua utilização. Para apoiar a avaliação dessas características, a família de normas ISO/IEC 25000, denominada \textit{Systems and Software Quality Requirements and Evaluation} (SQuaRE) \cite{iso25000}, estabelece modelos e diretrizes para a especificação e avaliação da qualidade de produtos de software.
 
-Journals use one of three template styles. All but three ACM journals
-use the {\verb|acmsmall|} template style:
-\begin{itemize}
-\item {\texttt{acmsmall}}: The default journal template style.
-\item {\texttt{acmlarge}}: Used by JOCCH and TAP.
-\item {\texttt{acmtog}}: Used by TOG.
-\end{itemize}
+Entre essas normas, a ISO/IEC 25010:2011 \cite{iso25010} apresenta um modelo de qualidade que permite organizar as características e subcaracterísticas a serem avaliadas. Complementarmente, a ISO/IEC 25023:2016 \cite{iso25023} estabelece medidas que auxiliam na obtenção de evidências quantitativas sobre a qualidade do produto, contribuindo para avaliações estruturadas e fundamentadas em critérios definidos.
 
-The majority of conference proceedings documentation will use the {\verb|acmconf|} template style.
-\begin{itemize}
-\item {\texttt{sigconf}}: The default proceedings template style.
-\item{\texttt{sigchi}}: Used for SIGCHI conference articles.
-\item{\texttt{sigplan}}: Used for SIGPLAN conference articles.
-\end{itemize}
+\subsection{Características de Qualidade}
 
-\subsection{Template Parameters}
+A ISO/IEC 25010:2011 \cite{iso25010} organiza a qualidade de produto em oito características, das quais três foram priorizadas neste estudo: eficiência de desempenho, portabilidade e usabilidade.
 
-In addition to specifying the {\itshape template style} to be used in
-formatting your work, there are a number of {\itshape template parameters}
-which modify some part of the applied template style. A complete list
-of these parameters can be found in the {\itshape \LaTeX\ User's Guide.}
+A eficiência de desempenho está relacionada ao comportamento do software quanto ao tempo de resposta e à utilização de recursos computacionais. A portabilidade considera a capacidade de adaptação do produto a diferentes ambientes de execução. Já a usabilidade refere-se à capacidade de o sistema ser compreendido, aprendido e utilizado pelos usuários, incluindo aspectos de acessibilidade.
 
-Frequently-used parameters, or combinations of parameters, include:
-\begin{itemize}
-\item {\texttt{anonymous,review}}: Suitable for a ``double-anonymous''
-  conference submission. Anonymizes the work and includes line
-  numbers. Use with the \texttt{\string\acmSubmissionID} command to print the
-  submission's unique ID on each page of the work.
-\item{\texttt{authorversion}}: Produces a version of the work suitable
-  for posting by the author.
-\item{\texttt{screen}}: Produces colored hyperlinks.
-\end{itemize}
+Essas características são relevantes para plataformas educacionais, pois permitem analisar fatores que podem influenciar o acesso aos conteúdos e a realização de atividades por usuários com diferentes necessidades e condições tecnológicas.
 
-This document uses the following string as the first command in the
-source file:
-\begin{verbatim}
-\documentclass[sigconf]{acmart}
-\end{verbatim}
+\subsection{Abordagem Goal Question Metric (GQM)}
 
-\section{Modifications}
+A abordagem \textit{Goal Question Metric}, apresentada por Basili, Caldiera e Rombach \cite{basili1994goal}, propõe uma estrutura sistemática para a definição e interpretação de métricas de software. O método parte do estabelecimento de objetivos, que são desdobrados em questões e, posteriormente, associados a métricas capazes de fornecer evidências para respondê-las.
 
-Modifying the template --- including but not limited to: adjusting
-margins, typeface sizes, line spacing, paragraph and list definitions,
-and the use of the \verb|\vspace| command to manually adjust the
-vertical spacing between elements of your work --- is not allowed.
+Essa organização permite relacionar os dados coletados aos propósitos da avaliação, evitando a seleção de medidas sem uma finalidade claramente definida. Além disso, favorece a rastreabilidade entre os objetivos de qualidade, as questões investigadas e os critérios utilizados para interpretar os resultados.
 
-{\bfseries Your document will be returned to you for revision if
-  modifications are discovered.}
+\subsection{Trabalhos Relacionados}
 
-\section{Typefaces}
+A avaliação de qualidade de software educacional já foi tratada em estudos anteriores. Soad e Barbosa \cite{soad2017moleva} propõem o MoLEva, um método de avaliação de qualidade para aplicativos educacionais móveis que identifica pontos de melhoria e gera uma pontuação capaz de apoiar a comparação e a escolha entre aplicativos, avaliado por meio de um estudo de caso. Assim como neste trabalho, o resultado da avaliação é orientado a apoiar uma decisão de adoção.
 
-The ``\verb|acmart|'' document class requires the use of the
-``Libertine'' typeface family. Your \TeX\ installation should include
-this set of packages. Please do not substitute other typefaces. The
-``\verb|lmodern|'' and ``\verb|ltimes|'' packages should not be used,
-as they will override the built-in typeface families.
+No campo da acessibilidade, Souza, Cardoso e Perry \cite{souza2019limitacoes} avaliaram uma plataforma brasileira de MOOCs com duas ferramentas automatizadas baseadas na WCAG. As ferramentas apresentaram resultados divergentes, não distinguiram as telas efetivamente vistas pelos estudantes das telas administrativas e não avaliaram materiais em vídeo, PDF ou língua de sinais. Os autores concluem que a verificação automatizada deve ser combinada com análise manual. Essa conclusão fundamenta a decisão deste estudo de usar a inspeção automatizada apenas como apoio e verificar manualmente, com teclado e leitores de tela, os fluxos centrais da Khan Academy.
 
-\section{Title Information}
+\section{Metodologia}
 
-The title of your work should use capital letters appropriately -
-\url{https://capitalizemytitle.com/} has useful rules for
-capitalization. Use the {\verb|title|} command to define the title of
-your work. If your work has a subtitle, define it with the
-{\verb|subtitle|} command.  Do not insert line breaks in your title.
+A avaliação segue o processo de avaliação de produto da ISO/IEC 25040 \cite{iso25040}, organizado em quatro fases: estabelecimento dos requisitos da avaliação, especificação, planejamento e execução. Este artigo apresenta as duas primeiras fases. O estudo concentra-se na plataforma web da Khan Academy acessada por navegadores em computadores e adota uma abordagem de caixa-preta, na qual são analisados apenas os comportamentos observáveis pela interface pública, sem acesso ao código-fonte ou à infraestrutura do serviço.
 
-If your title is lengthy, you must define a short version to be used
-in the page headers, to prevent overlapping text. The \verb|title|
-command has a ``short title'' parameter:
-\begin{verbatim}
-  \title[short title]{full title}
-\end{verbatim}
+Na Fase 1, o propósito da avaliação foi definido a partir de um cenário hipotético de aplicação: a coordenação de uma escola pública que decide se recomenda a plataforma aos alunos e em quais condições de acesso. Desse cenário derivam quatro decisões apoiadas pela avaliação e as partes interessadas que influenciam as escolhas. A seleção das características usou uma matriz ponderada aplicada às oito características da ISO/IEC 25010:2011 \cite{iso25010}, com três critérios pontuados de 1 a 3: impacto no aluno (peso 3), risco no contexto do cenário (peso 2) e viabilidade de produzir evidência externa (peso 1). A pontuação foi convertida em classes MoSCoW, e as características classificadas como \textit{Must have} formaram a seleção. A mesma matriz foi aplicada às subcaracterísticas selecionadas para definir a profundidade de cada uma, e um teste de sensibilidade verificou se a ordem dependia dos pesos escolhidos. A fase também delimitou os fluxos, os ambientes de teste, a profundidade, os cortes de escopo, os limites de validade e a relação com os Objetivos de Desenvolvimento Sustentável (ODS).
 
-\section{Authors and Affiliations}
+Na Fase 2, a abordagem GQM \cite{basili1994goal} foi usada para derivar os objetivos de medição dos requisitos de avaliação da Fase 1. Foram definidos três objetivos, desdobrados em 11 questões, cada uma com uma hipótese, e 14 métricas adaptadas da ISO/IEC 25023:2016 \cite{iso25023}, com definição de fórmula, fonte de dados, procedimento de coleta e critério de interpretação. Os resultados serão interpretados por uma escala ordinal comum de quatro níveis, e os critérios de acessibilidade têm como referência a WCAG 2.1 \cite{wcag21}.
 
-Each author must be defined separately for accurate metadata
-identification.  As an exception, multiple authors may share one
-affiliation. Authors' names should not be abbreviated; use full first
-names wherever possible. Include authors' e-mail addresses whenever
-possible.
+As Fases 3 e 4 compreendem o planejamento detalhado dos ensaios e a coleta e análise das medidas. Nos ensaios de acessibilidade, a inspeção automatizada será combinada com verificação manual, conforme recomendado por Souza, Cardoso e Perry \cite{souza2019limitacoes}. Os resultados serão interpretados segundo os critérios de julgamento definidos na Fase 2, considerando as condições de execução e os limites de validade estabelecidos na Fase 1.
 
-Grouping authors' names or e-mail addresses, or providing an ``e-mail
-alias,'' as shown below, is not acceptable:
-\begin{verbatim}
-  \author{Brooke Aster, David Mehldau}
-  \email{dave,judy,steve@university.edu}
-  \email{firstname.lastname@phillips.org}
-\end{verbatim}
+\section{Fase 1 - Requisitos da Avaliação}
 
-The \verb|authornote| and \verb|authornotemark| commands allow a note
-to apply to multiple authors --- for example, if the first two authors
-of an article contributed equally to the work.
+\subsection{Propósito e Uso Pretendido}
 
-If your author list is lengthy, you must define a shortened version of
-the list of authors to be used in the page headers, to prevent
-overlapping text. The following command should be placed just after
-the last \verb|\author{}| definition:
-\begin{verbatim}
-  \renewcommand{\shortauthors}{McCartney, et al.}
-\end{verbatim}
-Omitting this command will force the use of a concatenated list of all
-of the authors' names, which may result in overlapping text in the
-page headers.
+Parte dos alunos que poderiam usar a Khan Academy estuda em condições desfavoráveis: computadores com poucos recursos, conexão lenta ou instável, sistemas operacionais variados e, em alguns casos, baixa visão ou outra necessidade de acessibilidade. Nessas condições, um conteúdo de boa qualidade pedagógica pode ficar inacessível na prática, porque a página demora a carregar, o vídeo trava, a interface não funciona no navegador disponível ou o leitor de tela não interpreta o exercício.
 
-The article template's documentation, available at
-\url{https://www.acm.org/publications/proceedings-template}, has a
-complete explanation of these commands and tips for their effective
-use.
+O propósito da avaliação é verificar se a plataforma web atende, com qualidade suficiente, alunos que estudam nessas condições, produzindo evidências para apoiar a decisão de adotá-la como apoio ao ensino. Para que o resultado apoie uma decisão concreta, adota-se um cenário hipotético: a coordenação de uma escola pública, cujos alunos usam computadores com sistemas diferentes, recursos limitados e conexão instável, decide se recomenda a Khan Academy e em quais condições de acesso. A Tabela~\ref{tab:decisoes} apresenta as decisões apoiadas pela avaliação e quem as toma.
 
-Note that authors' addresses are mandatory for journal articles.
-
-\section{Rights Information}
-
-Authors of any work published by ACM will need to complete a rights
-form. Depending on the kind of work, and the rights management choice
-made by the author, this may be copyright transfer, permission,
-license, or an OA (open access) agreement.
-
-Regardless of the rights management choice, the author will receive a
-copy of the completed rights form once it has been submitted. This
-form contains \LaTeX\ commands that must be copied into the source
-document. When the document source is compiled, these commands and
-their parameters add formatted text to several areas of the final
-document:
-\begin{itemize}
-\item the ``ACM Reference Format'' text on the first page.
-\item the ``rights management'' text on the first page.
-\item the conference information in the page header(s).
-\end{itemize}
-
-Rights information is unique to the work; if you are preparing several
-works for an event, make sure to use the correct set of commands with
-each of the works.
-
-The ACM Reference Format text is required for all articles over one
-page in length, and is optional for one-page articles (abstracts).
-
-\section{CCS Concepts and User-Defined Keywords}
-
-Two elements of the ``acmart'' document class provide powerful
-taxonomic tools for you to help readers find your work in an online
-search.
-
-The ACM Computing Classification System ---
-\url{https://www.acm.org/publications/class-2012} --- is a set of
-classifiers and concepts that describe the computing
-discipline. Authors can select entries from this classification
-system, via \url{https://dl.acm.org/ccs/ccs.cfm}, and generate the
-commands to be included in the \LaTeX\ source.
-
-User-defined keywords are a comma-separated list of words and phrases
-of the authors' choosing, providing a more flexible way of describing
-the research being presented.
-
-CCS concepts and user-defined keywords are required for for all
-articles over two pages in length, and are optional for one- and
-two-page articles (or abstracts).
-
-\section{Sectioning Commands}
-
-Your work should use standard \LaTeX\ sectioning commands:
-\verb|\section|, \verb|\subsection|, \verb|\subsubsection|,
-\verb|\paragraph|, and \verb|\subparagraph|. The sectioning levels up to
-\verb|\subsubsection| should be numbered; do not remove the numbering
-from the commands.
-
-Simulating a sectioning command by setting the first word or words of
-a paragraph in boldface or italicized text is {\bfseries not allowed.}
-
-Below are examples of sectioning commands.
-
-\subsection{Subsection}
-\label{sec:subsection}
-
-This is a subsection.
-
-\subsubsection{Subsubsection}
-\label{sec:subsubsection}
-
-This is a subsubsection.
-
-\paragraph{Paragraph}
-
-This is a paragraph.
-
-\subparagraph{Subparagraph}
-
-This is a subparagraph.
-
-\section{Tables}
-
-The ``\verb|acmart|'' document class includes the ``\verb|booktabs|''
-package --- \url{https://ctan.org/pkg/booktabs} --- for preparing
-high-quality tables.
-
-Table captions are placed {\itshape above} the table.
-
-Because tables cannot be split across pages, the best placement for
-them is typically the top of the page nearest their initial cite.  To
-ensure this proper ``floating'' placement of tables, use the
-environment \textbf{table} to enclose the table's contents and the
-table caption.  The contents of the table itself must go in the
-\textbf{tabular} environment, to be aligned properly in rows and
-columns, with the desired horizontal and vertical rules.  Again,
-detailed instructions on \textbf{tabular} material are found in the
-\textit{\LaTeX\ User's Guide}.
-
-Immediately following this sentence is the point at which
-Table~\ref{tab:freq} is included in the input file; compare the
-placement of the table here with the table in the printed output of
-this document.
-
-\begin{table}
-  \caption{Frequency of Special Characters}
-  \label{tab:freq}
-  \begin{tabular}{ccl}
-    \toprule
-    Non-English or Math&Frequency&Comments\\
-    \midrule
-    \O & 1 in 1,000& For Swedish names\\
-    $\pi$ & 1 in 5& Common in math\\
-    \$ & 4 in 5 & Used in business\\
-    $\Psi^2_1$ & 1 in 40,000& Unexplained usage\\
-  \bottomrule
+\begin{table}[htbp]
+\centering
+\caption{Decisões apoiadas pela avaliação}
+\label{tab:decisoes}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lp{4.3cm}p{2.4cm}}
+\hline
+\textbf{ID} & \textbf{Decisão} & \textbf{Quem decide} \\
+\hline
+D1 & Recomendar ou não a plataforma web nos computadores avaliados e indicar as condições de acesso observadas & Coordenação e professores \\
+D2 & Indicar a plataforma a alunos com baixa visão ou que usam leitor de tela, e com quais ajustes & Professores e responsáveis \\
+D3 & Planejar ou dispensar uma aula introdutória sobre o uso da plataforma & Professores \\
+D4 & Definir objetivos, questões, métricas e o rigor da avaliação & Equipe avaliadora \\
+\hline
 \end{tabular}
 \end{table}
 
-To set a wider table, which takes up the whole width of the page's
-live area, use the environment \textbf{table*} to enclose the table's
-contents and the table caption.  As with a single-column table, this
-wide table will ``float'' to a location deemed more
-desirable. Immediately following this sentence is the point at which
-Table~\ref{tab:commands} is included in the input file; again, it is
-instructive to compare the placement of the table here with the table
-in the printed output of this document.
+Os resultados serão publicados como relatório técnico de avaliação externa. Eles não constituem certificação de qualidade, não comparam a Khan Academy com outras plataformas e não avaliam a qualidade do conteúdo pedagógico.
 
-\begin{table*}
-  \caption{Some Typical Commands}
-  \label{tab:commands}
-  \begin{tabular}{ccl}
-    \toprule
-    Command &A Number & Comments\\
-    \midrule
-    \texttt{{\char'134}author} & 100& Author \\
-    \texttt{{\char'134}table}& 300 & For tables\\
-    \texttt{{\char'134}table*}& 400& For wider tables\\
-    \bottomrule
-  \end{tabular}
-\end{table*}
+\subsection{Requisitante e Partes Interessadas}
 
-Always use midrule to separate table header rows from data rows, and
-use it only for this purpose. This enables assistive technologies to
-recognise table headers and support their users in navigating tables
-more easily.
+O requisitante da avaliação é a coordenação da escola do cenário, que toma a decisão D1 e orienta a seleção de computadores, navegadores e condições de rede. A disciplina de Qualidade de Software atua como demandante acadêmico, definindo os critérios do trabalho e as restrições metodológicas. Os estudantes são os usuários primários, incluindo iniciantes, pessoas com baixa visão e usuários de tecnologia assistiva; suas necessidades fundamentam as decisões D1 a D3, os fluxos avaliados e a seleção das características. Professores e responsáveis são usuários de apoio: participam das decisões D1, D2 e D3, mas seus painéis permanecem fora dos ensaios. A equipe avaliadora toma a decisão D4, e suas limitações de ferramentas, participantes e equipamentos determinam os cortes e os limites de validade. A Khan Academy é fornecedora do produto e destinatária potencial dos achados, mas não influencia diretamente o estudo, pois não houve solicitação ou contato formal.
 
-\section{Math Equations}
-You may want to display math equations in three distinct styles:
-inline, numbered or non-numbered display.  Each of the three are
-discussed in the next sections.
+\subsection{Produto e Contexto de Uso}
 
-\subsection{Inline (In-text) Equations}
-A formula that appears in the running text is called an inline or
-in-text formula.  It is produced by the \textbf{math} environment,
-which can be invoked with the usual
-\texttt{{\char'134}begin\,\ldots{\char'134}end} construction or with
-the short form \texttt{\$\,\ldots\$}. You can use any of the symbols
-and structures, from $\alpha$ to $\omega$, available in
-\LaTeX~\cite{Lamport:LaTeX}; this section will simply show a few
-examples of in-text equations in context. Notice how this equation:
-\begin{math}
-  \lim_{n\rightarrow \infty}x=0
-\end{math},
-set here in in-line math style, looks slightly different when
-set in display style.  (See next section).
+A Khan Academy caracteriza-se como um produto de software educacional interativo disponibilizado como serviço \textit{on-line}, cuja missão declarada é oferecer educação gratuita de alta qualidade a qualquer pessoa, em qualquer lugar \parencite{khanacademy_about}. Sob a perspectiva de avaliação externa caixa-preta, o contexto de uso modelado distingue dois níveis operacionais de atores: os \textit{usuários primários}, constituídos por estudantes que realizam tarefas de estudo, consumo de videoaulas e resolução de exercícios interativos; e os \textit{usuários de apoio}, compostos por docentes e responsáveis que organizam turmas, atribuem metas e acompanham o progresso discente.
 
-\subsection{Display Equations}
-A numbered display equation---one set off by vertical space from the
-text and centered horizontally---is produced by the \textbf{equation}
-environment. An unnumbered display equation is produced by the
-\textbf{displaymath} environment.
+Para assegurar a reprodutibilidade e a viabilidade dos ensaios, a fronteira de avaliação delimita-se à plataforma web executada em navegadores de computador. Excluem-se do escopo os aplicativos móveis nativos (Android e iOS), o acesso web por navegadores móveis, produtos derivados (Khan Academy Kids), ofertas institucionais (Khan Academy Districts), o assistente Khanmigo e soluções de distribuição local para ambientes desconectados (Kolibri).
 
-Again, in either environment, you can use any of the symbols and
-structures available in \LaTeX\@; this section will just give a couple
-of examples of display equations in context.  First, consider the
-equation, shown as an inline equation above:
-\begin{equation}
-  \lim_{n\rightarrow \infty}x=0
-\end{equation}
-Notice how it is formatted somewhat differently in
-the \textbf{displaymath}
-environment.  Now, we'll enter an unnumbered equation:
-\begin{displaymath}
-  \sum_{i=0}^{\infty} x + 1
-\end{displaymath}
-and follow it with another numbered equation:
-\begin{equation}
-  \sum_{i=0}^{\infty}x_i=\int_{0}^{\pi+2} f
-\end{equation}
-just to demonstrate \LaTeX's able handling of numbering.
+O contexto operacional considerado reproduz as condições de computadores de laboratórios de informática ou residências no cenário de escolas públicas, contemplando restrições de conectividade, recursos de hardware limitados e requisitos de tecnologia assistiva, como contraste visual, navegação exclusiva por teclado e uso de leitores de tela.
 
-\section{Figures}
+\subsection{Modelo de Qualidade}
 
-The ``\verb|figure|'' environment should be used for figures. One or
-more images can be placed within a figure. If your figure contains
-third-party material, you must clearly identify it as such, as shown
-in the example below.
-\begin{figure}[h]
-  \centering
- \includegraphics[width=\linewidth]{sample-franklin}
-  \caption{1907 Franklin Model D roadster. Photograph by Harris \&
-    Ewing, Inc. [Public domain], via Wikimedia
-    Commons. (\url{https://goo.gl/VLCRBB}).}
-  \Description{A woman and a girl in white dresses sit in an open car.}
-\end{figure}
+O modelo geral da ISO/IEC 25010:2011 \cite{iso25010} é abrangente e voltado a qualquer produto de software. Por isso, foi adaptado ao contexto da avaliação: características que exigem acesso ao código-fonte, testes de intrusão não autorizados ou observação prolongada do serviço foram descartadas, e, nas características mantidas, foram selecionadas apenas as subcaracterísticas que respondem às decisões D1 a D3. A Figura~\ref{fig:modelo} apresenta o modelo adaptado.
 
-Your figures should contain a caption which describes the figure to
-the reader.
+\begin{figure*}[t]
+\centering
+\IfFileExists{figuras/modelo-qualidade.png}{%
+  \includegraphics[width=0.6\textwidth]{figuras/modelo-qualidade.png}%
+}{%
+  \fbox{\parbox{0.9\textwidth}{\centering\small Inserir a figura do modelo de qualidade em figuras/modelo-qualidade.png}}%
+}
+\caption{Modelo de qualidade adaptado da ISO/IEC 25010:2011 para a avaliação da Khan Academy}
+\label{fig:modelo}
+\end{figure*}
 
-Figure captions are placed {\itshape below} the figure.
+\subsection{Seleção e Priorização das Características}
 
-Every figure should also have a figure description unless it is purely
-decorative. These descriptions convey what’s in the image to someone
-who cannot see it. They are also used by search engine crawlers for
-indexing images, and when images cannot be loaded.
+A seleção aplicou uma matriz ponderada às oito características da ISO/IEC 25010:2011. Cada característica recebeu notas de 1 a 3 em impacto no aluno, risco no contexto do cenário e viabilidade de produzir evidência externa, combinadas na pontuação $P = 3I + 2R + V$, com máximo de 18. O impacto recebeu o maior peso porque o propósito é apoiar decisões sobre os alunos, e a viabilidade o menor, para que a facilidade de medir não determine sozinha a seleção.
 
-A figure description must be unformatted plain text less than 2000
-characters long (including spaces).  {\bfseries Figure descriptions
-  should not repeat the figure caption – their purpose is to capture
-  important information that is not already provided in the caption or
-  the main text of the paper.} For figures that convey important and
-complex new information, a short text description may not be
-adequate. More complex alternative descriptions can be placed in an
-appendix and referenced in a short figure description. For example,
-provide a data table capturing the information in a bar chart, or a
-structured list representing a graph.  For additional information
-regarding how best to write figure descriptions and why doing this is
-so important, please see
-\url{https://www.acm.org/publications/taps/describing-figures/}.
+A pontuação foi convertida em classes MoSCoW: \textit{Must have} para $P \geq 15$, \textit{Should have} para $12 \leq P \leq 14$, \textit{Could have} para $10 \leq P \leq 11$ e \textit{Won't have} para $P \leq 9$. Uma característica com viabilidade 1 também é classificada como \textit{Won't have}, pois a equipe não consegue produzir evidência sobre ela. A Tabela~\ref{tab:moscow} apresenta o resultado.
 
-\subsection{The ``Teaser Figure''}
+\begin{table}[htbp]
+\centering
+\caption{Seleção das características por MoSCoW com pesos}
+\label{tab:moscow}
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lccccl}
+\hline
+\textbf{Característica} & \textbf{I} & \textbf{R} & \textbf{V} & \textbf{P} & \textbf{Classe} \\
+\hline
+Eficiência de desempenho & 3 & 3 & 3 & 18 & \textit{Must have} \\
+Portabilidade & 3 & 2 & 2 & 15 & \textit{Must have} \\
+Usabilidade & 3 & 2 & 2 & 15 & \textit{Must have} \\
+Confiabilidade & 2 & 2 & 1 & 11 & \textit{Won't have} \\
+Adequação funcional & 2 & 1 & 1 & 9 & \textit{Won't have} \\
+Segurança & 2 & 1 & 1 & 9 & \textit{Won't have} \\
+Compatibilidade & 1 & 1 & 2 & 7 & \textit{Won't have} \\
+Manutenibilidade & 1 & 1 & 1 & 6 & \textit{Won't have} \\
+\hline
+\end{tabular}
+\par\smallskip
+{\scriptsize I: impacto no aluno (peso 3); R: risco no contexto (peso 2); V: viabilidade de evidência (peso 1).}
+\end{table}
 
-A ``teaser figure'' is an image, or set of images in one figure, that
-are placed after all author and affiliation information, and before
-the body of the article, spanning the page. If you wish to have such a
-figure in your article, place the command immediately before the
-\verb|\maketitle| command:
-\begin{verbatim}
-  \begin{teaserfigure}
- \includegraphics[width=\textwidth]{sampleteaser}
-    \caption{figure caption}
-    \Description{figure description}
-  \end{teaserfigure}
-\end{verbatim}
+A confiabilidade alcança 11 pontos, mas sua avaliação exigiria observação prolongada do serviço ou indução de falhas em produção, o que não é autorizado. Adequação funcional exigiria uma especificação de referência indisponível e se confunde com a avaliação do conteúdo pedagógico; segurança exigiria autorização para testes ativos; compatibilidade não responde às decisões D1 a D3; e manutenibilidade depende do código-fonte, que é proprietário.
 
-\section{Citations and Bibliographies}
+Nas três características selecionadas, foram mantidas cinco subcaracterísticas. Ficaram de fora capacidade, que exigiria gerar carga no servidor; instalabilidade e substituibilidade, que não se aplicam a uma plataforma web; e reconhecimento de adequação, operabilidade, proteção contra erros do usuário e estética da interface, que não apoiam nenhuma decisão do cenário ou já estão parcialmente cobertas pela acessibilidade e pela apreensibilidade.
 
-The use of \BibTeX\ for the preparation and formatting of one's
-references is strongly recommended. Authors' names should be complete
---- use full first names (``Donald E. Knuth'') not initials
-(``D. E. Knuth'') --- and the salient identifying features of a
-reference should be included: title, year, volume, number, pages,
-article DOI, etc.
+A mesma matriz definiu a prioridade das subcaracterísticas selecionadas: prioridade alta para $P \geq 15$ e média para $12 \leq P \leq 14$. Cada subcaracterística originou um requisito de avaliação, de R1 a R5, apresentado na Tabela~\ref{tab:priorizacao} com a decisão apoiada e o objetivo GQM que dele deriva na Fase 2. As subcaracterísticas de prioridade alta recebem mais ambientes e repetições de medição; a apreensibilidade, de prioridade média, é avaliada com uma amostra exploratória.
 
-The bibliography is included in your source document with these two
-commands, placed just before the \verb|\end{document}| command:
-\begin{verbatim}
-  \bibliographystyle{ACM-Reference-Format}
-  \bibliography{bibfile}
-\end{verbatim}
-where ``\verb|bibfile|'' is the name, without the ``\verb|.bib|''
-suffix, of the \BibTeX\ file.
+\begin{table}[htbp]
+\centering
+\caption{Priorização das subcaracterísticas e requisitos de avaliação}
+\label{tab:priorizacao}
+\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{llccccccc}
+\hline
+\textbf{ID} & \textbf{Subcaracterística} & \textbf{I} & \textbf{R} & \textbf{V} & \textbf{P} & \textbf{Prior.} & \textbf{Dec.} & \textbf{Obj.} \\
+\hline
+R1 & Comportamento temporal & 3 & 3 & 3 & 18 & Alta & D1 & G1 \\
+R2 & Utilização de recursos & 3 & 3 & 2 & 17 & Alta & D1 & G1 \\
+R3 & Adaptabilidade & 3 & 2 & 2 & 15 & Alta & D1 & G2 \\
+R4 & Acessibilidade & 3 & 2 & 2 & 15 & Alta & D2 & G3 \\
+R5 & Apreensibilidade & 2 & 2 & 2 & 12 & Média & D3 & G3 \\
+\hline
+\end{tabular}
+\end{table}
 
-Citations and references are numbered by default. A small number of
-ACM publications have citations and references formatted in the
-``author year'' style; for these exceptions, please include this
-command in the {\bfseries preamble} (before the command
-``\verb|\begin{document}|'') of your \LaTeX\ source:
-\begin{verbatim}
-  \citestyle{acmauthoryear}
-\end{verbatim}
+Como os pesos e as notas são critério da equipe, as pontuações foram recalculadas em dois cenários alternativos: com pesos iguais ($I + R + V$) e sem o critério de viabilidade ($3I + 2R$). Nos dois cenários, as três características selecionadas permanecem à frente das demais e a ordem das subcaracterísticas não se altera, o que indica que a seleção e a priorização não dependem de um ajuste fino dos pesos.
 
+\subsection{Escopo, Profundidade e Limites de Validade}
 
-  Some examples.  A paginated journal article \cite{Abril07}, an
-  enumerated journal article \cite{Cohen07}, a reference to an entire
-  issue \cite{JCohen96}, a monograph (whole book) \cite{Kosiur01}, a
-  monograph/whole book in a series (see 2a in spec. document)
-  \cite{Harel79}, a divisible-book such as an anthology or compilation
-  \cite{Editor00} followed by the same example, however we only output
-  the series if the volume number is given \cite{Editor00a} (so
-  Editor00a's series should NOT be present since it has no vol. no.),
-  a chapter in a divisible book \cite{Spector90}, a chapter in a
-  divisible book in a series \cite{Douglass98}, a multi-volume work as
-  book \cite{Knuth97}, a couple of articles in a proceedings (of a
-  conference, symposium, workshop for example) (paginated proceedings
-  article) \cite{Andler79, Hagerup1993}, a proceedings article with
-  all possible elements \cite{Smith10}, an example of an enumerated
-  proceedings article \cite{VanGundy07}, an informally published work
-  \cite{Harel78}, a couple of preprints \cite{Bornmann2019,
-    AnzarootPBM14}, a doctoral dissertation \cite{Clarkson85}, a
-  master's thesis: \cite{anisi03}, an online document / world wide web
-  resource \cite{Thornburg01, Ablamowicz07, Poker06}, a video game
-  (Case 1) \cite{Obama08} and (Case 2) \cite{Novak03} and \cite{Lee05}
-  and (Case 3) a patent \cite{JoeScientist001}, work accepted for
-  publication \cite{rous08}, 'YYYYb'-test for prolific author
-  \cite{SaeediMEJ10} and \cite{SaeediJETC10}. Other cites might
-  contain 'duplicate' DOI and URLs (some SIAM articles)
-  \cite{Kirschmer:2010:AEI:1958016.1958018}. Boris / Barbara Beeton:
-  multi-volume works as books \cite{MR781536} and \cite{MR781537}. A
-  presentation~\cite{Reiser2014}. An article under
-  review~\cite{Baggett2025}. A
-  couple of citations with DOIs:
-  \cite{2004:ITE:1009386.1010128,Kirschmer:2010:AEI:1958016.1958018}. Online
-  citations: \cite{TUGInstmem, Thornburg01, CTANacmart}.
-  Artifacts: \cite{R} and \cite{UMassCitations}.
+O objeto da avaliação é a plataforma web acessada por navegadores em computadores, observada como caixa-preta. Os ensaios usam quatro fluxos: navegação em cursos (FL1), reprodução de videoaulas (FL2) e resolução de exercícios (FL3), que formam a jornada central de estudo e recebem maior profundidade, e consulta ao progresso do estudante (FL4), considerado secundário. A autenticação é apenas precondição, realizada com uma conta de teste controlada pela equipe.
 
-\section{Acknowledgments}
+Em vez de combinar todos os sistemas e navegadores, foram definidos quatro ambientes com finalidade específica, que cobrem os três motores de renderização (Blink, Gecko e WebKit): A1, Windows com Chrome, ambiente de referência, com NVDA, teclado, zoom de 200\% e alto contraste; A2, Windows com Firefox, com teclado; A3, macOS com Safari, com VoiceOver e teclado; e A4, Ubuntu LTS com Firefox, com Orca e teclado. Windows e macOS são executados em computadores reais; o Ubuntu pode ser executado em computador real ou em máquina virtual, com a modalidade e os recursos registrados antes da coleta.
+Comportamento temporal e utilização de recursos são medidos apenas no ambiente de referência A1, com uma execução de aquecimento e cinco repetições válidas por tarefa, em conexão sem limitação artificial e em um perfil controlado de conexão limitada. A adaptabilidade é verificada nos quatro ambientes, nas resoluções de 1366 por 768 e 1920 por 1080 pixels. A acessibilidade combina navegação por teclado e leitores de tela nos ambientes A1, A3 e A4, com inspeções de zoom e alto contraste em A1 e inspeção automatizada apenas como apoio. A apreensibilidade é observada com três a cinco participantes adultos sem experiência prévia com a plataforma.
 
-Identification of funding sources and other support, and thanks to
-individuals and groups that assisted in the research and the
-preparation of the work should be included in an acknowledgment
-section, which is placed just before the reference section in your
-document.
+Ficam fora do escopo os aplicativos nativos, os navegadores móveis, os painéis de professores, responsáveis e administradores, a infraestrutura interna e as APIs não documentadas, os testes ativos de segurança, os testes de carga e disponibilidade dos servidores e a qualidade pedagógica do conteúdo. Os resultados valem apenas para os fluxos, versões, computadores, condições de rede e tecnologias assistivas efetivamente avaliados; os ensaios de acessibilidade não comprovam conformidade integral com a WCAG \cite{wcag21}, e a amostra de apreensibilidade não representa estatisticamente os estudantes de escolas públicas.
 
-This section has a special environment:
-\begin{verbatim}
-  \begin{acks}
-  ...
-  \end{acks}
-\end{verbatim}
-so that the information contained therein can be more easily collected
-during the article metadata extraction phase, and to ensure
-consistency in the spelling of the section heading.
+\subsection{Relação com os Objetivos de Desenvolvimento Sustentável}
 
-Authors should not prepare this section as a numbered or unnumbered {\verb|\section|}; please use the ``{\verb|acks|}'' environment.
+O estudo relaciona-se de forma contextual com o ODS 4, Metas 4.5 e 4.a, e com o ODS 10, Meta 10.2 \cite{un_sdg4_5,un_sdg4_a,un_sdg10_2}. A Meta 4.5 trata da eliminação de disparidades e do acesso à educação para grupos vulneráveis, incluindo pessoas com deficiência; os ensaios de acessibilidade e apreensibilidade podem identificar barreiras técnicas ao localizar conteúdos, assistir a aulas e resolver exercícios. A Meta 4.a trata de instalações de ensino inclusivas, e seu indicador 4.a.1 mede a proporção de escolas com computadores, internet e materiais adaptados para estudantes com deficiência, condição que o cenário pressupõe. A Meta 10.2 trata da inclusão social e econômica, e os ensaios de eficiência e adaptabilidade em computadores e conexões limitados podem revelar barreiras técnicas de acesso. Essa relação é contextual: a avaliação caracteriza a qualidade do software e não mede os indicadores oficiais de educação, renda ou inclusão.
 
-\section{Appendices}
+\section{Fase 2 - Especificação da Avaliação}
 
-If your work needs an appendix, add it before the
-``\verb|\end{document}|'' command at the conclusion of your source
-document.
+\subsection{Objetivos GQM}
 
-Start the appendix with the ``\verb|appendix|'' command:
-\begin{verbatim}
-  \appendix
-\end{verbatim}
-and note that in the appendix, sections are lettered, not
-numbered. This document has two appendices, demonstrating the section
-and subsection identification method.
+Os objetivos de medição foram definidos a partir dos requisitos de qualidade priorizados na Fase 1, contemplando eficiência de desempenho, portabilidade e usabilidade. A especificação seguiu a abordagem GQM, considerando cinco elementos: objeto de análise, propósito, foco de qualidade, ponto de vista e contexto. A partir dessa estrutura, foram estabelecidos três objetivos, associados às características e subcaracterísticas selecionadas.
 
-\section{Multi-language papers}
+\subsubsection{G1 - Eficiência de Desempenho}
 
-Papers may be written in languages other than English or include
-titles, subtitles, keywords and abstracts in different languages (as a
-rule, a paper in a language other than English should include an
-English title and an English abstract).  Use \verb|language=...| for
-every language used in the paper.  The last language indicated is the
-main language of the paper.  For example, a French paper with
-additional titles and abstracts in English and German may start with
-the following command
-\begin{verbatim}
-\documentclass[sigconf, language=english, language=german,
-               language=french]{acmart}
-\end{verbatim}
+O objetivo G1 visa avaliar o desempenho observável dos fluxos
+de navegação em cursos (FL1), videoaulas (FL2) e exercícios (FL3) da
+Khan Academy, considerando o comportamento temporal e a
+utilização de recursos computacionais. A análise contempla
+a perspectiva de estudantes, professores, coordenação
+escolar e responsáveis, em ambientes web com configurações
+de hardware e condições de rede documentadas. Esse objetivo
+está associado aos requisitos R1 e R2, às questões Q1 a Q4
+e às métricas M1 a M5.
 
-The title, subtitle, keywords and abstract will be typeset in the main
-language of the paper.  The commands \verb|\translatedXXX|, \verb|XXX|
-begin title, subtitle and keywords, can be used to set these elements
-in the other languages.  The environment \verb|translatedabstract| is
-used to set the translation of the abstract.  These commands and
-environment have a mandatory first argument: the language of the
-second argument.  See \verb|sample-sigconf-i13n.tex| file for examples
-of their usage.
+\subsubsection{G2 - Portabilidade}
+O objetivo G2 concentra-se na avaliação da adaptabilidade
+da Khan Academy aos ambientes computacionais contemplados
+pelo estudo. São considerados os fluxos FL1 a FL4, sob a perspectiva de estudantes, professores
+e coordenação escolar. A investigação abrange a execução
+dessas funcionalidades nas combinações viáveis de
+navegadores e sistemas operacionais de computadores
+definidas no escopo. O objetivo corresponde ao requisito
+R3, às questões Q5 e Q6 e às métricas M6 e M7.
 
-%%
-%% The acknowledgments section is defined using the "acks" environment
-%% (and NOT an unnumbered section). This ensures the proper
-%% identification of the section in the article metadata, and the
-%% consistent spelling of the heading.
-\begin{acks}
-To Robert, for the bagels and explaining CMYK and color spaces.
-\end{acks}
+\subsubsection{G3 - Usabilidade}
+
+O objetivo G3 busca avaliar as condições de utilização
+da plataforma, com ênfase na acessibilidade e na
+apreensibilidade dos fluxos de navegação em cursos, videoaulas
+e exercícios (FL1 a FL3). A análise considera estudantes com
+baixa visão ou que utilizam leitores de tela, estudantes
+sem experiência prévia com a plataforma, professores
+e responsáveis. O contexto de avaliação compreende a
+versão web da Khan Academy, incluindo a utilização de
+recursos de navegação por teclado e tecnologias assistivas
+compatíveis com os ambientes selecionados, além de
+procedimentos relacionados à aprendizagem da interface.
+Esse objetivo está associado aos requisitos R4 e R5,
+às questões Q7 a Q11 e às métricas M8 a M14.
+
+A definição desses objetivos estabelece a rastreabilidade
+entre os requisitos de qualidade e os elementos de medição,
+fornecendo a base para a especificação das questões,
+hipóteses e métricas da avaliação.
+
+\subsection{Questões e Hipóteses}
+
+Os três objetivos foram desdobrados em 11 questões (Q1 a Q11), cada
+uma associada a uma hipótese de mesmo número (H1 a H11) e respondida
+por ao menos uma métrica
+(Tabelas~\ref{tab:qh-g1} a \ref{tab:qh-g3-complemento}).
+As questões investigam se os fluxos permanecem utilizáveis nas
+condições do cenário escolar, sem antecipar fórmulas de cálculo.
+As hipóteses explicitam o resultado esperado, o ambiente em que será
+verificado e o limite adotado. Todas são suposições de trabalho
+formuladas antes da coleta e propostas para ratificação da equipe,
+e não representam resultados observados.
+
+Nas hipóteses, A1 a A4 designam os ambientes do estudo: Windows com
+Chrome (A1), Windows com Firefox (A2), macOS com Safari (A3) e Ubuntu
+com Firefox (A4). FL1 a FL4 designam os fluxos de navegação em cursos,
+videoaulas, exercícios e consulta ao progresso pelo próprio estudante.
+Eficiência de desempenho, ampliação, alto contraste e apreensibilidade
+são avaliadas apenas em A1, ambiente de referência. Teclado e leitor
+de tela são avaliados em A1, A3 e A4, e a adaptabilidade, nos quatro
+ambientes.
+
+\providecommand*{\tabrr}{\raggedright\let\\\tabularnewline}
+
+\subsubsection{G1 -- Eficiência de Desempenho}
+
+Q1 trata da espera percebida pelo estudante, enquanto Q2, Q3 e Q4
+separam CPU, memória e dados de rede porque cada recurso pode limitar
+o uso de forma independente em computadores e conexões restritos.
+H1 a H4 restringem-se a A1, onde os recursos serão monitorados.
+H1 considera duas condições de rede, uma sem limitação artificial
+e outra com perfil controlado de conexão limitada, que representa
+a preocupação do cenário escolar com a conectividade.
+
+\begin{table}[htbp]
+\centering
+\caption{Questões e hipóteses de G1 -- Eficiência de Desempenho}
+\label{tab:qh-g1}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{p{0.09\columnwidth}p{0.67\columnwidth}p{0.14\columnwidth}}
+\hline
+\textbf{Q} & \textbf{Questão e hipótese} & \textbf{Métricas} \\
+\hline
+\tabrr Q1 &
+\tabrr \textit{A espera por carregamentos, início de videoaulas e respostas de exercícios permite continuar a atividade sem interrupções?}\par
+H1: em A1, para cada etapa de FL1 a FL3 e condição de rede, a mediana do tempo de resposta será de até 3 s e pelo menos 90\% das tentativas elegíveis serão concluídas, sem bloqueio atribuível à plataforma. &
+\tabrr M1, M2 \\
+\hline
+\tabrr Q2 &
+\tabrr \textit{Os fluxos podem ser concluídos sem sobrecarregar o processamento do computador de referência?}\par
+H2: em A1, a utilização média de CPU será de até 50\% em cada execução válida de FL1 a FL3, sem interrupção atribuível à sobrecarga. &
+\tabrr M3 \\
+\hline
+\tabrr Q3 &
+\tabrr \textit{Os fluxos permanecem utilizáveis dentro da memória disponível?}\par
+H3: em A1, o pico de memória será de até 1.024 MiB em cada execução válida de FL1 a FL3, sem interrupção atribuível ao esgotamento de memória. &
+\tabrr M4 \\
+\hline
+\tabrr Q4 &
+\tabrr \textit{O volume de dados do trecho padronizado de navegação é compatível com o orçamento de acesso?}\par
+H4: em A1, cada execução concluída do trecho padronizado, com política de cache constante, transferirá no máximo 10 MiB, somando envio e recebimento. &
+\tabrr M5 \\
+\hline
+\end{tabular}
+\end{table}
+
+A verificação exige que o tempo pedagógico de assistir à videoaula
+ou resolver o exercício seja excluído de M1, que falhas e interrupções
+sejam registradas à parte e que M5 considere apenas execuções
+concluídas, com a mesma política de cache e sem transferência integral
+de vídeos. Como H3 trata de picos, médias ou medianas de memória não
+podem ocultar violações individuais. A coincidência entre CPU elevada
+e interrupção não demonstra relação de causa isoladamente, e a
+classificação segue o protocolo de evidências.
 
 
-\section*{Ethics and Privacy Statement}
+\subsubsection{G2 -- Portabilidade}
 
-This section of your ACM work should discuss the potential societal
-risks that might result from its publication; two to three sentences
-related to the findings of your study, or new advancements made
-possible by their developed methods. The privacy and ethics statement
-should clearly address the broader impacts of their work as it relates
-to the authors' interpretation of privacy, fairness, safety, human
-rights, data sovereignty, or future misuse and any benefit/risk
-trade-off resulting from this research. We acknowledge that some
-papers may have minimal societal risks beyond those considered by
-institutional review boards, and the dimensions considered by any
-review of the user study design or dataset licenses could be provided
-in this statement.
+Q5 verifica se os fluxos são concluídos entre sistemas operacionais
+e navegadores, e Q6 se conteúdo e controles se preservam nas resoluções
+de referência. Ambas usam o mesmo patamar de 90\% das combinações
+selecionadas, mas são contadas separadamente, de modo que um mesmo
+resultado não seja computado duas vezes.
 
-%%
-%% The next two lines define the bibliography style to be used, and
-%% the bibliography file.
-\bibliographystyle{ACM-Reference-Format}
-\bibliography{sample-base}
+\begin{table}[htbp]
 
+\centering
+\caption{Questões e hipóteses de G2 -- Portabilidade}
+\label{tab:qh-g2}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{p{0.09\columnwidth}p{0.67\columnwidth}p{0.14\columnwidth}}
+\hline
+\textbf{Q} & \textbf{Questão e hipótese} & \textbf{Métricas} \\
+\hline
+\tabrr Q5 &
+\tabrr \textit{Os fluxos essenciais são concluídos nas combinações de sistema operacional e navegador, sem ajustes extraordinários na plataforma?}\par
+H5: pelo menos 90\% das combinações de ambiente (A1 a A4) e fluxo (FL1 a FL4) selecionadas permitirão concluir o roteiro e alcançar o resultado esperado, sem alterar a plataforma. &
+\tabrr M6 \\
+\hline
+\tabrr Q6 &
+\tabrr \textit{Conteúdo e controles necessários permanecem utilizáveis nas resoluções avaliadas?}\par
+H6: em pelo menos 90\% das combinações essenciais de ambiente, resolução (1366$\times$768 e 1920$\times$1080) e fluxo, as tarefas serão concluídas com acesso a todas as informações e controles do roteiro. &
+\tabrr M7 \\
+\hline
+\end{tabular}
+\end{table}
+
+O protocolo deve distinguir a preparação normal do ensaio de um
+ajuste extraordinário na plataforma. Combinações inviáveis por
+incompatibilidade conhecida entre ferramentas e sistemas são tratadas
+no planejamento e não contam automaticamente como falha da
+Khan Academy.
+
+\FloatBarrier
+\subsubsection{G3 -- Usabilidade}
+
+Q7 a Q10 abordam a acessibilidade por teclado, leitor de tela,
+ampliação e contraste, tendo como referência critérios aplicáveis
+da WCAG 2.1 \cite{wcag21}. Em H7, a conclusão ocorre sem substituir
+o teclado pelo mouse durante a tarefa. Em H8, o resultado depende
+do anúncio das informações e da identificação dos controles, e não
+apenas da presença de rótulos. Q9 difere de Q6: avalia a ampliação
+do conteúdo (zoom de 200\%), e não a mudança do tamanho da janela.
+H10 reúne dois ramos independentes, porque o alto contraste do
+Windows não substitui a verificação das razões de contraste.
+
+As questões e hipóteses de G3 estão distribuídas nas
+Tabelas~\ref{tab:qh-g3} e \ref{tab:qh-g3-complemento}.
+
+\begin{table}[htbp]
+\centering
+\caption{Questões e hipóteses de G3: teclado, leitor de tela e ampliação}
+\label{tab:qh-g3}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{p{0.09\columnwidth}p{0.67\columnwidth}p{0.14\columnwidth}}
+\hline
+\textbf{Q} & \textbf{Questão e hipótese} & \textbf{Métricas} \\
+\hline
+\tabrr Q7 &
+\tabrr \textit{Quem usa apenas teclado consegue identificar e acionar os controles necessários, sem bloqueios?}\par
+H7: em pelo menos 90\% das combinações de tarefa e ambiente (A1, A3 e A4) para FL1 a FL3, a tarefa será concluída apenas por teclado, com foco visível e sem bloqueios de navegação. &
+\tabrr M8 \\
+\hline
+\tabrr Q8 &
+\tabrr \textit{Quem usa leitor de tela recebe as informações necessárias e consegue concluir os fluxos?}\par
+H8: em pelo menos 90\% das combinações com NVDA (A1), VoiceOver (A3) e Orca (A4), o leitor anunciará as informações e identificará os controles definidos no \textit{checklist}, permitindo concluir a tarefa sem consulta visual. &
+\tabrr M9 \\
+\hline
+\tabrr Q9 &
+\tabrr \textit{A ampliação permite continuar lendo o conteúdo e operando os controles, sem perda de informação ou funcionalidade?}\par
+H9: em A1, a 1366$\times$768, pelo menos 90\% das tarefas essenciais serão concluídas com zoom de 200\%, sem perda das informações ou dos controles necessários. &
+\tabrr M10 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Questões e hipóteses de G3: contraste e apreensibilidade}
+\label{tab:qh-g3-complemento}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{p{0.09\columnwidth}p{0.67\columnwidth}p{0.14\columnwidth}}
+\hline
+\textbf{Q} & \textbf{Questão e hipótese} & \textbf{Métricas} \\
+\hline
+\tabrr Q10 &
+\tabrr \textit{A apresentação visual permite distinguir informações e controles, inclusive em alto contraste?}\par
+H10: (a) todos os textos aplicáveis inspecionados atenderão ao contraste mínimo de 4,5:1 (texto comum) e 3:1 (texto grande), e (b) em A1, pelo menos 90\% das tarefas essenciais serão concluídas com o alto contraste do Windows ativado, sem desativá-lo. &
+\tabrr M11 \\
+\hline
+\tabrr Q11 &
+\tabrr \textit{Estudantes novos conseguem iniciar e concluir as tarefas essenciais após a instrução inicial, sem orientação adicional?}\par
+H11: em A1, pelo menos 90\% das primeiras tentativas elegíveis de cada tarefa essencial, e do conjunto avaliado, serão concluídas por participantes adultos novos na plataforma, após instrução inicial padronizada e sem ajuda. &
+\tabrr M12, M13, M14 \\
+\hline
+\end{tabular}
+\end{table}
+
+Q11 aborda a apreensibilidade em caráter exploratório, com três a
+cinco participantes adultos sem experiência anterior com a plataforma.
+H11 considera apenas a primeira tentativa de cada par
+participante--tarefa, após instrução inicial padronizada.
+M12 é a métrica principal de Q11, e M13 (erros) e M14 (tempo) a
+complementam, pois uma tarefa concluída autonomamente pode ainda
+indicar dificuldade de aprendizagem. Se o recrutamento não for
+possível, o resultado será apresentado como inspeção exploratória
+da equipe, e não como evidência sobre estudantes.
+
+\FloatBarrier
+\subsubsection{Fundamentação e Verificação das Hipóteses}
+
+As hipóteses derivam dos requisitos R1 a R5 e das restrições do
+escopo. Os limites quantitativos, como 3 s em H1, 50\% em H2,
+1.024 MiB em H3, 10 MiB em H4 e 90\% nas demais, são critérios
+operacionais propostos pelo estudo, e não valores normativos da
+ISO/IEC 25023 \cite{iso25023_2016}. Eles devem ser ratificados pela
+equipe antes da coleta. A interpretação de cada hipótese confronta
+os dados válidos com o seu enunciado, e não apenas com a pontuação
+da métrica, e resulta em um de três estados:
+
+\begin{itemize}
+\item \textbf{Sustentada na amostra:} os dados válidos, com cobertura
+suficiente, atendem integralmente à expectativa.
+\item \textbf{Não sustentada na amostra:} os dados válidos e
+suficientes não atendem à expectativa, e a divergência é
+acompanhada da evidência.
+\item \textbf{Inconclusiva:} faltam parâmetros fundamentados,
+dados válidos ou cobertura necessária. Achados parciais permanecem
+registrados.
+\end{itemize}
+
+Os resultados valem apenas para os fluxos, ambientes e condições
+efetivamente avaliados e serão obtidos na etapa de coleta.
+ 
+\subsection{Métricas de Avaliação}
+
+As métricas foram definidas com base na abordagem
+\textit{Goal-Question-Metric} (GQM), considerando as
+características de qualidade selecionadas para a avaliação
+da plataforma Khan Academy, em sua versão web, e a
+ISO/IEC 25023:2016 \cite{iso25023} como referência para a especificação
+das medidas.
+
+Foram estabelecidas 14 métricas (M1 a M14), distribuídas
+entre três objetivos: eficiência de desempenho (G1),
+portabilidade (G2) e usabilidade (G3). A
+Tabela~\ref{tab:metricas} apresenta os indicadores
+propostos e sua associação às questões GQM, e a
+Figura~\ref{fig:gqm} apresenta a hierarquia entre objetivos,
+questões e métricas.
+
+\begin{figure*}[t]
+\centering
+\IfFileExists{figuras/diagrama-gqm.png}{%
+  \includegraphics[width=0.6\textwidth]{figuras/diagrama-gqm.png}%
+}{%
+  \fbox{\parbox{0.9\textwidth}{\centering\small Inserir o diagrama GQM em figuras/diagrama-gqm.png}}%
+}
+\caption{Hierarquia GQM: objetivos G1 a G3, questões Q1 a Q11 e métricas M1 a M14}
+\label{fig:gqm}
+\end{figure*}
+
+
+\begin{table}[htbp]
+\centering
+\caption{Métricas de avaliação da Khan Academy}
+\label{tab:metricas}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{cllc}
+\hline
+\textbf{Obj.} & \textbf{Métrica} &
+\textbf{Indicador} & \textbf{Q.} \\
+\hline
+G1 & M1: Resposta & Mediana/P90 (s) & Q1 \\
+G1 & M2: Conclusão & Sucesso (\%) & Q1 \\
+G1 & M3: CPU & Média (\%) & Q2 \\
+G1 & M4: Memória & Pico (MiB) & Q3 \\
+G1 & M5: Tráfego & Volume (MiB) & Q4 \\
+G2 & M6: Ambiente & Sucesso (\%) & Q5 \\
+G2 & M7: Janela & Adequação (\%) & Q6 \\
+G3 & M8: Teclado & Conclusão (\%) & Q7 \\
+G3 & M9: Leitor de tela & Conclusão (\%) & Q8 \\
+G3 & M10: Ampliação & Adequação (\%) & Q9 \\
+G3 & M11: Contraste & Conformidade (\%) & Q10 \\
+G3 & M12: Autonomia & Conclusão (\%) & Q11 \\
+G3 & M13: Erros & Taxa (\%) & Q11 \\
+G3 & M14: Tempo autônomo & Mediana (s) & Q11 \\
+\hline
+\end{tabular}
+\end{table}
+
+
+A coleta será realizada em ambientes e fluxos previamente
+definidos, utilizando registros de execução, instrumentos
+de monitoramento e verificações de acessibilidade.
+Os resultados quantitativos serão complementados pelo
+registro de falhas e barreiras que comprometam
+funcionalidades essenciais.
+
+\FloatBarrier
+\subsection{Critérios de Julgamento}
+
+Para interpretar as medições, adotou-se uma escala
+ordinal de quatro níveis: Excelente (3), Alvo (2),
+Mínimo aceitável (1) e Inaceitável (0). Resultados
+sem evidências suficientes serão classificados como
+inconclusivos.
+
+As métricas percentuais de sucesso incluem M2
+(conclusão de fluxos), M6 (execução por ambiente),
+M7 (adaptação ao tamanho da janela), M8 (navegação
+por teclado), M9 (uso de leitor de tela), M10
+(ampliação de conteúdo) e M12 (conclusão autônoma).
+Os níveis correspondentes são apresentados na
+Tabela~\ref{tab:criterios-percentuais}.
+
+\begin{table}[htbp]
+\centering
+\caption{Critérios para métricas percentuais}
+\label{tab:criterios-percentuais}
+\small
+\begin{tabular}{lcc}
+\hline
+\textbf{Nível} &
+\textbf{M2, M6 a M10, M12} &
+\textbf{M13} \\
+\hline
+Excelente (3) & $100\%$ & $0\%$ \\
+Alvo (2) & $[90,100)\%$ & $(0,10]\%$ \\
+Mínimo (1) & $[75,90)\%$ & $(10,25]\%$ \\
+Inaceitável (0) & $<75\%$ & $>25\%$ \\
+\hline
+\end{tabular}
+\end{table}
+
+Para as métricas temporais e de utilização de recursos,
+valores menores representam resultados mais favoráveis.
+A Tabela~\ref{tab:criterios-recursos} apresenta os
+limites operacionais estabelecidos.
+
+
+\begin{table}[t]
+\centering
+\caption{Critérios para tempo e recursos}
+\label{tab:criterios-recursos}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lcccc}
+\hline
+\textbf{Métrica} & \textbf{3} & \textbf{2} &
+\textbf{1} & \textbf{0} \\
+\hline
+M1 (s) & $\leq1$ & $(1,3]$ & $(3,10]$ & $>10$ \\
+M3 (\%) & $\leq25$ & $(25,50]$ &
+$(50,75]$ & $>75$ \\
+M4 (MiB) & $\leq512$ & $(512,1024]$ &
+$(1024,2048]$ & $>2048$ \\
+M5 (MiB) & $\leq5$ & $(5,10]$ &
+$(10,20]$ & $>20$ \\
+M14 (s) & $\leq60$ & $(60,120]$ &
+$(120,180]$ & $>180$ \\
+\hline
+\end{tabular}
+\end{table}
+
+
+A avaliação de acessibilidade considera requisitos
+aplicáveis da WCAG 2.1 \cite{wcag21}. Para M10, será verificada a
+preservação do conteúdo e das funcionalidades durante
+a ampliação, incluindo o redimensionamento de texto
+até 200\%. Para M11, serão considerados os limites
+de contraste do nível AA (4,5:1 para textos comuns
+e 3:1 para textos grandes) e do nível AAA
+(7:1 e 4,5:1, respectivamente). Em M11, o
+atendimento aos limites AA corresponde ao nível
+Alvo (2), enquanto o atendimento aos limites AAA
+corresponde ao nível Excelente (3). Falhas restritas
+a elementos não essenciais ou que comprometam
+elementos essenciais recebem, respectivamente,
+pontuações 1 e 0.
+
+As métricas M8 e M9 também consideram as barreiras
+identificadas na navegação por teclado e na utilização
+de leitores de tela, sem que os percentuais obtidos
+impliquem conformidade integral com a WCAG.
+
+Os limites quantitativos constituem critérios
+operacionais propostos para o estudo, não valores
+normativos da ISO/IEC 25023. A aplicação pressupõe
+a padronização dos ambientes e fluxos, sendo M5
+restrita à navegação sem transferência integral
+de vídeos e M14 a tarefas curtas não pedagógicas.
+
+Uma questão GQM será considerada atendida quando
+suas métricas principais alcançarem pontuação igual
+ou superior a 2, desde que não existam bloqueios
+em funcionalidades essenciais. O atendimento de
+cada objetivo dependerá do resultado de suas
+questões, enquanto as hipóteses serão examinadas
+com base nas evidências coletadas.
+
+\section{Conclusão}
+
+Este trabalho apresentou as duas primeiras fases da avaliação de qualidade da plataforma web da Khan Academy, conduzida segundo o processo de avaliação da família SQuaRE \cite{iso25040}. Na Fase 1, o propósito foi associado a um cenário de aplicação e a quatro decisões com responsáveis definidos; as características foram selecionadas por uma matriz ponderada convertida em classes MoSCoW, resultando em eficiência de desempenho, portabilidade e usabilidade; e o escopo foi delimitado a quatro fluxos e quatro ambientes, com limites de validade explícitos e relação contextual com os ODS 4 e 10. Na Fase 2, os cinco requisitos de avaliação foram desdobrados, pela abordagem GQM \cite{basili1994goal}, em três objetivos, 11 questões e 14 métricas, com critérios de julgamento em uma escala comum.
+
+A principal contribuição desta etapa é a rastreabilidade entre o propósito, as decisões, os requisitos, os objetivos de medição e os critérios de julgamento, que permite interpretar os resultados futuros em relação às decisões que eles devem apoiar. O teste de sensibilidade mostrou que a seleção e a priorização não dependem do ajuste fino dos pesos definidos pela equipe.
+
+O estudo tem limitações que orientarão a interpretação dos resultados: a avaliação é externa e de caixa-preta, o desempenho será medido em um único computador de referência, a amostra de apreensibilidade é exploratória e os limiares quantitativos são propostas metodológicas da equipe, e não valores normativos. Como próximos passos, as Fases 3 e 4 detalharão o plano de execução dos ensaios, realizarão a coleta das medidas nos ambientes definidos e analisarão os resultados à luz das hipóteses e dos critérios de julgamento, resultando em recomendações para a adoção da plataforma no cenário considerado.
+
+
+
+\printbibliography
 
 %%
 %% If your work has an appendix, this is the place to put it.
 \appendix
 
-\section{Research Methods}
+\section{Contribuição dos Integrantes}
 
-\subsection{Part One}
+A Tabela~\ref{tab:commands} apresenta a contribuição de cada integrante nas atividades da Entrega 1.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-malesuada, quam in pulvinar varius, metus nunc fermentum urna, id
-sollicitudin purus odio sit amet enim. Aliquam ullamcorper eu ipsum
-vel mollis. Curabitur quis dictum nisl. Phasellus vel semper risus, et
-lacinia dolor. Integer ultricies commodo sem nec semper.
+\begin{table*}[htbp]
+  \centering
+  \caption{Contribuição dos integrantes na Entrega 1}
+  \label{tab:commands}
+  \begin{tabular}{c l p{8cm} c}
+    \toprule
+    Matrícula & Integrante & Participação & Porcentagem de Contribuição \\
+    \midrule
+    \texttt{232013944} & Camila Silva Cavalcante & Questões e hipóteses; Níveis de pontuação e critérios de julgamento; Hierarquia e representação gráfica GQM & 16,6\% \\
+    \texttt{241011054} & Enzo Menali Vettorato Toledo & Caracterização do produto; Contexto de uso; Stakeholders e perfis de estudantes & 16,6\% \\
+    \texttt{232014450} & Geovanna Alves Umbelino & Objetivos de medição; Especificação das métricas; Níveis de pontuação e critérios de julgamento; Hierarquia e representação gráfica GQM & 16,7\% \\
+    \texttt{231026429} & José Augusto Alves de Moraes & Escopo e objetos da avaliação; Ambientes de teste; Alinhamento com as ODS & 16,6\% \\
+    \texttt{232014807} & Luísa de Souza Ferreira & Propósito, uso pretendido, modelo de qualidade e priorização das características, Referencial Teórico e Metodologia & 16,8\% \\
+    \texttt{241025710} & Pedro Lucas Barbosa da Silva & Gestão PSM/CID; Organização e planejamento das issues; Estruturação do artigo; Revisão e Padronização do Pages & 16,7\% \\
+    \midrule
+    & & Total & 100\% \\
+    \bottomrule
+  \end{tabular}
+\end{table*}
 
-\subsection{Part Two}
-
-Etiam commodo feugiat nisl pulvinar pellentesque. Etiam auctor sodales
-ligula, non varius nibh pulvinar semper. Suspendisse nec lectus non
-ipsum convallis congue hendrerit vitae sapien. Donec at laoreet
-eros. Vivamus non purus placerat, scelerisque diam eu, cursus
-ante. Etiam aliquam tortor auctor efficitur mattis.
-
-\section{Online Resources}
-
-Nam id fermentum dui. Suspendisse sagittis tortor a nulla mollis, in
-pulvinar ex pretium. Sed interdum orci quis metus euismod, et sagittis
-enim maximus. Vestibulum gravida massa ut felis suscipit
-congue. Quisque mattis elit a risus ultrices commodo venenatis eget
-dui. Etiam sagittis eleifend elementum.
-
-Nam interdum magna at lectus dignissim, ac dignissim lorem
-rhoncus. Maecenas eu arcu ac neque placerat aliquam. Nunc pulvinar
-massa et mattis lacinia.
 
 \end{document}
 \endinput

@@ -159,6 +159,12 @@
                         
                             
 <li >
+    <a href="../gestao/artigo/">Artigo</a>
+</li>
+
+                        
+                            
+<li >
     <a href="../gestao/plano_de_medicao/">Plano de Medição</a>
 </li>
 
@@ -172,6 +178,12 @@
                             
 <li >
     <a href="../gestao/horas/">Registro de Horas</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../gestao/horas_consolidadas/">Horas Cadastradas</a>
 </li>
 
                         
@@ -203,11 +215,6 @@
                 </ul>
 
             <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                            <i class="fas fa-search"></i> Search
-                        </a>
-                    </li>
                     <li >
                         <a rel="prev" href="..">
                             <i class="fas fa-arrow-left"></i> Previous
@@ -242,8 +249,9 @@
         <div class="col-md-9" role="main">
 
 <h1 id="fase-1-planejamento-da-avaliacao">Fase 1: Planejamento da avaliação</h1>
+<p><strong>Versão 1.1</strong></p>
 <p>A Fase 1 estabelece os requisitos da avaliação da Khan Academy. Nesta etapa, são definidos o propósito e o uso pretendido dos resultados, o produto e seu contexto de uso, as partes interessadas, as características de qualidade priorizadas e o recorte dos ensaios. A documentação também explicita o que pode ser observado externamente, os elementos excluídos e os limites de validade das conclusões.</p>
-<p>A avaliação adota o modelo de qualidade de produto da <strong>ISO/IEC 25010:2011</strong> e prioriza <strong>eficiência de desempenho</strong>, <strong>portabilidade</strong> e <strong>usabilidade</strong>. Essas características são detalhadas em cinco requisitos de avaliação, <code>R1</code> a <code>R5</code>, relacionados às decisões <code>D1</code> a <code>D4</code>. A Fase 1 planeja a avaliação; não apresenta resultados de testes.</p>
+<p>A avaliação adota o modelo de qualidade de produto da <strong>ISO/IEC 25010:2011</strong> <a href="#s1">S1</a> e prioriza <a href="requisitos-de-avaliacao/#24-selecao-e-priorizacao"><strong>eficiência de desempenho</strong>, <strong>portabilidade</strong> e <strong>usabilidade</strong></a>. Essas características são detalhadas em cinco requisitos de avaliação, <a href="requisitos-de-avaliacao/#4-rastreabilidade-caracteristica-interessado-e-justificativa"><code>R1</code></a> a <a href="requisitos-de-avaliacao/#4-rastreabilidade-caracteristica-interessado-e-justificativa"><code>R5</code></a>, relacionados às decisões <a href="requisitos-de-avaliacao/#13-requisitante-e-destinatarios-dos-resultados"><code>D1</code></a> a <a href="requisitos-de-avaliacao/#13-requisitante-e-destinatarios-dos-resultados"><code>D4</code></a>. A Fase 1 apenas planeja a avaliação, não apresenta resultados de testes.</p>
 <h2 id="organizacao-da-fase-1">Organização da Fase 1</h2>
 <p>A <strong>Tabela 1</strong> apresenta os temas da documentação, seus responsáveis e o acesso a cada página.</p>
 <table>
@@ -277,16 +285,17 @@
 <h2 id="delimitacao-e-relacao-com-a-fase-2">Delimitação e relação com a Fase 2</h2>
 <p>O propósito da avaliação é produzir evidências que apoiem, em um cenário hipotético, a decisão de uma coordenação de escola pública sobre recomendar a Khan Academy Web em computadores e indicar as condições de acesso observadas. Estudantes são os usuários primários; professores e responsáveis são usuários de apoio; a equipe avaliadora define o desenho de medição; e a Khan Academy é fornecedora do produto e destinatária potencial dos achados.</p>
 <p>O objeto dos ensaios é a <strong>plataforma web acessada por navegadores em computadores</strong>, sob uma abordagem externa de caixa-preta. Os fluxos incluem localizar conteúdo, reproduzir uma videoaula, responder a um exercício e consultar o progresso da própria conta. Aplicativos nativos, navegadores móveis, painéis de professores e responsáveis, infraestrutura interna, testes ativos de segurança e avaliação pedagógica do conteúdo permanecem fora do escopo.</p>
-<p>Os ambientes <code>A1</code> a <code>A4</code> contemplam combinações dirigidas de Windows, macOS e Ubuntu com Chrome, Firefox e Safari. A acessibilidade inclui navegação por teclado e leitores de tela nas combinações previstas e, no ambiente <code>A1</code>, inspeções separadas com zoom de 200% e alto contraste do Windows para o perfil de baixa visão. Esses procedimentos não representam todas as pessoas com deficiência nem comprovam conformidade integral com as WCAG.</p>
-<p>Os requisitos definidos nesta etapa orientam a estrutura GQM da <a href="../fase-2/">Fase 2</a>: <code>R1</code> e <code>R2</code> fundamentam <code>G1</code>, <code>R3</code> fundamenta <code>G2</code>, e <code>R4</code> e <code>R5</code> fundamentam <code>G3</code>. Assim, objetivos, questões e métricas devem permanecer coerentes com o propósito, os stakeholders, os fluxos, os ambientes e os limites estabelecidos na Fase 1.</p>
+<p>Os ambientes <a href="escopo-da-avaliacao/#ambientes"><code>A1</code></a> a <a href="escopo-da-avaliacao/#ambientes"><code>A4</code></a> contemplam combinações dirigidas de Windows, macOS e Ubuntu com Chrome, Firefox e Safari. A acessibilidade inclui navegação por teclado e leitores de tela nas combinações previstas e, no ambiente <a href="escopo-da-avaliacao/#ambientes"><code>A1</code></a>, inspeções separadas com zoom de 200% e alto contraste do Windows para o perfil de baixa visão. Esses procedimentos não representam todas as pessoas com deficiência nem comprovam conformidade integral com as WCAG.</p>
+<p>Os requisitos definidos nesta etapa orientam a estrutura GQM da <a href="../fase-2/">Fase 2</a>: <a href="requisitos-de-avaliacao/#4-rastreabilidade-caracteristica-interessado-e-justificativa"><code>R1</code></a> e <a href="requisitos-de-avaliacao/#4-rastreabilidade-caracteristica-interessado-e-justificativa"><code>R2</code></a> fundamentam <a href="../fase-2/objetivos/#g1"><code>G1</code></a>, <a href="requisitos-de-avaliacao/#4-rastreabilidade-caracteristica-interessado-e-justificativa"><code>R3</code></a> fundamenta <a href="../fase-2/objetivos/#g2"><code>G2</code></a>, e <a href="requisitos-de-avaliacao/#4-rastreabilidade-caracteristica-interessado-e-justificativa"><code>R4</code></a> e <a href="requisitos-de-avaliacao/#4-rastreabilidade-caracteristica-interessado-e-justificativa"><code>R5</code></a> fundamentam <a href="../fase-2/objetivos/#g3"><code>G3</code></a>. Assim, objetivos, questões e métricas devem permanecer coerentes com o propósito, os stakeholders, os fluxos, os ambientes e os limites estabelecidos na Fase 1.</p>
 <h2 id="referencias">Referências</h2>
-<ul>
-<li><a href="produto-e-contexto/">Produto e contexto</a>. Caracterização da Khan Academy, stakeholders, interfaces, dependências e perfis de estudantes.</li>
-<li><a href="requisitos-de-avaliacao/">Requisitos de avaliação</a>. Propósito, decisões <code>D1</code> a <code>D4</code>, características priorizadas e requisitos <code>R1</code> a <code>R5</code>.</li>
-<li><a href="escopo-da-avaliacao/">Escopo da avaliação</a>. Objetos, fluxos, ambientes, profundidade, exclusões, limites de validade e relação com os ODS.</li>
-<li><a href="../criterios/fase1/">Critérios de avaliação da Fase 1</a>, disciplina Qualidade de Software 1, UnB/FGA, 2026/2.</li>
-<li><strong>ISO/IEC 25010:2011</strong>: <em>Systems and software engineering: Systems and software Quality Requirements and Evaluation (SQuaRE): System and software quality models</em>.</li>
-</ul>
+<p><a id="s1"></a></p>
+<blockquote>
+<p>[S1] <strong>ISO/IEC 25010:2011</strong>: <em>Systems and software engineering: Systems and software Quality Requirements and Evaluation (SQuaRE): System and software quality models</em>.</p>
+<p><a href="produto-e-contexto/">Produto e contexto</a>. Caracterização da Khan Academy, stakeholders, interfaces, dependências e perfis de estudantes.</p>
+<p><a href="requisitos-de-avaliacao/">Requisitos de avaliação</a>. Propósito, decisões <a href="requisitos-de-avaliacao/#13-requisitante-e-destinatarios-dos-resultados"><code>D1</code></a> a <a href="requisitos-de-avaliacao/#13-requisitante-e-destinatarios-dos-resultados"><code>D4</code></a>, características priorizadas e requisitos <a href="requisitos-de-avaliacao/#4-rastreabilidade-caracteristica-interessado-e-justificativa"><code>R1</code></a> a <a href="requisitos-de-avaliacao/#4-rastreabilidade-caracteristica-interessado-e-justificativa"><code>R5</code></a>.</p>
+<p><a href="escopo-da-avaliacao/">Escopo da avaliação</a>. Objetos, fluxos, ambientes, profundidade, exclusões, limites de validade e relação com os ODS.</p>
+<p><a href="../criterios/fase1/">Critérios de avaliação da Fase 1</a>, disciplina Qualidade de Software 1, UnB/FGA, 2026/2.</p>
+</blockquote>
 <h2 id="historico-de-versoes">Histórico de versões</h2>
 <table>
 <thead>
@@ -305,6 +314,13 @@
 <td style="text-align: left;">Estruturação da visão geral da Fase 1, organização dos artefatos e síntese da delimitação e da rastreabilidade com a Fase 2.</td>
 <td style="text-align: left;"><a href="https://github.com/menali17">Enzo Menali</a></td>
 <td style="text-align: left;"><a href="https://github.com/luisa12ll">Luisa de Souza</a></td>
+</tr>
+<tr>
+<td style="text-align: center;">1.1</td>
+<td style="text-align: center;">26/10/2026</td>
+<td style="text-align: left;">Padronização e inserção de hyperlinks</td>
+<td style="text-align: left;"><a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
+<td style="text-align: left;"><a href="https://github.com/menali17">Enzo Menali</a></td>
 </tr>
 </tbody>
 </table></div>
@@ -338,35 +354,10 @@
     <script>var base_url = ".."</script>
     
     <script src="../js/base.js"></script>
-    <script src="../search/main.js"></script>
+    <script src="../js/mathjax.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">
-                    <span aria-hidden="true">&times;</span>
-                    <span class="sr-only">Close</span>
-                </button>
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-            </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

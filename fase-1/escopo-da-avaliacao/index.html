@@ -159,6 +159,12 @@
                         
                             
 <li >
+    <a href="../../gestao/artigo/">Artigo</a>
+</li>
+
+                        
+                            
+<li >
     <a href="../../gestao/plano_de_medicao/">Plano de Medição</a>
 </li>
 
@@ -172,6 +178,12 @@
                             
 <li >
     <a href="../../gestao/horas/">Registro de Horas</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../gestao/horas_consolidadas/">Horas Cadastradas</a>
 </li>
 
                         
@@ -203,11 +215,6 @@
                 </ul>
 
             <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                            <i class="fas fa-search"></i> Search
-                        </a>
-                    </li>
                     <li >
                         <a rel="prev" href="../requisitos-de-avaliacao/">
                             <i class="fas fa-arrow-left"></i> Previous
@@ -258,13 +265,17 @@
         <div class="col-md-9" role="main">
 
 <h1 id="escopo-da-avaliacao">Escopo da avaliação</h1>
+<p><strong>Versão 1.4</strong></p>
+<p>Este documento apresenta as definições que orientam a delimitação da avaliação da qualidade do produto de software Khan Academy, estabelecendo uma base para a condução dos ensaios e a produção de evidências. Sua elaboração considera as características de qualidade selecionadas nos Requisitos de avaliação e as informações sobre o produto e seu contexto de uso descritas no artefato Produto e contexto de uso.</p>
+<p>Dessa forma, o documento complementa os demais artefatos da avaliação e mantém a rastreabilidade entre os requisitos estabelecidos, as atividades planejadas e as métricas a serem definidas na <a href="../../fase-2/">Fase 2</a> contribuindo para a coerência entre as necessidades identificadas e as decisões que a avaliação pretende apoiar.</p>
 <p><a id="escopo-e-objetos"></a></p>
 <h2 id="1-escopo-e-objetos-de-avaliacao">1. Escopo e objetos de avaliação</h2>
 <h3 id="11-foco-da-avaliacao">1.1 Foco da avaliação</h3>
-<p>A avaliação examina a qualidade externa da <a href="https://pt.khanacademy.org/">Khan Academy</a> nas características <strong>Eficiência de desempenho</strong>, <strong>Portabilidade</strong> e <strong>Usabilidade</strong>, conforme as subcaracterísticas selecionadas nos <a href="../requisitos-de-avaliacao/">Requisitos de avaliação</a>: comportamento temporal, utilização de recursos, adaptabilidade, acessibilidade e apreensibilidade.</p>
+<p>A avaliação examina a qualidade externa da Khan Academy nas características <strong>Eficiência de desempenho</strong>, <strong>Portabilidade</strong> e <strong>Usabilidade</strong>, conforme as subcaracterísticas selecionadas nos <a href="../requisitos-de-avaliacao/">Requisitos de avaliação</a>: comportamento temporal, utilização de recursos, adaptabilidade, acessibilidade e apreensibilidade.</p>
 <p>O objeto é exclusivamente a <strong>plataforma web acessada por navegadores em computadores</strong>. A equipe observa comportamentos disponíveis pela interface pública, sem acesso ao código-fonte, à infraestrutura de servidores ou a dados internos. Aplicativos nativos e navegadores de celulares não fazem parte da avaliação.</p>
-<p>Os perfis de estudantes e as condições de uso que fundamentam esse recorte estão descritos em <a href="../produto-e-contexto/">Produto e contexto</a>. O escopo não pressupõe que a plataforma atende a esses perfis; ele define como produzir evidências sobre as barreiras e os comportamentos observáveis relevantes.</p>
+<p>Os perfis de estudantes e as condições de uso que fundamentam esse recorte estão descritos em <a href="../produto-e-contexto/">Produto e contexto</a>. O escopo não pressupõe que a plataforma atende a esses perfis, ele define como produzir evidências sobre as barreiras e os comportamentos observáveis relevantes.</p>
 <h3 id="12-fluxos-avaliados">1.2 Fluxos avaliados</h3>
+<p><a id="fluxos"></a></p>
 <p>Os ensaios utilizam quatro fluxos identificados de <code>FL1</code> a <code>FL4</code>. Os três primeiros representam a jornada central de estudo e recebem maior profundidade. O quarto é secundário e serve para verificar a consulta ao próprio progresso.</p>
 <table>
 <thead>
@@ -302,7 +313,7 @@
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 1. Fluxos e saídas observáveis incluídos na avaliação. Fonte: Elaborada por: <a href="https://github.com/menali17">Enzo Menali</a></em></p>
+<p><em>Tabela 1. Fluxos e saídas observáveis incluídos na avaliação. Fonte: Elaborada por: <a href="https://github.com/menali17">Enzo Menali</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
 <p>A autenticação é uma precondição dos ensaios, não um objeto de avaliação. Será utilizada uma conta de teste controlada pela equipe, sem dados pessoais de estudantes menores de idade. O painel de pais ou responsáveis não integra os fluxos principais porque acrescentaria outro papel, vinculação entre contas e tarefas que não são necessárias para avaliar a jornada central do estudante.</p>
 <p><a id="ambientes-de-teste"></a></p>
 <h2 id="2-ambientes-de-teste">2. Ambientes de teste</h2>
@@ -315,6 +326,7 @@
 </ul>
 <p>As versões exatas serão registradas na coleta. A escolha de versões estáveis vigentes evita fixar antecipadamente números que podem mudar antes dos ensaios.</p>
 <h3 id="22-matriz-direcionada-de-ambientes">2.2 Matriz direcionada de ambientes</h3>
+<p><a id="ambientes"></a></p>
 <p>A Tabela 2 define combinações com finalidade específica. A avaliação não executará o produto cartesiano de todos os navegadores, sistemas, fluxos e técnicas, pois isso reduziria a profundidade e a repetibilidade dentro do calendário disponível.</p>
 <table>
 <thead>
@@ -357,17 +369,17 @@
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 2. Matriz direcionada de ambientes e finalidade de cada combinação. Fonte: Elaborada por: <a href="https://github.com/menali17">Enzo Menali</a></em></p>
+<p><em>Tabela 2. Matriz direcionada de ambientes e finalidade de cada combinação. Fonte: Elaborada por: <a href="https://github.com/menali17">Enzo Menali</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
 <p>Windows e macOS serão executados em computadores reais disponíveis à equipe. O Ubuntu poderá ser executado em computador real ou máquina virtual; a modalidade e os recursos alocados serão registrados antes da coleta. Essa diferença será considerada na interpretação, sem comparar diretamente consumo de recursos entre máquinas distintas.</p>
 <h3 id="23-ambiente-de-referencia-para-desempenho">2.3 Ambiente de referência para desempenho</h3>
 <p>O cenário da escola pública motiva a observação de comportamento temporal e utilização de recursos, pois limitações de processamento, memória ou conectividade podem impedir a execução dos fluxos de estudo. Para tornar essa preocupação verificável sem presumir as condições de todas as escolas, os ensaios serão concentrados em um ambiente de referência documentado e em dois perfis de rede reproduzíveis.</p>
-<p>Comportamento temporal e utilização de recursos serão medidos somente no ambiente <code>A1</code>. Antes da coleta serão registrados processador, memória, sistema operacional, versão do navegador, resolução e processos relevantes em segundo plano.</p>
-<p>Cada tarefa dos fluxos <code>FL1</code> a <code>FL3</code> terá uma execução de aquecimento, não contabilizada, e cinco repetições válidas em cada condição de rede. Serão usadas duas condições: conexão sem limitação artificial e perfil controlado de conexão limitada. A largura de banda, a latência e eventual perda de pacotes do perfil limitado serão fixadas no plano de medição e registradas junto às evidências. A conta, o conteúdo, a sequência de passos e a configuração do navegador serão mantidos constantes entre repetições. As cinco repetições são um critério metodológico da equipe para reduzir o peso de ocorrências isoladas, não um mínimo prescrito pelas normas citadas.</p>
+<p>Comportamento temporal e utilização de recursos serão medidos somente no ambiente <a href="#ambientes"><code>A1</code></a>. Antes da coleta serão registrados processador, memória, sistema operacional, versão do navegador, resolução e processos relevantes em segundo plano.</p>
+<p>Cada tarefa dos fluxos <a href="#fluxos"><code>FL1</code></a> a <a href="#fluxos"><code>FL3</code></a> terá uma execução de aquecimento, não contabilizada, e cinco repetições válidas em cada condição de rede. Serão usadas duas condições: conexão sem limitação artificial e perfil controlado de conexão limitada. A largura de banda, a latência e eventual perda de pacotes do perfil limitado serão fixadas no plano de medição e registradas junto às evidências. A conta, o conteúdo, a sequência de passos e a configuração do navegador serão mantidos constantes entre repetições. As cinco repetições são um critério metodológico da equipe para reduzir o peso de ocorrências isoladas, não um mínimo prescrito pelas normas citadas.</p>
 <p>Esse desenho permite comparação interna sob condições controladas, mas não transforma o computador utilizado em representante de todos os equipamentos de escolas públicas.</p>
 <h3 id="24-acessibilidade-e-apreensibilidade">2.4 Acessibilidade e apreensibilidade</h3>
-<p>Os fluxos <code>FL1</code> a <code>FL3</code> serão percorridos manualmente com teclado e leitores de tela nas combinações <code>A1</code>, <code>A3</code> e <code>A4</code>. Uma inspeção automatizada baseada nas WCAG será usada como apoio nas mesmas páginas, sem substituir a verificação de que as tarefas podem ser executadas com tecnologia assistiva.</p>
-<p>Para o perfil de baixa visão, <code>FL1</code> a <code>FL3</code> também serão inspecionados em <code>A1</code>, na resolução de 1366 × 768, com duas configurações aplicadas separadamente: zoom do navegador em 200% e tema de alto contraste do Windows. A equipe verificará se textos, controles, foco e feedback permanecem perceptíveis, se há sobreposição ou corte de conteúdo e se cada tarefa pode ser concluída sem desativar a configuração. Serão registradas a configuração utilizada, capturas de tela e barreiras observadas. Esse procedimento é um recorte operacional da equipe e não representa todas as pessoas com baixa visão nem comprova conformidade integral com as WCAG.</p>
-<p>A apreensibilidade será observada nos fluxos <code>FL1</code> a <code>FL3</code>, no ambiente <code>A1</code>, com três a cinco participantes adultos que declarem não ter experiência anterior com a Khan Academy. Serão registrados conclusão da tarefa, erros observáveis, pedidos de ajuda e percepção relatada ao final. Os participantes serão identificados apenas por códigos e deverão consentir com a atividade. A quantidade é uma escolha da equipe compatível com uma investigação exploratória, não uma amostra estatística. Se a equipe não conseguir recrutar a amostra planejada, não será apresentada conclusão sobre estudantes reais; a inspeção da equipe será identificada como evidência exploratória.</p>
+<p>Os fluxos <a href="#fluxos"><code>FL1</code></a> a <a href="#fluxos"><code>FL3</code></a> serão percorridos manualmente com teclado e leitores de tela nas combinações <a href="#ambientes"><code>A1</code></a>, <a href="#ambientes"><code>A3</code></a> e <a href="#ambientes"><code>A4</code></a>. Uma inspeção automatizada baseada nas WCAG será usada como apoio nas mesmas páginas, sem substituir a verificação de que as tarefas podem ser executadas com tecnologia assistiva.</p>
+<p>Para o perfil de baixa visão,  <a href="#fluxos"><code>FL1</code></a> a <a href="#fluxos"><code>FL3</code></a> também serão inspecionados em <a href="#ambientes"><code>A1</code></a>, na resolução de 1366 × 768, com duas configurações aplicadas separadamente: zoom do navegador em 200% e tema de alto contraste do Windows. A equipe verificará se textos, controles, foco e feedback permanecem perceptíveis, se há sobreposição ou corte de conteúdo e se cada tarefa pode ser concluída sem desativar a configuração. Serão registradas a configuração utilizada, capturas de tela e barreiras observadas. Esse procedimento é um recorte operacional da equipe e não representa todas as pessoas com baixa visão nem comprova conformidade integral com as WCAG <a href="#s8">S8</a>.</p>
+<p>A apreensibilidade será observada nos fluxos <a href="#fluxos"><code>FL1</code></a> a <a href="#fluxos"><code>FL3</code></a>, no ambiente <a href="#ambientes"><code>A1</code></a>, com três a cinco participantes adultos que declarem não ter experiência anterior com a Khan Academy. Serão registrados conclusão da tarefa, erros observáveis, pedidos de ajuda e percepção relatada ao final. Os participantes serão identificados apenas por códigos e deverão consentir com a atividade. A quantidade é uma escolha da equipe compatível com uma investigação exploratória, não uma amostra estatística. Se a equipe não conseguir recrutar a amostra planejada, não será apresentada conclusão sobre estudantes reais; a inspeção da equipe será identificada como evidência exploratória.</p>
 <p><a id="profundidade"></a></p>
 <h2 id="3-profundidade-da-avaliacao">3. Profundidade da avaliação</h2>
 <p>A avaliação é externa e de caixa-preta. A Tabela 3 relaciona cada subcaracterística à profundidade planejada e às evidências que deverão permitir reprodução e auditoria dos resultados.</p>
@@ -383,37 +395,37 @@
 <tbody>
 <tr>
 <td>Comportamento temporal</td>
-<td><code>FL1</code> a <code>FL3</code> em <code>A1</code></td>
+<td><a href="#fluxos"><code>FL1</code></a> a <a href="#fluxos"><code>FL3</code></a> em <a href="#ambientes"><code>A1</code></a></td>
 <td>Uma execução de aquecimento e cinco repetições válidas por tarefa e condição de rede</td>
 <td>Marcações de início e fim, exportações de rede, configuração do perfil e planilha de resultados brutos</td>
 </tr>
 <tr>
 <td>Utilização de recursos</td>
-<td><code>FL1</code> a <code>FL3</code> em <code>A1</code></td>
+<td><a href="#fluxos"><code>FL1</code></a> a <a href="#fluxos"><code>FL3</code></a> em <a href="#ambientes"><code>A1</code></a></td>
 <td>Cinco repetições com a mesma conta e conteúdo, registrando os recursos definidos no plano de medição</td>
 <td>Registros do navegador ou sistema operacional, configuração do computador e planilha de resultados brutos</td>
 </tr>
 <tr>
 <td>Adaptabilidade</td>
-<td><code>FL1</code> a <code>FL4</code> em <code>A1</code> a <code>A4</code></td>
+<td><a href="#fluxos"><code>FL1</code></a> a <a href="#fluxos"><code>FL4</code></a> em <a href="#ambientes"><code>A1</code></a> a <a href="#ambientes"><code>A4</code></a></td>
 <td>Execução funcional dirigida em resoluções de referência de 1366 × 768 e 1920 × 1080, sem alterar o produto</td>
 <td>Lista de verificação por ambiente, capturas e descrição de divergências reproduzíveis</td>
 </tr>
 <tr>
 <td>Acessibilidade</td>
-<td><code>FL1</code> a <code>FL3</code> em <code>A1</code>, <code>A3</code> e <code>A4</code></td>
+<td><a href="#fluxos"><code>FL1</code></a> a <a href="#fluxos"><code>FL3</code></a> em <a href="#ambientes"><code>A1</code></a>, <a href="#ambientes"><code>A3</code></a> e <a href="#ambientes"><code>A4</code></a></td>
 <td>Navegação por teclado e leitor de tela; em <code>A1</code>, inspeções separadas com zoom de 200% e alto contraste do Windows; inspeção automatizada apenas como apoio</td>
 <td>Roteiro executado, configurações registradas, gravações ou capturas permitidas, achados manuais e relatório automatizado</td>
 </tr>
 <tr>
 <td>Apreensibilidade</td>
-<td><code>FL1</code> a <code>FL3</code> em <code>A1</code></td>
+<td><a href="#fluxos"><code>FL1</code></a> a <a href="#fluxos"><code>FL3</code></a> em <a href="#ambientes"><code>A1</code></a></td>
 <td>Três a cinco participantes adultos novos na plataforma, com tarefas e instruções iguais</td>
 <td>Formulário anonimizado de execução, erros, ajuda solicitada e percepção relatada</td>
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 3. Profundidade planejada e evidências por subcaracterística. Fonte: Elaborada por: <a href="https://github.com/menali17">Enzo Menali</a></em></p>
+<p><em>Tabela 3. Profundidade planejada e evidências por subcaracterística. Fonte: Elaborada por: <a href="https://github.com/menali17">Enzo Menali</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
 <p>As resoluções são condições experimentais definidas pela equipe para comparar uma área de visualização menor e outra maior em computadores. Elas não são apresentadas como estimativa da distribuição de telas da população. Métricas, fórmulas e critérios de julgamento serão especificados na Fase 2; este documento delimita os objetos, ambientes e intensidade dos ensaios.</p>
 <p><a id="fora-do-escopo"></a></p>
 <h2 id="4-elementos-fora-do-escopo-e-justificativas-dos-cortes">4. Elementos fora do escopo e justificativas dos cortes</h2>
@@ -465,7 +477,7 @@
 <tr>
 <td>Carga, estresse, disponibilidade e recuperação de servidores</td>
 <td>Característica</td>
-<td>Induzir carga ou falhas em produção não é autorizado e não é necessário para responder às decisões <code>D1</code> a <code>D3</code></td>
+<td>Induzir carga ou falhas em produção não é autorizado e não é necessário para responder às decisões <a href="../requisitos-de-avaliacao/#requisitante"><code>D1</code></a> a <a href="../requisitos-de-avaliacao/#requisitante"><code>D3</code></a></td>
 </tr>
 <tr>
 <td>Correção e qualidade pedagógica do conteúdo</td>
@@ -479,7 +491,7 @@
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 4. Elementos fora do escopo e justificativas dos cortes. Fonte: Elaborada por: <a href="https://github.com/menali17">Enzo Menali</a></em></p>
+<p><em>Tabela 4. Elementos fora do escopo e justificativas dos cortes. Fonte: Elaborada por: <a href="https://github.com/menali17">Enzo Menali</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
 <p><a id="limites-de-validade"></a></p>
 <h2 id="5-limites-de-validade-dos-resultados">5. Limites de validade dos resultados</h2>
 <p>Os limites da Tabela 5 orientam a redação das conclusões e impedem generalizações que as evidências não sustentam.</p>
@@ -499,22 +511,22 @@
 </tr>
 <tr>
 <td>Fluxos</td>
-<td><code>FL1</code> a <code>FL3</code> como fluxos centrais e <code>FL4</code> como fluxo secundário</td>
+<td><a href="#fluxos"><code>FL1</code></a> a <a href="#fluxos"><code>FL3</code></a> como fluxos centrais e <a href="#fluxos"><code>FL4</code></a> como fluxo secundário</td>
 <td>Os resultados não representam módulos, papéis e tarefas excluídos</td>
 </tr>
 <tr>
 <td>Ambientes</td>
-<td>Combinações <code>A1</code> a <code>A4</code>, nas versões registradas</td>
+<td>Combinações <a href="#ambientes"><code>A1</code></a> a <a href="#ambientes"><code>A4</code></a>, nas versões registradas</td>
 <td>Não representam outros sistemas, navegadores, versões antigas, aplicativos ou navegadores móveis</td>
 </tr>
 <tr>
 <td>Desempenho</td>
-<td>Computador de referência <code>A1</code> e dois perfis de rede controlados</td>
+<td>Computador de referência <a href="#ambientes"><code>A1</code></a> e dois perfis de rede controlados</td>
 <td>Não estima o desempenho de toda a população de computadores e conexões; permite apenas comparação nas condições registradas</td>
 </tr>
 <tr>
 <td>Tecnologias assistivas e baixa visão</td>
-<td>NVDA, VoiceOver e Orca, com navegação por teclado; em <code>A1</code>, zoom de 200% e alto contraste do Windows aplicados separadamente</td>
+<td>NVDA, VoiceOver e Orca, com navegação por teclado; em <a href="#ambientes"><code>A1</code></a>, zoom de 200% e alto contraste do Windows aplicados separadamente</td>
 <td>Não comprova conformidade integral com as WCAG nem representa todas as deficiências, tecnologias assistivas ou pessoas com baixa visão</td>
 </tr>
 <tr>
@@ -529,10 +541,10 @@
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 5. Condições e limites de validade dos resultados. Fonte: Elaborada por: <a href="https://github.com/menali17">Enzo Menali</a></em></p>
+<p><em>Tabela 5. Condições e limites de validade dos resultados. Fonte: Elaborada por: <a href="https://github.com/menali17">Enzo Menali</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
 <p><a id="ods"></a></p>
 <h2 id="6-alinhamento-com-os-objetivos-de-desenvolvimento-sustentavel">6. Alinhamento com os Objetivos de Desenvolvimento Sustentável</h2>
-<p>A relação com os Objetivos de Desenvolvimento Sustentável (ODS) é contextual e indireta. A avaliação produz evidências técnicas sobre barreiras de acesso ao software, mas não mede resultados educacionais, renda ou os indicadores populacionais oficiais. A Tabela 6 explicita essa distinção.</p>
+<p>A relação com os Objetivos de Desenvolvimento Sustentável (ODS) <a href="#s5">S5</a>, <a href="#s6">S6</a> e <a href="#s7">S7</a> é contextual e indireta. A avaliação produz evidências técnicas sobre barreiras de acesso ao software, mas não mede resultados educacionais, renda ou os indicadores populacionais oficiais. A Tabela 6 explicita essa distinção.</p>
 <table>
 <thead>
 <tr>
@@ -563,11 +575,11 @@
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 6. Relação entre ODS, metas, indicadores e evidências da avaliação. Fonte: Elaborada por: <a href="https://github.com/menali17">Enzo Menali</a>, com base na ONU e no IPEA</em></p>
+<p><em>Tabela 6. Relação entre ODS, metas, indicadores e evidências da avaliação. Fonte: Elaborada por: <a href="https://github.com/menali17">Enzo Menali</a> e <a href="https://github.com/JAugustoM">José Augusto</a>, com base na ONU e no IPEA</em></p>
 <p>Assim, os ODS orientam a relevância social das perguntas de avaliação, enquanto as conclusões permanecem restritas à qualidade observada do software nas condições declaradas.</p>
 <p><a id="rastreabilidade"></a></p>
 <h2 id="7-rastreabilidade-com-requisitos-e-decisoes">7. Rastreabilidade com requisitos e decisões</h2>
-<p>A Tabela 7 liga os requisitos <code>R1</code> a <code>R5</code> aos fluxos, ambientes e decisões definidos nos <a href="../requisitos-de-avaliacao/">Requisitos de avaliação</a>.</p>
+<p>A Tabela 7 liga os requisitos <a href="../requisitos-de-avaliacao/#rastreabilidade"><code>R1</code></a> a <a href="../requisitos-de-avaliacao/#rastreabilidade"><code>R5</code></a> aos fluxos, ambientes e decisões definidos nos <a href="../requisitos-de-avaliacao/#rastreabilidade">Requisitos de avaliação</a>.</p>
 <table>
 <thead>
 <tr>
@@ -581,58 +593,80 @@
 </thead>
 <tbody>
 <tr>
-<td><code>R1</code></td>
+<td><a href="../requisitos-de-avaliacao/#rastreabilidade"><code>R1</code></a></td>
 <td>Comportamento temporal</td>
-<td><code>FL1</code> a <code>FL3</code></td>
-<td><code>A1</code></td>
-<td><code>D1</code></td>
+<td><a href="#fluxos"><code>FL1</code></a> a <a href="#fluxos"><code>FL3</code></a></td>
+<td><a href="#ambientes"><code>A1</code></a></td>
+<td><a href="../requisitos-de-avaliacao/#requisitante"><code>D1</code></a></td>
 <td>Cinco repetições por tarefa e condição de rede no ambiente de referência</td>
 </tr>
 <tr>
-<td><code>R2</code></td>
+<td><a href="../requisitos-de-avaliacao/#rastreabilidade"><code>R2</code></a></td>
 <td>Utilização de recursos</td>
-<td><code>FL1</code> a <code>FL3</code></td>
-<td><code>A1</code></td>
-<td><code>D1</code></td>
+<td><a href="#fluxos"><code>FL1</code></a> a <a href="#fluxos"><code>FL3</code></a></td>
+<td><a href="#ambientes"><code>A1</code></a></td>
+<td><a href="../requisitos-de-avaliacao/#requisitante"><code>D1</code></a></td>
 <td>Registros instrumentais repetidos, associados à configuração do computador</td>
 </tr>
 <tr>
-<td><code>R3</code></td>
+<td><a href="../requisitos-de-avaliacao/#rastreabilidade"><code>R3</code></a></td>
 <td>Adaptabilidade</td>
-<td><code>FL1</code> a <code>FL4</code></td>
-<td><code>A1</code> a <code>A4</code></td>
-<td><code>D1</code></td>
+<td><a href="#fluxos"><code>FL1</code></a> a <a href="#fluxos"><code>FL4</code></a></td>
+<td><a href="#ambientes"><code>A1</code></a> a <a href="#ambientes"><code>A4</code></a></td>
+<td><a href="../requisitos-de-avaliacao/#requisitante"><code>D1</code></a></td>
 <td>Verificação dirigida nos três motores, três sistemas e duas resoluções de computador</td>
 </tr>
 <tr>
-<td><code>R4</code></td>
+<td><a href="../requisitos-de-avaliacao/#rastreabilidade"><code>R4</code></a></td>
 <td>Acessibilidade</td>
-<td><code>FL1</code> a <code>FL3</code></td>
-<td><code>A1</code>, <code>A3</code> e <code>A4</code></td>
+<td><a href="#fluxos"><code>FL1</code></a> a <a href="#fluxos"><code>FL3</code></a></td>
+<td><a href="#ambientes"><code>A1</code></a>, <a href="#ambientes"><code>A3</code></a> e <a href="#ambientes"><code>A4</code></a></td>
 <td><code>D2</code></td>
-<td>Ensaios com NVDA, VoiceOver e Orca e teclado; em <code>A1</code>, inspeções separadas com zoom de 200% e alto contraste; inspeção automatizada complementar</td>
+<td>Ensaios com NVDA, VoiceOver e Orca e teclado; em <a href="#ambientes"><code>A1</code></a>, inspeções separadas com zoom de 200% e alto contraste; inspeção automatizada complementar</td>
 </tr>
 <tr>
-<td><code>R5</code></td>
+<td><a href="../requisitos-de-avaliacao/#rastreabilidade"><code>R5</code></a></td>
 <td>Apreensibilidade</td>
-<td><code>FL1</code> a <code>FL3</code></td>
-<td><code>A1</code></td>
-<td><code>D3</code></td>
+<td><a href="#fluxos"><code>FL1</code></a> a <a href="#fluxos"><code>FL3</code></a></td>
+<td><a href="#ambientes"><code>A1</code></a></td>
+<td><a href="../requisitos-de-avaliacao/#requisitante"><code>D3</code></a></td>
 <td>Tarefas com três a cinco participantes adultos novos na plataforma, com registros anonimizados</td>
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 7. Rastreabilidade entre requisitos, fluxos, ambientes e decisões. Fonte: Elaborada por: <a href="https://github.com/menali17">Enzo Menali</a></em></p>
+<p><em>Tabela 7. Rastreabilidade entre requisitos, fluxos, ambientes e decisões. Fonte: Elaborada por: <a href="https://github.com/menali17">Enzo Menali</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
 <h2 id="referencias">Referências</h2>
+<p><a id="s1"></a></p>
 <blockquote>
-<p>BRASIL. Instituto de Pesquisa Econômica Aplicada (IPEA). <strong>Metas e Indicadores Nacionais dos Objetivos de Desenvolvimento Sustentável</strong>. Brasília: IPEA, 2024. Disponível em: <a href="https://www.ipea.gov.br/ods/">https://www.ipea.gov.br/ods/</a>. Acesso em: 20 out. 2026.</p>
-<p>INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. <strong>ISO/IEC 25010:2011</strong>: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - System and software quality models. Genebra: ISO, 2011. Disponível em: <a href="https://www.iso.org/standard/35733.html">https://www.iso.org/standard/35733.html</a>. Acesso em: 20 out. 2026.</p>
-<p>INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. <strong>ISO/IEC 25023:2016</strong>: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - Measurement of system and software product quality. Genebra: ISO, 2016. Disponível em: <a href="https://www.iso.org/standard/35747.html">https://www.iso.org/standard/35747.html</a>. Acesso em: 20 out. 2026.</p>
-<p>INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. <strong>ISO/IEC 25040:2011</strong>: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - Evaluation process. Genebra: ISO, 2011. Disponível em: <a href="https://www.iso.org/standard/35765.html">https://www.iso.org/standard/35765.html</a>. Acesso em: 20 out. 2026.</p>
-<p>ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU). <strong>Indicadores dos Objetivos de Desenvolvimento Sustentável: Meta 4.5</strong>. Nova York: Divisão de Estatística das Nações Unidas. Disponível em: <a href="https://unstats.un.org/sdgs/metadata/?Goal=4&amp;Target=4.5">https://unstats.un.org/sdgs/metadata/?Goal=4&amp;Target=4.5</a>. Acesso em: 20 out. 2026.</p>
-<p>ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU). <strong>Indicadores dos Objetivos de Desenvolvimento Sustentável: Meta 4.a</strong>. Nova York: Divisão de Estatística das Nações Unidas. Disponível em: <a href="https://unstats.un.org/sdgs/metadata/?Goal=4&amp;Target=4.a">https://unstats.un.org/sdgs/metadata/?Goal=4&amp;Target=4.a</a>. Acesso em: 20 out. 2026.</p>
-<p>ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU). <strong>Indicadores dos Objetivos de Desenvolvimento Sustentável: Meta 10.2</strong>. Nova York: Divisão de Estatística das Nações Unidas. Disponível em: <a href="https://unstats.un.org/sdgs/metadata/?Goal=10&amp;Target=10.2">https://unstats.un.org/sdgs/metadata/?Goal=10&amp;Target=10.2</a>. Acesso em: 20 out. 2026.</p>
-<p>WORLD WIDE WEB CONSORTIUM (W3C). <strong>Web Content Accessibility Guidelines (WCAG) 2.1</strong>. W3C Recommendation, 2018. Disponível em: <a href="https://www.w3.org/TR/WCAG21/">https://www.w3.org/TR/WCAG21/</a>. Acesso em: 20 out. 2026.</p>
+<p>[S1] BRASIL. Instituto de Pesquisa Econômica Aplicada (IPEA). <strong>Metas e Indicadores Nacionais dos Objetivos de Desenvolvimento Sustentável</strong>. Brasília: IPEA, 2024. Disponível em: <a href="https://www.ipea.gov.br/ods/">https://www.ipea.gov.br/ods/</a>. Acesso em: 20 out. 2026.</p>
+</blockquote>
+<p><a id="s2"></a></p>
+<blockquote>
+<p>[S2] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. <strong>ISO/IEC 25010:2011</strong>: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - System and software quality models. Genebra: ISO, 2011. Disponível em: <a href="https://www.iso.org/standard/35733.html">https://www.iso.org/standard/35733.html</a>. Acesso em: 20 out. 2026.</p>
+</blockquote>
+<p><a id="s3"></a></p>
+<blockquote>
+<p>[S3] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. <strong>ISO/IEC 25023:2016</strong>: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - Measurement of system and software product quality. Genebra: ISO, 2016. Disponível em: <a href="https://www.iso.org/standard/35747.html">https://www.iso.org/standard/35747.html</a>. Acesso em: 20 out. 2026.</p>
+</blockquote>
+<p><a id="s4"></a></p>
+<blockquote>
+<p>[S4] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. <strong>ISO/IEC 25040:2011</strong>: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - Evaluation process. Genebra: ISO, 2011. Disponível em: <a href="https://www.iso.org/standard/35765.html">https://www.iso.org/standard/35765.html</a>. Acesso em: 20 out. 2026.</p>
+</blockquote>
+<p><a id="s5"></a></p>
+<blockquote>
+<p>[S5] ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU). <strong>Indicadores dos Objetivos de Desenvolvimento Sustentável: Meta 4.5</strong>. Nova York: Divisão de Estatística das Nações Unidas. Disponível em: <a href="https://unstats.un.org/sdgs/metadata/?Goal=4&amp;Target=4.5">https://unstats.un.org/sdgs/metadata/?Goal=4&amp;Target=4.5</a>. Acesso em: 20 out. 2026.</p>
+</blockquote>
+<p><a id="s6"></a></p>
+<blockquote>
+<p>[S6] ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU). <strong>Indicadores dos Objetivos de Desenvolvimento Sustentável: Meta 4.a</strong>. Nova York: Divisão de Estatística das Nações Unidas. Disponível em: <a href="https://unstats.un.org/sdgs/metadata/?Goal=4&amp;Target=4.a">https://unstats.un.org/sdgs/metadata/?Goal=4&amp;Target=4.a</a>. Acesso em: 20 out. 2026.</p>
+</blockquote>
+<p><a id="s7"></a></p>
+<blockquote>
+<p>[S7] ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU). <strong>Indicadores dos Objetivos de Desenvolvimento Sustentável: Meta 10.2</strong>. Nova York: Divisão de Estatística das Nações Unidas. Disponível em: <a href="https://unstats.un.org/sdgs/metadata/?Goal=10&amp;Target=10.2">https://unstats.un.org/sdgs/metadata/?Goal=10&amp;Target=10.2</a>. Acesso em: 20 out. 2026.</p>
+</blockquote>
+<p><a id="s8"></a></p>
+<blockquote>
+<p>[S8] WORLD WIDE WEB CONSORTIUM (W3C). <strong>Web Content Accessibility Guidelines (WCAG) 2.1</strong>. W3C Recommendation, 2018. Disponível em: <a href="https://www.w3.org/TR/WCAG21/">https://www.w3.org/TR/WCAG21/</a>. Acesso em: 20 out. 2026.</p>
 </blockquote>
 <h2 id="historico-de-versoes">Histórico de versões</h2>
 <table>
@@ -651,21 +685,21 @@
 <td>18/10/2026</td>
 <td>Criação do documento com objetos, ambientes, profundidade, cortes, limites de validade e alinhamento com ODS 4 e 10</td>
 <td><a href="https://github.com/JAugustoM">José Augusto</a></td>
-<td></td>
+<td><a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
 </tr>
 <tr>
 <td>1.1</td>
 <td>18/10/2026</td>
 <td>Padronização de tabelas e referências</td>
 <td><a href="https://github.com/JAugustoM">José Augusto</a></td>
-<td></td>
+<td><a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
 </tr>
 <tr>
 <td>1.2</td>
 <td>20/10/2026</td>
 <td>Delimitação da plataforma web em computadores, matriz direcionada de ambientes, profundidade por subcaracterística e revisão do vínculo com os ODS</td>
 <td><a href="https://github.com/menali17">Enzo Menali</a></td>
-<td></td>
+<td><a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
 </tr>
 <tr>
 <td>1.3</td>
@@ -673,6 +707,13 @@
 <td>Inclusão da inspeção delimitada para baixa visão com zoom e alto contraste no ambiente <code>A1</code></td>
 <td><a href="https://github.com/menali17">Enzo Menali</a></td>
 <td><a href="https://github.com/luisa12ll">Luisa de Souza</a></td>
+</tr>
+<tr>
+<td>1.4</td>
+<td>26/10/2026</td>
+<td>Padronização e introdução do artefato</td>
+<td><a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
+<td><a href="https://github.com/JAugustoM">José Augusto</a></td>
 </tr>
 </tbody>
 </table></div>
@@ -706,35 +747,10 @@
     <script>var base_url = "../.."</script>
     
     <script src="../../js/base.js"></script>
-    <script src="../../search/main.js"></script>
+    <script src="../../js/mathjax.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">
-                    <span aria-hidden="true">&times;</span>
-                    <span class="sr-only">Close</span>
-                </button>
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-            </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

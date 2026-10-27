@@ -159,6 +159,12 @@
                         
                             
 <li >
+    <a href="../../gestao/artigo/">Artigo</a>
+</li>
+
+                        
+                            
+<li >
     <a href="../../gestao/plano_de_medicao/">Plano de Medição</a>
 </li>
 
@@ -172,6 +178,12 @@
                             
 <li >
     <a href="../../gestao/horas/">Registro de Horas</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../gestao/horas_consolidadas/">Horas Cadastradas</a>
 </li>
 
                         
@@ -203,18 +215,13 @@
                 </ul>
 
             <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                            <i class="fas fa-search"></i> Search
-                        </a>
-                    </li>
                     <li >
                         <a rel="prev" href="../criterios-julgamento/">
                             <i class="fas fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="next" href="../../gestao/plano_de_medicao/">
+                        <a rel="next" href="../../gestao/artigo/">
                             Next <i class="fas fa-arrow-right"></i>
                         </a>
                     </li>
@@ -229,7 +236,9 @@
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="first-level active"><a href="#diagrama-gqm">Diagrama GQM</a></li>
-            <li class="second-level"><a href="#matriz-resumida-gqhm">Matriz resumida G–Q–H–M</a></li>
+            <li class="second-level"><a href="#1-matriz-resumida-gqhm">1. Matriz resumida G–Q–H–M</a></li>
+                
+            <li class="second-level"><a href="#referencias">Referências</a></li>
                 
             <li class="second-level"><a href="#historico-de-versoes">Histórico de versões</a></li>
                 
@@ -237,16 +246,15 @@
 </div></div>
         <div class="col-md-9" role="main">
 
-<p><a href="../">← Visão geral da Fase 2</a></p>
 <h1 id="diagrama-gqm">Diagrama GQM</h1>
+<p><strong>Versão 1.3</strong></p>
 <p>O diagrama GQM apresentado nesta página resume a estrutura lógica da especificação elaborada na Fase 2. Ele organiza a relação entre os <strong>objetivos de medição (G)</strong>, as <strong>questões de avaliação (Q)</strong> e as <strong>métricas (M)</strong>, mantendo os mesmos identificadores utilizados nas demais páginas da documentação.</p>
 <p>Essa representação facilita a leitura integrada da Fase 2 e ajuda a verificar se cada métrica está, de fato, vinculada a uma questão e se cada questão deriva de um objetivo coerente com os requisitos priorizados na Fase 1. Assim, o gráfico complementa as páginas de <a href="../objetivos/">objetivos</a>, <a href="../questoes-hipoteses/">questões e hipóteses</a>, <a href="../metricas/">métricas</a> e <a href="../objetivos/">rastreabilidade</a>.</p>
 <p>A <strong>Figura 1</strong> apresenta os níveis conceitual (G), operacional (Q e H) e quantitativo (M), separados visualmente por objetivo. As setas ligam cada objetivo às questões, cada questão à sua hipótese e cada hipótese à medida que permite verificá-la.</p>
 <p><img alt="G1 ligado a Q1–Q4, G2 a Q5–Q6 e G3 a Q7–Q11; cada Q liga H de mesmo número e seus indicadores de M1–M14" src="../../assets/img/diagrama-gqm.svg" /></p>
 <p><em>Figura 1 — Hierarquia GQM por objetivo, com questões, hipóteses e componentes de medição. Fonte: elaboração de <a href="https://github.com/GeovannaUmbelino">Geovanna Umbelino</a> e <a href="https://github.com/CamilaSilvaC">Camila Cavalcante</a>  com base nos requisitos R1–R5 da Fase 1.</em></p>
-<h2 id="matriz-resumida-gqhm">Matriz resumida G–Q–H–M</h2>
+<h2 id="1-matriz-resumida-gqhm">1. Matriz resumida G–Q–H–M</h2>
 <p>A <strong>Tabela 1</strong> explicita as mesmas ligações da Figura 1. As métricas são analisadas individualmente, conforme suas respectivas <a href="../metricas/">fichas das métricas</a>.</p>
-<p><strong>Tabela 1 — Relação entre objetivos, questões, hipóteses e métricas.</strong></p>
 <table>
 <thead>
 <tr>
@@ -258,74 +266,78 @@
 </thead>
 <tbody>
 <tr>
-<td>G1</td>
-<td>Q1 — Tempo mediano</td>
+<td><a href="../objetivos/">G1</a></td>
+<td><a href="../questoes-hipoteses/">Q1</a> — Tempo mediano</td>
 <td>H1</td>
 <td>M1 (tempo) e M2 (conclusão)</td>
 </tr>
 <tr>
-<td>G1</td>
-<td>Q2 — CPU</td>
+<td><a href="../objetivos/">G1</a></td>
+<td><a href="../questoes-hipoteses/">Q2</a> — CPU</td>
 <td>H2</td>
 <td>M3</td>
 </tr>
 <tr>
-<td>G1</td>
-<td>Q3 — Picos de memória</td>
+<td><a href="../objetivos/">G1</a></td>
+<td><a href="../questoes-hipoteses/">Q3</a> — Picos de memória</td>
 <td>H3</td>
 <td>M4</td>
 </tr>
 <tr>
-<td>G1</td>
-<td>Q4 — Tráfego</td>
+<td><a href="../objetivos/">G1</a></td>
+<td><a href="../questoes-hipoteses/">Q4</a> — Tráfego</td>
 <td>H4</td>
 <td>M5</td>
 </tr>
 <tr>
-<td>G2</td>
-<td>Q5 — SO e navegador</td>
+<td><a href="../objetivos/">G2</a></td>
+<td><a href="../questoes-hipoteses/">Q5</a> — SO e navegador</td>
 <td>H5</td>
 <td>M6</td>
 </tr>
 <tr>
-<td>G2</td>
-<td>Q6 — Tamanho de janela</td>
+<td><a href="../objetivos/">G2</a></td>
+<td><a href="../questoes-hipoteses/">Q6</a> — Tamanho de janela</td>
 <td>H6</td>
 <td>M7</td>
 </tr>
 <tr>
-<td>G3</td>
-<td>Q7 — Teclado</td>
+<td><a href="../objetivos/">G3</a></td>
+<td><a href="../questoes-hipoteses/">Q7</a> — Teclado</td>
 <td>H7</td>
 <td>M8</td>
 </tr>
 <tr>
-<td>G3</td>
-<td>Q8 — Leitor de tela</td>
+<td><a href="../objetivos/">G3</a></td>
+<td><a href="../questoes-hipoteses/">Q8</a> — Leitor de tela</td>
 <td>H8</td>
 <td>M9</td>
 </tr>
 <tr>
-<td>G3</td>
-<td>Q9 — Ampliação</td>
+<td><a href="../objetivos/">G3</a></td>
+<td><a href="../questoes-hipoteses/">Q9</a> — Ampliação</td>
 <td>H9</td>
 <td>M10</td>
 </tr>
 <tr>
-<td>G3</td>
-<td>Q10 — Contraste</td>
+<td><a href="../objetivos/">G3</a></td>
+<td><a href="../questoes-hipoteses/">Q10</a> — Contraste</td>
 <td>H10</td>
 <td>M11</td>
 </tr>
 <tr>
-<td>G3</td>
-<td>Q11 — Autonomia inicial</td>
+<td><a href="../objetivos/">G3</a></td>
+<td><a href="../questoes-hipoteses/">Q11</a> — Autonomia inicial</td>
 <td>H11</td>
 <td>M12 (autonomia), M13 (erros) e M14 (tempo)</td>
 </tr>
 </tbody>
 </table>
-<p><em>Fonte: elaboração de <a href="https://github.com/CamilaSilvaC">Camila Cavalcante</a> e <a href="https://github.com/GeovannaUmbelino">Geovanna Umbelino</a> para a Fase 2.</em></p>
+<p><em>Tabela 1. Relação entre objetivos, questões, hipóteses e métricas. Fonte: elaboração de <a href="https://github.com/CamilaSilvaC">Camila Cavalcante</a> e <a href="https://github.com/GeovannaUmbelino">Geovanna Umbelino</a></em></p>
+<h2 id="referencias">Referências</h2>
+<blockquote>
+<p>BASILI, Victor R.; CALDIERA, Gianluigi; ROMBACH, H. Dieter. The Goal Question Metric Approach. In: <strong>Encyclopedia of Software Engineering</strong>. John Wiley &amp; Sons, 1994. p. 528–532. </p>
+</blockquote>
 <h2 id="historico-de-versoes">Histórico de versões</h2>
 <table>
 <thead>
@@ -357,12 +369,17 @@
 <td style="text-align: center;">20/10/2026</td>
 <td style="text-align: left;">Renumeração das métricas para M1–M14 e atualização da figura e da matriz.</td>
 <td style="text-align: left;"><a href="https://github.com/GeovannaUmbelino">Geovanna Umbelino</a></td>
-<td style="text-align: left;">Revisão pendente</td>
+<td style="text-align: left;"><a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
+</tr>
+<tr>
+<td style="text-align: center;">1.3</td>
+<td style="text-align: center;">21/10/2026</td>
+<td style="text-align: left;">Acrescenta referências bibliográficas usadas na elaboração do artefato</td>
+<td style="text-align: left;"><a href="https://github.com/CamilaSilvaC">Camila Cavalcante</a></td>
+<td style="text-align: left;"><a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
 </tr>
 </tbody>
-</table>
-<hr />
-<p><a href="../">Navegar pela Fase 2</a></p></div>
+</table></div>
         
         
     </div>
@@ -393,35 +410,10 @@
     <script>var base_url = "../.."</script>
     
     <script src="../../js/base.js"></script>
-    <script src="../../search/main.js"></script>
+    <script src="../../js/mathjax.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">
-                    <span aria-hidden="true">&times;</span>
-                    <span class="sr-only">Close</span>
-                </button>
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-            </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

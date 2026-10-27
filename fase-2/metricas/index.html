@@ -159,6 +159,12 @@
                         
                             
 <li >
+    <a href="../../gestao/artigo/">Artigo</a>
+</li>
+
+                        
+                            
+<li >
     <a href="../../gestao/plano_de_medicao/">Plano de Medição</a>
 </li>
 
@@ -172,6 +178,12 @@
                             
 <li >
     <a href="../../gestao/horas/">Registro de Horas</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../gestao/horas_consolidadas/">Horas Cadastradas</a>
 </li>
 
                         
@@ -203,11 +215,6 @@
                 </ul>
 
             <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                            <i class="fas fa-search"></i> Search
-                        </a>
-                    </li>
                     <li >
                         <a rel="prev" href="../questoes-hipoteses/">
                             <i class="fas fa-arrow-left"></i> Previous
@@ -228,36 +235,38 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#fase-2-fichas-das-metricas-gqm">Fase 2 — Fichas das métricas GQM</a></li>
-            <li class="second-level"><a href="#metricas-detalhadas">Métricas detalhadas</a></li>
+        <li class="first-level active"><a href="#fichas-das-metricas-gqm">Fichas das métricas GQM</a></li>
+            <li class="second-level"><a href="#1-metricas-detalhadas">1. Métricas detalhadas</a></li>
                 
-                <li class="third-level"><a href="#m1-tempo-observavel-por-etapa">M1 — Tempo observável por etapa</a></li>
-                <li class="third-level"><a href="#m2-taxa-de-conclusao-dos-fluxos">M2 — Taxa de conclusão dos fluxos</a></li>
-                <li class="third-level"><a href="#m3-utilizacao-de-cpu">M3 — Utilização de CPU</a></li>
-                <li class="third-level"><a href="#m4-pico-de-memoria">M4 — Pico de memória</a></li>
-                <li class="third-level"><a href="#m5-dados-transferidos">M5 — Dados transferidos</a></li>
-                <li class="third-level"><a href="#m6-execucao-por-ambiente">M6 — Execução por ambiente</a></li>
-                <li class="third-level"><a href="#m7-adaptacao-ao-tamanho-da-janela">M7 — Adaptação ao tamanho da janela</a></li>
-                <li class="third-level"><a href="#m8-execucao-por-teclado">M8 — Execução por teclado</a></li>
-                <li class="third-level"><a href="#m9-execucao-com-leitor-de-tela">M9 — Execução com leitor de tela</a></li>
-                <li class="third-level"><a href="#m10-preservacao-com-ampliacao">M10 — Preservação com ampliação</a></li>
-                <li class="third-level"><a href="#m11-conformidade-de-contraste">M11 — Conformidade de contraste</a></li>
-                <li class="third-level"><a href="#m12-conclusao-autonoma-por-estudantes-novos">M12 — Conclusão autônoma por estudantes novos</a></li>
-                <li class="third-level"><a href="#m13-taxa-de-erros-operacionais">M13 — Taxa de erros operacionais</a></li>
-                <li class="third-level"><a href="#m14-tempo-de-conclusao-autonoma">M14 — Tempo de conclusão autônoma</a></li>
+                <li class="third-level"><a href="#11-m1-tempo-observavel-por-etapa">1.1 M1: Tempo observável por etapa</a></li>
+                <li class="third-level"><a href="#12-m2-taxa-de-conclusao-dos-fluxos">1.2 M2: Taxa de conclusão dos fluxos</a></li>
+                <li class="third-level"><a href="#13-m3-utilizacao-de-cpu">1.3 M3: Utilização de CPU</a></li>
+                <li class="third-level"><a href="#14-m4-pico-de-memoria">1.4 M4: Pico de memória</a></li>
+                <li class="third-level"><a href="#15-m5-dados-transferidos">1.5 M5: Dados transferidos</a></li>
+                <li class="third-level"><a href="#16-m6-execucao-por-ambiente">1.6 M6: Execução por ambiente</a></li>
+                <li class="third-level"><a href="#17-m7-adaptacao-ao-tamanho-da-janela">1.7 M7: Adaptação ao tamanho da janela</a></li>
+                <li class="third-level"><a href="#18-m8-execucao-por-teclado">1.8 M8: Execução por teclado</a></li>
+                <li class="third-level"><a href="#19-m9-execucao-com-leitor-de-tela">1.9 M9: Execução com leitor de tela</a></li>
+                <li class="third-level"><a href="#110-m10-preservacao-com-ampliacao">1.10 M10: Preservação com ampliação</a></li>
+                <li class="third-level"><a href="#111-m11-conformidade-de-contraste">1.11 M11: Conformidade de contraste</a></li>
+                <li class="third-level"><a href="#112-m12-conclusao-autonoma-por-estudantes-novos">1.12 M12: Conclusão autônoma por estudantes novos</a></li>
+                <li class="third-level"><a href="#113-m13-taxa-de-erros-operacionais">1.13 M13: Taxa de erros operacionais</a></li>
+                <li class="third-level"><a href="#114-m14-tempo-de-conclusao-autonoma">1.14 M14: Tempo de conclusão autônoma</a></li>
+            <li class="second-level"><a href="#referencias">Referências</a></li>
+                
             <li class="second-level"><a href="#historico-de-versoes">Histórico de versões</a></li>
                 
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<p><a href="../">← Visão geral da Fase 2</a></p>
-<h1 id="fase-2-fichas-das-metricas-gqm">Fase 2 — Fichas das métricas GQM</h1>
-<p>As fichas abaixo especificam as métricas externas propostas para a avaliação <strong>exclusivamente da versão web da Khan Academy em computadores</strong>. Cada ficha segue a organização do exemplo fornecido: questão respondida, definição, fórmula, unidade, fonte, procedimento de coleta, interpretação, justificativa e níveis. Os 14 indicadores M1–M14 correspondem às questões Q1–Q11.</p>
-<p><strong>Situação:</strong> proposta de especificação, sem resultados coletados. Os níveis quantitativos estão definidos como <strong>proposta operacional do estudo</strong> em <a href="../criterios-julgamento/">critérios de julgamento</a>, incluindo fundamentação e condições de aplicação. Não constituem limites oficiais da ISO/IEC 25023:2016;</p>
-<h2 id="metricas-detalhadas">Métricas detalhadas</h2>
-<h3 id="m1-tempo-observavel-por-etapa">M1 — Tempo observável por etapa</h3>
-<p><strong>Questão respondida:</strong> Q1 / H1.</p>
+<h1 id="fichas-das-metricas-gqm">Fichas das métricas GQM</h1>
+<p><strong>Versão 1.3</strong></p>
+<p>As fichas abaixo especificam as métricas externas propostas para a avaliação <strong>exclusivamente da versão web da Khan Academy em computadores</strong>. Cada ficha segue a organização do exemplo fornecido: questão respondida, definição, fórmula, unidade, fonte, procedimento de coleta, interpretação, justificativa e níveis. Os 14 indicadores M1–M14 correspondem às <a href="../questoes-hipoteses/">questões</a> Q1–Q11.</p>
+<p><strong>Situação:</strong> proposta de especificação, sem resultados coletados. Os níveis quantitativos estão definidos como <strong>proposta operacional do estudo</strong> em <a href="../criterios-julgamento/">critérios de julgamento</a>, incluindo fundamentação e condições de aplicação. Não constituem limites oficiais da ISO/IEC 25023:2016 <a href="#s1">S1</a>.</p>
+<h2 id="1-metricas-detalhadas">1. Métricas detalhadas</h2>
+<h3 id="11-m1-tempo-observavel-por-etapa">1.1 M1: Tempo observável por etapa</h3>
+<p><strong>Questão respondida:</strong> <a href="../questoes-hipoteses/#31-q1-comportamento-temporal">Q1 / H1</a>.</p>
 <p><strong>Definição:</strong> Tempo observável de carregamento ou resposta de cada etapa, sem contabilizar duração pedagógica.</p>
 <p><strong>Fórmula ou indicador:</strong> Mediana de <code>t_fim − t_início</code> em execuções concluídas da mesma etapa e condição; registrar também P90 e bloqueios.</p>
 <p><strong>Unidade:</strong> s, mediana e P90.</p>
@@ -267,8 +276,8 @@
 <p><strong>Justificativa dos níveis:</strong> Para tempos de resposta da interface, utilizam-se marcos de 1 s e 10 s da literatura de interação, com faixa intermediária de 3 s proposta pelo estudo. A mediana resume o desempenho e o P90 evidencia esperas longas; excluir tempo pedagógico.</p>
 <p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, propostas para aprovação antes da coleta.</p>
 <hr />
-<h3 id="m2-taxa-de-conclusao-dos-fluxos">M2 — Taxa de conclusão dos fluxos</h3>
-<p><strong>Questão respondida:</strong> Q1 / H1.</p>
+<h3 id="12-m2-taxa-de-conclusao-dos-fluxos">1.2 M2: Taxa de conclusão dos fluxos</h3>
+<p><strong>Questão respondida:</strong> <a href="../questoes-hipoteses/#31-q1-comportamento-temporal">Q1 / H1</a>.</p>
 <p><strong>Definição:</strong> Proporção de tentativas iniciadas que efetivamente concluem o fluxo.</p>
 <p><strong>Fórmula ou indicador:</strong> <code>100 × C/N</code>, tentativas do fluxo concluídas / tentativas elegíveis; inclui tentativas não concluídas no denominador.</p>
 <p><strong>Unidade:</strong> %.</p>
@@ -278,8 +287,8 @@
 <p><strong>Justificativa dos níveis:</strong> Uma duração curta não comprova sucesso quando parte das tentativas falha. A avaliação usa todas as tentativas elegíveis no denominador.</p>
 <p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, propostas para aprovação antes da coleta.</p>
 <hr />
-<h3 id="m3-utilizacao-de-cpu">M3 — Utilização de CPU</h3>
-<p><strong>Questão respondida:</strong> Q2 / H2.</p>
+<h3 id="13-m3-utilizacao-de-cpu">1.3 M3: Utilização de CPU</h3>
+<p><strong>Questão respondida:</strong> <a href="../questoes-hipoteses/#32-q2-utilizacao-de-cpu">Q2 / H2</a>.</p>
 <p><strong>Definição:</strong> Percentual médio de utilização da CPU durante o fluxo e episódios de sobrecarga.</p>
 <p><strong>Fórmula ou indicador:</strong> <code>CPU_média = Σ CPU_i / n</code>; registrar pico, duração e ocorrências de sobrecarga.</p>
 <p><strong>Unidade:</strong> % de CPU conforme instrumento.</p>
@@ -289,8 +298,8 @@
 <p><strong>Justificativa dos níveis:</strong> Monitorar picos e duração da sobrecarga; a CPU média não é suficiente para aprovar uma execução que foi interrompida.</p>
 <p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, propostas para aprovação antes da coleta.</p>
 <hr />
-<h3 id="m4-pico-de-memoria">M4 — Pico de memória</h3>
-<p><strong>Questão respondida:</strong> Q3 / H3.</p>
+<h3 id="14-m4-pico-de-memoria">1.4 M4: Pico de memória</h3>
+<p><strong>Questão respondida:</strong> <a href="../questoes-hipoteses/#33-q3-utilizacao-de-memoria">Q3 / H3</a>.</p>
 <p><strong>Definição:</strong> Maior consumo de memória da sessão ou processo durante cada execução.</p>
 <p><strong>Fórmula ou indicador:</strong> <code>RAM_pico = max(RAM(t))</code> em cada execução válida.</p>
 <p><strong>Unidade:</strong> MB.</p>
@@ -300,8 +309,8 @@
 <p><strong>Justificativa dos níveis:</strong> A memória máxima é relevante para dispositivos com recursos limitados; a capacidade de memória efetivamente disponível para a sessão deve ser registrada.</p>
 <p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, propostas para aprovação antes da coleta.</p>
 <hr />
-<h3 id="m5-dados-transferidos">M5 — Dados transferidos</h3>
-<p><strong>Questão respondida:</strong> Q4 / H4.</p>
+<h3 id="15-m5-dados-transferidos">1.5 M5: Dados transferidos</h3>
+<p><strong>Questão respondida:</strong> <a href="../questoes-hipoteses/#34-q4-consumo-de-dados-de-rede">Q4 / H4</a>.</p>
 <p><strong>Definição:</strong> Volume enviado e recebido para concluir um fluxo padronizado.</p>
 <p><strong>Fórmula ou indicador:</strong> <code>D = bytes_recebidos + bytes_enviados</code> por fluxo concluído e padronizado.</p>
 <p><strong>Unidade:</strong> MB.</p>
@@ -311,8 +320,8 @@
 <p><strong>Justificativa dos níveis:</strong> A transferência deve ser comparada em fluxos concluídos e equivalentes, com cache, duração e qualidade dos vídeos controlados.</p>
 <p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, propostas para aprovação antes da coleta.</p>
 <hr />
-<h3 id="m6-execucao-por-ambiente">M6 — Execução por ambiente</h3>
-<p><strong>Questão respondida:</strong> Q5 / H5.</p>
+<h3 id="16-m6-execucao-por-ambiente">1.6 M6: Execução por ambiente</h3>
+<p><strong>Questão respondida:</strong> <a href="../questoes-hipoteses/#41-q5-adaptacao-entre-sistemas-operacionais-e-navegadores">Q5 / H5</a>.</p>
 <p><strong>Definição:</strong> Proporção de combinações elegíveis de sistema operacional, navegador e fluxo concluídas.</p>
 <p><strong>Fórmula ou indicador:</strong> <code>100 × C/N</code>, combinações SO–navegador–fluxo concluídas / combinações elegíveis testadas.</p>
 <p><strong>Unidade:</strong> %.</p>
@@ -322,8 +331,8 @@
 <p><strong>Justificativa dos níveis:</strong> A adaptabilidade exige que os fluxos essenciais funcionem nos ambientes elegíveis; resultados globais não anulam uma falha essencial.</p>
 <p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, propostas para aprovação antes da coleta.</p>
 <hr />
-<h3 id="m7-adaptacao-ao-tamanho-da-janela">M7 — Adaptação ao tamanho da janela</h3>
-<p><strong>Questão respondida:</strong> Q6 / H6.</p>
+<h3 id="17-m7-adaptacao-ao-tamanho-da-janela">1.7 M7: Adaptação ao tamanho da janela</h3>
+<p><strong>Questão respondida:</strong> <a href="../questoes-hipoteses/#42-q6-adaptacao-a-tamanhos-de-janela">Q6 / H6</a>.</p>
 <p><strong>Definição:</strong> Proporção de combinações de dimensão de janela e fluxo sem perda de controles essenciais.</p>
 <p><strong>Fórmula ou indicador:</strong> <code>100 × C/N</code>, combinações ambiente–dimensão–fluxo com conteúdo e controles preservados / testadas.</p>
 <p><strong>Unidade:</strong> %.</p>
@@ -333,8 +342,8 @@
 <p><strong>Justificativa dos níveis:</strong> A abertura da página não é suficiente: conteúdo e controles relevantes precisam permanecer operáveis nas dimensões avaliadas.</p>
 <p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, propostas para aprovação antes da coleta.</p>
 <hr />
-<h3 id="m8-execucao-por-teclado">M8 — Execução por teclado</h3>
-<p><strong>Questão respondida:</strong> Q7 / H7.</p>
+<h3 id="18-m8-execucao-por-teclado">1.8 M8: Execução por teclado</h3>
+<p><strong>Questão respondida:</strong> <a href="../questoes-hipoteses/#51-q7-navegacao-por-teclado">Q7 / H7</a>.</p>
 <p><strong>Definição:</strong> Proporção de tarefas essenciais concluídas apenas pelo teclado, sem barreiras.</p>
 <p><strong>Fórmula ou indicador:</strong> <code>100 × A/N</code>, tarefas concluídas só por teclado, sem barreira essencial / testadas.</p>
 <p><strong>Unidade:</strong> %.</p>
@@ -344,8 +353,8 @@
 <p><strong>Justificativa dos níveis:</strong> Barreiras em controles essenciais impedem acesso mesmo que outras tarefas funcionem por teclado.</p>
 <p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, propostas para aprovação antes da coleta.</p>
 <hr />
-<h3 id="m9-execucao-com-leitor-de-tela">M9 — Execução com leitor de tela</h3>
-<p><strong>Questão respondida:</strong> Q8 / H8.</p>
+<h3 id="19-m9-execucao-com-leitor-de-tela">1.9 M9: Execução com leitor de tela</h3>
+<p><strong>Questão respondida:</strong> <a href="../questoes-hipoteses/#52-q8-utilizacao-com-leitor-de-tela">Q8 / H8</a>.</p>
 <p><strong>Definição:</strong> Proporção de tarefas concluídas com leitor de tela e informações essenciais compreensíveis.</p>
 <p><strong>Fórmula ou indicador:</strong> <code>100 × A/N</code>, combinações tarefa–leitor com informação necessária percebida e conclusão / testadas.</p>
 <p><strong>Unidade:</strong> %.</p>
@@ -355,8 +364,8 @@
 <p><strong>Justificativa dos níveis:</strong> É necessário compreender a informação essencial e concluir a tarefa com tecnologia assistiva, não apenas detectar rótulos.</p>
 <p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, propostas para aprovação antes da coleta.</p>
 <hr />
-<h3 id="m10-preservacao-com-ampliacao">M10 — Preservação com ampliação</h3>
-<p><strong>Questão respondida:</strong> Q9 / H9.</p>
+<h3 id="110-m10-preservacao-com-ampliacao">1.10 M10: Preservação com ampliação</h3>
+<p><strong>Questão respondida:</strong> <a href="../questoes-hipoteses/#53-q9-utilizacao-com-ampliacao">Q9 / H9</a>.</p>
 <p><strong>Definição:</strong> Proporção de combinações de zoom e tarefa que preservam conteúdo e funcionalidade.</p>
 <p><strong>Fórmula ou indicador:</strong> <code>100 × A/N</code>, combinações com conteúdo e funções necessários preservados / testadas.</p>
 <p><strong>Unidade:</strong> %.</p>
@@ -366,8 +375,8 @@
 <p><strong>Justificativa dos níveis:</strong> A ampliação precisa preservar informação e funcionalidade; Q9 não deve ser confundida com redimensionamento de janela em Q6.</p>
 <p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, propostas para aprovação antes da coleta.</p>
 <hr />
-<h3 id="m11-conformidade-de-contraste">M11 — Conformidade de contraste</h3>
-<p><strong>Questão respondida:</strong> Q10 / H10.</p>
+<h3 id="111-m11-conformidade-de-contraste">1.11 M11: Conformidade de contraste</h3>
+<p><strong>Questão respondida:</strong> <a href="../questoes-hipoteses/#54-q10-contraste-e-alto-contraste">Q10 / H10</a>.</p>
 <p><strong>Definição:</strong> Proporção de elementos aplicáveis conformes ao critério de contraste selecionado, com verificação separada de uso em alto contraste.</p>
 <p><strong>Fórmula ou indicador:</strong> <code>100 × E_c/E_a</code>, elementos aplicáveis conformes / avaliados; registrar <strong>separadamente</strong> conclusão em alto contraste.</p>
 <p><strong>Unidade:</strong> % + registro de uso em alto contraste.</p>
@@ -377,8 +386,8 @@
 <p><strong>Justificativa dos níveis:</strong> Verificar critérios aplicáveis de contraste e, separadamente, a execução em alto contraste. Elementos essenciais não conformes impedem aprovação isolada por percentual.</p>
 <p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, propostas para aprovação antes da coleta.</p>
 <hr />
-<h3 id="m12-conclusao-autonoma-por-estudantes-novos">M12 — Conclusão autônoma por estudantes novos</h3>
-<p><strong>Questão respondida:</strong> Q11 / H11.</p>
+<h3 id="112-m12-conclusao-autonoma-por-estudantes-novos">1.12 M12: Conclusão autônoma por estudantes novos</h3>
+<p><strong>Questão respondida:</strong> <a href="../questoes-hipoteses/#55-q11-apreensibilidade">Q11 / H11</a>.</p>
 <p><strong>Definição:</strong> Proporção de primeiras tentativas concluídas sem assistência por participantes novos.</p>
 <p><strong>Fórmula ou indicador:</strong> <code>100 × S/N</code>, primeiras tentativas concluídas sem ajuda / primeiras tentativas elegíveis; apurar por tarefa e total.</p>
 <p><strong>Unidade:</strong> %.</p>
@@ -388,8 +397,8 @@
 <p><strong>Justificativa dos níveis:</strong> A primeira tentativa independente fornece evidência de apreensibilidade; a equipe deverá definir perfis, instrução padronizada e tarefas essenciais.</p>
 <p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, propostas para aprovação antes da coleta.</p>
 <hr />
-<h3 id="m13-taxa-de-erros-operacionais">M13 — Taxa de erros operacionais</h3>
-<p><strong>Questão respondida:</strong> Q11 / H11.</p>
+<h3 id="113-m13-taxa-de-erros-operacionais">1.13 M13: Taxa de erros operacionais</h3>
+<p><strong>Questão respondida:</strong> <a href="../questoes-hipoteses/#55-q11-apreensibilidade">Q11 / H11</a>.</p>
 <p><strong>Definição:</strong> Proporção de primeiras tentativas com pelo menos um erro operacional previamente definido.</p>
 <p><strong>Fórmula ou indicador:</strong> <code>100 × E/N</code>, primeiras tentativas com ao menos um erro operacional / primeiras tentativas elegíveis.</p>
 <p><strong>Unidade:</strong> %.</p>
@@ -399,8 +408,8 @@
 <p><strong>Justificativa dos níveis:</strong> Erros recorrentes podem indicar dificuldade de aprendizagem mesmo quando tarefas são concluídas. O protocolo deverá distinguir erros de exploração legítima e falha técnica.</p>
 <p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, propostas para aprovação antes da coleta.</p>
 <hr />
-<h3 id="m14-tempo-de-conclusao-autonoma">M14 — Tempo de conclusão autônoma</h3>
-<p><strong>Questão respondida:</strong> Q11 / H11.</p>
+<h3 id="114-m14-tempo-de-conclusao-autonoma">1.14 M14: Tempo de conclusão autônoma</h3>
+<p><strong>Questão respondida:</strong> <a href="../questoes-hipoteses/#55-q11-apreensibilidade">Q11 / H11</a>.</p>
 <p><strong>Definição:</strong> Tempo mediano das primeiras tentativas concluídas sem ajuda por estudantes novos.</p>
 <p><strong>Fórmula ou indicador:</strong> Mediana de <code>t_fim − t_início</code> das primeiras tentativas concluídas autonomamente; registrar separadamente falhas, abandonos e pedidos de ajuda.</p>
 <p><strong>Unidade:</strong> s, mediana por tarefa.</p>
@@ -409,7 +418,31 @@
 <p><strong>Interpretação:</strong> Tempo complementa autonomia, mas não compensa insucesso; referência deve ser própria da tarefa.</p>
 <p><strong>Justificativa dos níveis:</strong> As faixas propostas de 60, 120 e 180 segundos aplicam-se somente a tarefas curtas e padronizadas, não ao tempo pedagógico. Registrar abandonos e pedidos de ajuda à parte.</p>
 <p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, propostas para aprovação antes da coleta.</p>
-<hr />
+<h2 id="referencias">Referências</h2>
+<p><a id="s1"></a></p>
+<blockquote>
+<p>[S1] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. <strong>ISO/IEC 25023:2016</strong>: Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Measurement of system and software product quality. Genebra: ISO, 2016.</p>
+</blockquote>
+<p><a id="s2"></a></p>
+<blockquote>
+<p>[S2] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. <strong>ISO 9241-11:2018</strong>: Ergonomics of human-system interaction — Part 11: Usability: Definitions and concepts. Genebra: ISO, 2018.</p>
+</blockquote>
+<p><a id="s3"></a></p>
+<blockquote>
+<p>[S3] NIELSEN, Jakob. <strong>Response times: the 3 important limits</strong>. Nielsen Norman Group, 1 jan. 1993.</p>
+</blockquote>
+<p><a id="s4"></a></p>
+<blockquote>
+<p>[S4] WORLD WIDE WEB CONSORTIUM (W3C). <strong>Web Content Accessibility Guidelines (WCAG) 2.2</strong>. W3C Recommendation, 12 dez. 2024.</p>
+</blockquote>
+<p><a id="s5"></a></p>
+<blockquote>
+<p>[S5] GOOGLE. <strong>Performance monitor panel</strong>. Chrome for Developers, 16 maio 2024. Disponível em: <a href="https://developer.chrome.com/docs/devtools/performance-monitor">https://developer.chrome.com/docs/devtools/performance-monitor</a>. Acesso em: 17 out. 2026.</p>
+</blockquote>
+<p><a id="s6"></a></p>
+<blockquote>
+<p>[S6] GOOGLE. <strong>Network features reference</strong>. Chrome for Developers, 16 jul. 2024. Disponível em: <a href="https://developer.chrome.com/docs/devtools/network/reference">https://developer.chrome.com/docs/devtools/network/reference</a>. Acesso em: 17 out. 2026.</p>
+</blockquote>
 <h2 id="historico-de-versoes">Histórico de versões</h2>
 <table>
 <thead>
@@ -436,10 +469,22 @@
 <td style="text-align: left;"><a href="https://github.com/GeovannaUmbelino">Geovanna Umbelino</a></td>
 <td style="text-align: left;"><a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
 </tr>
+<tr>
+<td style="text-align: center;">1.2</td>
+<td style="text-align: center;">21/10/2026</td>
+<td style="text-align: left;">Inclusão das referências utilizadas para elaborar o artefato</td>
+<td style="text-align: left;"><a href="https://github.com/CamilaSilvaC">Camila Cavalcante</a></td>
+<td style="text-align: left;"><a href="https://github.com/GeovannaUmbelino">Geovanna Umbelino</a></td>
+</tr>
+<tr>
+<td style="text-align: center;">1.3</td>
+<td style="text-align: center;">26/10/2026</td>
+<td style="text-align: left;">Padronização</td>
+<td style="text-align: left;"><a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
+<td style="text-align: left;"><a href="https://github.com/CamilaSilvaC">Camila Cavalcante</a></td>
+</tr>
 </tbody>
-</table>
-<hr />
-<p><a href="../">Navegar pela Fase 2</a></p></div>
+</table></div>
         
         
     </div>
@@ -470,35 +515,10 @@
     <script>var base_url = "../.."</script>
     
     <script src="../../js/base.js"></script>
-    <script src="../../search/main.js"></script>
+    <script src="../../js/mathjax.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">
-                    <span aria-hidden="true">&times;</span>
-                    <span class="sr-only">Close</span>
-                </button>
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-            </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
