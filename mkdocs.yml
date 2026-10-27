@@ -17,6 +17,7 @@ nav:
       - Critérios de julgamento: fase-2/criterios-julgamento.md
       - Gráfico GQM: fase-2/grafico-gqm.md
   - Gestão:
+    - Artigo: gestao/artigo.md
       - Plano de Medição: gestao/plano_de_medicao.md
       - Uso de IA: gestao/uso_de_ia.md
       - Registro de Horas: gestao/horas.md

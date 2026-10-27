@@ -2,6 +2,8 @@
 
 Disciplina FGA0315 Qualidade de Software 1 | Profa. Cristiane Ramos | 2026-2
 
+**Versão 1.3**
+
 ![Imagem do Khan Academy](assets/img/logo_khan_academy.png)
 
 *Figura 1. Logo Khan Academy. Fonte: [Learning Engineering Virtual Institute](https://learning-engineering-virtual-institute.org/teams/khan-academy/.)*
@@ -18,7 +20,7 @@ Este site documenta a avaliação da qualidade do Khan Academy, plataforma de es
 1. [Fase 1: Requisitos de avaliação](fase-1/index.md): propósito, produto, stakeholders e características selecionadas.
 2. [Fase 2: Definição das métricas](fase-2/index.md): objetivos, questões, hipóteses e métricas (GQM), níveis de pontuação e critérios de julgamento.
 3. [Gestão do projeto](gestao/plano_de_medicao.md): cronograma, medições PSM/CID, interpretações e decisões.
-4. [Artigo](artigo/QSW_Aval_Qualidade_de_Produto_Khan_Academy.pdf): versões do artigo em PDF.
+4. [Artigo](gestao/artigo.md): explicação e justificativa da escolha do modelo do artigo.
 5. [Links do projeto](#links-do-projeto): repositório, releases e dados.
 
 As Fases 3 e 4 (planejamento e execução da avaliação) serão publicadas na Entrega 2.
@@ -47,6 +49,7 @@ As Fases 3 e 4 (planejamento e execução da avaliação) serão publicadas na E
 
 | Versão | Data | Descrição | Responsável | Revisor |
 |---|---|---|---|---|
-| 0.1 | 14/10/2026 | Criação da página inicial | [Pedro Lucas](https://github.com/Pwdrinho) | [Luisa de Souza](https://github.com/luisa12ll) |
-| 0.2 | 18/10/2026 | Correções de imagens da equipe e link repositório |[Luisa de Souza](https://github.com/luisa12ll) |
-| 0.3 | 21/10/2026 | Corrige links do sumário | [Pedro Lucas](https://github.com/Pwdrinho) | [Luisa de Souza](https://github.com/luisa12ll) |
+| 1.0 | 14/10/2026 | Criação da página inicial | [Pedro Lucas](https://github.com/Pwdrinho) | [Luisa de Souza](https://github.com/luisa12ll) |
+| 1.1 | 18/10/2026 | Correções de imagens da equipe e link repositório |[Luisa de Souza](https://github.com/luisa12ll) | [Pedro Lucas](https://github.com/Pwdrinho) |
+| 1.2 | 21/10/2026 | Corrige links do sumário | [Pedro Lucas](https://github.com/Pwdrinho) | [Luisa de Souza](https://github.com/luisa12ll) |
+| 1.3 | 26/10/2026 | Adiciona link release entrega 1 | [Pedro Lucas](https://github.com/Pwdrinho) | [Luisa de Souza](https://github.com/luisa12ll) |

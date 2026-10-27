@@ -1,16 +1,16 @@
-[← Visão geral da Fase 2](index.md)
-
 # Fichas das métricas GQM
 
-As fichas abaixo especificam as métricas externas propostas para a avaliação **exclusivamente da versão web da Khan Academy em computadores**. Cada ficha segue a organização do exemplo fornecido: questão respondida, definição, fórmula, unidade, fonte, procedimento de coleta, interpretação, justificativa e níveis. Os 14 indicadores M1–M14 correspondem às questões Q1–Q11.
+**Versão 1.3**
 
-**Situação:** proposta de especificação, sem resultados coletados. Os níveis quantitativos estão definidos como **proposta operacional do estudo** em [critérios de julgamento](criterios-julgamento.md), incluindo fundamentação e condições de aplicação. Não constituem limites oficiais da ISO/IEC 25023:2016;
+As fichas abaixo especificam as métricas externas propostas para a avaliação **exclusivamente da versão web da Khan Academy em computadores**. Cada ficha segue a organização do exemplo fornecido: questão respondida, definição, fórmula, unidade, fonte, procedimento de coleta, interpretação, justificativa e níveis. Os 14 indicadores M1–M14 correspondem às [questões](questoes-hipoteses.md) Q1–Q11.
+
+**Situação:** proposta de especificação, sem resultados coletados. Os níveis quantitativos estão definidos como **proposta operacional do estudo** em [critérios de julgamento](criterios-julgamento.md), incluindo fundamentação e condições de aplicação. Não constituem limites oficiais da ISO/IEC 25023:2016 [S1](#s1).
 
 ## 1. Métricas detalhadas
 
 ### 1.1 M1: Tempo observável por etapa
 
-**Questão respondida:** Q1 / H1.
+**Questão respondida:** [Q1 / H1](questoes-hipoteses.md#31-q1-comportamento-temporal).
 
 **Definição:** Tempo observável de carregamento ou resposta de cada etapa, sem contabilizar duração pedagógica.
 
@@ -32,7 +32,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 ### 1.2 M2: Taxa de conclusão dos fluxos
 
-**Questão respondida:** Q1 / H1.
+**Questão respondida:** [Q1 / H1](questoes-hipoteses.md#31-q1-comportamento-temporal).
 
 **Definição:** Proporção de tentativas iniciadas que efetivamente concluem o fluxo.
 
@@ -54,7 +54,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 ### 1.3 M3: Utilização de CPU
 
-**Questão respondida:** Q2 / H2.
+**Questão respondida:** [Q2 / H2](questoes-hipoteses.md#32-q2-utilizacao-de-cpu).
 
 **Definição:** Percentual médio de utilização da CPU durante o fluxo e episódios de sobrecarga.
 
@@ -76,7 +76,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 ### 1.4 M4: Pico de memória
 
-**Questão respondida:** Q3 / H3.
+**Questão respondida:** [Q3 / H3](questoes-hipoteses.md#33-q3-utilizacao-de-memoria).
 
 **Definição:** Maior consumo de memória da sessão ou processo durante cada execução.
 
@@ -98,7 +98,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 ### 1.5 M5: Dados transferidos
 
-**Questão respondida:** Q4 / H4.
+**Questão respondida:** [Q4 / H4](questoes-hipoteses.md#34-q4-consumo-de-dados-de-rede).
 
 **Definição:** Volume enviado e recebido para concluir um fluxo padronizado.
 
@@ -120,7 +120,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 ### 1.6 M6: Execução por ambiente
 
-**Questão respondida:** Q5 / H5.
+**Questão respondida:** [Q5 / H5](questoes-hipoteses.md#41-q5-adaptacao-entre-sistemas-operacionais-e-navegadores).
 
 **Definição:** Proporção de combinações elegíveis de sistema operacional, navegador e fluxo concluídas.
 
@@ -142,7 +142,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 ### 1.7 M7: Adaptação ao tamanho da janela
 
-**Questão respondida:** Q6 / H6.
+**Questão respondida:** [Q6 / H6](questoes-hipoteses.md#42-q6-adaptacao-a-tamanhos-de-janela).
 
 **Definição:** Proporção de combinações de dimensão de janela e fluxo sem perda de controles essenciais.
 
@@ -164,7 +164,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 ### 1.8 M8: Execução por teclado
 
-**Questão respondida:** Q7 / H7.
+**Questão respondida:** [Q7 / H7](questoes-hipoteses.md#51-q7-navegacao-por-teclado).
 
 **Definição:** Proporção de tarefas essenciais concluídas apenas pelo teclado, sem barreiras.
 
@@ -186,7 +186,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 ### 1.9 M9: Execução com leitor de tela
 
-**Questão respondida:** Q8 / H8.
+**Questão respondida:** [Q8 / H8](questoes-hipoteses.md#52-q8-utilizacao-com-leitor-de-tela).
 
 **Definição:** Proporção de tarefas concluídas com leitor de tela e informações essenciais compreensíveis.
 
@@ -208,7 +208,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 ### 1.10 M10: Preservação com ampliação
 
-**Questão respondida:** Q9 / H9.
+**Questão respondida:** [Q9 / H9](questoes-hipoteses.md#53-q9-utilizacao-com-ampliacao).
 
 **Definição:** Proporção de combinações de zoom e tarefa que preservam conteúdo e funcionalidade.
 
@@ -230,7 +230,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 ### 1.11 M11: Conformidade de contraste
 
-**Questão respondida:** Q10 / H10.
+**Questão respondida:** [Q10 / H10](questoes-hipoteses.md#54-q10-contraste-e-alto-contraste).
 
 **Definição:** Proporção de elementos aplicáveis conformes ao critério de contraste selecionado, com verificação separada de uso em alto contraste.
 
@@ -252,7 +252,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 ### 1.12 M12: Conclusão autônoma por estudantes novos
 
-**Questão respondida:** Q11 / H11.
+**Questão respondida:** [Q11 / H11](questoes-hipoteses.md#55-q11-apreensibilidade).
 
 **Definição:** Proporção de primeiras tentativas concluídas sem assistência por participantes novos.
 
@@ -274,7 +274,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 ### 1.13 M13: Taxa de erros operacionais
 
-**Questão respondida:** Q11 / H11.
+**Questão respondida:** [Q11 / H11](questoes-hipoteses.md#55-q11-apreensibilidade).
 
 **Definição:** Proporção de primeiras tentativas com pelo menos um erro operacional previamente definido.
 
@@ -296,7 +296,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 ### 1.14 M14: Tempo de conclusão autônoma
 
-**Questão respondida:** Q11 / H11.
+**Questão respondida:** [Q11 / H11](questoes-hipoteses.md#55-q11-apreensibilidade).
 
 **Definição:** Tempo mediano das primeiras tentativas concluídas sem ajuda por estudantes novos.
 
@@ -316,23 +316,35 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 ## Referências
 
-> INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25023:2016**: Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Measurement of system and software product quality. Genebra: ISO, 2016.
-> INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. **ISO 9241-11:2018**: Ergonomics of human-system interaction — Part 11: Usability: Definitions and concepts. Genebra: ISO, 2018.
-> NIELSEN, Jakob. **Response times: the 3 important limits**. Nielsen Norman Group, 1 jan. 1993.
-> WORLD WIDE WEB CONSORTIUM (W3C). **Web Content Accessibility Guidelines (WCAG) 2.2**. W3C Recommendation, 12 dez. 2024.
-> GOOGLE. **Performance monitor panel**. Chrome for Developers, 16 maio 2024. Disponível em: <https://developer.chrome.com/docs/devtools/performance-monitor>. Acesso em: 17 out. 2026.
-> GOOGLE. **Network features reference**. Chrome for Developers, 16 jul. 2024. Disponível em: <https://developer.chrome.com/docs/devtools/network/reference>. Acesso em: 17 out. 2026.
+<a id="s1"></a>
+
+> [S1] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25023:2016**: Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Measurement of system and software product quality. Genebra: ISO, 2016.
+
+<a id="s2"></a>
+
+> [S2] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. **ISO 9241-11:2018**: Ergonomics of human-system interaction — Part 11: Usability: Definitions and concepts. Genebra: ISO, 2018.
+
+<a id="s3"></a>
+
+> [S3] NIELSEN, Jakob. **Response times: the 3 important limits**. Nielsen Norman Group, 1 jan. 1993.
+
+<a id="s4"></a>
+
+> [S4] WORLD WIDE WEB CONSORTIUM (W3C). **Web Content Accessibility Guidelines (WCAG) 2.2**. W3C Recommendation, 12 dez. 2024.
+
+<a id="s5"></a>
+
+> [S5] GOOGLE. **Performance monitor panel**. Chrome for Developers, 16 maio 2024. Disponível em: <https://developer.chrome.com/docs/devtools/performance-monitor>. Acesso em: 17 out. 2026.
+
+<a id="s6"></a>
+
+> [S6] GOOGLE. **Network features reference**. Chrome for Developers, 16 jul. 2024. Disponível em: <https://developer.chrome.com/docs/devtools/network/reference>. Acesso em: 17 out. 2026.
 
 ## Histórico de versões
-
 
 | Versão | Data | Descrição | Responsável | Revisor |
 | :---: | :---: | :--- | :--- | :--- |
 | 1.0 | 17/10/2026 | Especificação das métricas de qualidade, incluindo definições, fórmulas, fontes de dados, procedimentos de coleta e critérios de interpretação. | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) | [Pedro Lucas](https://github.com/Pwdrinho) |
-| 1.1 | 20/10/2026 | Inclusão dos indicadores complementares de conclusão, erros e tempo sem alterar Q1–Q11. | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |[Pedro Lucas](https://github.com/Pwdrinho)   |
-| 1.2 | 21/10/2026 | Inclusão das referências utilizadas para elaborar o artefato |  [Camila Cavalcante](https://github.com/CamilaSilvaC) |[Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
-
-
----
-
-[Navegar pela Fase 2](index.md)
+| 1.1 | 20/10/2026 | Inclusão dos indicadores complementares de conclusão, erros e tempo sem alterar Q1–Q11. | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |[Pedro Lucas](https://github.com/Pwdrinho) |
+| 1.2 | 21/10/2026 | Inclusão das referências utilizadas para elaborar o artefato |  [Camila Cavalcante](https://github.com/CamilaSilvaC) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
+| 1.3 | 26/10/2026 | Padronização | [Pedro Lucas](https://github.com/Pwdrinho) | [Camila Cavalcante](https://github.com/CamilaSilvaC) |
