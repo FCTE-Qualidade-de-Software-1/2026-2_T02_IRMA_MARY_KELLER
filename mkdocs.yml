@@ -2,30 +2,38 @@ site_name: 2026-2_T02_IRMA_MARY_KELLER
 theme:
   name: null
   custom_dir: 'cinder'
-
 nav:
   - Início: index.md
-
   - Fase 1:
-    - Visão geral: fase-1/index.md
-    - Produto e contexto: fase-1/produto-e-contexto.md
-    - Requisitos de avaliação: fase-1/requisitos-de-avaliacao.md
-    - Escopo da avaliação: fase-1/escopo-da-avaliacao.md
-
+      - Visão geral: fase-1/index.md
+      - Produto e contexto: fase-1/produto-e-contexto.md
+      - Requisitos de avaliação: fase-1/requisitos-de-avaliacao.md
+      - Escopo da avaliação: fase-1/escopo-da-avaliacao.md
   - Fase 2:
-    - Visão geral: fase-2/index.md
-    - Objetivos de Medição: fase-2/objetivos.md
-    - Questões e hipóteses: fase-2/questoes-hipoteses.md
-    - Métricas: fase-2/metricas.md
-    - Critérios de julgamento: fase-2/criterios-julgamento.md
-    - Gráfico GQM: fase-2/grafico-gqm.md
-
+      - Visão geral: fase-2/index.md
+      - Objetivos de Medição: fase-2/objetivos.md
+      - Questões e hipóteses: fase-2/questoes-hipoteses.md
+      - Métricas: fase-2/metricas.md
+      - Critérios de julgamento: fase-2/criterios-julgamento.md
+      - Gráfico GQM: fase-2/grafico-gqm.md
   - Gestão:
     - Artigo: gestao/artigo.md
-    - Plano de Medição: gestao/plano_de_medicao.md
-    - Uso de IA: gestao/uso_de_ia.md
-    - Registro de Horas: gestao/horas.md
-    - Horas Cadastradas: gestao/horas_consolidadas.md
-    - Critérios:
-      - Fase 1: criterios/fase1.md
-      - Fase 2: criterios/fase2.md
+      - Plano de Medição: gestao/plano_de_medicao.md
+      - Uso de IA: gestao/uso_de_ia.md
+      - Registro de Horas: gestao/horas.md
+      - Horas Cadastradas: gestao/horas_consolidadas.md
+      - Critérios:
+          - Fase 1: criterios/fase1.md
+          - Fase 2: criterios/fase2.md
+plugins:
+  - gen-files:
+      scripts:
+        - assets/scripts/consolida_horas.py
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - js/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
