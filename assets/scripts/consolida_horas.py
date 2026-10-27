@@ -116,13 +116,25 @@ def fetch_github_issues():
         )
         janela = jan_match.group(1).strip() if jan_match else None
 
+        ms = item.get("milestone")
+        ms_title = ms.get("title") if ms else None
+        labels = [lbl.get("name") for lbl in item.get("labels", [])]
+        if not ms_title:
+            if "Fase-1" in labels:
+                ms_title = "Fase 1"
+            elif "Fase-2" in labels:
+                ms_title = "Fase 2"
+            else:
+                ms_title = "Outras atividades"
+
         issues_map[num] = {
             "title": item.get("title", f"Issue #{num}"),
             "state": item.get("state", "open"),
             "closed_at": item.get("closed_at"),
             "estimativa": estimativa,
             "janela": janela,
-            "labels": [lbl.get("name") for lbl in item.get("labels", [])],
+            "milestone": ms_title,
+            "labels": labels,
         }
 
     return issues_map
@@ -295,13 +307,11 @@ with mkdocs_gen_files.open("gestao/horas_consolidadas.md", "w") as f:
     print("\n---\n", file=f)
     print("## 3. Esforço por Atividade e Estimativas (RC2)\n", file=f)
     print(
-        "Compara o esforço estimado original ($He$) com o realizado ($Hr$) por atividade. "
-        "Conforme o [Plano de Medição](plano_de_medicao.md#unidade-de-trabalho), o indicador formal "
-        "do RC2 incide sobre issues concluídas ($Ac$).\n",
+        "Compara o esforço estimado original ($He$) com o realizado ($Hr$) por atividade, agrupadas por "
+        "milestone (fase do projeto). Conforme o [Plano de Medição](plano_de_medicao.md#unidade-de-trabalho), "
+        "o indicador formal do RC2 incide sobre issues concluídas ($Ac$).\n",
         file=f,
     )
-    print("| Issue | Estado | Janela Prevista | Conclusão Real | Estimado ($He$) | Realizado ($Hr$) | Desvio ($Hr - He$) | Situação |", file=f)
-    print("| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |", file=f)
 
     # Identificar todas as issues conhecidas (da API ou dos lançamentos de horas)
     todas_issues_chaves = sorted(
@@ -309,41 +319,72 @@ with mkdocs_gen_files.open("gestao/horas_consolidadas.md", "w") as f:
         key=lambda x: int(x) if x.isdigit() else 9999,
     )
 
+    # Agrupar issues por milestone
+    issues_por_milestone = {}
     for chave in todas_issues_chaves:
         info = issues_api.get(chave, {})
-        titulo = info.get("title", f"Issue #{chave}")
-        estado_api = info.get("state", "aberta")
-        estado_str = "Concluída" if estado_api == "closed" else "Em andamento"
-        previsto_str = format_planned_date(info.get("janela"))
-        real_str = parse_closed_date(info.get("closed_at")) if estado_api == "closed" else "Em andamento"
-        he = info.get("estimativa")
-        hr = totais_por_issue.get(chave, 0.0)
+        ms_nome = info.get("milestone") or "Outras atividades"
+        issues_por_milestone.setdefault(ms_nome, []).append(chave)
 
-        link_issue = f"[#{chave} - {titulo}]({URL_ISSUES}{chave})" if chave.isdigit() else chave
-        he_str = f"{he:.2f} h" if he is not None else "-"
-        hr_str = f"{hr:.2f} h"
+    def milestone_sort_key(ms_name):
+        ordem_padrao = {
+            "Fase 1": 1,
+            "Fase 2": 2,
+            "Fase 3": 3,
+            "Fase 4": 4,
+        }
+        return (ordem_padrao.get(ms_name, 99), ms_name)
 
-        if he is not None:
-            desvio = hr - he
-            desvio_str = f"{desvio:+.2f} h"
-            if he > 0:
-                ve_item = (abs(hr - he) / he) * 100
-                if ve_item <= 10.0:
-                    sit_item = "Adequado (≤ 10%)"
-                elif ve_item <= 20.0:
-                    sit_item = "Bom (10% a 20%)"
-                else:
-                    sit_item = "Insuficiente (> 20%)"
-            else:
-                sit_item = "Estimativa zero"
-        else:
-            desvio_str = "-"
-            sit_item = "Sem estimativa formal"
+    milestones_ordenados = sorted(issues_por_milestone.keys(), key=milestone_sort_key)
 
+    for ms_nome in milestones_ordenados:
+        chaves_ms = issues_por_milestone[ms_nome]
+        horas_ms = sum(totais_por_issue.get(c, 0.0) for c in chaves_ms)
+
+        print(f"### {ms_nome}\n", file=f)
+        print(f"**Total de horas realizadas:** {horas_ms:.2f} h\n", file=f)
         print(
-            f"| {link_issue} | {estado_str} | {previsto_str} | {real_str} | {he_str} | {hr_str} | {desvio_str} | {sit_item} |",
+            "| Issue | Estado | Janela Prevista | Conclusão Real | Estimado ($He$) | Realizado ($Hr$) | Desvio ($Hr - He$) | Situação |",
             file=f,
         )
+        print("| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |", file=f)
+
+        for chave in chaves_ms:
+            info = issues_api.get(chave, {})
+            titulo = info.get("title", f"Issue #{chave}")
+            estado_api = info.get("state", "aberta")
+            estado_str = "Concluída" if estado_api == "closed" else "Em andamento"
+            previsto_str = format_planned_date(info.get("janela"))
+            real_str = parse_closed_date(info.get("closed_at")) if estado_api == "closed" else "Em andamento"
+            he = info.get("estimativa")
+            hr = totais_por_issue.get(chave, 0.0)
+
+            link_issue = f"[#{chave} - {titulo}]({URL_ISSUES}{chave})" if chave.isdigit() else chave
+            he_str = f"{he:.2f} h" if he is not None else "-"
+            hr_str = f"{hr:.2f} h"
+
+            if he is not None:
+                desvio = hr - he
+                desvio_str = f"{desvio:+.2f} h"
+                if he > 0:
+                    ve_item = (abs(hr - he) / he) * 100
+                    if ve_item <= 10.0:
+                        sit_item = "Adequado (≤ 10%)"
+                    elif ve_item <= 20.0:
+                        sit_item = "Bom (10% a 20%)"
+                    else:
+                        sit_item = "Insuficiente (> 20%)"
+                else:
+                    sit_item = "Estimativa zero"
+            else:
+                desvio_str = "-"
+                sit_item = "Sem estimativa formal"
+
+            print(
+                f"| {link_issue} | {estado_str} | {previsto_str} | {real_str} | {he_str} | {hr_str} | {desvio_str} | {sit_item} |",
+                file=f,
+            )
+        print(file=f)
 
     print("\n---\n", file=f)
     print("## 4. Detalhamento dos Lançamentos Individuais\n", file=f)
