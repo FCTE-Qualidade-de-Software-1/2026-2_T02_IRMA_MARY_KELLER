@@ -28,3 +28,11 @@ plugins:
   - gen-files:
       scripts:
         - assets/scripts/consolida_horas.py
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - js/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
