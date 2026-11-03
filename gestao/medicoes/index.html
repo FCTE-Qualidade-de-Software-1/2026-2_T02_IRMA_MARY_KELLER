@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="../../img/favicon.ico">
 
     
-    <title>Procedimento de medição - 2026-2_T02_IRMA_MARY_KELLER</title>
+    <title>Procedimento de Medição - 2026-2_T02_IRMA_MARY_KELLER</title>
     
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -153,7 +153,7 @@
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gestão <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
@@ -166,6 +166,12 @@
                             
 <li >
     <a href="../plano_de_medicao/">Plano de Medição</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Procedimento de Medição</a>
 </li>
 
                         
@@ -183,7 +189,7 @@
                         
                             
 <li >
-    <a href="../horas_consolidadas/">Horas Cadastradas</a>
+    <a href="../horas_consolidadas/">Medições Consolidadas</a>
 </li>
 
                         
@@ -215,6 +221,16 @@
                 </ul>
 
             <ul class="nav navbar-nav navbar-right">
+                    <li >
+                        <a rel="prev" href="../plano_de_medicao/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../uso_de_ia/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
             </ul>
         </div>
     </div>
@@ -228,10 +244,17 @@
         <li class="first-level active"><a href="#procedimento-de-medicao">Procedimento de medição</a></li>
             <li class="second-level"><a href="#71-dados-de-entrada">7.1 Dados de entrada</a></li>
                 
-            <li class="second-level"><a href="#72-passos">7.2 Passos</a></li>
+            <li class="second-level"><a href="#72-passos-operacionais">7.2 Passos operacionais</a></li>
                 
-            <li class="second-level"><a href="#73-pontos-de-medicao">7.3 Pontos de medição</a></li>
+            <li class="second-level"><a href="#73-pontos-de-medicao-previstos">7.3 Pontos de medição previstos</a></li>
                 
+            <li class="second-level"><a href="#74-registro-de-medicoes-realizadas">7.4 Registro de medições realizadas</a></li>
+                
+                <li class="third-level"><a href="#ponto-mg-1-entrega-1-26102026">Ponto Mg-1 — Entrega 1 (26/10/2026)</a></li>
+            <li class="second-level"><a href="#75-padrao-de-texto-para-issues-determinacao-de-dp1-e-criterios">7.5 Padrão de texto para issues (Determinação de DP1 e Critérios)</a></li>
+                
+                <li class="third-level"><a href="#padrao-1-nova-atividade-planejada-alimenta-cp1-cp2-rc2-e-criterios">Padrão 1: Nova Atividade Planejada (Alimenta CP1, CP2, RC2 e Critérios)</a></li>
+                <li class="third-level"><a href="#padrao-2-correcao-retrabalho-alimenta-dp1-e-dp2">Padrão 2: Correção / Retrabalho (Alimenta DP1 e DP2)</a></li>
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
@@ -239,7 +262,7 @@
 <h1 id="procedimento-de-medicao">Procedimento de medição</h1>
 <p>Este artefato descreve como a medição é executada: quais dados entram, o passo a passo de cada rodada e em que datas ela ocorre.</p>
 <p><a id="responsavel"></a></p>
-<p><strong>Responsável pela execução:</strong>A equipe definirá, antes de cada ponto de medição, o integrante responsável pela coleta, validação e consolidação dos dados. Todos os integrantes devem registrar suas horas até as 12h do dia da medição. O responsável verifica as pendências, executa o script, registra os resultados e documenta as decisões decorrentes.</p>
+<p><strong>Responsável pela execução:</strong> A equipe definirá, antes de cada ponto de medição, o integrante responsável pela coleta, validação e consolidação dos dados. Todos os integrantes devem registrar suas horas até as 12h do dia da medição. O responsável verifica as pendências, executa o script, registra os resultados e documenta as decisões decorrentes.</p>
 <h3 id="71-dados-de-entrada">7.1 Dados de entrada</h3>
 <p>A Tabela 9 lista os dados necessários, onde ficam, quem os alimenta e quais medidas dependem deles.</p>
 <table>
@@ -269,7 +292,7 @@
 </tr>
 <tr>
 <td>Nível por critério da rubrica</td>
-<td><code>assets/dados/gestao/autoavaliacao.csv</code> (colunas <code>data,criterio,nivel,evidencia</code>)</td>
+<td><code>assets/dados/gestao/autoavaliacao.csv</code> (colunas <code>data,fase,criterio,nivel,evidencia</code>)</td>
 <td>Revisor</td>
 <td>Em <a href="#pontos">Mg-3</a></td>
 <td><code>DP2</code></td>
@@ -284,22 +307,25 @@
 </tbody>
 </table>
 <p><em>Tabela 9. Dados de entrada das medições. Fonte: Elaborado por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a></em></p>
-<p>No <code>autoavaliacao.csv</code>, <code>criterio</code> é o código da rubrica (por exemplo, <code>F1-C6</code>) e <code>nivel</code> é um de Insuficiente, Regular, Satisfatório ou Excelente, que correspondem, nesta ordem, às quatro opções da rubrica da professora, da primeira à última.</p>
-<h3 id="72-passos">7.2 Passos</h3>
-<p>Os passos abaixo são seguidos a cada ponto de medição.</p>
+<p>No <code>autoavaliacao.csv</code>, <code>criterio</code> é o código da rubrica (por exemplo, <code>F1-C6</code>) e <code>nivel</code> é um de Insuficiente, Regular, Satisfatório ou Excelente (ou Crítico, Insuficiente, Bom, Adequado), que correspondem, nesta ordem, às quatro opções da rubrica da professora, da primeira à última.</p>
+<h3 id="72-passos-operacionais">7.2 Passos operacionais</h3>
+<p>Os passos abaixo são seguidos a cada ponto de medição:</p>
 <ol>
-<li>Até as 12h do dia da medição, cada membro lança suas horas no seu CSV.</li>
+<li>Até as 12h do dia da medição, cada membro lança suas horas no seu CSV individual.</li>
 <li>O <a href="#responsavel">Responsável</a> confere as pré-condições: issues fechadas com Janela, Estimativa e revisão registrada; horas sem ID válido; labels <code>correcao</code> aplicadas onde devidas. Pendências são cobradas das duplas donas antes do cálculo.</li>
-<li>A <a href="#responsavel">Responsável</a> roda <code>python3 scripts/coletar_psm.py --data AAAA-MM-DD</code> na raiz do repositório. O script deve implementar as fórmulas da <a href="#3-medidas-e-indicadores-por-categoria">seção 3</a>. A cada medição, conferir à mão ao menos uma medida (por exemplo, o <code>CP1</code>) contra o resultado do script.</li>
-<li>O <a href="#responsavel">Responsável</a> cola a tabela no registro de <code>docs/gestao/medicoes.md</code>, com, para cada medida: ponto de medição, data, valores das medidas base, valor derivado, nível e cor.</li>
-<li>Em <a href="#pontos">Mg-2 e Mg-3</a>, o revisor, preenche o <code>autoavaliacao.csv</code> para a fase correspondente, com um nível e uma evidência (link para o trecho do artigo, da GitPage ou do repositório) por critério. Antes disso, o <a href="#responsavel">Responsável</a> confere o <a href="../uso_de_ia/">registro de uso de IA</a>.</li>
-<li>O <a href="#responsavel">Responsável</a> interpreta cada medida amarela ou vermelha: registra causa provável e decisão conforme a <a href="#regras">seção 6</a>, e abre issue de ação quando houver trabalho a fazer.</li>
+<li>O <a href="#responsavel">Responsável</a> executa o script na raiz do repositório:
+   <code>bash
+   uv run scripts/coletar_psm.py --data AAAA-MM-DD</code>
+   O script calcula as fórmulas de <a href="../plano_de_medicao/#3-medidas-e-indicadores-por-categoria">3. Medidas e indicadores por categoria</a> e gera tanto a saída no terminal quanto a página de acompanhamento em <a href="../horas_consolidadas/">Medições Consolidadas</a>. A cada medição, confere-se à mão ao menos uma medida (por exemplo, o <code>CP1</code>) contra o resultado do script.</li>
+<li>O <a href="#responsavel">Responsável</a> registra os valores consolidados na tabela de histórico (<a href="#historico">seção 7.4</a>), indicando ponto de medição, data, valores das medidas base, valor derivado, nível e cor.</li>
+<li>Em Mg-1, Mg-2 e Mg-3, o revisor preenche ou valida o <code>assets/dados/gestao/autoavaliacao.csv</code> para a fase correspondente, com um nível e uma evidência (link para o trecho do artigo, da GitPage ou do repositório) por critério. Antes disso, o Responsável confere o <a href="../uso_de_ia/">registro de uso de IA</a>.</li>
+<li>O <a href="#responsavel">Responsável</a> interpreta cada medida amarela ou vermelha: registra causa provável e decisão conforme as <a href="../plano_de_medicao/#regras">Regras de Decisão</a>, e abre issue de ação quando houver trabalho corretivo a fazer.</li>
 <li>Medidas "sem dados" ou "com ressalva" são registradas como tal, com o motivo.</li>
 <li>O resultado é comunicado ao grupo no mesmo dia e commitado por pull request.</li>
 </ol>
 <p><a id="pontos"></a></p>
-<h3 id="73-pontos-de-medicao">7.3 Pontos de medição</h3>
-<p>A Tabela 10 apresenta as datas das medições, sua finalidade e as medidas calculadas em cada uma. Até o momento as datas estão referentes apenas a entrega 1.    </p>
+<h3 id="73-pontos-de-medicao-previstos">7.3 Pontos de medição previstos</h3>
+<p>A Tabela 10 apresenta as datas das medições, sua finalidade e as medidas calculadas em cada uma.</p>
 <table>
 <thead>
 <tr>
@@ -312,27 +338,132 @@
 <tbody>
 <tr>
 <td>Mg-1</td>
-<td>26/10 (seg)</td>
-<td>Medição Entrega 1</td>
-<td><code>CP1</code>, <code>CP2</code>, <code>DP1</code>, <code>DP2</code>, <code>RC1</code>, <code>RC2</code></td>
+<td>26/10/2026 (seg)</td>
+<td>Medição da Entrega 1 (Fases 1 e 2)</td>
+<td><code>CP1</code>, <code>CP2</code>, <code>DP1</code>, <code>DP2</code>, <code>RC1</code>, <code>RC2</code>, <code>Pa</code></td>
 </tr>
 <tr>
 <td>Mg-2</td>
-<td>XX/11 ()</td>
-<td>A definir para Entrega 2</td>
-<td>---</td>
+<td>09/11/2026 (seg)</td>
+<td>Medição do Ponto de Controle 2 (PC2)</td>
+<td><code>CP1</code>, <code>CP2</code>, <code>DP1</code>, <code>DP2</code>, <code>RC1</code>, <code>RC2</code>, <code>Pa</code></td>
 </tr>
 <tr>
 <td>Mg-3</td>
-<td>XX/11 ()</td>
-<td>A definir para Entrega 2</td>
-<td>---</td>
+<td>18/11/2026 (qua)</td>
+<td>Medição da Entrega 2 Final</td>
+<td><code>CP1</code>, <code>CP2</code>, <code>DP1</code>, <code>DP2</code>, <code>RC1</code>, <code>RC2</code>, <code>Pa</code></td>
 </tr>
 </tbody>
 </table>
 <p><em>Tabela 10. Pontos de medição previstos. Fonte: Elaborado por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a></em></p>
-<p>Os pontos de medição apresentados nesta tabela correspondem à Entrega 1. O acompanhamento da Entrega 2, prevista para 18/11/2026, deverá ser detalhado em um cronograma complementar, caso esteja incluído no escopo de execução deste plano.</p>
-<p>As medições de Mg-1 usam poucas issues concluídas e podem cair em "sem dados" ou oscilar muito; isso é esperado e deve constar na interpretação.</p></div>
+<p><a id="historico"></a></p>
+<h3 id="74-registro-de-medicoes-realizadas">7.4 Registro de medições realizadas</h3>
+<h4 id="ponto-mg-1-entrega-1-26102026">Ponto Mg-1 — Entrega 1 (26/10/2026)</h4>
+<p>Executado em 26/10/2026 sobre as issues e commits das Fases 1 e 2.</p>
+<table>
+<thead>
+<tr>
+<th>Medida</th>
+<th>Medida Base / Valores Brutos</th>
+<th>Medida Derivada</th>
+<th style="text-align: center;">Valor</th>
+<th style="text-align: center;">Nível</th>
+<th style="text-align: center;">Cor</th>
+<th>Interpretação Técnica e Decisão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CP1</strong> Progresso</td>
+<td><span class="arithmatex">\(Ac = 13\)</span>, <span class="arithmatex">\(Ap = 13\)</span></td>
+<td><span class="arithmatex">\(Ppp = (13 \div 13) \times 100\)</span></td>
+<td style="text-align: center;"><strong>100%</strong></td>
+<td style="text-align: center;">Adequado</td>
+<td style="text-align: center;">Verde</td>
+<td>100% das 13 atividades previstas para a Entrega 1 foram concluídas no escopo das Fases 1 e 2.</td>
+</tr>
+<tr>
+<td><strong>CP2</strong> Prazo</td>
+<td><span class="arithmatex">\(Acp = 6\)</span>, <span class="arithmatex">\(Ac = 13\)</span></td>
+<td><span class="arithmatex">\(Pacp = (6 \div 13) \times 100\)</span></td>
+<td style="text-align: center;"><strong>46,2%</strong></td>
+<td style="text-align: center;">Crítico</td>
+<td style="text-align: center;">Vermelho</td>
+<td>As primeiras issues (#1 a #7) sofreram replanejamento e fecharam após a data da janela original, concentrando a entrega no PC1. Ações: na Fase 3, fixar janelas mais realistas e registrar formalmente no corpo de novas issues.</td>
+</tr>
+<tr>
+<td><strong>DP1</strong> Retrabalho</td>
+<td><span class="arithmatex">\(Ir = 0\)</span>, <span class="arithmatex">\(Ic = 0\)</span>, <span class="arithmatex">\(If = 13\)</span></td>
+<td><span class="arithmatex">\(Pri = (0 \div 13) \times 100\)</span></td>
+<td style="text-align: center;"><strong>0,0%</strong></td>
+<td style="text-align: center;">Adequado</td>
+<td style="text-align: center;">Verde</td>
+<td>Nenhuma issue com retrabalho formal registrado na Entrega 1. Adotar padronização de issue templates para a Fase 3 para manter o rastreamento rigoroso.</td>
+</tr>
+<tr>
+<td><strong>DP2</strong> Efetividade</td>
+<td><span class="arithmatex">\(Ca = 23\)</span>, <span class="arithmatex">\(Cb = 0\)</span>, <span class="arithmatex">\(Ci = 0\)</span>, <span class="arithmatex">\(Cc = 0\)</span>, <span class="arithmatex">\(Ct = 23\)</span></td>
+<td><span class="arithmatex">\(Qcic = 0\)</span> <br> <span class="arithmatex">\(PCa = 100\%\)</span></td>
+<td style="text-align: center;"><strong>Qcic: 0</strong> <br> <strong>PCa: 100%</strong></td>
+<td style="text-align: center;">Adequado</td>
+<td style="text-align: center;">Verde</td>
+<td>Todos os critérios das Fases 1 e 2 avaliados como Adequados com base na rubrica docente e nos artefatos entregues.</td>
+</tr>
+<tr>
+<td><strong>RC1</strong> Esforço</td>
+<td><span class="arithmatex">\(\sum Hr = 32,00\text{ h}\)</span>, <span class="arithmatex">\(n = 6\)</span></td>
+<td><span class="arithmatex">\(Hm = 32,00 \div 6\)</span></td>
+<td style="text-align: center;"><strong>32,00 h</strong> (média 5,33 h/membro)</td>
+<td style="text-align: center;">Informativo</td>
+<td style="text-align: center;">Sem cor</td>
+<td>Volume compatível com a carga prevista para a Entrega 1; esforço distribuído entre todos os integrantes.</td>
+</tr>
+<tr>
+<td><strong>RC2</strong> Variação</td>
+<td><span class="arithmatex">\(Ee = 20,00\text{ h}\)</span>, <span class="arithmatex">\(Er = 20,00\text{ h}\)</span></td>
+<td><span class="arithmatex">\(Ve = (0 \div 20) \times 100\)</span></td>
+<td style="text-align: center;"><strong>0,0%</strong></td>
+<td style="text-align: center;">Adequado</td>
+<td style="text-align: center;">Verde</td>
+<td>Estimativas em issues fechadas com estimativa explícita bateram rigorosamente com os lançamentos.</td>
+</tr>
+<tr>
+<td><strong>Pa</strong> Cobertura</td>
+<td><span class="arithmatex">\(Ar = 11\)</span>, <span class="arithmatex">\(Ac = 13\)</span></td>
+<td><span class="arithmatex">\(Pa = (11 \div 13) \times 100\)</span></td>
+<td style="text-align: center;"><strong>84,6%</strong></td>
+<td style="text-align: center;">Com ressalva</td>
+<td style="text-align: center;">Amarelo</td>
+<td>Duas issues concluídas sem apontamento nos CSVs individuais. Decisão: completar os lançamentos retroativos dos membros pendentes.</td>
+</tr>
+</tbody>
+</table>
+<p><a id="padroes-issues"></a></p>
+<h3 id="75-padrao-de-texto-para-issues-determinacao-de-dp1-e-criterios">7.5 Padrão de texto para issues (Determinação de DP1 e Critérios)</h3>
+<p>Para assegurar a confiabilidade da medição automatizada pelo script <code>consolida_horas.py</code> / <code>coletar_psm.py</code>, todas as issues devem conter blocos padronizados de metadados:</p>
+<h4 id="padrao-1-nova-atividade-planejada-alimenta-cp1-cp2-rc2-e-criterios">Padrão 1: Nova Atividade Planejada (Alimenta CP1, CP2, RC2 e Critérios)</h4>
+<p>Adicionar no corpo da issue ao criá-la:</p>
+<pre><code class="language-markdown">## Metadados de Medição (PSM/CID)
+- **Janela Prevista:** DD/MM/AAAA
+- **Estimativa:** X.XX h
+- **Critérios Relacionados:** [Ex: F3-C1, F3-C2]
+- **Classificação:** Nova Atividade Planejada
+</code></pre>
+<h4 id="padrao-2-correcao-retrabalho-alimenta-dp1-e-dp2">Padrão 2: Correção / Retrabalho (Alimenta DP1 e DP2)</h4>
+<p>Ao reabrir uma issue ou criar uma nova issue para sanar não conformidades identificadas por pares, autoavaliação ou apontamento docente:
+- Aplicar a label <strong><code>correcao</code></strong> no GitHub;
+- Incluir no corpo da issue o seguinte bloco de rastreabilidade:</p>
+<pre><code class="language-markdown">## Metadados de Medição (PSM/CID - DP1)
+- **Janela Prevista:** DD/MM/AAAA
+- **Estimativa:** X.XX h
+- **Critérios Relacionados:** [Ex: F1-C3, F2-C5]
+- **Classificação:** Correção / Retrabalho (DP1)
+- **Retrabalho (DP1):** Sim
+- **Issue de Origem:** #XX
+- **Causa Raiz do Retrabalho:** [Descrever o motivo: apontamento em revisão por pares, critério Insuficiente na autoavaliação, etc.]
+</code></pre>
+<p>Templates pré-configurados estão disponíveis em <code>.github/ISSUE_TEMPLATE/</code> para facilitar a criação direta com esses campos.</p></div>
         
         
     </div>
