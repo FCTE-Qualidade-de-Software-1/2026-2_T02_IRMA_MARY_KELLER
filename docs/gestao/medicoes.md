@@ -13,7 +13,7 @@ A Tabela 9 lista os dados necessários, onde ficam, quem os alimenta e quais med
 | Dado | Fonte | Quem alimenta | Quando | Medidas que usam |
 |---|---|---|---|---|
 | ID, Janela, Estimativa, estado, datas de fechamento e reabertura, labels | Issues e pull requests do GitHub | Responsável pela issue | Ao criar, fechar ou reabrir a issue | `CP1`, `CP2`, `DP1`, `RC2` |
-| Horas por integrante e por issue | `assets/dados/gestao/horas/<usuario>.csv` (colunas `data,atividade,horas`; ver [Registro de Horas](horas.md)) | Cada integrante | Até 12h do dia da medição | `RC1`, `RC2` |
+| Horas por integrante e por issue | Tabela de Contribuição no corpo da issue (colunas `Usuário`, `Data`, `Horas Trabalhadas`; ver [Registro de Horas](horas.md)) | Cada integrante | Até 12h do dia da medição | `RC1`, `RC2` |
 | Nível por critério da rubrica | `assets/dados/gestao/autoavaliacao.csv` (colunas `data,fase,criterio,nivel,evidencia`) | Revisor | Em [Mg-3](#pontos) | `DP2` |
 | Uso de IA | [Uso de IA](uso_de_ia.md) | Quem usou a ferramenta | No momento do uso | Evidência para os critérios de uso de IA na autoavaliação (`DP2`) |
  
@@ -25,13 +25,9 @@ No `autoavaliacao.csv`, `criterio` é o código da rubrica (por exemplo, `F1-C6`
 
 Os passos abaixo são seguidos a cada ponto de medição:
  
-1. Até as 12h do dia da medição, cada membro lança suas horas no seu CSV individual.
-2. O [Responsável](#responsavel) confere as pré-condições: issues fechadas com Janela, Estimativa e revisão registrada; horas sem ID válido; labels `correcao` aplicadas onde devidas. Pendências são cobradas das duplas donas antes do cálculo.
-3. O [Responsável](#responsavel) executa o script na raiz do repositório:
-   ```bash
-   uv run scripts/coletar_psm.py --data AAAA-MM-DD
-   ```
-   O script calcula as fórmulas de [3. Medidas e indicadores por categoria](plano_de_medicao.md#3-medidas-e-indicadores-por-categoria) e gera tanto a saída no terminal quanto a página de acompanhamento em [Medições Consolidadas](horas_consolidadas.md). A cada medição, confere-se à mão ao menos uma medida (por exemplo, o `CP1`) contra o resultado do script.
+1. Até as 12h do dia da medição, cada membro lança suas horas na Tabela de Contribuição das issues em que trabalhou.
+2. O [Responsável](#responsavel) confere as pré-condições: issues fechadas com Janela, Estimativa e revisão registrada; horas lançadas fora de issues; labels `correcao` aplicadas onde devidas. Pendências são cobradas das duplas donas antes do cálculo.
+3. O [Responsável](#responsavel) gera a página de acompanhamento. O script `assets/scripts/consolida_horas.py` roda automaticamente no build do ProperDocs (`uv run properdocs build` ou `serve`), lê as issues pela API do GitHub e publica [Medições Consolidadas](horas_consolidadas.md). Defina `GITHUB_TOKEN` no ambiente ou em um arquivo `.env` na raiz (não versionado) para evitar o limite de requisições. Os cálculos seguem as fórmulas de [3. Medidas e indicadores por categoria](plano_de_medicao.md#3-medidas-e-indicadores-por-categoria). A cada medição, confere-se à mão ao menos uma medida (por exemplo, o `CP1`) contra o resultado gerado.
 4. O [Responsável](#responsavel) registra os valores consolidados na tabela de histórico ([seção 7.4](#historico)), indicando ponto de medição, data, valores das medidas base, valor derivado, nível e cor.
 5. Em Mg-1, Mg-2 e Mg-3, o revisor preenche ou valida o `assets/dados/gestao/autoavaliacao.csv` para a fase correspondente, com um nível e uma evidência (link para o trecho do artigo, da GitPage ou do repositório) por critério. Antes disso, o Responsável confere o [registro de uso de IA](uso_de_ia.md).
 6. O [Responsável](#responsavel) interpreta cada medida amarela ou vermelha: registra causa provável e decisão conforme as [Regras de Decisão](plano_de_medicao.md#regras), e abre issue de ação quando houver trabalho corretivo a fazer.
@@ -68,13 +64,13 @@ Executado em 26/10/2026 sobre as issues e commits das Fases 1 e 2.
 | **DP2** Efetividade | $Ca = 23$, $Cb = 0$, $Ci = 0$, $Cc = 0$, $Ct = 23$ | $Qcic = 0$ <br> $PCa = 100\%$ | **Qcic: 0** <br> **PCa: 100%** | Adequado | Verde | Todos os critérios das Fases 1 e 2 avaliados como Adequados com base na rubrica docente e nos artefatos entregues. |
 | **RC1** Esforço | $\sum Hr = 32,00\text{ h}$, $n = 6$ | $Hm = 32,00 \div 6$ | **32,00 h** (média 5,33 h/membro) | Informativo | Sem cor | Volume compatível com a carga prevista para a Entrega 1; esforço distribuído entre todos os integrantes. |
 | **RC2** Variação | $Ee = 20,00\text{ h}$, $Er = 20,00\text{ h}$ | $Ve = (0 \div 20) \times 100$ | **0,0%** | Adequado | Verde | Estimativas em issues fechadas com estimativa explícita bateram rigorosamente com os lançamentos. |
-| **Pa** Cobertura | $Ar = 11$, $Ac = 13$ | $Pa = (11 \div 13) \times 100$ | **84,6%** | Com ressalva | Amarelo | Duas issues concluídas sem apontamento nos CSVs individuais. Decisão: completar os lançamentos retroativos dos membros pendentes. |
+| **Pa** Cobertura | $Ar = 11$, $Ac = 13$ | $Pa = (11 \div 13) \times 100$ | **84,6%** | Com ressalva | Amarelo | Duas issues concluídas sem apontamento na Tabela de Contribuição. Decisão: completar os lançamentos retroativos dos membros pendentes. |
 
 <a id="padroes-issues"></a>
 
 ### 7.5 Padrão de texto para issues (Determinação de DP1 e Critérios)
 
-Para assegurar a confiabilidade da medição automatizada pelo script `consolida_horas.py` / `coletar_psm.py`, todas as issues devem conter blocos padronizados de metadados:
+Para assegurar a confiabilidade da medição automatizada pelo script `consolida_horas.py`, todas as issues devem conter blocos padronizados de metadados:
 
 #### Padrão 1: Nova Atividade Planejada (Alimenta CP1, CP2, RC2 e Critérios)
 Adicionar no corpo da issue ao criá-la:

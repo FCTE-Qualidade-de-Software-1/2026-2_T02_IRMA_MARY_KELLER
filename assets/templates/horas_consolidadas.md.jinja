@@ -1,0 +1,121 @@
+# Painel Consolidado de Medição PSM/CID e Registro de Horas
+
+Este artefato consolida a medição contínua do projeto integrando os modelos **PSM (Practical Software Measurement)** e a norma **ISO/IEC/IEEE 15939:2017**, conforme estabelecido no [Plano de Medição](plano_de_medicao.md) e no [Procedimento de Medição](medicoes.md). Os dados de progresso e esforço são sincronizados automaticamente com as issues do repositório no GitHub.
+
+**Data de referência da consolidação:** {{ data_corte }}
+
+---
+
+## 1. Painel Geral de Indicadores PSM/CID
+
+Síntese executiva de todas as medidas das três categorias do plano. A coloração de cada linha reflete o nível operacional atingido pelo indicador (Verde: Adequado/Bom; Amarelo: Insuficiente/Com ressalva; Vermelho: Crítico). Para justificativas e regras de decisão, consulte as seções correspondentes do [Plano de Medição](plano_de_medicao.md).
+
+<table class="table table-bordered">
+<thead>
+<tr>
+  <th>Categoria</th>
+  <th>Indicador</th>
+  <th>Medida Base / Fórmula</th>
+  <th style="text-align: center;">Valor</th>
+  <th style="text-align: center;">Meta / Referência</th>
+  <th style="text-align: center;">Situação Operacional</th>
+</tr>
+</thead>
+<tbody>
+{% for r in painel %}
+<tr class="{{ r.cls }}">
+  <td style="background-color: {{ r.bg }} !important; color: {{ r.fg }} !important;"><strong>{{ r.categoria }}</strong></td>
+  <td style="background-color: {{ r.bg }} !important; color: {{ r.fg }} !important;"><strong>{{ r.indicador }}</strong></td>
+  <td style="background-color: {{ r.bg }} !important; color: {{ r.fg }} !important;"><span class="arithmatex">{{ r.formula }}</span></td>
+  <td style="background-color: {{ r.bg }} !important; color: {{ r.fg }} !important; text-align: center;"><strong>{{ r.valor }}</strong></td>
+  <td style="background-color: {{ r.bg }} !important; color: {{ r.fg }} !important; text-align: center;">{% if r.meta_math %}<span class="arithmatex">{{ r.meta }}</span>{% else %}{{ r.meta }}{% endif %}</td>
+  <td style="background-color: {{ r.bg }} !important; color: {{ r.fg }} !important; text-align: center;">{{ r.situacao }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+
+---
+
+## 2. Calendário e Progresso (CP1 e CP2)
+
+Acompanha o ritmo volumétrico de execução frente ao planejado (**CP1**) e a pontualidade na conclusão em relação à Janela original (**CP2**). Conforme a regra da Seção 4.2 do plano, adiamentos registrados em comentários mantêm a comparação atrelada à linha de base original para garantir a transparência histórica.
+
+- **Atividades concluídas ($Ac$):** {{ m.ac_total }}
+- **Atividades planejadas até a data ($Ap$):** {{ m.ap_total }}
+- **Atividades concluídas no prazo original ($Acp$):** {{ m.acp_total }}
+- **Índice de Progresso ($Ppp$):** {{ m.cp1_str }} — Situação: **{{ m.cp1_status }}**
+- **Índice de Pontualidade ($Pacp$):** {{ m.cp2_str }} — Situação: **{{ m.cp2_status }}**
+
+### Rastreamento de Pontualidade por Issue (CP2)
+
+{{ tabela_cp2 }}
+
+---
+
+## 3. Desempenho dos Processos (DP1 e DP2)
+
+Avalia a estabilidade do fluxo de trabalho contra retrabalho (**DP1**) e a conformidade das entregas frente à rubrica acadêmica (**DP2**).
+
+### 3.1 Eficiência do Processo e Retrabalho (DP1)
+
+O retrabalho ($Pri$) contabiliza issues reabertas ($Ir$) e issues com label `correcao` ou metadados de retrabalho ($Ic$), divididas pelo total de issues fechadas ($If$). A união previne dupla contagem.
+
+- **Issues fechadas ($If$):** {{ m.if_total }}
+- **Issues identificadas com retrabalho ($Ir \cup Ic$):** {{ m.ir_ic_count }}
+- **Percentual de Retrabalho ($Pri$):** {{ m.dp1_str }} — Situação: **{{ m.dp1_status }}**
+
+{% if tabela_retrabalho %}
+{{ tabela_retrabalho }}
+{% else %}
+> [!NOTE]
+> Nenhuma issue foi sinalizada com label `correcao` ou marcação de retrabalho até o momento.
+{% endif %}
+
+### 3.2 Efetividade do Processo e Rubrica Acadêmica (DP2)
+
+Mede a aderência qualitativa das entregas contra a rubrica docente, baseada nas avaliações registradas em `assets/dados/gestao/autoavaliacao.csv`.
+
+- **Critérios avaliados ($Ct$):** {{ m.ct }}
+- **Distribuição:** Adequado: {{ m.ca }} | Bom: {{ m.cb }} | Insuficiente: {{ m.ci }} | Crítico: {{ m.cc }}
+- **Critérios Fracos ($Qcic = Ci + Cc$):** {{ m.dp2_qcic_str }} — Situação: **{{ m.qcic_status }}**
+- **Percentual Adequado ($PCa$):** {{ m.dp2_pca_str }} — Situação: **{{ m.pca_status }}**
+
+{% if tabela_autoavaliacao %}
+{{ tabela_autoavaliacao }}
+{% endif %}
+
+---
+
+## 4. Recursos e Custos (RC1, RC2 e Pa)
+
+Acompanha o volume de trabalho individual ($Hi$) e o equilíbrio em relação à média da equipe ($Hm$). Conforme a Tabela 8 do Plano de Medição, disparidades superiores a $\pm 50\%$ demandam análise da causa e rebalanceamento das próximas atribuições.
+
+{{ tabela_equilibrio }}
+
+---
+
+## 5. Esforço por Atividade e Estimativas (RC2)
+
+Compara o esforço estimado original ($He$) com o realizado ($Hr$) por atividade, agrupadas por milestone (fase do projeto). Conforme o Plano de Medição, o indicador formal do RC2 incide sobre issues concluídas ($Ac$).
+
+{% for ms in milestones %}
+### {{ ms.nome }}
+
+**Total de horas realizadas:** {{ "%.2f"|format(ms.horas) }} h
+
+{{ ms.tabela }}
+
+{% endfor %}
+---
+
+## 6. Detalhamento dos Lançamentos Individuais
+
+Registros diários individuais extraídos diretamente das tabelas de contribuição das issues no GitHub.
+
+{% for l in lancamentos %}
+### {{ l.titulo }}
+
+{{ l.tabela }}
+
+{% endfor %}

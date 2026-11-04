@@ -1,6 +1,6 @@
 # Registro de Horas
 
-Versão 1.1
+Versão 1.2
 
 ---
 
@@ -10,45 +10,47 @@ Este registro é a fonte de dados das medições de **Recursos e Custos** do [Pl
 
 ## 2. Como registrar (cada integrante)
 
-1. Tenha o seu arquivo `assets/dados/gestao/horas/<usuario>.csv`, em que `<usuario>` é o seu usuário do GitHub. O cabeçalho é sempre `data,atividade,horas`.
-2. Acrescente **uma linha por dia e por issue** em que trabalhou:
-   - `data`: no formato `AAAA-MM-DD`.
-   - `atividade`: número da issue sem o `#` (`#1` vira `1`).
-   - `horas`: número decimal com ponto, em múltiplos de 0,25 (por exemplo, `1.5`, `0.75`).
-3. Lance as horas **até as 12h do dia de cada ponto de medição** (M-1 a M-5; datas no plano).
-4. Versione o arquivo no repositório.
+1. Abra a issue em que trabalhou. Ela deve ter sido criada com o [template de atividade planejada](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/.github/ISSUE_TEMPLATE/atividade_planejada.md), que contém a seção **Tabela de Contribuição**.
+2. Acrescente **uma linha por dia** em que trabalhou na issue:
+   - `Usuário`: seu usuário do GitHub (por exemplo, `@usuario`).
+   - `Data`: no formato `DD/MM/AAAA`.
+   - `Horas Trabalhadas`: número decimal, em múltiplos de 0,25 (por exemplo, `1.5`, `0.75`).
+3. Lance as horas **até as 12h do dia de cada ponto de medição** (Mg-1 a Mg-3; datas no plano).
+4. O script de consolidação lê as tabelas das issues pela API do GitHub a cada build da página. Não há arquivo a versionar.
 
 ### Regras
 
 - Conte tudo o que é trabalho do projeto: escrita, pesquisa, revisão do trabalho de outro membro, reuniões, preparação de slides e a conferência de textos gerados por IA.
-- Em trabalho de dupla, cada integrante lança as **suas** horas. Não divida nem some as da dupla.
+- Em trabalho de dupla, cada integrante lança as **suas** horas, em linhas próprias. Não divida nem some as da dupla.
 - Não registre horas estimadas aqui. A estimativa fica no campo **Estimativa** da issue.
 - Se a atividade ainda não tem issue, crie a issue primeiro. Reuniões e tarefas de gestão também precisam de uma issue de apoio com Estimativa.
-- Horas sem ID válido não são atribuídas a nenhuma atividade e diminuem o `RC3`.
-- Para corrigir um lançamento, edite a linha no CSV e versione a alteração. Não apague o histórico do repositório.
+- Horas lançadas fora de uma issue não são contabilizadas e diminuem o `RC3`.
+- Para corrigir um lançamento, edite a linha da tabela na issue. O histórico de edições fica registrado pelo GitHub.
 
 ### Exemplo de preenchimento
 
-Valores fictícios, apenas para mostrar o formato. Não copiar para o seu arquivo.
+Valores fictícios, apenas para mostrar o formato. Não copiar para a sua issue.
 
-```
-data,atividade,horas
-2026-01-01,F1-02,1.5
-2026-01-01,F1-03,0.75
-2026-01-02,F1-02,2
+```markdown
+### Tabela de Contribuição
+
+| Usuário  | Data       | Horas Trabalhadas |
+| :------- | :--------: | :---------------: |
+| @usuario | 01/01/2026 | 1.5               |
+| @usuario | 02/01/2026 | 0.75              |
 ```
 
 ## 3. Como as horas viram medidas
 
 | Medida | Como usa o registro |
 |---|---|
-| `RC1` | `Et` é a soma de todas as horas lançadas; `Hi` é a soma por integrante; `Hm = Et ÷ n`. Alerta de desequilíbrio se algum `Hi` ficar fora de ±50% de `Hm` |
+| `RC1` | `Et` é a soma de todas as horas lançadas nas issues; `Hi` é a soma por integrante; `Hm = Et ÷ n`. Alerta de desequilíbrio se algum `Hi` ficar fora de ±50% de `Hm` |
 | `RC2` | Para cada issue concluída, compara as horas lançadas (`Hr`) com a Estimativa original da issue (`He`). `Ve = (ABS(Er − Ee) ÷ Ee) × 100` |
-| `RC3` | `Pa` é o percentual de issues concluídas que têm ao menos uma linha de horas |
+| `RC3` | `Pa` é o percentual de issues concluídas que têm ao menos uma linha na Tabela de Contribuição |
 
 ## 4. Consolidado (preenchido pela Dupla C a cada medição)
 
-A Dupla C preenche os quadros abaixo a partir dos CSVs e do resultado do script de coleta. Os integrantes não precisam preencher esta parte. Copie o bloco 4.1 para cada nova semana.
+A Dupla C preenche os quadros abaixo a partir da página [Medições Consolidadas](horas_consolidadas.md), gerada automaticamente das issues. Os integrantes não precisam preencher esta parte. Copie o bloco 4.1 para cada nova semana.
 
 A tabela semanal anterior deste arquivo tinha as colunas Início, Fim e Total. Elas foram substituídas por uma única coluna de horas, que é o dado que as medições usam, e foram acrescentadas as colunas de integrante e de ID da issue.
 
@@ -92,3 +94,4 @@ Valor de referência da hora (`Vh`): **a definir pela equipe, com fonte.** Custo
 |---|---|---|---|---|---|
 | 1.0 | 14/10/2026 | Modelo de registro semanal | [Pedro Lucas](https://github.com/Pwdrinho) | | [](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/commit/) |
 | 1.1 | 15/10/2026 | Adequação às medições `RC1`, `RC2` e `RC3`: instruções de uso, CSV por integrante e quadros consolidados | [Pedro Lucas](https://github.com/Pwdrinho) | | [](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/commit/) |
+| 1.2 | 04/11/2026 | Registro de horas migrado dos CSVs para a Tabela de Contribuição das issues | | | [](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/commit/) |

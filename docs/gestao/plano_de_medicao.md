@@ -72,7 +72,7 @@ Trata da alocação do esforço humano da equipe (`RC1`) e da precisão das esti
 
 *Tabela 4. Medidas e indicadores de Recursos e Custos (O3). Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
 
-**Procedimento de coleta:** Cada integrante registra as horas dedicadas às atividades em seu arquivo CSV individual. A equipe consolida os registros periodicamente e avalia a estabilidade das estimativas [S1](#s1). Conforme a norma ISO/IEC/IEEE 15939 [S2](#s2), a verificação de presença do registro de horas (taxa de cobertura `Pa ≥ 90%`) atua como pré-condição operacional de qualidade dos dados, garantindo a confiabilidade dos indicadores `RC1` e `RC2`.
+**Procedimento de coleta:** Cada integrante registra as horas dedicadas às atividades na Tabela de Contribuição das issues correspondentes. A equipe consolida os registros periodicamente e avalia a estabilidade das estimativas [S1](#s1). Conforme a norma ISO/IEC/IEEE 15939 [S2](#s2), a verificação de presença do registro de horas (taxa de cobertura `Pa ≥ 90%`) atua como pré-condição operacional de qualidade dos dados, garantindo a confiabilidade dos indicadores `RC1` e `RC2`.
 
 ## 4. Unidade de trabalho e convenções
 
@@ -96,9 +96,9 @@ A Tabela 5 define, de forma operacional, os termos e variáveis utilizados tanto
 | Janela original | Valor da Janela no momento da criação da issue. Quando o prazo é revisto, a nova data vai em comentário (`Janela revista`) e serve só ao replanejamento. O `CP2` sempre compara com a original, para que o atraso não desapareça da medição[S3](#s3). |
 | Retrabalho (`Ir`, `Ic`) | Issue reaberta depois de fechada (`Ir`) ou issue com a label `correcao` (`Ic`). A união (\`Ir ∪ Ic\`) previne dupla contagem. |
 | Estimativa congelada | A Estimativa registrada na criação da issue é a usada no `RC2`. Reestimativas vão em comentário e não sobrescrevem o valor original |
-| Esforço realizado (`Hr`, `Hi`) | Horas registradas em `assets/dados/gestao/horas/<usuario>.csv`, em múltiplos de 0,25 h, ligadas ao ID da issue. Em trabalho em dupla, cada integrante lança as próprias horas |
+| Esforço realizado (`Hr`, `Hi`) | Horas registradas na Tabela de Contribuição de cada issue, em múltiplos de 0,25 h, uma linha por integrante e dia. Em trabalho em dupla, cada integrante lança as próprias horas |
 | Escopo do `RC2` | Calculado apenas sobre issues concluídas (`Ee` e `Er` do mesmo conjunto `Ac`), para que issues em andamento não distorçam a comparação. As horas de issues em andamento entram no `RC1` |
-| Cobertura de dados (`Pa`) | Porcentagem de atividades concluídas com horas registradas no CSV (`Pa = (Ar ÷ Ac) × 100`). Atua como indicador de higiene dos dados. | 
+| Cobertura de dados (`Pa`) | Porcentagem de atividades concluídas com horas registradas na Tabela de Contribuição (`Pa = (Ar ÷ Ac) × 100`). Atua como indicador de higiene dos dados. | 
 | Horas sem issue | Atividades sem ID de issue válido reduzem a taxa de cobertura do registro (`Pa`). | 
 | Denominador zero | Se `Ap`, `Ac`, `If`, `Ee` ou `Ct` for zero na data, a medida é registrada como "sem dados" e não recebe nível |
  
@@ -185,10 +185,10 @@ Esta seção indica onde ficam armazenadas as evidências que permitem conferir 
 |---|---|
 | [Issues](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues) | GitHub: Issues e suas respectivas labels |
 | [Commits](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/commits/main/) e [pull requests](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/pulls) com revisão | GitHub: Pull requests |
-| [Horas, esforço planejado e autoavaliação](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/tree/main/assets/dados/gestao/) | `assets/dados/gestao/` |
-| [Registro de Horas (consolidado)](horas_consolidadas.md) | `docs/gestao/horas_consolidadas.md` |
+| [Autoavaliação](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/tree/main/assets/dados/gestao/) | `assets/dados/gestao/` |
+| [Registro de Horas (consolidado)](horas_consolidadas.md) | Gerado no build por `assets/scripts/consolida_horas.py` |
 | [Medições, interpretações e decisões](medicoes.md) | `docs/gestao/medicoes.md` |
-| [Script de coleta](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/scripts/coletar_psm.py) | `scripts/coletar_psm.py` |
+| [Script de consolidação](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/scripts/consolida_horas.py) | `assets/scripts/consolida_horas.py` |
 | [Uso de IA](uso_de_ia.md) | `docs/gestao/uso_de_ia.md` |
 
 *Tabela 11. Evidências das medições e sua localização. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
