@@ -6,7 +6,7 @@ Versão 1.6
 
 ## 1. Finalidade
 
-Este artefato estabelece o Plano de Medição do projeto de avaliação de qualidade de software, integrando as diretrizes do modelo *Practical Software and Systems Measurement* (PSM) [S1](#s1), [S3](#s3), [S4](#s4) e a norma *ISO/IEC/IEEE 15939:2017* [S2](#s2). O objetivo é acompanhar a execução do projeto ao longo dos marcos principais: **Entrega 1** (26/10/2026) e **Entrega 2** (18/11/2026), além dos pontos de controle **PC1** (19 a 21/10/2026) e **PC2** (04 a 09/11/2026). A medição atua como um sistema de controle por realimentação (*feedback control system*) [S1](#s1), [S2](#s2), estruturado em três categorias essenciais: [**Calendário e Progresso**](#31-calendário-e-progresso), [**Desempenho dos Processos**](#32-desempenho-dos-processos) e [**Recursos e Custos**](#33-recursos-e-custos). Cada medição realizada é registrada com sua interpretação técnica e com as [decisões corretivas e preventivas](#6-regras-de-decisão) de gestão provocadas pelos indicadores.
+Este artefato estabelece o Plano de Medição do projeto de avaliação de qualidade de software, integrando as diretrizes do modelo *Practical Software and Systems Measurement* (PSM) [S1](#s1), [S3](#s3), [S4](#s4) e a norma *ISO/IEC/IEEE 15939:2017* [S2](#s2). O objetivo é acompanhar a execução do projeto ao longo dos marcos principais: **Entrega 1** (26/10/2026) e **Entrega 2** (18/11/2026), além dos pontos de controle **PC1** (19 a 21/10/2026) e **PC2** (04 a 09/11/2026). A medição atua como um sistema de controle por realimentação (*feedback control system*) [S1](#s1), [S2](#s2), estruturado em três categorias essenciais: [**Calendário e Progresso**](#31-calendario-e-progresso), [**Desempenho dos Processos**](#32-desempenho-dos-processos) e [**Recursos e Custos**](#33-recursos-e-custos). Cada medição realizada é registrada com sua interpretação técnica e com as [decisões corretivas e preventivas](#regras) de gestão provocadas pelos indicadores.
 
 ## 2. Necessidades de informação
 
@@ -24,7 +24,7 @@ Em conformidade com a abordagem *Goal Question Metric* (GQM) [S5](#s5) e os prin
 
 Esta seção detalha como cada objetivo de medição será respondido. A estrutura operacional segue a cadeia analítica da ISO/IEC/IEEE 15939 [S2](#s2): mapeamento do **Atributo**, definição das **Medidas Base (QME)**, cálculo da **Medida Derivada**, aplicação da **Fórmula** e enquadramento no **Indicador** de julgamento. 
 
-A seção se divide em três subseções, uma por categoria do PSM/CID: [3.1 Calendário e Progresso (O1)](#31-calendário-e-progresso), [3.2 Desempenho dos Processos (O2)](#32-desempenho-dos-processos) e [3.3 Recursos e Custos (O3)](#33-recursos-e-custos). Os termos usados nas fórmulas são definidos na [seção 4](#unidade-de-trabalho) e a justificativa teóricas e operacionais das medidas encontram-se na [seção 5](#justificativa).
+A seção se divide em três subseções, uma por categoria do PSM/CID: [3.1 Calendário e Progresso (O1)](#31-calendario-e-progresso), [3.2 Desempenho dos Processos (O2)](#32-desempenho-dos-processos) e [3.3 Recursos e Custos (O3)](#33-recursos-e-custos). Os termos usados nas fórmulas são definidos na [seção 4](#unidade-de-trabalho) e a justificativa teóricas e operacionais das medidas encontram-se na [seção 5](#justificativa).
 
 ### 3.1 Calendário e Progresso
 
@@ -127,7 +127,7 @@ Esta seção explica a lógica de escolha das medidas, as adaptações contextua
  
 ### 5.1 Lógica de escolha
  
-O PSM parte da necessidade de informação, não da medida disponível[S1](#s1),[S5](#s5). Por isso há uma pergunta de gestão para cada categoria [(seção 2)](#2-necessidades-de-informação) e um conjunto pequeno de medidas que a responde diretamente. Foram preferidas medidas que o próprio fluxo de trabalho já produz (issues, pull requests, horas), para que a coleta não vire uma tarefa à parte e possa ser conferida no repositório[S3](#s3).
+O PSM parte da necessidade de informação, não da medida disponível[S1](#s1),[S5](#s5). Por isso há uma pergunta de gestão para cada categoria [(seção 2)](#2-necessidades-de-informacao) e um conjunto pequeno de medidas que a responde diretamente. Foram preferidas medidas que o próprio fluxo de trabalho já produz (issues, pull requests, horas), para que a coleta não vire uma tarefa à parte e possa ser conferida no repositório[S3](#s3).
 
 Para adequar o modelo PSM/CID [S1](#s1), [S3](#s3) e a ISO/IEC/IEEE 15939:2017 [S2](#s2) ao contexto acadêmico, realizaram-se quatro adaptações (\*tailoring\*):
 
@@ -185,11 +185,11 @@ Esta seção indica onde ficam armazenadas as evidências que permitem conferir 
 |---|---|
 | [Issues](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues) | GitHub: Issues e suas respectivas labels |
 | [Commits](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/commits/main/) e [pull requests](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/pulls) com revisão | GitHub: Pull requests |
-| [Horas, esforço planejado e autoavaliação](../../assets/dados/gestao/) | `assets/dados/gestao/` |
-| [Registro de Horas (consolidado)](../gestao/horas.md) | `docs/gestao/horas.md` |
-| [Medições, interpretações e decisões](../gestao/medicoes.md) | `docs/gestao/medicoes.md` |
-| [Script de coleta](../../src/coletar_psm.py) | `scripts/coletar_psm.py` |
-| [Uso de IA](../gestao/uso_de_ia.md) | `docs/gestao/uso_de_ia.md` |
+| [Horas, esforço planejado e autoavaliação](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/tree/main/assets/dados/gestao/) | `assets/dados/gestao/` |
+| [Registro de Horas (consolidado)](horas_consolidadas.md) | `docs/gestao/horas_consolidadas.md` |
+| [Medições, interpretações e decisões](medicoes.md) | `docs/gestao/medicoes.md` |
+| [Script de coleta](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/scripts/coletar_psm.py) | `scripts/coletar_psm.py` |
+| [Uso de IA](uso_de_ia.md) | `docs/gestao/uso_de_ia.md` |
 
 *Tabela 11. Evidências das medições e sua localização. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
 
