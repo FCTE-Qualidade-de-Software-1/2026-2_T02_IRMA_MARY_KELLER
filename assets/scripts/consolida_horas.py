@@ -1065,5 +1065,5 @@ def main():
         print(f"Artefato gerado com sucesso em: {out_file}\n")
 
 
-if __name__ == "__main__":
+if __name__ in ("__main__", "<run_path>") or is_docs_build_active():
     main()
