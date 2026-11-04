@@ -285,7 +285,7 @@
 </tr>
 <tr>
 <td>Horas por integrante e por issue</td>
-<td><code>assets/dados/gestao/horas/&lt;usuario&gt;.csv</code> (colunas <code>data,atividade,horas</code>; ver <a href="../horas/">Registro de Horas</a>)</td>
+<td>Tabela de Contribuição no corpo da issue (colunas <code>Usuário</code>, <code>Data</code>, <code>Horas Trabalhadas</code>; ver <a href="../horas/">Registro de Horas</a>)</td>
 <td>Cada integrante</td>
 <td>Até 12h do dia da medição</td>
 <td><code>RC1</code>, <code>RC2</code></td>
@@ -311,12 +311,9 @@
 <h3 id="72-passos-operacionais">7.2 Passos operacionais</h3>
 <p>Os passos abaixo são seguidos a cada ponto de medição:</p>
 <ol>
-<li>Até as 12h do dia da medição, cada membro lança suas horas no seu CSV individual.</li>
-<li>O <a href="#responsavel">Responsável</a> confere as pré-condições: issues fechadas com Janela, Estimativa e revisão registrada; horas sem ID válido; labels <code>correcao</code> aplicadas onde devidas. Pendências são cobradas das duplas donas antes do cálculo.</li>
-<li>O <a href="#responsavel">Responsável</a> executa o script na raiz do repositório:
-   <code>bash
-   uv run scripts/coletar_psm.py --data AAAA-MM-DD</code>
-   O script calcula as fórmulas de <a href="../plano_de_medicao/#3-medidas-e-indicadores-por-categoria">3. Medidas e indicadores por categoria</a> e gera tanto a saída no terminal quanto a página de acompanhamento em <a href="../horas_consolidadas/">Medições Consolidadas</a>. A cada medição, confere-se à mão ao menos uma medida (por exemplo, o <code>CP1</code>) contra o resultado do script.</li>
+<li>Até as 12h do dia da medição, cada membro lança suas horas na Tabela de Contribuição das issues em que trabalhou.</li>
+<li>O <a href="#responsavel">Responsável</a> confere as pré-condições: issues fechadas com Janela, Estimativa e revisão registrada; horas lançadas fora de issues; labels <code>correcao</code> aplicadas onde devidas. Pendências são cobradas das duplas donas antes do cálculo.</li>
+<li>O <a href="#responsavel">Responsável</a> gera a página de acompanhamento. O script <code>assets/scripts/consolida_horas.py</code> roda automaticamente no build do ProperDocs (<code>uv run properdocs build</code> ou <code>serve</code>), lê as issues pela API do GitHub e publica <a href="../horas_consolidadas/">Medições Consolidadas</a>. Defina <code>GITHUB_TOKEN</code> no ambiente ou em um arquivo <code>.env</code> na raiz (não versionado) para evitar o limite de requisições. Os cálculos seguem as fórmulas de <a href="../plano_de_medicao/#3-medidas-e-indicadores-por-categoria">3. Medidas e indicadores por categoria</a>. A cada medição, confere-se à mão ao menos uma medida (por exemplo, o <code>CP1</code>) contra o resultado gerado.</li>
 <li>O <a href="#responsavel">Responsável</a> registra os valores consolidados na tabela de histórico (<a href="#historico">seção 7.4</a>), indicando ponto de medição, data, valores das medidas base, valor derivado, nível e cor.</li>
 <li>Em Mg-1, Mg-2 e Mg-3, o revisor preenche ou valida o <code>assets/dados/gestao/autoavaliacao.csv</code> para a fase correspondente, com um nível e uma evidência (link para o trecho do artigo, da GitPage ou do repositório) por critério. Antes disso, o Responsável confere o <a href="../uso_de_ia/">registro de uso de IA</a>.</li>
 <li>O <a href="#responsavel">Responsável</a> interpreta cada medida amarela ou vermelha: registra causa provável e decisão conforme as <a href="../plano_de_medicao/#regras">Regras de Decisão</a>, e abre issue de ação quando houver trabalho corretivo a fazer.</li>
@@ -435,13 +432,13 @@
 <td style="text-align: center;"><strong>84,6%</strong></td>
 <td style="text-align: center;">Com ressalva</td>
 <td style="text-align: center;">Amarelo</td>
-<td>Duas issues concluídas sem apontamento nos CSVs individuais. Decisão: completar os lançamentos retroativos dos membros pendentes.</td>
+<td>Duas issues concluídas sem apontamento na Tabela de Contribuição. Decisão: completar os lançamentos retroativos dos membros pendentes.</td>
 </tr>
 </tbody>
 </table>
 <p><a id="padroes-issues"></a></p>
 <h3 id="75-padrao-de-texto-para-issues-determinacao-de-dp1-e-criterios">7.5 Padrão de texto para issues (Determinação de DP1 e Critérios)</h3>
-<p>Para assegurar a confiabilidade da medição automatizada pelo script <code>consolida_horas.py</code> / <code>coletar_psm.py</code>, todas as issues devem conter blocos padronizados de metadados:</p>
+<p>Para assegurar a confiabilidade da medição automatizada pelo script <code>consolida_horas.py</code>, todas as issues devem conter blocos padronizados de metadados:</p>
 <h4 id="padrao-1-nova-atividade-planejada-alimenta-cp1-cp2-rc2-e-criterios">Padrão 1: Nova Atividade Planejada (Alimenta CP1, CP2, RC2 e Critérios)</h4>
 <p>Adicionar no corpo da issue ao criá-la:</p>
 <pre><code class="language-markdown">## Metadados de Medição (PSM/CID)

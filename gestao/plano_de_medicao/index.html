@@ -405,7 +405,7 @@
 </tbody>
 </table>
 <p><em>Tabela 4. Medidas e indicadores de Recursos e Custos (O3). Fonte: Elaborado por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a></em></p>
-<p><strong>Procedimento de coleta:</strong> Cada integrante registra as horas dedicadas às atividades em seu arquivo CSV individual. A equipe consolida os registros periodicamente e avalia a estabilidade das estimativas <a href="#s1">S1</a>. Conforme a norma ISO/IEC/IEEE 15939 <a href="#s2">S2</a>, a verificação de presença do registro de horas (taxa de cobertura <code>Pa ≥ 90%</code>) atua como pré-condição operacional de qualidade dos dados, garantindo a confiabilidade dos indicadores <code>RC1</code> e <code>RC2</code>.</p>
+<p><strong>Procedimento de coleta:</strong> Cada integrante registra as horas dedicadas às atividades na Tabela de Contribuição das issues correspondentes. A equipe consolida os registros periodicamente e avalia a estabilidade das estimativas <a href="#s1">S1</a>. Conforme a norma ISO/IEC/IEEE 15939 <a href="#s2">S2</a>, a verificação de presença do registro de horas (taxa de cobertura <code>Pa ≥ 90%</code>) atua como pré-condição operacional de qualidade dos dados, garantindo a confiabilidade dos indicadores <code>RC1</code> e <code>RC2</code>.</p>
 <h2 id="4-unidade-de-trabalho-e-convencoes">4. Unidade de trabalho e convenções</h2>
 <p>Esta seção fixa as regras que tornam as medições repetíveis conforme a norma ISO/IEC/IEEE 15939:2017 <a href="#s2">S2</a>: o que conta como unidade de trabalho, como cada termo das fórmulas é interpretado e como os níveis dos indicadores se traduzem em cores.</p>
 <p><a id="unidade-de-trabalho"></a></p>
@@ -447,7 +447,7 @@
 </tr>
 <tr>
 <td>Esforço realizado (<code>Hr</code>, <code>Hi</code>)</td>
-<td>Horas registradas em <code>assets/dados/gestao/horas/&lt;usuario&gt;.csv</code>, em múltiplos de 0,25 h, ligadas ao ID da issue. Em trabalho em dupla, cada integrante lança as próprias horas</td>
+<td>Horas registradas na Tabela de Contribuição de cada issue, em múltiplos de 0,25 h, uma linha por integrante e dia. Em trabalho em dupla, cada integrante lança as próprias horas</td>
 </tr>
 <tr>
 <td>Escopo do <code>RC2</code></td>
@@ -455,7 +455,7 @@
 </tr>
 <tr>
 <td>Cobertura de dados (<code>Pa</code>)</td>
-<td>Porcentagem de atividades concluídas com horas registradas no CSV (<code>Pa = (Ar ÷ Ac) × 100</code>). Atua como indicador de higiene dos dados.</td>
+<td>Porcentagem de atividades concluídas com horas registradas na Tabela de Contribuição (<code>Pa = (Ar ÷ Ac) × 100</code>). Atua como indicador de higiene dos dados.</td>
 </tr>
 <tr>
 <td>Horas sem issue</td>
@@ -634,20 +634,20 @@
 <td>GitHub: Pull requests</td>
 </tr>
 <tr>
-<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/tree/main/assets/dados/gestao/">Horas, esforço planejado e autoavaliação</a></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/tree/main/assets/dados/gestao/">Autoavaliação</a></td>
 <td><code>assets/dados/gestao/</code></td>
 </tr>
 <tr>
 <td><a href="../horas_consolidadas/">Registro de Horas (consolidado)</a></td>
-<td><code>docs/gestao/horas_consolidadas.md</code></td>
+<td>Gerado no build por <code>assets/scripts/consolida_horas.py</code></td>
 </tr>
 <tr>
 <td><a href="../medicoes/">Medições, interpretações e decisões</a></td>
 <td><code>docs/gestao/medicoes.md</code></td>
 </tr>
 <tr>
-<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/scripts/coletar_psm.py">Script de coleta</a></td>
-<td><code>scripts/coletar_psm.py</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/scripts/consolida_horas.py">Script de consolidação</a></td>
+<td><code>assets/scripts/consolida_horas.py</code></td>
 </tr>
 <tr>
 <td><a href="../uso_de_ia/">Uso de IA</a></td>

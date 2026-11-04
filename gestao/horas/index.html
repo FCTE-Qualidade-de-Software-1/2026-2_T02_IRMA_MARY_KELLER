@@ -263,35 +263,37 @@
         <div class="col-md-9" role="main">
 
 <h1 id="registro-de-horas">Registro de Horas</h1>
-<p>Versão 1.1</p>
+<p>Versão 1.2</p>
 <hr />
 <h2 id="1-para-que-serve">1. Para que serve</h2>
 <p>Este registro é a fonte de dados das medições de <strong>Recursos e Custos</strong> do <a href="../plano_de_medicao/">Plano de medição</a>: <code>RC1</code> (esforço total e equilíbrio entre integrantes), <code>RC2</code> (variação entre esforço estimado e realizado) e <code>RC3</code> (cobertura do registro de esforço). Também serve de base para o custo equivalente do trabalho. Se as horas não forem lançadas, ou forem lançadas sem o ID da issue, essas medições perdem a confiabilidade.</p>
 <h2 id="2-como-registrar-cada-integrante">2. Como registrar (cada integrante)</h2>
 <ol>
-<li>Tenha o seu arquivo <code>assets/dados/gestao/horas/&lt;usuario&gt;.csv</code>, em que <code>&lt;usuario&gt;</code> é o seu usuário do GitHub. O cabeçalho é sempre <code>data,atividade,horas</code>.</li>
-<li>Acrescente <strong>uma linha por dia e por issue</strong> em que trabalhou:</li>
-<li><code>data</code>: no formato <code>AAAA-MM-DD</code>.</li>
-<li><code>atividade</code>: número da issue sem o <code>#</code> (<code>#1</code> vira <code>1</code>).</li>
-<li><code>horas</code>: número decimal com ponto, em múltiplos de 0,25 (por exemplo, <code>1.5</code>, <code>0.75</code>).</li>
-<li>Lance as horas <strong>até as 12h do dia de cada ponto de medição</strong> (M-1 a M-5; datas no plano).</li>
-<li>Versione o arquivo no repositório.</li>
+<li>Abra a issue em que trabalhou. Ela deve ter sido criada com o <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/.github/ISSUE_TEMPLATE/atividade_planejada.md">template de atividade planejada</a>, que contém a seção <strong>Tabela de Contribuição</strong>.</li>
+<li>Acrescente <strong>uma linha por dia</strong> em que trabalhou na issue:</li>
+<li><code>Usuário</code>: seu usuário do GitHub (por exemplo, <code>@usuario</code>).</li>
+<li><code>Data</code>: no formato <code>DD/MM/AAAA</code>.</li>
+<li><code>Horas Trabalhadas</code>: número decimal, em múltiplos de 0,25 (por exemplo, <code>1.5</code>, <code>0.75</code>).</li>
+<li>Lance as horas <strong>até as 12h do dia de cada ponto de medição</strong> (Mg-1 a Mg-3; datas no plano).</li>
+<li>O script de consolidação lê as tabelas das issues pela API do GitHub a cada build da página. Não há arquivo a versionar.</li>
 </ol>
 <h3 id="regras">Regras</h3>
 <ul>
 <li>Conte tudo o que é trabalho do projeto: escrita, pesquisa, revisão do trabalho de outro membro, reuniões, preparação de slides e a conferência de textos gerados por IA.</li>
-<li>Em trabalho de dupla, cada integrante lança as <strong>suas</strong> horas. Não divida nem some as da dupla.</li>
+<li>Em trabalho de dupla, cada integrante lança as <strong>suas</strong> horas, em linhas próprias. Não divida nem some as da dupla.</li>
 <li>Não registre horas estimadas aqui. A estimativa fica no campo <strong>Estimativa</strong> da issue.</li>
 <li>Se a atividade ainda não tem issue, crie a issue primeiro. Reuniões e tarefas de gestão também precisam de uma issue de apoio com Estimativa.</li>
-<li>Horas sem ID válido não são atribuídas a nenhuma atividade e diminuem o <code>RC3</code>.</li>
-<li>Para corrigir um lançamento, edite a linha no CSV e versione a alteração. Não apague o histórico do repositório.</li>
+<li>Horas lançadas fora de uma issue não são contabilizadas e diminuem o <code>RC3</code>.</li>
+<li>Para corrigir um lançamento, edite a linha da tabela na issue. O histórico de edições fica registrado pelo GitHub.</li>
 </ul>
 <h3 id="exemplo-de-preenchimento">Exemplo de preenchimento</h3>
-<p>Valores fictícios, apenas para mostrar o formato. Não copiar para o seu arquivo.</p>
-<pre><code>data,atividade,horas
-2026-01-01,F1-02,1.5
-2026-01-01,F1-03,0.75
-2026-01-02,F1-02,2
+<p>Valores fictícios, apenas para mostrar o formato. Não copiar para a sua issue.</p>
+<pre><code class="language-markdown">### Tabela de Contribuição
+
+| Usuário  | Data       | Horas Trabalhadas |
+| :------- | :--------: | :---------------: |
+| @usuario | 01/01/2026 | 1.5               |
+| @usuario | 02/01/2026 | 0.75              |
 </code></pre>
 <h2 id="3-como-as-horas-viram-medidas">3. Como as horas viram medidas</h2>
 <table>
@@ -304,7 +306,7 @@
 <tbody>
 <tr>
 <td><code>RC1</code></td>
-<td><code>Et</code> é a soma de todas as horas lançadas; <code>Hi</code> é a soma por integrante; <code>Hm = Et ÷ n</code>. Alerta de desequilíbrio se algum <code>Hi</code> ficar fora de ±50% de <code>Hm</code></td>
+<td><code>Et</code> é a soma de todas as horas lançadas nas issues; <code>Hi</code> é a soma por integrante; <code>Hm = Et ÷ n</code>. Alerta de desequilíbrio se algum <code>Hi</code> ficar fora de ±50% de <code>Hm</code></td>
 </tr>
 <tr>
 <td><code>RC2</code></td>
@@ -312,12 +314,12 @@
 </tr>
 <tr>
 <td><code>RC3</code></td>
-<td><code>Pa</code> é o percentual de issues concluídas que têm ao menos uma linha de horas</td>
+<td><code>Pa</code> é o percentual de issues concluídas que têm ao menos uma linha na Tabela de Contribuição</td>
 </tr>
 </tbody>
 </table>
 <h2 id="4-consolidado-preenchido-pela-dupla-c-a-cada-medicao">4. Consolidado (preenchido pela Dupla C a cada medição)</h2>
-<p>A Dupla C preenche os quadros abaixo a partir dos CSVs e do resultado do script de coleta. Os integrantes não precisam preencher esta parte. Copie o bloco 4.1 para cada nova semana.</p>
+<p>A Dupla C preenche os quadros abaixo a partir da página <a href="../horas_consolidadas/">Medições Consolidadas</a>, gerada automaticamente das issues. Os integrantes não precisam preencher esta parte. Copie o bloco 4.1 para cada nova semana.</p>
 <p>A tabela semanal anterior deste arquivo tinha as colunas Início, Fim e Total. Elas foram substituídas por uma única coluna de horas, que é o dado que as medições usam, e foram acrescentadas as colunas de integrante e de ID da issue.</p>
 <h3 id="41-atividades-realizadas-semana-1510-a-1810">4.1 Atividades realizadas: semana 15/10 a 18/10</h3>
 <table>
@@ -453,6 +455,14 @@
 <td>15/10/2026</td>
 <td>Adequação às medições <code>RC1</code>, <code>RC2</code> e <code>RC3</code>: instruções de uso, CSV por integrante e quadros consolidados</td>
 <td><a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
+<td></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/commit/"></a></td>
+</tr>
+<tr>
+<td>1.2</td>
+<td>04/11/2026</td>
+<td>Registro de horas migrado dos CSVs para a Tabela de Contribuição das issues</td>
+<td></td>
 <td></td>
 <td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/commit/"></a></td>
 </tr>
