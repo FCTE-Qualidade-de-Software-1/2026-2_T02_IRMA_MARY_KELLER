@@ -13,7 +13,12 @@ Descrever com clareza o objetivo da atividade e o escopo do que deve ser entregu
 - **Janela Prevista:** DD/MM/AAAA
 - **Estimativa:** 0.00 h
 - **Critérios Relacionados:** [Ex: F3-C1, F3-C2]
-- **Classificação:** [x] Nova Atividade Planejada | [ ] Correção / Retrabalho (DP1)
+
+### Tabela de Contribuição
+
+| Usuário | Data  | Horas Trabalhadas |
+| :------ | :---: | :---------------: |
+|         |       |                   |
 
 ## Tarefas
 - [ ] Tarefa 1

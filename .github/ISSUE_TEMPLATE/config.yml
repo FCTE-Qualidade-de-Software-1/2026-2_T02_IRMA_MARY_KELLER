@@ -1,4 +1,11 @@
-blank_issues_enabled: true
+blank_issues_enabled: false
+issue_templates:
+  - name: "Atividade Planejada"
+    description: "Adiciona uma atividade planejada"
+    body: "./ISSUE_TEMPLATE/atividade_planejada.md"
+  - name: "Retrabalho"
+    description: "Retrabalha uma atividade planejada"
+    body: "./ISSUE_TEMPLATE/correcao_retrabalho.md"
 contact_links:
   - name: Guia de Medição e Convenções PSM
     url: https://fcte-qualidade-de-software-1.github.io/2026-2_T02_IRMA_MARY_KELLER/gestao/plano_de_medicao/

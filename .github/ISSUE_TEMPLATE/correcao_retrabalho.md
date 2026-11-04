@@ -9,17 +9,19 @@ assignees: []
 ## Objetivo
 Descrever a necessidade de correção ou retrabalho em artefatos previamente elaborados ou avaliados.
 
-## Metadados de Medição (PSM/CID - DP1)
+## Metadados de Medição (PSM/CID)
 - **Janela Prevista:** DD/MM/AAAA
 - **Estimativa:** 0.00 h
 - **Critérios Relacionados:** [Ex: F1-C3, F2-C5]
-- **Classificação:** Correção / Retrabalho (DP1)
-- **Retrabalho (DP1):** Sim
+- **Retrabalho:** Sim
 - **Issue de Origem:** #
-- **Origem da Demanda:** [ ] Revisão por pares | [ ] Feedback docente | [ ] Autoavaliação DP2 (Critério Insuficiente/Crítico) | [ ] Outro
+- **Cause:** 
 
-## Causa Raiz do Retrabalho
-Explicar a causa que motivou a correção (ex.: ambiguidade no texto, inconsistência de referências, critérios de aceite não atingidos, falha em teste).
+### Tabela de Contribuição
+
+| Usuário | Data  | Horas Trabalhadas |
+| :------ | :---: | :---------------: |
+|         |       |                   |
 
 ## Ações Corretivas
 - [ ] Ajuste no artefato/código
