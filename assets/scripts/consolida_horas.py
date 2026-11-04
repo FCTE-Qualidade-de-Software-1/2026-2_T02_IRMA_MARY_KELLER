@@ -1014,6 +1014,18 @@ def render_markdown(metrics, output_file):
         print(file=output_file)
 
 
+def is_docs_build_active():
+    """Detecta se o script está sendo executado pelo plugin de build (ProperDocs ou MkDocs)."""
+    if HAS_MKDOCS_GEN_FILES:
+        try:
+            import mkdocs_gen_files.editor
+            if getattr(mkdocs_gen_files.editor.FilesEditor, "_current", None) is not None:
+                return True
+        except Exception:
+            pass
+    return any(tool in arg for arg in sys.argv[:2] for tool in ["properdocs", "mkdocs"])
+
+
 def main():
     parser = argparse.ArgumentParser(description="Consolida medições do Plano de Medição (PSM/CID).")
     parser.add_argument("--data", dest="data_corte", help="Data de corte no formato AAAA-MM-DD", default=None)
@@ -1023,12 +1035,14 @@ def main():
     dt_corte = parse_date_string(args.data_corte) if args.data_corte else None
     metrics = consolidate_metrics(data_corte=dt_corte)
 
-    is_mkdocs_build = any("mkdocs" in arg for arg in sys.argv[:2])
+    in_docs_build = is_docs_build_active()
 
-    if is_mkdocs_build and HAS_MKDOCS_GEN_FILES and not args.out_path:
+    if in_docs_build and HAS_MKDOCS_GEN_FILES and not args.out_path:
+        # Durante o build do ProperDocs ou MkDocs: gera apenas o arquivo virtual em memória
         with mkdocs_gen_files.open("gestao/horas_consolidadas.md", "w") as f:
             render_markdown(metrics, f)
     else:
+        # Apenas quando executado manualmente fora do build (ex: CLI scripts/coletar_psm.py)
         out_file = args.out_path or "docs/gestao/horas_consolidadas.md"
         os.makedirs(os.path.dirname(out_file), exist_ok=True)
         with open(out_file, "w", encoding="utf-8") as f:
