@@ -1,4 +1,4 @@
-# Critérios de avaliação QSW – Fase 2
+# Critérios de avaliação QSW (Fase 2)
 
 Os critérios abaixo foram definidos pela professora e **não foram ajustados** de relatório para artigo: são reproduzidos como originalmente fornecidos. Servem como material de consulta e para fazer a rastreabilidade de cada critério ao produzir as demandas da Fase 2.
 
@@ -19,4 +19,4 @@ Os indicadores seguem a ordem dos níveis de desempenho, do pior para o melhor: 
 |`F2-C11`| Consistência entre as Fases 1 e 2 (Rastreabilidade e Coerência) | Incoerência grave: os Objetivos GQM parecem ter sido definidos isoladamente, ignorando o Propósito e as prioridades estabelecidas na Fase 1 (ex.: foco na Confiabilidade, quando a prioridade era Eficiência). | Coerência parcial: alguns objetivos parecem ser escolhas novas ou secundárias e não refletem as características de qualidade priorizadas na Fase 1. | Coerência clara: a maioria dos Objetivos GQM (Foco de Qualidade e Ponto de Vista) reflete as prioridades da Fase 1, mas o alinhamento não é justificado ou explicitado na documentação da Fase 2. | Rastreabilidade total e justificada: o Objetivo de Medição (Foco da Qualidade e Ponto de Vista) é derivado das características priorizadas e dos stakeholders definidos na Fase 1. A consistência é explicitada na documentação. |
 |`F2-C12`| Relevância e Adaptação Conceitual da Terminologia | Inclusão de terminologia e conceitos visivelmente incompatíveis com o que foi solicitado no trabalho, demonstrando falta de entendimento conceitual e contextual. | Presença clara de jargão copiado: termos técnicos são utilizados de forma desnecessária, sem ligação com as métricas, o tipo de produto ou conceitos que não foram adaptados ao contexto do trabalho. | A terminologia é majoritariamente relevante, mas apresenta pequenos desvios ou inclui um ou dois conceitos que, embora tecnicamente corretos, não têm aplicação direta no trabalho. | Terminologia, conceitos e jargões utilizados são totalmente relevantes e adaptados ao trabalho. Não há inclusão de jargão irrelevante ou externo ao escopo/contexto do trabalho. |
 
-*Tabela X. Critérios de avaliação Fase 2. Fonte: Aprender3 QSW*
+*Tabela 1. Critérios de avaliação Fase 2. Fonte: Aprender3 QSW*
