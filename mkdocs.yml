@@ -1,7 +1,42 @@
-site_name: 2026-2_T02_IRMA_MARY_KELLER
+site_name: Avaliação Khan Academy
+site_description: Avaliação de qualidade do produto Khan Academy segundo a família SQuaRE, com gestão por medição PSM/CID.
+site_url: https://fcte-qualidade-de-software-1.github.io/2026-2_T02_IRMA_MARY_KELLER/
+repo_url: https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER
+repo_name: Repositório
+
 theme:
-  name: null
-  custom_dir: 'cinder'
+  name: material
+  custom_dir: overrides
+  language: pt-BR
+  logo: assets/img/logo_khan_simbolo.png
+  favicon: assets/img/marca.svg
+  font:
+    text: Lato
+    code: Roboto Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Mudar para o modo escuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Mudar para o modo claro
+  icon:
+    repo: octicons/code-16
+  features:
+    - navigation.top
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+
 nav:
   - Início: index.md
   - Fase 1:
@@ -11,31 +46,56 @@ nav:
       - Escopo da avaliação: fase-1/escopo-da-avaliacao.md
   - Fase 2:
       - Visão geral: fase-2/index.md
-      - Objetivos de Medição: fase-2/objetivos.md
+      - Objetivos de medição: fase-2/objetivos.md
       - Questões e hipóteses: fase-2/questoes-hipoteses.md
       - Métricas: fase-2/metricas.md
       - Critérios de julgamento: fase-2/criterios-julgamento.md
       - Gráfico GQM: fase-2/grafico-gqm.md
   - Gestão:
-    - Artigo: gestao/artigo.md
-    - Plano de Medição: gestao/plano_de_medicao.md
-    - Procedimento de Medição: gestao/medicoes.md
-    - Uso de IA: gestao/uso_de_ia.md
-    - Registro de Horas: gestao/horas.md
-    - Medições Consolidadas: gestao/horas_consolidadas.md
-    - Critérios:
-        - Fase 1: criterios/fase1.md
-        - Fase 2: criterios/fase2.md
-        
+      - Plano de medição: gestao/plano_de_medicao.md
+      - Painel PSM/CID: gestao/horas_consolidadas.md
+      - Procedimento de medição: gestao/medicoes.md
+      - Registro de horas: gestao/horas.md
+      - Uso de IA: gestao/uso_de_ia.md
+      - Critérios Fase 1: criterios/fase1.md
+      - Critérios Fase 2: criterios/fase2.md
+  - Artigo: gestao/artigo.md
+
+exclude_docs: |
+  fase-3/
+
 plugins:
+  - search:
+      lang: pt
   - gen-files:
       scripts:
         - assets/scripts/consolida_horas.py
 
 markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      title: Nesta página
+      permalink: true
+      permalink_title: Link para esta seção
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
   - pymdownx.arithmatex:
       generic: true
 
+extra_css:
+  - stylesheets/khan.css
+
 extra_javascript:
   - js/mathjax.js
+  - js/khan.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  generator: false

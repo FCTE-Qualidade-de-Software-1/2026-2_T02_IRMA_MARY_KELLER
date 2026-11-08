@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Irmã Mary Keller e Khan Academy</title>
+  <path d="M32 3 L57.5 17.5 V46.5 L32 61 L6.5 46.5 V17.5 Z" fill="#14BF96" stroke="#14BF96" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M32 11.5 C22.5 11.5 18 18.5 17.5 27 C17 33.5 14.5 39 10.5 43.5 H53.5 C49.5 39 47 33.5 46.5 27 C46 18.5 41.5 11.5 32 11.5 Z" fill="#0B2149"/>
+  <ellipse cx="32" cy="27" rx="8.8" ry="9.8" fill="#FFFFFF"/>
+  <ellipse cx="32" cy="27.6" rx="5.9" ry="6.6" fill="#F7D2B6"/>
+  <path d="M12.5 33.5 C24 33.5 31 41.5 31 53 C20.5 53 12.5 45 12.5 33.5 Z" fill="#FFFFFF"/>
+  <path d="M51.5 33.5 C40 33.5 33 41.5 33 53 C43.5 53 51.5 45 51.5 33.5 Z" fill="#FFFFFF"/>
+</svg>

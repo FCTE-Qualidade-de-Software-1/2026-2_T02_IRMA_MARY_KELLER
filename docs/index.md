@@ -1,55 +1,45 @@
-# Avaliação de Qualidade do Produto Khan Academy
+---
+title: Início
+hide:
+  - navigation
+  - toc
+---
 
-Disciplina FGA0315 Qualidade de Software 1 | Profa. Cristiane Ramos | 2026-2
+<div class="inicio-hero">
+  <p class="inicio-hero__sobretitulo">FGA0315 · Qualidade de Software 1 · Grupo Irmã Mary Keller</p>
+  <h1>Avaliação da qualidade do Khan Academy</h1>
+  <video class="inicio-hero__video" src="assets/video/intro-khan-academy.mp4" poster="assets/video/intro-khan-academy-capa.jpg" muted loop playsinline autoplay aria-hidden="true"></video>
+  <p class="inicio-hero__produto"><strong>Produto avaliado</strong><span>Portabilidade</span><span>Eficiência de desempenho</span><span>Usabilidade</span></p>
+  <div class="inicio-hero__acoes">
+    <a class="inicio-botao inicio-botao--principal" href="fase-1/">Ver documentação</a>
+    <a class="inicio-botao" href="gestao/horas_consolidadas/">Painel PSM/CID</a>
+    <a class="inicio-botao" href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER">Repositório</a>
+  </div>
+</div>
 
-**Versão 1.3**
+<div class="inicio-conteudo" markdown>
 
-![Imagem do Khan Academy](assets/img/logo_khan_academy.png)
-
-*Figura 1. Logo Khan Academy. Fonte: [Learning Engineering Virtual Institute](https://learning-engineering-virtual-institute.org/teams/khan-academy/.)*
-
-<a id="sobre"></a>
-## Sobre
-
-<!-- Corrigir-->
-Este site documenta a avaliação da qualidade do Khan Academy, plataforma de estudos online, seguindo o processo de avaliação de produto da família SQuaRE. A avaliação examina três características: portabilidade (adaptabilidade em diferentes sistemas operacionais), eficiência de desempenho (comportamento temporal e utilização de recursos) e usabilidade (apreensibilidade e acessibilidade), considerando diferentes stakeholders e suas necessidades específicas.
-
-<a id="sumario"></a>
-## Sumário
-
-1. [Fase 1: Requisitos de avaliação](fase-1/index.md): propósito, produto, stakeholders e características selecionadas.
-2. [Fase 2: Definição das métricas](fase-2/index.md): objetivos, questões, hipóteses e métricas (GQM), níveis de pontuação e critérios de julgamento.
-3. [Gestão do projeto](gestao/plano_de_medicao.md): cronograma, medições PSM/CID, interpretações e decisões.
-4. [Artigo](gestao/artigo.md): explicação e justificativa da escolha do modelo do artigo.
-5. [Links do projeto](#links-do-projeto): repositório, releases e dados.
-
-As Fases 3 e 4 (planejamento e execução da avaliação) serão publicadas na Entrega 2.
-
-<a id="links-do-projeto"></a>
-## Links do projeto
-
-- [Repositório da equipe](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER)
-- [Release da Entrega 1](https://github.com/ORGANIZACAO/REPOSITORIO/releases) (release deve ser feita no dia 25/10)
-- Dados da avaliação serão incluidos na Entrega 2
-
-<a id="equipe"></a>
 ## Equipe
 
-| Foto | Nome | Matrícula |
-|---|---|---|
-| <img src="https://res.cloudinary.com/dll5ypaj7/image/fetch/f_auto,w_250,h_250,c_fill,r_30/https://github.com/CamilaSilvaC.png" alt="Foto de perfil de Camila Silva" width="100"> | [Camila Silva](https://github.com/CamilaSilvaC) | 232013944 |
-| <img src="https://res.cloudinary.com/dll5ypaj7/image/fetch/f_auto,w_250,h_250,c_fill,r_30/https://github.com/menali17.png" alt="Foto de perfil de Enzo Menali" width="100"> | [Enzo Menali](https://github.com/menali17) | 241011054 |
-| <img src="https://res.cloudinary.com/dll5ypaj7/image/fetch/f_auto,w_250,h_250,c_fill,r_30/https://github.com/GeovannaUmbelino.png" alt="Foto da Geovanna Umbelino" width="100"> | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) | 232014450 |
-| <img src="https://res.cloudinary.com/dll5ypaj7/image/fetch/f_auto,w_250,h_250,c_fill,r_30/https://github.com/JAugustoM.png" alt="Foto do José Augusto" width="100"> | [José Augusto](https://github.com/JAugustoM) | 231026429 |
-| <img src="https://res.cloudinary.com/dll5ypaj7/image/fetch/f_auto,w_250,h_250,c_fill,r_30/https://github.com/luisa12ll.png" alt="Foto da Luisa de Souza" width="100"> | [Luisa de Souza](https://github.com/luisa12ll) | 232014807 |
-| <img src="https://res.cloudinary.com/dll5ypaj7/image/fetch/f_auto,w_250,h_250,c_fill,r_30/https://github.com/Pwdrinho.png" alt="Foto do Pedro Lucas" width="100"> | [Pedro Lucas](https://github.com/Pwdrinho) | 241025710 |
+<div class="inicio-equipe">
+  <a href="https://github.com/CamilaSilvaC"><img src="https://github.com/CamilaSilvaC.png?size=240" alt="Foto de Camila Cavalcante" loading="lazy"><strong>Camila Cavalcante</strong><small>232013944</small></a>
+  <a href="https://github.com/menali17"><img src="https://github.com/menali17.png?size=240" alt="Foto de Enzo Menali" loading="lazy"><strong>Enzo Menali</strong><small>241011054</small></a>
+  <a href="https://github.com/GeovannaUmbelino"><img src="https://github.com/GeovannaUmbelino.png?size=240" alt="Foto de Geovanna Umbelino" loading="lazy"><strong>Geovanna Umbelino</strong><small>232014450</small></a>
+  <a href="https://github.com/JAugustoM"><img src="https://github.com/JAugustoM.png?size=240" alt="Foto de José Augusto" loading="lazy"><strong>José Augusto</strong><small>231026429</small></a>
+  <a href="https://github.com/luisa12ll"><img src="https://github.com/luisa12ll.png?size=240" alt="Foto de Luisa de Souza" loading="lazy"><strong>Luisa de Souza</strong><small>232014807</small></a>
+  <a href="https://github.com/Pwdrinho"><img src="https://github.com/Pwdrinho.png?size=240" alt="Foto de Pedro Lucas" loading="lazy"><strong>Pedro Lucas</strong><small>241025710</small></a>
+</div>
 
-<a id="historico-de-versoes"></a>
 ## Histórico de versões
 
 | Versão | Data | Descrição | Responsável | Revisor |
 |---|---|---|---|---|
 | 1.0 | 14/10/2026 | Criação da página inicial | [Pedro Lucas](https://github.com/Pwdrinho) | [Luisa de Souza](https://github.com/luisa12ll) |
-| 1.1 | 18/10/2026 | Correções de imagens da equipe e link repositório |[Luisa de Souza](https://github.com/luisa12ll) | [Pedro Lucas](https://github.com/Pwdrinho) |
+| 1.1 | 18/10/2026 | Correções de imagens da equipe e link repositório | [Luisa de Souza](https://github.com/luisa12ll) | [Pedro Lucas](https://github.com/Pwdrinho) |
 | 1.2 | 21/10/2026 | Corrige links do sumário | [Pedro Lucas](https://github.com/Pwdrinho) | [Luisa de Souza](https://github.com/luisa12ll) |
 | 1.3 | 26/10/2026 | Adiciona link release entrega 1 | [Pedro Lucas](https://github.com/Pwdrinho) | [Luisa de Souza](https://github.com/luisa12ll) |
+| 1.4 | 06/11/2026 | Aplica o tema visual Khan, reorganiza a página inicial e corrige o link da release | [Luisa de Souza](https://github.com/luisa12ll) | [Pedro Lucas](https://github.com/Pwdrinho) |
+
+<p class="legenda"><em>Tabela 1. Histórico de versões da página inicial.</em><br>Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a></p>
+
+</div>

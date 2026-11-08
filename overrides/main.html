@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {% if page and page.is_homepage %}
+    <style>
+      .md-main__inner.md-grid {
+        max-width: 84rem;
+        padding: 0 1rem;
+      }
+    </style>
+  {% endif %}
+{% endblock %}
+
+{% block footer %}{% endblock %}

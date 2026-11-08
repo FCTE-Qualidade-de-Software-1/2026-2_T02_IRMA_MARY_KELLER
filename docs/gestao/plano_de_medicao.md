@@ -10,11 +10,11 @@ Este artefato estabelece o Plano de Medição do projeto de avaliação de quali
 
 ## 2. Necessidades de informação
 
-Em conformidade com a abordagem *Goal Question Metric* (GQM) [S5](#s5) e os princípios do PSM [S1](#s1), [S3](#s3), a medição deriva de necessidades concretas de informação, e não da disponibilidade fortuita de dados. Cada objetivo de medição (**O1** a **O3**) apresentados na Tabela 1, vincula-se a uma categoria e a uma pergunta orientadora de gestão que serve de guia para escolher as medidas da [seção 3](#3-medidas-e-indicadores-por-categoria).
+Em conformidade com a abordagem *Goal Question Metric* (GQM) [S5](#s5) e os princípios do PSM [S1](#s1), [S3](#s3), a medição deriva de necessidades concretas de informação, e não da disponibilidade fortuita de dados. Cada objetivo de medição (**O1** a **O3**), apresentado na Tabela 1, vincula-se a uma categoria e a uma pergunta orientadora de gestão que serve de guia para escolher as medidas da [seção 3](#3-medidas-e-indicadores-por-categoria).
 
 | Objetivo | Categoria | Pergunta orientadora de gestão |
 |---|---|---|
-| [O1](#objetivo-1) | Calendário e Progresso | Vamos entregar os slides do Pontos de Controle e a Entregas no ritmo planejado? |
+| [O1](#objetivo-1) | Calendário e Progresso | Vamos entregar os slides dos Pontos de Controle e as Entregas no ritmo planejado? |
 | [O2](#objetivo-2) | Desempenho dos Processos | O processo de produzir e revisar gera entregas que atendem aos critérios da professora, sem muito retrabalho? |
 | [O3](#objetivo-3) | Recursos e Custos | O esforço gasto confere com o planejado e está equilibrado entre os membros? |
 
@@ -24,7 +24,7 @@ Em conformidade com a abordagem *Goal Question Metric* (GQM) [S5](#s5) e os prin
 
 Esta seção detalha como cada objetivo de medição será respondido. A estrutura operacional segue a cadeia analítica da ISO/IEC/IEEE 15939 [S2](#s2): mapeamento do **Atributo**, definição das **Medidas Base (QME)**, cálculo da **Medida Derivada**, aplicação da **Fórmula** e enquadramento no **Indicador** de julgamento. 
 
-A seção se divide em três subseções, uma por categoria do PSM/CID: [3.1 Calendário e Progresso (O1)](#31-calendario-e-progresso), [3.2 Desempenho dos Processos (O2)](#32-desempenho-dos-processos) e [3.3 Recursos e Custos (O3)](#33-recursos-e-custos). Os termos usados nas fórmulas são definidos na [seção 4](#unidade-de-trabalho) e a justificativa teóricas e operacionais das medidas encontram-se na [seção 5](#justificativa).
+A seção se divide em três subseções, uma por categoria do PSM/CID: [3.1 Calendário e Progresso (O1)](#31-calendario-e-progresso), [3.2 Desempenho dos Processos (O2)](#32-desempenho-dos-processos) e [3.3 Recursos e Custos (O3)](#33-recursos-e-custos). Os termos usados nas fórmulas são definidos na [seção 4](#unidade-de-trabalho) e as justificativas teóricas e operacionais das medidas encontram-se na [seção 5](#justificativa).
 
 ### 3.1 Calendário e Progresso
 
@@ -53,13 +53,13 @@ Avalia a estabilidade técnica do fluxo de trabalho em relação ao retrabalho (
 | Atributo | Medida Base QME | Medida Derivada | Fórmula | Indicador |
 |---|---|---|---|---|
 | Eficiência do processo (`DP1`) | Issue reaberta (`Ir`) <br> Issue com label `correcao` (`Ic`) <br> Issue fechada (`If`) | Percentual de Retrabalho em Issues (`Pri`) | `Pri = [(Ir ∪ Ic) ÷ If] × 100` | Adequado: `Pri ≤ 15%` <br> Bom: `15% < Pri ≤ 35%` <br> Insuficiente: `35% < Pri < 50%` <br> Crítico: `Pri ≥ 50%` |
-| Efetividade do processo (`DP2`) | Critérios avaliados como {Crítico (`Cc`) <br>  Insuficiente (`Ci`) <br> Bom (`Cb`) <br> Adequado (`Ca`)} <br> Total de critérios avaliados (`Ct`) | Quantidade de Critérios Insuficientes/Críticos (`Qcic`) <br> Percentual Critérios Adequados (`PCa`) | `Qcic = Ci + Cc` <br> `Pce = (Ca ÷ Ct) × 100` | Adequado: `Qcic ≤ 0`  <br> Bom: `1 ≤ Qcic ≤ 2` <br> Insuficiente: `Qcic ≥ 3` <br> Adequado: `90% ≤ PCa ≤ 100%` <br> Bom: `75% ≤ PCa < 90%` <br> Insuficiente: `PCa < 75%` |
+| Efetividade do processo (`DP2`) | Critérios avaliados como {Crítico (`Cc`) <br>  Insuficiente (`Ci`) <br> Bom (`Cb`) <br> Adequado (`Ca`)} <br> Total de critérios avaliados (`Ct`) | Quantidade de Critérios Insuficientes/Críticos (`Qcic`) <br> Percentual Critérios Adequados (`PCa`) | `Qcic = Ci + Cc` <br> `PCa = (Ca ÷ Ct) × 100` | Adequado: `Qcic ≤ 0`  <br> Bom: `1 ≤ Qcic ≤ 2` <br> Insuficiente: `Qcic ≥ 3` <br> Adequado: `90% ≤ PCa ≤ 100%` <br> Bom: `75% ≤ PCa < 90%` <br> Insuficiente: `PCa < 75%` |
 
 *Tabela 3. Medidas e indicadores de Desempenho dos Processos (O2). Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
 
 ### 3.3 Recursos e Custos
 
-Trata da alocação do esforço humano da equipe (`RC1`) e da precisão das estimativas de tempo (`RC2`), garantindo o acompanhamento de custos e o equilíbrio da carga de trabalho [S1](#s1), [S3](#s3), que podem ser observados na Tabela 3.
+Trata da alocação do esforço humano da equipe (`RC1`) e da precisão das estimativas de tempo (`RC2`), garantindo o acompanhamento de custos e o equilíbrio da carga de trabalho [S1](#s1), [S3](#s3), que podem ser observados na Tabela 4.
 
 <a id="objetivo-3"></a>
 
@@ -94,7 +94,7 @@ A Tabela 5 define, de forma operacional, os termos e variáveis utilizados tanto
 | Concluída (`Ac`) | Issue fechada com os critérios de aceite atendidos e com revisão do revisor registrada no pull request. Issue fechada sem revisão não conta como concluída. |
 | Concluída no prazo (`Acp`) | Issue concluída em data igual ou anterior à sua **Janela original** |
 | Janela original | Valor da Janela no momento da criação da issue. Quando o prazo é revisto, a nova data vai em comentário (`Janela revista`) e serve só ao replanejamento. O `CP2` sempre compara com a original, para que o atraso não desapareça da medição[S3](#s3). |
-| Retrabalho (`Ir`, `Ic`) | Issue reaberta depois de fechada (`Ir`) ou issue com a label `correcao` (`Ic`). A união (\`Ir ∪ Ic\`) previne dupla contagem. |
+| Retrabalho (`Ir`, `Ic`) | Issue reaberta depois de fechada (`Ir`) ou issue com a label `correcao` (`Ic`). A união (`Ir ∪ Ic`) previne dupla contagem. |
 | Estimativa congelada | A Estimativa registrada na criação da issue é a usada no `RC2`. Reestimativas vão em comentário e não sobrescrevem o valor original |
 | Esforço realizado (`Hr`, `Hi`) | Horas registradas na Tabela de Contribuição de cada issue, em múltiplos de 0,25 h, uma linha por integrante e dia. Em trabalho em dupla, cada integrante lança as próprias horas |
 | Escopo do `RC2` | Calculado apenas sobre issues concluídas (`Ee` e `Er` do mesmo conjunto `Ac`), para que issues em andamento não distorçam a comparação. As horas de issues em andamento entram no `RC1` |
@@ -111,8 +111,8 @@ Os indicadores apresentados na Tabela 6 usam níveis de desempenho e cores corre
 | Nível | Cor | Significado |
 |---|---|---|
 | Adequado e Bom | Verde | Sem ação obrigatória; registrar a medição |
-| Insuficiente | Amarelo | Ação corretiva conforme a [regras](#regras) |
-| Crítico | Vermelho | Ação corretiva imediata conforme a [regras](#regras) |
+| Insuficiente | Amarelo | Ação corretiva conforme as [regras](#regras) |
+| Crítico | Vermelho | Ação corretiva imediata conforme as [regras](#regras) |
 | Informativo | Sem cor | Apenas registrar e acompanhar |
 
 *Tabela 6. Níveis dos indicadores, cores e significado. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
@@ -129,7 +129,7 @@ Esta seção explica a lógica de escolha das medidas, as adaptações contextua
  
 O PSM parte da necessidade de informação, não da medida disponível[S1](#s1),[S5](#s5). Por isso há uma pergunta de gestão para cada categoria [(seção 2)](#2-necessidades-de-informacao) e um conjunto pequeno de medidas que a responde diretamente. Foram preferidas medidas que o próprio fluxo de trabalho já produz (issues, pull requests, horas), para que a coleta não vire uma tarefa à parte e possa ser conferida no repositório[S3](#s3).
 
-Para adequar o modelo PSM/CID [S1](#s1), [S3](#s3) e a ISO/IEC/IEEE 15939:2017 [S2](#s2) ao contexto acadêmico, realizaram-se quatro adaptações (\*tailoring\*):
+Para adequar o modelo PSM/CID [S1](#s1), [S3](#s3) e a ISO/IEC/IEEE 15939:2017 [S2](#s2) ao contexto acadêmico, realizaram-se quatro adaptações (*tailoring*):
 
 1. **Unidade de Trabalho:** Adotou-se a *issue* do GitHub (com Janela, Estimativa e ID do critério) em vez de pacotes de trabalho ou pontos de função complexos do PSM industrial [S1](#s1), [S3](#s3).
 2. **Categoria de Custos:** Substituiu-se o controle financeiro/orçamentário pelo rastreamento do esforço em horas trabalhadas por integrante [S1](#s1), [S3](#s3). 
@@ -145,7 +145,7 @@ A Tabela 7 apresenta, para cada medida, a razão da escolha, a fundamentação d
 | `CP1` Progresso | Responde ao [O1](#objetivo-1): compara o volume de trabalho entregue até a data com o planejado[S3](#s3). | Faixas de `90/80/60%` são critério da equipe. Abaixo de `60%` o prazo de uma entrega fica ameaçado | Issues possuem portes diferentes. Mitigação: interpretar junto com os valores de `Ac` e `Ap`. |
 | `CP2` Prazo | Complementa o `CP1`: avalia se a conclusão ocorreu dentro da linha de base de tempo original [S3](#s3). | Mesmas faixas do `CP1`, por consistência da categoria | Compara com a Janela original <br> Replanejar não "limpa" o atraso, o que é intencional |
 | `DP1` Eficiência | Retrabalho (issue reaberta ou corrigida) é um indício direto de instabilidade no processo de elaboração ou revisão [S4](#s4). | Faixas de `15/35/50%` são critério da equipe, mais tolerantes que as de prazo porque revisão faz parte de um trabalho acadêmico normais. Acima de `50%` indica processo ineficaz. | Depende da disciplina de reabrir a issue ou usar a label `correcao`. <br> Retrabalho feito dentro do pull request antes do fechamento não aparece |
-| `DP2` Efetividade | Responde à parte do [O2](#objetivo-2), avalia a aderência qualitativa e técnica das entregas frente aos critérios da rubrica acadêmica [S4](#s4). | `Qcic` destaca os critérios mais fracos (gera ação), `Qcic ≤ 0` garante ausência de critérios fracos. <br> `Pce` mede a proximidade do objetivo de alcançar a última opção em cada critério  `PCa ≥ 90%` busca a excelência acadêmica. | Autoavaliação possui subjetividade. <br> Mitigação: exige revisão por pares e evidência no `autoavaliacao.csv` |
+| `DP2` Efetividade | Responde à parte do [O2](#objetivo-2), avalia a aderência qualitativa e técnica das entregas frente aos critérios da rubrica acadêmica [S4](#s4). | `Qcic` destaca os critérios mais fracos (gera ação), `Qcic ≤ 0` garante ausência de critérios fracos. <br> `PCa` mede a proximidade do objetivo de alcançar a última opção em cada critério  `PCa ≥ 90%` busca a excelência acadêmica. | Autoavaliação possui subjetividade. <br> Mitigação: exige revisão por pares e evidência no `autoavaliacao.csv` |
 | `RC1` Esforço | Base do [O3](#objetivo-3): fornece visibilidade sobre o volume total de trabalho e o equilíbrio de carga entre membros [S1](#s1). | O total é informativo porque não há valor de referência confiável de "esforço certo". | Horas totais não medem complexidade isoladamente. |
 | `RC2` Variação | Avalia a acurácia das estimativas de tempo e a maturidade de dimensionamento da equipe [S3](#s3). | Faixas de `10/20%` são critério da equipe, razoáveis para estimativas de estudantes sem histórico prévio | O valor absoluto perde o sentido da variação (subestimou ou superestimou).|
 
@@ -166,8 +166,8 @@ Toda decisão é registrada em `docs/gestao/medicoes.md`, com data, responsável
 | `CP2` amarelo | Os responsáveis das issues atrasadas informa nova Janela na própria issue (`Janela revista`), registra a causa do atraso e reordena o trabalho em até 24 horas |
 | `CP2` vermelho ou `CP1` vermelho | Reunião emergencial (15 minutos) em até 24 horas. <br> Replanejar cortando ou adiando o que não pesa nos critérios, redistribuir issues entre equipe e reestimar as issues que dependem das atrasadas. |
 | `DP1` amarelo ou vermelho | Reforçar o critério de aceite e exigir verificação rigorosa antes de fechar qualquer issue. |
-| `DP2` com `Qcic ≥ 1` | Abrir uma issue `correcao` por critério Regular ou Insuficiente e priorizá-las antes de qualquer trabalho novo |
-| `DP2` com `Pce < 75%` | Revisar na reunião seguinte o que impede os critérios de chegar a Adequado e incluir as ações nas issues `correcao` |
+| `DP2` com `Qcic ≥ 1` | Abrir uma issue `correcao` por critério Insuficiente ou Crítico e priorizá-las antes de qualquer trabalho novo |
+| `DP2` com `PCa < 75%` | Revisar na reunião seguinte o que impede os critérios de chegar a Adequado e incluir as ações nas issues `correcao` |
 | `RC1` desequilibrado | Se esforço de um integrante (`Hi`) variar mais de 50% em relação á média do grupo (`Hm`), analisar a causa da disparidade e rebalancear a atribuição das próximas *issues* entre as duplas.|
 | `RC2` amarelo (`Ve > 20%`) | Reestimar issues parecidas e registrar o motivo do desvio e o sentido (subestimou ou superestimou) |
 | Cobertura de Dados Amarela (`Pa < 90%`) | Lançar as horas pendentes no mesmo dia; enquanto `Pa < 90%`, marcar `RC1` e `RC2` "com ressalva". |
@@ -179,7 +179,7 @@ A regra de que nenhuma issue é fechada sem revisão é uma convenção permanen
  
 ## 7. Evidências no Git
 
-Esta seção indica onde ficam armazenadas as evidências que permitem conferir as medições no repositório (Tabela 11).
+Esta seção indica onde ficam armazenadas as evidências que permitem conferir as medições no repositório (Tabela 9).
 
 | Evidência | Onde |
 |---|---|
@@ -191,7 +191,7 @@ Esta seção indica onde ficam armazenadas as evidências que permitem conferir 
 | [Script de consolidação](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/scripts/consolida_horas.py) | `assets/scripts/consolida_horas.py` |
 | [Uso de IA](uso_de_ia.md) | `docs/gestao/uso_de_ia.md` |
 
-*Tabela 11. Evidências das medições e sua localização. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
+*Tabela 9. Evidências das medições e sua localização. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
 
 ## Referências
 
@@ -201,19 +201,19 @@ Esta seção indica onde ficam armazenadas as evidências que permitem conferir 
 
 <a id="s2"></a>
 
-> INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. *ISO/IEC/IEEE 15939:2017: Systems and software engineering — Measurement process*. Geneva: ISO, 2017.
+> INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. *ISO/IEC/IEEE 15939:2017: Systems and software engineering - Measurement process*. Geneva: ISO, 2017.
 
 <a id="s3"></a>
 
-> JONES, Cheryl L. et al. *Practical Software and Systems Measurement: Continuous Iterative Development Measurement Framework — Part 1*. Version 2.1. PSM; NDIA; INCOSE, 2021.
+> JONES, Cheryl L. et al. *Practical Software and Systems Measurement: Continuous Iterative Development Measurement Framework - Part 1*. Version 2.1. PSM; NDIA; INCOSE, 2021.
 
 <a id="s4"></a>
 
-> JONES, Cheryl L. et al. *Practical Software and Systems Measurement: Continuous Iterative Development Measurement Framework — Part 2: Measurement Specifications and Enterprise Measures*. Version 2.1. PSM; NDIA; INCOSE, 2021.
+> JONES, Cheryl L. et al. *Practical Software and Systems Measurement: Continuous Iterative Development Measurement Framework - Part 2: Measurement Specifications and Enterprise Measures*. Version 2.1. PSM; NDIA; INCOSE, 2021.
 
 <a id="s5"></a>
 
-> BASILI, Victor R.; CALDIERA, Gianluigi; ROMBACH, H. Dieter. The Goal Question Metric Approach. In: MARCINIAK, John J. (ed.). *Encyclopedia of Software Engineering*. v. 1. New York: John Wiley & Sons, 1994. p. 528–532.
+> BASILI, Victor R.; CALDIERA, Gianluigi; ROMBACH, H. Dieter. The Goal Question Metric Approach. In: MARCINIAK, John J. (ed.). *Encyclopedia of Software Engineering*. v. 1. New York: John Wiley & Sons, 1994. p. 528-532.
 
 ---
 
