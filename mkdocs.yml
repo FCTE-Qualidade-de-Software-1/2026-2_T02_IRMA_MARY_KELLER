@@ -16,6 +16,11 @@ nav:
       - Métricas: fase-2/metricas.md
       - Critérios de julgamento: fase-2/criterios-julgamento.md
       - Gráfico GQM: fase-2/grafico-gqm.md
+  - Fase 3:
+    - Visão Geral: fase-3/index.md
+    - Ambientes de Testes: fase-3/ambiente-de-testes.md
+    - Procedimentos Avaliação Adaptabilidade: fase-3/procedimentos-adaptabilidade.md
+    - Registro de Execução Adaptabilidade: fase-3/registro-adaptabilidade.md
   - Gestão:
     - Artigo: gestao/artigo.md
     - Plano de Medição: gestao/plano_de_medicao.md
@@ -26,6 +31,8 @@ nav:
     - Critérios:
         - Fase 1: criterios/fase1.md
         - Fase 2: criterios/fase2.md
+        - Fase 3: criterios/fase3.md
+        - Fase 4: criterios/fase4.md
         
 plugins:
   - gen-files:
