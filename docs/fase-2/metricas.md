@@ -2,7 +2,7 @@
 
 **Versão 1.3**
 
-As fichas abaixo especificam as métricas externas propostas para a avaliação **exclusivamente da versão web da Khan Academy em computadores**. Cada ficha segue a organização do exemplo fornecido: questão respondida, definição, fórmula, unidade, fonte, procedimento de coleta, interpretação, justificativa e níveis. Os 14 indicadores M1–M14 correspondem às [questões](questoes-hipoteses.md) Q1–Q11.
+As fichas abaixo especificam as métricas externas propostas para a avaliação **exclusivamente da versão web da Khan Academy em computadores**. Cada ficha segue a organização do exemplo fornecido: questão respondida, definição, fórmula, unidade, fonte, procedimento de coleta, interpretação, justificativa e níveis. Os 14 indicadores M1-M14 correspondem às [questões](questoes-hipoteses.md) Q1-Q11.
 
 **Situação:** proposta de especificação, sem resultados coletados. Os níveis quantitativos estão definidos como **proposta operacional do estudo** em [critérios de julgamento](criterios-julgamento.md), incluindo fundamentação e condições de aplicação. Não constituem limites oficiais da ISO/IEC 25023:2016 [S1](#s1).
 
@@ -26,7 +26,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Justificativa dos níveis:** Para tempos de resposta da interface, utilizam-se marcos de 1 s e 10 s da literatura de interação, com faixa intermediária de 3 s proposta pelo estudo. A mediana resume o desempenho e o P90 evidencia esperas longas; excluir tempo pedagógico.
 
-**Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), propostas para aprovação antes da coleta.
+**Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
 ---
 
@@ -48,7 +48,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Justificativa dos níveis:** Uma duração curta não comprova sucesso quando parte das tentativas falha. A avaliação usa todas as tentativas elegíveis no denominador.
 
-**Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), propostas para aprovação antes da coleta.
+**Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
 ---
 
@@ -70,7 +70,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Justificativa dos níveis:** Monitorar picos e duração da sobrecarga; a CPU média não é suficiente para aprovar uma execução que foi interrompida.
 
-**Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), propostas para aprovação antes da coleta.
+**Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
 ---
 
@@ -82,7 +82,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Fórmula ou indicador:** `RAM_pico = max(RAM(t))` em cada execução válida.
 
-**Unidade:** MB.
+**Unidade:** MiB.
 
 **Fonte dos dados:** Monitor de memória por processo/sessão, com registros de interrupções.
 
@@ -92,7 +92,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Justificativa dos níveis:** A memória máxima é relevante para dispositivos com recursos limitados; a capacidade de memória efetivamente disponível para a sessão deve ser registrada.
 
-**Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), propostas para aprovação antes da coleta.
+**Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
 ---
 
@@ -104,7 +104,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Fórmula ou indicador:** `D = bytes_recebidos + bytes_enviados` por fluxo concluído e padronizado.
 
-**Unidade:** MB.
+**Unidade:** MiB.
 
 **Fonte dos dados:** DevTools/Network; controlar cache, qualidade e duração dos vídeos.
 
@@ -114,7 +114,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Justificativa dos níveis:** A transferência deve ser comparada em fluxos concluídos e equivalentes, com cache, duração e qualidade dos vídeos controlados.
 
-**Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), propostas para aprovação antes da coleta.
+**Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
 ---
 
@@ -124,7 +124,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Definição:** Proporção de combinações elegíveis de sistema operacional, navegador e fluxo concluídas.
 
-**Fórmula ou indicador:** `100 × C/N`, combinações SO–navegador–fluxo concluídas / combinações elegíveis testadas.
+**Fórmula ou indicador:** `100 × C/N`, combinações SO-navegador-fluxo concluídas / combinações elegíveis testadas.
 
 **Unidade:** %.
 
@@ -136,7 +136,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Justificativa dos níveis:** A adaptabilidade exige que os fluxos essenciais funcionem nos ambientes elegíveis; resultados globais não anulam uma falha essencial.
 
-**Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), propostas para aprovação antes da coleta.
+**Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
 ---
 
@@ -146,7 +146,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Definição:** Proporção de combinações de dimensão de janela e fluxo sem perda de controles essenciais.
 
-**Fórmula ou indicador:** `100 × C/N`, combinações ambiente–dimensão–fluxo com conteúdo e controles preservados / testadas.
+**Fórmula ou indicador:** `100 × C/N`, combinações ambiente-dimensão-fluxo com conteúdo e controles preservados / testadas.
 
 **Unidade:** %.
 
@@ -158,7 +158,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Justificativa dos níveis:** A abertura da página não é suficiente: conteúdo e controles relevantes precisam permanecer operáveis nas dimensões avaliadas.
 
-**Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), propostas para aprovação antes da coleta.
+**Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
 ---
 
@@ -180,7 +180,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Justificativa dos níveis:** Barreiras em controles essenciais impedem acesso mesmo que outras tarefas funcionem por teclado.
 
-**Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), propostas para aprovação antes da coleta.
+**Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
 ---
 
@@ -190,7 +190,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Definição:** Proporção de tarefas concluídas com leitor de tela e informações essenciais compreensíveis.
 
-**Fórmula ou indicador:** `100 × A/N`, combinações tarefa–leitor com informação necessária percebida e conclusão / testadas.
+**Fórmula ou indicador:** `100 × A/N`, combinações tarefa-leitor com informação necessária percebida e conclusão / testadas.
 
 **Unidade:** %.
 
@@ -202,7 +202,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Justificativa dos níveis:** É necessário compreender a informação essencial e concluir a tarefa com tecnologia assistiva, não apenas detectar rótulos.
 
-**Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), propostas para aprovação antes da coleta.
+**Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
 ---
 
@@ -224,7 +224,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Justificativa dos níveis:** A ampliação precisa preservar informação e funcionalidade; Q9 não deve ser confundida com redimensionamento de janela em Q6.
 
-**Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), propostas para aprovação antes da coleta.
+**Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
 ---
 
@@ -246,7 +246,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Justificativa dos níveis:** Verificar critérios aplicáveis de contraste e, separadamente, a execução em alto contraste. Elementos essenciais não conformes impedem aprovação isolada por percentual.
 
-**Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), propostas para aprovação antes da coleta.
+**Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
 ---
 
@@ -268,7 +268,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Justificativa dos níveis:** A primeira tentativa independente fornece evidência de apreensibilidade; a equipe deverá definir perfis, instrução padronizada e tarefas essenciais.
 
-**Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), propostas para aprovação antes da coleta.
+**Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
 ---
 
@@ -290,7 +290,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Justificativa dos níveis:** Erros recorrentes podem indicar dificuldade de aprendizagem mesmo quando tarefas são concluídas. O protocolo deverá distinguir erros de exploração legítima e falha técnica.
 
-**Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), propostas para aprovação antes da coleta.
+**Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
 ---
 
@@ -312,17 +312,17 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Justificativa dos níveis:** As faixas propostas de 60, 120 e 180 segundos aplicam-se somente a tarefas curtas e padronizadas, não ao tempo pedagógico. Registrar abandonos e pedidos de ajuda à parte.
 
-**Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), propostas para aprovação antes da coleta.
+**Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
 ## Referências
 
 <a id="s1"></a>
 
-> [S1] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25023:2016**: Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Measurement of system and software product quality. Genebra: ISO, 2016.
+> [S1] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25023:2016**: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - Measurement of system and software product quality. Genebra: ISO, 2016.
 
 <a id="s2"></a>
 
-> [S2] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. **ISO 9241-11:2018**: Ergonomics of human-system interaction — Part 11: Usability: Definitions and concepts. Genebra: ISO, 2018.
+> [S2] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. **ISO 9241-11:2018**: Ergonomics of human-system interaction - Part 11: Usability: Definitions and concepts. Genebra: ISO, 2018.
 
 <a id="s3"></a>
 
@@ -330,7 +330,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 <a id="s4"></a>
 
-> [S4] WORLD WIDE WEB CONSORTIUM (W3C). **Web Content Accessibility Guidelines (WCAG) 2.2**. W3C Recommendation, 12 dez. 2024.
+> [S4] WORLD WIDE WEB CONSORTIUM (W3C). **Web Content Accessibility Guidelines (WCAG) 2.1**. W3C Recommendation, 5 jun. 2018. Disponível em: <https://www.w3.org/TR/2018/REC-WCAG21-20180605/>. Acesso em: 19 out. 2026.
 
 <a id="s5"></a>
 
@@ -345,6 +345,6 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 | Versão | Data | Descrição | Responsável | Revisor |
 | :---: | :---: | :--- | :--- | :--- |
 | 1.0 | 17/10/2026 | Especificação das métricas de qualidade, incluindo definições, fórmulas, fontes de dados, procedimentos de coleta e critérios de interpretação. | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) | [Pedro Lucas](https://github.com/Pwdrinho) |
-| 1.1 | 20/10/2026 | Inclusão dos indicadores complementares de conclusão, erros e tempo sem alterar Q1–Q11. | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |[Pedro Lucas](https://github.com/Pwdrinho) |
+| 1.1 | 20/10/2026 | Inclusão dos indicadores complementares de conclusão, erros e tempo sem alterar Q1-Q11. | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |[Pedro Lucas](https://github.com/Pwdrinho) |
 | 1.2 | 21/10/2026 | Inclusão das referências utilizadas para elaborar o artefato |  [Camila Cavalcante](https://github.com/CamilaSilvaC) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
 | 1.3 | 26/10/2026 | Padronização | [Pedro Lucas](https://github.com/Pwdrinho) | [Camila Cavalcante](https://github.com/CamilaSilvaC) |

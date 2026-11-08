@@ -2,9 +2,9 @@
 
 **Versão 1.5**
 
-As questões desta seção desdobram os [objetivos de medição](objetivos.md) da avaliação da Khan Academy em atributos observáveis de qualidade. A especificação reúne **11 questões (Q1–Q11)** e **11 hipóteses (H1–H11)**, associadas aos três objetivos GQM [S9](#s9) e aos requisitos [`R1`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) a [`R5`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) da [Fase 1](../fase-1/index.md).
+As questões desta seção desdobram os [objetivos de medição](objetivos.md) da avaliação da Khan Academy em atributos observáveis de qualidade. A especificação reúne **11 questões (Q1-Q11)** e **11 hipóteses (H1-H11)**, associadas aos três objetivos GQM [S9](#s9) e aos requisitos [`R1`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) a [`R5`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) da [Fase 1](../fase-1/index.md).
 
-As questões investigam a adequação dos fluxos às condições de uso, sem antecipar fórmulas de cálculo. Cada hipótese expressa o resultado esperado para a questão correspondente e indica a base utilizada para sua formulação. As expectativas são **propostas de trabalho sujeitas à ratificação da equipe**, formuladas antes da coleta final; não representam conclusões sobre a qualidade real da plataforma.
+As questões investigam a adequação dos fluxos às condições de uso, sem antecipar fórmulas de cálculo. Cada hipótese expressa o resultado esperado para a questão correspondente e indica a base utilizada para sua formulação. As expectativas são **propostas de trabalho da equipe**, formuladas antes da coleta final; não representam conclusões sobre a qualidade real da plataforma.
 
 ## 1. Delimitação e relação com os objetivos
 
@@ -12,9 +12,9 @@ A avaliação mantém o escopo de observação externa (*caixa-preta*) da **vers
 
 As questões derivam dos seguintes focos:
 
-- [**G1 — Eficiência de desempenho:**](objetivos.md#g1) comportamento temporal e utilização de recursos, conforme [`R1`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) e [`R2`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade).
-- [**G2 — Portabilidade:**](objetivos.md#g2) adaptabilidade entre ambientes e tamanhos de janela, conforme [`R3`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade).
-- [**G3 — Usabilidade:**](objetivos.md#g3) acessibilidade e apreensibilidade, conforme [`R4`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) e [`R5`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade).
+- [**G1 - Eficiência de desempenho:**](objetivos.md#g1) comportamento temporal e utilização de recursos, conforme [`R1`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) e [`R2`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade).
+- [**G2 - Portabilidade:**](objetivos.md#g2) adaptabilidade entre ambientes e tamanhos de janela, conforme [`R3`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade).
+- [**G3 - Usabilidade:**](objetivos.md#g3) acessibilidade e apreensibilidade, conforme [`R4`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) e [`R5`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade).
 
 ## 2. Relação entre objetivos, atributos, questões e métricas
 
@@ -22,17 +22,17 @@ A **Tabela 1** sintetiza a cobertura dos atributos e o vínculo com as métricas
 
 | Requisito | Objetivo | Atributo observado | Questão | Hipótese | Métrica(s) |
 |---|---|---|---|---|---|
-| [`R1`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) | [`G1`](objetivos.md#g1) | Comportamento temporal | [Q1 — Espera nas etapas dos fluxos](#31-q1-comportamento-temporal) | H1 | [`M1`](metricas.md#11-m1-tempo-observavel-por-etapa) (tempo) e [`M2`](metricas.md#12-m2-taxa-de-conclusao-dos-fluxos) (conclusão) |
-| [`R2`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) | [`G1`](objetivos.md#g1) | Utilização de CPU | [Q2 — Processamento disponível](#32-q2-utilizacao-de-cpu) | H2 | [`M3`](metricas.md#13-m3-utilizacao-de-cpu) |
-| [`R2`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) | [`G1`](objetivos.md#g1) | Utilização de memória | [Q3 — Memória disponível](#33-q3-utilizacao-de-memoria) | H3 | [`M4`](metricas.md#14-m4-pico-de-memoria) |
-| [`R2`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) | [`G1`](objetivos.md#g1) | Consumo de dados de rede | [Q4 — Orçamento de acesso](#34-q4-consumo-de-dados-de-rede) | H4 | [`M5`](metricas.md#15-m5-dados-transferidos) |
-| [`R3`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) | [`G2`](objetivos.md#g2) | Adaptação entre sistemas operacionais e navegadores | [Q5 — Execução entre ambientes](#41-q5-adaptacao-entre-sistemas-operacionais-e-navegadores) | H5 | [`M6`](metricas.md#16-m6-execucao-por-ambiente) |
-| [`R3`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) | [`G2`](objetivos.md#g2) | Adaptação a tamanhos de janela | [Q6 — Conteúdo e controles nas janelas avaliadas](#42-q6-adaptacao-a-tamanhos-de-janela) | H6 | [`M7`](metricas.md#17-m7-adaptacao-ao-tamanho-da-janela) |
-| [`R4`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) | [`G3`](objetivos.md#g3) | Navegação por teclado | [Q7 — Conclusão por teclado](#51-q7-navegacao-por-teclado) | H7 | [`M8`](metricas.md#18-m8-execucao-por-teclado) |
-| [`R4`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) | [`G3`](objetivos.md#g3) | Utilização com leitor de tela | [Q8 — Informação e conclusão com leitor de tela](#52-q8-utilizacao-com-leitor-de-tela) | H8 | [`M9`](metricas.md#19-m9-execucao-com-leitor-de-tela) |
-| [`R4`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) | [`G3`](objetivos.md#g3) | Utilização com ampliação | [Q9 — Preservação de conteúdo e funcionalidade](#53-q9-utilizacao-com-ampliacao) | H9 | [`M10`](metricas.md#110-m10-preservacao-com-ampliacao) |
-| [`R4`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) | [`G3`](objetivos.md#g3) | Contraste e alto contraste | [Q10 — Distinção de informações e controles](#54-q10-contraste-e-alto-contraste) | H10 | [`M11`](metricas.md#111-m11-conformidade-de-contraste) |
-| [`R5`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) | [`G3`](objetivos.md#g3) | Apreensibilidade | [Q11 — Autonomia de estudantes novos](#55-q11-apreensibilidade) | H11 | [`M12`](metricas.md#112-m12-conclusao-autonoma-por-estudantes-novos) (autonomia), [`M13`](metricas.md#113-m13-taxa-de-erros-operacionais) (erros) e [`M14`](metricas.md#114-m14-tempo-de-conclusao-autonoma) (tempo) |
+| [`R1`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) | [`G1`](objetivos.md#g1) | Comportamento temporal | [Q1 - Espera nas etapas dos fluxos](#31-q1-comportamento-temporal) | H1 | [`M1`](metricas.md#11-m1-tempo-observavel-por-etapa) (tempo) e [`M2`](metricas.md#12-m2-taxa-de-conclusao-dos-fluxos) (conclusão) |
+| [`R2`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) | [`G1`](objetivos.md#g1) | Utilização de CPU | [Q2 - Processamento disponível](#32-q2-utilizacao-de-cpu) | H2 | [`M3`](metricas.md#13-m3-utilizacao-de-cpu) |
+| [`R2`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) | [`G1`](objetivos.md#g1) | Utilização de memória | [Q3 - Memória disponível](#33-q3-utilizacao-de-memoria) | H3 | [`M4`](metricas.md#14-m4-pico-de-memoria) |
+| [`R2`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) | [`G1`](objetivos.md#g1) | Consumo de dados de rede | [Q4 - Orçamento de acesso](#34-q4-consumo-de-dados-de-rede) | H4 | [`M5`](metricas.md#15-m5-dados-transferidos) |
+| [`R3`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) | [`G2`](objetivos.md#g2) | Adaptação entre sistemas operacionais e navegadores | [Q5 - Execução entre ambientes](#41-q5-adaptacao-entre-sistemas-operacionais-e-navegadores) | H5 | [`M6`](metricas.md#16-m6-execucao-por-ambiente) |
+| [`R3`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) | [`G2`](objetivos.md#g2) | Adaptação a tamanhos de janela | [Q6 - Conteúdo e controles nas janelas avaliadas](#42-q6-adaptacao-a-tamanhos-de-janela) | H6 | [`M7`](metricas.md#17-m7-adaptacao-ao-tamanho-da-janela) |
+| [`R4`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) | [`G3`](objetivos.md#g3) | Navegação por teclado | [Q7 - Conclusão por teclado](#51-q7-navegacao-por-teclado) | H7 | [`M8`](metricas.md#18-m8-execucao-por-teclado) |
+| [`R4`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) | [`G3`](objetivos.md#g3) | Utilização com leitor de tela | [Q8 - Informação e conclusão com leitor de tela](#52-q8-utilizacao-com-leitor-de-tela) | H8 | [`M9`](metricas.md#19-m9-execucao-com-leitor-de-tela) |
+| [`R4`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) | [`G3`](objetivos.md#g3) | Utilização com ampliação | [Q9 - Preservação de conteúdo e funcionalidade](#53-q9-utilizacao-com-ampliacao) | H9 | [`M10`](metricas.md#110-m10-preservacao-com-ampliacao) |
+| [`R4`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) | [`G3`](objetivos.md#g3) | Contraste e alto contraste | [Q10 - Distinção de informações e controles](#54-q10-contraste-e-alto-contraste) | H10 | [`M11`](metricas.md#111-m11-conformidade-de-contraste) |
+| [`R5`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) | [`G3`](objetivos.md#g3) | Apreensibilidade | [Q11 - Autonomia de estudantes novos](#55-q11-apreensibilidade) | H11 | [`M12`](metricas.md#112-m12-conclusao-autonoma-por-estudantes-novos) (autonomia), [`M13`](metricas.md#113-m13-taxa-de-erros-operacionais) (erros) e [`M14`](metricas.md#114-m14-tempo-de-conclusao-autonoma) (tempo) |
 
 *Tabela 1. Rastreabilidade entre requisitos, objetivos, atributos, questões, hipóteses e métricas. Fonte: Elaborada por: [Camila Cavalcante](https://github.com/CamilaSilvaC).*
 
@@ -44,7 +44,7 @@ O objetivo [`G1`](objetivos.md#g1) analisa os fluxos web do ponto de vista de es
 
 **Questão:** A espera para carregar páginas, iniciar videoaulas e obter respostas dos exercícios permite utilizar os fluxos sem prejudicar a continuidade da atividade nos ambientes avaliados?
 
-**H1:** No ambiente [`[`A1`](../fase-1/escopo-da-avaliacao.md#ambientes)`](../fase-1/escopo-da-avaliacao.md#ambientes), em cada etapa e condição de rede prevista, o tempo mediano de resposta será de até 3 segundos. Pelo menos 90% das tentativas elegíveis de cada tarefa e condição serão concluídas, sem bloqueio de etapa essencial atribuível à plataforma. O tempo pedagógico de assistir à videoaula ou resolver o exercício será excluído da medição de resposta.
+**H1:** No ambiente [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes), em cada etapa e condição de rede prevista, o tempo mediano de resposta será de até 3 segundos. Pelo menos 90% das tentativas elegíveis de cada tarefa e condição serão concluídas, sem bloqueio de etapa essencial atribuível à plataforma. O tempo pedagógico de assistir à videoaula ou resolver o exercício será excluído da medição de resposta.
 
 **Fundamentação:** [`R1`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) identifica a espera como possível barreira à continuidade do estudo, especialmente sob restrições de hardware e rede. Essa necessidade fundamenta a investigação, a expectativa de atendimento é uma suposição proposta para a equipe, sem evidência preliminar de desempenho.
 
@@ -56,7 +56,7 @@ O objetivo [`G1`](objetivos.md#g1) analisa os fluxos web do ponto de vista de es
 
 **H2:** No ambiente [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes), a utilização média de CPU será de até 50% em cada execução válida dos fluxos [`FL1`](../fase-1/escopo-da-avaliacao.md#fluxos) a [`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos), sem interrupção impeditiva associada à sobrecarga de processamento segundo o protocolo de evidências. O percentual será interpretado conforme o processo monitorado e a capacidade representada pelo instrumento.
 
-**Fundamentação:** [`R2`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) e as restrições computacionais previstas no escopo justificam examinar a utilização de processamento. A expectativa de consumo aceitável é uma suposição proposta, a ser ratificada pela equipe.
+**Fundamentação:** [`R2`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) e as restrições computacionais previstas no escopo justificam examinar a utilização de processamento. A expectativa de consumo aceitável é uma suposição proposta pela equipe.
 
 **Verificação prevista:** utilizar o [`M3`](metricas.md#13-m3-utilizacao-de-cpu), com ferramenta, processos monitorados e significado do percentual documentados. Comparar o resultado definido na ficha da medida com o orçamento correspondente e registrar ocorrências de sobrecarga. A coincidência entre CPU elevada e interrupção não demonstra, isoladamente, uma relação de causa; a classificação deverá seguir o protocolo de evidências.
 
@@ -88,7 +88,7 @@ O objetivo [`G2`](objetivos.md#g2) analisa a adaptabilidade dos fluxos do ponto 
 
 **Questão:** Os fluxos essenciais podem ser concluídos nas combinações selecionadas de sistema operacional e navegador, sem ajustes extraordinários na plataforma?
 
-**H5:** Pelo menos 90% das combinações de ambiente ([`A1`](../fase-1/escopo-da-avaliacao.md#ambientes) – [`A4`](../fase-1/escopo-da-avaliacao.md#ambientes)) e fluxo ([`FL1`](../fase-1/escopo-da-avaliacao.md#fluxos) – [`FL4`](../fase-1/escopo-da-avaliacao.md#fluxos)) selecionadas para o teste permitirão concluir todas as etapas do roteiro e alcançar o resultado esperado, sem alterar a plataforma.
+**H5:** Pelo menos 90% das combinações de ambiente ([`A1`](../fase-1/escopo-da-avaliacao.md#ambientes) - [`A4`](../fase-1/escopo-da-avaliacao.md#ambientes)) e fluxo ([`FL1`](../fase-1/escopo-da-avaliacao.md#fluxos) - [`FL4`](../fase-1/escopo-da-avaliacao.md#fluxos)) selecionadas para o teste permitirão concluir todas as etapas do roteiro e alcançar o resultado esperado, sem alterar a plataforma.
 
 **Fundamentação:** [`R3`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) e [`G2`](objetivos.md#g2) estabelecem a necessidade de continuidade de uso entre os ambientes selecionados. 
 
@@ -112,7 +112,7 @@ O objetivo [`G3`](objetivos.md#g3) reúne acessibilidade e apreensibilidade, con
 
 **Questão:** Uma pessoa que utiliza apenas teclado consegue identificar e acionar os controles necessários para concluir os fluxos essenciais, sem bloqueios de navegação?
 
-**H7:** Em 90% das combinações essenciais selecionadas nos ambientes [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes), [`A3`](../fase-1/escopo-da-avaliacao.md#ambientes) e [`A4`](../fase-1/escopo-da-avaliacao.md#ambientes), as tarefas dos fluxos FL1–FL3 serão concluídas utilizando apenas o teclado, com foco visível e sem bloqueios de navegação.
+**H7:** Em 90% das combinações essenciais selecionadas nos ambientes [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes), [`A3`](../fase-1/escopo-da-avaliacao.md#ambientes) e [`A4`](../fase-1/escopo-da-avaliacao.md#ambientes), as tarefas dos fluxos FL1-FL3 serão concluídas utilizando apenas o teclado, com foco visível e sem bloqueios de navegação.
 
 **Fundamentação:** [`R4`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) e os critérios de acessibilidade selecionados pelo projeto justificam avaliar a operação por teclado. 
 
@@ -136,7 +136,7 @@ O objetivo [`G3`](objetivos.md#g3) reúne acessibilidade e apreensibilidade, con
 
 **Fundamentação:** [`R4`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) contempla estudantes com baixa visão e a utilização de recursos de ampliação. Os critérios de acessibilidade selecionados orientam as condições do ensaio. 
 
-**Verificação prevista:** utilizar [`M10`](metricas.md#110-m10-preservacao-com-ampliacao) nas condições de ampliação previamente estabelecidas. Registrar o mecanismo utilizado, sua configuração e os efeitos sobre leitura e operação dos controles. Diferenciar a ampliação de [`Q9`](#53-q9-utilizacao-com-ampliacao) da simples alteração de tamanho de janela de [`Q6`](#53-q9-utilizacao-com-ampliacao). A avaliação deverá verificar a tarefa, além de produzir evidências visuais.
+**Verificação prevista:** utilizar [`M10`](metricas.md#110-m10-preservacao-com-ampliacao) nas condições de ampliação previamente estabelecidas. Registrar o mecanismo utilizado, sua configuração e os efeitos sobre leitura e operação dos controles. Diferenciar a ampliação de [`Q9`](#53-q9-utilizacao-com-ampliacao) da simples alteração de tamanho de janela de [`Q6`](#42-q6-adaptacao-a-tamanhos-de-janela). A avaliação deverá verificar a tarefa, além de produzir evidências visuais.
 
 ### 5.4 Q10: Contraste e alto contraste
 
@@ -156,7 +156,7 @@ O objetivo [`G3`](objetivos.md#g3) reúne acessibilidade e apreensibilidade, con
 
 **Fundamentação:** [`R5`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) e a decisão D3 relacionam a aprendizagem inicial à necessidade de planejar orientação sobre o uso da plataforma.
 
-**Verificação prevista:** utilizar [`M12`](metricas.md#112-m12-conclusao-autonoma-por-estudantes-novos) com estudantes elegíveis e instrução inicial padronizada. Registrar a primeira tentativa de cada par participante–tarefa, a conclusão e os pedidos de ajuda ou intervenções. Definir previamente os patamares de autonomia e a janela de observação.
+**Verificação prevista:** utilizar [`M12`](metricas.md#112-m12-conclusao-autonoma-por-estudantes-novos) com estudantes elegíveis e instrução inicial padronizada. Registrar a primeira tentativa de cada par participante-tarefa, a conclusão e os pedidos de ajuda ou intervenções. Definir previamente os patamares de autonomia e a janela de observação.
 
 ## 6. Interpretação das hipóteses
 
@@ -174,31 +174,31 @@ A interpretação deverá confrontar os dados válidos com a afirmação especí
 
 <a id="s1"></a>
 
-> [S1] Objetivos de medição — Fase 2. Disponível em: [Objetivos de medição](objetivos.md).
+> [S1] Objetivos de medição - Fase 2. Disponível em: [Objetivos de medição](objetivos.md).
 
 <a id="s2"></a>
 
-> [S2] Requisitos de avaliação — Fase 1. Requisitos R1–R5 e decisões D1–D3. Disponível em: [Requisitos de avaliação](../fase-1/requisitos-de-avaliacao.md).
+> [S2] Requisitos de avaliação - Fase 1. Requisitos R1-R5 e decisões D1-D3. Disponível em: [Requisitos de avaliação](../fase-1/requisitos-de-avaliacao.md).
 
 <a id="s3"></a>
 
-> [S3] Escopo da avaliação — Fase 1. Disponível em: [Escopo da avaliação](../fase-1/escopo-da-avaliacao.md).
+> [S3] Escopo da avaliação - Fase 1. Disponível em: [Escopo da avaliação](../fase-1/escopo-da-avaliacao.md).
 
 <a id="s4"></a>
 
-> [S4] Especificação das métricas — Fase 2. Disponível em: [Especificação das métricas](metricas.md).
+> [S4] Especificação das métricas - Fase 2. Disponível em: [Especificação das métricas](metricas.md).
 
 <a id="s5"></a>
 
-> [S5] Critérios de julgamento — Fase 2. Disponível em: [Critérios de julgamento](criterios-julgamento.md).
+> [S5] Critérios de julgamento - Fase 2. Disponível em: [Critérios de julgamento](criterios-julgamento.md).
 
 <a id="s6"></a>
 
-> [S6] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25010:2011**: Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models. Genebra: ISO, 2011.
+> [S6] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25010:2011**: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - System and software quality models. Genebra: ISO, 2011.
 
 <a id="s7"></a>
 
-> [S7] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25023:2016**: Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Measurement of system and software product quality. Genebra: ISO, 2016.
+> [S7] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25023:2016**: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - Measurement of system and software product quality. Genebra: ISO, 2016.
 
 <a id="s8"></a>
 
@@ -206,7 +206,7 @@ A interpretação deverá confrontar os dados válidos com a afirmação especí
 
 <a id="s9"></a>
 
-> [S9] BASILI, Victor R.; CALDIERA, Gianluigi; ROMBACH, H. Dieter. The Goal Question Metric Approach. In: **Encyclopedia of Software Engineering**. John Wiley & Sons, 1994. p. 528–532. 
+> [S9] BASILI, Victor R.; CALDIERA, Gianluigi; ROMBACH, H. Dieter. The Goal Question Metric Approach. In: **Encyclopedia of Software Engineering**. John Wiley & Sons, 1994. p. 528-532. 
 
 ## Histórico de versões
 

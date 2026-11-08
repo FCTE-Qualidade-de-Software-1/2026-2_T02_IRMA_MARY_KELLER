@@ -1,16 +1,59 @@
+---
+title: Painel PSM/CID
+---
+
 # Painel Consolidado de Medição PSM/CID e Registro de Horas
+
+<p class="selo-versao__linha"><span class="selo-versao"><strong>Atualizado</strong><span>em {{ atualizado_em }} (Brasília) · {{ total_issues }} issues · {{ total_lancamentos }} lançamentos de horas</span></span></p>
 
 Este artefato consolida a medição contínua do projeto integrando os modelos **PSM (Practical Software Measurement)** e a norma **ISO/IEC/IEEE 15939:2017**, conforme estabelecido no [Plano de Medição](plano_de_medicao.md) e no [Procedimento de Medição](medicoes.md). Os dados de progresso e esforço são sincronizados automaticamente com as issues do repositório no GitHub.
 
-**Data de referência da consolidação:** {{ data_corte }}
+{% set n = namespace(tabela=0) %}
+## Como o painel é gerado {: #como-e-montado }
+
+O GitHub Actions publica o site de novo a cada push, sempre que uma issue muda e uma vez por dia, às 9h. Nessa publicação o script `consolida_horas.py` lê as issues pela API, soma as horas e aplica as fórmulas do plano. Por isso nenhum valor desta página é digitado à mão. Se algum número estiver errado, a correção é feita na issue, e o painel se ajusta na publicação seguinte.
+
+<div class="painel-diagrama" role="img" aria-label="Fluxo do painel: as issues do GitHub e a autoavaliação alimentam o script consolida_horas.py, executado pelo GitHub Actions; o script calcula os indicadores de Calendário e Progresso, Desempenho dos Processos, Recursos e Custos e a Conferência das horas; os indicadores são comparados com os limites de decisão e registrados no Procedimento de medição; inconsistências da conferência são corrigidas na issue de origem.">
+<svg viewBox="0 0 800 440" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<defs><marker id="fluxo-seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="fluxo-seta"/></marker></defs>
+<g class="fluxo-coluna"><text x="92" y="28">1. FONTES</text><text x="288" y="28">2. PROCESSAMENTO</text><text x="500" y="28">3. INDICADORES</text><text x="708" y="28">4. DECISÃO</text></g>
+<g class="fluxo-ligacoes">
+<path d="M175 175 C190 175 190 205 203 205"/>
+<path d="M175 310 C190 310 190 245 203 245"/>
+<path d="M288 116 L288 158"/>
+<path d="M370 225 C385 225 385 85 398 85"/>
+<path d="M370 225 C385 225 385 175 398 175"/>
+<path d="M370 225 C385 225 385 265 398 265"/>
+<path d="M370 225 C385 225 385 355 398 355"/>
+<path d="M600 85 C612 85 612 150 623 150"/>
+<path d="M600 175 L623 175"/>
+<path d="M600 265 C612 265 612 200 623 200"/>
+<path d="M708 230 L708 268"/>
+<path class="fluxo-ligacao--retorno" d="M500 390 L500 412 L3 412 L3 160 L8 160"/>
+</g>
+<text class="fluxo-retorno" x="250" y="432">Inconsistência encontrada: corrige-se a issue de origem e o painel é refeito</text>
+<a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues"><g class="fluxo-caixa fluxo-caixa--fonte"><rect x="10" y="110" width="165" height="130" rx="10"/><text x="24" y="138" class="fluxo-titulo">Issues do GitHub</text><text x="24" y="162">Janela e Estimativa</text><text x="24" y="182">Critérios da rubrica</text><text x="24" y="202">Tabela de Contribuição</text><text x="24" y="222">(horas por pessoa)</text></g></a>
+<g class="fluxo-caixa fluxo-caixa--fonte"><rect x="10" y="270" width="165" height="80" rx="10"/><text x="24" y="298" class="fluxo-titulo">Autoavaliação</text><text x="24" y="320">notas por critério</text><text x="24" y="338" class="fluxo-codigo">autoavaliacao.csv</text></g>
+<g class="fluxo-caixa fluxo-caixa--gatilho"><rect x="205" y="56" width="165" height="60" rx="30"/><text x="288" y="81" text-anchor="middle" class="fluxo-titulo">GitHub Actions</text><text x="288" y="101" text-anchor="middle">push, issue ou 9h diária</text></g>
+<g class="fluxo-caixa fluxo-caixa--script"><rect x="205" y="160" width="165" height="130" rx="10"/><text x="219" y="188" class="fluxo-titulo fluxo-codigo">consolida_horas.py</text><text x="219" y="214">lê as issues pela API</text><text x="219" y="234">soma as horas</text><text x="219" y="254">aplica as fórmulas</text><text x="219" y="274">do Plano de medição</text></g>
+<a href="#calendario-e-progresso"><g class="fluxo-caixa fluxo-caixa--indicador"><rect x="400" y="50" width="200" height="70" rx="10"/><text x="413" y="78" class="fluxo-titulo">Calendário e Progresso</text><text x="413" y="100">CP1 progresso · CP2 prazo</text></g></a>
+<a href="#desempenho-dos-processos"><g class="fluxo-caixa fluxo-caixa--indicador"><rect x="400" y="140" width="200" height="70" rx="10"/><text x="413" y="168" class="fluxo-titulo">Desempenho dos Processos</text><text x="413" y="190">DP1 retrabalho · DP2 rubrica</text></g></a>
+<a href="#recursos-e-custos"><g class="fluxo-caixa fluxo-caixa--indicador"><rect x="400" y="230" width="200" height="70" rx="10"/><text x="413" y="258" class="fluxo-titulo">Recursos e Custos</text><text x="413" y="280">RC1 esforço · RC2 · Pa</text></g></a>
+<a href="#conferencia-das-horas"><g class="fluxo-caixa fluxo-caixa--conferencia"><rect x="400" y="320" width="200" height="70" rx="10"/><text x="413" y="348" class="fluxo-titulo">Conferência das horas</text><text x="413" y="370">lançamentos e campos</text></g></a>
+<a href="#visao-geral"><g class="fluxo-caixa fluxo-caixa--limite"><rect x="625" y="120" width="165" height="110" rx="10"/><text x="637" y="148" class="fluxo-titulo">Limites de decisão</text><text x="637" y="172">Adequado, Bom,</text><text x="637" y="192">Insuficiente ou</text><text x="637" y="212">Crítico (Plano 4.3)</text></g></a>
+<a href="../medicoes/"><g class="fluxo-caixa fluxo-caixa--decisao"><rect x="625" y="270" width="165" height="110" rx="10"/><text x="637" y="296" class="fluxo-titulo">Procedimento</text><text x="637" y="316" class="fluxo-titulo">de medição</text><text x="637" y="340">a equipe registra a</text><text x="637" y="360">ação de cada rodada</text></g></a>
+</svg>
+</div>
+
+<p class="legenda"><em>Figura 1. Fluxo de cálculo do painel.</em><br>Elaborada por: <a href="https://github.com/luisa12ll">Luisa de Souza</a></p>
 
 ---
 
-## 1. Painel Geral de Indicadores PSM/CID
+## 1. Painel Geral de Indicadores PSM/CID {: #visao-geral }
 
-Síntese executiva de todas as medidas das três categorias do plano. A coloração de cada linha reflete o nível operacional atingido pelo indicador (Verde: Adequado/Bom; Amarelo: Insuficiente/Com ressalva; Vermelho: Crítico). Para justificativas e regras de decisão, consulte as seções correspondentes do [Plano de Medição](plano_de_medicao.md).
+Síntese executiva de todas as medidas das três categorias do plano. A coluna Situação Operacional mostra o nível atingido pelo indicador (verde: Adequado ou Bom; amarelo: Insuficiente ou Com ressalva; vermelho: Crítico). Para justificativas e regras de decisão, consulte as seções correspondentes do [Plano de Medição](plano_de_medicao.md).
 
-<table class="table table-bordered">
+<table>
 <thead>
 <tr>
   <th>Categoria</th>
@@ -23,99 +66,191 @@ Síntese executiva de todas as medidas das três categorias do plano. A coloraç
 </thead>
 <tbody>
 {% for r in painel %}
-<tr class="{{ r.cls }}">
-  <td style="background-color: {{ r.bg }} !important; color: {{ r.fg }} !important;"><strong>{{ r.categoria }}</strong></td>
-  <td style="background-color: {{ r.bg }} !important; color: {{ r.fg }} !important;"><strong>{{ r.indicador }}</strong></td>
-  <td style="background-color: {{ r.bg }} !important; color: {{ r.fg }} !important;"><span class="arithmatex">{{ r.formula }}</span></td>
-  <td style="background-color: {{ r.bg }} !important; color: {{ r.fg }} !important; text-align: center;"><strong>{{ r.valor }}</strong></td>
-  <td style="background-color: {{ r.bg }} !important; color: {{ r.fg }} !important; text-align: center;">{% if r.meta_math %}<span class="arithmatex">{{ r.meta }}</span>{% else %}{{ r.meta }}{% endif %}</td>
-  <td style="background-color: {{ r.bg }} !important; color: {{ r.fg }} !important; text-align: center;">{{ r.situacao }}</td>
+<tr>
+  <td><strong>{{ r.categoria }}</strong></td>
+  <td><strong>{{ r.indicador }}</strong></td>
+  <td><span class="arithmatex">{{ r.formula }}</span></td>
+  <td style="text-align: center;"><strong>{{ r.valor | replace(".", ",") }}</strong></td>
+  <td style="text-align: center;">{% if r.meta_math %}<span class="arithmatex">{{ r.meta }}</span>{% else %}{{ r.meta }}{% endif %}</td>
+  <td style="text-align: center;">{{ selo(r.situacao) }}</td>
 </tr>
 {% endfor %}
 </tbody>
 </table>
 
+{% set n.tabela = n.tabela + 1 %}
+<p class="legenda"><em>Tabela {{ n.tabela }}. Painel geral de indicadores PSM/CID.</em><br>Elaborada automaticamente a partir das issues do repositório</p>
+
 ---
 
-## 2. Calendário e Progresso (CP1 e CP2)
+## 2. Calendário e Progresso (CP1 e CP2) {: #calendario-e-progresso }
 
 Acompanha o ritmo volumétrico de execução frente ao planejado (**CP1**) e a pontualidade na conclusão em relação à Janela original (**CP2**). Conforme a regra da Seção 4.2 do plano, adiamentos registrados em comentários mantêm a comparação atrelada à linha de base original para garantir a transparência histórica.
 
 - **Atividades concluídas ($Ac$):** {{ m.ac_total }}
 - **Atividades planejadas até a data ($Ap$):** {{ m.ap_total }}
 - **Atividades concluídas no prazo original ($Acp$):** {{ m.acp_total }}
-- **Índice de Progresso ($Ppp$):** {{ m.cp1_str }} — Situação: **{{ m.cp1_status }}**
-- **Índice de Pontualidade ($Pacp$):** {{ m.cp2_str }} — Situação: **{{ m.cp2_status }}**
+- **Índice de Progresso ($Ppp$):** {{ m.cp1_str | replace(".", ",") }}. Situação: **{{ m.cp1_status }}**
+- **Índice de Pontualidade ($Pacp$):** {{ m.cp2_str | replace(".", ",") }}. Situação: **{{ m.cp2_status }}**
 
-### Rastreamento de Pontualidade por Issue (CP2)
+<div class="painel-grafico">{{ grafico_progresso }}<div class="painel-legenda-cores"><span style="--cor:#C8DAFC">Planejadas até a data (Ap)</span><span style="--cor:#1865F2">Concluídas (Ac)</span></div></div>
+
+<p class="legenda"><em>Figura 2. Atividades planejadas até a data e concluídas, por fase.</em><br>Elaborada automaticamente a partir das issues e milestones do GitHub</p>
+
+### Rastreamento de Pontualidade por Issue (CP2) {: #cp2 }
 
 {{ tabela_cp2 }}
 
+{% set n.tabela = n.tabela + 1 %}
+<p class="legenda"><em>Tabela {{ n.tabela }}. Pontualidade das issues concluídas.</em><br>Elaborada automaticamente a partir das issues do GitHub</p>
+
+{% if janelas_vencidas %}
+**Issues abertas com a Janela vencida ({{ janelas_vencidas | length }}).** Conforme a Tabela 8 do plano, o responsável registra a nova Janela e a causa do atraso na própria issue.
+
+{% for item in janelas_vencidas %}
+- {{ item }}
+{% endfor %}
+{% endif %}
+
 ---
 
-## 3. Desempenho dos Processos (DP1 e DP2)
+## 3. Desempenho dos Processos (DP1 e DP2) {: #desempenho-dos-processos }
 
 Avalia a estabilidade do fluxo de trabalho contra retrabalho (**DP1**) e a conformidade das entregas frente à rubrica acadêmica (**DP2**).
 
-### 3.1 Eficiência do Processo e Retrabalho (DP1)
+### 3.1 Eficiência do Processo e Retrabalho (DP1) {: #dp1 }
 
 O retrabalho ($Pri$) contabiliza issues reabertas ($Ir$) e issues com label `correcao` ou metadados de retrabalho ($Ic$), divididas pelo total de issues fechadas ($If$). A união previne dupla contagem.
 
 - **Issues fechadas ($If$):** {{ m.if_total }}
 - **Issues identificadas com retrabalho ($Ir \cup Ic$):** {{ m.ir_ic_count }}
-- **Percentual de Retrabalho ($Pri$):** {{ m.dp1_str }} — Situação: **{{ m.dp1_status }}**
+- **Percentual de Retrabalho ($Pri$):** {{ m.dp1_str | replace(".", ",") }}. Situação: **{{ m.dp1_status }}**
 
 {% if tabela_retrabalho %}
 {{ tabela_retrabalho }}
+
+{% set n.tabela = n.tabela + 1 %}
+<p class="legenda"><em>Tabela {{ n.tabela }}. Issues com retrabalho e causa declarada.</em><br>Elaborada automaticamente a partir das issues do GitHub</p>
 {% else %}
-> [!NOTE]
-> Nenhuma issue foi sinalizada com label `correcao` ou marcação de retrabalho até o momento.
+Nenhuma issue foi sinalizada com label `correcao` ou marcação de retrabalho até o momento.
 {% endif %}
 
-### 3.2 Efetividade do Processo e Rubrica Acadêmica (DP2)
+### 3.2 Efetividade do Processo e Rubrica Acadêmica (DP2) {: #dp2 }
 
 Mede a aderência qualitativa das entregas contra a rubrica docente, baseada nas avaliações registradas em `assets/dados/gestao/autoavaliacao.csv`.
 
 - **Critérios avaliados ($Ct$):** {{ m.ct }}
 - **Distribuição:** Adequado: {{ m.ca }} | Bom: {{ m.cb }} | Insuficiente: {{ m.ci }} | Crítico: {{ m.cc }}
-- **Critérios Fracos ($Qcic = Ci + Cc$):** {{ m.dp2_qcic_str }} — Situação: **{{ m.qcic_status }}**
-- **Percentual Adequado ($PCa$):** {{ m.dp2_pca_str }} — Situação: **{{ m.pca_status }}**
+- **Critérios Fracos ($Qcic = Ci + Cc$):** {{ m.dp2_qcic_str }}. Situação: **{{ m.qcic_status }}**
+- **Percentual Adequado ($PCa$):** {{ m.dp2_pca_str | replace(".", ",") }}. Situação: **{{ m.pca_status }}**
 
 {% if tabela_autoavaliacao %}
+{% set n.tabela = n.tabela + 1 %}
+<details class="painel-detalhes painel-detalhes--checklist" markdown>
+<summary>Autoavaliação por critério ({{ m.ct }} critérios)</summary>
+
 {{ tabela_autoavaliacao }}
+
+<p class="legenda"><em>Tabela {{ n.tabela }}. Autoavaliação por critério da rubrica.</em><br>Elaborada automaticamente a partir de autoavaliacao.csv</p>
+</details>
 {% endif %}
 
 ---
 
-## 4. Recursos e Custos (RC1, RC2 e Pa)
+## 4. Recursos e Custos (RC1, RC2 e Pa) {: #recursos-e-custos }
 
 Acompanha o volume de trabalho individual ($Hi$) e o equilíbrio em relação à média da equipe ($Hm$). Conforme a Tabela 8 do Plano de Medição, disparidades superiores a $\pm 50\%$ demandam análise da causa e rebalanceamento das próximas atribuições.
 
+- **Esforço total da equipe ($Et$):** {{ horas(m.esforco_total) }}
+- **Média por membro ($Hm$):** {{ horas(m.media_por_membro) }}
+- **Cobertura do registro de horas ($Pa$):** {{ num(m.pa_cobertura) }}%. Situação: **{{ m.pa_status }}**
+
+A cobertura ($Pa$) indica quantas issues concluídas têm horas lançadas. Abaixo de 90%, o RC1 e o RC2 são lidos com ressalva.
+
+<div class="painel-grafico">{{ grafico_equilibrio }}<div class="painel-legenda-cores"><span style="--cor:#1865F2">Dentro da faixa de ±50%</span><span style="--cor:#0B2149">Fora da faixa</span><span style="--cor:#EDF3FE">Faixa de ±50% da média</span><span style="--cor:#14BF96">Média da equipe</span></div></div>
+
+<p class="legenda"><em>Figura 3. Horas registradas por integrante e faixa de equilíbrio.</em><br>Elaborada automaticamente a partir das Tabelas de Contribuição das issues</p>
+
 {{ tabela_equilibrio }}
+
+{% set n.tabela = n.tabela + 1 %}
+<p class="legenda"><em>Tabela {{ n.tabela }}. Equilíbrio do esforço entre integrantes.</em><br>Elaborada automaticamente a partir das Tabelas de Contribuição das issues</p>
 
 ---
 
-## 5. Esforço por Atividade e Estimativas (RC2)
+## 5. Esforço por Atividade e Estimativas (RC2) {: #rc2 }
 
 Compara o esforço estimado original ($He$) com o realizado ($Hr$) por atividade, agrupadas por milestone (fase do projeto). Conforme o Plano de Medição, o indicador formal do RC2 incide sobre issues concluídas ($Ac$).
 
-{% for ms in milestones %}
-### {{ ms.nome }}
+- **Esforço estimado ($Ee$):** {{ horas(m.ee_total) }}
+- **Esforço realizado ($Er$):** {{ horas(m.er_total) }}
+- **Variação de Estimativa ($Ve$):** {{ m.ve_str | replace(".", ",") }}. Situação: **{{ m.ve_status }}**
 
-**Total de horas realizadas:** {{ "%.2f"|format(ms.horas) }} h
+{% if grafico_estimativa %}
+<div class="painel-grafico">{{ grafico_estimativa }}<div class="painel-legenda-cores"><span style="--cor:#C8DAFC">Estimado (Ee)</span><span style="--cor:#1865F2">Realizado (Er)</span></div></div>
+
+<p class="legenda"><em>Figura 4. Horas estimadas e realizadas nas issues concluídas, por fase.</em><br>Elaborada automaticamente a partir das issues do GitHub</p>
+{% endif %}
+
+{% for ms in milestones %}
+<details class="painel-detalhes painel-detalhes--tabela" markdown>
+<summary>{{ ms.nome }}: total de horas realizadas {{ ms.horas }}</summary>
 
 {{ ms.tabela }}
 
+</details>
 {% endfor %}
+
 ---
 
-## 6. Detalhamento dos Lançamentos Individuais
+## 6. Detalhamento dos Lançamentos Individuais {: #lancamentos }
 
 Registros diários individuais extraídos diretamente das tabelas de contribuição das issues no GitHub.
 
 {% for l in lancamentos %}
-### {{ l.titulo }}
+<details class="painel-detalhes painel-detalhes--pessoa" markdown>
+<summary>{{ l.titulo }}</summary>
 
 {{ l.tabela }}
 
+</details>
+{% endfor %}
+
+---
+
+## 7. Conferência dos Lançamentos {: #conferencia-das-horas }
+
+Antes de usar os registros nas decisões, a equipe confere se as Tabelas de Contribuição estão completas e coerentes.
+
+{{ conferencia_integrantes }}
+
+{% set n.tabela = n.tabela + 1 %}
+<p class="legenda"><em>Tabela {{ n.tabela }}. Conferência dos lançamentos por integrante.</em><br>Elaborada automaticamente a partir das Tabelas de Contribuição das issues</p>
+
+{% if somas.confere %}
+A soma por integrante ({{ somas.soma_por_integrante }}) é igual à soma por issue ({{ somas.soma_por_issue }}).
+{% else %}
+A soma por integrante ({{ somas.soma_por_integrante }}) difere da soma por issue ({{ somas.soma_por_issue }}) em {{ somas.diferenca }}, referentes a lançamentos de usuários de fora da equipe.
+{% endif %}
+
+| Verificação | Casos |
+|---|---:|
+{% for verificacao in verificacoes %}
+| {{ verificacao.titulo }} | {{ verificacao.itens | length if verificacao.itens else "nenhum" }} |
+{% endfor %}
+
+{% set n.tabela = n.tabela + 1 %}
+<p class="legenda"><em>Tabela {{ n.tabela }}. Verificações automáticas dos lançamentos.</em><br>Elaborada automaticamente a partir das issues do GitHub</p>
+
+{% for verificacao in verificacoes if verificacao.itens %}
+<details class="painel-detalhes painel-detalhes--verificacao" markdown>
+<summary>{{ verificacao.titulo }} ({{ verificacao.itens | length }})</summary>
+
+{{ verificacao.explicacao }}
+
+{% for item in verificacao.itens %}
+- {{ item }}
+{% endfor %}
+
+</details>
 {% endfor %}

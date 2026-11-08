@@ -1,0 +1,40 @@
+<nav class="md-nav md-nav--primary khan-trilha" aria-label="{{ lang.t('nav') }}" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="{{ nav.homepage.url | url }}" title="{{ config.site_name | e }}" class="md-nav__button md-logo" aria-label="{{ config.site_name }}" data-md-component="logo">
+      {% include "partials/logo.html" %}
+    </a>
+    {{ config.site_name }}
+  </label>
+  {% set ns = namespace(secao=none, atual=0) %}
+  {% for nav_item in nav.items %}
+    {% if nav_item.active %}{% set ns.secao = nav_item %}{% endif %}
+  {% endfor %}
+  <ul class="khan-trilha__secoes">
+    {% for nav_item in nav.items %}
+      {% set destino = namespace(item=nav_item) %}
+      {% for _ in range(3) %}
+        {% if destino.item.children %}{% set destino.item = destino.item.children | first %}{% endif %}
+      {% endfor %}
+      <li><a href="{{ destino.item.url | url }}"{% if nav_item.active %} aria-current="true"{% endif %}>{{ nav_item.title }}</a></li>
+    {% endfor %}
+  </ul>
+  {% if ns.secao and ns.secao.children %}
+    {% set passos = ns.secao.children %}
+    {% for passo in passos %}
+      {% if passo.active %}{% set ns.atual = loop.index %}{% endif %}
+    {% endfor %}
+    <ol class="khan-trilha__passos">
+      {% for passo in passos %}
+        {% set situacao = "atual" if loop.index == ns.atual else ("feito" if loop.index < ns.atual else "pendente") %}
+        <li class="khan-trilha__passo khan-trilha__passo--{{ situacao }}">
+          <a href="{{ passo.url | url }}"{% if situacao == "atual" %} aria-current="page"{% endif %}>
+            <span class="khan-trilha__bolinha">
+              {% if situacao == "feito" %}{% include ".icons/octicons/check-16.svg" %}{% else %}{{ loop.index }}{% endif %}
+            </span>
+            <span>{{ passo.title }}</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ol>
+  {% endif %}
+</nav>

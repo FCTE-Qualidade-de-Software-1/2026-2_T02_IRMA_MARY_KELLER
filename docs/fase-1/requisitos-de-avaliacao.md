@@ -4,9 +4,9 @@
 
 Este artefato estabelece os requisitos para avaliação da qualidade do produto de software Khan Academy, apresentando o propósito do estudo, o uso dos resultados e as características que fundamentam o processo. Essas definições orientam o planejamento da avaliação e estabelecem a base para a elaboração dos objetivos, das questões e das métricas da [Fase 2](../fase-2/index.md).
 
-A seleção das características selecionadas são fundamentadas no modelo de qualidade da ISO/IEC 25010:2011 [S1](#s1) adotado para o estudo e justificadas nas seções específicas deste documento.
+As características selecionadas são fundamentadas no modelo de qualidade da ISO/IEC 25010:2011 [S1](#s1) adotado para o estudo e justificadas nas seções específicas deste documento.
 
-O artefato complementa a [Caracterização do produto e do contexto de uso](produto-e-contexto.md) e o [Escopo da avaliação](produto-e-contexto.md), garantindo rastreabilidade entre o contexto de uso e as medições planejadas, sem antecipar o escopo do estudo.
+O artefato complementa a [Caracterização do produto e do contexto de uso](produto-e-contexto.md) e o [Escopo da avaliação](escopo-da-avaliacao.md), garantindo rastreabilidade entre o contexto de uso e as medições planejadas, sem antecipar o escopo do estudo.
 
 <a id="proposito"></a>
 

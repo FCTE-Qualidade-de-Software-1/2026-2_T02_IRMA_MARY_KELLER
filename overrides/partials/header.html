@@ -1,0 +1,40 @@
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="{{ lang.t('header') }}">
+    <label class="md-header__button md-icon" for="__drawer">
+      {% include ".icons/material/menu.svg" %}
+    </label>
+    <a href="{{ nav.homepage.url | url }}" title="{{ config.site_name | e }}" class="khan-marca" aria-label="{{ config.site_name }}" data-md-component="logo">
+      <img src="{{ config.theme.logo | url }}" alt="Logo do Khan Academy" width="32" height="32">
+      <span class="khan-marca__texto">
+        <strong>{{ config.site_name }}</strong>
+        <small>Qualidade de Software 1 · T02</small>
+      </span>
+    </a>
+    <ul class="khan-abas">
+      {% for nav_item in nav.items %}
+        {% set ns = namespace(destino=nav_item) %}
+        {% for _ in range(3) %}
+          {% if ns.destino.children %}{% set ns.destino = ns.destino.children | first %}{% endif %}
+        {% endfor %}
+        <li class="khan-abas__item{% if nav_item.active %} khan-abas__item--ativa{% endif %}">
+          <a href="{{ ns.destino.url | url }}">{{ nav_item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    <div class="khan-header__espaco"></div>
+    {% if config.theme.palette and not config.theme.palette is mapping %}
+      {% include "partials/palette.html" %}
+      {% include "partials/javascripts/palette.html" %}
+    {% endif %}
+    {% if "material/search" in config.plugins %}
+      <label class="md-header__button md-icon" for="__search">
+        {% include ".icons/material/magnify.svg" %}
+      </label>
+      {% include "partials/search.html" %}
+    {% endif %}
+    <a href="{{ config.repo_url }}" class="khan-botao-repo" title="Repositório da equipe no GitHub">
+      {% include ".icons/octicons/code-16.svg" %}
+      <span>Repositório</span>
+    </a>
+  </nav>
+</header>

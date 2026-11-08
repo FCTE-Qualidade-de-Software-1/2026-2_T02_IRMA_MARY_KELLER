@@ -2,7 +2,11 @@
 
 **Versão 1.1**
 
-**[Artigo em PDF](../artigo/QSW_Aval_Qualidade_de_Produto_Khan_Academy_Entrega_1.pdf)**
+<a class="cartao-arquivo" href="../../artigo/QSW_Aval_Qualidade_de_Produto_Khan_Academy_Entrega_1.pdf" target="_blank" rel="noopener">
+  <span class="cartao-arquivo__icone">PDF</span>
+  <span class="cartao-arquivo__texto"><strong>Artigo da Entrega 1</strong></span>
+  <span class="cartao-arquivo__acao">Abrir artigo</span>
+</a>
 
 ## 1. Contextualização
 
@@ -22,15 +26,15 @@ A escolha do modelo ACM busca conciliar praticidade na elaboração do documento
 
 Dessa forma, a adoção do modelo ACM foi definida como uma decisão coletiva, alinhada às necessidades do projeto e aos objetivos acadêmicos da avaliação.
 
-**Template do modelo escolhido:** [ACM — Proceedings Template](https://www.acm.org/publications/proceedings-template).
+**Template do modelo escolhido:** [ACM - Proceedings Template](https://www.acm.org/publications/proceedings-template).
 
-**## Referências**
+## Referências
 
-*> ASSOCIATION FOR COMPUTING MACHINERY (ACM). *ACM Proceedings Template*. Disponível em: [https://www.acm.org/publications/proceedings-template](https://www.acm.org/publications/proceedings-template). Acesso em: 19 out. 2026.*
+> ASSOCIATION FOR COMPUTING MACHINERY (ACM). *ACM Proceedings Template*. Disponível em: [https://www.acm.org/publications/proceedings-template](https://www.acm.org/publications/proceedings-template). Acesso em: 19 out. 2026.
 
-*> SOCIEDADE BRASILEIRA DE COMPUTAÇÃO (SBC). *SBC Conferences Template*. Disponível em: [https://www.overleaf.com/latex/templates/sbc-conferences-template/blbxwjwzdngr](https://www.overleaf.com/latex/templates/sbc-conferences-template/blbxwjwzdngr). Acesso em: 19 out. 2026.*
+> SOCIEDADE BRASILEIRA DE COMPUTAÇÃO (SBC). *SBC Conferences Template*. Disponível em: [https://www.overleaf.com/latex/templates/sbc-conferences-template/blbxwjwzdngr](https://www.overleaf.com/latex/templates/sbc-conferences-template/blbxwjwzdngr). Acesso em: 19 out. 2026.
 
-*> INSTITUTE OF ELECTRICAL AND ELECTRONICS ENGINEERS (IEEE). *IEEE Conference Author Center: Authoring Tools and Templates*. Disponível em: [https://conferences.ieeeauthorcenter.ieee.org/write-your-paper/authoring-tools-and-templates/](https://conferences.ieeeauthorcenter.ieee.org/write-your-paper/authoring-tools-and-templates/). Acesso em: 19 out. 2026.*
+> INSTITUTE OF ELECTRICAL AND ELECTRONICS ENGINEERS (IEEE). *IEEE Conference Author Center: Authoring Tools and Templates*. Disponível em: [https://conferences.ieeeauthorcenter.ieee.org/write-your-paper/authoring-tools-and-templates/](https://conferences.ieeeauthorcenter.ieee.org/write-your-paper/authoring-tools-and-templates/). Acesso em: 19 out. 2026.
 
 ## Histórico de versões
 

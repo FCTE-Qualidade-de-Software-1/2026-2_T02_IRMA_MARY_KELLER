@@ -20,31 +20,37 @@ INTEGRANTES = {
     "camilasilvac": {
         "github": "CamilaSilvaC",
         "nome": "Camila Silva Cavalcante",
+        "apelido": "Camila Cavalcante",
         "matricula": "232013944",
     },
     "geovannaumbelino": {
         "github": "GeovannaUmbelino",
         "nome": "Geovanna Alves Umbelino",
+        "apelido": "Geovanna Umbelino",
         "matricula": "232014450",
     },
     "jaugustom": {
         "github": "JAugustoM",
         "nome": "José Augusto Alves de Moraes",
+        "apelido": "José Augusto",
         "matricula": "231026429",
     },
     "luisa12ll": {
         "github": "luisa12ll",
         "nome": "Luísa de Souza Ferreira",
+        "apelido": "Luisa de Souza",
         "matricula": "232014807",
     },
     "menali17": {
         "github": "menali17",
         "nome": "Enzo Menali Vettorato Toledo",
+        "apelido": "Enzo Menali",
         "matricula": "241011054",
     },
     "pwdrinho": {
         "github": "Pwdrinho",
         "nome": "Pedro Lucas Barbosa da Silva",
+        "apelido": "Pedro Lucas",
         "matricula": "241025710",
     },
 }
