@@ -2,21 +2,23 @@
 
 **Versão 1.0**
 
-Este artefato define como será avaliada a **adaptabilidade** da versão web da Khan Academy em computadores, a característica de **portabilidade** priorizada na [Fase 1](../fase-1/index.md). Ele especifica os procedimentos de obtenção das métricas [`M6`](../fase-2/metricas.md#16-m6-execucao-por-ambiente) (execução por ambiente) e [`M7`](../fase-2/metricas.md#17-m7-adaptacao-ao-tamanho-da-janela) (adaptação ao tamanho da janela), que respondem às questões [`Q5`](../fase-2/questoes-hipoteses.md#41-q5-adaptacao-entre-sistemas-operacionais-e-navegadores) e [`Q6`](../fase-2/questoes-hipoteses.md#42-q6-adaptacao-a-tamanhos-de-janela) do objetivo [`G2`](../fase-2/objetivos.md#g2).
+Este artefato define como será avaliada a **adaptabilidade** da versão web da Khan Academy em computadores, subcaracterística da **portabilidade** no modelo da ISO/IEC 25010:2011 [S1](#s1), característica priorizada na [Fase 1](../fase-1/index.md) [S4](#s4). Ele especifica os procedimentos de obtenção das métricas [`M6`](../fase-2/metricas.md#16-m6-execucao-por-ambiente) (execução por ambiente) e [`M7`](../fase-2/metricas.md#17-m7-adaptacao-ao-tamanho-da-janela) (adaptação ao tamanho da janela) [S8](#s8), que respondem às questões [`Q5`](../fase-2/questoes-hipoteses.md#41-q5-adaptacao-entre-sistemas-operacionais-e-navegadores) e [`Q6`](../fase-2/questoes-hipoteses.md#42-q6-adaptacao-a-tamanhos-de-janela) [S7](#s7) do objetivo [`G2`](../fase-2/objetivos.md#g2) [S6](#s6), estruturado pela abordagem *Goal–Question–Metric* (GQM) [S3](#s3). A Fase 2 propôs as métricas com a ISO/IEC 25023:2016 como referência [S2](#s2), sem transcrevê-la.
 
-O documento atende à parte de adaptabilidade da issue #25 (*[Fase 3] Definição dos procedimentos de avaliação de desempenho e adaptabilidade*) e usa o [ambiente de testes](ambiente-de-testes.md) da Fase 3. Os procedimentos de desempenho (M1–M5) são tratados em artefato próprio, mas compartilham com este as condições de preparação da [seção 3](#3-ambiente-de-teste-e-instrumentos).
+O documento atende à parte de adaptabilidade da issue #25 (*[Fase 3] Definição dos procedimentos de avaliação de desempenho e adaptabilidade*) [S16](#s16) e usa o [ambiente de testes](ambiente-de-testes.md) da Fase 3 [S10](#s10). Os procedimentos de desempenho (M1–M5) são tratados em artefato próprio, mas compartilham com este as condições de preparação da [seção 3](#3-ambiente-de-teste-e-instrumentos).
 
-**Situação:** especificação de procedimentos, **sem resultados coletados**. A execução oficial e a análise das medições pertencem à Fase 4. Os limiares e as regras de julgamento são os de [Critérios de julgamento](../fase-2/criterios-julgamento.md), que devem ser aprovados pela equipe antes da coleta; as regras operacionais propostas aqui e ainda não ratificadas estão reunidas na [seção 11](#11-pontos-pendentes-e-decisoes-da-equipe).
+**Situação:** especificação de procedimentos, **sem resultados coletados**. A execução oficial e a análise das medições pertencem à Fase 4. Os limiares e as regras de julgamento são os de [Critérios de julgamento](../fase-2/criterios-julgamento.md) [S9](#s9), que devem ser aprovados pela equipe antes da coleta; as regras operacionais propostas aqui e ainda não ratificadas estão reunidas na [seção 11](#11-pontos-pendentes-e-decisoes-da-equipe).
 
 ## 1. Escopo e princípios
 
-- **Objeto:** fluxos [`FL1`](../fase-1/escopo-da-avaliacao.md#fluxos) a [`FL4`](../fase-1/escopo-da-avaliacao.md#fluxos) da plataforma web, sem alterar o produto e sem acesso interno (avaliação externa, caixa-preta).
+- **Objeto:** fluxos [`FL1`](../fase-1/escopo-da-avaliacao.md#fluxos) a [`FL4`](../fase-1/escopo-da-avaliacao.md#fluxos) da plataforma web, sem alterar o produto e sem acesso interno (avaliação externa, caixa-preta) [S5](#s5).
 - **Ambientes:** combinações [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes) a [`A4`](../fase-1/escopo-da-avaliacao.md#ambientes) da matriz direcionada da Fase 1. Os demais sistemas do ambiente de testes são tratados como complementares ([seção 3.2](#32-ambientes-complementares)).
 - **Dimensões:** duas resoluções de referência, `J1` = 1366 × 768 e `J2` = 1920 × 1080, com zoom de 100%. Zoom de 200% e alto contraste pertencem a G3 ([`M10`](../fase-2/metricas.md#110-m10-preservacao-com-ampliacao) e [`M11`](../fase-2/metricas.md#111-m11-conformidade-de-contraste)) e **não** entram aqui.
 - **Rede:** conexão sem limitação artificial. Os perfis de rede normal e limitada aplicam-se apenas a M1–M5 em `A1`.
 - **Reprodutibilidade:** um segundo avaliador deve conseguir repetir cada execução apenas com este documento, os dados de teste congelados e o [registro de execuções](registro-adaptabilidade.md), descrito na [seção 8](#8-formularios-e-modelos-de-registro).
 
 ### 1.1 Justificativa do método
+
+A Tabela 1 resume as decisões metodológicas e a justificativa de cada uma.
 
 | Decisão metodológica | Justificativa | Origem |
 |---|---|---|
@@ -33,7 +35,7 @@ O documento atende à parte de adaptabilidade da issue #25 (*[Fase 3] Definiçã
 
 ## 2. Rastreabilidade com as Fases 1 e 2
 
-A Tabela 2 liga cada métrica à cadeia que a justifica e aos pontos deste documento que a operacionalizam.
+A Tabela 2 liga cada métrica à cadeia que a justifica nas Fases 1 e 2 [S4](#s4), [S6](#s6), [S7](#s7), [S8](#s8) e aos pontos deste documento que a operacionalizam.
 
 | Requisito / decisão (Fase 1) | Objetivo | Questão | Hipótese | Métrica | Critério de julgamento (Fase 2) | Procedimento | Registro |
 |---|---|---|---|---|---|---|---|
@@ -61,7 +63,7 @@ A Tabela 3 mostra como cada exigência da Fase 1 e da Fase 2 foi convertida em p
 
 ### 3.1 Ambientes da matriz (A1–A4)
 
-A Tabela 4 associa cada ambiente da Fase 1 aos dados do [ambiente de testes](ambiente-de-testes.md).
+A Tabela 4 associa cada ambiente da Fase 1 aos dados do [ambiente de testes](ambiente-de-testes.md) [S10](#s10).
 
 | ID | Sistema operacional | Navegador (motor) | Versão do navegador | Modalidade | Recursos | Situação |
 |---|---|---|---|---|---|---|
@@ -88,6 +90,8 @@ O ambiente de testes inclui três distribuições Linux além do Ubuntu. Como a 
 
 ### 3.3 Instrumentos
 
+A Tabela 6 lista os instrumentos de coleta.
+
 | Instrumento | Uso |
 |---|---|
 | Navegador do ambiente (console de desenvolvedor) | Registrar a resolução da tela, o viewport e o `devicePixelRatio` ([3.5](#35-resolucao-e-janela)) |
@@ -101,7 +105,7 @@ O Lighthouse listado no ambiente de testes **não** é instrumento de M6 nem de 
 
 ### 3.4 Preparação do ambiente
 
-Cada ambiente passa pelas verificações abaixo antes da primeira execução oficial. O responsável preenche, por ambiente, as tabelas de [preparação](registro-adaptabilidade.md#registro-preparacao) do registro.
+Cada ambiente passa pelas verificações da Tabela 7 antes da primeira execução oficial. O responsável preenche, por ambiente, as tabelas de [preparação](registro-adaptabilidade.md#registro-preparacao) do registro.
 
 | ID | Verificação |
 |---|---|
@@ -152,22 +156,22 @@ O modo de design responsivo ou de emulação de dispositivo do navegador **não*
 
 ### 3.6 Requisitos, conhecimento do avaliador e massa de dados
 
-**Recursos de hardware e software.**
+**Recursos de hardware e software.** A Tabela 10 reúne os requisitos.
 
 | Item | Requisito | Fonte |
 |---|---|---|
 | Máquinas virtuais | 4 GB de memória e 4 vCPUs por ambiente; disco a registrar na preparação | [Ambiente de testes](ambiente-de-testes.md) |
 | Virtualização | QEMU/KVM com Gnome Boxes (Linux) e Docker com Winboat (Windows); o host precisa de virtualização por hardware | [Ambiente de testes](ambiente-de-testes.md) |
 | Navegadores | Versões das Tabelas 4 e 5, congeladas em PA-3 | [3.1](#31-ambientes-da-matriz-a1a4), [3.2](#32-ambientes-complementares) |
-| Rede | Conexão sem limitação artificial; como referência, a Khan Academy sugere cerca de 1,5 Mbps por dispositivo para vídeo em definição padrão | Central de ajuda da Khan Academy [S3](#s3) |
-| Acesso a serviços | Segundo a central de ajuda, os vídeos são hospedados no YouTube, que deve estar acessível na rede de teste | Central de ajuda da Khan Academy [S3](#s3) |
-| Suporte declarado pelo produto | A plataforma declara suporte às versões mais recentes de Chrome, Firefox, Edge e Safari, em Windows, Mac e Chromebook | Central de ajuda da Khan Academy [S1](#s1), [S2](#s2) |
+| Rede | Conexão sem limitação artificial; como referência, a Khan Academy sugere cerca de 1,5 Mbps por dispositivo para vídeo em definição padrão | Central de ajuda da Khan Academy [S13](#s13) |
+| Acesso a serviços | Segundo a central de ajuda, os vídeos são hospedados no YouTube, que deve estar acessível na rede de teste | Central de ajuda da Khan Academy [S13](#s13) |
+| Suporte declarado pelo produto | A plataforma declara suporte às versões mais recentes de Chrome, Firefox, Edge e Safari, em Windows, Mac e Chromebook | Central de ajuda da Khan Academy [S11](#s11), [S12](#s12) |
 
 *Tabela 10. Requisitos de hardware e software da avaliação de adaptabilidade. Fonte: Elaborada por: [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM), com base em [ambiente de testes](ambiente-de-testes.md) e na central de ajuda da Khan Academy*
 
 O suporte declarado não inclui Linux nem o Edge. Isso não altera a matriz da Fase 1 nem os critérios, mas é contexto para interpretar falhas em `A4` e nos ambientes complementares ([ponto P12](#11-pontos-pendentes-e-decisoes-da-equipe)).
 
-**Conhecimento exigido do avaliador.**
+**Conhecimento exigido do avaliador.** A Tabela 11 resume o nível exigido.
 
 | Aspecto | Nível exigido | Como é atendido |
 |---|---|---|
@@ -181,7 +185,7 @@ O suporte declarado não inclui Linux nem o Edge. Isso não altera a matriz da F
 
 ### 3.7 Guia de operações por ambiente
 
-O guia reduz o conhecimento prévio exigido do avaliador. Rótulos de menu podem variar entre versões e devem ser anotados quando diferirem.
+O guia da Tabela 12 reduz o conhecimento prévio exigido do avaliador. Rótulos de menu podem variar entre versões e devem ser anotados quando diferirem.
 
 | Operação | Windows (`A1`, `A2`) | macOS (`A3`) | Ubuntu (`A4`) e demais Linux |
 |---|---|---|---|
@@ -228,7 +232,7 @@ Cada execução tem um **executor**, que segue o roteiro, e um **observador**, q
 
 ### 4.4 Preparação normal e ajuste extraordinário
 
-A Fase 2 exige distinguir a preparação normal do ensaio de um ajuste extraordinário necessário para usar o produto.
+A Fase 2 exige distinguir a preparação normal do ensaio de um ajuste extraordinário necessário para usar o produto. A Tabela 14 separa as duas categorias.
 
 | Preparação normal (permitida) | Ajuste extraordinário (a combinação vira `F-AJ`) |
 |---|---|
@@ -250,7 +254,7 @@ Para evitar que um evento isolado decida o resultado, uma falha observada é rep
 
 ### 4.7 Cálculo e julgamento de Q5 e H5
 
-A fórmula é a da [ficha de M6](../fase-2/metricas.md#16-m6-execucao-por-ambiente), `M6 = 100 × C/N`, em que `C` é o número de combinações com resultado final `C` e `N`, o de combinações elegíveis testadas (16 menos as `I`). A Tabela 15 converte contagens em notas para `N = 16`, conforme a [Tabela 2 de Critérios de julgamento](../fase-2/criterios-julgamento.md#2-metricas-percentuais).
+A fórmula é a da [ficha de M6](../fase-2/metricas.md#16-m6-execucao-por-ambiente), `M6 = 100 × C/N`, em que `C` é o número de combinações com resultado final `C` e `N`, o de combinações elegíveis testadas (16 menos as `I`). A Tabela 15 converte contagens em notas para `N = 16`, conforme a [Tabela 2 de Critérios de julgamento](../fase-2/criterios-julgamento.md#2-metricas-percentuais) [S9](#s9).
 
 | Nota | Nível | Percentual | Combinações concluídas (`N = 16`) |
 |:---:|---|---:|---:|
@@ -328,7 +332,7 @@ Para a mesma regra, em M6, um impedimento é um ponto de verificação não aten
 
 ### 5.6 Cálculo e julgamento de Q6 e H6
 
-A fórmula é a da [ficha de M7](../fase-2/metricas.md#17-m7-adaptacao-ao-tamanho-da-janela), `M7 = 100 × C/N`, com `N = 32` menos as `I`. A Tabela 18 converte contagens em notas.
+A fórmula é a da [ficha de M7](../fase-2/metricas.md#17-m7-adaptacao-ao-tamanho-da-janela), `M7 = 100 × C/N`, com `N = 32` menos as `I`. A Tabela 18 converte contagens em notas, pelas mesmas faixas [S9](#s9).
 
 | Nota | Nível | Percentual | Combinações preservadas (`N = 32`) | Subconjunto essencial `FL1`–`FL3` (`N = 24`) |
 |:---:|---|---:|---:|---:|
@@ -349,6 +353,8 @@ Cada roteiro é único e serve às duas métricas: em M6 conta a conclusão de t
 
 ### 6.1 Roteiro `FL1` — navegação em cursos
 
+A Tabela 19 apresenta o roteiro de `FL1`.
+
 | Passo | Ação | Ponto de verificação | Controles (M7) |
 |:---:|---|---|---|
 | 1 | Abrir a página inicial | `P1`: página carregada e navegação visível | CE1.1 |
@@ -359,6 +365,8 @@ Cada roteiro é único e serve às duas métricas: em M6 conta a conclusão de t
 *Tabela 19. Roteiro de FL1. Fonte: Elaborada por: [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM), com base no [escopo](../fase-1/escopo-da-avaliacao.md#fluxos)*
 
 ### 6.2 Roteiro `FL2` — videoaulas
+
+A Tabela 20 apresenta o roteiro de `FL2`.
 
 | Passo | Ação | Ponto de verificação | Controles (M7) |
 |:---:|---|---|---|
@@ -374,6 +382,8 @@ O avanço do tempo, e não o áudio, comprova a reprodução, pois ambientes vir
 
 ### 6.3 Roteiro `FL3` — exercícios
 
+A Tabela 21 apresenta o roteiro de `FL3`.
+
 | Passo | Ação | Ponto de verificação | Controles (M7) |
 |:---:|---|---|---|
 | 1 | Abrir o exercício `D5` | `P1`: enunciado e área de resposta visíveis | CE3.1 |
@@ -384,6 +394,8 @@ O avanço do tempo, e não o áudio, comprova a reprodução, pois ambientes vir
 *Tabela 21. Roteiro de FL3. Fonte: Elaborada por: [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM), com base no [escopo](../fase-1/escopo-da-avaliacao.md#fluxos)*
 
 ### 6.4 Roteiro `FL4` — progresso do estudante
+
+A Tabela 22 apresenta o roteiro de `FL4`.
 
 | Passo | Ação | Ponto de verificação | Controles (M7) |
 |:---:|---|---|---|
@@ -402,7 +414,7 @@ Uma execução é válida quando: (a) a versão do navegador e do sistema coinci
 
 ### 7.2 Atribuição de causa
 
-Só falhas atribuídas à plataforma contam como `F`.
+Só falhas atribuídas à plataforma contam como `F`. A Tabela 23 resume os indícios e o tratamento de cada causa.
 
 | Atribuição | Indício | Tratamento |
 |---|---|---|
@@ -421,7 +433,7 @@ A execução é interrompida e marcada `X` em caso de perda de conexão, travame
 
 ## 8. Formulários e modelos de registro
 
-Os formulários são tabelas em Markdown na página [Registro de execuções (M6 e M7)](registro-adaptabilidade.md), editadas por *pull request* durante a Fase 4. Isso mantém os dados brutos no repositório e visíveis na GitPage, sem depender de planilhas externas.
+Os formulários são tabelas em Markdown na página [Registro de execuções (M6 e M7)](registro-adaptabilidade.md), editadas por *pull request* durante a Fase 4. Isso mantém os dados brutos no repositório e visíveis na GitPage, sem depender de planilhas externas. A Tabela 24 lista as partes do registro.
 
 | Parte do registro | Conteúdo | Linhas |
 |---|---|---:|
@@ -440,6 +452,8 @@ Os formulários são tabelas em Markdown na página [Registro de execuções (M6
 ## 9. Cálculo, interpretação e relato
 
 ### 9.1 Fórmulas
+
+A Tabela 25 apresenta as fórmulas de M6 e M7.
 
 | Métrica | Fórmula | `C` | `N` |
 |---|---|---|---|
@@ -461,7 +475,7 @@ Se a equipe não aprovar os critérios antes da coleta, o resultado permanece in
 
 ### 9.3 Consistência entre os métodos desta fase e a especificação da Fase 2
 
-A Tabela 26 explicita a coerência entre o que a Fase 2 especifica e o que a Fase 3 usa para obter e julgar cada métrica.
+A Tabela 26 explicita a coerência entre o que a Fase 2 especifica [S8](#s8), [S9](#s9) e o que a Fase 3 usa para obter e julgar cada métrica.
 
 | Elemento da Fase 2 | Método e recurso desta fase | Coerência |
 |---|---|---|
@@ -494,7 +508,7 @@ O propósito da Fase 1 é apoiar a decisão [`D1`](../fase-1/requisitos-de-avali
 
 ## 10. Rastreabilidade com a issue #25
 
-A Tabela 28 relaciona as tarefas e os critérios de aceite da parte de adaptabilidade da issue ao local onde são atendidos.
+A Tabela 28 relaciona as tarefas e os critérios de aceite da parte de adaptabilidade da issue [S16](#s16) ao local onde são atendidos.
 
 | Item da issue #25 | Atendimento |
 |---|---|
@@ -514,7 +528,7 @@ A Tabela 28 relaciona as tarefas e os critérios de aceite da parte de adaptabil
 
 *Tabela 28. Rastreabilidade entre a issue #25 (adaptabilidade) e este artefato. Fonte: Elaborada por: [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM)*
 
-A Tabela 29 relaciona os critérios de avaliação das Fases 3 e 4 ([Fase 3](../criterios/fase3.md) e [Fase 4](../criterios/fase4.md)) ao que este artefato oferece.
+A Tabela 29 relaciona os critérios de avaliação das Fases 3 e 4 ([Fase 3](../criterios/fase3.md) [S14](#s14) e [Fase 4](../criterios/fase4.md) [S15](#s15)) ao que este artefato oferece.
 
 | Critério | Como este artefato contribui | Onde |
 |---|---|---|
@@ -533,7 +547,7 @@ A Tabela 29 relaciona os critérios de avaliação das Fases 3 e 4 ([Fase 3](../
 
 ## 11. Pontos pendentes e decisões da equipe
 
-Estes pontos aparecem na comparação entre o ambiente de testes, a Fase 1 e a Fase 2. Os que afetam a coleta devem ser resolvidos antes da Fase 4.
+Estes pontos aparecem na comparação entre o ambiente de testes, a Fase 1 e a Fase 2, e a Tabela 30 os reúne. Os que afetam a coleta devem ser resolvidos antes da Fase 4.
 
 | ID | Ponto | Onde afeta | Proposta |
 |---|---|---|---|
@@ -554,7 +568,7 @@ Estes pontos aparecem na comparação entre o ambiente de testes, a Fase 1 e a F
 
 ## 12. Cronograma de execução
 
-O cronograma abaixo é uma **proposta** para alinhar a execução de M6 e M7 à Fase 4 e à Entrega 2 de 18/11/2026, mantendo margem de revisão. As datas devem ser ajustadas ao cronograma geral e à execução de M1–M5 em `A1` ([ponto P11](#11-pontos-pendentes-e-decisoes-da-equipe)).
+A Tabela 31 é uma **proposta** de cronograma para alinhar a execução de M6 e M7 à Fase 4 e à Entrega 2 de 18/11/2026, mantendo margem de revisão. As datas devem ser ajustadas ao cronograma geral e à execução de M1–M5 em `A1` ([ponto P11](#11-pontos-pendentes-e-decisoes-da-equipe)).
 
 | Data | Atividade | Produto | Seção |
 |---|---|---|---|
@@ -574,23 +588,67 @@ O cronograma abaixo é uma **proposta** para alinhar a execução de M6 e M7 à 
 
 <a id="s1"></a>
 
-> [S1] KHAN ACADEMY. **Which browsers are supported?** Help Center. Disponível em: <https://support.khanacademy.org/hc/en-us/articles/204795660-Supported-browsers>. Acesso em: 7 nov. 2026.
+> [S1] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25010:2011**: Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models. Genebra: ISO, 2011.
 
 <a id="s2"></a>
 
-> [S2] KHAN ACADEMY. **What devices and browsers work best for Khan Academy?** Help Center. Disponível em: <https://support.khanacademy.org/hc/en-us/articles/204795430>. Acesso em: 7 nov. 2026.
+> [S2] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25023:2016**: Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Measurement of system and software product quality. Genebra: ISO, 2016.
 
 <a id="s3"></a>
 
-> [S3] KHAN ACADEMY. **What devices and specifications work best with Khan Academy Districts?** Help Center. Disponível em: <https://support.khanacademy.org/hc/nl/articles/360048672692>. Acesso em: 7 nov. 2026.
+> [S3] BASILI, Victor R.; CALDIERA, Gianluigi; ROMBACH, H. Dieter. The Goal Question Metric Approach. In: **Encyclopedia of Software Engineering**. John Wiley & Sons, 1994. p. 528–532.
 
-> INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25010:2011**: Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models. Genebra: ISO, 2011.
+<a id="s4"></a>
 
-> INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25023:2016**: Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Measurement of system and software product quality. Genebra: ISO, 2016.
+> [S4] Requisitos de avaliação — Fase 1. Requisitos R1–R5 e decisões D1–D3. Disponível em: [Requisitos de avaliação](../fase-1/requisitos-de-avaliacao.md).
 
-> BASILI, Victor R.; CALDIERA, Gianluigi; ROMBACH, H. Dieter. The Goal Question Metric Approach. In: **Encyclopedia of Software Engineering**. John Wiley & Sons, 1994. p. 528–532.
+<a id="s5"></a>
 
-Artefatos do projeto: [Escopo da avaliação](../fase-1/escopo-da-avaliacao.md), [Requisitos de avaliação](../fase-1/requisitos-de-avaliacao.md), [Objetivos](../fase-2/objetivos.md), [Questões e hipóteses](../fase-2/questoes-hipoteses.md), [Métricas](../fase-2/metricas.md), [Critérios de julgamento](../fase-2/criterios-julgamento.md) e [Ambiente de testes](ambiente-de-testes.md).
+> [S5] Escopo da avaliação — Fase 1. Fluxos, ambientes, profundidade e limites de validade. Disponível em: [Escopo da avaliação](../fase-1/escopo-da-avaliacao.md).
+
+<a id="s6"></a>
+
+> [S6] Objetivos de medição — Fase 2. Disponível em: [Objetivos de medição](../fase-2/objetivos.md).
+
+<a id="s7"></a>
+
+> [S7] Questões e hipóteses — Fase 2. Disponível em: [Questões e hipóteses](../fase-2/questoes-hipoteses.md).
+
+<a id="s8"></a>
+
+> [S8] Métricas — Fase 2. Fichas das métricas M1–M14. Disponível em: [Métricas](../fase-2/metricas.md).
+
+<a id="s9"></a>
+
+> [S9] Critérios de julgamento — Fase 2. Disponível em: [Critérios de julgamento](../fase-2/criterios-julgamento.md).
+
+<a id="s10"></a>
+
+> [S10] Ambiente de testes — Fase 3. Sistemas operacionais, virtualização, navegadores e versões. Disponível em: [Ambiente de testes](ambiente-de-testes.md).
+
+<a id="s11"></a>
+
+> [S11] KHAN ACADEMY. **Which browsers are supported?** Help Center. Disponível em: <https://support.khanacademy.org/hc/en-us/articles/204795660-Supported-browsers>. Acesso em: 7 nov. 2026.
+
+<a id="s12"></a>
+
+> [S12] KHAN ACADEMY. **What devices and browsers work best for Khan Academy?** Help Center. Disponível em: <https://support.khanacademy.org/hc/en-us/articles/204795430>. Acesso em: 7 nov. 2026.
+
+<a id="s13"></a>
+
+> [S13] KHAN ACADEMY. **What devices and specifications work best with Khan Academy Districts?** Help Center. Disponível em: <https://support.khanacademy.org/hc/nl/articles/360048672692>. Acesso em: 7 nov. 2026.
+
+<a id="s14"></a>
+
+> [S14] Critérios de avaliação QSW — Fase 3. Disponível em: [Critérios da Fase 3](../criterios/fase3.md).
+
+<a id="s15"></a>
+
+> [S15] Critérios de avaliação QSW — Fase 4. Disponível em: [Critérios da Fase 4](../criterios/fase4.md).
+
+<a id="s16"></a>
+
+> [S16] FCTE-QUALIDADE-DE-SOFTWARE-1. **[Fase 3] Definição dos procedimentos de avaliação de desempenho e adaptabilidade**. Issue #25. Disponível em: <https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/25>.
 
 ## Histórico de versões
 
