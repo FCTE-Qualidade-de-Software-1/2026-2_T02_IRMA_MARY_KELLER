@@ -1,277 +1,659 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
     
-    
-    
-    <link rel="shortcut icon" href="../../img/favicon.ico">
-
-    
-    <title>Métricas - 2026-2_T02_IRMA_MARY_KELLER</title>
-    
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
-    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
-    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-    <link href="../../css/base.min.css" rel="stylesheet">
-    <link href="../../css/cinder.min.css" rel="stylesheet">
-
-    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Avaliação de qualidade do produto Khan Academy segundo a família SQuaRE, com gestão por medição PSM/CID.">
+      
+      
+      
+        <link rel="canonical" href="https://fcte-qualidade-de-software-1.github.io/2026-2_T02_IRMA_MARY_KELLER/fase-2/metricas/">
+      
+      
+        <link rel="prev" href="../questoes-hipoteses/">
+      
+      
+        <link rel="next" href="../criterios-julgamento/">
+      
+      
         
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
-        
+      
+      
+      <link rel="icon" href="../../assets/img/marca.svg">
+      <meta name="generator" content="mkdocs-ProperDocs 1.6.7, mkdocs-material-9.8.0">
     
+    
+      
+        <title>Métricas - Avaliação Khan Academy</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-        <![endif]-->
 
     
-
-     
-</head>
-
-<body>
-
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-
-        <!-- Collapsed navigation -->
-        <div class="navbar-header">
-            <!-- Expander button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            
-
-            <!-- Main title -->
-
-            
-              <a class="navbar-brand" href="../..">2026-2_T02_IRMA_MARY_KELLER</a>
-            
-        </div>
-
-        <!-- Expanded navigation -->
-        <div class="navbar-collapse collapse">
-                <!-- Main navigation -->
-                <ul class="nav navbar-nav">
-                
-                
-                    <li >
-                        <a href="../..">Início</a>
-                    </li>
-                
-                
-                
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fase 1 <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        
-                            
-<li >
-    <a href="../../fase-1/">Visão geral</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../fase-1/produto-e-contexto/">Produto e contexto</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../fase-1/requisitos-de-avaliacao/">Requisitos de avaliação</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../fase-1/escopo-da-avaliacao/">Escopo da avaliação</a>
-</li>
-
-                        
-                        </ul>
-                    </li>
-                
-                
-                
-                    <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fase 2 <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        
-                            
-<li >
-    <a href="../">Visão geral</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../objetivos/">Objetivos de Medição</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../questoes-hipoteses/">Questões e hipóteses</a>
-</li>
-
-                        
-                            
-<li class="active">
-    <a href="./">Métricas</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../criterios-julgamento/">Critérios de julgamento</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../grafico-gqm/">Gráfico GQM</a>
-</li>
-
-                        
-                        </ul>
-                    </li>
-                
-                
-                
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gestão <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        
-                            
-<li >
-    <a href="../../gestao/artigo/">Artigo</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../gestao/plano_de_medicao/">Plano de Medição</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../gestao/medicoes/">Procedimento de Medição</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../gestao/uso_de_ia/">Uso de IA</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../gestao/horas/">Registro de Horas</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../gestao/horas_consolidadas/">Medições Consolidadas</a>
-</li>
-
-                        
-                            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Critérios</a>
-    <ul class="dropdown-menu">
+    
+      
+    
+    
+      
         
-            
-<li >
-    <a href="../../criterios/fase1/">Fase 1</a>
-</li>
-
         
-            
-<li >
-    <a href="../../criterios/fase2/">Fase 2</a>
-</li>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Lato";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/khan.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
 
+    
+    
+  
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
         
-    </ul>
-  </li>
-
-                        
-                        </ul>
-                    </li>
-                
-                
-                </ul>
-
-            <ul class="nav navbar-nav navbar-right">
-                    <li >
-                        <a rel="prev" href="../questoes-hipoteses/">
-                            <i class="fas fa-arrow-left"></i> Previous
-                        </a>
-                    </li>
-                    <li >
-                        <a rel="next" href="../criterios-julgamento/">
-                            Next <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </li>
-            </ul>
-        </div>
+        <a href="#fichas-das-metricas-gqm" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
     </div>
-</div>
-
-    <div class="container">
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      <header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <a href="../.." title="Avaliação Khan Academy" class="khan-marca" aria-label="Avaliação Khan Academy" data-md-component="logo">
+      <img src="../../assets/img/logo_khan_simbolo.png" alt="Logo do Khan Academy" width="32" height="32">
+      <span class="khan-marca__texto">
+        <strong>Avaliação Khan Academy</strong>
+        <small>Qualidade de Software 1 · T02</small>
+      </span>
+    </a>
+    <ul class="khan-abas">
+      
         
         
-        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#fichas-das-metricas-gqm">Fichas das métricas GQM</a></li>
-            <li class="second-level"><a href="#1-metricas-detalhadas">1. Métricas detalhadas</a></li>
-                
-                <li class="third-level"><a href="#11-m1-tempo-observavel-por-etapa">1.1 M1: Tempo observável por etapa</a></li>
-                <li class="third-level"><a href="#12-m2-taxa-de-conclusao-dos-fluxos">1.2 M2: Taxa de conclusão dos fluxos</a></li>
-                <li class="third-level"><a href="#13-m3-utilizacao-de-cpu">1.3 M3: Utilização de CPU</a></li>
-                <li class="third-level"><a href="#14-m4-pico-de-memoria">1.4 M4: Pico de memória</a></li>
-                <li class="third-level"><a href="#15-m5-dados-transferidos">1.5 M5: Dados transferidos</a></li>
-                <li class="third-level"><a href="#16-m6-execucao-por-ambiente">1.6 M6: Execução por ambiente</a></li>
-                <li class="third-level"><a href="#17-m7-adaptacao-ao-tamanho-da-janela">1.7 M7: Adaptação ao tamanho da janela</a></li>
-                <li class="third-level"><a href="#18-m8-execucao-por-teclado">1.8 M8: Execução por teclado</a></li>
-                <li class="third-level"><a href="#19-m9-execucao-com-leitor-de-tela">1.9 M9: Execução com leitor de tela</a></li>
-                <li class="third-level"><a href="#110-m10-preservacao-com-ampliacao">1.10 M10: Preservação com ampliação</a></li>
-                <li class="third-level"><a href="#111-m11-conformidade-de-contraste">1.11 M11: Conformidade de contraste</a></li>
-                <li class="third-level"><a href="#112-m12-conclusao-autonoma-por-estudantes-novos">1.12 M12: Conclusão autônoma por estudantes novos</a></li>
-                <li class="third-level"><a href="#113-m13-taxa-de-erros-operacionais">1.13 M13: Taxa de erros operacionais</a></li>
-                <li class="third-level"><a href="#114-m14-tempo-de-conclusao-autonoma">1.14 M14: Tempo de conclusão autônoma</a></li>
-            <li class="second-level"><a href="#referencias">Referências</a></li>
-                
-            <li class="second-level"><a href="#historico-de-versoes">Histórico de versões</a></li>
-                
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../..">Início</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../fase-1/">Fase 1</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item khan-abas__item--ativa">
+          <a href="../">Fase 2</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../gestao/plano_de_medicao/">Gestão</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../gestao/artigo/">Artigo</a>
+        </li>
+      
     </ul>
-</div></div>
-        <div class="col-md-9" role="main">
+    <div class="khan-header__espaco"></div>
+    
+      <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Mudar para o modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Mudar para o modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER" class="khan-botao-repo" title="Repositório da equipe no GitHub">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215m-6.56 0a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"/></svg>
+      <span>Repositório</span>
+    </a>
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary khan-trilha" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Avaliação Khan Academy" class="md-nav__button md-logo" aria-label="Avaliação Khan Academy" data-md-component="logo">
+      
+  <img src="../../assets/img/logo_khan_simbolo.png" alt="logo">
 
-<h1 id="fichas-das-metricas-gqm">Fichas das métricas GQM</h1>
+    </a>
+    Avaliação Khan Academy
+  </label>
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  <ul class="khan-trilha__secoes">
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../..">Início</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../fase-1/">Fase 1</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../" aria-current="true">Fase 2</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../gestao/plano_de_medicao/">Gestão</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../gestao/artigo/">Artigo</a></li>
+    
+  </ul>
+  
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    <ol class="khan-trilha__passos">
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--feito">
+          <a href="../">
+            <span class="khan-trilha__bolinha">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>
+            </span>
+            <span>Visão geral</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--feito">
+          <a href="../objetivos/">
+            <span class="khan-trilha__bolinha">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>
+            </span>
+            <span>Objetivos de medição</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--feito">
+          <a href="../questoes-hipoteses/">
+            <span class="khan-trilha__bolinha">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>
+            </span>
+            <span>Questões e hipóteses</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--atual">
+          <a href="./" aria-current="page">
+            <span class="khan-trilha__bolinha">
+              4
+            </span>
+            <span>Métricas</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--pendente">
+          <a href="../criterios-julgamento/">
+            <span class="khan-trilha__bolinha">
+              5
+            </span>
+            <span>Critérios de julgamento</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--pendente">
+          <a href="../grafico-gqm/">
+            <span class="khan-trilha__bolinha">
+              6
+            </span>
+            <span>Gráfico GQM</span>
+          </a>
+        </li>
+      
+    </ol>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Nesta página">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Nesta página
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-metricas-detalhadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Métricas detalhadas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Métricas detalhadas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-m1-tempo-observavel-por-etapa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 M1: Tempo observável por etapa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-m2-taxa-de-conclusao-dos-fluxos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 M2: Taxa de conclusão dos fluxos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-m3-utilizacao-de-cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 M3: Utilização de CPU
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-m4-pico-de-memoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4 M4: Pico de memória
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-m5-dados-transferidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5 M5: Dados transferidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-m6-execucao-por-ambiente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6 M6: Execução por ambiente
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-m7-adaptacao-ao-tamanho-da-janela" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.7 M7: Adaptação ao tamanho da janela
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-m8-execucao-por-teclado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.8 M8: Execução por teclado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-m9-execucao-com-leitor-de-tela" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.9 M9: Execução com leitor de tela
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#110-m10-preservacao-com-ampliacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.10 M10: Preservação com ampliação
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#111-m11-conformidade-de-contraste" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.11 M11: Conformidade de contraste
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-m12-conclusao-autonoma-por-estudantes-novos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.12 M12: Conclusão autônoma por estudantes novos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113-m13-taxa-de-erros-operacionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.13 M13: Taxa de erros operacionais
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#114-m14-tempo-de-conclusao-autonoma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.14 M14: Tempo de conclusão autônoma
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referências
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Histórico de versões
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="fichas-das-metricas-gqm">Fichas das métricas GQM<a class="headerlink" href="#fichas-das-metricas-gqm" title="Link para esta seção">&para;</a></h1>
 <p><strong>Versão 1.3</strong></p>
-<p>As fichas abaixo especificam as métricas externas propostas para a avaliação <strong>exclusivamente da versão web da Khan Academy em computadores</strong>. Cada ficha segue a organização do exemplo fornecido: questão respondida, definição, fórmula, unidade, fonte, procedimento de coleta, interpretação, justificativa e níveis. Os 14 indicadores M1–M14 correspondem às <a href="../questoes-hipoteses/">questões</a> Q1–Q11.</p>
+<p>As fichas abaixo especificam as métricas externas propostas para a avaliação <strong>exclusivamente da versão web da Khan Academy em computadores</strong>. Cada ficha segue a organização do exemplo fornecido: questão respondida, definição, fórmula, unidade, fonte, procedimento de coleta, interpretação, justificativa e níveis. Os 14 indicadores M1-M14 correspondem às <a href="../questoes-hipoteses/">questões</a> Q1-Q11.</p>
 <p><strong>Situação:</strong> proposta de especificação, sem resultados coletados. Os níveis quantitativos estão definidos como <strong>proposta operacional do estudo</strong> em <a href="../criterios-julgamento/">critérios de julgamento</a>, incluindo fundamentação e condições de aplicação. Não constituem limites oficiais da ISO/IEC 25023:2016 <a href="#s1">S1</a>.</p>
-<h2 id="1-metricas-detalhadas">1. Métricas detalhadas</h2>
-<h3 id="11-m1-tempo-observavel-por-etapa">1.1 M1: Tempo observável por etapa</h3>
+<h2 id="1-metricas-detalhadas">1. Métricas detalhadas<a class="headerlink" href="#1-metricas-detalhadas" title="Link para esta seção">&para;</a></h2>
+<h3 id="11-m1-tempo-observavel-por-etapa">1.1 M1: Tempo observável por etapa<a class="headerlink" href="#11-m1-tempo-observavel-por-etapa" title="Link para esta seção">&para;</a></h3>
 <p><strong>Questão respondida:</strong> <a href="../questoes-hipoteses/#31-q1-comportamento-temporal">Q1 / H1</a>.</p>
 <p><strong>Definição:</strong> Tempo observável de carregamento ou resposta de cada etapa, sem contabilizar duração pedagógica.</p>
 <p><strong>Fórmula ou indicador:</strong> Mediana de <code>t_fim − t_início</code> em execuções concluídas da mesma etapa e condição; registrar também P90 e bloqueios.</p>
@@ -280,9 +662,9 @@
 <p><strong>Procedimento de coleta:</strong> Marcar início e fim da etapa; repetir em condições equivalentes; registrar falhas e computar mediana e P90 por etapa.</p>
 <p><strong>Interpretação:</strong> Tempos menores favorecem interação, mas medição só é comparável para a mesma tarefa e condição.</p>
 <p><strong>Justificativa dos níveis:</strong> Para tempos de resposta da interface, utilizam-se marcos de 1 s e 10 s da literatura de interação, com faixa intermediária de 3 s proposta pelo estudo. A mediana resume o desempenho e o P90 evidencia esperas longas; excluir tempo pedagógico.</p>
-<p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, propostas para aprovação antes da coleta.</p>
+<p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, definidas antes da coleta.</p>
 <hr />
-<h3 id="12-m2-taxa-de-conclusao-dos-fluxos">1.2 M2: Taxa de conclusão dos fluxos</h3>
+<h3 id="12-m2-taxa-de-conclusao-dos-fluxos">1.2 M2: Taxa de conclusão dos fluxos<a class="headerlink" href="#12-m2-taxa-de-conclusao-dos-fluxos" title="Link para esta seção">&para;</a></h3>
 <p><strong>Questão respondida:</strong> <a href="../questoes-hipoteses/#31-q1-comportamento-temporal">Q1 / H1</a>.</p>
 <p><strong>Definição:</strong> Proporção de tentativas iniciadas que efetivamente concluem o fluxo.</p>
 <p><strong>Fórmula ou indicador:</strong> <code>100 × C/N</code>, tentativas do fluxo concluídas / tentativas elegíveis; inclui tentativas não concluídas no denominador.</p>
@@ -291,9 +673,9 @@
 <p><strong>Procedimento de coleta:</strong> Registrar conclusão, falha ou timeout em toda tentativa elegível, inclusive as não concluídas.</p>
 <p><strong>Interpretação:</strong> Evita que resultados rápidos de apenas algumas execuções escondam bloqueios.</p>
 <p><strong>Justificativa dos níveis:</strong> Uma duração curta não comprova sucesso quando parte das tentativas falha. A avaliação usa todas as tentativas elegíveis no denominador.</p>
-<p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, propostas para aprovação antes da coleta.</p>
+<p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, definidas antes da coleta.</p>
 <hr />
-<h3 id="13-m3-utilizacao-de-cpu">1.3 M3: Utilização de CPU</h3>
+<h3 id="13-m3-utilizacao-de-cpu">1.3 M3: Utilização de CPU<a class="headerlink" href="#13-m3-utilizacao-de-cpu" title="Link para esta seção">&para;</a></h3>
 <p><strong>Questão respondida:</strong> <a href="../questoes-hipoteses/#32-q2-utilizacao-de-cpu">Q2 / H2</a>.</p>
 <p><strong>Definição:</strong> Percentual médio de utilização da CPU durante o fluxo e episódios de sobrecarga.</p>
 <p><strong>Fórmula ou indicador:</strong> <code>CPU_média = Σ CPU_i / n</code>; registrar pico, duração e ocorrências de sobrecarga.</p>
@@ -302,53 +684,53 @@
 <p><strong>Procedimento de coleta:</strong> Identificar processo e significado do percentual do instrumento; registrar amostras, picos e duração dos excessos.</p>
 <p><strong>Interpretação:</strong> A média precisa ser acompanhada de picos, pois sobrecarga pode interromper tarefas.</p>
 <p><strong>Justificativa dos níveis:</strong> Monitorar picos e duração da sobrecarga; a CPU média não é suficiente para aprovar uma execução que foi interrompida.</p>
-<p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, propostas para aprovação antes da coleta.</p>
+<p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, definidas antes da coleta.</p>
 <hr />
-<h3 id="14-m4-pico-de-memoria">1.4 M4: Pico de memória</h3>
+<h3 id="14-m4-pico-de-memoria">1.4 M4: Pico de memória<a class="headerlink" href="#14-m4-pico-de-memoria" title="Link para esta seção">&para;</a></h3>
 <p><strong>Questão respondida:</strong> <a href="../questoes-hipoteses/#33-q3-utilizacao-de-memoria">Q3 / H3</a>.</p>
 <p><strong>Definição:</strong> Maior consumo de memória da sessão ou processo durante cada execução.</p>
 <p><strong>Fórmula ou indicador:</strong> <code>RAM_pico = max(RAM(t))</code> em cada execução válida.</p>
-<p><strong>Unidade:</strong> MB.</p>
+<p><strong>Unidade:</strong> MiB.</p>
 <p><strong>Fonte dos dados:</strong> Monitor de memória por processo/sessão, com registros de interrupções.</p>
 <p><strong>Procedimento de coleta:</strong> Amostrar memória no intervalo do fluxo e registrar o máximo individual, travamentos e ambiente.</p>
 <p><strong>Interpretação:</strong> O pico representa risco de esgotamento em computadores de recursos limitados.</p>
 <p><strong>Justificativa dos níveis:</strong> A memória máxima é relevante para dispositivos com recursos limitados; a capacidade de memória efetivamente disponível para a sessão deve ser registrada.</p>
-<p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, propostas para aprovação antes da coleta.</p>
+<p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, definidas antes da coleta.</p>
 <hr />
-<h3 id="15-m5-dados-transferidos">1.5 M5: Dados transferidos</h3>
+<h3 id="15-m5-dados-transferidos">1.5 M5: Dados transferidos<a class="headerlink" href="#15-m5-dados-transferidos" title="Link para esta seção">&para;</a></h3>
 <p><strong>Questão respondida:</strong> <a href="../questoes-hipoteses/#34-q4-consumo-de-dados-de-rede">Q4 / H4</a>.</p>
 <p><strong>Definição:</strong> Volume enviado e recebido para concluir um fluxo padronizado.</p>
 <p><strong>Fórmula ou indicador:</strong> <code>D = bytes_recebidos + bytes_enviados</code> por fluxo concluído e padronizado.</p>
-<p><strong>Unidade:</strong> MB.</p>
+<p><strong>Unidade:</strong> MiB.</p>
 <p><strong>Fonte dos dados:</strong> DevTools/Network; controlar cache, qualidade e duração dos vídeos.</p>
 <p><strong>Procedimento de coleta:</strong> Usar aba Network no DevTools; controlar cache, duração e qualidade de vídeo; computar apenas execuções concluídas.</p>
 <p><strong>Interpretação:</strong> Tráfego maior pode dificultar uso sob rede limitada; consumo baixo em execução interrompida não indica qualidade.</p>
 <p><strong>Justificativa dos níveis:</strong> A transferência deve ser comparada em fluxos concluídos e equivalentes, com cache, duração e qualidade dos vídeos controlados.</p>
-<p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, propostas para aprovação antes da coleta.</p>
+<p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, definidas antes da coleta.</p>
 <hr />
-<h3 id="16-m6-execucao-por-ambiente">1.6 M6: Execução por ambiente</h3>
+<h3 id="16-m6-execucao-por-ambiente">1.6 M6: Execução por ambiente<a class="headerlink" href="#16-m6-execucao-por-ambiente" title="Link para esta seção">&para;</a></h3>
 <p><strong>Questão respondida:</strong> <a href="../questoes-hipoteses/#41-q5-adaptacao-entre-sistemas-operacionais-e-navegadores">Q5 / H5</a>.</p>
 <p><strong>Definição:</strong> Proporção de combinações elegíveis de sistema operacional, navegador e fluxo concluídas.</p>
-<p><strong>Fórmula ou indicador:</strong> <code>100 × C/N</code>, combinações SO–navegador–fluxo concluídas / combinações elegíveis testadas.</p>
+<p><strong>Fórmula ou indicador:</strong> <code>100 × C/N</code>, combinações SO-navegador-fluxo concluídas / combinações elegíveis testadas.</p>
 <p><strong>Unidade:</strong> %.</p>
 <p><strong>Fonte dos dados:</strong> Matriz de execução, navegador, SO, fluxo e evidência de conclusão.</p>
 <p><strong>Procedimento de coleta:</strong> Executar roteiros iguais nas combinações viáveis pré-definidas e registrar sucesso ou falha e evidência.</p>
 <p><strong>Interpretação:</strong> A taxa indica adaptação entre ambientes e não deve ocultar falha em combinação essencial.</p>
 <p><strong>Justificativa dos níveis:</strong> A adaptabilidade exige que os fluxos essenciais funcionem nos ambientes elegíveis; resultados globais não anulam uma falha essencial.</p>
-<p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, propostas para aprovação antes da coleta.</p>
+<p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, definidas antes da coleta.</p>
 <hr />
-<h3 id="17-m7-adaptacao-ao-tamanho-da-janela">1.7 M7: Adaptação ao tamanho da janela</h3>
+<h3 id="17-m7-adaptacao-ao-tamanho-da-janela">1.7 M7: Adaptação ao tamanho da janela<a class="headerlink" href="#17-m7-adaptacao-ao-tamanho-da-janela" title="Link para esta seção">&para;</a></h3>
 <p><strong>Questão respondida:</strong> <a href="../questoes-hipoteses/#42-q6-adaptacao-a-tamanhos-de-janela">Q6 / H6</a>.</p>
 <p><strong>Definição:</strong> Proporção de combinações de dimensão de janela e fluxo sem perda de controles essenciais.</p>
-<p><strong>Fórmula ou indicador:</strong> <code>100 × C/N</code>, combinações ambiente–dimensão–fluxo com conteúdo e controles preservados / testadas.</p>
+<p><strong>Fórmula ou indicador:</strong> <code>100 × C/N</code>, combinações ambiente-dimensão-fluxo com conteúdo e controles preservados / testadas.</p>
 <p><strong>Unidade:</strong> %.</p>
 <p><strong>Fonte dos dados:</strong> Roteiro com dimensões da janela, capturas e resultado por fluxo.</p>
 <p><strong>Procedimento de coleta:</strong> Fixar dimensões, testar os mesmos fluxos e documentar conteúdo, controles e impedimentos.</p>
 <p><strong>Interpretação:</strong> Desconsiderar dimensões pode ocultar barreiras mesmo quando a página abre.</p>
 <p><strong>Justificativa dos níveis:</strong> A abertura da página não é suficiente: conteúdo e controles relevantes precisam permanecer operáveis nas dimensões avaliadas.</p>
-<p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, propostas para aprovação antes da coleta.</p>
+<p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, definidas antes da coleta.</p>
 <hr />
-<h3 id="18-m8-execucao-por-teclado">1.8 M8: Execução por teclado</h3>
+<h3 id="18-m8-execucao-por-teclado">1.8 M8: Execução por teclado<a class="headerlink" href="#18-m8-execucao-por-teclado" title="Link para esta seção">&para;</a></h3>
 <p><strong>Questão respondida:</strong> <a href="../questoes-hipoteses/#51-q7-navegacao-por-teclado">Q7 / H7</a>.</p>
 <p><strong>Definição:</strong> Proporção de tarefas essenciais concluídas apenas pelo teclado, sem barreiras.</p>
 <p><strong>Fórmula ou indicador:</strong> <code>100 × A/N</code>, tarefas concluídas só por teclado, sem barreira essencial / testadas.</p>
@@ -357,20 +739,20 @@
 <p><strong>Procedimento de coleta:</strong> Executar roteiro sem mouse, anotando foco, ordem, atalhos, armadilhas e resultado.</p>
 <p><strong>Interpretação:</strong> Navegação completa por teclado é condição prática de acesso para usuários que não utilizam mouse.</p>
 <p><strong>Justificativa dos níveis:</strong> Barreiras em controles essenciais impedem acesso mesmo que outras tarefas funcionem por teclado.</p>
-<p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, propostas para aprovação antes da coleta.</p>
+<p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, definidas antes da coleta.</p>
 <hr />
-<h3 id="19-m9-execucao-com-leitor-de-tela">1.9 M9: Execução com leitor de tela</h3>
+<h3 id="19-m9-execucao-com-leitor-de-tela">1.9 M9: Execução com leitor de tela<a class="headerlink" href="#19-m9-execucao-com-leitor-de-tela" title="Link para esta seção">&para;</a></h3>
 <p><strong>Questão respondida:</strong> <a href="../questoes-hipoteses/#52-q8-utilizacao-com-leitor-de-tela">Q8 / H8</a>.</p>
 <p><strong>Definição:</strong> Proporção de tarefas concluídas com leitor de tela e informações essenciais compreensíveis.</p>
-<p><strong>Fórmula ou indicador:</strong> <code>100 × A/N</code>, combinações tarefa–leitor com informação necessária percebida e conclusão / testadas.</p>
+<p><strong>Fórmula ou indicador:</strong> <code>100 × A/N</code>, combinações tarefa-leitor com informação necessária percebida e conclusão / testadas.</p>
 <p><strong>Unidade:</strong> %.</p>
 <p><strong>Fonte dos dados:</strong> Registro de NVDA/VoiceOver/Orca apenas em configurações viáveis.</p>
 <p><strong>Procedimento de coleta:</strong> Usar combinações viáveis de SO, navegador e leitor; registrar anúncios, acesso aos controles e conclusão.</p>
 <p><strong>Interpretação:</strong> A simples presença de rótulos não demonstra utilização efetiva com tecnologia assistiva.</p>
 <p><strong>Justificativa dos níveis:</strong> É necessário compreender a informação essencial e concluir a tarefa com tecnologia assistiva, não apenas detectar rótulos.</p>
-<p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, propostas para aprovação antes da coleta.</p>
+<p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, definidas antes da coleta.</p>
 <hr />
-<h3 id="110-m10-preservacao-com-ampliacao">1.10 M10: Preservação com ampliação</h3>
+<h3 id="110-m10-preservacao-com-ampliacao">1.10 M10: Preservação com ampliação<a class="headerlink" href="#110-m10-preservacao-com-ampliacao" title="Link para esta seção">&para;</a></h3>
 <p><strong>Questão respondida:</strong> <a href="../questoes-hipoteses/#53-q9-utilizacao-com-ampliacao">Q9 / H9</a>.</p>
 <p><strong>Definição:</strong> Proporção de combinações de zoom e tarefa que preservam conteúdo e funcionalidade.</p>
 <p><strong>Fórmula ou indicador:</strong> <code>100 × A/N</code>, combinações com conteúdo e funções necessários preservados / testadas.</p>
@@ -379,9 +761,9 @@
 <p><strong>Procedimento de coleta:</strong> Testar níveis de ampliação predefinidos, anotando perda de elementos, rolagem impeditiva e conclusão.</p>
 <p><strong>Interpretação:</strong> A ampliação deve preservar tarefas relevantes para estudantes com baixa visão.</p>
 <p><strong>Justificativa dos níveis:</strong> A ampliação precisa preservar informação e funcionalidade; Q9 não deve ser confundida com redimensionamento de janela em Q6.</p>
-<p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, propostas para aprovação antes da coleta.</p>
+<p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, definidas antes da coleta.</p>
 <hr />
-<h3 id="111-m11-conformidade-de-contraste">1.11 M11: Conformidade de contraste</h3>
+<h3 id="111-m11-conformidade-de-contraste">1.11 M11: Conformidade de contraste<a class="headerlink" href="#111-m11-conformidade-de-contraste" title="Link para esta seção">&para;</a></h3>
 <p><strong>Questão respondida:</strong> <a href="../questoes-hipoteses/#54-q10-contraste-e-alto-contraste">Q10 / H10</a>.</p>
 <p><strong>Definição:</strong> Proporção de elementos aplicáveis conformes ao critério de contraste selecionado, com verificação separada de uso em alto contraste.</p>
 <p><strong>Fórmula ou indicador:</strong> <code>100 × E_c/E_a</code>, elementos aplicáveis conformes / avaliados; registrar <strong>separadamente</strong> conclusão em alto contraste.</p>
@@ -390,9 +772,9 @@
 <p><strong>Procedimento de coleta:</strong> Estabelecer previamente critérios aplicáveis, medir elementos e testar fluxos em configuração de alto contraste documentada.</p>
 <p><strong>Interpretação:</strong> Um percentual agregado não garante que informações essenciais continuem distinguíveis.</p>
 <p><strong>Justificativa dos níveis:</strong> Verificar critérios aplicáveis de contraste e, separadamente, a execução em alto contraste. Elementos essenciais não conformes impedem aprovação isolada por percentual.</p>
-<p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, propostas para aprovação antes da coleta.</p>
+<p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, definidas antes da coleta.</p>
 <hr />
-<h3 id="112-m12-conclusao-autonoma-por-estudantes-novos">1.12 M12: Conclusão autônoma por estudantes novos</h3>
+<h3 id="112-m12-conclusao-autonoma-por-estudantes-novos">1.12 M12: Conclusão autônoma por estudantes novos<a class="headerlink" href="#112-m12-conclusao-autonoma-por-estudantes-novos" title="Link para esta seção">&para;</a></h3>
 <p><strong>Questão respondida:</strong> <a href="../questoes-hipoteses/#55-q11-apreensibilidade">Q11 / H11</a>.</p>
 <p><strong>Definição:</strong> Proporção de primeiras tentativas concluídas sem assistência por participantes novos.</p>
 <p><strong>Fórmula ou indicador:</strong> <code>100 × S/N</code>, primeiras tentativas concluídas sem ajuda / primeiras tentativas elegíveis; apurar por tarefa e total.</p>
@@ -401,9 +783,9 @@
 <p><strong>Procedimento de coleta:</strong> Aplicar instrução inicial padronizada e registrar ajuda, conclusão e abandonos por tarefa.</p>
 <p><strong>Interpretação:</strong> Conclusão independente evidencia capacidade de aprender a utilizar a interface.</p>
 <p><strong>Justificativa dos níveis:</strong> A primeira tentativa independente fornece evidência de apreensibilidade; a equipe deverá definir perfis, instrução padronizada e tarefas essenciais.</p>
-<p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, propostas para aprovação antes da coleta.</p>
+<p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, definidas antes da coleta.</p>
 <hr />
-<h3 id="113-m13-taxa-de-erros-operacionais">1.13 M13: Taxa de erros operacionais</h3>
+<h3 id="113-m13-taxa-de-erros-operacionais">1.13 M13: Taxa de erros operacionais<a class="headerlink" href="#113-m13-taxa-de-erros-operacionais" title="Link para esta seção">&para;</a></h3>
 <p><strong>Questão respondida:</strong> <a href="../questoes-hipoteses/#55-q11-apreensibilidade">Q11 / H11</a>.</p>
 <p><strong>Definição:</strong> Proporção de primeiras tentativas com pelo menos um erro operacional previamente definido.</p>
 <p><strong>Fórmula ou indicador:</strong> <code>100 × E/N</code>, primeiras tentativas com ao menos um erro operacional / primeiras tentativas elegíveis.</p>
@@ -412,9 +794,9 @@
 <p><strong>Procedimento de coleta:</strong> Definir erro antes do ensaio; observar escolhas ou ações incorretas e distingui-las de falha técnica ou exploração.</p>
 <p><strong>Interpretação:</strong> Evidencia dificuldades mesmo quando uma tarefa é concluída autonomamente.</p>
 <p><strong>Justificativa dos níveis:</strong> Erros recorrentes podem indicar dificuldade de aprendizagem mesmo quando tarefas são concluídas. O protocolo deverá distinguir erros de exploração legítima e falha técnica.</p>
-<p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, propostas para aprovação antes da coleta.</p>
+<p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, definidas antes da coleta.</p>
 <hr />
-<h3 id="114-m14-tempo-de-conclusao-autonoma">1.14 M14: Tempo de conclusão autônoma</h3>
+<h3 id="114-m14-tempo-de-conclusao-autonoma">1.14 M14: Tempo de conclusão autônoma<a class="headerlink" href="#114-m14-tempo-de-conclusao-autonoma" title="Link para esta seção">&para;</a></h3>
 <p><strong>Questão respondida:</strong> <a href="../questoes-hipoteses/#55-q11-apreensibilidade">Q11 / H11</a>.</p>
 <p><strong>Definição:</strong> Tempo mediano das primeiras tentativas concluídas sem ajuda por estudantes novos.</p>
 <p><strong>Fórmula ou indicador:</strong> Mediana de <code>t_fim − t_início</code> das primeiras tentativas concluídas autonomamente; registrar separadamente falhas, abandonos e pedidos de ajuda.</p>
@@ -423,15 +805,15 @@
 <p><strong>Procedimento de coleta:</strong> Cronometrar cada tarefa, considerar somente conclusões autônomas e relatar desistências separadamente.</p>
 <p><strong>Interpretação:</strong> Tempo complementa autonomia, mas não compensa insucesso; referência deve ser própria da tarefa.</p>
 <p><strong>Justificativa dos níveis:</strong> As faixas propostas de 60, 120 e 180 segundos aplicam-se somente a tarefas curtas e padronizadas, não ao tempo pedagógico. Registrar abandonos e pedidos de ajuda à parte.</p>
-<p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, propostas para aprovação antes da coleta.</p>
-<h2 id="referencias">Referências</h2>
+<p><strong>Níveis de pontuação:</strong> Aplicar as faixas quantitativas e as regras de bloqueio da seção <a href="../criterios-julgamento/">Níveis de pontuação e critérios de julgamento</a>, definidas antes da coleta.</p>
+<h2 id="referencias">Referências<a class="headerlink" href="#referencias" title="Link para esta seção">&para;</a></h2>
 <p><a id="s1"></a></p>
 <blockquote>
-<p>[S1] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. <strong>ISO/IEC 25023:2016</strong>: Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Measurement of system and software product quality. Genebra: ISO, 2016.</p>
+<p>[S1] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. <strong>ISO/IEC 25023:2016</strong>: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - Measurement of system and software product quality. Genebra: ISO, 2016.</p>
 </blockquote>
 <p><a id="s2"></a></p>
 <blockquote>
-<p>[S2] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. <strong>ISO 9241-11:2018</strong>: Ergonomics of human-system interaction — Part 11: Usability: Definitions and concepts. Genebra: ISO, 2018.</p>
+<p>[S2] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION. <strong>ISO 9241-11:2018</strong>: Ergonomics of human-system interaction - Part 11: Usability: Definitions and concepts. Genebra: ISO, 2018.</p>
 </blockquote>
 <p><a id="s3"></a></p>
 <blockquote>
@@ -439,7 +821,7 @@
 </blockquote>
 <p><a id="s4"></a></p>
 <blockquote>
-<p>[S4] WORLD WIDE WEB CONSORTIUM (W3C). <strong>Web Content Accessibility Guidelines (WCAG) 2.2</strong>. W3C Recommendation, 12 dez. 2024.</p>
+<p>[S4] WORLD WIDE WEB CONSORTIUM (W3C). <strong>Web Content Accessibility Guidelines (WCAG) 2.1</strong>. W3C Recommendation, 5 jun. 2018. Disponível em: <a href="https://www.w3.org/TR/2018/REC-WCAG21-20180605/">https://www.w3.org/TR/2018/REC-WCAG21-20180605/</a>. Acesso em: 19 out. 2026.</p>
 </blockquote>
 <p><a id="s5"></a></p>
 <blockquote>
@@ -449,7 +831,7 @@
 <blockquote>
 <p>[S6] GOOGLE. <strong>Network features reference</strong>. Chrome for Developers, 16 jul. 2024. Disponível em: <a href="https://developer.chrome.com/docs/devtools/network/reference">https://developer.chrome.com/docs/devtools/network/reference</a>. Acesso em: 17 out. 2026.</p>
 </blockquote>
-<h2 id="historico-de-versoes">Histórico de versões</h2>
+<h2 id="historico-de-versoes">Histórico de versões<a class="headerlink" href="#historico-de-versoes" title="Link para esta seção">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -471,7 +853,7 @@
 <tr>
 <td style="text-align: center;">1.1</td>
 <td style="text-align: center;">20/10/2026</td>
-<td style="text-align: left;">Inclusão dos indicadores complementares de conclusão, erros e tempo sem alterar Q1–Q11.</td>
+<td style="text-align: left;">Inclusão dos indicadores complementares de conclusão, erros e tempo sem alterar Q1-Q11.</td>
 <td style="text-align: left;"><a href="https://github.com/GeovannaUmbelino">Geovanna Umbelino</a></td>
 <td style="text-align: left;"><a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
 </tr>
@@ -490,80 +872,57 @@
 <td style="text-align: left;"><a href="https://github.com/CamilaSilvaC">Camila Cavalcante</a></td>
 </tr>
 </tbody>
-</table></div>
-        
-        
-    </div>
+</table>
 
-    
-      <footer class="col-md-12 text-center">
-          
-          
-            <hr>
-            <p>
-            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
-            </p>
-          
 
-          
-          
-      </footer>
-    
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../../js/bootstrap-3.0.3.min.js"></script>
 
-    
-    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
-        
-    <script>hljs.initHighlightingOnLoad();</script>
-    
 
-    <script>var base_url = "../.."</script>
-    
-    <script src="../../js/base.js"></script>
-    <script src="../../js/mathjax.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+
+
+
+
+
+
+
+                
+              </article>
             </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
     </div>
-</div>
-    </body>
-
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.top", "toc.follow", "search.suggest", "search.highlight", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+        <script src="../../js/mathjax.js"></script>
+      
+        <script src="../../js/khan.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
 </html>

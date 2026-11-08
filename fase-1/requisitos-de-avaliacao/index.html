@@ -1,285 +1,654 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
     
-    
-    
-    <link rel="shortcut icon" href="../../img/favicon.ico">
-
-    
-    <title>Requisitos de avaliação - 2026-2_T02_IRMA_MARY_KELLER</title>
-    
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
-    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
-    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-    <link href="../../css/base.min.css" rel="stylesheet">
-    <link href="../../css/cinder.min.css" rel="stylesheet">
-
-    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Avaliação de qualidade do produto Khan Academy segundo a família SQuaRE, com gestão por medição PSM/CID.">
+      
+      
+      
+        <link rel="canonical" href="https://fcte-qualidade-de-software-1.github.io/2026-2_T02_IRMA_MARY_KELLER/fase-1/requisitos-de-avaliacao/">
+      
+      
+        <link rel="prev" href="../produto-e-contexto/">
+      
+      
+        <link rel="next" href="../escopo-da-avaliacao/">
+      
+      
         
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
-        
+      
+      
+      <link rel="icon" href="../../assets/img/marca.svg">
+      <meta name="generator" content="mkdocs-ProperDocs 1.6.7, mkdocs-material-9.8.0">
     
+    
+      
+        <title>Requisitos de avaliação - Avaliação Khan Academy</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-        <![endif]-->
 
     
-
-     
-</head>
-
-<body>
-
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-
-        <!-- Collapsed navigation -->
-        <div class="navbar-header">
-            <!-- Expander button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            
-
-            <!-- Main title -->
-
-            
-              <a class="navbar-brand" href="../..">2026-2_T02_IRMA_MARY_KELLER</a>
-            
-        </div>
-
-        <!-- Expanded navigation -->
-        <div class="navbar-collapse collapse">
-                <!-- Main navigation -->
-                <ul class="nav navbar-nav">
-                
-                
-                    <li >
-                        <a href="../..">Início</a>
-                    </li>
-                
-                
-                
-                    <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fase 1 <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        
-                            
-<li >
-    <a href="../">Visão geral</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../produto-e-contexto/">Produto e contexto</a>
-</li>
-
-                        
-                            
-<li class="active">
-    <a href="./">Requisitos de avaliação</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../escopo-da-avaliacao/">Escopo da avaliação</a>
-</li>
-
-                        
-                        </ul>
-                    </li>
-                
-                
-                
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fase 2 <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        
-                            
-<li >
-    <a href="../../fase-2/">Visão geral</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../fase-2/objetivos/">Objetivos de Medição</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../fase-2/questoes-hipoteses/">Questões e hipóteses</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../fase-2/metricas/">Métricas</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../fase-2/criterios-julgamento/">Critérios de julgamento</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../fase-2/grafico-gqm/">Gráfico GQM</a>
-</li>
-
-                        
-                        </ul>
-                    </li>
-                
-                
-                
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gestão <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        
-                            
-<li >
-    <a href="../../gestao/artigo/">Artigo</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../gestao/plano_de_medicao/">Plano de Medição</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../gestao/medicoes/">Procedimento de Medição</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../gestao/uso_de_ia/">Uso de IA</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../gestao/horas/">Registro de Horas</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../gestao/horas_consolidadas/">Medições Consolidadas</a>
-</li>
-
-                        
-                            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Critérios</a>
-    <ul class="dropdown-menu">
+    
+      
+    
+    
+      
         
-            
-<li >
-    <a href="../../criterios/fase1/">Fase 1</a>
-</li>
-
         
-            
-<li >
-    <a href="../../criterios/fase2/">Fase 2</a>
-</li>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Lato";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/khan.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
 
+    
+    
+  
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
         
-    </ul>
-  </li>
-
-                        
-                        </ul>
-                    </li>
-                
-                
-                </ul>
-
-            <ul class="nav navbar-nav navbar-right">
-                    <li >
-                        <a rel="prev" href="../produto-e-contexto/">
-                            <i class="fas fa-arrow-left"></i> Previous
-                        </a>
-                    </li>
-                    <li >
-                        <a rel="next" href="../escopo-da-avaliacao/">
-                            Next <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </li>
-            </ul>
-        </div>
+        <a href="#requisitos-de-avaliacao" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
     </div>
-</div>
-
-    <div class="container">
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      <header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <a href="../.." title="Avaliação Khan Academy" class="khan-marca" aria-label="Avaliação Khan Academy" data-md-component="logo">
+      <img src="../../assets/img/logo_khan_simbolo.png" alt="Logo do Khan Academy" width="32" height="32">
+      <span class="khan-marca__texto">
+        <strong>Avaliação Khan Academy</strong>
+        <small>Qualidade de Software 1 · T02</small>
+      </span>
+    </a>
+    <ul class="khan-abas">
+      
         
         
-        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#requisitos-de-avaliacao">Requisitos de avaliação</a></li>
-            <li class="second-level"><a href="#1-proposito-da-avaliacao-e-uso-pretendido">1. Propósito da avaliação e uso pretendido</a></li>
-                
-                <li class="third-level"><a href="#11-por-que-avaliar">1.1 Por que avaliar</a></li>
-                <li class="third-level"><a href="#12-cenario-de-aplicacao">1.2 Cenário de aplicação</a></li>
-                <li class="third-level"><a href="#13-requisitante-e-destinatarios-dos-resultados">1.3 Requisitante e destinatários dos resultados</a></li>
-                <li class="third-level"><a href="#14-uso-pretendido-e-limites">1.4 Uso pretendido e limites</a></li>
-            <li class="second-level"><a href="#2-caracteristicas-selecionadas">2. Características selecionadas</a></li>
-                
-                <li class="third-level"><a href="#21-modelo-de-referencia-e-versao">2.1 Modelo de referência e versão</a></li>
-                <li class="third-level"><a href="#22-adaptacao-do-modelo-de-qualidade-e-representacao-grafica">2.2 Adaptação do modelo de qualidade e representação gráfica</a></li>
-                <li class="third-level"><a href="#23-caracteristicas-subcaracteristicas-e-normas">2.3 Características, subcaracterísticas e normas</a></li>
-                <li class="third-level"><a href="#24-selecao-e-priorizacao">2.4 Seleção e priorização</a></li>
-                <li class="third-level"><a href="#25-trade-offs-e-consequencias-da-priorizacao">2.5 Trade-offs e consequências da priorização</a></li>
-            <li class="second-level"><a href="#3-justificativa-da-selecao">3. Justificativa da seleção</a></li>
-                
-            <li class="second-level"><a href="#4-rastreabilidade-caracteristica-interessado-e-justificativa">4. Rastreabilidade: característica, interessado e justificativa</a></li>
-                
-            <li class="second-level"><a href="#referencias">Referências</a></li>
-                
-            <li class="second-level"><a href="#historico-de-versoes">Histórico de versões</a></li>
-                
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../..">Início</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item khan-abas__item--ativa">
+          <a href="../">Fase 1</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../fase-2/">Fase 2</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../gestao/plano_de_medicao/">Gestão</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../gestao/artigo/">Artigo</a>
+        </li>
+      
     </ul>
-</div></div>
-        <div class="col-md-9" role="main">
+    <div class="khan-header__espaco"></div>
+    
+      <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Mudar para o modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Mudar para o modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER" class="khan-botao-repo" title="Repositório da equipe no GitHub">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215m-6.56 0a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"/></svg>
+      <span>Repositório</span>
+    </a>
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary khan-trilha" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Avaliação Khan Academy" class="md-nav__button md-logo" aria-label="Avaliação Khan Academy" data-md-component="logo">
+      
+  <img src="../../assets/img/logo_khan_simbolo.png" alt="logo">
 
-<h1 id="requisitos-de-avaliacao">Requisitos de avaliação</h1>
+    </a>
+    Avaliação Khan Academy
+  </label>
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  <ul class="khan-trilha__secoes">
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../..">Início</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../" aria-current="true">Fase 1</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../fase-2/">Fase 2</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../gestao/plano_de_medicao/">Gestão</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../gestao/artigo/">Artigo</a></li>
+    
+  </ul>
+  
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    <ol class="khan-trilha__passos">
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--feito">
+          <a href="../">
+            <span class="khan-trilha__bolinha">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>
+            </span>
+            <span>Visão geral</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--feito">
+          <a href="../produto-e-contexto/">
+            <span class="khan-trilha__bolinha">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>
+            </span>
+            <span>Produto e contexto</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--atual">
+          <a href="./" aria-current="page">
+            <span class="khan-trilha__bolinha">
+              3
+            </span>
+            <span>Requisitos de avaliação</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--pendente">
+          <a href="../escopo-da-avaliacao/">
+            <span class="khan-trilha__bolinha">
+              4
+            </span>
+            <span>Escopo da avaliação</span>
+          </a>
+        </li>
+      
+    </ol>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Nesta página">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Nesta página
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-proposito-da-avaliacao-e-uso-pretendido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Propósito da avaliação e uso pretendido
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Propósito da avaliação e uso pretendido">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-por-que-avaliar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Por que avaliar
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-cenario-de-aplicacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Cenário de aplicação
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-requisitante-e-destinatarios-dos-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 Requisitante e destinatários dos resultados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-uso-pretendido-e-limites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4 Uso pretendido e limites
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-caracteristicas-selecionadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Características selecionadas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Características selecionadas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-modelo-de-referencia-e-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Modelo de referência e versão
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-adaptacao-do-modelo-de-qualidade-e-representacao-grafica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Adaptação do modelo de qualidade e representação gráfica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-caracteristicas-subcaracteristicas-e-normas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Características, subcaracterísticas e normas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-selecao-e-priorizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Seleção e priorização
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4 Seleção e priorização">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etapa-1-selecao-das-caracteristicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Etapa 1: seleção das características
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etapa-2-priorizacao-das-subcaracteristicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Etapa 2: priorização das subcaracterísticas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-trade-offs-e-consequencias-da-priorizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 Trade-offs e consequências da priorização
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-justificativa-da-selecao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Justificativa da seleção
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-rastreabilidade-caracteristica-interessado-e-justificativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Rastreabilidade: característica, interessado e justificativa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referências
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Histórico de versões
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="requisitos-de-avaliacao">Requisitos de avaliação<a class="headerlink" href="#requisitos-de-avaliacao" title="Link para esta seção">&para;</a></h1>
 <p><strong>Versão 1.3</strong></p>
 <p>Este artefato estabelece os requisitos para avaliação da qualidade do produto de software Khan Academy, apresentando o propósito do estudo, o uso dos resultados e as características que fundamentam o processo. Essas definições orientam o planejamento da avaliação e estabelecem a base para a elaboração dos objetivos, das questões e das métricas da <a href="../../fase-2/">Fase 2</a>.</p>
-<p>A seleção das características selecionadas são fundamentadas no modelo de qualidade da ISO/IEC 25010:2011 <a href="#s1">S1</a> adotado para o estudo e justificadas nas seções específicas deste documento.</p>
-<p>O artefato complementa a <a href="../produto-e-contexto/">Caracterização do produto e do contexto de uso</a> e o <a href="../produto-e-contexto/">Escopo da avaliação</a>, garantindo rastreabilidade entre o contexto de uso e as medições planejadas, sem antecipar o escopo do estudo.</p>
+<p>As características selecionadas são fundamentadas no modelo de qualidade da ISO/IEC 25010:2011 <a href="#s1">S1</a> adotado para o estudo e justificadas nas seções específicas deste documento.</p>
+<p>O artefato complementa a <a href="../produto-e-contexto/">Caracterização do produto e do contexto de uso</a> e o <a href="../escopo-da-avaliacao/">Escopo da avaliação</a>, garantindo rastreabilidade entre o contexto de uso e as medições planejadas, sem antecipar o escopo do estudo.</p>
 <p><a id="proposito"></a></p>
-<h2 id="1-proposito-da-avaliacao-e-uso-pretendido">1. Propósito da avaliação e uso pretendido</h2>
-<h3 id="11-por-que-avaliar">1.1 Por que avaliar</h3>
+<h2 id="1-proposito-da-avaliacao-e-uso-pretendido">1. Propósito da avaliação e uso pretendido<a class="headerlink" href="#1-proposito-da-avaliacao-e-uso-pretendido" title="Link para esta seção">&para;</a></h2>
+<h3 id="11-por-que-avaliar">1.1 Por que avaliar<a class="headerlink" href="#11-por-que-avaliar" title="Link para esta seção">&para;</a></h3>
 <p>A Khan Academy é uma plataforma educacional acessível pela web. Parte dos alunos que poderiam usá-la estuda em condições desfavoráveis, com computadores de recursos limitados, conexão lenta ou instável, sistemas operacionais variados e, em alguns casos, baixa visão ou outra necessidade de acessibilidade. Nessas condições, um conteúdo de boa qualidade pedagógica pode ficar inacessível na prática porque a página demora a carregar, o vídeo trava, a interface não funciona no navegador disponível ou o leitor de tela não interpreta adequadamente o exercício.</p>
 <p>O propósito da avaliação é <strong>verificar se a Khan Academy atende, com qualidade suficiente, alunos que acessam a plataforma em ambientes com recursos limitados e com necessidades específicas</strong>, produzindo evidências que apoiem a decisão de adotá-la como apoio ao ensino nesse contexto.</p>
-<h3 id="12-cenario-de-aplicacao">1.2 Cenário de aplicação</h3>
+<h3 id="12-cenario-de-aplicacao">1.2 Cenário de aplicação<a class="headerlink" href="#12-cenario-de-aplicacao" title="Link para esta seção">&para;</a></h3>
 <p>Para que o resultado apoie uma decisão concreta, a avaliação adota o seguinte cenário: <em>a coordenação de uma escola pública, cujos alunos utilizam computadores com diferentes sistemas operacionais, recursos limitados e conexão instável, decide se recomenda a Khan Academy Web como apoio às aulas e em quais condições de acesso</em>. O cenário é uma hipótese de trabalho da equipe, usada para orientar as escolhas.</p>
-<h3 id="13-requisitante-e-destinatarios-dos-resultados">1.3 Requisitante e destinatários dos resultados</h3>
+<h3 id="13-requisitante-e-destinatarios-dos-resultados">1.3 Requisitante e destinatários dos resultados<a class="headerlink" href="#13-requisitante-e-destinatarios-dos-resultados" title="Link para esta seção">&para;</a></h3>
 <p><a id="requisitante"></a></p>
 <p>O requisitante da avaliação é a coordenação da escola do cenário da <a href="#12-cenario-de-aplicacao">seção 1.2</a>, que precisa decidir se recomenda a Khan Academy aos alunos. A Tabela 1 mostra cada decisão que a avaliação apoia, quem a toma e qual resultado a sustenta.</p>
 <table>
@@ -325,11 +694,11 @@
 </table>
 <p><em>Tabela 1. Decisões apoiadas pela avaliação. Fonte: Elaborada por: <a href="https://github.com/luisa12ll">Luisa de Souza</a></em></p>
 <p>A equipe de produto da Khan Academy é uma destinatária potencial dos achados, que podem indicar correções prioritárias. Como não há contato formal com a empresa, ela não é tratada como tomadora de decisão nesta avaliação.</p>
-<h3 id="14-uso-pretendido-e-limites">1.4 Uso pretendido e limites</h3>
+<h3 id="14-uso-pretendido-e-limites">1.4 Uso pretendido e limites<a class="headerlink" href="#14-uso-pretendido-e-limites" title="Link para esta seção">&para;</a></h3>
 <p>Os resultados serão publicados no artigo da disciplina e nesta GitPage, como relatório técnico de avaliação externa (caixa-preta). Não são certificação de qualidade, não comparam a Khan Academy com outras plataformas e não avaliam a qualidade do conteúdo pedagógico. Valem apenas para as versões, os computadores, os navegadores, as condições de rede e os perfis efetivamente avaliados, definidos pela equipe.</p>
 <p><a id="caracteristicas"></a></p>
-<h2 id="2-caracteristicas-selecionadas">2. Características selecionadas</h2>
-<h3 id="21-modelo-de-referencia-e-versao">2.1 Modelo de referência e versão</h3>
+<h2 id="2-caracteristicas-selecionadas">2. Características selecionadas<a class="headerlink" href="#2-caracteristicas-selecionadas" title="Link para esta seção">&para;</a></h2>
+<h3 id="21-modelo-de-referencia-e-versao">2.1 Modelo de referência e versão<a class="headerlink" href="#21-modelo-de-referencia-e-versao" title="Link para esta seção">&para;</a></h3>
 <p>A avaliação usa o modelo de qualidade de produto da <strong>ISO/IEC 25010:2011</strong> <a href="#s1">S1</a>. Essa versão foi escolhida por três motivos: é a usada no material da disciplina, tem tradução da ABNT e é a base da ISO/IEC 25023:2016 <a href="#s3">S3</a>, norma de medição que fornecerá as métricas da Fase 2. Assim, modelo e medidas usam os mesmos nomes.</p>
 <p><strong>Existe uma versão mais nova, a ISO/IEC 25010:2023</strong> <a href="#s2">S2</a>, que substitui a de 2011. Ela renomeou duas das características escolhidas e dividiu uma subcaracterística, como mostra a Tabela 2. A troca de versão não muda o que será avaliado, só os nomes. A Tabela 2 serve para quem consultar a versão de 2023 encontrar as características correspondentes.</p>
 <table>
@@ -365,7 +734,7 @@
 </table>
 <p><em>Tabela 2. Correspondência entre os nomes da ISO/IEC 25010:2011 <a href="#s1">S1</a> e da ISO/IEC 25010:2023 <a href="#s2">S2</a> para as características selecionadas. Fonte: Elaborada por: <a href="https://github.com/luisa12ll">Luisa de Souza</a>, com base em <a href="#s1">S1</a> e <a href="#s2">S2</a></em></p>
 <p>Os termos em português da versão de 2011 seguem a tradução da ABNT, e, os da versão de 2023 são tradução da equipe.</p>
-<h3 id="22-adaptacao-do-modelo-de-qualidade-e-representacao-grafica">2.2 Adaptação do modelo de qualidade e representação gráfica</h3>
+<h3 id="22-adaptacao-do-modelo-de-qualidade-e-representacao-grafica">2.2 Adaptação do modelo de qualidade e representação gráfica<a class="headerlink" href="#22-adaptacao-do-modelo-de-qualidade-e-representacao-grafica" title="Link para esta seção">&para;</a></h3>
 <p>O modelo geral da ISO/IEC 25010:2011 <a href="#s1">S1</a> propõe uma estrutura abrangente voltada a qualquer produto de software. No entanto, uma avaliação externa (caixa-preta) focada na adoção da Khan Academy no contexto de escolas públicas requer uma adaptação deliberada. Um modelo genérico não reflete, por si só, os desafios de alunos que utilizam computadores com recursos limitados e conexões instáveis, tampouco as limitações metodológicas de uma equipe avaliadora sem acesso ao código-fonte proprietário da plataforma.</p>
 <p>Dessa forma, a decisão de adaptar o modelo sustenta-se nas seguintes razões técnicas e metodológicas:</p>
 <ol>
@@ -375,7 +744,7 @@
 </ol>
 <p><img alt="Modelo de Qualidade" src="../../assets/img/modelo_qualidade.svg" /></p>
 <p><em>Figura 1. Modelo de qualidade adaptado da ISO/IEC 25010:2011 <a href="#s1">S1</a> para a avaliação da Khan Academy. Fonte: Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
-<h3 id="23-caracteristicas-subcaracteristicas-e-normas">2.3 Características, subcaracterísticas e normas</h3>
+<h3 id="23-caracteristicas-subcaracteristicas-e-normas">2.3 Características, subcaracterísticas e normas<a class="headerlink" href="#23-caracteristicas-subcaracteristicas-e-normas" title="Link para esta seção">&para;</a></h3>
 <p>A Tabela 3 lista as três características e as cinco subcaracterísticas selecionadas, com a norma que define cada uma e a norma que fornecerá as medidas.</p>
 <table>
 <thead>
@@ -427,7 +796,7 @@
 </table>
 <p><em>Tabela 3. Características e subcaracterísticas selecionadas, com as normas de referência. Fonte: Elaborada por: <a href="https://github.com/luisa12ll">Luisa de Souza</a>, com base em <a href="#s1">S1</a> e <a href="#s3">S3</a></em></p>
 <p><a id="priorizacao"></a></p>
-<h3 id="24-selecao-e-priorizacao">2.4 Seleção e priorização</h3>
+<h3 id="24-selecao-e-priorizacao">2.4 Seleção e priorização<a class="headerlink" href="#24-selecao-e-priorizacao" title="Link para esta seção">&para;</a></h3>
 <p>A seleção e a priorização usam o mesmo método, aplicado em duas etapas: primeiro às oito características da ISO/IEC 25010:2011 <a href="#s1">S1</a>, para decidir quais entram na avaliação; depois às subcaracterísticas selecionadas, para definir a profundidade de cada uma. Nas duas etapas, cada item recebe nota de 1 (baixo) a 3 (alto) em três critérios:</p>
 <ul>
 <li><strong>Impacto no aluno (peso 3):</strong> quanto um problema nesse item impede o aluno do cenário da <a href="#12-cenario-de-aplicacao">seção 1.2</a> de estudar. Tem o maior peso porque o propósito da avaliação é apoiar decisões sobre esses alunos.</li>
@@ -435,7 +804,7 @@
 <li><strong>Viabilidade de evidência (peso 1):</strong> quanto a equipe consegue produzir evidência com os dispositivos, as ferramentas e o tempo disponíveis, sem acesso ao código-fonte. Tem o menor peso para que a facilidade de medir não decida sozinha a prioridade.</li>
 </ul>
 <p>A pontuação é <code>P = 3 × Impacto + 2 × Risco + 1 × Viabilidade</code>, com máximo de 18. Os pesos, as notas e as faixas são critério da equipe, não da norma.</p>
-<h4 id="etapa-1-selecao-das-caracteristicas">Etapa 1: seleção das características</h4>
+<h4 id="etapa-1-selecao-das-caracteristicas">Etapa 1: seleção das características<a class="headerlink" href="#etapa-1-selecao-das-caracteristicas" title="Link para esta seção">&para;</a></h4>
 <p>Na primeira etapa, a pontuação de cada característica é convertida em uma classe MoSCoW: <strong>Must have</strong> quando <code>P ≥ 15</code>, <strong>Should have</strong> quando <code>12 ≤ P ≤ 14</code>, <strong>Could have</strong> quando <code>10 ≤ P ≤ 11</code> e <strong>Won't have</strong> quando <code>P ≤ 9</code>. Uma característica com viabilidade 1 também fica como Won't have, porque a equipe não consegue produzir evidência sobre ela, qualquer que seja o impacto. A Tabela 4 apresenta o resultado.</p>
 <table>
 <thead>
@@ -526,7 +895,7 @@
 </table>
 <p><em>Tabela 4. Seleção das características da ISO/IEC 25010:2011 <a href="#s1">S1</a> por MoSCoW com pesos. Fonte: Elaborada por: <a href="https://github.com/luisa12ll">Luisa de Souza</a></em></p>
 <p>As três características classificadas como Must have formam a seleção. Nenhuma ficou como Should have ou Could have: a confiabilidade alcança 11 pontos, mas a viabilidade 1 a coloca como Won't have.</p>
-<h4 id="etapa-2-priorizacao-das-subcaracteristicas">Etapa 2: priorização das subcaracterísticas</h4>
+<h4 id="etapa-2-priorizacao-das-subcaracteristicas">Etapa 2: priorização das subcaracterísticas<a class="headerlink" href="#etapa-2-priorizacao-das-subcaracteristicas" title="Link para esta seção">&para;</a></h4>
 <p>Dentro das três características selecionadas, a mesma matriz define a profundidade de cada subcaracterística avaliada. As faixas de pontuação são as mesmas da etapa 1: prioridade <strong>alta</strong> quando <code>P ≥ 15</code>, <strong>média</strong> quando <code>12 ≤ P ≤ 14</code> e <strong>baixa</strong> quando <code>P ≤ 11</code>. A Tabela 5 apresenta o resultado.</p>
 <table>
 <thead>
@@ -641,7 +1010,7 @@
 </table>
 <p><em>Tabela 6. Subcaracterísticas não selecionadas nas características escolhidas e motivo do corte. Fonte: Elaborada por: <a href="https://github.com/luisa12ll">Luisa de Souza</a></em></p>
 <p>Para verificar se o resultado depende dos pesos escolhidos, as notas das Tabelas 4 e 5 foram recalculadas em dois cenários alternativos: com pesos iguais (<code>I + R + V</code>) e sem o critério de viabilidade (<code>3 × I + 2 × R</code>). Nas subcaracterísticas, as pontuações ficam 9, 8, 7, 7 e 6 no primeiro cenário e 15, 15, 13, 13 e 10 no segundo; a ordem se mantém: eficiência de desempenho primeiro, adaptabilidade e acessibilidade em seguida e apreensibilidade por último. Nas características, as três selecionadas continuam à frente das demais nos dois cenários, com 7 pontos ou mais contra no máximo 5 no primeiro e 13 pontos ou mais contra no máximo 10 no segundo. A seleção e a priorização, portanto, não dependem de um ajuste fino dos pesos.</p>
-<h3 id="25-trade-offs-e-consequencias-da-priorizacao">2.5 Trade-offs e consequências da priorização</h3>
+<h3 id="25-trade-offs-e-consequencias-da-priorizacao">2.5 Trade-offs e consequências da priorização<a class="headerlink" href="#25-trade-offs-e-consequencias-da-priorizacao" title="Link para esta seção">&para;</a></h3>
 <p>A prioridade define o rigor de cada parte da avaliação, conforme previsto na ISO/IEC 25040 <a href="#s4">S4</a>:</p>
 <ul>
 <li><strong>Amplitude contra profundidade.</strong> Executar todas as subcaracterísticas em todas as combinações de navegador e sistema produziria uma matriz incompatível com o prazo. O comportamento temporal e a utilização de recursos serão medidos no ambiente de referência; adaptabilidade e acessibilidade usarão combinações direcionadas, definidas no escopo.</li>
@@ -650,7 +1019,7 @@
 <li><strong>Apreensibilidade com amostra exploratória.</strong> Por ter prioridade média, a apreensibilidade recebe a menor profundidade: três a cinco participantes, apenas no ambiente de referência. A amostra é suficiente para identificar dificuldades recorrentes nos fluxos centrais e apoiar a decisão <a href="#requisitante"><code>D3</code></a>, mas não permite generalizar para todos os estudantes; se o recrutamento não for possível, o resultado será apresentado como inspeção exploratória da equipe.</li>
 </ul>
 <p><a id="justificativa"></a></p>
-<h2 id="3-justificativa-da-selecao">3. Justificativa da seleção</h2>
+<h2 id="3-justificativa-da-selecao">3. Justificativa da seleção<a class="headerlink" href="#3-justificativa-da-selecao" title="Link para esta seção">&para;</a></h2>
 <p>A tríade de características selecionadas alinha-se estritamente à viabilidade técnica de uma avaliação externa e ao cenário da escola pública:</p>
 <ul>
 <li><strong>Eficiência de desempenho:</strong> Como a Khan Academy utiliza vídeo e interação dinâmica, restrições de processamento, memória e conexão podem impedir o acesso ao conteúdo. Essa possibilidade é especialmente relevante no cenário de referência da escola pública, em que lentidão, travamentos ou consumo elevado de recursos podem inviabilizar o uso mesmo quando a funcionalidade está disponível. Medir tempos e recursos no ambiente de referência subsidia a decisão <a href="#requisitante"><code>D1</code></a> sobre a viabilidade prática de uso da plataforma web, sem generalizar o resultado para todas as escolas.</li>
@@ -658,7 +1027,7 @@
 <li><strong>Usabilidade:</strong> Ao priorizar acessibilidade e apreensibilidade, a avaliação produz evidências para as decisões <a href="#requisitante"><code>D2</code></a> e <a href="#requisitante"><code>D3</code></a> sobre barreiras enfrentadas por alunos com deficiência visual e sobre a necessidade de suporte pedagógico inicial para o uso autônomo da ferramenta.</li>
 </ul>
 <p><a id="rastreabilidade"></a></p>
-<h2 id="4-rastreabilidade-caracteristica-interessado-e-justificativa">4. Rastreabilidade: característica, interessado e justificativa</h2>
+<h2 id="4-rastreabilidade-caracteristica-interessado-e-justificativa">4. Rastreabilidade: característica, interessado e justificativa<a class="headerlink" href="#4-rastreabilidade-caracteristica-interessado-e-justificativa" title="Link para esta seção">&para;</a></h2>
 <p>A Tabela 7 liga cada subcaracterística selecionada aos interessados que dependem dela, à justificativa e à decisão que apoia. Os identificadores <code>R1</code> a <code>R5</code> são os requisitos de avaliação que orientam os objetivos de medição. Os objetivos <a href="../../fase-2/objetivos/#g1"><code>G1</code></a> a <a href="../../fase-2/objetivos/#g3"><code>G3</code></a> já estão consolidados na <a href="../../fase-2/objetivos/">Fase 2</a> e mantêm correspondência explícita com esses requisitos.</p>
 <table>
 <thead>
@@ -722,7 +1091,7 @@
 </table>
 <p><em>Tabela 7. Rastreabilidade entre requisitos de avaliação, interessados, justificativas e decisões. Fonte: Elaborada por: <a href="https://github.com/luisa12ll">Luisa de Souza</a></em></p>
 <p>A equipe avaliadora é interessada em todos os requisitos, por meio da decisão <a href="#requisitante"><code>D4</code></a>, e por isso não aparece linha a linha.</p>
-<h2 id="referencias">Referências</h2>
+<h2 id="referencias">Referências<a class="headerlink" href="#referencias" title="Link para esta seção">&para;</a></h2>
 <p><a id="s1"></a></p>
 <blockquote>
 <p>[S1] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. <strong>ISO/IEC 25010:2011</strong>: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - System and software quality models. Genebra: ISO, 2011. Disponível em: <a href="https://www.iso.org/standard/35733.html">https://www.iso.org/standard/35733.html</a>. Acesso em: 20 out. 2026.</p>
@@ -739,7 +1108,7 @@
 <blockquote>
 <p>[S4] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. <strong>ISO/IEC 25040:2011</strong>: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - Evaluation process. Genebra: ISO, 2011. Disponível em: <a href="https://www.iso.org/standard/35765.html">https://www.iso.org/standard/35765.html</a>. Acesso em: 20 out. 2026.</p>
 </blockquote>
-<h2 id="historico-de-versoes">Histórico de versões</h2>
+<h2 id="historico-de-versoes">Histórico de versões<a class="headerlink" href="#historico-de-versoes" title="Link para esta seção">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -780,80 +1149,57 @@
 <td><a href="https://github.com/luisa12ll">Luisa de Souza</a></td>
 </tr>
 </tbody>
-</table></div>
-        
-        
-    </div>
+</table>
 
-    
-      <footer class="col-md-12 text-center">
-          
-          
-            <hr>
-            <p>
-            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
-            </p>
-          
 
-          
-          
-      </footer>
-    
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../../js/bootstrap-3.0.3.min.js"></script>
 
-    
-    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
-        
-    <script>hljs.initHighlightingOnLoad();</script>
-    
 
-    <script>var base_url = "../.."</script>
-    
-    <script src="../../js/base.js"></script>
-    <script src="../../js/mathjax.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+
+
+
+
+
+
+
+                
+              </article>
             </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
     </div>
-</div>
-    </body>
-
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.top", "toc.follow", "search.suggest", "search.highlight", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+        <script src="../../js/mathjax.js"></script>
+      
+        <script src="../../js/khan.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
 </html>
