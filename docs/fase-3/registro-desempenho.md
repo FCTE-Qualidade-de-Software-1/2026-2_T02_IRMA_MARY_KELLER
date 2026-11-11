@@ -1,6 +1,6 @@
 # Registro de execuções de eficiência de desempenho (M1 a M5)
 
-**Versão 1.0**
+**Versão 1.1**
 
 Este documento reúne os formulários e planilhas padronizadas para registro dos dados brutos e resultados consolidados da avaliação de **eficiência de desempenho** da versão web da Khan Academy em computadores, conforme especificado em [Procedimentos de avaliação de eficiência de desempenho (M1 a M5)](procedimentos-desempenho.md) [S1](#s1).
 
@@ -17,28 +17,30 @@ Todas as tabelas de coleta encontram-se atualmente **em branco** e serão preenc
 
 ## 1. Preparação do ambiente de referência (A1)
 
+<!-- Simplificar essas tabelas -->
+
 A Tabela 1 registra as características do ambiente `A1`, conforme definido no [Ambiente de testes](ambiente-de-testes.md) [S2](#s2).
 
-| Parâmetro de configuração | Valor especificado | Valor verificado no ensaio | Situação |
-|---|---|---|:---:|
-| Sistema Operacional convidado | Windows 11 Pro 64-bit | | |
-| *Build* exata do sistema | A registrar na preparação | | |
-| Navegador e motor | Google Chrome 157.0 (Blink) | | |
-| Modalidade de execução | Virtualizado (Docker / Winboat) | | |
-| Alocação de memória RAM | 4 GB | | |
-| Alocação de vCPUs | 4 vCPUs | | |
-| Resolução de tela e janela | 1920 × 1080 pixels (`J2`), maximizada | | |
-| Nível de zoom | 100% | | |
-| Data da preparação formal | A registrar | | |
-| Responsável pela preparação | A registrar | | |
+| Parâmetro de configuração     | Valor especificado                    | Valor verificado no ensaio | Situação |
+| ----------------------------- | ------------------------------------- | -------------------------- | :------: |
+| Sistema Operacional convidado | Windows 11 Pro 64-bit                 | Windows 11 Pro 64-bit      | Conforme |
+| *Build* exata do sistema      | 26200| 26200 | Conforme |
+| Navegador e motor             | Google Chrome 157.0                   | Google Chrome 157.0        | Conforme |
+| Modalidade de execução        | Virtualizado (Docker / Winboat)       | Virtualizado (Docker / Winboat) | Conforme |
+| Alocação de memória RAM       | 4 GB                                  | 4 GB | Conforme |
+| Alocação de vCPUs             | 4 vCPUs                               | 4 vCPUs | Conforme |
+| Resolução de tela e janela    | 1920 × 1080 pixels (`J2`), maximizada | 1920 × 1080 pixels (`J2`), maximizada | Conforme |
+| Nível de zoom                 | 100% | 100% | Conforme |
+| Data da preparação formal     | 11/11/2026 | 11/11/2026 | Conforme |
+| Responsável pela preparação   | José Augusto | José Augusto | Conforme |
 
 *Tabela 1. Verificação do ambiente de referência A1. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
 A Tabela 2 registra o atendimento às verificações prévias de preparação (`PD-1` a `PD-10`). Marque `S` para atendida ou `N` para não atendida.
 
-| ID da sessão | PD-1 | PD-2 | PD-3 | PD-4 | PD-5 | PD-6 | PD-7 | PD-8 | PD-9 | PD-10 | Observações operacionais |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|---|
-| Preparação Geral A1 | | | | | | | | | | | |
+| ID da sessão        | PD-1  | PD-2  | PD-3  | PD-4  | PD-5  | PD-6  | PD-7  | PD-8  | PD-9  | PD-10 | Observações operacionais |
+| ------------------- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | ------------------------ |
+| Preparação Geral A1 | S     | S     | S     | S     | S     | S     | S     | S     | S     | S     |                          |
 
 *Tabela 2. Checklist de preparação do ambiente A1. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
@@ -48,14 +50,14 @@ A Tabela 2 registra o atendimento às verificações prévias de preparação (`
 
 A Tabela 3 documenta os valores e URLs congeladas antes do início das medições para garantir repetibilidade estrita.
 
-| ID | Elemento de teste | Valor / Identificador congelado | Data do congelamento |
-|---|---|---|---|
-| `D1` | Disciplina | | |
-| `D2` | Curso | | |
-| `D3` | Unidade e aula | | |
-| `D4` | Videoaula (com legenda e transcrição) | | |
-| `D5` | Exercício (com suporte a dicas) | | |
-| `D6` | Conta de teste (login/usuário) | | |
+| ID   | Elemento de teste                     | Valor / Identificador congelado                           | Data do congelamento |
+| ---- | ------------------------------------- | --------------------------------------------------------- | -------------------- |
+| `D1` | Disciplina | https://pt.khanacademy.org/computing | 11/11/2026 |
+| `D2` | Curso | https://pt.khanacademy.org/computing/computer-programming | 11/11/2026 |
+| `D3` | Unidade e aula | https://pt.khanacademy.org/computing/computer-programming/programming | 11/11/2026 |
+| `D4` | Videoaula (com legenda e transcrição) | https://pt.khanacademy.org/computing/computer-programming/programming/drawing-basics/pt/making-drawings-with-code | 11/11/2026 |
+| `D5` | Exercício (com suporte a dicas) | https://pt.khanacademy.org/computing/computer-programming/programming/drawing-basics/pc/challenge-simple-snowman | 11/11/2026 |
+| `D6` | Conta de teste (login/usuário) | José Moraes  | 11/11/2026 |
 
 *Tabela 3. Massa de dados congelada para os ensaios de desempenho. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
@@ -66,9 +68,9 @@ A Tabela 3 documenta os valores e URLs congeladas antes do início das mediçõe
 A Tabela 4 documenta a calibração da conexão do laboratório e os parâmetros aplicados no emulador de tráfego.
 
 | Condição experimental | Download medido / configurado | Upload medido / configurado | Latência (RTT) | Data da calibração | Responsável |
-|---|:---:|:---:|:---:|:---:|---|
-| **Rede Normal (sem limitação)** | Mbps | Mbps | ms | | |
-| **Rede Limitada (Throttling)** | 1.500 kbps (1,5 Mbps) | 750 kbps (0,75 Mbps) | 150 ms adicionais | | |
+| --------------------- | :---------------------------: | :-------------------------: | :------------: | :----------------: | ----------- |
+| **Rede Normal (sem limitação)** | 290,92 Mbps | 296,47 Mbps | 78 ms | 11/11/2026 | José Augusto |
+| **Rede Limitada (Throttling)**  | 1,5 Mbps | 0,75 Mbps | 150 ms adicionais | 11/11/2026 | José Augusto|
 
 *Tabela 4. Condições de conectividade registradas. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
@@ -80,14 +82,14 @@ A Tabela 4 documenta a calibração da conexão do laboratório e os parâmetros
 
 A Tabela 5 registra o aquecimento (`W`) e as 5 repetições válidas (`R1` a `R5`) de `FL1` em conexão normal.
 
-| ID Repetição | Data / Hora | Avaliador / Observador | Tempo E1.1 (s) | Tempo E1.2 (s) | Tempo E1.3 (s) | Resultado M2 | CPU média M3 (%) | CPU pico M3 (%) | RAM pico M4 (MiB) | Dados M5 (MiB) | Arquivo de evidência (.har / .png) | Ocorrência |
-|---|---|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|---|---|
-| `W-FL1-NORM` | | | | | | | | | | | | |
-| `R1-FL1-NORM` | | | | | | | | | | | | |
-| `R2-FL1-NORM` | | | | | | | | | | | | |
-| `R3-FL1-NORM` | | | | | | | | | | | | |
-| `R4-FL1-NORM` | | | | | | | | | | | | |
-| `R5-FL1-NORM` | | | | | | | | | | | | |
+| ID Repetição  | Data / Hora | Avaliador / Observador | Tempo E1.1 (s) | Tempo E1.2 (s) | Tempo E1.3 (s) | Resultado M2 | CPU média M3 (%) | CPU pico M3 (%) | RAM pico M4 (MiB) | Dados M5 (MiB) | Arquivo de evidência (.har / .png) | Ocorrência |
+| ------------- | ----------- | ---------------------- | :------------: | :------------: | :------------: | :----------: | :--------------: | :-------------: | :---------------: | :------------: | ---------------------------------- | ---------- |
+| `W-FL1-NORM`  |             |                        |                |                |                |              |                  |                 |                   |                |                                    |            |
+| `R1-FL1-NORM` |             |                        |                |                |                |              |                  |                 |                   |                |                                    |            |
+| `R2-FL1-NORM` |             |                        |                |                |                |              |                  |                 |                   |                |                                    |            |
+| `R3-FL1-NORM` |             |                        |                |                |                |              |                  |                 |                   |                |                                    |            |
+| `R4-FL1-NORM` |             |                        |                |                |                |              |                  |                 |                   |                |                                    |            |
+| `R5-FL1-NORM` |             |                        |                |                |                |              |                  |                 |                   |                |                                    |            |
 
 *Tabela 5. Registro bruto de FL1 sob Rede Normal. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
@@ -96,13 +98,13 @@ A Tabela 5 registra o aquecimento (`W`) e as 5 repetições válidas (`R1` a `R5
 A Tabela 6 registra o aquecimento (`W`) e as 5 repetições válidas (`R1` a `R5`) de `FL1` em conexão limitada.
 
 | ID Repetição | Data / Hora | Avaliador / Observador | Tempo E1.1 (s) | Tempo E1.2 (s) | Tempo E1.3 (s) | Resultado M2 | CPU média M3 (%) | CPU pico M3 (%) | RAM pico M4 (MiB) | Dados M5 (MiB) | Arquivo de evidência (.har / .png) | Ocorrência |
-|---|---|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|---|---|
-| `W-FL1-LIM` | | | | | | | | | | | | |
-| `R1-FL1-LIM` | | | | | | | | | | | | |
-| `R2-FL1-LIM` | | | | | | | | | | | | |
-| `R3-FL1-LIM` | | | | | | | | | | | | |
-| `R4-FL1-LIM` | | | | | | | | | | | | |
-| `R5-FL1-LIM` | | | | | | | | | | | | |
+| ------------ | ----------- | ---------------------- | :------------: | :------------: | :------------: | :----------: | :--------------: | :-------------: | :---------------: | :------------: | ---------------------------------- | ---------- |
+| `W-FL1-LIM`  |             |                        |                |                |                |              |                  |                 |                   |                |                                    |            |
+| `R1-FL1-LIM` |             |                        |                |                |                |              |                  |                 |                   |                |                                    |            |
+| `R2-FL1-LIM` |             |                        |                |                |                |              |                  |                 |                   |                |                                    |            |
+| `R3-FL1-LIM` |             |                        |                |                |                |              |                  |                 |                   |                |                                    |            |
+| `R4-FL1-LIM` |             |                        |                |                |                |              |                  |                 |                   |                |                                    |            |
+| `R5-FL1-LIM` |             |                        |                |                |                |              |                  |                 |                   |                |                                    |            |
 
 *Tabela 6. Registro bruto de FL1 sob Rede Limitada. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
@@ -114,14 +116,14 @@ A Tabela 6 registra o aquecimento (`W`) e as 5 repetições válidas (`R1` a `R5
 
 A Tabela 7 registra o aquecimento (`W`) e as 5 repetições válidas (`R1` a `R5`) de `FL2` em conexão normal.
 
-| ID Repetição | Data / Hora | Avaliador / Observador | Tempo E2.1 (s) | Tempo E2.2 (s) | Tempo E2.3 (s) | Tempo E2.4 (s) | Resultado M2 | CPU média M3 (%) | CPU pico M3 (%) | RAM pico M4 (MiB) | Dados M5 (MiB) | Arquivo de evidência (.har / .png) | Ocorrência |
-|---|---|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|---|---|
-| `W-FL2-NORM` | | | | | | | | | | | | | |
-| `R1-FL2-NORM` | | | | | | | | | | | | | |
-| `R2-FL2-NORM` | | | | | | | | | | | | | |
-| `R3-FL2-NORM` | | | | | | | | | | | | | |
-| `R4-FL2-NORM` | | | | | | | | | | | | | |
-| `R5-FL2-NORM` | | | | | | | | | | | | | |
+| ID Repetição  | Data / Hora | Avaliador / Observador | Tempo E2.1 (s) | Tempo E2.2 (s) | Tempo E2.3 (s) | Tempo E2.4 (s) | Resultado M2 | CPU média M3 (%) | CPU pico M3 (%) | RAM pico M4 (MiB) | Dados M5 (MiB) | Arquivo de evidência (.har / .png) | Ocorrência |
+| ------------- | ----------- | ---------------------- | :------------: | :------------: | :------------: | :------------: | :----------: | :--------------: | :-------------: | :---------------: | :------------: | ---------------------------------- | ---------- |
+| `W-FL2-NORM`  |             |                        |                |                |                |                |              |                  |                 |                   |                |                                    |            |
+| `R1-FL2-NORM` |             |                        |                |                |                |                |              |                  |                 |                   |                |                                    |            |
+| `R2-FL2-NORM` |             |                        |                |                |                |                |              |                  |                 |                   |                |                                    |            |
+| `R3-FL2-NORM` |             |                        |                |                |                |                |              |                  |                 |                   |                |                                    |            |
+| `R4-FL2-NORM` |             |                        |                |                |                |                |              |                  |                 |                   |                |                                    |            |
+| `R5-FL2-NORM` |             |                        |                |                |                |                |              |                  |                 |                   |                |                                    |            |
 
 *Tabela 7. Registro bruto de FL2 sob Rede Normal. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
@@ -130,13 +132,13 @@ A Tabela 7 registra o aquecimento (`W`) e as 5 repetições válidas (`R1` a `R5
 A Tabela 8 registra o aquecimento (`W`) e as 5 repetições válidas (`R1` a `R5`) de `FL2` em conexão limitada.
 
 | ID Repetição | Data / Hora | Avaliador / Observador | Tempo E2.1 (s) | Tempo E2.2 (s) | Tempo E2.3 (s) | Tempo E2.4 (s) | Resultado M2 | CPU média M3 (%) | CPU pico M3 (%) | RAM pico M4 (MiB) | Dados M5 (MiB) | Arquivo de evidência (.har / .png) | Ocorrência |
-|---|---|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|---|---|
-| `W-FL2-LIM` | | | | | | | | | | | | | |
-| `R1-FL2-LIM` | | | | | | | | | | | | | |
-| `R2-FL2-LIM` | | | | | | | | | | | | | |
-| `R3-FL2-LIM` | | | | | | | | | | | | | |
-| `R4-FL2-LIM` | | | | | | | | | | | | | |
-| `R5-FL2-LIM` | | | | | | | | | | | | | |
+| ------------ | ----------- | ---------------------- | :------------: | :------------: | :------------: | :------------: | :----------: | :--------------: | :-------------: | :---------------: | :------------: | ---------------------------------- | ---------- |
+| `W-FL2-LIM`  |             |                        |                |                |                |                |              |                  |                 |                   |                |                                    |            |
+| `R1-FL2-LIM` |             |                        |                |                |                |                |              |                  |                 |                   |                |                                    |            |
+| `R2-FL2-LIM` |             |                        |                |                |                |                |              |                  |                 |                   |                |                                    |            |
+| `R3-FL2-LIM` |             |                        |                |                |                |                |              |                  |                 |                   |                |                                    |            |
+| `R4-FL2-LIM` |             |                        |                |                |                |                |              |                  |                 |                   |                |                                    |            |
+| `R5-FL2-LIM` |             |                        |                |                |                |                |              |                  |                 |                   |                |                                    |            |
 
 *Tabela 8. Registro bruto de FL2 sob Rede Limitada. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
@@ -148,14 +150,14 @@ A Tabela 8 registra o aquecimento (`W`) e as 5 repetições válidas (`R1` a `R5
 
 A Tabela 9 registra o aquecimento (`W`) e as 5 repetições válidas (`R1` a `R5`) de `FL3` em conexão normal.
 
-| ID Repetição | Data / Hora | Avaliador / Observador | Tempo E3.1 (s) | Tempo E3.2 (s) | Tempo E3.3 (s) | Tempo E3.4 (s) | Resultado M2 | CPU média M3 (%) | CPU pico M3 (%) | RAM pico M4 (MiB) | Dados M5 (MiB) | Arquivo de evidência (.har / .png) | Ocorrência |
-|---|---|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|---|---|
-| `W-FL3-NORM` | | | | | | | | | | | | | |
-| `R1-FL3-NORM` | | | | | | | | | | | | | |
-| `R2-FL3-NORM` | | | | | | | | | | | | | |
-| `R3-FL3-NORM` | | | | | | | | | | | | | |
-| `R4-FL3-NORM` | | | | | | | | | | | | | |
-| `R5-FL3-NORM` | | | | | | | | | | | | | |
+| ID Repetição  | Data / Hora | Avaliador / Observador | Tempo E3.1 (s) | Tempo E3.2 (s) | Tempo E3.3 (s) | Tempo E3.4 (s) | Resultado M2 | CPU média M3 (%) | CPU pico M3 (%) | RAM pico M4 (MiB) | Dados M5 (MiB) | Arquivo de evidência (.har / .png) | Ocorrência |
+| ------------- | ----------- | ---------------------- | :------------: | :------------: | :------------: | :------------: | :----------: | :--------------: | :-------------: | :---------------: | :------------: | ---------------------------------- | ---------- |
+| `W-FL3-NORM`  |             |                        |                |                |                |                |              |                  |                 |                   |                |                                    |            |
+| `R1-FL3-NORM` |             |                        |                |                |                |                |              |                  |                 |                   |                |                                    |            |
+| `R2-FL3-NORM` |             |                        |                |                |                |                |              |                  |                 |                   |                |                                    |            |
+| `R3-FL3-NORM` |             |                        |                |                |                |                |              |                  |                 |                   |                |                                    |            |
+| `R4-FL3-NORM` |             |                        |                |                |                |                |              |                  |                 |                   |                |                                    |            |
+| `R5-FL3-NORM` |             |                        |                |                |                |                |              |                  |                 |                   |                |                                    |            |
 
 *Tabela 9. Registro bruto de FL3 sob Rede Normal. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
@@ -164,13 +166,13 @@ A Tabela 9 registra o aquecimento (`W`) e as 5 repetições válidas (`R1` a `R5
 A Tabela 10 registra o aquecimento (`W`) e as 5 repetições válidas (`R1` a `R5`) de `FL3` em conexão limitada.
 
 | ID Repetição | Data / Hora | Avaliador / Observador | Tempo E3.1 (s) | Tempo E3.2 (s) | Tempo E3.3 (s) | Tempo E3.4 (s) | Resultado M2 | CPU média M3 (%) | CPU pico M3 (%) | RAM pico M4 (MiB) | Dados M5 (MiB) | Arquivo de evidência (.har / .png) | Ocorrência |
-|---|---|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|---|---|
-| `W-FL3-LIM` | | | | | | | | | | | | | |
-| `R1-FL3-LIM` | | | | | | | | | | | | | |
-| `R2-FL3-LIM` | | | | | | | | | | | | | |
-| `R3-FL3-LIM` | | | | | | | | | | | | | |
-| `R4-FL3-LIM` | | | | | | | | | | | | | |
-| `R5-FL3-LIM` | | | | | | | | | | | | | |
+| ------------ | ----------- | ---------------------- | :------------: | :------------: | :------------: | :------------: | :----------: | :--------------: | :-------------: | :---------------: | :------------: | ---------------------------------- | ---------- |
+| `W-FL3-LIM`  |             |                        |                |                |                |                |              |                  |                 |                   |                |                                    |            |
+| `R1-FL3-LIM` |             |                        |                |                |                |                |              |                  |                 |                   |                |                                    |            |
+| `R2-FL3-LIM` |             |                        |                |                |                |                |              |                  |                 |                   |                |                                    |            |
+| `R3-FL3-LIM` |             |                        |                |                |                |                |              |                  |                 |                   |                |                                    |            |
+| `R4-FL3-LIM` |             |                        |                |                |                |                |              |                  |                 |                   |                |                                    |            |
+| `R5-FL3-LIM` |             |                        |                |                |                |                |              |                  |                 |                   |                |                                    |            |
 
 *Tabela 10. Registro bruto de FL3 sob Rede Limitada. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
@@ -181,13 +183,13 @@ A Tabela 10 registra o aquecimento (`W`) e as 5 repetições válidas (`R1` a `R
 A Tabela 11 documenta os indicadores de laboratório gerados pela auditoria do Lighthouse nas páginas de entrada dos fluxos sob condições de rede normal e limitada.
 
 | Página avaliada | Condição de rede | Performance Score (0–100) | First Contentful Paint - FCP (s) | Largest Contentful Paint - LCP (s) | Total Blocking Time - TBT (ms) | Speed Index (s) | Arquivo de relatório (.json / .html) |
-|---|---|:---:|:---:|:---:|:---:|:---:|---|
-| Curso `D2` (FL1) | Rede Normal | | | | | | |
-| Curso `D2` (FL1) | Rede Limitada | | | | | | |
-| Videoaula `D4` (FL2) | Rede Normal | | | | | | |
-| Videoaula `D4` (FL2) | Rede Limitada | | | | | | |
-| Exercício `D5` (FL3) | Rede Normal | | | | | | |
-| Exercício `D5` (FL3) | Rede Limitada | | | | | | |
+| ---- | ---- | :--: | :--: | :--: | :--: | :--: | ---- |
+| Curso `D2` (FL1) | Rede Normal | 57 | 1,7 | 2,3 | 0 | 1,9 | [json](../fase-4/evidencias/desempenho/lighthouse/FL1/LH_FL1_NOR_20261111.json)/[html](../fase-4/evidencias/desempenho/lighthouse/FL1/LH_FL1_NOR_20261111.html) |
+| Curso `D2` (FL1) | Rede Limitada | 69 | 1,9 | 2,6 | 0 | 7,0 | [json](../fase-4/evidencias/desempenho/lighthouse/FL1/LH_FL1_LIM_20261111.json)/[html](../fase-4/evidencias/desempenho/lighthouse/FL1/LH_FL1_LIM_20261111.html) |
+| Videoaula `D4` (FL2) | Rede Normal | 67 | 1,7 | 3,7 | 20 | 3,1 | [json](../fase-4/evidencias/desempenho/lighthouse/FL2/LH_FL2_NOR_20261111.json)/[html](../fase-4/evidencias/desempenho/lighthouse/FL2/LH_FL2_NOR_20261111.html) |
+| Videoaula `D4` (FL2) | Rede Limitada | 62 | 2,0 | 4,0 | 20 | 11,4 | [json](../fase-4/evidencias/desempenho/lighthouse/FL2/LH_FL2_LIM_20261111.json)/[html](../fase-4/evidencias/desempenho/lighthouse/FL2/LH_FL2_LIM_20261111.html) |
+| Exercício `D5` (FL3) | Rede Normal | 64 | 2,0 | 4,4 | 40 | 2,7 | [json](../fase-4/evidencias/desempenho/lighthouse/FL3/LH_FL3_NOR_20261111.json)/[html](../fase-4/evidencias/desempenho/lighthouse/FL3/LH_FL3_NOR_20261111.html) |
+| Exercício `D5` (FL3) | Rede Limitada | 61 | 2,0 | 4,4 | 50 | 9,5 | [json](../fase-4/evidencias/desempenho/lighthouse/FL3/LH_FL3_LIM_20261111.json)/[html](../fase-4/evidencias/desempenho/lighthouse/FL3/LH_FL3_LIM_20261111.html) |
 
 *Tabela 11. Resultados da auditoria complementar Lighthouse. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
@@ -198,12 +200,12 @@ A Tabela 11 documenta os indicadores de laboratório gerados pela auditoria do L
 A Tabela 12 reúne todas as falhas, anomalias, picos anormais de carga ou ocorrências impeditivas identificadas durante os ensaios de desempenho.
 
 | ID Ocorrência | Bateria / Repetição | Etapa | Descrição detalhada do comportamento | Gravidade | Atribuição da causa | Impacto na repetição | Evidência (.png / .log) |
-|---|---|---|---|:---:|---|---|---|
-| `OC-DES-001` | | | | | | | |
-| `OC-DES-002` | | | | | | | |
-| `OC-DES-003` | | | | | | | |
-| `OC-DES-004` | | | | | | | |
-| `OC-DES-005` | | | | | | | |
+| ------------- | ------------------- | ----- | ------------------------------------ | :-------: | ------------------- | -------------------- | ----------------------- |
+| `OC-DES-001`  |                     |       |                                      |           |                     |                      |                         |
+| `OC-DES-002`  |                     |       |                                      |           |                     |                      |                         |
+| `OC-DES-003`  |                     |       |                                      |           |                     |                      |                         |
+| `OC-DES-004`  |                     |       |                                      |           |                     |                      |                         |
+| `OC-DES-005`  |                     |       |                                      |           |                     |                      |                         |
 
 *Tabela 12. Ocorrências registradas na avaliação de desempenho. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
@@ -217,30 +219,30 @@ Esta seção consolida os indicadores derivados das cinco repetições válidas 
 
 A Tabela 13 consolida a mediana e o P90 de cada etapa avaliada, convertendo o resultado na nota correspondente (0 a 3).
 
-| Fluxo | Etapa do roteiro | Condição de rede | Mediana observada (s) | P90 observado (s) | Faixa de julgamento atingida | Nota M1 (0–3) |
-|:---:|---|---|:---:|:---:|---|:---:|
-| `FL1` | E1.1 (Catálogo inicial) | Rede Normal | | | | |
-| `FL1` | E1.1 (Catálogo inicial) | Rede Limitada | | | | |
-| `FL1` | E1.2 (Grade do curso) | Rede Normal | | | | |
-| `FL1` | E1.2 (Grade do curso) | Rede Limitada | | | | |
-| `FL1` | E1.3 (Ambiente da aula) | Rede Normal | | | | |
-| `FL1` | E1.3 (Ambiente da aula) | Rede Limitada | | | | |
-| `FL2` | E2.1 (Interface do player) | Rede Normal | | | | |
-| `FL2` | E2.1 (Interface do player) | Rede Limitada | | | | |
-| `FL2` | E2.2 (Disparo do vídeo) | Rede Normal | | | | |
-| `FL2` | E2.2 (Disparo do vídeo) | Rede Limitada | | | | |
-| `FL2` | E2.3 (Legenda) | Rede Normal | | | | |
-| `FL2` | E2.3 (Legenda) | Rede Limitada | | | | |
-| `FL2` | E2.4 (Transcrição) | Rede Normal | | | | |
-| `FL2` | E2.4 (Transcrição) | Rede Limitada | | | | |
-| `FL3` | E3.1 (Abertura do exercício) | Rede Normal | | | | |
-| `FL3` | E3.1 (Abertura do exercício) | Rede Limitada | | | | |
-| `FL3` | E3.2 (Exibição da dica) | Rede Normal | | | | |
-| `FL3` | E3.2 (Exibição da dica) | Rede Limitada | | | | |
-| `FL3` | E3.3 (Envio e feedback) | Rede Normal | | | | |
-| `FL3` | E3.3 (Envio e feedback) | Rede Limitada | | | | |
-| `FL3` | E3.4 (Próxima atividade) | Rede Normal | | | | |
-| `FL3` | E3.4 (Próxima atividade) | Rede Limitada | | | | |
+| Fluxo | Etapa do roteiro             | Condição de rede | Mediana observada (s) | P90 observado (s) | Faixa de julgamento atingida | Nota M1 (0–3) |
+| :---: | ---------------------------- | ---------------- | :-------------------: | :---------------: | ---------------------------- | :-----------: |
+| `FL1` | E1.1 (Catálogo inicial)      | Rede Normal      |                       |                   |                              |               |
+| `FL1` | E1.1 (Catálogo inicial)      | Rede Limitada    |                       |                   |                              |               |
+| `FL1` | E1.2 (Grade do curso)        | Rede Normal      |                       |                   |                              |               |
+| `FL1` | E1.2 (Grade do curso)        | Rede Limitada    |                       |                   |                              |               |
+| `FL1` | E1.3 (Ambiente da aula)      | Rede Normal      |                       |                   |                              |               |
+| `FL1` | E1.3 (Ambiente da aula)      | Rede Limitada    |                       |                   |                              |               |
+| `FL2` | E2.1 (Interface do player)   | Rede Normal      |                       |                   |                              |               |
+| `FL2` | E2.1 (Interface do player)   | Rede Limitada    |                       |                   |                              |               |
+| `FL2` | E2.2 (Disparo do vídeo)      | Rede Normal      |                       |                   |                              |               |
+| `FL2` | E2.2 (Disparo do vídeo)      | Rede Limitada    |                       |                   |                              |               |
+| `FL2` | E2.3 (Legenda)               | Rede Normal      |                       |                   |                              |               |
+| `FL2` | E2.3 (Legenda)               | Rede Limitada    |                       |                   |                              |               |
+| `FL2` | E2.4 (Transcrição)           | Rede Normal      |                       |                   |                              |               |
+| `FL2` | E2.4 (Transcrição)           | Rede Limitada    |                       |                   |                              |               |
+| `FL3` | E3.1 (Abertura do exercício) | Rede Normal      |                       |                   |                              |               |
+| `FL3` | E3.1 (Abertura do exercício) | Rede Limitada    |                       |                   |                              |               |
+| `FL3` | E3.2 (Exibição da dica)      | Rede Normal      |                       |                   |                              |               |
+| `FL3` | E3.2 (Exibição da dica)      | Rede Limitada    |                       |                   |                              |               |
+| `FL3` | E3.3 (Envio e feedback)      | Rede Normal      |                       |                   |                              |               |
+| `FL3` | E3.3 (Envio e feedback)      | Rede Limitada    |                       |                   |                              |               |
+| `FL3` | E3.4 (Próxima atividade)     | Rede Normal      |                       |                   |                              |               |
+| `FL3` | E3.4 (Próxima atividade)     | Rede Limitada    |                       |                   |                              |               |
 
 *Tabela 13. Consolidação estatística e notas de M1. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
@@ -249,13 +251,13 @@ A Tabela 13 consolida a mediana e o P90 de cada etapa avaliada, convertendo o re
 A Tabela 14 resume o índice de sucesso operacional obtido para cada fluxo e condição de rede.
 
 | Fluxo | Condição de rede | Tentativas elegíveis ($N$) | Tentativas concluídas ($C$) | Taxa $M2 = 100 \times C/N$ (%) | Ocorrência de bloqueio essencial? | Nota M2 (0–3) |
-|:---:|---|:---:|:---:|:---:|:---:|:---:|
-| `FL1` | Rede Normal | | | | | |
+| :--: | ---- | :--: | :---: | :--: | :--: | :--: |
+| `FL1` | Rede Normal | | | | |
 | `FL1` | Rede Limitada | | | | | |
 | `FL2` | Rede Normal | | | | | |
 | `FL2` | Rede Limitada | | | | | |
 | `FL3` | Rede Normal | | | | | |
-| `FL3` | Rede Limitada | | | | | |
+| `FL3` | Rede Limitada | | | | |
 | **Total** | **Geral consolidado** | | | | | |
 
 *Tabela 14. Consolidação da taxa de conclusão M2. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
@@ -265,13 +267,13 @@ A Tabela 14 resume o índice de sucesso operacional obtido para cada fluxo e con
 A Tabela 15 consolida a demanda média e os picos de processamento registrados.
 
 | Fluxo | Condição de rede | Média de CPU apurada (%) | Maior pico instantâneo (%) | Houve sobrecarga > 75%? | Nota M3 (0–3) |
-|:---:|---|:---:|:---:|:---:|:---:|
-| `FL1` | Rede Normal | | | | |
-| `FL1` | Rede Limitada | | | | |
-| `FL2` | Rede Normal | | | | |
-| `FL2` | Rede Limitada | | | | |
-| `FL3` | Rede Normal | | | | |
-| `FL3` | Rede Limitada | | | | |
+| :---: | ---------------- | :----------------------: | :------------------------: | :---------------------: | :-----------: |
+| `FL1` | Rede Normal      |                          |                            |                         |               |
+| `FL1` | Rede Limitada    |                          |                            |                         |               |
+| `FL2` | Rede Normal      |                          |                            |                         |               |
+| `FL2` | Rede Limitada    |                          |                            |                         |               |
+| `FL3` | Rede Normal      |                          |                            |                         |               |
+| `FL3` | Rede Limitada    |                          |                            |                         |               |
 
 *Tabela 15. Consolidação da utilização de CPU M3. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
@@ -280,13 +282,13 @@ A Tabela 15 consolida a demanda média e os picos de processamento registrados.
 A Tabela 16 consolida o maior pico individual de memória privada alocada nos processos da aba.
 
 | Fluxo | Condição de rede | Maior pico de memória $\max(\text{RAM}(t))$ (MiB) | Média dos picos (MiB) | Risco de esgotamento observado? | Nota M4 (0–3) |
-|:---:|---|:---:|:---:|:---:|:---:|
-| `FL1` | Rede Normal | | | | |
-| `FL1` | Rede Limitada | | | | |
-| `FL2` | Rede Normal | | | | |
-| `FL2` | Rede Limitada | | | | |
-| `FL3` | Rede Normal | | | | |
-| `FL3` | Rede Limitada | | | | |
+| :---: | ---------------- | :-----------------------------------------------: | :-------------------: | :-----------------------------: | :-----------: |
+| `FL1` | Rede Normal      |                                                   |                       |                                 |               |
+| `FL1` | Rede Limitada    |                                                   |                       |                                 |               |
+| `FL2` | Rede Normal      |                                                   |                       |                                 |               |
+| `FL2` | Rede Limitada    |                                                   |                       |                                 |               |
+| `FL3` | Rede Normal      |                                                   |                       |                                 |               |
+| `FL3` | Rede Limitada    |                                                   |                       |                                 |               |
 
 *Tabela 16. Consolidação do consumo de memória M4. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
@@ -295,13 +297,13 @@ A Tabela 16 consolida o maior pico individual de memória privada alocada nos pr
 A Tabela 17 consolida o tráfego médio e mediano de rede transmitido para a conclusão de cada fluxo padronizado.
 
 | Fluxo | Condição de rede | Volume mediano transferido (MiB) | Maior volume observado (MiB) | Orçamento ≤ 10 MiB respeitado? | Nota M5 (0–3) |
-|:---:|---|:---:|:---:|:---:|:---:|
-| `FL1` | Rede Normal | | | | |
-| `FL1` | Rede Limitada | | | | |
-| `FL2` | Rede Normal | | | | |
-| `FL2` | Rede Limitada | | | | |
-| `FL3` | Rede Normal | | | | |
-| `FL3` | Rede Limitada | | | | |
+| :---: | ---------------- | :------------------------------: | :--------------------------: | :----------------------------: | :-----------: |
+| `FL1` | Rede Normal      |                                  |                              |                                |               |
+| `FL1` | Rede Limitada    |                                  |                              |                                |               |
+| `FL2` | Rede Normal      |                                  |                              |                                |               |
+| `FL2` | Rede Limitada    |                                  |                              |                                |               |
+| `FL3` | Rede Normal      |                                  |                              |                                |               |
+| `FL3` | Rede Limitada    |                                  |                              |                                |               |
 
 *Tabela 17. Consolidação de dados transferidos M5. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
@@ -310,7 +312,7 @@ A Tabela 17 consolida o tráfego médio e mediano de rede transmitido para a con
 A Tabela 18 registra a classificação final de cada questão, hipótese e o atendimento global do objetivo `G1`.
 
 | Questão / Hipótese | Métricas de suporte | Estado formal | Justificativa com base nos dados consolidados |
-|---|---|---|---|
+| ------------------ | ------------------- | ------------- | --------------------------------------------- |
 | **Questão Q1** (Espera nas etapas) | M1, M2 | Atendida / Não atendida / Inconclusiva | |
 | **Hipótese H1** (Mediana ≤ 3 s e Conclusão ≥ 90%) | M1, M2 | Sustentada / Não sustentada / Inconclusiva | |
 | **Questão Q2** (Processamento disponível) | M3 | Atendida / Não atendida / Inconclusiva | |
@@ -328,8 +330,8 @@ A Tabela 18 registra a classificação final de cada questão, hipótese e o ate
 A Tabela 19 documenta a conversão dos achados no desfecho da decisão `D1` e orientações concretas para a coordenação da escola pública.
 
 | Desfecho para a Decisão `D1` | Recomendações e orientações práticas para a coordenação escolar |
-|---|---|
-| *A preencher na Fase 4* | *A preencher na Fase 4* |
+| ---------------------------- | --------------------------------------------------------------- |
+| *A preencher na Fase 4*      | *A preencher na Fase 4*                                         |
 
 *Tabela 19. Desfecho da decisão D1 e ações para o requisitante escolar. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
@@ -350,5 +352,6 @@ A Tabela 19 documenta a conversão dos achados no desfecho da decisão `D1` e or
 ## Histórico de versões
 
 | Versão | Data | Descrição | Responsável | Revisor |
-|:---:|:---:|---|---|---|
+| :----: | :--: | --------- | ----------- | ------- |
 | 1.0 | 08/11/2026 | Estruturação inicial das planilhas e formulários de registro para eficiência de desempenho (M1 a M5), sem resultados coletados. | [José Augusto](https://github.com/JAugustoM) | [Pedro Lucas](https://github.com/Pwdrinho) |
+| 1.1 | 11/11/2026 | Congelamento do ambiente de testes e realização dos testes sintéticos com Lighthouse | [José Augusto](https://github.com/JAugustoM) | |
