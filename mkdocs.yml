@@ -51,6 +51,8 @@ nav:
       - Métricas: fase-2/metricas.md
       - Critérios de julgamento: fase-2/criterios-julgamento.md
       - Gráfico GQM: fase-2/grafico-gqm.md
+  - Fase 3:
+      - Acessibilidade e apreensibilidade: fase-3/procedimentos-acessibilidade-apreensibilidade.md
   - Gestão:
       - Plano de medição: gestao/plano_de_medicao.md
       - Painel PSM/CID: gestao/horas_consolidadas.md
@@ -62,7 +64,7 @@ nav:
   - Artigo: gestao/artigo.md
 
 exclude_docs: |
-  fase-3/
+  fase-3/ambiente-de-testes.md
 
 plugins:
   - search:

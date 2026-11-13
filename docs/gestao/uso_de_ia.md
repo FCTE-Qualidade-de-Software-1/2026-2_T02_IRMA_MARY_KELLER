@@ -1,6 +1,6 @@
 # Uso de IA
 
-Versão 1.5
+Versão 1.6
 
 ## 1. Para que serve
 
@@ -37,6 +37,7 @@ Registre **no momento do uso**, não no fim do projeto: reconstruir o que foi fe
 | `2026-10-20` | [Pedro Lucas](https://github.com/Pwdrinho) | NotebookLm(gemini) | Utilizei como fonte de analise de consistência do plano de medição com a PSM/CID, para evitar refatoração maior que o necessário | [#12](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/12) | [Camila Cavalcante](https://github.com/CamilaSilvaC) | Foram conferidos os apontamentos contra o guia PSM/CID e a ISO/IEC/IEEE 15939, e só as inconsistências confirmadas nas fontes foram corrigidas no plano. |
 | `2026-11-06` | [Luisa de Souza](https://github.com/luisa12ll) | Claude Code (Claude Opus 5.5) | Código e script: automação do painel PSM/CID, com gráficos, diagrama do fluxo e conferência dos lançamentos | [#27](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/27), `assets/scripts/`, `assets/templates/horas_consolidadas.md.jinja` | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) | Foram conferidos os valores do painel com as issues e com as fórmulas do Plano de medição. O texto gerado foi descartado e o texto original da equipe foi mantido. |
 | `2026-11-07` | [Luisa de Souza](https://github.com/luisa12ll) | Claude Code (Claude Opus 5.5) | Revisão de texto: coerência entre páginas, links quebrados, numeração de tabelas, frases de pendência e erros de português | [#27](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/27), `docs/fase-1`, `docs/fase-2`, `docs/gestao` | [José Augusto](https://github.com/JAugustoM) | Foi conferida cada correção contra o Plano de medição, a WCAG 2.1 e os critérios de julgamento. Pontos que dependem de decisão da equipe não foram alterados. |
+| `2026-11-13` | [Luisa de Souza](https://github.com/luisa12ll) | Claude Code (Claude Opus 5.5) | Rascunho de texto: procedimentos de avaliação de acessibilidade e apreensibilidade da Fase 3 | [#26](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/26), `docs/fase-3/procedimentos-acessibilidade-apreensibilidade.md` | [Enzo Menali](https://github.com/menali17) | Foram conferidos os procedimentos contra as métricas M8 a M14, as hipóteses H7 a H11 e os critérios de julgamento da Fase 2, e os ambientes e fluxos contra o escopo da Fase 1. |
 ### 3.1 Regras
 
 - Nunca incorporar texto, figura ou tabela gerados sem revisão e reescrita pela equipe.
@@ -72,3 +73,4 @@ A última frase só deve permanecer se o registro a sustentar integralmente.
 | 1.3 | 20/10/2026 | Registro do apoio de IA na revisão do propósito, dos stakeholders e do recorte para o artigo | [Enzo Menali](https://github.com/menali17) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
 | 1.4 | 20/10/2026 | Registro do apoio de IA na estruturação da visão geral da Fase 1 | [Enzo Menali](https://github.com/menali17) | [Camila Cavalcante](https://github.com/CamilaSilvaC) |
 | 1.5 | 07/11/2026 | Registro do apoio de IA no tema da GitPage, no painel PSM/CID, na revisão de coerência e no README; remoção de anotações internas | [Luisa de Souza](https://github.com/luisa12ll) | [Pedro Lucas](https://github.com/Pwdrinho) |
+| 1.6 | 13/11/2026 | Registro do apoio de IA nos procedimentos de acessibilidade e apreensibilidade da Fase 3 | [Luisa de Souza](https://github.com/luisa12ll) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
