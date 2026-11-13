@@ -1,6 +1,6 @@
 # Procedimentos de avaliação de acessibilidade e apreensibilidade
 
-**Versão 1.0**
+**Versão 1.1**
 
 Este documento especifica como serão coletadas as métricas [`M8`](../fase-2/metricas.md#18-m8-execucao-por-teclado) a [`M14`](../fase-2/metricas.md#114-m14-tempo-de-conclusao-autonoma), que respondem às questões [`Q7`](../fase-2/questoes-hipoteses.md#51-q7-navegacao-por-teclado) a [`Q11`](../fase-2/questoes-hipoteses.md#55-q11-apreensibilidade) do objetivo [`G3`](../fase-2/objetivos.md#g3), adaptadas da ISO/IEC 25023:2016 [S2](#s2). Os procedimentos cobrem três frentes: inspeções automatizadas, testes manuais com tecnologias assistivas e testes com voluntários. A aplicação oficial ocorre na Fase 4; aqui ficam definidos os roteiros, os critérios de classificação e os instrumentos de coleta, de forma que qualquer integrante consiga repetir a avaliação nas mesmas condições.
 
@@ -19,18 +19,18 @@ A Tabela 1 resume cada procedimento, as métricas que alimenta e as condições 
 | Contraste e alto contraste | [`M11`](../fase-2/metricas.md#111-m11-conformidade-de-contraste) | Q10 / H10 | [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes), 1366 × 768 | Formulários F5 e F6 |
 | Testes com voluntários | [`M12`](../fase-2/metricas.md#112-m12-conclusao-autonoma-por-estudantes-novos), [`M13`](../fase-2/metricas.md#113-m13-taxa-de-erros-operacionais), [`M14`](../fase-2/metricas.md#114-m14-tempo-de-conclusao-autonoma) | Q11 / H11 | [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes) | Formulários F3 e F4 |
 
-*Tabela 1. Procedimentos de acessibilidade e apreensibilidade. Fonte: Elaborada por: [Luisa de Souza](https://github.com/luisa12ll)*
+*Tabela 1. Procedimentos de acessibilidade e apreensibilidade. Fonte: Elaborada por [Luísa de Souza](https://github.com/luisa12ll)*
 
 ## 2. Preparação comum
 
 Antes de qualquer sessão, o avaliador prepara o ambiente da mesma forma, para que diferenças nos resultados venham da plataforma e não da configuração do computador.
 
 1. Usar a conta de teste controlada pela equipe, a mesma em todas as sessões, conforme o [Escopo da avaliação](../fase-1/escopo-da-avaliacao.md#fluxos). A autenticação é feita antes do início da tarefa e não entra na medição.
-2. Abrir o navegador em um perfil sem extensões, com exceção das ferramentas de inspeção da seção 3, e limpar cache e cookies de sessões anteriores, mantendo apenas o login da conta de teste.
+2. Abrir o navegador em um perfil de teste sem extensões, com exceção das ferramentas de inspeção da seção 3. Se for necessário limpar dados de sessões anteriores, fazê-lo antes da autenticação. Após entrar na conta de teste, preservar cookies e demais dados da sessão até o fim das auditorias.
 3. Ajustar a resolução do sistema para 1366 × 768 em [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes) e registrar a resolução usada em [`A3`](../fase-1/escopo-da-avaliacao.md#ambientes) e [`A4`](../fase-1/escopo-da-avaliacao.md#ambientes).
 4. Manter o idioma da plataforma em português do Brasil e o zoom do navegador em 100%, exceto no teste de ampliação.
 5. Desativar notificações do sistema e fechar programas que não fazem parte do ensaio.
-6. Preencher o Formulário F7 com sistema operacional, navegador, tecnologia assistiva e respectivas versões, data e avaliador.
+6. Preencher o Formulário F7 com sistema operacional, navegador, tecnologia assistiva e respectivas versões, data, avaliador e conteúdo usado nas tarefas.
 
 Cada sessão recebe um identificador no formato `AC-AAAAMMDD-NN` (acessibilidade) ou `AP-AAAAMMDD-NN` (apreensibilidade), usado no nome de todas as evidências daquela sessão.
 
@@ -45,7 +45,7 @@ As inspeções automatizadas localizam rapidamente problemas técnicos verificá
 | Lighthouse [S3](#s3) | Painel do Chrome DevTools, categoria Acessibilidade, nos modos navegação e *snapshot* | Já vem no Chrome do ambiente [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes), não exige instalação e gera relatório exportável com pontuação de 0 a 100 | Visão geral da página: nomes acessíveis, atributos ARIA, estrutura de títulos, idioma, contraste e ordem de navegação sinalizada para revisão manual |
 | axe-core [S4](#s4) | Extensão axe DevTools no Chrome, com as regras marcadas como WCAG 2.0 e 2.1 níveis A e AA | Motor de regras aberto, usado como referência no mercado, que separa violações de itens que precisam de revisão humana | Lista detalhada por elemento, com seletor, regra violada, critério WCAG relacionado e impacto |
 
-*Tabela 2. Ferramentas de inspeção automatizada e finalidade. Fonte: Elaborada por: [Luisa de Souza](https://github.com/luisa12ll)*
+*Tabela 2. Ferramentas de inspeção automatizada e finalidade. Fonte: Elaborada por [Luísa de Souza](https://github.com/luisa12ll)*
 
 As duas ferramentas são complementares. O Lighthouse usa um subconjunto das regras do axe-core e resume o resultado em uma nota, útil para comparar páginas. O axe-core lista cada ocorrência com o elemento afetado, o que permite reproduzir e registrar a barreira.
 
@@ -60,9 +60,9 @@ As páginas da Tabela 3 cobrem as etapas dos fluxos [`FL1`](../fase-1/escopo-da-
 | P3 | Página da unidade com a lista de aulas | [`FL1`](../fase-1/escopo-da-avaliacao.md#fluxos) | Navegação |
 | P4 | Página da videoaula com o reprodutor carregado | [`FL2`](../fase-1/escopo-da-avaliacao.md#fluxos) | Navegação |
 | P5 | Página do exercício antes da resposta | [`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos) | Navegação |
-| P6 | Exercício com dica aberta e retorno da resposta exibido | [`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos) | *Snapshot* |
+| P6 | Exercício com retorno da resposta exibido e dica aberta quando disponível | [`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos) | *Snapshot* |
 
-*Tabela 3. Páginas e estados submetidos à inspeção automatizada. Fonte: Elaborada por: [Luisa de Souza](https://github.com/luisa12ll)*
+*Tabela 3. Páginas e estados submetidos à inspeção automatizada. Fonte: Elaborada por [Luísa de Souza](https://github.com/luisa12ll)*
 
 O curso, a unidade, a videoaula e o exercício são os mesmos das tarefas da seção 4.1, para que os achados automatizados possam ser confrontados com os testes manuais.
 
@@ -70,10 +70,10 @@ O curso, a unidade, a videoaula e o exercício são os mesmos das tarefas da se�
 
 1. Preparar o ambiente [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes) conforme a seção 2.
 2. Abrir a página P1 e aguardar o carregamento completo.
-3. No Lighthouse, selecionar apenas a categoria Acessibilidade, dispositivo **Computador** e o modo indicado na Tabela 3; executar a auditoria e exportar o relatório em HTML e JSON.
+3. No Lighthouse, selecionar apenas a categoria Acessibilidade, dispositivo **Computador** e o modo indicado na Tabela 3. Desativar **Clear storage** para preservar a sessão autenticada e registrar essa configuração no Formulário F7. Executar a auditoria e exportar o relatório em HTML e JSON.
 4. Na mesma página, executar a varredura completa do axe DevTools e exportar o resultado em JSON ou CSV.
 5. Fazer uma captura de tela inteira da página no estado auditado.
-6. Repetir os passos 2 a 5 para P2 a P6. Para P6, abrir a dica e enviar uma resposta antes de executar o Lighthouse em modo *snapshot* e a varredura do axe.
+6. Repetir a auditoria para P2 a P5 nas respectivas páginas. Para P6, abrir a dica quando disponível e enviar a resposta de teste definida após o piloto antes de executar o Lighthouse em modo *snapshot* e a varredura do axe.
 7. Executar a sequência duas vezes no mesmo dia. Se a pontuação do Lighthouse variar mais de 5 pontos entre as execuções de uma página, executar uma terceira vez e registrar as três.
 
 ### 3.4 Evidências
@@ -96,12 +96,12 @@ Os testes manuais usam três tarefas fixas, uma por fluxo, descritas na Tabela 4
 | Tarefa | Fluxo | Etapas | Estado de conclusão |
 |---|---|---|---|
 | T1 | [`FL1`](../fase-1/escopo-da-avaliacao.md#fluxos) | A partir da página inicial, localizar o curso de Matemática do 6º ano, abrir o curso e abrir a primeira unidade | Lista de aulas da primeira unidade exibida |
-| T2 | [`FL2`](../fase-1/escopo-da-avaliacao.md#fluxos) | Na primeira unidade, abrir a primeira videoaula, iniciar a reprodução, pausar e ativar a legenda ou a transcrição, quando disponível | Vídeo pausado e legenda ou transcrição ativa |
-| T3 | [`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos) | Abrir o primeiro exercício da unidade, solicitar uma dica, informar uma resposta e enviá-la | Retorno da plataforma sobre a resposta exibido |
+| T2 | [`FL2`](../fase-1/escopo-da-avaliacao.md#fluxos) | Na unidade selecionada, abrir a videoaula definida após o piloto, iniciar a reprodução, pausar e ativar a legenda ou a transcrição, quando disponível | Vídeo pausado; legenda ou transcrição ativada quando disponível |
+| T3 | [`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos) | Abrir o exercício definido após o piloto, solicitar uma dica quando disponível, informar a resposta de teste do cartão e enviá-la | Retorno da plataforma sobre a resposta exibido |
 
-*Tabela 4. Tarefas de referência dos testes manuais. Fonte: Elaborada por: [Luisa de Souza](https://github.com/luisa12ll)*
+*Tabela 4. Tarefas de referência dos testes manuais. Fonte: Elaborada por [Luísa de Souza](https://github.com/luisa12ll)*
 
-A verificação piloto da seção 7 confirma que o caminho de cada tarefa está disponível na conta de teste. Se a plataforma alterar o conteúdo entre o piloto e a coleta, a tarefa é substituída por uma equivalente no mesmo fluxo e a troca é registrada no Formulário F7.
+A verificação piloto da seção 7 confirma os caminhos e fixa as URLs do curso, da unidade, da videoaula e do exercício, além da resposta de teste de T3 e da disponibilidade de legenda, transcrição e dica. Registrar esses dados no Formulário F7 e usar o mesmo cartão de tarefas em todas as sessões oficiais. A ausência de recurso opcional é registrada como `não aplicável` e não como falha da interface. Se o conteúdo mudar durante a coleta, suspender a tarefa afetada até definir um substituto equivalente e registrar a mudança; não misturar resultados obtidos com versões diferentes do cartão sem discutir a comparabilidade.
 
 ### 4.2 Classificação do resultado
 
@@ -115,7 +115,7 @@ Cada combinação de tarefa e condição recebe uma das classificações da Tabe
 | Impedimento | Uma barreira da plataforma bloqueia uma etapa essencial, como armadilha de foco ou controle sem acesso pelo recurso avaliado | Conta apenas em `N` e aciona a regra de bloqueio dos [critérios de julgamento](../fase-2/criterios-julgamento.md#5-regra-de-julgamento) |
 | Execução inválida | Falha que não tem relação com a acessibilidade, como queda da internet, erro do servidor ou erro de configuração do avaliador | Não entra no cálculo; a combinação é repetida uma vez e, se falhar de novo, é registrada como inconclusiva |
 
-*Tabela 5. Classificação do resultado de cada combinação. Fonte: Elaborada por: [Luisa de Souza](https://github.com/luisa12ll)*
+*Tabela 5. Classificação do resultado de cada combinação. Fonte: Elaborada por [Luísa de Souza](https://github.com/luisa12ll)*
 
 Uma etapa é essencial quando, sem ela, a tarefa não atinge o estado de conclusão da Tabela 4.
 
@@ -146,7 +146,7 @@ Uma etapa é essencial quando, sem ela, a tarefa não atinge o estado de conclus
 | [`A3`](../fase-1/escopo-da-avaliacao.md#ambientes) | VoiceOver [S7](#s7) | Apple Safari | VO (Control+Option) com setas para percorrer, VO+U para o rotor, VO+Espaço para acionar |
 | [`A4`](../fase-1/escopo-da-avaliacao.md#ambientes) | Orca [S8](#s8) | Mozilla Firefox | Navegação estrutural com H, K, B e F, Insert+Espaço para alternar modo de foco e de navegação |
 
-*Tabela 6. Combinações de leitor de tela e comandos de referência. Fonte: Elaborada por: [Luisa de Souza](https://github.com/luisa12ll)*
+*Tabela 6. Combinações de leitor de tela e comandos de referência. Fonte: Elaborada por [Luísa de Souza](https://github.com/luisa12ll)*
 
 1. Ativar o leitor de tela com voz em português e velocidade padrão, e registrar a versão no Formulário F7.
 2. Antes de iniciar, desligar o monitor ou cobrir a tela, para que a tarefa seja conduzida apenas pelo que é anunciado. Um segundo integrante acompanha a tela para registrar o que acontece, sem orientar o avaliador.
@@ -181,7 +181,7 @@ Uma etapa é essencial quando, sem ela, a tarefa não atinge o estado de conclus
 
 A [`M11`](../fase-2/metricas.md#111-m11-conformidade-de-contraste) tem duas partes, registradas separadamente, como define a [hipótese H10](../fase-2/questoes-hipoteses.md#54-q10-contraste-e-alto-contraste).
 
-**Parte 1: medição de contraste.** Em P1 a P6, o avaliador lista no Formulário F6 os textos e controles necessários às tarefas T1 a T3, como títulos, links do caminho, botões do reprodutor, enunciado, campo de resposta, botão de dica, botão de envio e mensagem de retorno.
+**Parte 1: medição de contraste.** Em P1 a P6, o avaliador lista no Formulário F6 os textos e imagens de texto necessários às tarefas T1 a T3, como títulos, rótulos de links e botões, enunciado, instruções e mensagens de retorno. Ícones e bordas sem texto podem ser registrados como achados adicionais, mas não entram no denominador de contraste textual.
 
 1. Medir a razão de contraste de cada elemento com o Colour Contrast Analyser [S9](#s9), usando o conta-gotas sobre a cor do texto e a cor de fundo.
 2. Confirmar com o resultado da regra de contraste do axe-core, quando houver.
@@ -189,7 +189,7 @@ A [`M11`](../fase-2/metricas.md#111-m11-conformidade-de-contraste) tem duas part
 4. Registrar se o elemento atende a 4,5:1 para texto comum e 3:1 para texto grande (WCAG 1.4.3, AA) e a 7:1 e 4,5:1 (WCAG 1.4.6, AAA).
 5. Marcar se o elemento é essencial para a tarefa.
 
-**Cálculo da parte 1:** `M11 = 100 × E_c/E_a`, em que `E_c` são os elementos conformes ao critério 1.4.3 e `E_a` são os elementos avaliados. A nota segue os [critérios técnicos](../fase-2/criterios-julgamento.md#4-criterios-tecnicos-de-acessibilidade): falha em elemento essencial leva a nota 0, mesmo com percentual alto.
+**Cálculo da parte 1:** registrar `E_a`, número de elementos textuais aplicáveis avaliados, `E_c(AA)`, número conforme ao critério 1.4.3, e `E_c(AAA)`, número conforme ao critério 1.4.6. Relatar separadamente `100 × E_c(AA)/E_a` e `100 × E_c(AAA)/E_a`. A nota segue os [critérios técnicos](../fase-2/criterios-julgamento.md#4-criterios-tecnicos-de-acessibilidade): o nível Alvo exige AA em todos os elementos aplicáveis; Excelente exige AAA em todos; falha em elemento essencial leva a nota 0, mesmo com percentual alto. Elementos cuja combinação real de cores não puder ser determinada são descritos à parte; se forem essenciais, o julgamento de M11 permanece inconclusivo até sua verificação.
 
 **Parte 2: alto contraste do Windows.** T1 a T3 em [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes), totalizando 3 combinações.
 
@@ -229,7 +229,7 @@ A amostra prevista no [Escopo da avaliação](../fase-1/escopo-da-avaliacao.md#a
 | Exclusão | Trabalhar com teste, design ou desenvolvimento de interfaces web |
 | Exclusão | Ter participado da verificação piloto |
 
-*Tabela 7. Critérios de seleção dos voluntários. Fonte: Elaborada por: [Luisa de Souza](https://github.com/luisa12ll)*
+*Tabela 7. Critérios de seleção dos voluntários. Fonte: Elaborada por [Luísa de Souza](https://github.com/luisa12ll)*
 
 O Formulário F2 aplica esses critérios antes do agendamento. Também registra faixa etária, frequência de uso de computador e plataformas de estudo on-line já usadas, apenas para descrever a amostra.
 
@@ -256,12 +256,12 @@ As tarefas dos voluntários reproduzem T1 a T3 da seção 4.1, mas são lidas em
 | Tarefa | Enunciado lido ao participante | Estado de conclusão | Limite de tempo |
 |---|---|---|---|
 | T1 | "Você quer estudar Matemática do 6º ano. Encontre esse curso e abra a primeira parte dele." | Lista de aulas da primeira unidade exibida | 5 minutos |
-| T2 | "Agora assista ao primeiro vídeo dessa parte. Comece o vídeo, pause e ligue as legendas." | Vídeo pausado e legenda ou transcrição ativa | 5 minutos |
-| T3 | "Faça o primeiro exercício dessa parte. Peça uma ajuda antes de responder e envie uma resposta." | Retorno da plataforma sobre a resposta exibido | 5 minutos |
+| T2 | "Agora abra a videoaula indicada no cartão. Comece o vídeo, pause e, se houver, ative a legenda ou a transcrição." | Vídeo pausado; legenda ou transcrição ativada quando disponível | 5 minutos |
+| T3 | "Abra o exercício indicado no cartão. Se houver uma dica, abra-a. Informe a resposta de teste escrita no cartão e envie." | Retorno da plataforma sobre a resposta exibido | 5 minutos |
 
-*Tabela 8. Tarefas padronizadas dos testes com voluntários. Fonte: Elaborada por: [Luisa de Souza](https://github.com/luisa12ll)*
+*Tabela 8. Tarefas padronizadas dos testes com voluntários. Fonte: Elaborada por [Luísa de Souza](https://github.com/luisa12ll)*
 
-A resposta do exercício não é avaliada: acertar ou errar a questão não altera a conclusão da tarefa. O limite de 5 minutos é a janela de observação; ele é maior que a faixa de 180 segundos da [`M14`](../fase-2/criterios-julgamento.md#3-tempo-e-consumo-de-recursos) para que o tempo das tentativas lentas também seja registrado.
+A resposta de teste é a mesma para todos os participantes e deve produzir um retorno observável no exercício escolhido. O participante não precisa resolver o conteúdo pedagógico: acertar ou errar não altera a conclusão da tarefa. O limite de 5 minutos é a janela de observação; ele é maior que a faixa de 180 segundos da [`M14`](../fase-2/criterios-julgamento.md#3-tempo-e-consumo-de-recursos) para que o tempo das tentativas lentas também seja registrado.
 
 ### 5.5 Instrução inicial padronizada
 
@@ -272,12 +272,12 @@ O condutor lê o texto abaixo, sem acrescentar explicações, antes da primeira 
 ### 5.6 Roteiro do avaliador
 
 1. Preparar o computador conforme a seção 2, com a conta de teste já autenticada e a página inicial aberta.
-2. Iniciar a gravação de tela, se autorizada, e anotar o horário no Formulário F3.
-3. Ler o termo de consentimento e registrar o aceite.
+2. Ler o termo de consentimento, esclarecer dúvidas e registrar o aceite e a autorização específica de gravação.
+3. Iniciar a gravação de tela somente se autorizada e anotar o horário no Formulário F3.
 4. Ler a instrução inicial da seção 5.5.
 5. Para cada tarefa, na ordem T1, T2 e T3:
     1. ler o enunciado da Tabela 8 e entregar o mesmo texto impresso;
-    2. iniciar o cronômetro quando o participante disser que vai começar ou tocar no mouse, o que acontecer primeiro;
+    2. iniciar o cronômetro imediatamente após terminar a leitura do enunciado;
     3. observar sem comentar e registrar erros e pedidos de ajuda no Formulário F3;
     4. parar o cronômetro quando a tela atingir o estado de conclusão, quando o participante desistir ou ao fim dos 5 minutos;
     5. se a tarefa não for concluída, levar a página ao ponto de início da próxima tarefa antes de seguir.
@@ -300,7 +300,7 @@ A Tabela 9 define os termos usados nos registros e nos cálculos.
 | Falha técnica | Problema da plataforma ou do ambiente, alheio ao participante | Página que não carrega; vídeo que não inicia por erro do servidor |
 | Desistência | O participante declara que não consegue continuar | "Não sei mais o que fazer" |
 
-*Tabela 9. Definições usadas nos testes com voluntários. Fonte: Elaborada por: [Luisa de Souza](https://github.com/luisa12ll)*
+*Tabela 9. Definições usadas nos testes com voluntários. Fonte: Elaborada por [Luísa de Souza](https://github.com/luisa12ll)*
 
 Uma tentativa é **elegível** quando não houve falha técnica que impedisse a tarefa. Tentativas com falha técnica impeditiva são registradas, mas saem de `N`. Errar a resposta do exercício não é erro operacional, porque mede conhecimento do conteúdo e não uso da interface.
 
@@ -338,12 +338,12 @@ A Tabela 10 liga cada procedimento às questões, hipóteses, métricas e crité
 | [`Q7`](../fase-2/questoes-hipoteses.md#51-q7-navegacao-por-teclado) | H7 | [`M8`](../fase-2/metricas.md#18-m8-execucao-por-teclado) | Seção 4.3 | Classificação das 9 combinações no F5 | `100 × A/N` | [Faixas percentuais](../fase-2/criterios-julgamento.md#2-metricas-percentuais) e regra de bloqueio |
 | [`Q8`](../fase-2/questoes-hipoteses.md#52-q8-utilizacao-com-leitor-de-tela) | H8 | [`M9`](../fase-2/metricas.md#19-m9-execucao-com-leitor-de-tela) | Seção 4.4 | Anúncios e classificação das 9 combinações no F5 | `100 × A/N` | [Faixas percentuais](../fase-2/criterios-julgamento.md#2-metricas-percentuais) e regra de bloqueio |
 | [`Q9`](../fase-2/questoes-hipoteses.md#53-q9-utilizacao-com-ampliacao) | H9 | [`M10`](../fase-2/metricas.md#110-m10-preservacao-com-ampliacao) | Seção 4.5 | Classificação das 3 combinações e capturas no F5 | `100 × A/N` | [Faixas percentuais](../fase-2/criterios-julgamento.md#2-metricas-percentuais) e [WCAG 1.4.4](../fase-2/criterios-julgamento.md#4-criterios-tecnicos-de-acessibilidade) |
-| [`Q10`](../fase-2/questoes-hipoteses.md#54-q10-contraste-e-alto-contraste) | H10 | [`M11`](../fase-2/metricas.md#111-m11-conformidade-de-contraste) | Seção 4.6 | Razões de contraste no F6 e tarefas em alto contraste no F5 | `100 × E_c/E_a` e conclusão em alto contraste à parte | [WCAG 1.4.3 e 1.4.6](../fase-2/criterios-julgamento.md#4-criterios-tecnicos-de-acessibilidade) |
+| [`Q10`](../fase-2/questoes-hipoteses.md#54-q10-contraste-e-alto-contraste) | H10 | [`M11`](../fase-2/metricas.md#111-m11-conformidade-de-contraste) | Seção 4.6 | Razões de contraste no F6 e tarefas em alto contraste no F5 | `100 × E_c(AA)/E_a` e `100 × E_c(AAA)/E_a`; alto contraste à parte | [WCAG 1.4.3 e 1.4.6](../fase-2/criterios-julgamento.md#4-criterios-tecnicos-de-acessibilidade) |
 | [`Q11`](../fase-2/questoes-hipoteses.md#55-q11-apreensibilidade) | H11 | [`M12`](../fase-2/metricas.md#112-m12-conclusao-autonoma-por-estudantes-novos) | Seção 5 | Conclusão e ajuda por tentativa no F3 | `100 × S/N` | [Faixas percentuais](../fase-2/criterios-julgamento.md#2-metricas-percentuais) |
 | [`Q11`](../fase-2/questoes-hipoteses.md#55-q11-apreensibilidade) | H11 | [`M13`](../fase-2/metricas.md#113-m13-taxa-de-erros-operacionais) | Seção 5 | Erros operacionais por tentativa no F3 | `100 × E/N` | [Faixas percentuais, menor é melhor](../fase-2/criterios-julgamento.md#2-metricas-percentuais) |
 | [`Q11`](../fase-2/questoes-hipoteses.md#55-q11-apreensibilidade) | H11 | [`M14`](../fase-2/metricas.md#114-m14-tempo-de-conclusao-autonoma) | Seção 5 | Tempos das conclusões autônomas no F3 | Mediana de `t_fim − t_início` | [Faixas de tempo](../fase-2/criterios-julgamento.md#3-tempo-e-consumo-de-recursos) |
 
-*Tabela 10. Rastreabilidade entre procedimentos e especificação da Fase 2. Fonte: Elaborada por: [Luisa de Souza](https://github.com/luisa12ll)*
+*Tabela 10. Rastreabilidade entre procedimentos e especificação da Fase 2. Fonte: Elaborada por [Luísa de Souza](https://github.com/luisa12ll)*
 
 ## 7. Verificação piloto
 
@@ -366,7 +366,7 @@ Os formulários abaixo são preenchidos na Fase 4. Cada um vira uma planilha com
 |---|---|---|---|---|---|---|---|---|
 | | | | | | | | | |
 
-*Tabela 11. Formulário F1, registro da inspeção automatizada. Fonte: Elaborada por: [Luisa de Souza](https://github.com/luisa12ll)*
+*Tabela 11. Formulário F1, registro da inspeção automatizada. Fonte: Elaborada por [Luísa de Souza](https://github.com/luisa12ll)*
 
 ### F2. Triagem e consentimento dos voluntários
 
@@ -380,7 +380,7 @@ Os formulários abaixo são preenchidos na Fase 4. Cada um vira uma planilha com
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | | | | | | | | | | | | | |
 
-*Tabela 12. Formulário F3, registro por tarefa dos voluntários. Fonte: Elaborada por: [Luisa de Souza](https://github.com/luisa12ll)*
+*Tabela 12. Formulário F3, registro por tarefa dos voluntários. Fonte: Elaborada por [Luísa de Souza](https://github.com/luisa12ll)*
 
 ### F4. Percepção ao final da sessão
 
@@ -396,7 +396,7 @@ As respostas descrevem a experiência relatada e não entram no cálculo de M12 
 |---|---|---|---|---|---|---|---|---|---|
 | | | | | | | | | | |
 
-*Tabela 13. Formulário F5, registro dos testes manuais de acessibilidade. Fonte: Elaborada por: [Luisa de Souza](https://github.com/luisa12ll)*
+*Tabela 13. Formulário F5, registro dos testes manuais de acessibilidade. Fonte: Elaborada por [Luísa de Souza](https://github.com/luisa12ll)*
 
 ### F6. Checklist de contraste
 
@@ -404,15 +404,15 @@ As respostas descrevem a experiência relatada e não entram no cálculo de M12 
 |---|---|---|---|---|---|---|---|---|---|
 | | | | | | | | | | |
 
-*Tabela 14. Formulário F6, checklist de contraste. Fonte: Elaborada por: [Luisa de Souza](https://github.com/luisa12ll)*
+*Tabela 14. Formulário F6, checklist de contraste. Fonte: Elaborada por [Luísa de Souza](https://github.com/luisa12ll)*
 
 ### F7. Registro do ambiente da sessão
 
-| Sessão | Data | Avaliador | Ambiente | Sistema operacional e versão | Navegador e versão | Tecnologia assistiva e versão | Resolução | Zoom ou tema de contraste | Alterações de conteúdo das tarefas |
+| Sessão | Data | Avaliador | Ambiente | Sistema operacional e versão | Navegador e versão | Tecnologia assistiva e versão | Resolução | Zoom, tema de contraste e Clear storage | Conteúdo e URLs, resposta T3, recursos opcionais e alterações |
 |---|---|---|---|---|---|---|---|---|---|
 | | | | | | | | | | |
 
-*Tabela 15. Formulário F7, registro do ambiente da sessão. Fonte: Elaborada por: [Luisa de Souza](https://github.com/luisa12ll)*
+*Tabela 15. Formulário F7, registro do ambiente da sessão. Fonte: Elaborada por [Luísa de Souza](https://github.com/luisa12ll)*
 
 ## Referências
 
@@ -426,7 +426,7 @@ As respostas descrevem a experiência relatada e não entram no cálculo de M12 
 
 <a id="s3"></a>
 
-> [S3] GOOGLE. **Lighthouse accessibility score**. Chrome for Developers. Disponível em: <https://developer.chrome.com/docs/lighthouse/accessibility/scoring>. Acesso em: 13 nov. 2026.
+> [S3] GOOGLE. **Lighthouse: Optimize your website**. Chrome for Developers. Disponível em: <https://developer.chrome.com/docs/devtools/lighthouse/>. Acesso em: 13 nov. 2026.
 
 <a id="s4"></a>
 
@@ -461,3 +461,6 @@ As respostas descrevem a experiência relatada e não entram no cálculo de M12 
 | Versão | Data | Descrição | Responsável | Revisor |
 |---|---|---|---|---|
 | 1.0 | 13/11/2026 | Elaboração dos procedimentos de inspeção automatizada, testes manuais de acessibilidade e testes com voluntários, com rastreabilidade para M8 a M14 | [Luisa de Souza](https://github.com/luisa12ll) | [Enzo Menali](https://github.com/menali17) |
+| 1.1 | 13/11/2026 | Revisão do consentimento, tarefas, auditorias, contraste e fontes das tabelas | [Enzo Menali](https://github.com/menali17) |  [Luisa de Souza](https://github.com/luisa12ll) |
+
+*Tabela 16. Histórico de versões do protocolo. Fonte: Elaborada por [Luísa de Souza](https://github.com/luisa12ll).*
