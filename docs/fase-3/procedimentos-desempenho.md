@@ -1,6 +1,6 @@
 # Procedimentos de avaliação de eficiência de desempenho (M1 a M5)
 
-**Versão 1.0**
+**Versão 1.1**
 
 Este artefato define e padroniza os métodos, instrumentos, roteiros e critérios para a avaliação da **eficiência de desempenho** da versão web da Khan Academy em computadores. A eficiência de desempenho, englobando as subcaracterísticas de **comportamento temporal** e **utilização de recursos** no modelo da ISO/IEC 25010:2011 [S1](#s1), foi estabelecida como prioridade máxima na [Fase 1](../fase-1/index.md) [S4](#s4), respondendo aos requisitos [`R1`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) e [`R2`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) e subsidiando a decisão [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante).
 
@@ -51,11 +51,11 @@ A Tabela 2 apresenta a cadeia de rastreabilidade completa, conectando os requisi
 
 | Requisito (Fase 1) | Objetivo | Questão | Hipótese | Métrica | Critério de julgamento (Fase 2) | Procedimento | Registro |
 |---|---|---|---|---|---|---|---|
-| [`R1`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) / [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante) | [`G1`](../fase-2/objetivos.md#g1) | [`Q1`](../fase-2/questoes-hipoteses.md#31-q1-comportamento-temporal) — Espera nas etapas dos fluxos | H1 | [`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa) — Tempo observável por etapa | Mediana ≤ 1 s (Exc.), 1–3 s (Alvo), 3–10 s (Mín.), > 10 s (Inaceitável) | [Seção 4.1](#41-procedimento-de-m1-tempo-observavel-por-etapa) e [Seção 5](#5-roteiros-passo-a-passo-com-marcos-temporais) | [Registro M1](registro-desempenho.md#registro-m1) |
-| [`R1`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) / [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante) | [`G1`](../fase-2/objetivos.md#g1) | [`Q1`](../fase-2/questoes-hipoteses.md#31-q1-comportamento-temporal) — Conclusão sem bloqueios | H1 | [`M2`](../fase-2/metricas.md#12-m2-taxa-de-conclusao-dos-fluxos) — Taxa de conclusão das tentativas | 100% (Exc.), 90–100% (Alvo), 75–90% (Mín.), < 75% (Inaceitável) | [Seção 4.2](#42-procedimento-de-m2-taxa-de-conclusao-das-tentativas) | [Registro M2](registro-desempenho.md#registro-m2) |
-| [`R2`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) / [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante) | [`G1`](../fase-2/objetivos.md#g1) | [`Q2`](../fase-2/questoes-hipoteses.md#32-q2-utilizacao-de-cpu) — Processamento disponível | H2 | [`M3`](../fase-2/metricas.md#13-m3-utilizacao-de-cpu) — Utilização de CPU | Média ≤ 25% (Exc.), 25–50% (Alvo), 50–75% (Mín.), > 75% (Inaceitável) | [Seção 4.3](#43-procedimento-de-m3-utilizacao-de-cpu) | [Registro M3](registro-desempenho.md#registro-m3) |
-| [`R2`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) / [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante) | [`G1`](../fase-2/objetivos.md#g1) | [`Q3`](../fase-2/questoes-hipoteses.md#33-q3-utilizacao-de-memoria) — Memória disponível | H3 | [`M4`](../fase-2/metricas.md#14-m4-pico-de-memoria) — Pico de memória | Pico ≤ 512 MiB (Exc.), 512–1024 MiB (Alvo), 1024–2048 MiB (Mín.), > 2048 MiB (Inaceitável) | [Seção 4.4](#44-procedimento-de-m4-pico-de-memoria) | [Registro M4](registro-desempenho.md#registro-m4) |
-| [`R2`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) / [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante) | [`G1`](../fase-2/objetivos.md#g1) | [`Q4`](../fase-2/questoes-hipoteses.md#34-q4-consumo-de-dados-de-rede) — Orçamento de acesso | H4 | [`M5`](../fase-2/metricas.md#15-m5-dados-transferidos) — Dados transferidos | Tráfego ≤ 5 MiB (Exc.), 5–10 MiB (Alvo), 10–20 MiB (Mín.), > 20 MiB (Inaceitável) | [Seção 4.5](#45-procedimento-de-m5-dados-transferidos) | [Registro M5](registro-desempenho.md#registro-m5) |
+| [`R1`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) / [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante) | [`G1`](../fase-2/objetivos.md#g1) | [`Q1`](../fase-2/questoes-hipoteses.md#31-q1-comportamento-temporal) — Espera nas etapas dos fluxos | H1 | [`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa) — Tempo observável por etapa | Mediana ≤ 1 s (Exc.), 1–3 s (Alvo), 3–10 s (Mín.), > 10 s (Inaceitável) | [Seção 4.1](#41-procedimento-de-m1-tempo-observavel-por-etapa) e [Seção 5](#5-roteiros-passo-a-passo-com-marcos-temporais) | [Registro M1](../fase-4/registro-desempenho.md#registro-m1) |
+| [`R1`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) / [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante) | [`G1`](../fase-2/objetivos.md#g1) | [`Q1`](../fase-2/questoes-hipoteses.md#31-q1-comportamento-temporal) — Conclusão sem bloqueios | H1 | [`M2`](../fase-2/metricas.md#12-m2-taxa-de-conclusao-dos-fluxos) — Taxa de conclusão das tentativas | 100% (Exc.), 90–100% (Alvo), 75–90% (Mín.), < 75% (Inaceitável) | [Seção 4.2](#42-procedimento-de-m2-taxa-de-conclusao-das-tentativas) | [Registro M2](../fase-4/registro-desempenho.md#registro-m2) |
+| [`R2`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) / [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante) | [`G1`](../fase-2/objetivos.md#g1) | [`Q2`](../fase-2/questoes-hipoteses.md#32-q2-utilizacao-de-cpu) — Processamento disponível | H2 | [`M3`](../fase-2/metricas.md#13-m3-utilizacao-de-cpu) — Utilização de CPU | Média ≤ 25% (Exc.), 25–50% (Alvo), 50–75% (Mín.), > 75% (Inaceitável) | [Seção 4.3](#43-procedimento-de-m3-utilizacao-de-cpu) | [Registro M3](../fase-4/registro-desempenho.md#registro-m3) |
+| [`R2`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) / [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante) | [`G1`](../fase-2/objetivos.md#g1) | [`Q3`](../fase-2/questoes-hipoteses.md#33-q3-utilizacao-de-memoria) — Memória disponível | H3 | [`M4`](../fase-2/metricas.md#14-m4-pico-de-memoria) — Pico de memória | Pico ≤ 512 MiB (Exc.), 512–1024 MiB (Alvo), 1024–2048 MiB (Mín.), > 2048 MiB (Inaceitável) | [Seção 4.4](#44-procedimento-de-m4-pico-de-memoria) | [Registro M4](../fase-4/registro-desempenho.md#registro-m4) |
+| [`R2`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) / [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante) | [`G1`](../fase-2/objetivos.md#g1) | [`Q4`](../fase-2/questoes-hipoteses.md#34-q4-consumo-de-dados-de-rede) — Orçamento de acesso | H4 | [`M5`](../fase-2/metricas.md#15-m5-dados-transferidos) — Dados transferidos | Tráfego ≤ 5 MiB (Exc.), 5–10 MiB (Alvo), 10–20 MiB (Mín.), > 20 MiB (Inaceitável) | [Seção 4.5](#45-procedimento-de-m5-dados-transferidos) | [Registro M5](../fase-4/registro-desempenho.md#registro-m5) |
 
 *Tabela 2. Cadeia de rastreabilidade R1/R2 → G1 → Q1–Q4 → H1–H4 → M1–M5 → Procedimentos. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
@@ -116,7 +116,7 @@ Para assegurar precisão e repetibilidade, são utilizados os seguintes instrume
 
 ### 3.4 Preparação do ambiente (Checklist PD-1 a PD-10)
 
-Antes de iniciar qualquer rodada de medições, a equipe executa as verificações da Tabela 5. Todas as verificações são registradas na tabela de preparação do [registro de execuções de desempenho](registro-desempenho.md#registro-preparacao).
+Antes de iniciar qualquer rodada de medições, a equipe executa as verificações da Tabela 5. Todas as verificações são registradas na tabela de preparação do [registro de execuções de desempenho](../fase-4/registro-desempenho.md#registro-preparacao).
 
 | ID | Verificação de preparação | Critério de conformidade |
 |---|---|---|
@@ -142,7 +142,7 @@ Para garantir que todas as execuções de desempenho sejam rigorosamente equival
 | `D1` | Disciplina | Disciplina curricular ativa na versão brasileira da Khan Academy | *a congelar* |
 | `D2` | Curso | Curso estruturado com lista completa de unidades e lições | *a congelar* |
 | `D3` | Unidade e aula | Aula padronizada contendo a videoaula de teste | *a congelar* |
-| `D4` | Videoaula | Vídeo padronizado com duração conhecida, legendas e transcrição disponíveis | *a congelar (URL)* |
+| `D4` | Videoaula | Vídeo padronizado com duração conhecida e transcrição disponível (sem suporte a legendas nativas) | *a congelar (URL)* |
 | `D5` | Exercício | Lista de exercícios com suporte a dicas e verificação imediata | *a congelar (URL)* |
 | `D6` | Conta de teste | Conta de usuário sem dados pessoais, com histórico compatível | *a congelar* |
 
@@ -255,8 +255,7 @@ O fluxo `FL2` avalia o comportamento temporal e os recursos demandados pelo repr
 |:---:|---|---|---|---|
 | **E2.1** | Carregamento da página da videoaula `D4` | Clique no link da videoaula `D4` | Reprodutor de vídeo renderizado com controles disponíveis | Tempo de montagem da interface do player de vídeo |
 | **E2.2** | Disparo da reprodução da videoaula | Clique no botão "Play" / Iniciar reprodução | Primeiro *frame* de vídeo em movimento e áudio/tempo correndo | Tempo de *buffer* e início efetivo da reprodução (*excluída a duração do vídeo*) |
-| **E2.3** | Acionamento da legenda | Clique no botão de alternar legendas (*CC*) | Exibição visual das legendas sobre o vídeo | Tempo de requisição e renderização da faixa de legenda |
-| **E2.4** | Abertura da transcrição | Clique no controle de transcrição da aula | Exibição completa do painel textual da transcrição | Tempo de renderização do texto sincronizado da aula |
+| **E2.3** | Abertura da transcrição | Clique no controle de transcrição da aula | Exibição completa do painel textual da transcrição | Tempo de renderização do texto sincronizado da aula |
 
 *Tabela 8. Roteiro passo a passo e marcos de medição para FL2. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
@@ -270,13 +269,14 @@ O fluxo `FL3` avalia a agilidade da plataforma na prestação de auxílio pedag�
 | Etapa | Ação do avaliador | Marco de início (`t_início`) | Marco de término (`t_fim`) | O que se observa em M1 |
 |:---:|---|---|---|---|
 | **E3.1** | Carregamento da página do exercício `D5` | Clique no link do exercício `D5` | Enunciado e área de resposta renderizados e operáveis | Tempo de carregamento da interface interativa de exercícios |
-| **E3.2** | Solicitação de dica pedagógica | Clique no botão "Obter dica" / "Ver passo a passo" | Apresentação visual completa do texto/imagem da dica | Tempo de resposta para recuperação e exibição da dica |
+| **E3.2** | Exibição de dica pedagógica | Inserção de texto/código na caixa de edição da questão | Apresentação visual automática da dica pela interface | Tempo de resposta para processamento da entrada e exibição automática da dica |
 | **E3.3** | Envio de resposta preenchida | Clique no botão "Verificar" / "Enviar resposta" | Exibição visual do retorno da plataforma (correto ou tente novamente) | Tempo de validação e feedback do exercício (*excluído o tempo de cálculo do aluno*) |
 | **E3.4** | Acionamento de continuidade | Clique no botão "Próxima questão" ou "Continuar" | Limpeza e apresentação do exercício seguinte (saída de `FL3`) | Tempo de transição de estado da atividade |
 
 *Tabela 9. Roteiro passo a passo e marcos de medição para FL3. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
 > [!NOTE]
+> No desafio prático de programação `D5`, o mecanismo interativo exibe a dica pedagógica automaticamente assim que um comando ou texto preliminar é inserido na caixa de texto do editor, sem necessidade de clicar em botão específico.
 > Para o cálculo de M1 na etapa E3.3, o tempo de digitação ou resolução mental do problema pelo avaliador é mantido fora da medição: o cronômetro inicia estritamente no clique de envio e cessa no feedback retornado pela interface.
 
 ## 6. Protocolo experimental (Aquecimento e repetições)
@@ -355,21 +355,21 @@ Para garantir a integridade dos dados coletados, toda anomalia observada é clas
 
 ## 8. Formulários e modelos de registro
 
-Todos os dados brutos e consolidados da avaliação de desempenho são registrados no documento [Registro de execuções de eficiência de desempenho (M1 a M5)](registro-desempenho.md) [S12](#s12). 
+Todos os dados brutos e consolidados da avaliação de desempenho são registrados no documento [Registro de execuções de eficiência de desempenho (M1 a M5)](../fase-4/registro-desempenho.md) [S12](#s12). 
 
 A Tabela 11 apresenta a organização das seções de registro.
 
 | Seção do registro | Descrição e conteúdo | Responsável pelo preenchimento |
 |---|---|---|
-| [1. Preparação de A1](registro-desempenho.md#registro-preparacao) | Dados de hardware, versões congeladas e checklist `PD-1` a `PD-10` | Avaliador / Executor |
-| [2. Dados congelados](registro-desempenho.md#registro-dados) | Valores e URLs fixadas de `D1` a `D6` | Avaliador / Executor |
-| [3. Condições de rede](registro-desempenho.md#registro-rede) | Registro de calibração da rede Normal e parâmetros do Throttling da rede Limitada | Avaliador / Executor |
-| [4. Execuções de FL1](registro-desempenho.md#registro-fl1) | Registros brutos das etapas E1.1–E1.3, M1 a M5, aquecimento e 5 repetições (Normal e Limitada) | Avaliador e Observador |
-| [5. Execuções de FL2](registro-desempenho.md#registro-fl2) | Registros brutos das etapas E2.1–E2.4, M1 a M5, aquecimento e 5 repetições (Normal e Limitada) | Avaliador e Observador |
-| [6. Execuções de FL3](registro-desempenho.md#registro-fl3) | Registros brutos das etapas E3.1–E3.4, M1 a M5, aquecimento e 5 repetições (Normal e Limitada) | Avaliador e Observador |
-| [7. Auditoria Lighthouse](registro-desempenho.md#registro-lighthouse) | Indicadores de laboratório (Performance Score, FCP, LCP, TBT, Speed Index) para `D2`, `D4` e `D5` | Avaliador / Observador |
-| [8. Ocorrências](registro-desempenho.md#registro-ocorrencias) | Registro detalhado de qualquer falha ou anomalia (`OC-DES-001`, ...) | Avaliador / Observador |
-| [9. Resumo e julgamento](registro-desempenho.md#registro-resumo) | Consolidação estatística (medianas, médias, picos, taxas de conclusão), notas de 0 a 3 e desfecho de D1 | Equipe avaliadora |
+| [1. Preparação de A1](../fase-4/registro-desempenho.md#registro-preparacao) | Dados de hardware, versões congeladas e checklist `PD-1` a `PD-10` | Avaliador / Executor |
+| [2. Dados congelados](../fase-4/registro-desempenho.md#registro-dados) | Valores e URLs fixadas de `D1` a `D6` | Avaliador / Executor |
+| [3. Condições de rede](../fase-4/registro-desempenho.md#registro-rede) | Registro de calibração da rede Normal e parâmetros do Throttling da rede Limitada | Avaliador / Executor |
+| [4. Execuções de FL1](../fase-4/registro-desempenho.md#registro-fl1) | Registros brutos das etapas E1.1–E1.3, M1 a M5, aquecimento e 5 repetições (Normal e Limitada) | Avaliador e Observador |
+| [5. Execuções de FL2](../fase-4/registro-desempenho.md#registro-fl2) | Registros brutos das etapas E2.1–E2.3, M1 a M5, aquecimento e 5 repetições (Normal e Limitada) | Avaliador e Observador |
+| [6. Execuções de FL3](../fase-4/registro-desempenho.md#registro-fl3) | Registros brutos das etapas E3.1–E3.4, M1 a M5, aquecimento e 5 repetições (Normal e Limitada) | Avaliador e Observador |
+| [7. Auditoria Lighthouse](../fase-4/registro-desempenho.md#registro-lighthouse) | Indicadores de laboratório (Performance Score, FCP, LCP, TBT, Speed Index) para `D2`, `D4` e `D5` | Avaliador / Observador |
+| [8. Ocorrências](../fase-4/registro-desempenho.md#registro-ocorrencias) | Registro detalhado de qualquer falha ou anomalia (`OC-DES-001`, ...) | Avaliador / Observador |
+| [9. Resumo e julgamento](../fase-4/registro-desempenho.md#registro-resumo) | Consolidação estatística (medianas, médias, picos, taxas de conclusão), notas de 0 a 3 e desfecho de D1 | Equipe avaliadora |
 
 *Tabela 11. Organização das seções do registro de execuções de desempenho. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
@@ -485,7 +485,7 @@ A Tabela 16 relaciona as tarefas e critérios de aceite de desempenho da issue #
 | Especificar execução de aquecimento e 5 repetições válidas | [Seção 6.1](#61-execucao-de-aquecimento-warm-up) e [Seção 6.2](#62-as-cinco-repeticoes-validas-consecutivas) |
 | Definir critérios de validade, sucesso, falha e interrupção | [Seção 7](#7-validade-sucesso-falha-e-interrupcao) |
 | Roteiros passo a passo por grupo de testes | [Seção 5](#5-roteiros-passo-a-passo-com-marcos-temporais) (Tabelas 7, 8 e 9) |
-| Formulários e modelos de registro | [Seção 8](#8-formularios-e-modelos-de-registro) e artefato [registro-desempenho.md](registro-desempenho.md) |
+| Formulários e modelos de registro | [Seção 8](#8-formularios-e-modelos-de-registro) e artefato [registro-desempenho.md](../fase-4/registro-desempenho.md) |
 | Rastreabilidade com Q1–Q4, H1–H4 e M1–M5 | [Seção 2](#2-rastreabilidade-com-as-fases-1-e-2) (Tabelas 2 e 3) e [Seção 9.3](#93-julgamento-das-questoes-q1-a-q4-e-hipoteses-h1-a-h4) |
 | Cálculo e interpretação conforme critérios de julgamento | [Seção 9.1](#91-formulas-e-consolidacao-estatistica) e [Seção 9.2](#92-conversao-em-notas-e-tabelas-de-julgamento) |
 | Consistência com o escopo da Fase 1 | [Seção 1](#1-escopo-e-principios-da-avaliacao-de-desempenho) e [Seção 9.5](#95-consistencia-metodologica-com-as-fases-1-e-2) |
@@ -502,7 +502,7 @@ A Tabela 17 detalha como os critérios de avaliação formal QSW da Fase 3 [S5](
 | `F3-C7` GitPage da equipe | Integração navegável na GitPage, hiperlinks estruturados com Fases 1, 2 e 3, ausência de ícones informais | Estrutura geral do documento |
 | `F3-C8` Consistência Fases 2 e 3 | Matriz de consistência demonstrando perfeita aderência às métricas, questões e limiares da Fase 2 | [Seção 9.5](#95-consistencia-metodologica-com-as-fases-1-e-2) (Tabela 14) |
 | `F4-C1` Obtenção das medidas | Procedimentos padronizados para execução fiel por qualquer avaliador na Fase 4 | [Seção 4](#4-procedimentos-especificos-por-metrica) e [Seção 5](#5-roteiros-passo-a-passo-com-marcos-temporais) |
-| `F4-C2` Registro e dados brutos | Modelos de planilhas em Markdown indexadas por repetição com vínculos de evidências (`.har`, capturas) | [Registro de desempenho](registro-desempenho.md) |
+| `F4-C2` Registro e dados brutos | Modelos de planilhas em Markdown indexadas por repetição com vínculos de evidências (`.har`, capturas) | [Registro de desempenho](../fase-4/registro-desempenho.md) |
 | `F4-C3` Análise estatística e GQM | Fórmulas explícitas de mediana, P90, média, pico e regras de julgamento de H1 a H4 | [Seção 9](#9-calculo-interpretacao-e-julgamento) |
 
 *Tabela 17. Contribuição deste artefato aos critérios de avaliação QSW. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
@@ -587,7 +587,7 @@ A Tabela 19 detalha a distribuição das atividades de eficiência de desempenho
 
 <a id="s12"></a>
 
-> [S12] Registro de execuções de eficiência de desempenho (M1 a M5) — Fase 3. Disponível em: [Registro de desempenho](registro-desempenho.md).
+> [S12] Registro de execuções de eficiência de desempenho (M1 a M5) — Fase 3. Disponível em: [Registro de desempenho](../fase-4/registro-desempenho.md).
 
 <a id="s13"></a>
 
@@ -598,3 +598,4 @@ A Tabela 19 detalha a distribuição das atividades de eficiência de desempenho
 | Versão | Data | Descrição | Responsável | Revisor |
 |:---:|:---:|---|---|---|
 | 1.0 | 08/11/2026 | Elaboração inicial dos procedimentos de eficiência de desempenho (M1 a M5), abrangendo os fluxos FL1 a FL3, métodos, instrumentos, perfis de rede, roteiros, critérios de validade e rastreabilidade total com as Fases 1 e 2. | [José Augusto](https://github.com/JAugustoM) | [Pedro Lucas](https://github.com/Pwdrinho) |
+| 1.1 | 13/11/2026 | Supressão da medida de legenda em FL2 (redefinindo E2.3 como abertura da transcrição em consonância com a massa D4) e ajuste do marco de temporização da dica automática em FL3 (E3.2). | [José Augusto](https://github.com/JAugustoM) | |

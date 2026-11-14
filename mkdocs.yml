@@ -55,6 +55,7 @@ nav:
       - Visão Geral: fase-3/index.md
       - Ambientes de Testes: fase-3/ambiente-de-testes.md
       - Procedimentos Avaliação Adaptabilidade: fase-3/procedimentos-adaptabilidade.md
+      - Procedimentos Avaliação Desempenho: fase-3/procedimentos-desempenho.md
       - Registro de Execução Adaptabilidade: fase-3/registro-adaptabilidade.md
   - Gestão:
       - Plano de medição: gestao/plano_de_medicao.md
@@ -65,9 +66,6 @@ nav:
       - Critérios Fase 1: criterios/fase1.md
       - Critérios Fase 2: criterios/fase2.md
   - Artigo: gestao/artigo.md
-
-exclude_docs: |
-  fase-3/
 
 plugins:
   - search:
