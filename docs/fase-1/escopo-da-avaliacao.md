@@ -64,7 +64,7 @@ A Tabela 2 define combinações com finalidade específica. A avaliação não e
 
 *Tabela 2. Matriz direcionada de ambientes e finalidade de cada combinação. Fonte: Elaborada por: [Enzo Menali](https://github.com/menali17) e [José Augusto](https://github.com/JAugustoM)*
 
-Windows e macOS serão executados em computadores reais disponíveis à equipe. O Ubuntu poderá ser executado em computador real ou máquina virtual; a modalidade e os recursos alocados serão registrados antes da coleta. Essa diferença será considerada na interpretação, sem comparar diretamente consumo de recursos entre máquinas distintas.
+O macOS será executado em computador real disponível à equipe. Enquanto o Ubuntu e Windows poderão ser executados em computador real ou máquina virtual; a modalidade e os recursos alocados serão registrados antes da coleta. Essa diferença será considerada na interpretação, sem comparar diretamente consumo de recursos entre máquinas distintas.
 
 ### 2.3 Ambiente de referência para desempenho
 
