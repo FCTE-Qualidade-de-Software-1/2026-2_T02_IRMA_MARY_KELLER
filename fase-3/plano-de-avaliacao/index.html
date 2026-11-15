@@ -1,0 +1,832 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Avaliação de qualidade do produto Khan Academy segundo a família SQuaRE, com gestão por medição PSM/CID.">
+      
+      
+      
+        <link rel="canonical" href="https://fcte-qualidade-de-software-1.github.io/2026-2_T02_IRMA_MARY_KELLER/fase-3/plano-de-avaliacao/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../recursos-e-ambientes/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/img/marca.svg">
+      <meta name="generator" content="mkdocs-ProperDocs 1.6.7, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>Plano de avaliação - Avaliação Khan Academy</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Lato";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/khan.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#plano-de-avaliacao" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      <header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <a href="../.." title="Avaliação Khan Academy" class="khan-marca" aria-label="Avaliação Khan Academy" data-md-component="logo">
+      <img src="../../assets/img/logo_khan_simbolo.png" alt="Logo do Khan Academy" width="32" height="32">
+      <span class="khan-marca__texto">
+        <strong>Avaliação Khan Academy</strong>
+        <small>Qualidade de Software 1 · T02</small>
+      </span>
+    </a>
+    <ul class="khan-abas">
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../..">Início</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../fase-1/">Fase 1</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../fase-2/">Fase 2</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item khan-abas__item--ativa">
+          <a href="../">Fase 3</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../fase-4/registro-desempenho/">Fase 4</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../gestao/plano_de_medicao/">Gestão</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../gestao/artigo/">Artigo</a>
+        </li>
+      
+    </ul>
+    <div class="khan-header__espaco"></div>
+    
+      <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Mudar para o modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Mudar para o modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER" class="khan-botao-repo" title="Repositório da equipe no GitHub">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215m-6.56 0a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"/></svg>
+      <span>Repositório</span>
+    </a>
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary khan-trilha" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Avaliação Khan Academy" class="md-nav__button md-logo" aria-label="Avaliação Khan Academy" data-md-component="logo">
+      
+  <img src="../../assets/img/logo_khan_simbolo.png" alt="logo">
+
+    </a>
+    Avaliação Khan Academy
+  </label>
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  <ul class="khan-trilha__secoes">
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../..">Início</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../fase-1/">Fase 1</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../fase-2/">Fase 2</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../" aria-current="true">Fase 3</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../fase-4/registro-desempenho/">Fase 4</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../gestao/plano_de_medicao/">Gestão</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../gestao/artigo/">Artigo</a></li>
+    
+  </ul>
+  
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    <ol class="khan-trilha__passos">
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--feito">
+          <a href="../">
+            <span class="khan-trilha__bolinha">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>
+            </span>
+            <span>Visão Geral</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--atual">
+          <a href="./" aria-current="page">
+            <span class="khan-trilha__bolinha">
+              2
+            </span>
+            <span>Plano de avaliação</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--pendente">
+          <a href="../recursos-e-ambientes/">
+            <span class="khan-trilha__bolinha">
+              3
+            </span>
+            <span>Recursos e ambientes</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--pendente">
+          <a href="../cronograma/">
+            <span class="khan-trilha__bolinha">
+              4
+            </span>
+            <span>Cronograma</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--pendente">
+          <a href="../matriz-rastreabilidade/">
+            <span class="khan-trilha__bolinha">
+              5
+            </span>
+            <span>Matriz de rastreabilidade</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--pendente">
+          <a href="../procedimentos-desempenho/">
+            <span class="khan-trilha__bolinha">
+              6
+            </span>
+            <span>Procedimentos de desempenho</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--pendente">
+          <a href="../registro-desempenho.md">
+            <span class="khan-trilha__bolinha">
+              7
+            </span>
+            <span>Registro de execução de desempenho</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--pendente">
+          <a href="../ambiente-de-testes/">
+            <span class="khan-trilha__bolinha">
+              8
+            </span>
+            <span>Ambientes de Testes</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--pendente">
+          <a href="../procedimentos-adaptabilidade/">
+            <span class="khan-trilha__bolinha">
+              9
+            </span>
+            <span>Procedimentos Avaliação Adaptabilidade</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--pendente">
+          <a href="../procedimentos-desempenho/">
+            <span class="khan-trilha__bolinha">
+              10
+            </span>
+            <span>Procedimentos de desempenho</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--pendente">
+          <a href="../registro-adaptabilidade/">
+            <span class="khan-trilha__bolinha">
+              11
+            </span>
+            <span>Registro de Execução Adaptabilidade</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--pendente">
+          <a href="../procedimentos-acessibilidade-apreensibilidade/">
+            <span class="khan-trilha__bolinha">
+              12
+            </span>
+            <span>Procedimentos Acessibilidade e Apreensibilidade</span>
+          </a>
+        </li>
+      
+    </ol>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Nesta página">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Nesta página
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-finalidade-e-contexto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Finalidade e contexto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-escopo-e-estrategia-de-avaliacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Escopo e estratégia de avaliação
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-metodos-de-avaliacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Métodos de avaliação
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Métodos de avaliação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-eficiencia-de-desempenho-g1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Eficiência de desempenho: G1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-adaptabilidade-g2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Adaptabilidade: G2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-acessibilidade-e-apreensibilidade-g3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Acessibilidade e apreensibilidade: G3
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-condicoes-para-execucao-comparavel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Condições para execução comparável
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-verificacao-dos-instrumentos-e-dos-dados-de-teste" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Verificação dos instrumentos e dos dados de teste
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-registro-tratamento-e-julgamento-dos-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Registro, tratamento e julgamento dos resultados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Histórico de versões
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="plano-de-avaliacao">Plano de Avaliação<a class="headerlink" href="#plano-de-avaliacao" title="Link para esta seção">&para;</a></h1>
+<h2 id="1-finalidade-e-contexto">1. Finalidade e contexto<a class="headerlink" href="#1-finalidade-e-contexto" title="Link para esta seção">&para;</a></h2>
+<p>Este plano estabelece como será conduzida a avaliação da qualidade da versão web da <strong>Khan Academy</strong>, considerando tarefas de aprendizagem realizadas em computadores. A proposta parte do <a href="../../fase-1/escopo-da-avaliacao/">escopo e dos requisitos definidos na Fase 1</a> e utiliza os <a href="../../fase-2/">objetivos, as questões e as métricas especificados na Fase 2</a>.</p>
+<p>Trata-se de uma avaliação <strong>externa e de caixa-preta</strong>: serão observados o comportamento da plataforma e as interações realizadas no navegador, sem acesso ao código-fonte ou à infraestrutura do serviço. O estudo adota as características de eficiência de desempenho, portabilidade e usabilidade, no enquadramento da ISO/IEC 25010:2011 utilizado pela equipe.</p>
+<p>O plano descreve as condições necessárias para que diferentes avaliadores possam seguir o mesmo procedimento, produzir registros comparáveis e justificar suas conclusões. Os resultados propriamente ditos serão apresentados na Fase 4.</p>
+<h2 id="2-escopo-e-estrategia-de-avaliacao">2. Escopo e estratégia de avaliação<a class="headerlink" href="#2-escopo-e-estrategia-de-avaliacao" title="Link para esta seção">&para;</a></h2>
+<p>Os procedimentos adotam os quatro fluxos definidos no escopo da Fase 1:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Fluxo</th>
+<th>Atividade observada</th>
+<th>Aplicação na avaliação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>FL1</strong></td>
+<td>Navegar até um curso e seu conteúdo</td>
+<td>Desempenho, adaptabilidade e usabilidade</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>FL2</strong></td>
+<td>Acessar e utilizar uma videoaula</td>
+<td>Desempenho, adaptabilidade e usabilidade</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>FL3</strong></td>
+<td>Acessar e realizar um exercício</td>
+<td>Desempenho, adaptabilidade e usabilidade</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>FL4</strong></td>
+<td>Consultar informações de progresso</td>
+<td>Adaptabilidade</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 1: Fluxos considerados no plano. Fonte: elaboração de <a href="https://github.com/CamilaSilvaC">Camila Silva Cavalcante</a> e <a href="https://github.com/GeovannaUmbelino">Geovanna Alves Umbelino</a>.</em></p>
+<p>A estratégia combina <strong>medições instrumentadas</strong>, <strong>inspeções guiadas por tarefas</strong> e <strong>observação de participantes iniciantes</strong>. A seleção desses métodos decorre da natureza de cada atributo: tempos e consumo de recursos exigem instrumentos; adaptabilidade e acessibilidade exigem execução controlada em diferentes condições; apreensibilidade requer observar a realização das tarefas por pessoas sem experiência prévia na plataforma.</p>
+<h2 id="3-metodos-de-avaliacao">3. Métodos de avaliação<a class="headerlink" href="#3-metodos-de-avaliacao" title="Link para esta seção">&para;</a></h2>
+<h3 id="31-eficiencia-de-desempenho-g1">3.1 Eficiência de desempenho: G1<a class="headerlink" href="#31-eficiencia-de-desempenho-g1" title="Link para esta seção">&para;</a></h3>
+<p>As métricas <strong>M1–M5</strong> investigam o tempo necessário à execução dos fluxos, o sucesso das tarefas, a utilização de CPU e memória e o volume de dados transferidos. As medições são concentradas no <strong>ambiente A1</strong>, sob condições de rede normal e limitada. Para cada tarefa e condição, está prevista uma execução de aquecimento, não utilizada nos cálculos, seguida de <strong>cinco repetições válidas</strong>.</p>
+<p>O <a href="../procedimentos-desempenho/">procedimento de desempenho</a> descreve a preparação do navegador, a instrumentação, os eventos de início e término, o tratamento de falhas e as regras de registro. Os dados serão documentados no <a href="registro-desempenho.md">formulário de desempenho</a>. As definições e faixas de julgamento permanecem vinculadas às <a href="../../fase-2/metricas/">fichas de métricas</a> e aos <a href="../../fase-2/criterios-julgamento/">critérios da Fase 2</a>.</p>
+<h3 id="32-adaptabilidade-g2">3.2 Adaptabilidade: G2<a class="headerlink" href="#32-adaptabilidade-g2" title="Link para esta seção">&para;</a></h3>
+<p>As métricas <strong>M6 e M7</strong> verificam se os fluxos permanecem executáveis nos ambientes <strong>A1–A4</strong> e se os elementos essenciais continuam utilizáveis nos tamanhos de janela definidos no projeto. O procedimento considera os quatro fluxos FL1–FL4, preservando a mesma sequência de tarefas e o mesmo conteúdo em cada combinação de ambiente e janela.</p>
+<p>O <a href="../procedimentos-adaptabilidade/">procedimento de adaptabilidade</a> estabelece as verificações, as regras para classificar ocorrências e os critérios de registro. O <a href="../registro-adaptabilidade/">formulário correspondente</a> documenta as execuções.</p>
+<h3 id="33-acessibilidade-e-apreensibilidade-g3">3.3 Acessibilidade e apreensibilidade: G3<a class="headerlink" href="#33-acessibilidade-e-apreensibilidade-g3" title="Link para esta seção">&para;</a></h3>
+<p>As métricas <strong>M8–M11</strong> abrangem a interação por teclado, o uso de leitores de tela, a ampliação da interface e a verificação de contraste. As tarefas de navegação por teclado e com leitores de tela serão verificadas em A1, A3 e A4. Os ensaios de ampliação a 200% e de contraste serão conduzidos em A1. Inspeções com Lighthouse e axe-core serão usadas como apoio à identificação de barreiras, sem substituir os testes manuais nem compor diretamente as métricas.</p>
+<p>As métricas <strong>M12–M14</strong> examinam a realização das tarefas por <strong>três a cinco participantes adultos iniciantes</strong>, contemplando sucesso, erros operacionais e tempo. As sessões ocorrerão em A1, com três tarefas padronizadas, duração máxima de cinco minutos por tarefa, consentimento e identificação anonimizada dos participantes.</p>
+<p>O procedimento de acessibilidade e apreensibilidade especifica os roteiros, as regras de classificação e os formulários F1 a F7. As medidas seguem as definições e os <a href="../../fase-2/criterios-julgamento/">critérios de julgamento da Fase 2</a>.</p>
+<h2 id="4-condicoes-para-execucao-comparavel">4. Condições para execução comparável<a class="headerlink" href="#4-condicoes-para-execucao-comparavel" title="Link para esta seção">&para;</a></h2>
+<p>Antes da coleta oficial, devem ser registradas as configurações efetivas dos ambientes, as versões dos instrumentos, a conta de teste e os conteúdos utilizados. O mesmo curso, videoaula e exercício devem ser empregados nas execuções comparáveis, com indicação das condições iniciais e dos endereços correspondentes. Credenciais não serão publicadas.</p>
+<p>O ambiente A1 será mantido estável durante as medições de desempenho, inclusive quanto ao navegador, aos recursos disponíveis, à resolução e às condições de rede. A configuração de rede limitada deverá ser reproduzida com os mesmos parâmetros. Alterações de zoom, contraste e tecnologia assistiva serão aplicadas em sessões próprias, com restauração das condições iniciais entre as famílias de testes.</p>
+<p>A <a href="../recursos-e-ambientes/">especificação de recursos e ambientes</a> reúne os requisitos de infraestrutura, as ferramentas e as condições de preparação. Os roteiros técnicos detalham os passos específicos de cada família.</p>
+<h2 id="5-verificacao-dos-instrumentos-e-dos-dados-de-teste">5. Verificação dos instrumentos e dos dados de teste<a class="headerlink" href="#5-verificacao-dos-instrumentos-e-dos-dados-de-teste" title="Link para esta seção">&para;</a></h2>
+<p>A avaliação será precedida por um ensaio-piloto, destinado a verificar se os fluxos continuam disponíveis, se os instrumentos registram as informações esperadas e se os procedimentos podem ser executados sem interpretações divergentes. Os resultados do piloto não integram a amostra oficial; o participante do piloto também não participa das sessões oficiais. Eventuais alterações de conteúdo, configuração ou instrumento serão documentadas antes de iniciar a coleta.</p>
+<p>Para cada ambiente, será mantido um inventário com as versões dos sistemas e instrumentos utilizados, as especificações de hardware e, quando aplicável, os parâmetros da máquina virtual. Para os fluxos, serão identificados o curso, a videoaula, o exercício e a conta de teste, preservando-se credenciais e dados pessoais.</p>
+<p>Os instrumentos de coleta devem permitir relacionar cada observação ao fluxo executado, à métrica correspondente e à evidência obtida. Essa identificação possibilita a conferência dos registros e a reprodução das medições.</p>
+<h2 id="6-registro-tratamento-e-julgamento-dos-resultados">6. Registro, tratamento e julgamento dos resultados<a class="headerlink" href="#6-registro-tratamento-e-julgamento-dos-resultados" title="Link para esta seção">&para;</a></h2>
+<p>Cada execução deverá permitir identificar <strong>o fluxo, a métrica, o ambiente, a condição de teste, a versão do procedimento, o avaliador e o arquivo de evidência</strong>. Registros inválidos, falhas de tarefa e limitações de ambiente precisam ser distinguidos conforme as regras de cada procedimento, evitando a exclusão indevida de resultados desfavoráveis.</p>
+<p>O tratamento dos dados seguirá as fórmulas estabelecidas na Fase 2. Em seguida, os valores obtidos serão comparados aos <a href="../../fase-2/criterios-julgamento/">níveis de pontuação e critérios de julgamento</a>. A interpretação deverá responder às questões Q1–Q11 e, por consequência, aos objetivos G1–G3. A <a href="../matriz-rastreabilidade/">matriz de rastreabilidade</a> explicita essas relações.</p>
+<p>Os critérios de julgamento definidos na Fase 2 serão utilizados para interpretar os resultados da avaliação. Antes do início das medições, será verificada a adequação dos valores e parâmetros estabelecidos às condições dos testes. Caso seja necessário realizar algum ajuste, a alteração será justificada e documentada.</p>
+<p>A análise dos resultados considerará as condições em que os testes foram realizados, permitindo identificar os aspectos que atendem aos critérios de qualidade e aqueles que apresentam oportunidades de melhoria.</p>
+<p>Os resultados serão apresentados juntamente com seus registros de origem, preservando a rastreabilidade das medições. Antes da publicação, informações pessoais e dados sensíveis eventualmente presentes nas evidências serão protegidos.</p>
+<h2 id="historico-de-versoes">Histórico de versões<a class="headerlink" href="#historico-de-versoes" title="Link para esta seção">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Versão</th>
+<th style="text-align: center;">Data</th>
+<th>Descrição</th>
+<th>Responsável</th>
+<th>Revisor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;">14/11/2026</td>
+<td>Definição do escopo e dos métodos de avaliação de desempenho, adaptabilidade e usabilidade, incluindo as condições de execução e as regras de registro, tratamento e julgamento dos resultados.</td>
+<td><a href="https://github.com/CamilaSilvaC">Camila Silva</a> e <a href="https://github.com/GeovannaUmbelino">Geovanna Alves</a></td>
+<td><a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.top", "toc.follow", "search.suggest", "search.highlight", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+        <script src="../../js/mathjax.js"></script>
+      
+        <script src="../../js/khan.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
