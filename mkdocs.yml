@@ -51,6 +51,11 @@ nav:
       - Métricas: fase-2/metricas.md
       - Critérios de julgamento: fase-2/criterios-julgamento.md
       - Gráfico GQM: fase-2/grafico-gqm.md
+  - Fase 3:
+      - Visão Geral: fase-3/index.md
+      - Ambientes de Testes: fase-3/ambiente-de-testes.md
+      - Procedimentos Avaliação Adaptabilidade: fase-3/procedimentos-adaptabilidade.md
+      - Registro de Execução Adaptabilidade: fase-3/registro-adaptabilidade.md
   - Gestão:
       - Plano de medição: gestao/plano_de_medicao.md
       - Painel PSM/CID: gestao/horas_consolidadas.md
