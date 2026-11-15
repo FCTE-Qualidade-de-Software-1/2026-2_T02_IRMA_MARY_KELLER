@@ -1,6 +1,6 @@
 # Procedimentos de avaliação de adaptabilidade (M6 e M7)
 
-**Versão 1.0**
+**Versão 1.1**
 
 Este artefato define como será avaliada a **adaptabilidade** da versão web da Khan Academy em computadores, subcaracterística da **portabilidade** no modelo da ISO/IEC 25010:2011 [S1](#s1), característica priorizada na [Fase 1](../fase-1/index.md) [S4](#s4). Ele especifica os procedimentos de obtenção das métricas [`M6`](../fase-2/metricas.md#16-m6-execucao-por-ambiente) (execução por ambiente) e [`M7`](../fase-2/metricas.md#17-m7-adaptacao-ao-tamanho-da-janela) (adaptação ao tamanho da janela) [S8](#s8), que respondem às questões [`Q5`](../fase-2/questoes-hipoteses.md#41-q5-adaptacao-entre-sistemas-operacionais-e-navegadores) e [`Q6`](../fase-2/questoes-hipoteses.md#42-q6-adaptacao-a-tamanhos-de-janela) [S7](#s7) do objetivo [`G2`](../fase-2/objetivos.md#g2) [S6](#s6), estruturado pela abordagem *Goal–Question–Metric* (GQM) [S3](#s3). A Fase 2 propôs as métricas com a ISO/IEC 25023:2016 como referência [S2](#s2), sem transcrevê-la.
 
@@ -424,8 +424,6 @@ Só falhas atribuídas à plataforma contam como `F`. A Tabela 23 resume os ind�
 | Serviço externo ou rede | Página de erro do servidor, queda de conexão, indisponibilidade temporária | `X`; refazer em outro horário |
 
 *Tabela 23. Atribuição de causa das falhas. Fonte: Elaborada por: [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM)*
-
-Distribuições Linux podem não incluir codecs de mídia por padrão, o que afeta `FL2`. Antes da coleta, a equipe decide se a instalação de codecs conta como preparação normal do ambiente e registra a decisão.
 
 ### 7.3 Interrupção
 

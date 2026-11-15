@@ -4,11 +4,11 @@ Este artefato descreve como a medição é executada: quais dados entram, o pass
  
 <a id="responsavel"></a>
 
-**Responsável pela execução:** A equipe definirá, antes de cada ponto de medição, o integrante responsável pela coleta, validação e consolidação dos dados. Todos os integrantes devem registrar suas horas até as 12h do dia da medição. O responsável verifica as pendências, executa o script, registra os resultados e documenta as decisões decorrentes.
+**Responsável pela execução:** Antes de cada ponto de medição, a equipe designa o integrante responsável pela coleta, validação e consolidação dos dados. Todos os integrantes devem registrar suas horas até as 12h do dia da medição. O responsável verifica as pendências, executa o script, registra os resultados e documenta as decisões decorrentes.
 
-### 7.1 Dados de entrada
+## 1. Dados de entrada
 
-A Tabela 9 lista os dados necessários, onde ficam, quem os alimenta e quais medidas dependem deles.
+A Tabela 1 lista os dados necessários, onde ficam, quem os alimenta e quais medidas dependem deles.
  
 | Dado | Fonte | Quem alimenta | Quando | Medidas que usam |
 |---|---|---|---|---|
@@ -17,11 +17,11 @@ A Tabela 9 lista os dados necessários, onde ficam, quem os alimenta e quais med
 | Nível por critério da rubrica | `assets/dados/gestao/autoavaliacao.csv` (colunas `data,fase,criterio,nivel,evidencia`) | Revisor | Em [Mg-3](#pontos) | `DP2` |
 | Uso de IA | [Uso de IA](uso_de_ia.md) | Quem usou a ferramenta | No momento do uso | Evidência para os critérios de uso de IA na autoavaliação (`DP2`) |
  
-*Tabela 9. Dados de entrada das medições. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
+*Tabela 1. Dados de entrada das medições. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
  
 No `autoavaliacao.csv`, `criterio` é o código da rubrica (por exemplo, `F1-C6`) e `nivel` é um de Insuficiente, Regular, Satisfatório ou Excelente (ou Crítico, Insuficiente, Bom, Adequado), que correspondem, nesta ordem, às quatro opções da rubrica da professora, da primeira à última.
  
-### 7.2 Passos operacionais
+## 2. Passos operacionais
 
 Os passos abaixo são seguidos a cada ponto de medição:
  
@@ -36,9 +36,9 @@ Os passos abaixo são seguidos a cada ponto de medição:
 
 <a id="pontos"></a>
 
-### 7.3 Pontos de medição previstos
+## 3. Pontos de medição previstos
 
-A Tabela 10 apresenta as datas das medições, sua finalidade e as medidas calculadas em cada uma.
+A Tabela 2 apresenta as datas das medições, sua finalidade e as medidas calculadas em cada uma.
  
 | Id da Medição | Data | Finalidade | Medidas |
 |---|---|---|---|
@@ -46,13 +46,13 @@ A Tabela 10 apresenta as datas das medições, sua finalidade e as medidas calcu
 | Mg-2 | 09/11/2026 (seg) | Medição do Ponto de Controle 2 (PC2) | `CP1`, `CP2`, `DP1`, `DP2`, `RC1`, `RC2`, `Pa` |
 | Mg-3 | 18/11/2026 (qua) | Medição da Entrega 2 Final | `CP1`, `CP2`, `DP1`, `DP2`, `RC1`, `RC2`, `Pa` |
 
-*Tabela 10. Pontos de medição previstos. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
+*Tabela 2. Pontos de medição previstos. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
 
 <a id="historico"></a>
 
-### 7.4 Registro de medições realizadas
+## 4. Registro de medições realizadas
 
-#### Ponto Mg-1 — Entrega 1 (26/10/2026)
+### Ponto Mg-1: Entrega 1 (26/10/2026)
 
 Executado em 26/10/2026 sobre as issues e commits das Fases 1 e 2.
 
@@ -64,15 +64,15 @@ Executado em 26/10/2026 sobre as issues e commits das Fases 1 e 2.
 | **DP2** Efetividade | $Ca = 23$, $Cb = 0$, $Ci = 0$, $Cc = 0$, $Ct = 23$ | $Qcic = 0$ <br> $PCa = 100\%$ | **Qcic: 0** <br> **PCa: 100%** | Adequado | Verde | Todos os critérios das Fases 1 e 2 avaliados como Adequados com base na rubrica docente e nos artefatos entregues. |
 | **RC1** Esforço | $\sum Hr = 32,00\text{ h}$, $n = 6$ | $Hm = 32,00 \div 6$ | **32,00 h** (média 5,33 h/membro) | Informativo | Sem cor | Volume compatível com a carga prevista para a Entrega 1; esforço distribuído entre todos os integrantes. |
 | **RC2** Variação | $Ee = 20,00\text{ h}$, $Er = 20,00\text{ h}$ | $Ve = (0 \div 20) \times 100$ | **0,0%** | Adequado | Verde | Estimativas em issues fechadas com estimativa explícita bateram rigorosamente com os lançamentos. |
-| **Pa** Cobertura | $Ar = 11$, $Ac = 13$ | $Pa = (11 \div 13) \times 100$ | **84,6%** | Com ressalva | Amarelo | Duas issues concluídas sem apontamento na Tabela de Contribuição. Decisão: completar os lançamentos retroativos dos membros pendentes. |
+| **Pa** Cobertura | $Ar = 11$, $Ac = 13$ | $Pa = (11 \div 13) \times 100$ | **84,6%** | Insuficiente | Amarelo | Duas issues concluídas sem apontamento na Tabela de Contribuição. Decisão: completar os lançamentos retroativos dos membros pendentes. |
 
 <a id="padroes-issues"></a>
 
-### 7.5 Padrão de texto para issues (Determinação de DP1 e Critérios)
+## 5. Padrão de texto para issues (Determinação de DP1 e Critérios)
 
 Para assegurar a confiabilidade da medição automatizada pelo script `consolida_horas.py`, todas as issues devem conter blocos padronizados de metadados:
 
-#### Padrão 1: Nova Atividade Planejada (Alimenta CP1, CP2, RC2 e Critérios)
+### Padrão 1: Nova Atividade Planejada (Alimenta CP1, CP2, RC2 e Critérios)
 Adicionar no corpo da issue ao criá-la:
 ```markdown
 ## Metadados de Medição (PSM/CID)
@@ -82,7 +82,7 @@ Adicionar no corpo da issue ao criá-la:
 - **Classificação:** Nova Atividade Planejada
 ```
 
-#### Padrão 2: Correção / Retrabalho (Alimenta DP1 e DP2)
+### Padrão 2: Correção / Retrabalho (Alimenta DP1 e DP2)
 Ao reabrir uma issue ou criar uma nova issue para sanar não conformidades identificadas por pares, autoavaliação ou apontamento docente:
 - Aplicar a label **`correcao`** no GitHub;
 - Incluir no corpo da issue o seguinte bloco de rastreabilidade:

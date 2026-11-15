@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1460" viewBox="0 0 1000 1460" role="img" aria-labelledby="title desc">
-<title id="title">GQM — 3 objetivos, 11 questões e hipóteses, 5 famílias de métricas</title>
+<title id="title">GQM - 3 objetivos, 11 questões e hipóteses, 5 famílias de métricas</title>
 <desc id="desc">G1 liga Q1 a Q4; G2 liga Q5 e Q6; G3 liga Q7 a Q11. Cada questão liga sua hipótese e a métrica correspondente. Níveis conceitual, operacional e quantitativo.</desc>
 <rect width="1000" height="1460" fill="white"/>
 <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="#536477"/></marker></defs>
-<text x="500" y="40" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="20" fill="#263445">Nível conceitual · G1 — Eficiência de desempenho</text>
+<text x="500" y="40" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="20" fill="#263445">Nível conceitual · G1 - Eficiência de desempenho</text>
 <text x="280" y="84" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">Nível operacional · Questões e hipóteses</text>
 <text x="800" y="84" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">Nível quantitativo · Métricas</text>
 <rect x="40" y="102" width="300" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
@@ -46,7 +46,7 @@
 <path d="M480,418 L670,418" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
 <text x="18" y="424" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="11" fill="#263445">G1</text>
 <path d="M28,418 L40,418" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
-<text x="500" y="544" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="20" fill="#263445">Nível conceitual · G2 — Portabilidade</text>
+<text x="500" y="544" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="20" fill="#263445">Nível conceitual · G2 - Portabilidade</text>
 <text x="280" y="588" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">Nível operacional · Questões e hipóteses</text>
 <text x="800" y="588" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">Nível quantitativo · Métricas</text>
 <rect x="40" y="606" width="300" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>
@@ -69,7 +69,7 @@
 <path d="M480,726 L670,726" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
 <text x="18" y="732" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="11" fill="#263445">G2</text>
 <path d="M28,726 L40,726" fill="none" stroke="#536477" marker-end="url(#arrow)"/>
-<text x="500" y="852" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="20" fill="#263445">Nível conceitual · G3 — Usabilidade</text>
+<text x="500" y="852" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="20" fill="#263445">Nível conceitual · G3 - Usabilidade</text>
 <text x="280" y="896" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">Nível operacional · Questões e hipóteses</text>
 <text x="800" y="896" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#263445">Nível quantitativo · Métricas</text>
 <rect x="40" y="914" width="300" height="44" rx="8" fill="#f2f5f9" stroke="#52647c"/>

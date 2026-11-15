@@ -2,11 +2,11 @@
 
 **Versão 1.3**
 
-Este documento apresenta os objetivos de medição da [Fase 2](index.md) da avaliação da qualidade da Khan Academy, estruturados com base na abordagem Goal–Question–Metric (GQM). Sua elaboração considera as características de qualidade e os requisitos priorizados na Fase 1, bem como as definições estabelecidas no Escopo da avaliação.
+Este documento apresenta os objetivos de medição da [Fase 2](index.md) da avaliação da qualidade da Khan Academy, estruturados com base na abordagem Goal-Question-Metric (GQM). Sua elaboração considera as características de qualidade e os requisitos priorizados na Fase 1, bem como as definições estabelecidas no Escopo da avaliação.
 
 ## 1. Visão geral e rastreabilidade (Fase 1 → Fase 2)
 
-A Fase 2 formaliza os objetivos de medição a partir das características priorizadas na [Fase 1](../fase-1/index.md), utilizando a abordagem *Goal–Question–Metric* (GQM) [S1](#s1). Cada objetivo especifica o objeto de avaliação, o propósito da medição, o foco de qualidade, o ponto de vista dos interessados e o contexto em que a avaliação será realizada.
+A Fase 2 formaliza os objetivos de medição a partir das características priorizadas na [Fase 1](../fase-1/index.md), utilizando a abordagem *Goal-Question-Metric* (GQM) [S1](#s1). Cada objetivo especifica o objeto de avaliação, o propósito da medição, o foco de qualidade, o ponto de vista dos interessados e o contexto em que a avaliação será realizada.
 
 A definição dos objetivos segue o escopo de observação externa (*caixa-preta*) da Khan Academy em sua **versão web, acessada por navegadores em computadores**. Os fluxos considerados são [`FL1`](../fase-1/escopo-da-avaliacao.md#fluxos) (navegação em cursos), [`FL2`](../fase-1/escopo-da-avaliacao.md#fluxos) (videoaulas), [`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos) (exercícios) e [`FL4`](../fase-1/escopo-da-avaliacao.md#fluxos) (consulta ao progresso pelo próprio estudante). Aplicativos nativos, navegadores de dispositivos móveis e painéis de pais, responsáveis, professores ou administradores não integram o objeto da avaliação.
 
@@ -34,7 +34,7 @@ A **ISO/IEC 25010:2011** [S3](#s3) orienta a seleção e a definição das carac
 
 Os objetivos abaixo foram descritos segundo os **cinco elementos explícitos do template GQM**. As características e os pontos de vista correspondem aos requisitos priorizados pela equipe na [Fase 1](../fase-1/index.md).
 
-### 3.1  Objetivo G1 — Eficiência de desempenho
+### 3.1  Objetivo G1 - Eficiência de desempenho
 
 <a id="g1"></a>
 
@@ -46,7 +46,7 @@ Os objetivos abaixo foram descritos segundo os **cinco elementos explícitos do 
 
 **Rastreabilidade:** requisitos [`R1`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) (comportamento temporal) e [`R2`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) (utilização de recursos); decisão [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante). O objetivo se desdobra nas questões [`Q1`](questoes-hipoteses.md#3-g1-eficiencia-de-desempenho) a [`Q4`](questoes-hipoteses.md#34-q4-consumo-de-dados-de-rede), respondidas pelos indicadores [`M1`](metricas.md#1-metricas-detalhadas) a [`M5`](metricas.md#1-metricas-detalhadas).
 
-### 3.2 Objetivo G2 — Portabilidade
+### 3.2 Objetivo G2 - Portabilidade
 
 <a id="g2"></a>
 
@@ -58,7 +58,7 @@ Os objetivos abaixo foram descritos segundo os **cinco elementos explícitos do 
 
 **Rastreabilidade:** requisito [`R3`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) (adaptabilidade); decisão [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante). O objetivo se desdobra nas questões [`Q5`](questoes-hipoteses.md#41-q5-adaptacao-entre-sistemas-operacionais-e-navegadores) e [`Q6`](questoes-hipoteses.md#42-q6-adaptacao-a-tamanhos-de-janela), respondidas pelos indicadores [`M6`](metricas.md#1-metricas-detalhadas) e [`M7`](metricas.md#1-metricas-detalhadas).
 
-### 3.3 Objetivo G3 — Usabilidade
+### 3.3 Objetivo G3 - Usabilidade
 
 <a id="g3"></a>
 
@@ -66,7 +66,7 @@ Os objetivos abaixo foram descritos segundo os **cinco elementos explícitos do 
 - **Com o propósito de:** Avaliar as condições de utilização dos fluxos por pessoas com necessidades de acessibilidade e por estudantes que estão aprendendo a usar a plataforma.
 - **Com respeito a:** Usabilidade, especificamente **acessibilidade** e **apreensibilidade**.
 - **Do ponto de vista de:** Estudantes com baixa visão ou que utilizam leitores de tela; estudantes novos; professores e responsáveis, conforme os requisitos [`R4`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) e [`R5`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) da [Fase 1](../fase-1/index.md).
-- **No contexto de:** Avaliação externa da versão web em computadores, com navegação por teclado e leitores de tela previstos no escopo (NVDA, VoiceOver e Orca, conforme as combinações viáveis), além da observação de tarefas executadas por estudantes novos segundo procedimentos e participantes a definir no plano de avaliação.
+- **No contexto de:** Avaliação externa da versão web em computadores, com navegação por teclado e leitores de tela previstos no escopo (NVDA, VoiceOver e Orca, conforme as combinações viáveis), além da observação de tarefas executadas por estudantes novos segundo os procedimentos e o perfil de participantes do plano de avaliação da Fase 3.
 
 **Rastreabilidade:** requisitos [`R4`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) (acessibilidade) e [`R5`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) (apreensibilidade); decisões [`D2`](../fase-1/requisitos-de-avaliacao.md#requisitante) e [`D3`](../fase-1/requisitos-de-avaliacao.md#requisitante). O objetivo se desdobra nas questões [`Q7`](questoes-hipoteses.md#51-q7-navegacao-por-teclado) a [`Q11`](questoes-hipoteses.md#55-q11-apreensibilidade), respondidas pelos indicadores [`M8`](metricas.md#1-metricas-detalhadas) a [`M14`](metricas.md#1-metricas-detalhadas).
 
@@ -74,15 +74,15 @@ Os objetivos abaixo foram descritos segundo os **cinco elementos explícitos do 
 
 <a id="s1"></a>
 
-> [S1] BASILI, Victor R.; CALDIERA, Gianluigi; ROMBACH, H. Dieter. The Goal Question Metric Approach. In: **Encyclopedia of Software Engineering**. John Wiley & Sons, 1994. p. 528–532.
+> [S1] BASILI, Victor R.; CALDIERA, Gianluigi; ROMBACH, H. Dieter. The Goal Question Metric Approach. In: **Encyclopedia of Software Engineering**. John Wiley & Sons, 1994. p. 528-532.
 
 <a id="s2"></a>
 
-> [S2] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25023:2016**: Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Measurement of system and software product quality. Genebra: ISO, 2016. 
+> [S2] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25023:2016**: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - Measurement of system and software product quality. Genebra: ISO, 2016. 
 
 <a id="s3"></a>
 
-> [S3] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25010:2011**: Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models. Genebra: ISO, 2011.
+> [S3] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. **ISO/IEC 25010:2011**: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - System and software quality models. Genebra: ISO, 2011.
 
 ## Histórico de versões
 

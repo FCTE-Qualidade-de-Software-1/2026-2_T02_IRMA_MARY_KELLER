@@ -1,4 +1,4 @@
-# Fase 3: Plano de avaliação
+# Fase 3: Plano de Avaliação
 
 **Versão 1.0**
 
@@ -36,4 +36,4 @@ Os procedimentos de eficiência de desempenho (M1–M5) fazem parte da mesma iss
 
 | Versão | Data | Descrição | Responsável | Revisor |
 |:---:|:---:|---|---|---|
-| 1.0 | 07/11/2026 | Visão geral da Fase 3 e organização dos artefatos de adaptabilidade. | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | A definir |
+| 1.0 | 07/11/2026 | Visão geral da Fase 3 e organização dos artefatos de adaptabilidade. | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |

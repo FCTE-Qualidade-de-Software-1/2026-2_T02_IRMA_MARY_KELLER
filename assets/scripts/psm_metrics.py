@@ -293,7 +293,7 @@ def calculate_psm_metrics(
     issues_com_horas = set(totais_por_issue.keys())
     concluidas_com_horas = set(issues_concluidas.keys()) & issues_com_horas
     pa_cobertura = (len(concluidas_com_horas) / ac_total * 100) if ac_total > 0 else 0.0
-    pa_status = "Adequado (≥ 90%)" if pa_cobertura >= 90.0 else "Com ressalva (< 90%)"
+    pa_status = "Adequado (≥ 90%)" if pa_cobertura >= 90.0 else "Insuficiente (< 90%)"
     pa_cor = "Verde" if pa_cobertura >= 90.0 else "Amarelo"
 
     # ----------------------------------------------------

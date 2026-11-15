@@ -21,7 +21,7 @@ O [propósito e as características de qualidade](requisitos-de-avaliacao.md) s�
 
 A Khan Academy é classificada, para esta avaliação, como um **produto de software
 educacional interativo, disponibilizado como serviço on-line por interface web e por
-aplicativos móveis oficiais**. A classificação descreve a forma observável de entrega e uso, sob a perspectiva de caixa preta; não implica conhecimento da arquitetura interna nem de relações contratuais do serviço.
+aplicativos móveis oficiais**. A classificação descreve a forma observável de entrega e uso, sob a perspectiva de caixa-preta; não implica conhecimento da arquitetura interna nem de relações contratuais do serviço.
 
 Segundo a organização, sua missão é oferecer educação gratuita e de alta qualidade a
 qualquer pessoa, em qualquer lugar. O produto disponibiliza cursos e recursos para
@@ -173,7 +173,7 @@ A Tabela 4 sintetiza as dependências e condições externas do sistema, acompan
 
 *Tabela 4. Dependências e condições externas relevantes. Fonte: Elaborada por: [Enzo Menali](https://github.com/menali17), com base nas fontes indicadas*
 
-Os ambientes abaixo Tabela 5 pertencem ao ecossistema caracterizado. A última coluna registra sua relação com o [escopo aprovado](escopo-da-avaliacao.md#escopo-e-objetos), evitando interpretar a descrição do produto como inclusão automática nos ensaios:
+Os ambientes da Tabela 5 pertencem ao ecossistema caracterizado. A última coluna registra sua relação com o [escopo aprovado](escopo-da-avaliacao.md#escopo-e-objetos), evitando interpretar a descrição do produto como inclusão automática nos ensaios:
 
 | Ambiente do produto | Componentes relevantes | Características relacionadas | Tratamento no escopo |
 |---|---|---|---|
@@ -213,10 +213,10 @@ O diagrama de contexto apresentado na Figura 1 mapeia o ecossistema no qual a av
 
 1. **Atores externos:** Diferencia os usuários operacionais da plataforma (estudantes como usuários primários; professores e responsáveis como usuários de apoio) e os agentes da avaliação. A coordenação pedagógica é o requisitante da avaliação e destinatária dos resultados, enquanto a equipe avaliadora é responsável pela decisão [`D4`](requisitos-de-avaliacao.md#13-requisitante-e-destinatarios-dos-resultados). As decisões [`D1`](requisitos-de-avaliacao.md#13-requisitante-e-destinatarios-dos-resultados) a [`D3`](requisitos-de-avaliacao.md#13-requisitante-e-destinatarios-dos-resultados) permanecem atribuídas aos atores indicados no documento de requisitos.
 2. **Condições e dependências do ambiente:** Representa os fatores externos necessários para a execução observável (dispositivos móveis e computadores de mesa, navegadores homologados, restrições de conectividade móvel/Wi-Fi e tecnologias assistivas).
-3. **Fronteira observável do produto:** Delimita a aplicação Khan Academy sob uma abordagem externa (caixa-preta), abrangendo a interface web e os aplicativos móveis oficiais para Android e iOS, decomposta em áreas funcionais externas da experiência do usuário (e não módulos arquiteturais internos). O diagrama representa o ecossistema caracterizado, os ensaios ficam restritos à interface web em computadores, conforme o [escopo da avaliação](escopo-da-avaliacao.md#escopo-e-objetos).
+3. **Fronteira observável do produto:** Delimita a aplicação Khan Academy sob uma abordagem externa (caixa-preta), abrangendo a interface web e os aplicativos móveis oficiais para Android e iOS, decomposta em áreas funcionais externas da experiência do usuário (e não módulos arquiteturais internos). O diagrama representa o ecossistema caracterizado; os ensaios ficam restritos à interface web em computadores, conforme o [escopo da avaliação](escopo-da-avaliacao.md#escopo-e-objetos).
 4. **Fluxo da avaliação externa:** Destaca a observação não-intrusiva das métricas no cliente pela equipe avaliadora e a entrega do relatório de evidências para subsidiar a decisão pedagógica da coordenação.
 
-Entre os elementos que não farão parte da avaliação estão aqueles ligados a aspectos internos da plataforma, a qual a equipe de avaliação não tem acesso. A especificação detalhada do que está fora de escopo, assim como as justificativas por trás de cada exclusão, está no [documento de escopo](escopo-da-avaliacao.md#fora-do-escopo).
+Entre os elementos que não farão parte da avaliação estão aqueles ligados a aspectos internos da plataforma, aos quais a equipe de avaliação não tem acesso. A especificação detalhada do que está fora de escopo, assim como as justificativas por trás de cada exclusão, está no [documento de escopo](escopo-da-avaliacao.md#fora-do-escopo).
 
 ## 6. Implicações diretas para a avaliação
 

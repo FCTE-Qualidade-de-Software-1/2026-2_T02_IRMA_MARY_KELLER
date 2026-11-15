@@ -92,6 +92,6 @@ Valor de referência da hora (`Vh`): **a definir pela equipe, com fonte.** Custo
 
 | Versão | Data | Descrição | Responsável | Revisor | Commit |
 |---|---|---|---|---|---|
-| 1.0 | 14/10/2026 | Modelo de registro semanal | [Pedro Lucas](https://github.com/Pwdrinho) | | [](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/commit/) |
-| 1.1 | 15/10/2026 | Adequação às medições `RC1`, `RC2` e `RC3`: instruções de uso, CSV por integrante e quadros consolidados | [Pedro Lucas](https://github.com/Pwdrinho) | | [](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/commit/) |
-| 1.2 | 04/11/2026 | Registro de horas migrado dos CSVs para a Tabela de Contribuição das issues | | | [](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/commit/) |
+| 1.0 | 14/10/2026 | Modelo de registro semanal | [Pedro Lucas](https://github.com/Pwdrinho) | [Camila Cavalcante](https://github.com/CamilaSilvaC) | [](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/commit/) |
+| 1.1 | 15/10/2026 | Adequação às medições `RC1`, `RC2` e `RC3`: instruções de uso, CSV por integrante e quadros consolidados | [Pedro Lucas](https://github.com/Pwdrinho) | [Enzo Menali](https://github.com/menali17) | [](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/commit/) |
+| 1.2 | 04/11/2026 | Registro de horas migrado dos CSVs para a Tabela de Contribuição das issues | | [Enzo Menali](https://github.com/menali17) | [](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/commit/) |

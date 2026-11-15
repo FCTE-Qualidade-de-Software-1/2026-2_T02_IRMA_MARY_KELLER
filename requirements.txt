@@ -6,6 +6,7 @@ markupsafe==3.0.4
 mergedeep==1.3.4
 mkdocs==1.6.1
 mkdocs-gen-files==0.6.1
+mkdocs-material==9.8.0
 mkdocs-get-deps==0.2.2
 packaging==26.3
 pathspec==1.1.1
