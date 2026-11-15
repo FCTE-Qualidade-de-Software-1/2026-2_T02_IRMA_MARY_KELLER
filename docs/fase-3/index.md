@@ -1,4 +1,4 @@
-# Fase 3: Plano de avaliação
+# Fase 3: Visão geral
 
 **Versão 1.0**
 
