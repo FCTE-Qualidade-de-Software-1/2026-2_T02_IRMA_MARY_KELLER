@@ -462,5 +462,3 @@ As respostas descrevem a experiência relatada e não entram no cálculo de M12 
 |---|---|---|---|---|
 | 1.0 | 13/11/2026 | Elaboração dos procedimentos de inspeção automatizada, testes manuais de acessibilidade e testes com voluntários, com rastreabilidade para M8 a M14 | [Luisa de Souza](https://github.com/luisa12ll) | [Enzo Menali](https://github.com/menali17) |
 | 1.1 | 13/11/2026 | Revisão do consentimento, tarefas, auditorias, contraste e fontes das tabelas | [Enzo Menali](https://github.com/menali17) |  [Luisa de Souza](https://github.com/luisa12ll) |
-
-*Tabela 16. Histórico de versões do protocolo. Fonte: Elaborada por [Luísa de Souza](https://github.com/luisa12ll).*
