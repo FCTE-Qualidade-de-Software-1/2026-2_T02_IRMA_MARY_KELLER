@@ -19,6 +19,6 @@ As maquinas virtuais foram todas atualizadas dia X de novembro de 2026 usando se
 |                     | Windows | macOS | Ubuntu | Fedora |  Arch  | OpenSUSE Leap |
 | :-----------------: | :-----: | :---: | :----: | :----: | :----: | :-----------: |
 |       Chrome        |  157.0  |   X   | 156.0  | 156.0  | 156.0  |     156.0     |
-|       Firefox       |  159.1  |   X   | 159.0  | 159.0  | 159.0  |     153.5     |
+|       Firefox       |  160  |   X   | 159.0  | 159.0  | 159.0  |     153.5     |
 |     Lighthouse      | 13.6.0  |   X   | 13.6.0 | 13.6.0 | 13.6.0 |    13.6.0     |
 | NVDA/VoiceOver/Orca | 2026.3  |   X   |  50.3  |  50.3  |  51.1  |     50.0      |
