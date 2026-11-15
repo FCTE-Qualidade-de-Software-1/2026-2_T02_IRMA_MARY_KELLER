@@ -20,13 +20,13 @@ A revisão dos procedimentos e a preparação dos ambientes podem ocorrer simult
 
 | Período previsto | Atividade | Dependência principal | Evidência produzida |
 |---|---|---|---|
-| **14–17/11** | Executar as medições de desempenho (M1–M5) | Ambiente A1 preparado, instrumentos definidos e critérios de julgamento ratificados | Registros de tempo, CPU, memória e tráfego |
-| **16–18/11** | Executar os testes de adaptabilidade (M6–M7) | Ambientes A1–A4 preparados | Registros de execução e ocorrências |
-| **17–19/11** | Realizar as inspeções de acessibilidade (M8–M11) | Tecnologias assistivas e procedimentos preparados | Evidências de acessibilidade e resultados das inspeções |
-| **18–20/11** | Conduzir as sessões com participantes iniciantes (M12–M14) | Participantes recrutados, consentimento e roteiro definidos | Registros anonimizados das tarefas |
-| **19–21/11** | Processar os dados, aplicar os critérios de julgamento e interpretar os objetivos GQM | Dados coletados e evidências organizadas | Resultados e julgamentos fundamentados |
+| **13–17/11** | Executar as medições de desempenho (M1–M5) | Ambiente A1 preparado, instrumentos definidos e critérios de julgamento ratificados | Registros de tempo, CPU, memória e tráfego |
+| **14–18/11** | Executar os testes de adaptabilidade (M6–M7) | Ambientes A1–A4 preparados | Registros de execução e ocorrências |
+| **16–19/11** | Realizar as inspeções de acessibilidade (M8–M11) | Tecnologias assistivas e procedimentos preparados | Evidências de acessibilidade e resultados das inspeções |
+| **17–20/11** | Conduzir as sessões com participantes iniciantes (M12–M14) | Participantes recrutados, consentimento e roteiro definidos | Registros anonimizados das tarefas |
+| **14–20/11** | Processar os dados, aplicar os critérios de julgamento e interpretar os objetivos GQM | Dados coletados e evidências organizadas | Resultados e julgamentos fundamentados |
 | **20–22/11** | Executar ao menos uma ação de melhoria com base nos resultados | Oportunidade de melhoria identificada | Protótipo, artefato técnico ou implementação |
-| **21–23/11** | Consolidar os resultados no artigo, atualizar a GitPage e preparar o release | Resultados e melhoria documentados | Artefatos finais revisados |
+| **20–22/11** | Consolidar os resultados no artigo, atualizar a GitPage e preparar o release | Resultados e melhoria documentados | Artefatos finais revisados |
 
 *Tabela 2: Planejamento da execução e análise da Fase 4. Fonte: elaboração de [Camila Silva Cavalcante](https://github.com/CamilaSilvaC) e [Geovanna Alves Umbelino](https://github.com/GeovannaUmbelino).*
 
