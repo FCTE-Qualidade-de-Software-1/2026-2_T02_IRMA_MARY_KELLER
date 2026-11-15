@@ -53,6 +53,12 @@ nav:
       - Gráfico GQM: fase-2/grafico-gqm.md
   - Fase 3:
       - Visão Geral: fase-3/index.md
+      - Plano de avaliação: fase-3/plano-de-avaliacao.md
+      - Recursos e ambientes: fase-3/recursos-e-ambientes.md
+      - Cronograma: fase-3/cronograma.md
+      - Matriz de rastreabilidade: fase-3/matriz-rastreabilidade.md
+      - Procedimentos de desempenho: fase-3/procedimentos-desempenho.md
+      - Registro de execução de desempenho: fase-3/registro-desempenho.md
       - Ambientes de Testes: fase-3/ambiente-de-testes.md
       - Procedimentos Avaliação Adaptabilidade: fase-3/procedimentos-adaptabilidade.md
       - Procedimentos Avaliação Desempenho: fase-3/procedimentos-desempenho.md
