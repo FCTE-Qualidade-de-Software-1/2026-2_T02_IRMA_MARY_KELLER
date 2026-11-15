@@ -1,0 +1,1894 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Avaliação de qualidade do produto Khan Academy segundo a família SQuaRE, com gestão por medição PSM/CID.">
+      
+      
+      
+        <link rel="canonical" href="https://fcte-qualidade-de-software-1.github.io/2026-2_T02_IRMA_MARY_KELLER/fase-3/procedimentos-acessibilidade-apreensibilidade/">
+      
+      
+        <link rel="prev" href="../registro-adaptabilidade/">
+      
+      
+        <link rel="next" href="../../fase-4/registro-desempenho/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/img/marca.svg">
+      <meta name="generator" content="mkdocs-ProperDocs 1.6.7, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>Procedimentos Acessibilidade e Apreensibilidade - Avaliação Khan Academy</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Lato";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/khan.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#procedimentos-de-avaliacao-de-acessibilidade-e-apreensibilidade" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      <header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <a href="../.." title="Avaliação Khan Academy" class="khan-marca" aria-label="Avaliação Khan Academy" data-md-component="logo">
+      <img src="../../assets/img/logo_khan_simbolo.png" alt="Logo do Khan Academy" width="32" height="32">
+      <span class="khan-marca__texto">
+        <strong>Avaliação Khan Academy</strong>
+        <small>Qualidade de Software 1 · T02</small>
+      </span>
+    </a>
+    <ul class="khan-abas">
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../..">Início</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../fase-1/">Fase 1</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../fase-2/">Fase 2</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item khan-abas__item--ativa">
+          <a href="../">Fase 3</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../fase-4/registro-desempenho/">Fase 4</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../gestao/plano_de_medicao/">Gestão</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../gestao/artigo/">Artigo</a>
+        </li>
+      
+    </ul>
+    <div class="khan-header__espaco"></div>
+    
+      <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Mudar para o modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Mudar para o modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER" class="khan-botao-repo" title="Repositório da equipe no GitHub">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215m-6.56 0a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"/></svg>
+      <span>Repositório</span>
+    </a>
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary khan-trilha" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Avaliação Khan Academy" class="md-nav__button md-logo" aria-label="Avaliação Khan Academy" data-md-component="logo">
+      
+  <img src="../../assets/img/logo_khan_simbolo.png" alt="logo">
+
+    </a>
+    Avaliação Khan Academy
+  </label>
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  <ul class="khan-trilha__secoes">
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../..">Início</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../fase-1/">Fase 1</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../fase-2/">Fase 2</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../" aria-current="true">Fase 3</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../fase-4/registro-desempenho/">Fase 4</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../gestao/plano_de_medicao/">Gestão</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../gestao/artigo/">Artigo</a></li>
+    
+  </ul>
+  
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    <ol class="khan-trilha__passos">
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--feito">
+          <a href="../">
+            <span class="khan-trilha__bolinha">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>
+            </span>
+            <span>Visão Geral</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--feito">
+          <a href="../ambiente-de-testes/">
+            <span class="khan-trilha__bolinha">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>
+            </span>
+            <span>Ambientes de Testes</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--feito">
+          <a href="../procedimentos-adaptabilidade/">
+            <span class="khan-trilha__bolinha">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>
+            </span>
+            <span>Procedimentos Avaliação Adaptabilidade</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--feito">
+          <a href="../procedimentos-desempenho/">
+            <span class="khan-trilha__bolinha">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>
+            </span>
+            <span>Procedimentos Avaliação Desempenho</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--feito">
+          <a href="../registro-adaptabilidade/">
+            <span class="khan-trilha__bolinha">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>
+            </span>
+            <span>Registro de Execução Adaptabilidade</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--atual">
+          <a href="./" aria-current="page">
+            <span class="khan-trilha__bolinha">
+              6
+            </span>
+            <span>Procedimentos Acessibilidade e Apreensibilidade</span>
+          </a>
+        </li>
+      
+    </ol>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Nesta página">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Nesta página
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-visao-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Visão geral
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-preparacao-comum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Preparação comum
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-inspecoes-automatizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Inspeções automatizadas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Inspeções automatizadas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-ferramentas-e-justificativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Ferramentas e justificativa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-paginas-e-estados-inspecionados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Páginas e estados inspecionados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-configuracao-e-execucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Configuração e execução
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-evidencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Evidências
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-limitacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Limitações
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-testes-manuais-de-acessibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Testes manuais de acessibilidade
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Testes manuais de acessibilidade">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-tarefas-de-referencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Tarefas de referência
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-classificacao-do-resultado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Classificação do resultado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-navegacao-por-teclado-m8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Navegação por teclado (M8)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-leitor-de-tela-m9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 Leitor de tela (M9)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-ampliacao-de-200-m10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 Ampliação de 200% (M10)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-contraste-e-alto-contraste-m11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.6 Contraste e alto contraste (M11)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#47-registro-de-barreiras" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.7 Registro de barreiras
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-testes-com-voluntarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Testes com voluntários
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Testes com voluntários">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-selecao-dos-participantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Seleção dos participantes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-recrutamento-e-agenda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Recrutamento e agenda
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-consentimento-e-anonimizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Consentimento e anonimização
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-tarefas-padronizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 Tarefas padronizadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-instrucao-inicial-padronizada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 Instrução inicial padronizada
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#56-roteiro-do-avaliador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.6 Roteiro do avaliador
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#57-conclusao-autonoma-erro-operacional-e-pedido-de-ajuda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.7 Conclusão autônoma, erro operacional e pedido de ajuda
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#58-cronometragem-e-registro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.8 Cronometragem e registro
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#59-calculo-das-metricas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.9 Cálculo das métricas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#510-limitacoes-e-resultados-inconclusivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.10 Limitações e resultados inconclusivos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-rastreabilidade-com-a-fase-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Rastreabilidade com a Fase 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-verificacao-piloto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Verificação piloto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-instrumentos-de-coleta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Instrumentos de coleta
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Instrumentos de coleta">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#f1-registro-da-inspecao-automatizada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F1. Registro da inspeção automatizada
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f2-triagem-e-consentimento-dos-voluntarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F2. Triagem e consentimento dos voluntários
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f3-registro-por-tarefa-dos-voluntarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F3. Registro por tarefa dos voluntários
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f4-percepcao-ao-final-da-sessao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F4. Percepção ao final da sessão
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f5-registro-dos-testes-manuais-de-acessibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F5. Registro dos testes manuais de acessibilidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f6-checklist-de-contraste" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F6. Checklist de contraste
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f7-registro-do-ambiente-da-sessao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F7. Registro do ambiente da sessão
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referências
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Histórico de versões
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="procedimentos-de-avaliacao-de-acessibilidade-e-apreensibilidade">Procedimentos de avaliação de acessibilidade e apreensibilidade<a class="headerlink" href="#procedimentos-de-avaliacao-de-acessibilidade-e-apreensibilidade" title="Link para esta seção">&para;</a></h1>
+<p><strong>Versão 1.1</strong></p>
+<p>Este documento especifica como serão coletadas as métricas <a href="../../fase-2/metricas/#18-m8-execucao-por-teclado"><code>M8</code></a> a <a href="../../fase-2/metricas/#114-m14-tempo-de-conclusao-autonoma"><code>M14</code></a>, que respondem às questões <a href="../../fase-2/questoes-hipoteses/#51-q7-navegacao-por-teclado"><code>Q7</code></a> a <a href="../../fase-2/questoes-hipoteses/#55-q11-apreensibilidade"><code>Q11</code></a> do objetivo <a href="../../fase-2/objetivos/#g3"><code>G3</code></a>, adaptadas da ISO/IEC 25023:2016 <a href="#s2">S2</a>. Os procedimentos cobrem três frentes: inspeções automatizadas, testes manuais com tecnologias assistivas e testes com voluntários. A aplicação oficial ocorre na Fase 4; aqui ficam definidos os roteiros, os critérios de classificação e os instrumentos de coleta, de forma que qualquer integrante consiga repetir a avaliação nas mesmas condições.</p>
+<p>O objeto continua sendo a <strong>versão web da Khan Academy em computadores</strong>, nos fluxos <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL1</code></a> a <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL3</code></a> e nos ambientes <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a>, <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A3</code></a> e <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A4</code></a> definidos no <a href="../../fase-1/escopo-da-avaliacao/#ambientes">Escopo da avaliação</a>.</p>
+<h2 id="1-visao-geral">1. Visão geral<a class="headerlink" href="#1-visao-geral" title="Link para esta seção">&para;</a></h2>
+<p>A Tabela 1 resume cada procedimento, as métricas que alimenta e as condições em que é executado.</p>
+<table>
+<thead>
+<tr>
+<th>Procedimento</th>
+<th>Métricas</th>
+<th>Questões e hipóteses</th>
+<th>Ambientes</th>
+<th>Evidência principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inspeção automatizada</td>
+<td>Apoio a <a href="../../fase-2/metricas/#18-m8-execucao-por-teclado"><code>M8</code></a> a <a href="../../fase-2/metricas/#111-m11-conformidade-de-contraste"><code>M11</code></a></td>
+<td>Q7 a Q10 / H7 a H10</td>
+<td><a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a></td>
+<td>Relatórios do Lighthouse e do axe-core</td>
+</tr>
+<tr>
+<td>Navegação por teclado</td>
+<td><a href="../../fase-2/metricas/#18-m8-execucao-por-teclado"><code>M8</code></a></td>
+<td>Q7 / H7</td>
+<td><a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a>, <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A3</code></a>, <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A4</code></a></td>
+<td>Formulário F5 e gravação de tela</td>
+</tr>
+<tr>
+<td>Leitor de tela</td>
+<td><a href="../../fase-2/metricas/#19-m9-execucao-com-leitor-de-tela"><code>M9</code></a></td>
+<td>Q8 / H8</td>
+<td>NVDA em <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a>, VoiceOver em <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A3</code></a>, Orca em <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A4</code></a></td>
+<td>Formulário F5 e gravação com áudio</td>
+</tr>
+<tr>
+<td>Ampliação de 200%</td>
+<td><a href="../../fase-2/metricas/#110-m10-preservacao-com-ampliacao"><code>M10</code></a></td>
+<td>Q9 / H9</td>
+<td><a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a>, 1366 × 768</td>
+<td>Formulário F5 e capturas de tela</td>
+</tr>
+<tr>
+<td>Contraste e alto contraste</td>
+<td><a href="../../fase-2/metricas/#111-m11-conformidade-de-contraste"><code>M11</code></a></td>
+<td>Q10 / H10</td>
+<td><a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a>, 1366 × 768</td>
+<td>Formulários F5 e F6</td>
+</tr>
+<tr>
+<td>Testes com voluntários</td>
+<td><a href="../../fase-2/metricas/#112-m12-conclusao-autonoma-por-estudantes-novos"><code>M12</code></a>, <a href="../../fase-2/metricas/#113-m13-taxa-de-erros-operacionais"><code>M13</code></a>, <a href="../../fase-2/metricas/#114-m14-tempo-de-conclusao-autonoma"><code>M14</code></a></td>
+<td>Q11 / H11</td>
+<td><a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a></td>
+<td>Formulários F3 e F4</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 1. Procedimentos de acessibilidade e apreensibilidade. Fonte: Elaborada por <a href="https://github.com/luisa12ll">Luísa de Souza</a></em></p>
+<h2 id="2-preparacao-comum">2. Preparação comum<a class="headerlink" href="#2-preparacao-comum" title="Link para esta seção">&para;</a></h2>
+<p>Antes de qualquer sessão, o avaliador prepara o ambiente da mesma forma, para que diferenças nos resultados venham da plataforma e não da configuração do computador.</p>
+<ol>
+<li>Usar a conta de teste controlada pela equipe, a mesma em todas as sessões, conforme o <a href="../../fase-1/escopo-da-avaliacao/#fluxos">Escopo da avaliação</a>. A autenticação é feita antes do início da tarefa e não entra na medição.</li>
+<li>Abrir o navegador em um perfil de teste sem extensões, com exceção das ferramentas de inspeção da seção 3. Se for necessário limpar dados de sessões anteriores, fazê-lo antes da autenticação. Após entrar na conta de teste, preservar cookies e demais dados da sessão até o fim das auditorias.</li>
+<li>Ajustar a resolução do sistema para 1366 × 768 em <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a> e registrar a resolução usada em <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A3</code></a> e <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A4</code></a>.</li>
+<li>Manter o idioma da plataforma em português do Brasil e o zoom do navegador em 100%, exceto no teste de ampliação.</li>
+<li>Desativar notificações do sistema e fechar programas que não fazem parte do ensaio.</li>
+<li>Preencher o Formulário F7 com sistema operacional, navegador, tecnologia assistiva e respectivas versões, data, avaliador e conteúdo usado nas tarefas.</li>
+</ol>
+<p>Cada sessão recebe um identificador no formato <code>AC-AAAAMMDD-NN</code> (acessibilidade) ou <code>AP-AAAAMMDD-NN</code> (apreensibilidade), usado no nome de todas as evidências daquela sessão.</p>
+<h2 id="3-inspecoes-automatizadas">3. Inspeções automatizadas<a class="headerlink" href="#3-inspecoes-automatizadas" title="Link para esta seção">&para;</a></h2>
+<h3 id="31-ferramentas-e-justificativa">3.1 Ferramentas e justificativa<a class="headerlink" href="#31-ferramentas-e-justificativa" title="Link para esta seção">&para;</a></h3>
+<p>As inspeções automatizadas localizam rapidamente problemas técnicos verificáveis por código, como imagens sem texto alternativo, controles sem nome acessível e contraste insuficiente. Elas orientam os testes manuais, indicando onde procurar barreiras, mas não decidem se uma tarefa pode ser concluída com tecnologia assistiva. A Tabela 2 justifica cada ferramenta.</p>
+<table>
+<thead>
+<tr>
+<th>Ferramenta</th>
+<th>Forma de uso</th>
+<th>Por que foi escolhida</th>
+<th>Tipo de auditoria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lighthouse <a href="#s3">S3</a></td>
+<td>Painel do Chrome DevTools, categoria Acessibilidade, nos modos navegação e <em>snapshot</em></td>
+<td>Já vem no Chrome do ambiente <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a>, não exige instalação e gera relatório exportável com pontuação de 0 a 100</td>
+<td>Visão geral da página: nomes acessíveis, atributos ARIA, estrutura de títulos, idioma, contraste e ordem de navegação sinalizada para revisão manual</td>
+</tr>
+<tr>
+<td>axe-core <a href="#s4">S4</a></td>
+<td>Extensão axe DevTools no Chrome, com as regras marcadas como WCAG 2.0 e 2.1 níveis A e AA</td>
+<td>Motor de regras aberto, usado como referência no mercado, que separa violações de itens que precisam de revisão humana</td>
+<td>Lista detalhada por elemento, com seletor, regra violada, critério WCAG relacionado e impacto</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 2. Ferramentas de inspeção automatizada e finalidade. Fonte: Elaborada por <a href="https://github.com/luisa12ll">Luísa de Souza</a></em></p>
+<p>As duas ferramentas são complementares. O Lighthouse usa um subconjunto das regras do axe-core e resume o resultado em uma nota, útil para comparar páginas. O axe-core lista cada ocorrência com o elemento afetado, o que permite reproduzir e registrar a barreira.</p>
+<h3 id="32-paginas-e-estados-inspecionados">3.2 Páginas e estados inspecionados<a class="headerlink" href="#32-paginas-e-estados-inspecionados" title="Link para esta seção">&para;</a></h3>
+<p>As páginas da Tabela 3 cobrem as etapas dos fluxos <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL1</code></a> a <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL3</code></a>. Estados que só existem depois de uma interação, como o retorno de uma resposta, são inspecionados no modo <em>snapshot</em>, com a página já no estado desejado.</p>
+<table>
+<thead>
+<tr>
+<th>Código</th>
+<th>Página ou estado</th>
+<th>Fluxo</th>
+<th>Modo do Lighthouse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P1</td>
+<td>Página inicial da conta de teste após o login</td>
+<td><a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL1</code></a></td>
+<td>Navegação</td>
+</tr>
+<tr>
+<td>P2</td>
+<td>Página do curso selecionado</td>
+<td><a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL1</code></a></td>
+<td>Navegação</td>
+</tr>
+<tr>
+<td>P3</td>
+<td>Página da unidade com a lista de aulas</td>
+<td><a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL1</code></a></td>
+<td>Navegação</td>
+</tr>
+<tr>
+<td>P4</td>
+<td>Página da videoaula com o reprodutor carregado</td>
+<td><a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL2</code></a></td>
+<td>Navegação</td>
+</tr>
+<tr>
+<td>P5</td>
+<td>Página do exercício antes da resposta</td>
+<td><a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL3</code></a></td>
+<td>Navegação</td>
+</tr>
+<tr>
+<td>P6</td>
+<td>Exercício com retorno da resposta exibido e dica aberta quando disponível</td>
+<td><a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL3</code></a></td>
+<td><em>Snapshot</em></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 3. Páginas e estados submetidos à inspeção automatizada. Fonte: Elaborada por <a href="https://github.com/luisa12ll">Luísa de Souza</a></em></p>
+<p>O curso, a unidade, a videoaula e o exercício são os mesmos das tarefas da seção 4.1, para que os achados automatizados possam ser confrontados com os testes manuais.</p>
+<h3 id="33-configuracao-e-execucao">3.3 Configuração e execução<a class="headerlink" href="#33-configuracao-e-execucao" title="Link para esta seção">&para;</a></h3>
+<ol>
+<li>Preparar o ambiente <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a> conforme a seção 2.</li>
+<li>Abrir a página P1 e aguardar o carregamento completo.</li>
+<li>No Lighthouse, selecionar apenas a categoria Acessibilidade, dispositivo <strong>Computador</strong> e o modo indicado na Tabela 3. Desativar <strong>Clear storage</strong> para preservar a sessão autenticada e registrar essa configuração no Formulário F7. Executar a auditoria e exportar o relatório em HTML e JSON.</li>
+<li>Na mesma página, executar a varredura completa do axe DevTools e exportar o resultado em JSON ou CSV.</li>
+<li>Fazer uma captura de tela inteira da página no estado auditado.</li>
+<li>Repetir a auditoria para P2 a P5 nas respectivas páginas. Para P6, abrir a dica quando disponível e enviar a resposta de teste definida após o piloto antes de executar o Lighthouse em modo <em>snapshot</em> e a varredura do axe.</li>
+<li>Executar a sequência duas vezes no mesmo dia. Se a pontuação do Lighthouse variar mais de 5 pontos entre as execuções de uma página, executar uma terceira vez e registrar as três.</li>
+</ol>
+<h3 id="34-evidencias">3.4 Evidências<a class="headerlink" href="#34-evidencias" title="Link para esta seção">&para;</a></h3>
+<p>Os arquivos seguem o padrão <code>AC-AAAAMMDD-NN_P1_lighthouse.html</code>, <code>AC-AAAAMMDD-NN_P1_axe.json</code> e <code>AC-AAAAMMDD-NN_P1_captura.png</code>. Cada violação encontrada é transcrita no Formulário F1, com página, regra, critério WCAG, impacto, seletor do elemento e se o elemento participa de alguma etapa das tarefas. Itens que as ferramentas marcam como "precisa de revisão" entram na lista de pontos a confirmar nos testes manuais.</p>
+<h3 id="35-limitacoes">3.5 Limitações<a class="headerlink" href="#35-limitacoes" title="Link para esta seção">&para;</a></h3>
+<ul>
+<li>Apenas parte dos critérios da WCAG 2.1 <a href="#s1">S1</a> pode ser verificada por código. Ordem lógica de leitura, clareza dos anúncios do leitor de tela, armadilhas de foco em componentes dinâmicos e utilidade do texto alternativo exigem avaliação humana.</li>
+<li>A pontuação do Lighthouse é ponderada pelas regras aplicáveis à página e não representa grau de acessibilidade. Ela não entra no cálculo de nenhuma métrica.</li>
+<li>Conteúdo carregado em <code>iframe</code> de terceiros, como reprodutores de vídeo incorporados, pode não ser inspecionado por completo. Quando isso ocorrer, o fato é registrado no Formulário F1.</li>
+<li>Ausência de violações automáticas não permite concluir que a página é acessível. O julgamento de <a href="../../fase-2/metricas/#18-m8-execucao-por-teclado"><code>M8</code></a> a <a href="../../fase-2/metricas/#111-m11-conformidade-de-contraste"><code>M11</code></a> depende dos testes manuais da seção 4.</li>
+</ul>
+<h2 id="4-testes-manuais-de-acessibilidade">4. Testes manuais de acessibilidade<a class="headerlink" href="#4-testes-manuais-de-acessibilidade" title="Link para esta seção">&para;</a></h2>
+<h3 id="41-tarefas-de-referencia">4.1 Tarefas de referência<a class="headerlink" href="#41-tarefas-de-referencia" title="Link para esta seção">&para;</a></h3>
+<p>Os testes manuais usam três tarefas fixas, uma por fluxo, descritas na Tabela 4. O mesmo conteúdo é usado em todos os ambientes e configurações.</p>
+<table>
+<thead>
+<tr>
+<th>Tarefa</th>
+<th>Fluxo</th>
+<th>Etapas</th>
+<th>Estado de conclusão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T1</td>
+<td><a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL1</code></a></td>
+<td>A partir da página inicial, localizar o curso de Matemática do 6º ano, abrir o curso e abrir a primeira unidade</td>
+<td>Lista de aulas da primeira unidade exibida</td>
+</tr>
+<tr>
+<td>T2</td>
+<td><a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL2</code></a></td>
+<td>Na unidade selecionada, abrir a videoaula definida após o piloto, iniciar a reprodução, pausar e ativar a legenda ou a transcrição, quando disponível</td>
+<td>Vídeo pausado; legenda ou transcrição ativada quando disponível</td>
+</tr>
+<tr>
+<td>T3</td>
+<td><a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL3</code></a></td>
+<td>Abrir o exercício definido após o piloto, solicitar uma dica quando disponível, informar a resposta de teste do cartão e enviá-la</td>
+<td>Retorno da plataforma sobre a resposta exibido</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 4. Tarefas de referência dos testes manuais. Fonte: Elaborada por <a href="https://github.com/luisa12ll">Luísa de Souza</a></em></p>
+<p>A verificação piloto da seção 7 confirma os caminhos e fixa as URLs do curso, da unidade, da videoaula e do exercício, além da resposta de teste de T3 e da disponibilidade de legenda, transcrição e dica. Registrar esses dados no Formulário F7 e usar o mesmo cartão de tarefas em todas as sessões oficiais. A ausência de recurso opcional é registrada como <code>não aplicável</code> e não como falha da interface. Se o conteúdo mudar durante a coleta, suspender a tarefa afetada até definir um substituto equivalente e registrar a mudança; não misturar resultados obtidos com versões diferentes do cartão sem discutir a comparabilidade.</p>
+<h3 id="42-classificacao-do-resultado">4.2 Classificação do resultado<a class="headerlink" href="#42-classificacao-do-resultado" title="Link para esta seção">&para;</a></h3>
+<p>Cada combinação de tarefa e condição recebe uma das classificações da Tabela 5.</p>
+<table>
+<thead>
+<tr>
+<th>Classificação</th>
+<th>Quando aplicar</th>
+<th>Efeito no cálculo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sucesso</td>
+<td>A tarefa chega ao estado de conclusão usando somente o recurso avaliado, sem barreira em etapa essencial</td>
+<td>Conta em <code>A</code> e em <code>N</code></td>
+</tr>
+<tr>
+<td>Sucesso com barreira não essencial</td>
+<td>A tarefa é concluída, mas há problema em elemento que não impede nenhuma etapa, como foco pouco visível em um link secundário</td>
+<td>Conta em <code>A</code> e em <code>N</code>; a barreira é registrada no Formulário F5</td>
+</tr>
+<tr>
+<td>Falha</td>
+<td>A tarefa não é concluída, ou só é concluída com recurso fora do avaliado (mouse no teste de teclado, consulta visual no teste de leitor de tela, retorno ao zoom de 100%, desativação do alto contraste)</td>
+<td>Conta apenas em <code>N</code></td>
+</tr>
+<tr>
+<td>Impedimento</td>
+<td>Uma barreira da plataforma bloqueia uma etapa essencial, como armadilha de foco ou controle sem acesso pelo recurso avaliado</td>
+<td>Conta apenas em <code>N</code> e aciona a regra de bloqueio dos <a href="../../fase-2/criterios-julgamento/#5-regra-de-julgamento">critérios de julgamento</a></td>
+</tr>
+<tr>
+<td>Execução inválida</td>
+<td>Falha que não tem relação com a acessibilidade, como queda da internet, erro do servidor ou erro de configuração do avaliador</td>
+<td>Não entra no cálculo; a combinação é repetida uma vez e, se falhar de novo, é registrada como inconclusiva</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 5. Classificação do resultado de cada combinação. Fonte: Elaborada por <a href="https://github.com/luisa12ll">Luísa de Souza</a></em></p>
+<p>Uma etapa é essencial quando, sem ela, a tarefa não atinge o estado de conclusão da Tabela 4.</p>
+<h3 id="43-navegacao-por-teclado-m8">4.3 Navegação por teclado (M8)<a class="headerlink" href="#43-navegacao-por-teclado-m8" title="Link para esta seção">&para;</a></h3>
+<p><strong>Condição:</strong> T1 a T3 nos ambientes <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a>, <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A3</code></a> e <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A4</code></a>, totalizando 9 combinações. No Safari de <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A3</code></a>, ativar antes a opção que permite navegar por todos os itens da página com a tecla Tab.</p>
+<ol>
+<li>Posicionar o cursor fora da área da página e não tocar no mouse ou no <em>trackpad</em> até o fim da tarefa.</li>
+<li>Usar apenas Tab e Shift+Tab para mover o foco, Enter e Espaço para acionar, setas dentro de menus e controles compostos e Esc para fechar janelas e menus.</li>
+<li>Em cada etapa, observar e registrar no Formulário F5:<ul>
+<li>se o foco está sempre visível (WCAG 2.4.7);</li>
+<li>se a ordem do foco acompanha a ordem visual e lógica (WCAG 2.4.3);</li>
+<li>se todos os controles necessários recebem foco e podem ser acionados (WCAG 2.1.1);</li>
+<li>se o foco fica preso em algum componente sem saída pelo teclado (WCAG 2.1.2);</li>
+<li>quantas teclas foram necessárias até alcançar o controle da etapa, como apoio à descrição de barreiras.</li>
+</ul>
+</li>
+<li>Gravar a tela durante toda a tarefa.</li>
+<li>Classificar a combinação conforme a Tabela 5.</li>
+</ol>
+<p><strong>Cálculo:</strong> <code>M8 = 100 × A/N</code>, em que <code>A</code> é o número de combinações com Sucesso ou Sucesso com barreira não essencial e <code>N</code> é o número de combinações válidas.</p>
+<h3 id="44-leitor-de-tela-m9">4.4 Leitor de tela (M9)<a class="headerlink" href="#44-leitor-de-tela-m9" title="Link para esta seção">&para;</a></h3>
+<p><strong>Condição:</strong> T1 a T3 em três combinações de leitor, navegador e sistema, totalizando 9 combinações, conforme a Tabela 6.</p>
+<table>
+<thead>
+<tr>
+<th>Ambiente</th>
+<th>Leitor de tela</th>
+<th>Navegador</th>
+<th>Comandos de referência</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a></td>
+<td>NVDA <a href="#s6">S6</a></td>
+<td>Google Chrome</td>
+<td>Modo de navegação, H para títulos, K para links, B para botões, F para campos, Insert+F7 para lista de elementos</td>
+</tr>
+<tr>
+<td><a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A3</code></a></td>
+<td>VoiceOver <a href="#s7">S7</a></td>
+<td>Apple Safari</td>
+<td>VO (Control+Option) com setas para percorrer, VO+U para o rotor, VO+Espaço para acionar</td>
+</tr>
+<tr>
+<td><a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A4</code></a></td>
+<td>Orca <a href="#s8">S8</a></td>
+<td>Mozilla Firefox</td>
+<td>Navegação estrutural com H, K, B e F, Insert+Espaço para alternar modo de foco e de navegação</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 6. Combinações de leitor de tela e comandos de referência. Fonte: Elaborada por <a href="https://github.com/luisa12ll">Luísa de Souza</a></em></p>
+<ol>
+<li>Ativar o leitor de tela com voz em português e velocidade padrão, e registrar a versão no Formulário F7.</li>
+<li>Antes de iniciar, desligar o monitor ou cobrir a tela, para que a tarefa seja conduzida apenas pelo que é anunciado. Um segundo integrante acompanha a tela para registrar o que acontece, sem orientar o avaliador.</li>
+<li>Executar a tarefa usando apenas teclado e os comandos do leitor.</li>
+<li>Em cada etapa, registrar no Formulário F5:<ul>
+<li>o que o leitor anunciou ao chegar no controle necessário;</li>
+<li>se o controle tem nome e função compreensíveis, como "botão Enviar" em vez de "botão" sem nome;</li>
+<li>se mudanças de estado são anunciadas, como reprodução iniciada, dica aberta e resposta correta ou incorreta;</li>
+<li>se foi preciso consultar a tela para continuar.</li>
+</ul>
+</li>
+<li>Gravar a tela com o áudio do sistema.</li>
+<li>Classificar a combinação conforme a Tabela 5. Consultar a tela para continuar é Falha.</li>
+</ol>
+<p><strong>Cálculo:</strong> <code>M9 = 100 × A/N</code>, com <code>A</code> e <code>N</code> definidos como em M8.</p>
+<h3 id="45-ampliacao-de-200-m10">4.5 Ampliação de 200% (M10)<a class="headerlink" href="#45-ampliacao-de-200-m10" title="Link para esta seção">&para;</a></h3>
+<p><strong>Condição:</strong> T1 a T3 em <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a>, na resolução de 1366 × 768, com zoom do navegador em 200%, totalizando 3 combinações. O critério de referência é o 1.4.4 da WCAG 2.1 <a href="#s1">S1</a>.</p>
+<ol>
+<li>Com a página inicial aberta, ajustar o zoom do Chrome para 200% pelo atalho Ctrl e + até o indicador mostrar 200%.</li>
+<li>Executar a tarefa com mouse e teclado, sem reduzir o zoom em nenhum momento.</li>
+<li>Em cada etapa, registrar no Formulário F5:<ul>
+<li>texto cortado, sobreposto ou escondido sem forma de acesso;</li>
+<li>controles necessários que deixam de aparecer ou ficam inacessíveis;</li>
+<li>necessidade de rolagem horizontal para ler uma linha de texto;</li>
+<li>menus que só abrem com o zoom reduzido.</li>
+</ul>
+</li>
+<li>Fazer uma captura de tela de cada etapa.</li>
+<li>Classificar a combinação conforme a Tabela 5. Reduzir o zoom para concluir é Falha.</li>
+</ol>
+<p><strong>Cálculo:</strong> <code>M10 = 100 × A/N</code>. Com apenas 3 combinações, uma única falha leva o resultado a 66,7%, por isso cada barreira é descrita individualmente, como pedem os <a href="../../fase-2/criterios-julgamento/#4-criterios-tecnicos-de-acessibilidade">critérios técnicos</a>.</p>
+<h3 id="46-contraste-e-alto-contraste-m11">4.6 Contraste e alto contraste (M11)<a class="headerlink" href="#46-contraste-e-alto-contraste-m11" title="Link para esta seção">&para;</a></h3>
+<p>A <a href="../../fase-2/metricas/#111-m11-conformidade-de-contraste"><code>M11</code></a> tem duas partes, registradas separadamente, como define a <a href="../../fase-2/questoes-hipoteses/#54-q10-contraste-e-alto-contraste">hipótese H10</a>.</p>
+<p><strong>Parte 1: medição de contraste.</strong> Em P1 a P6, o avaliador lista no Formulário F6 os textos e imagens de texto necessários às tarefas T1 a T3, como títulos, rótulos de links e botões, enunciado, instruções e mensagens de retorno. Ícones e bordas sem texto podem ser registrados como achados adicionais, mas não entram no denominador de contraste textual.</p>
+<ol>
+<li>Medir a razão de contraste de cada elemento com o Colour Contrast Analyser <a href="#s9">S9</a>, usando o conta-gotas sobre a cor do texto e a cor de fundo.</li>
+<li>Confirmar com o resultado da regra de contraste do axe-core, quando houver.</li>
+<li>Classificar o tamanho do texto: grande é a partir de 18 pt (24 px) ou 14 pt (cerca de 18,7 px) em negrito.</li>
+<li>Registrar se o elemento atende a 4,5:1 para texto comum e 3:1 para texto grande (WCAG 1.4.3, AA) e a 7:1 e 4,5:1 (WCAG 1.4.6, AAA).</li>
+<li>Marcar se o elemento é essencial para a tarefa.</li>
+</ol>
+<p><strong>Cálculo da parte 1:</strong> registrar <code>E_a</code>, número de elementos textuais aplicáveis avaliados, <code>E_c(AA)</code>, número conforme ao critério 1.4.3, e <code>E_c(AAA)</code>, número conforme ao critério 1.4.6. Relatar separadamente <code>100 × E_c(AA)/E_a</code> e <code>100 × E_c(AAA)/E_a</code>. A nota segue os <a href="../../fase-2/criterios-julgamento/#4-criterios-tecnicos-de-acessibilidade">critérios técnicos</a>: o nível Alvo exige AA em todos os elementos aplicáveis; Excelente exige AAA em todos; falha em elemento essencial leva a nota 0, mesmo com percentual alto. Elementos cuja combinação real de cores não puder ser determinada são descritos à parte; se forem essenciais, o julgamento de M11 permanece inconclusivo até sua verificação.</p>
+<p><strong>Parte 2: alto contraste do Windows.</strong> T1 a T3 em <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a>, totalizando 3 combinações.</p>
+<ol>
+<li>Ativar o tema de contraste <strong>Céu noturno</strong> em Configurações, Acessibilidade, Temas de contraste <a href="#s10">S10</a>, e registrar o tema no Formulário F7.</li>
+<li>Executar a tarefa com mouse e teclado, sem desativar o tema.</li>
+<li>Registrar no Formulário F5 textos, ícones, bordas de campos e indicadores de foco que desaparecem ou ficam indistinguíveis.</li>
+<li>Fazer uma captura de tela de cada etapa e classificar a combinação conforme a Tabela 5.</li>
+</ol>
+<p><strong>Registro da parte 2:</strong> percentual de tarefas concluídas com alto contraste, relatado ao lado de M11, sem ser somado a ele.</p>
+<h3 id="47-registro-de-barreiras">4.7 Registro de barreiras<a class="headerlink" href="#47-registro-de-barreiras" title="Link para esta seção">&para;</a></h3>
+<p>Toda barreira encontrada, com ou sem impacto na conclusão, é registrada no Formulário F5 com os campos abaixo, de modo que outra pessoa consiga reproduzi-la.</p>
+<ul>
+<li>Identificador da barreira (<code>B-NN</code>) e da sessão.</li>
+<li>Ambiente, navegador, tecnologia assistiva e versões.</li>
+<li>Tarefa e etapa.</li>
+<li>Passos exatos para reproduzir, a partir da página inicial.</li>
+<li>Comportamento esperado e comportamento observado.</li>
+<li>Critério WCAG relacionado, quando houver.</li>
+<li>Gravidade: <strong>bloqueia</strong> (impede etapa essencial), <strong>dificulta</strong> (exige contorno) ou <strong>incomoda</strong> (não afeta a conclusão).</li>
+<li>Evidência: nome do arquivo de captura ou trecho da gravação com minuto e segundo.</li>
+</ul>
+<h2 id="5-testes-com-voluntarios">5. Testes com voluntários<a class="headerlink" href="#5-testes-com-voluntarios" title="Link para esta seção">&para;</a></h2>
+<h3 id="51-selecao-dos-participantes">5.1 Seleção dos participantes<a class="headerlink" href="#51-selecao-dos-participantes" title="Link para esta seção">&para;</a></h3>
+<p>A amostra prevista no <a href="../../fase-1/escopo-da-avaliacao/#ambientes">Escopo da avaliação</a> é de três a cinco adultos sem experiência anterior com a Khan Academy. A Tabela 7 detalha os critérios.</p>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Critério</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inclusão</td>
+<td>Ter 18 anos ou mais</td>
+</tr>
+<tr>
+<td>Inclusão</td>
+<td>Declarar nunca ter usado a Khan Academy em nenhuma plataforma</td>
+</tr>
+<tr>
+<td>Inclusão</td>
+<td>Usar computador com mouse e teclado no dia a dia</td>
+</tr>
+<tr>
+<td>Inclusão</td>
+<td>Ler em português sem dificuldade</td>
+</tr>
+<tr>
+<td>Exclusão</td>
+<td>Fazer parte da equipe ou ter acompanhado a preparação da avaliação</td>
+</tr>
+<tr>
+<td>Exclusão</td>
+<td>Trabalhar com teste, design ou desenvolvimento de interfaces web</td>
+</tr>
+<tr>
+<td>Exclusão</td>
+<td>Ter participado da verificação piloto</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 7. Critérios de seleção dos voluntários. Fonte: Elaborada por <a href="https://github.com/luisa12ll">Luísa de Souza</a></em></p>
+<p>O Formulário F2 aplica esses critérios antes do agendamento. Também registra faixa etária, frequência de uso de computador e plataformas de estudo on-line já usadas, apenas para descrever a amostra.</p>
+<h3 id="52-recrutamento-e-agenda">5.2 Recrutamento e agenda<a class="headerlink" href="#52-recrutamento-e-agenda" title="Link para esta seção">&para;</a></h3>
+<ol>
+<li>Convidar colegas de outros cursos da universidade e pessoas próximas da equipe que atendam à Tabela 7, por mensagem com descrição curta da atividade, duração de cerca de 30 minutos e o caráter voluntário.</li>
+<li>Enviar o Formulário F2 a quem aceitar e confirmar a elegibilidade.</li>
+<li>Agendar as sessões em horários diferentes, com pelo menos dois participantes reserva, para manter a amostra mínima de três em caso de desistência.</li>
+<li>Realizar todas as sessões no mesmo computador do ambiente <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a>, em local silencioso, com um avaliador condutor e um observador.</li>
+</ol>
+<h3 id="53-consentimento-e-anonimizacao">5.3 Consentimento e anonimização<a class="headerlink" href="#53-consentimento-e-anonimizacao" title="Link para esta seção">&para;</a></h3>
+<p>O tratamento dos dados segue a Lei Geral de Proteção de Dados Pessoais <a href="#s5">S5</a>.</p>
+<ul>
+<li>No início da sessão, o condutor lê o Termo de Consentimento (Formulário F2, parte 2), que informa o objetivo, o que será registrado, que a avaliação é da plataforma e não da pessoa, que é possível parar a qualquer momento sem justificativa e como os dados serão usados. A sessão só começa após o aceite.</li>
+<li>Cada participante recebe um código, de P1 a P5. Nome e contato ficam apenas no termo de consentimento, guardado fora do repositório público.</li>
+<li>A gravação, quando autorizada, captura somente a tela e o áudio do computador, sem câmera. Se o participante não autorizar a gravação, a coleta é feita apenas pelo Formulário F3.</li>
+<li>Publicam-se somente dados agregados e trechos anonimizados de comentários. Arquivos brutos são apagados ao fim da disciplina.</li>
+</ul>
+<h3 id="54-tarefas-padronizadas">5.4 Tarefas padronizadas<a class="headerlink" href="#54-tarefas-padronizadas" title="Link para esta seção">&para;</a></h3>
+<p>As tarefas dos voluntários reproduzem T1 a T3 da seção 4.1, mas são lidas em linguagem do dia a dia, sem citar nomes de botões ou menus. A Tabela 8 traz o enunciado lido ao participante.</p>
+<table>
+<thead>
+<tr>
+<th>Tarefa</th>
+<th>Enunciado lido ao participante</th>
+<th>Estado de conclusão</th>
+<th>Limite de tempo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T1</td>
+<td>"Você quer estudar Matemática do 6º ano. Encontre esse curso e abra a primeira parte dele."</td>
+<td>Lista de aulas da primeira unidade exibida</td>
+<td>5 minutos</td>
+</tr>
+<tr>
+<td>T2</td>
+<td>"Agora abra a videoaula indicada no cartão. Comece o vídeo, pause e, se houver, ative a legenda ou a transcrição."</td>
+<td>Vídeo pausado; legenda ou transcrição ativada quando disponível</td>
+<td>5 minutos</td>
+</tr>
+<tr>
+<td>T3</td>
+<td>"Abra o exercício indicado no cartão. Se houver uma dica, abra-a. Informe a resposta de teste escrita no cartão e envie."</td>
+<td>Retorno da plataforma sobre a resposta exibido</td>
+<td>5 minutos</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 8. Tarefas padronizadas dos testes com voluntários. Fonte: Elaborada por <a href="https://github.com/luisa12ll">Luísa de Souza</a></em></p>
+<p>A resposta de teste é a mesma para todos os participantes e deve produzir um retorno observável no exercício escolhido. O participante não precisa resolver o conteúdo pedagógico: acertar ou errar não altera a conclusão da tarefa. O limite de 5 minutos é a janela de observação; ele é maior que a faixa de 180 segundos da <a href="../../fase-2/criterios-julgamento/#3-tempo-e-consumo-de-recursos"><code>M14</code></a> para que o tempo das tentativas lentas também seja registrado.</p>
+<h3 id="55-instrucao-inicial-padronizada">5.5 Instrução inicial padronizada<a class="headerlink" href="#55-instrucao-inicial-padronizada" title="Link para esta seção">&para;</a></h3>
+<p>O condutor lê o texto abaixo, sem acrescentar explicações, antes da primeira tarefa.</p>
+<blockquote>
+<p>"Obrigado por participar. Hoje vamos observar como as pessoas usam um site de estudos pela primeira vez. Quem está sendo avaliado é o site, não você, então não existe resposta certa ou errada. Vou ler três tarefas, uma de cada vez. Quando terminar uma tarefa, ou se achar que não consegue continuar, é só avisar. Durante as tarefas, não vou poder ajudar; se você pedir ajuda, vou anotar e, se precisar, explico como seguir. Pode falar em voz alta o que está pensando, se quiser. Você já está com a conta aberta no site. Podemos começar?"</p>
+</blockquote>
+<h3 id="56-roteiro-do-avaliador">5.6 Roteiro do avaliador<a class="headerlink" href="#56-roteiro-do-avaliador" title="Link para esta seção">&para;</a></h3>
+<ol>
+<li>Preparar o computador conforme a seção 2, com a conta de teste já autenticada e a página inicial aberta.</li>
+<li>Ler o termo de consentimento, esclarecer dúvidas e registrar o aceite e a autorização específica de gravação.</li>
+<li>Iniciar a gravação de tela somente se autorizada e anotar o horário no Formulário F3.</li>
+<li>Ler a instrução inicial da seção 5.5.</li>
+<li>Para cada tarefa, na ordem T1, T2 e T3:<ol>
+<li>ler o enunciado da Tabela 8 e entregar o mesmo texto impresso;</li>
+<li>iniciar o cronômetro imediatamente após terminar a leitura do enunciado;</li>
+<li>observar sem comentar e registrar erros e pedidos de ajuda no Formulário F3;</li>
+<li>parar o cronômetro quando a tela atingir o estado de conclusão, quando o participante desistir ou ao fim dos 5 minutos;</li>
+<li>se a tarefa não for concluída, levar a página ao ponto de início da próxima tarefa antes de seguir.</li>
+</ol>
+</li>
+<li>Ao final, aplicar as perguntas de percepção do Formulário F4.</li>
+<li>Agradecer, encerrar a gravação e conferir se todos os campos do Formulário F3 foram preenchidos.</li>
+</ol>
+<p>O observador registra os horários e as ações em paralelo, para que o condutor possa se concentrar no participante. Divergências entre os dois registros são resolvidas pela gravação; sem gravação, vale o registro do observador.</p>
+<h3 id="57-conclusao-autonoma-erro-operacional-e-pedido-de-ajuda">5.7 Conclusão autônoma, erro operacional e pedido de ajuda<a class="headerlink" href="#57-conclusao-autonoma-erro-operacional-e-pedido-de-ajuda" title="Link para esta seção">&para;</a></h3>
+<p>A Tabela 9 define os termos usados nos registros e nos cálculos.</p>
+<table>
+<thead>
+<tr>
+<th>Termo</th>
+<th>Definição</th>
+<th>Exemplos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conclusão autônoma</td>
+<td>O participante atinge o estado de conclusão dentro de 5 minutos, na primeira tentativa, sem ter recebido ajuda</td>
+<td>Abre a lista de aulas da unidade sozinho em 2 minutos</td>
+</tr>
+<tr>
+<td>Pedido de ajuda</td>
+<td>O participante pergunta como fazer ou o condutor precisa intervir para a tarefa continuar</td>
+<td>"Onde fica o curso?"; condutor aponta o menu</td>
+</tr>
+<tr>
+<td>Resposta neutra</td>
+<td>Resposta do condutor que não indica caminho; não conta como ajuda</td>
+<td>"Faça como achar melhor"; "Pode continuar"</td>
+</tr>
+<tr>
+<td>Erro operacional</td>
+<td>Ação concluída que se afasta do caminho da tarefa e exige voltar ou desfazer</td>
+<td>Abrir um curso de outra série; acionar o botão errado no reprodutor; enviar o exercício sem resposta por engano</td>
+</tr>
+<tr>
+<td>Exploração</td>
+<td>Movimentos sem compromisso para conhecer a página; não conta como erro</td>
+<td>Rolar a página; passar o mouse sobre menus; abrir e fechar um menu sem escolher item</td>
+</tr>
+<tr>
+<td>Falha técnica</td>
+<td>Problema da plataforma ou do ambiente, alheio ao participante</td>
+<td>Página que não carrega; vídeo que não inicia por erro do servidor</td>
+</tr>
+<tr>
+<td>Desistência</td>
+<td>O participante declara que não consegue continuar</td>
+<td>"Não sei mais o que fazer"</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 9. Definições usadas nos testes com voluntários. Fonte: Elaborada por <a href="https://github.com/luisa12ll">Luísa de Souza</a></em></p>
+<p>Uma tentativa é <strong>elegível</strong> quando não houve falha técnica que impedisse a tarefa. Tentativas com falha técnica impeditiva são registradas, mas saem de <code>N</code>. Errar a resposta do exercício não é erro operacional, porque mede conhecimento do conteúdo e não uso da interface.</p>
+<h3 id="58-cronometragem-e-registro">5.8 Cronometragem e registro<a class="headerlink" href="#58-cronometragem-e-registro" title="Link para esta seção">&para;</a></h3>
+<ul>
+<li>O tempo é medido em segundos, com cronômetro digital, e conferido pela gravação quando houver.</li>
+<li>O início e o fim seguem o passo 5 do roteiro da seção 5.6.</li>
+<li>Cada erro operacional é anotado com o horário aproximado e a ação realizada.</li>
+<li>Cada pedido de ajuda é anotado com o horário, a pergunta e a resposta dada.</li>
+<li>Falhas técnicas são anotadas com a mensagem exibida, quando houver.</li>
+</ul>
+<h3 id="59-calculo-das-metricas">5.9 Cálculo das métricas<a class="headerlink" href="#59-calculo-das-metricas" title="Link para esta seção">&para;</a></h3>
+<p>Os dados do Formulário F3 alimentam as fórmulas da Fase 2.</p>
+<ul>
+<li><strong>M12:</strong> <code>100 × S/N</code>, em que <code>S</code> são as primeiras tentativas com conclusão autônoma e <code>N</code> as primeiras tentativas elegíveis. Calcular por tarefa e no total.</li>
+<li><strong>M13:</strong> <code>100 × E/N</code>, em que <code>E</code> são as primeiras tentativas elegíveis com pelo menos um erro operacional.</li>
+<li><strong>M14:</strong> mediana, em segundos, de <code>t_fim − t_início</code> apenas das tentativas com conclusão autônoma, por tarefa. Desistências, pedidos de ajuda e tempos esgotados são relatados à parte.</li>
+</ul>
+<p>Com três a cinco participantes e três tarefas, <code>N</code> fica entre 9 e 15 tentativas no total e entre 3 e 5 por tarefa.</p>
+<h3 id="510-limitacoes-e-resultados-inconclusivos">5.10 Limitações e resultados inconclusivos<a class="headerlink" href="#510-limitacoes-e-resultados-inconclusivos" title="Link para esta seção">&para;</a></h3>
+<ul>
+<li>A amostra é exploratória e não representa estudantes de escolas públicas nem menores de idade, como já registrado nos <a href="../../fase-1/escopo-da-avaliacao/#limites-de-validade">limites de validade</a>.</li>
+<li>Com poucos participantes, uma única tentativa muda o percentual em 20 a 33 pontos por tarefa. Os resultados são apresentados com as contagens absolutas.</li>
+<li>O resultado de <a href="../../fase-2/questoes-hipoteses/#55-q11-apreensibilidade"><code>H11</code></a> é <strong>inconclusivo</strong> quando houver menos de três participantes válidos ou quando mais da metade das tentativas de uma tarefa for inelegível por falha técnica. Nesse caso, os registros são apresentados como evidência exploratória.</li>
+<li>A presença do condutor e do observador pode alterar o comportamento do participante. A instrução padronizada e as respostas neutras reduzem esse efeito, mas não o eliminam.</li>
+</ul>
+<h2 id="6-rastreabilidade-com-a-fase-2">6. Rastreabilidade com a Fase 2<a class="headerlink" href="#6-rastreabilidade-com-a-fase-2" title="Link para esta seção">&para;</a></h2>
+<p>A Tabela 10 liga cada procedimento às questões, hipóteses, métricas e critérios de julgamento da Fase 2.</p>
+<table>
+<thead>
+<tr>
+<th>Questão</th>
+<th>Hipótese</th>
+<th>Métrica</th>
+<th>Procedimento</th>
+<th>Dado coletado</th>
+<th>Fórmula</th>
+<th>Critério de julgamento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../fase-2/questoes-hipoteses/#51-q7-navegacao-por-teclado"><code>Q7</code></a></td>
+<td>H7</td>
+<td><a href="../../fase-2/metricas/#18-m8-execucao-por-teclado"><code>M8</code></a></td>
+<td>Seção 4.3</td>
+<td>Classificação das 9 combinações no F5</td>
+<td><code>100 × A/N</code></td>
+<td><a href="../../fase-2/criterios-julgamento/#2-metricas-percentuais">Faixas percentuais</a> e regra de bloqueio</td>
+</tr>
+<tr>
+<td><a href="../../fase-2/questoes-hipoteses/#52-q8-utilizacao-com-leitor-de-tela"><code>Q8</code></a></td>
+<td>H8</td>
+<td><a href="../../fase-2/metricas/#19-m9-execucao-com-leitor-de-tela"><code>M9</code></a></td>
+<td>Seção 4.4</td>
+<td>Anúncios e classificação das 9 combinações no F5</td>
+<td><code>100 × A/N</code></td>
+<td><a href="../../fase-2/criterios-julgamento/#2-metricas-percentuais">Faixas percentuais</a> e regra de bloqueio</td>
+</tr>
+<tr>
+<td><a href="../../fase-2/questoes-hipoteses/#53-q9-utilizacao-com-ampliacao"><code>Q9</code></a></td>
+<td>H9</td>
+<td><a href="../../fase-2/metricas/#110-m10-preservacao-com-ampliacao"><code>M10</code></a></td>
+<td>Seção 4.5</td>
+<td>Classificação das 3 combinações e capturas no F5</td>
+<td><code>100 × A/N</code></td>
+<td><a href="../../fase-2/criterios-julgamento/#2-metricas-percentuais">Faixas percentuais</a> e <a href="../../fase-2/criterios-julgamento/#4-criterios-tecnicos-de-acessibilidade">WCAG 1.4.4</a></td>
+</tr>
+<tr>
+<td><a href="../../fase-2/questoes-hipoteses/#54-q10-contraste-e-alto-contraste"><code>Q10</code></a></td>
+<td>H10</td>
+<td><a href="../../fase-2/metricas/#111-m11-conformidade-de-contraste"><code>M11</code></a></td>
+<td>Seção 4.6</td>
+<td>Razões de contraste no F6 e tarefas em alto contraste no F5</td>
+<td><code>100 × E_c(AA)/E_a</code> e <code>100 × E_c(AAA)/E_a</code>; alto contraste à parte</td>
+<td><a href="../../fase-2/criterios-julgamento/#4-criterios-tecnicos-de-acessibilidade">WCAG 1.4.3 e 1.4.6</a></td>
+</tr>
+<tr>
+<td><a href="../../fase-2/questoes-hipoteses/#55-q11-apreensibilidade"><code>Q11</code></a></td>
+<td>H11</td>
+<td><a href="../../fase-2/metricas/#112-m12-conclusao-autonoma-por-estudantes-novos"><code>M12</code></a></td>
+<td>Seção 5</td>
+<td>Conclusão e ajuda por tentativa no F3</td>
+<td><code>100 × S/N</code></td>
+<td><a href="../../fase-2/criterios-julgamento/#2-metricas-percentuais">Faixas percentuais</a></td>
+</tr>
+<tr>
+<td><a href="../../fase-2/questoes-hipoteses/#55-q11-apreensibilidade"><code>Q11</code></a></td>
+<td>H11</td>
+<td><a href="../../fase-2/metricas/#113-m13-taxa-de-erros-operacionais"><code>M13</code></a></td>
+<td>Seção 5</td>
+<td>Erros operacionais por tentativa no F3</td>
+<td><code>100 × E/N</code></td>
+<td><a href="../../fase-2/criterios-julgamento/#2-metricas-percentuais">Faixas percentuais, menor é melhor</a></td>
+</tr>
+<tr>
+<td><a href="../../fase-2/questoes-hipoteses/#55-q11-apreensibilidade"><code>Q11</code></a></td>
+<td>H11</td>
+<td><a href="../../fase-2/metricas/#114-m14-tempo-de-conclusao-autonoma"><code>M14</code></a></td>
+<td>Seção 5</td>
+<td>Tempos das conclusões autônomas no F3</td>
+<td>Mediana de <code>t_fim − t_início</code></td>
+<td><a href="../../fase-2/criterios-julgamento/#3-tempo-e-consumo-de-recursos">Faixas de tempo</a></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 10. Rastreabilidade entre procedimentos e especificação da Fase 2. Fonte: Elaborada por <a href="https://github.com/luisa12ll">Luísa de Souza</a></em></p>
+<h2 id="7-verificacao-piloto">7. Verificação piloto<a class="headerlink" href="#7-verificacao-piloto" title="Link para esta seção">&para;</a></h2>
+<p>Antes da coleta oficial, uma sessão piloto testa a clareza dos roteiros.</p>
+<ol>
+<li>Um integrante executa as seções 3 e 4 em <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a> seguindo apenas este documento, sem ajuda de quem o escreveu.</li>
+<li>Uma pessoa de fora da equipe, que atenda aos critérios da Tabela 7, faz as tarefas T1 a T3 da seção 5 com o roteiro completo.</li>
+<li>A equipe confere se o caminho das tarefas existe na conta de teste, se os enunciados foram entendidos sem explicação extra, se o limite de 5 minutos é suficiente e se os formulários cobrem tudo o que aconteceu.</li>
+<li>Ajustes de texto ou de formulário são feitos antes da coleta e registrados no histórico de versões deste documento.</li>
+</ol>
+<p>Os dados do piloto não entram no cálculo das métricas, e a pessoa do piloto não participa da coleta oficial.</p>
+<h2 id="8-instrumentos-de-coleta">8. Instrumentos de coleta<a class="headerlink" href="#8-instrumentos-de-coleta" title="Link para esta seção">&para;</a></h2>
+<p>Os formulários abaixo são preenchidos na Fase 4. Cada um vira uma planilha compartilhada da equipe, com uma linha por registro.</p>
+<h3 id="f1-registro-da-inspecao-automatizada">F1. Registro da inspeção automatizada<a class="headerlink" href="#f1-registro-da-inspecao-automatizada" title="Link para esta seção">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Sessão</th>
+<th>Página</th>
+<th>Ferramenta</th>
+<th>Regra</th>
+<th>Critério WCAG</th>
+<th>Impacto</th>
+<th>Seletor do elemento</th>
+<th>Etapa de tarefa afetada</th>
+<th>Evidência</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 11. Formulário F1, registro da inspeção automatizada. Fonte: Elaborada por <a href="https://github.com/luisa12ll">Luísa de Souza</a></em></p>
+<h3 id="f2-triagem-e-consentimento-dos-voluntarios">F2. Triagem e consentimento dos voluntários<a class="headerlink" href="#f2-triagem-e-consentimento-dos-voluntarios" title="Link para esta seção">&para;</a></h3>
+<p><strong>Parte 1, triagem:</strong> idade igual ou superior a 18 anos (sim ou não); já usou a Khan Academy (sim ou não); usa computador com mouse e teclado no dia a dia (sim ou não); trabalha com teste, design ou desenvolvimento web (sim ou não); faixa etária; frequência de uso de computador; plataformas de estudo on-line já usadas.</p>
+<p><strong>Parte 2, consentimento:</strong> objetivo da atividade; o que será registrado (tela, áudio do computador, tempos e anotações); caráter voluntário e direito de parar a qualquer momento; uso dos dados apenas de forma agregada e anonimizada nesta disciplina; prazo de exclusão dos arquivos brutos; autorização de gravação (sim ou não); data e aceite.</p>
+<h3 id="f3-registro-por-tarefa-dos-voluntarios">F3. Registro por tarefa dos voluntários<a class="headerlink" href="#f3-registro-por-tarefa-dos-voluntarios" title="Link para esta seção">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Sessão</th>
+<th>Participante</th>
+<th>Tarefa</th>
+<th>Início</th>
+<th>Fim</th>
+<th>Tempo (s)</th>
+<th>Concluiu (sim ou não)</th>
+<th>Autônoma (sim ou não)</th>
+<th>Pedidos de ajuda</th>
+<th>Erros operacionais</th>
+<th>Falha técnica</th>
+<th>Desistiu</th>
+<th>Observações</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 12. Formulário F3, registro por tarefa dos voluntários. Fonte: Elaborada por <a href="https://github.com/luisa12ll">Luísa de Souza</a></em></p>
+<h3 id="f4-percepcao-ao-final-da-sessao">F4. Percepção ao final da sessão<a class="headerlink" href="#f4-percepcao-ao-final-da-sessao" title="Link para esta seção">&para;</a></h3>
+<ol>
+<li>Qual das três tarefas foi a mais difícil? Por quê?</li>
+<li>Em algum momento você não soube o que fazer em seguida? Onde?</li>
+<li>De 1 (muito difícil) a 5 (muito fácil), como você avalia a facilidade de usar o site pela primeira vez?</li>
+</ol>
+<p>As respostas descrevem a experiência relatada e não entram no cálculo de M12 a M14.</p>
+<h3 id="f5-registro-dos-testes-manuais-de-acessibilidade">F5. Registro dos testes manuais de acessibilidade<a class="headerlink" href="#f5-registro-dos-testes-manuais-de-acessibilidade" title="Link para esta seção">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Sessão</th>
+<th>Métrica</th>
+<th>Ambiente</th>
+<th>Tecnologia ou configuração</th>
+<th>Tarefa</th>
+<th>Etapa</th>
+<th>Observação</th>
+<th>Barreira (<code>B-NN</code>)</th>
+<th>Classificação</th>
+<th>Evidência</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 13. Formulário F5, registro dos testes manuais de acessibilidade. Fonte: Elaborada por <a href="https://github.com/luisa12ll">Luísa de Souza</a></em></p>
+<h3 id="f6-checklist-de-contraste">F6. Checklist de contraste<a class="headerlink" href="#f6-checklist-de-contraste" title="Link para esta seção">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Página</th>
+<th>Elemento</th>
+<th>Essencial (sim ou não)</th>
+<th>Cor do texto</th>
+<th>Cor do fundo</th>
+<th>Tamanho</th>
+<th>Razão medida</th>
+<th>1.4.3 AA</th>
+<th>1.4.6 AAA</th>
+<th>Evidência</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 14. Formulário F6, checklist de contraste. Fonte: Elaborada por <a href="https://github.com/luisa12ll">Luísa de Souza</a></em></p>
+<h3 id="f7-registro-do-ambiente-da-sessao">F7. Registro do ambiente da sessão<a class="headerlink" href="#f7-registro-do-ambiente-da-sessao" title="Link para esta seção">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Sessão</th>
+<th>Data</th>
+<th>Avaliador</th>
+<th>Ambiente</th>
+<th>Sistema operacional e versão</th>
+<th>Navegador e versão</th>
+<th>Tecnologia assistiva e versão</th>
+<th>Resolução</th>
+<th>Zoom, tema de contraste e Clear storage</th>
+<th>Conteúdo e URLs, resposta T3, recursos opcionais e alterações</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 15. Formulário F7, registro do ambiente da sessão. Fonte: Elaborada por <a href="https://github.com/luisa12ll">Luísa de Souza</a></em></p>
+<h2 id="referencias">Referências<a class="headerlink" href="#referencias" title="Link para esta seção">&para;</a></h2>
+<p><a id="s1"></a></p>
+<blockquote>
+<p>[S1] WORLD WIDE WEB CONSORTIUM (W3C). <strong>Web Content Accessibility Guidelines (WCAG) 2.1</strong>. W3C Recommendation, 5 jun. 2018. Disponível em: <a href="https://www.w3.org/TR/2018/REC-WCAG21-20180605/">https://www.w3.org/TR/2018/REC-WCAG21-20180605/</a>. Acesso em: 13 nov. 2026.</p>
+</blockquote>
+<p><a id="s2"></a></p>
+<blockquote>
+<p>[S2] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. <strong>ISO/IEC 25023:2016</strong>: Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - Measurement of system and software product quality. Genebra: ISO, 2016.</p>
+</blockquote>
+<p><a id="s3"></a></p>
+<blockquote>
+<p>[S3] GOOGLE. <strong>Lighthouse: Optimize your website</strong>. Chrome for Developers. Disponível em: <a href="https://developer.chrome.com/docs/devtools/lighthouse/">https://developer.chrome.com/docs/devtools/lighthouse/</a>. Acesso em: 13 nov. 2026.</p>
+</blockquote>
+<p><a id="s4"></a></p>
+<blockquote>
+<p>[S4] DEQUE SYSTEMS. <strong>axe-core</strong>: accessibility engine for automated Web UI testing. Disponível em: <a href="https://github.com/dequelabs/axe-core">https://github.com/dequelabs/axe-core</a>. Acesso em: 13 nov. 2026.</p>
+</blockquote>
+<p><a id="s5"></a></p>
+<blockquote>
+<p>[S5] BRASIL. <strong>Lei nº 13.709, de 14 de agosto de 2018</strong>. Lei Geral de Proteção de Dados Pessoais (LGPD). Disponível em: <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm">https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm</a>. Acesso em: 13 nov. 2026.</p>
+</blockquote>
+<p><a id="s6"></a></p>
+<blockquote>
+<p>[S6] NV ACCESS. <strong>NVDA User Guide</strong>. Disponível em: <a href="https://www.nvaccess.org/files/nvda/documentation/userGuide.html">https://www.nvaccess.org/files/nvda/documentation/userGuide.html</a>. Acesso em: 13 nov. 2026.</p>
+</blockquote>
+<p><a id="s7"></a></p>
+<blockquote>
+<p>[S7] APPLE. <strong>VoiceOver User Guide for Mac</strong>. Disponível em: <a href="https://support.apple.com/guide/voiceover/welcome/mac">https://support.apple.com/guide/voiceover/welcome/mac</a>. Acesso em: 13 nov. 2026.</p>
+</blockquote>
+<p><a id="s8"></a></p>
+<blockquote>
+<p>[S8] GNOME PROJECT. <strong>Orca Screen Reader</strong>. Disponível em: <a href="https://help.gnome.org/users/orca/stable/">https://help.gnome.org/users/orca/stable/</a>. Acesso em: 13 nov. 2026.</p>
+</blockquote>
+<p><a id="s9"></a></p>
+<blockquote>
+<p>[S9] TPGI. <strong>Colour Contrast Analyser (CCA)</strong>. Disponível em: <a href="https://www.tpgi.com/color-contrast-checker/">https://www.tpgi.com/color-contrast-checker/</a>. Acesso em: 13 nov. 2026.</p>
+</blockquote>
+<p><a id="s10"></a></p>
+<blockquote>
+<p>[S10] MICROSOFT. <strong>Change color contrast in Windows</strong>. Disponível em: <a href="https://support.microsoft.com/windows/change-color-contrast-in-windows-fedc744c-90ac-69df-aed5-c8a90125e696">https://support.microsoft.com/windows/change-color-contrast-in-windows-fedc744c-90ac-69df-aed5-c8a90125e696</a>. Acesso em: 13 nov. 2026.</p>
+</blockquote>
+<h2 id="historico-de-versoes">Histórico de versões<a class="headerlink" href="#historico-de-versoes" title="Link para esta seção">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Versão</th>
+<th>Data</th>
+<th>Descrição</th>
+<th>Responsável</th>
+<th>Revisor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>13/11/2026</td>
+<td>Elaboração dos procedimentos de inspeção automatizada, testes manuais de acessibilidade e testes com voluntários, com rastreabilidade para M8 a M14</td>
+<td><a href="https://github.com/luisa12ll">Luisa de Souza</a></td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+</tr>
+<tr>
+<td>1.1</td>
+<td>13/11/2026</td>
+<td>Revisão do consentimento, tarefas, auditorias, contraste e fontes das tabelas</td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td><a href="https://github.com/luisa12ll">Luisa de Souza</a></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.top", "toc.follow", "search.suggest", "search.highlight", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+        <script src="../../js/mathjax.js"></script>
+      
+        <script src="../../js/khan.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
