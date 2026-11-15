@@ -1,17 +1,14 @@
 # Registro de execuções de eficiência de desempenho (M1 a M5)
 
-**Versão 1.3**
+**Versão 1.4**
 
 Este documento reúne os formulários e planilhas padronizadas para registro dos dados brutos e resultados consolidados da avaliação de **eficiência de desempenho** da versão web da Khan Academy em computadores, conforme especificado em [Procedimentos de avaliação de eficiência de desempenho (M1 a M5)](../fase-3/procedimentos-desempenho.md) [S1](#s1).
 
 Todas as tabelas de coleta e julgamento foram devidamente preenchidas na Fase 4 com os dados coletados nos ensaios no ambiente de referência `A1`, contemplando ensaios manuais, testes de laboratório (Lighthouse) e a consolidação das hipóteses e decisão `D1`.
 
-**Instruções de preenchimento:**
-1. Mantenha inalterados os identificadores das linhas e colunas;
-2. Para o resultado da tentativa (M2), utilize os códigos padronizados: `C` (concluída com sucesso), `F-BLQ` (falha por bloqueio da interface/script), `F-TO` (falha por timeout > 30 s), `F-SOB` (falha por travamento/sobrecarga de CPU) ou `X` (execução inválida por causa externa descartada);
-3. Nas colunas de evidência, indique o nome exato do arquivo gerado conforme a convenção de nomenclatura definida na seção 8 de [Procedimentos de desempenho](../fase-3/procedimentos-desempenho.md#8-formularios-e-modelos-de-registro);
-4. Havendo anomalia ou falha técnica, atribua um identificador sequencial de ocorrência (`OC-DES-001`, `OC-DES-002`, ...) e preencha a respectiva linha na [Tabela de ocorrências](#registro-ocorrencias);
-5. As linhas de aquecimento (`W`) servem apenas para estabilização prévia e seus valores são anotados mas **não entram** no cálculo das medianas, do P90 e das médias de recursos.
+!!! info "Execução em Vídeo"
+    
+    Os vídeos mostrando a execução dos testes de desempenho podem ser encotrados no [Google Drive](https://drive.google.com/drive/folders/18BSGUUKKFioIl6tdEpYtstHn-DQB8UjG?usp=drive_link). Todos os arquivos estão nomeados a partir da repetição que eles apresentam.
 
 <a id="registro-preparacao"></a>
 
@@ -353,3 +350,4 @@ A Tabela 19 documenta a conversão dos achados no desfecho da decisão `D1` e or
 | 1.1 | 11/11/2026 | Congelamento do ambiente de testes e realização dos testes sintéticos com Lighthouse | [José Augusto](https://github.com/JAugustoM) | |
 | 1.2 | 13/11/2026 | Preenchimento dos dados brutos das baterias manuais (Tabelas 5 a 10), registro de ocorrências (Tabela 12) e consolidação estatística com julgamento de hipóteses e decisão D1 (Capítulo 9). | [José Augusto](https://github.com/JAugustoM) | |
 | 1.3 | 13/11/2026 | Migração do documento para a Fase 4 (`docs/fase-4/`) com atualização integral dos links relativos e vínculos de evidências. | [José Augusto](https://github.com/JAugustoM) | |
+| 1.4 | 15/11/2026 | Adiciona link do drive com as evidências em vídeo | [José Augusto](https://github.com/JAugustoM) | |
