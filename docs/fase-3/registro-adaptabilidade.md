@@ -116,10 +116,10 @@ A Tabela 7 registra os dados de teste da [preparação](procedimentos-adaptabili
 |---|---|---|---|
 | `D1` | Disciplina | https://pt.khanacademy.org/math/matematica-avancada | 14/11/2026 |
 | `D2` | Curso | https://pt.khanacademy.org/math/precalculus | 14/11/2026 |
-| `D3` | Unidade e aula | https://pt.khanacademy.org/math/precalculus/function-composition | 14/11/2026 |
-| `D4` | Videoaula (com legenda e transcrição) | https://pt.khanacademy.org/math/precalculus/composite/composite-modeling/quiz/composite-quiz-1 | 14/11/2026 |
-| `D5` | Exercício (com dica) | https://pt.khanacademy.org/math/precalculus/finding-and-evaluating-composite-functions | 14/11/2026 |
-| `D6` | Conta de teste (identificador, sem senha) | Conta 1 e Conta 2 | 14/11/2026 |
+| `D3` | Unidade e aula | https://pt.khanacademy.org/math/precalculus/composing/a/introduction-to-function-composition | 14/11/2026 |
+| `D4` | Videoaula (com legenda e transcrição) | https://pt.khanacademy.org/math/precalculus/function-composition | 14/11/2026 |
+| `D5` | Exercício (com dica) | https://pt.khanacademy.org/math/precalculus/composing/e/evaluate-composite-functions-from-formulas | 14/11/2026 |
+| `D6` | Conta de teste (identificador, sem senha) | Conta 1 ([`A1`](#registro-preparacao), [`A2`](#registro-preparacao) e [`A4`](#registro-preparacao)) e Conta 2 ([`A3`](#registro-preparacao)) | 14/11/2026 |
 
 *Tabela 7. Dados de teste congelados. Fonte: Elaborada por: [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM)*
 
@@ -332,7 +332,7 @@ A Tabela 17 registra o desfecho de `D1` quanto à adaptabilidade e as ações pa
 
 | Versão | Data | Descrição | Responsável | Revisor |
 |:---:|:---:|---|---|---|
-| 1.0 | 07/11/2026 | Estrutura dos formulários de registro de `M6` e `M7`, sem dados coletados. | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | A definir |
+| 1.0 | 07/11/2026 | Estrutura dos formulários de registro de `M6` e `M7`, sem dados coletados. | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
 | 1.1 | 14/11/2026 | Sessão 1 de avaliação de adaptabilidade [`A1`](#registro-preparacao), [`A2`](#registro-preparacao) e [`A4`](#registro-preparacao) | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | A definir |
-| 1.2 | 14/11/2026 | Computação dos dados tratados para preenchimento das tabelas | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | A definir |
-| 1.3 | 15/11/2026 | Resumo parcial de `M6` e `M7` ([`A1`](#registro-preparacao), [`A2`](#registro-preparacao) e [`A4`](#registro-preparacao)), julgamento provisório, regra de `Gr2` sem repetição e correções de formatação. | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | A definir |
+| 1.2 | 14/11/2026 | Computação dos dados tratados para preenchimento das tabelas | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
+| 1.3 | 15/11/2026 | Resumo parcial de `M6` e `M7` ([`A1`](#registro-preparacao), [`A2`](#registro-preparacao) e [`A4`](#registro-preparacao)), julgamento provisório, regra de `Gr2` sem repetição e correções de formatação. | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |

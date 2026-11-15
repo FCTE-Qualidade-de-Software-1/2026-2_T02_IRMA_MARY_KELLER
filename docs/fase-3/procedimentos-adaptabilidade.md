@@ -627,5 +627,5 @@ Esta seção traz o cronograma **exclusivo da execução de M6 e M7**, alinhado 
 
 | Versão | Data | Descrição | Responsável | Revisor |
 |:---:|:---:|---|---|---|
-| 1.0 | 07/11/2026 | Elaboração dos procedimentos de M6 e M7, com rastreabilidade com as Fases 1 e 2, requisitos e massa de dados, consistência com a Fase 2, cronograma e registro em Markdown. | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | A definir |
-| 1.1 | 15/11/2026 | Remoção dos pontos pendentes e correção de alguns pontos | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | A definir |
+| 1.0 | 07/11/2026 | Elaboração dos procedimentos de M6 e M7, com rastreabilidade com as Fases 1 e 2, requisitos e massa de dados, consistência com a Fase 2, cronograma e registro em Markdown. | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
+| 1.1 | 15/11/2026 | Remoção dos pontos pendentes e correção de alguns pontos | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
