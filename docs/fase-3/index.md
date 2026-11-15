@@ -1,4 +1,4 @@
-# Fase 3: Plano Avaliação
+# Fase 3: Plano de Avaliação
 
 **Versão 1.0**
 
