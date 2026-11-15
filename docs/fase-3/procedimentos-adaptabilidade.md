@@ -116,7 +116,7 @@ Cada ambiente passa pelas verificações da Tabela 7 antes da primeira execuçã
 | PA-5 | Definir o idioma da plataforma como português do Brasil e entrar com a conta de teste (`D6`). |
 | PA-6 | Confirmar zoom do navegador em 100%, janela **maximizada** (não em tela cheia) e escala do sistema conforme [3.5](#35-resolucao-e-janela). |
 | PA-7 | Confirmar conexão sem limitação artificial e fechar aplicativos concorrentes. |
-| PA-8 | Em máquinas virtuais, registrar vCPUs, memória e modalidade. Em `A3`, registrar o hardware. |
+| PA-8 | Em máquinas virtuais, registrar vCPUs, memória e modalidade. |
 | PA-9 | Aceitar avisos de consentimento e cookies **uma única vez** no perfil novo. Isso é preparação normal ([4.4](#44-preparacao-normal-e-ajuste-extraordinario)). |
 | PA-10 | Confirmar que o conteúdo congelado em `D1`–`D5` continua disponível. |
 
@@ -291,7 +291,7 @@ A unidade de observação é a combinação **ambiente–dimensão–fluxo** (`M
 5. Registrar cada problema como ocorrência, com a gravidade da Tabela 17 e a captura de tela.
 6. Classificar a combinação (`C` ou `F`) e preencher a linha da combinação na [tabela de M7](registro-adaptabilidade.md#registro-m7) do registro.
 
-Uma combinação é `C` quando o roteiro é concluído e **nenhum** problema de gravidade `G2` ou `G3` é registrado. Os códigos `I` e `X` e a reprodução em 2 de 3 seguem [4.3](#43-passos-de-execucao), [4.5](#45-combinacoes-inviaveis) e [4.6](#46-reproducao-de-falhas).
+Uma combinação é `C` quando o roteiro é concluído e **nenhum** problema de gravidade `Gr2` ou `Gr3` é registrado. Os códigos `I` e `X` e a reprodução em 2 de 3 seguem [4.3](#43-passos-de-execucao), [4.5](#45-combinacoes-inviaveis) e [4.6](#46-reproducao-de-falhas).
 
 ### 5.4 Inventário de controles essenciais
 
@@ -322,9 +322,9 @@ Rolagem vertical normal da página **não** é problema. O que se registra é pe
 
 | Gravidade | Definição | Exemplos | Efeito em M7 |
 |:---:|---|---|---|
-| `G3` Bloqueante | Impede concluir o roteiro ou acionar um controle essencial | Botão de envio fora da área alcançável; menu que não abre; sobreposição que cobre o controle | `F` |
-| `G2` Maior | Perda parcial de conteúdo ou controle essencial, sem impedir a conclusão | Texto cortado; controle parcialmente sobreposto; necessidade de rolagem horizontal para alcançar um controle essencial | `F` |
-| `G1` Menor | Defeito visual sem perda de conteúdo ou controle essencial | Alinhamento ou espaçamento irregular | `C`, com ocorrência anotada |
+| `Gr3` Bloqueante | Impede concluir o roteiro ou acionar um controle essencial | Botão de envio fora da área alcançável; menu que não abre; sobreposição que cobre o controle | `F` |
+| `Gr2` Maior | Perda parcial de conteúdo ou controle essencial, sem impedir a conclusão | Texto cortado; controle parcialmente sobreposto; necessidade de rolagem horizontal para alcançar um controle essencial | `F` |
+| `Gr1` Menor | Defeito visual sem perda de conteúdo ou controle essencial | Alinhamento ou espaçamento irregular | `C`, com ocorrência anotada |
 
 *Tabela 17. Gravidade dos problemas de adaptação à janela. Fonte: Elaborada por: [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM)*
 
@@ -345,7 +345,7 @@ A fórmula é a da [ficha de M7](../fase-2/metricas.md#17-m7-adaptacao-ao-tamanh
 
 - A **nota de M7** usa as 32 combinações, como na ficha da métrica.
 - **H6** fala em "combinações essenciais". Por isso é verificada no subconjunto `FL1`–`FL3` (24 combinações), em que são necessárias ao menos 22 combinações preservadas, e o resultado dos dois recortes é apresentado ([ponto P4](#11-pontos-pendentes-e-decisoes-da-equipe)).
-- **Q6** é atendida quando M7 tem nota 2 ou 3 **e** nenhum fluxo essencial é impedido (`G3` em `FL1`–`FL3`).
+- **Q6** é atendida quando M7 tem nota 2 ou 3 **e** nenhum fluxo essencial é impedido (`Gr3` em `FL1`–`FL3`).
 
 ## 6. Roteiros passo a passo
 

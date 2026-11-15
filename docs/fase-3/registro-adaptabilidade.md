@@ -1,6 +1,6 @@
 # Registro de execuções (M6 e M7)
 
-**Versão 1.0**
+**Versão 1.1**
 
 Esta página reúne os formulários de registro da avaliação de adaptabilidade definida em [Procedimentos de avaliação de adaptabilidade](procedimentos-adaptabilidade.md) [S1](#s1). As tabelas estão **em branco** e serão preenchidas na Fase 4, por *pull request*, conforme cada execução. Nenhum resultado foi coletado.
 
@@ -25,10 +25,10 @@ A Tabela 2 registra as verificações de [preparação](procedimentos-adaptabili
 
 | ID | PA-1 | PA-2 | PA-3 | PA-4 | PA-5 | PA-6 | PA-7 | PA-8 | PA-9 | PA-10 | Observações |
 |---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|---|
-| `A1` | | | | | | | | | | | |
-| `A2` | | | | | | | | | | | |
+| `A1` | S | S | S | S | S | S | S | S | S | S | evidencia video |
+| `A2` | S | S | S | S | S | S | S | S | S | S | evidencia video |
 | `A3` | | | | | | | | | | | |
-| `A4` | | | | | | | | | | | |
+| `A4` | S | S | S | S | S | S | S | S | S | S | evidencia video |
 
 *Tabela 2. Verificações de preparação por ambiente. Fonte: Elaborada por: [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM)*
 
@@ -40,12 +40,12 @@ A Tabela 3 registra os dados de teste da [preparação](procedimentos-adaptabili
 
 | ID | Dado | Valor congelado | Data do congelamento |
 |---|---|---|---|
-| `D1` | Disciplina | | |
-| `D2` | Curso | | |
-| `D3` | Unidade e aula | | |
-| `D4` | Videoaula (com legenda e transcrição) | | |
-| `D5` | Exercício (com dica) | | |
-| `D6` | Conta de teste (identificador, sem senha) | | |
+| `D1` | Disciplina | https://pt.khanacademy.org/math/matematica-avancada | 14/11/2026 |
+| `D2` | Curso | https://pt.khanacademy.org/math/precalculus | 14/11/2026 |
+| `D3` | Unidade e aula | https://pt.khanacademy.org/math/precalculus/function-composition | 14/11/2026 |
+| `D4` | Videoaula (com legenda e transcrição) | https://pt.khanacademy.org/math/precalculus/x9e81a4f98389efdf:composite/x9e81a4f98389efdf:composing/v/function-composition | 14/11/2026 |
+| `D5` | Exercício (com dica) | https://pt.khanacademy.org/math/precalculus//finding-and-evaluating-composite-functions | 14/11/2026 |
+| `D6` | Conta de teste (identificador, sem senha) | José Moraes | 14/11/2026 |
 
 *Tabela 3. Dados de teste congelados. Fonte: Elaborada por: [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM)*
 
@@ -53,20 +53,20 @@ A Tabela 4 registra o rótulo real de cada item do [inventário de controles ess
 
 | ID | Conteúdo ou controle essencial | Rótulo real na interface |
 |---|---|---|
-| `CE1.1` | Menu ou busca para localizar a disciplina | |
-| `CE1.2` | Item do curso-alvo | |
-| `CE1.3` | Lista de unidades e aulas do curso | |
-| `CE1.4` | Conteúdo da aula selecionada | |
-| `CE2.1` | Área do vídeo e barra de reprodução | |
-| `CE2.2` | Controle de iniciar e pausar | |
-| `CE2.3` | Controle de legenda | |
-| `CE2.4` | Acesso à transcrição | |
-| `CE3.1` | Enunciado e área de resposta | |
-| `CE3.2` | Controle de dica | |
-| `CE3.3` | Controle de envio da resposta | |
-| `CE3.4` | Retorno da plataforma e controle de continuidade | |
-| `CE4.1` | Acesso à área do estudante | |
-| `CE4.2` | Informações de progresso | |
+| `CE1.1` | Menu ou busca para localizar a disciplina | "Matemática Avançada"|
+| `CE1.2` | Item do curso-alvo | "Pré-cálculo" |
+| `CE1.3` | Lista de unidades e aulas do curso | "UNIDADE 1 Funções compostas e inversas" |
+| `CE1.4` | Conteúdo da aula selecionada | "Artigo Introdução à composição de funções" |
+| `CE2.1` | Área do vídeo e barra de reprodução | Não Rotulado e "Controle deslizante de busca" |
+| `CE2.2` | Controle de iniciar e pausar | "Assistir Aula" |
+| `CE2.3` | Controle de legenda | "Legenda/CC desativadas" e "Legendas/CC ativadas" |
+| `CE2.4` | Acesso à transcrição | "Transcrição" |
+| `CE3.1` | Enunciado e área de resposta | Não Rotulado e "Sua resposta:" |
+| `CE3.2` | Controle de dica | "Não é bem isso" "Mostrar uma etapa" |
+| `CE3.3` | Controle de envio da resposta | "Verificar" "Tentar Novamente" |
+| `CE3.4` | Retorno da plataforma e controle de continuidade | "Botões de controle accordion" |
+| `CE4.1` | Acesso à área do estudante | "Página inicial do aluno" |
+| `CE4.2` | Informações de progresso | "Ver progresso de todos os cursos" |
 
 *Tabela 4. Rótulos reais dos controles essenciais. Fonte: Elaborada por: [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM)*
 
@@ -78,14 +78,16 @@ A Tabela 5 registra o resultado do comando de [3.5](procedimentos-adaptabilidade
 
 | Ambiente | Dimensão | `screen` (largura × altura) | `inner` (largura × altura) | `dpr` | Data |
 |---|---|---|---|---|---|
-| `A1` | `J1` (1366 × 768) | | | | |
-| `A1` | `J2` (1920 × 1080) | | | | |
-| `A2` | `J1` (1366 × 768) | | | | |
-| `A2` | `J2` (1920 × 1080) | | | | |
+| `A1` | `J1` (1366 × 768) | 1366 x 768 | 1366 x 768| 1 | 14/11/2026|
+| `A1` | `J2` (1920 × 1080) | 1920 x 1080 | 1454 x 945 | 1 | 14/11/2026 | 
+| `A2` | `J1` (1366 × 768) | 1366 x 768 | | 1 | 14/11/2026|
+| `A2` | `J2` (1920 × 1080) | 1920 x 1080 | | 1 | 14/11/2026|
 | `A3` | `J1` (1366 × 768) | | | | |
 | `A3` | `J2` (1920 × 1080) | | | | |
-| `A4` | `J1` (1366 × 768) | | | | |
-| `A4` | `J2` (1920 × 1080) | | | | |
+| `A4` | `J1` (1366 × 768) | 1366 x 768 | | 1 | 14/11/2026|
+| `A4` | `J2` (1920 × 1080) | 1920 x 1080 | | 1 | 14/11/2026|
+
+**VERIFICAR NO VIDEO DEPOIS**
 
 *Tabela 5. Resolução e viewport verificados por ambiente e dimensão. Fonte: Elaborada por: [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM)*
 
@@ -97,22 +99,22 @@ A Tabela 6 registra as execuções em `J2` (1920 × 1080). `T1` a `T3` são os r
 
 | ID | Data | Executor / observador | T1 | T2 | T3 | Final | Tipo de falha | Ocorrência | Evidência |
 |---|---|---|:-:|:-:|:-:|:-:|:-:|---|---|
-| `M6-A1-FL1` | | | | | | | | | |
-| `M6-A1-FL2` | | | | | | | | | |
-| `M6-A1-FL3` | | | | | | | | | |
-| `M6-A1-FL4` | | | | | | | | | |
-| `M6-A2-FL1` | | | | | | | | | |
-| `M6-A2-FL2` | | | | | | | | | |
-| `M6-A2-FL3` | | | | | | | | | |
-| `M6-A2-FL4` | | | | | | | | | |
+| `M6-A1-FL1` | 14/11/2026 | José Augusto e Pedro Lucas| C | C | C | C | --- | --- | VIDEO1 M6-A1-FL1 |
+| `M6-A1-FL2` | 14/11/2026 | José Augusto e Pedro Lucas| C | C | C | C | --- | --- | VIDEO2 M6-A1-FL2 |
+| `M6-A1-FL3` | 14/11/2026 | José Augusto e Pedro Lucas | C | C | C| C| --- | ---| VIDEO3 M6-A1-FL3 |
+| `M6-A1-FL4` | 14/11/2026 | José Augusto e Pedro Lucas | C | C | C | C | --- | --- | VIDEO4 M6-A1-FL4|
+| `M6-A2-FL1` | 14/11/2026 | José Augusto e Pedro Lucas| C | C | C | C | --- | --- | VIDEO1 M6-A2-FL1-FL4 |
+| `M6-A2-FL2` | 14/11/2026 | José Augusto e Pedro Lucas| C | C | C | C | --- | --- | VIDEO1 M6-A2-FL1-FL4 |
+| `M6-A2-FL3` | 14/11/2026 | José Augusto e Pedro Lucas| C | C | C | C | --- | --- | VIDEO1 M6-A2-FL1-FL4 |
+| `M6-A2-FL4` | 14/11/2026 | José Augusto e Pedro Lucas| C | C | C | C | --- | --- | VIDEO1 M6-A2-FL1-FL4 |
 | `M6-A3-FL1` | | | | | | | | | |
 | `M6-A3-FL2` | | | | | | | | | |
 | `M6-A3-FL3` | | | | | | | | | |
 | `M6-A3-FL4` | | | | | | | | | |
-| `M6-A4-FL1` | | | | | | | | | |
-| `M6-A4-FL2` | | | | | | | | | |
-| `M6-A4-FL3` | | | | | | | | | |
-| `M6-A4-FL4` | | | | | | | | | |
+| `M6-A4-FL1` | 14/11/2026 | José Augusto e Pedro Lucas| C | C | C | C | --- | --- | VIDEO1 M7-A4-J2-FL1-FL4 |
+| `M6-A4-FL2` | 14/11/2026 | José Augusto e Pedro Lucas| C | C | C | C | --- | --- | VIDEO1 M7-A4-J2-FL1-FL4 |
+| `M6-A4-FL3` | 14/11/2026 | José Augusto e Pedro Lucas| C | C | C | C | --- | --- | VIDEO1 M7-A4-J2-FL1-FL4 |
+| `M6-A4-FL4` | 14/11/2026 | José Augusto e Pedro Lucas| C | C | C | C | --- | --- | VIDEO1 M7-A4-J2-FL1-FL4 |
 
 *Tabela 6. Registro das execuções de M6. Fonte: Elaborada por: [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM)*
 
@@ -120,26 +122,26 @@ A Tabela 6 registra as execuções em `J2` (1920 × 1080). `T1` a `T3` são os r
 
 ## 5. Registro de M7
 
-A Tabela 7 registra as execuções de M7. A gravidade máxima segue a [escala `G1` a `G3`](procedimentos-adaptabilidade.md#55-problemas-de-adaptacao-e-gravidade); use `G0` quando não houver problema. As linhas em `J2` aproveitam a sessão de M6, com critério próprio.
+A Tabela 7 registra as execuções de M7. A gravidade máxima segue a [escala `Gr1` a `Gr3`](procedimentos-adaptabilidade.md#55-problemas-de-adaptacao-e-gravidade); use `Gr0` quando não houver problema. As linhas em `J2` aproveitam a sessão de M6, com critério próprio.
 
 | ID | Data | Executor / observador | Resultado | Gravidade máxima | CE afetados | Ocorrência | Evidência |
 |---|---|---|:-:|:-:|---|---|---|
-| `M7-A1-J1-FL1` | | | | | | | |
+| `M7-A1-J1-FL1` | 14/11/2026 | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | | | | | |
 | `M7-A1-J1-FL2` | | | | | | | |
 | `M7-A1-J1-FL3` | | | | | | | |
-| `M7-A1-J1-FL4` | | | | | | | |
+| `M7-A1-J1-FL4` |gr1/ visual atividade nome invisivel no progresso (CE4.2 embora não seja tão prejudicial por isso gr1) | | | | | | |
 | `M7-A1-J2-FL1` | | | | | | | |
 | `M7-A1-J2-FL2` | | | | | | | |
 | `M7-A1-J2-FL3` | | | | | | | |
-| `M7-A1-J2-FL4` | | | | | | | |
+| `M7-A1-J2-FL4` |gr1/ visual atividade nome invisivel no progresso (CE4.2 embora não seja tão prejudicial por isso gr1)| | | | | | |
 | `M7-A2-J1-FL1` | | | | | | | |
 | `M7-A2-J1-FL2` | | | | | | | |
 | `M7-A2-J1-FL3` | | | | | | | |
-| `M7-A2-J1-FL4` | | | | | | | |
+| `M7-A2-J1-FL4` |gr1/ visual atividade nome invisivel no progresso (CE4.2 embora não seja tão prejudicial por isso gr1)| | | | | | |
 | `M7-A2-J2-FL1` | | | | | | | |
 | `M7-A2-J2-FL2` | | | | | | | |
 | `M7-A2-J2-FL3` | | | | | | | |
-| `M7-A2-J2-FL4` | | | | | | | |
+| `M7-A2-J2-FL4` |gr1/ visual atividade nome invisivel no progresso (CE4.2 embora não seja tão prejudicial por isso gr1) // gr2 visual anterior e proximo as vezes some quando chega no ultima página do historico (CE4.2 essa falha aconteceu poucas vezes, inclusive tentamos replicar, só foi replicado quando não era a intenção, sumiu controle de anterior/proximo por isso gr2, provavelmente pq foi passado muito rápido sei lá)| | | | | | |
 | `M7-A3-J1-FL1` | | | | | | | |
 | `M7-A3-J1-FL2` | | | | | | | |
 | `M7-A3-J1-FL3` | | | | | | | |
@@ -149,13 +151,13 @@ A Tabela 7 registra as execuções de M7. A gravidade máxima segue a [escala `G
 | `M7-A3-J2-FL3` | | | | | | | |
 | `M7-A3-J2-FL4` | | | | | | | |
 | `M7-A4-J1-FL1` | | | | | | | |
-| `M7-A4-J1-FL2` | | | | | | | |
+| `M7-A4-J1-FL2` |gr2/ trascrição ilegivel quando frase inicial é maior que uma linha (CE2.4 gr2, embora só visual atrapalha um pouco pra quem vai direto ali ver a transcrição foi identificado apenas na primeira frase da transcrição que seja maior que uma linha) | | | | | | |
 | `M7-A4-J1-FL3` | | | | | | | |
-| `M7-A4-J1-FL4` | | | | | | | |
+| `M7-A4-J1-FL4` |gr1/ visual atividade nome invisivel no progresso (CE4.2 embora não seja tão prejudicial por isso gr1) // gr2 visual anterior e proximo as vezes some quando chega no ultima página do historico (CE4.2 essa falha aconteceu poucas vezes, inclusive tentamos replicar, só foi replicado quando não era a intenção, sumiu controle de anterior/proximo por isso gr2, provavelmente pq foi passado muito rápido sei lá) | | | | | | |
 | `M7-A4-J2-FL1` | | | | | | | |
-| `M7-A4-J2-FL2` | | | | | | | |
+| `M7-A4-J2-FL2` |gr2/ trascrição ilegivel quando frase inicial é maior que uma linha (CE2.4 gr2, embora só visual atrapalha um pouco pra quem vai direto ali ver a transcrição foi identificado apenas na primeira frase da transcrição que seja maior que uma linha) | | | | | | |
 | `M7-A4-J2-FL3` | | | | | | | |
-| `M7-A4-J2-FL4` | | | | | | | |
+| `M7-A4-J2-FL4` | gr1/ visual atividade nome invisivel no progresso (CE4.2 embora não seja tão prejudicial por isso gr1) // gr1 bug visual linha esquisito no histórico (CE4.2, nem atrapalha muito mas foi um feito inédito, não tinha aparecido em nenhuma outra vez) | | | | | | |
 
 *Tabela 7. Registro das execuções de M7. Fonte: Elaborada por: [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM)*
 
@@ -251,3 +253,4 @@ A Tabela 11 consolida o cálculo, a Tabela 12 registra o julgamento de cada ques
 | Versão | Data | Descrição | Responsável | Revisor |
 |:---:|:---:|---|---|---|
 | 1.0 | 07/11/2026 | Estrutura dos formulários de registro de M6 e M7, sem dados coletados. | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | A definir |
+| 1.1 | 14/11/2026 | Sessão 1 de avaliação de adaptabilidade A1, A2 e A4 | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | A definir |
