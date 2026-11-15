@@ -1,0 +1,2346 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Avaliação de qualidade do produto Khan Academy segundo a família SQuaRE, com gestão por medição PSM/CID.">
+      
+      
+      
+        <link rel="canonical" href="https://fcte-qualidade-de-software-1.github.io/2026-2_T02_IRMA_MARY_KELLER/fase-3/procedimentos-desempenho/">
+      
+      
+        <link rel="prev" href="../procedimentos-adaptabilidade/">
+      
+      
+        <link rel="next" href="../registro-adaptabilidade/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/img/marca.svg">
+      <meta name="generator" content="mkdocs-ProperDocs 1.6.7, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>Procedimentos Avaliação Desempenho - Avaliação Khan Academy</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Lato";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/khan.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#procedimentos-de-avaliacao-de-eficiencia-de-desempenho-m1-a-m5" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      <header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <a href="../.." title="Avaliação Khan Academy" class="khan-marca" aria-label="Avaliação Khan Academy" data-md-component="logo">
+      <img src="../../assets/img/logo_khan_simbolo.png" alt="Logo do Khan Academy" width="32" height="32">
+      <span class="khan-marca__texto">
+        <strong>Avaliação Khan Academy</strong>
+        <small>Qualidade de Software 1 · T02</small>
+      </span>
+    </a>
+    <ul class="khan-abas">
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../..">Início</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../fase-1/">Fase 1</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../fase-2/">Fase 2</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item khan-abas__item--ativa">
+          <a href="../">Fase 3</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../fase-4/registro-desempenho/">Fase 4</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../gestao/plano_de_medicao/">Gestão</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../gestao/artigo/">Artigo</a>
+        </li>
+      
+    </ul>
+    <div class="khan-header__espaco"></div>
+    
+      <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Mudar para o modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Mudar para o modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER" class="khan-botao-repo" title="Repositório da equipe no GitHub">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215m-6.56 0a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"/></svg>
+      <span>Repositório</span>
+    </a>
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary khan-trilha" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Avaliação Khan Academy" class="md-nav__button md-logo" aria-label="Avaliação Khan Academy" data-md-component="logo">
+      
+  <img src="../../assets/img/logo_khan_simbolo.png" alt="logo">
+
+    </a>
+    Avaliação Khan Academy
+  </label>
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  <ul class="khan-trilha__secoes">
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../..">Início</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../fase-1/">Fase 1</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../fase-2/">Fase 2</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../" aria-current="true">Fase 3</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../fase-4/registro-desempenho/">Fase 4</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../gestao/plano_de_medicao/">Gestão</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../gestao/artigo/">Artigo</a></li>
+    
+  </ul>
+  
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    <ol class="khan-trilha__passos">
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--feito">
+          <a href="../">
+            <span class="khan-trilha__bolinha">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>
+            </span>
+            <span>Visão Geral</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--feito">
+          <a href="../ambiente-de-testes/">
+            <span class="khan-trilha__bolinha">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>
+            </span>
+            <span>Ambientes de Testes</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--feito">
+          <a href="../procedimentos-adaptabilidade/">
+            <span class="khan-trilha__bolinha">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>
+            </span>
+            <span>Procedimentos Avaliação Adaptabilidade</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--atual">
+          <a href="./" aria-current="page">
+            <span class="khan-trilha__bolinha">
+              4
+            </span>
+            <span>Procedimentos Avaliação Desempenho</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--pendente">
+          <a href="../registro-adaptabilidade/">
+            <span class="khan-trilha__bolinha">
+              5
+            </span>
+            <span>Registro de Execução Adaptabilidade</span>
+          </a>
+        </li>
+      
+    </ol>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Nesta página">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Nesta página
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-escopo-e-principios-da-avaliacao-de-desempenho" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Escopo e princípios da avaliação de desempenho
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Escopo e princípios da avaliação de desempenho">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-justificativa-das-decisoes-metodologicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Justificativa das decisões metodológicas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-rastreabilidade-com-as-fases-1-e-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Rastreabilidade com as Fases 1 e 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-ambiente-de-teste-instrumentos-e-preparacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Ambiente de teste, instrumentos e preparação
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Ambiente de teste, instrumentos e preparação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-ambiente-de-referencia-a1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Ambiente de referência (A1)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-perfis-de-conectividade-de-rede" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Perfis de conectividade de rede
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-instrumentos-de-medicao-e-diagnostico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Instrumentos de medição e diagnóstico
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-preparacao-do-ambiente-checklist-pd-1-a-pd-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Preparação do ambiente (Checklist PD-1 a PD-10)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-massa-de-dados-congelada-d1-a-d6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Massa de dados congelada (D1 a D6)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-conhecimento-exigido-do-avaliador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 Conhecimento exigido do avaliador
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-procedimentos-especificos-por-metrica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Procedimentos específicos por métrica
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Procedimentos específicos por métrica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-procedimento-de-m1-tempo-observavel-por-etapa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Procedimento de M1: Tempo observável por etapa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-procedimento-de-m2-taxa-de-conclusao-das-tentativas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Procedimento de M2: Taxa de conclusão das tentativas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-procedimento-de-m3-utilizacao-de-cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Procedimento de M3: Utilização de CPU
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-procedimento-de-m4-pico-de-memoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 Procedimento de M4: Pico de memória
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-procedimento-de-m5-dados-transferidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 Procedimento de M5: Dados transferidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-procedimento-de-auditoria-complementar-com-lighthouse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.6 Procedimento de auditoria complementar com Lighthouse
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-roteiros-passo-a-passo-com-marcos-temporais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Roteiros passo a passo com marcos temporais
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Roteiros passo a passo com marcos temporais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-roteiro-fl1-navegacao-em-cursos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Roteiro FL1 — Navegação em cursos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-roteiro-fl2-videoaulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Roteiro FL2 — Videoaulas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-roteiro-fl3-exercicios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Roteiro FL3 — Exercícios
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-protocolo-experimental-aquecimento-e-repeticoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Protocolo experimental (Aquecimento e repetições)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Protocolo experimental (Aquecimento e repetições)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-execucao-de-aquecimento-warm-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 Execução de aquecimento (warm-up)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-as-cinco-repeticoes-validas-consecutivas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 As cinco repetições válidas consecutivas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-ordem-e-sequencia-de-ensaios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 Ordem e sequência de ensaios
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-higienizacao-entre-repeticoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 Higienização entre repetições
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-validade-sucesso-falha-e-interrupcao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Validade, sucesso, falha e interrupção
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Validade, sucesso, falha e interrupção">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-criterios-de-validade-de-uma-execucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Critérios de validade de uma execução
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-criterios-de-sucesso-e-falha" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Critérios de sucesso e falha
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-interrupcao-e-cancelamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 Interrupção e cancelamento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-protocolo-de-atribuicao-de-causa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4 Protocolo de atribuição de causa
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-formularios-e-modelos-de-registro" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Formulários e modelos de registro
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-calculo-interpretacao-e-julgamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Cálculo, interpretação e julgamento
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Cálculo, interpretação e julgamento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-formulas-e-consolidacao-estatistica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 Fórmulas e consolidação estatística
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-conversao-em-notas-e-tabelas-de-julgamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 Conversão em notas e tabelas de julgamento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-julgamento-das-questoes-q1-a-q4-e-hipoteses-h1-a-h4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 Julgamento das questões Q1 a Q4 e hipóteses H1 a H4
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94-julgamento-do-objetivo-g1-eficiencia-de-desempenho" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.4 Julgamento do objetivo G1 (Eficiência de desempenho)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#95-consistencia-metodologica-com-as-fases-1-e-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.5 Consistência metodológica com as Fases 1 e 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#96-da-medicao-a-decisao-d1-e-acoes-para-o-requisitante" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.6 Da medição à decisão D1 e ações para o requisitante
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-rastreabilidade-com-a-issue-25-e-criterios-qsw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Rastreabilidade com a issue #25 e critérios QSW
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-pontos-pendentes-e-decisoes-da-equipe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Pontos pendentes e decisões da equipe
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-cronograma-de-execucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Cronograma de execução
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referências
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Histórico de versões
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="procedimentos-de-avaliacao-de-eficiencia-de-desempenho-m1-a-m5">Procedimentos de avaliação de eficiência de desempenho (M1 a M5)<a class="headerlink" href="#procedimentos-de-avaliacao-de-eficiencia-de-desempenho-m1-a-m5" title="Link para esta seção">&para;</a></h1>
+<p><strong>Versão 1.1</strong></p>
+<p>Este artefato define e padroniza os métodos, instrumentos, roteiros e critérios para a avaliação da <strong>eficiência de desempenho</strong> da versão web da Khan Academy em computadores. A eficiência de desempenho, englobando as subcaracterísticas de <strong>comportamento temporal</strong> e <strong>utilização de recursos</strong> no modelo da ISO/IEC 25010:2011 <a href="#s1">S1</a>, foi estabelecida como prioridade máxima na <a href="../../fase-1/">Fase 1</a> <a href="#s4">S4</a>, respondendo aos requisitos <a href="../../fase-1/requisitos-de-avaliacao/#rastreabilidade"><code>R1</code></a> e <a href="../../fase-1/requisitos-de-avaliacao/#rastreabilidade"><code>R2</code></a> e subsidiando a decisão <a href="../../fase-1/requisitos-de-avaliacao/#requisitante"><code>D1</code></a>.</p>
+<p>O documento especifica os procedimentos operacionais para obtenção das métricas:
+- <a href="../../fase-2/metricas/#11-m1-tempo-observavel-por-etapa"><code>M1</code></a> — Tempo observável por etapa (mediana e P90);
+- <a href="../../fase-2/metricas/#12-m2-taxa-de-conclusao-dos-fluxos"><code>M2</code></a> — Taxa de conclusão dos fluxos;
+- <a href="../../fase-2/metricas/#13-m3-utilizacao-de-cpu"><code>M3</code></a> — Utilização de CPU (média e picos);
+- <a href="../../fase-2/metricas/#14-m4-pico-de-memoria"><code>M4</code></a> — Pico de memória;
+- <a href="../../fase-2/metricas/#15-m5-dados-transferidos"><code>M5</code></a> — Volume de dados transferidos.</p>
+<p>Essas métricas respondem diretamente às questões <a href="../../fase-2/questoes-hipoteses/#31-q1-comportamento-temporal"><code>Q1</code></a>, <a href="../../fase-2/questoes-hipoteses/#32-q2-utilizacao-de-cpu"><code>Q2</code></a>, <a href="../../fase-2/questoes-hipoteses/#33-q3-utilizacao-de-memoria"><code>Q3</code></a> e <a href="../../fase-2/questoes-hipoteses/#34-q4-consumo-de-dados-de-rede"><code>Q4</code></a>, confrontando as hipóteses <a href="../../fase-2/questoes-hipoteses/#3-g1-eficiencia-de-desempenho"><code>H1</code> a <code>H4</code></a> do objetivo <a href="../../fase-2/objetivos/#g1"><code>G1</code></a> <a href="#s6">S6</a>, estruturado pela abordagem <em>Goal–Question–Metric</em> (GQM) <a href="#s3">S3</a> com referência nas diretrizes de medição da ISO/IEC 25023:2016 <a href="#s2">S2</a>.</p>
+<p>O artefato cumpre integralmente os requisitos da issue #25 (<em>[Fase 3] Definição dos procedimentos de avaliação de desempenho e adaptabilidade</em>) <a href="#s11">S11</a> e opera sobre o <a href="../ambiente-de-testes/">ambiente de testes</a> <a href="#s10">S10</a>. </p>
+<p><strong>Situação:</strong> especificação de procedimentos, <strong>sem resultados coletados</strong>. A execução oficial das medições e a análise estatística dos dados pertencem à Fase 4. As faixas quantitativas e os limiares de julgamento seguem estritamente as definições aprovadas em <a href="../../fase-2/criterios-julgamento/">Critérios de julgamento</a> <a href="#s9">S9</a>.</p>
+<h2 id="1-escopo-e-principios-da-avaliacao-de-desempenho">1. Escopo e princípios da avaliação de desempenho<a class="headerlink" href="#1-escopo-e-principios-da-avaliacao-de-desempenho" title="Link para esta seção">&para;</a></h2>
+<ul>
+<li><strong>Objeto da avaliação:</strong> A avaliação concentra-se nos três fluxos centrais da jornada do estudante: <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL1</code></a> (navegação em cursos), <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL2</code></a> (videoaulas) e <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL3</code></a> (exercícios). O fluxo secundário <code>FL4</code> (progresso) é avaliado exclusivamente sob adaptabilidade (<code>M6</code>/<code>M7</code>), não integrando a bateria de desempenho, conforme delimitado no escopo da Fase 1 <a href="#s5">S5</a>. A avaliação é externa e caixa-preta, sem acesso ao código-fonte, banco de dados ou infraestrutura de servidores da Khan Academy.</li>
+<li><strong>Ambiente de referência exclusivo (<code>A1</code>):</strong> Conforme definido na seção 2.3 do <a href="../../fase-1/escopo-da-avaliacao/#ambientes">Escopo da avaliação</a>, todas as medições de desempenho são realizadas no <strong>ambiente <code>A1</code></strong> (Windows 11 Pro virtualizado com Docker/Winboat, navegador Google Chrome, motor Blink, alocação estrita de 4 GB de memória RAM e 4 vCPUs). Essa restrição isola o comportamento da plataforma em um ambiente padronizado que simula os computadores de escolas públicas.</li>
+<li><strong>Condições de conectividade de rede:</strong> Cada fluxo é testado sob duas condições experimentais:</li>
+<li><em>Conexão normal:</em> conexão do laboratório sem limitações artificiais;</li>
+<li><em>Conexão limitada:</em> perfil controlado e emulado via <em>Network Throttling</em> do Google Chrome DevTools (1.500 kbps de download, 750 kbps de upload e 150 ms de RTT adicional), representando conexões modestas ou compartilhadas de escolas públicas.</li>
+<li><strong>Aquecimento e repetições válidas:</strong> Para cada tarefa e condição de rede, realiza-se <strong>uma execução prévia de aquecimento (<em>warm-up</em>)</strong>, cujo resultado é descartado da análise estatística, seguida de <strong>cinco repetições válidas consecutivas</strong>. As repetições reduzem o impacto de flutuações pontuais de rede ou serviço e garantem significância às medidas de tendência central.</li>
+<li><strong>Exclusão do tempo pedagógico:</strong> A medição temporal restringe-se ao tempo observável de carregamento e resposta da interface (<code>t_fim − t_início</code>). O tempo gasto pelo estudante ou avaliador na leitura do enunciado, reflexão, resolução matemática de exercícios ou na assistência contínua do vídeo pedagógico é rigorosamente excluído das medições de M1.</li>
+<li><strong>Instrumentação e auditoria complementar:</strong> Além dos painéis nativos do DevTools (Network, Console e Performance) e do monitor de recursos do sistema/navegador, a ferramenta <strong>Lighthouse</strong> é utilizada como instrumento de auditoria complementar em condições de laboratório para avaliar os indicadores de carregamento das páginas de entrada dos fluxos.</li>
+</ul>
+<h3 id="11-justificativa-das-decisoes-metodologicas">1.1 Justificativa das decisões metodológicas<a class="headerlink" href="#11-justificativa-das-decisoes-metodologicas" title="Link para esta seção">&para;</a></h3>
+<p>A Tabela 1 sintetiza as decisões metodológicas adotadas para a avaliação de desempenho e as justificativas técnicas correspondentes.</p>
+<table>
+<thead>
+<tr>
+<th>Decisão metodológica</th>
+<th>Justificativa técnica</th>
+<th>Origem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Medição concentrada no ambiente <code>A1</code></td>
+<td>Evita confundir variações de desempenho do produto com diferenças entre sistemas operacionais ou sobrecargas de diferentes hipervisores; <code>A1</code> é a combinação mais representativa do cenário de referência</td>
+<td><a href="../../fase-1/escopo-da-avaliacao/#ambientes">Escopo, seção 2.3</a>; <a href="../../fase-2/questoes-hipoteses/#3-g1-eficiencia-de-desempenho">Q1–Q4</a></td>
+</tr>
+<tr>
+<td>Duas condições de rede (Normal e Limitada)</td>
+<td>O cenário de escola pública convive com banda compartilhada e instabilidade; comparar as duas condições evidencia a sensibilidade da interface ao tráfego de dados e latência</td>
+<td><a href="../../fase-1/requisitos-de-avaliacao/#rastreabilidade">Requisitos R1 e R2</a>; <a href="../../fase-1/escopo-da-avaliacao/#ambientes">Escopo, seção 2.3</a></td>
+</tr>
+<tr>
+<td>Execução de aquecimento (<em>warm-up</em>) não contabilizada</td>
+<td>Estabiliza resoluções de DNS, conexões TLS e mecanismos de cache prévio, eliminando anomalias associadas ao primeiro contato na sessão</td>
+<td><a href="../../fase-1/escopo-da-avaliacao/#profundidade">Escopo, profundidade</a>; boas práticas de engenharia de desempenho</td>
+</tr>
+<tr>
+<td>Cinco repetições válidas por condição</td>
+<td>Minimiza o efeito de ruídos transitórios da infraestrutura de produção e fornece uma amostra confiável para apuração da mediana e do percentil 90 (P90)</td>
+<td><a href="../../fase-1/escopo-da-avaliacao/#profundidade">Escopo, profundidade</a>; <a href="../../fase-2/metricas/#11-m1-tempo-observavel-por-etapa">Ficha de M1</a></td>
+</tr>
+<tr>
+<td>Adoção da mediana e P90 para M1</td>
+<td>A mediana é imune a <em>outliers</em> causados por engasgos momentâneos da internet pública; o P90 retrata a cauda longa de espera vivenciada pelos usuários mais penalizados</td>
+<td><a href="../../fase-2/metricas/#11-m1-tempo-observavel-por-etapa">Ficha de M1</a>; <a href="../../fase-2/criterios-julgamento/#3-tempo-e-consumo-de-recursos">Critérios, seção 3</a></td>
+</tr>
+<tr>
+<td>Exclusão do tempo pedagógico de vídeo e exercício</td>
+<td>A eficiência de desempenho avalia a capacidade de resposta do software, e não o ritmo de aprendizagem ou a duração didática dos materiais educacionais</td>
+<td><a href="../../fase-2/questoes-hipoteses/#31-q1-comportamento-temporal">Questão Q1</a>; <a href="../../fase-2/metricas/#11-m1-tempo-observavel-por-etapa">Ficha de M1</a></td>
+</tr>
+<tr>
+<td>Controle de cache (<em>Disable cache</em>) para M5</td>
+<td>Permite mensurar com precisão o volume bruto de dados requerido pelo fluxo sem mascarar o consumo por transferências pré-existentes na sessão</td>
+<td><a href="../../fase-2/metricas/#15-m5-dados-transferidos">Ficha de M5</a>; <a href="../../fase-2/criterios-julgamento/#3-tempo-e-consumo-de-recursos">Critérios, seção 3</a></td>
+</tr>
+<tr>
+<td>Uso complementar do Lighthouse</td>
+<td>Fornece métricas padronizadas da indústria (FCP, LCP, TBT) em ambiente sintético de laboratório, fortalecendo a repetibilidade e o diagnóstico de gargalos</td>
+<td>Critério <code>F3-C1</code> <a href="#s5">S5</a>; auditoria de qualidade web</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 1. Decisões metodológicas da avaliação de desempenho e justificativas. Fonte: Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<h2 id="2-rastreabilidade-com-as-fases-1-e-2">2. Rastreabilidade com as Fases 1 e 2<a class="headerlink" href="#2-rastreabilidade-com-as-fases-1-e-2" title="Link para esta seção">&para;</a></h2>
+<p>A Tabela 2 apresenta a cadeia de rastreabilidade completa, conectando os requisitos da Fase 1, os objetivos, questões, hipóteses e métricas da Fase 2, os critérios de julgamento e os procedimentos e formulários de registro desta fase.</p>
+<table>
+<thead>
+<tr>
+<th>Requisito (Fase 1)</th>
+<th>Objetivo</th>
+<th>Questão</th>
+<th>Hipótese</th>
+<th>Métrica</th>
+<th>Critério de julgamento (Fase 2)</th>
+<th>Procedimento</th>
+<th>Registro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../fase-1/requisitos-de-avaliacao/#rastreabilidade"><code>R1</code></a> / <a href="../../fase-1/requisitos-de-avaliacao/#requisitante"><code>D1</code></a></td>
+<td><a href="../../fase-2/objetivos/#g1"><code>G1</code></a></td>
+<td><a href="../../fase-2/questoes-hipoteses/#31-q1-comportamento-temporal"><code>Q1</code></a> — Espera nas etapas dos fluxos</td>
+<td>H1</td>
+<td><a href="../../fase-2/metricas/#11-m1-tempo-observavel-por-etapa"><code>M1</code></a> — Tempo observável por etapa</td>
+<td>Mediana ≤ 1 s (Exc.), 1–3 s (Alvo), 3–10 s (Mín.), &gt; 10 s (Inaceitável)</td>
+<td><a href="#41-procedimento-de-m1-tempo-observavel-por-etapa">Seção 4.1</a> e <a href="#5-roteiros-passo-a-passo-com-marcos-temporais">Seção 5</a></td>
+<td><a href="../../fase-4/registro-desempenho/#registro-m1">Registro M1</a></td>
+</tr>
+<tr>
+<td><a href="../../fase-1/requisitos-de-avaliacao/#rastreabilidade"><code>R1</code></a> / <a href="../../fase-1/requisitos-de-avaliacao/#requisitante"><code>D1</code></a></td>
+<td><a href="../../fase-2/objetivos/#g1"><code>G1</code></a></td>
+<td><a href="../../fase-2/questoes-hipoteses/#31-q1-comportamento-temporal"><code>Q1</code></a> — Conclusão sem bloqueios</td>
+<td>H1</td>
+<td><a href="../../fase-2/metricas/#12-m2-taxa-de-conclusao-dos-fluxos"><code>M2</code></a> — Taxa de conclusão das tentativas</td>
+<td>100% (Exc.), 90–100% (Alvo), 75–90% (Mín.), &lt; 75% (Inaceitável)</td>
+<td><a href="#42-procedimento-de-m2-taxa-de-conclusao-das-tentativas">Seção 4.2</a></td>
+<td><a href="../../fase-4/registro-desempenho/#registro-m2">Registro M2</a></td>
+</tr>
+<tr>
+<td><a href="../../fase-1/requisitos-de-avaliacao/#rastreabilidade"><code>R2</code></a> / <a href="../../fase-1/requisitos-de-avaliacao/#requisitante"><code>D1</code></a></td>
+<td><a href="../../fase-2/objetivos/#g1"><code>G1</code></a></td>
+<td><a href="../../fase-2/questoes-hipoteses/#32-q2-utilizacao-de-cpu"><code>Q2</code></a> — Processamento disponível</td>
+<td>H2</td>
+<td><a href="../../fase-2/metricas/#13-m3-utilizacao-de-cpu"><code>M3</code></a> — Utilização de CPU</td>
+<td>Média ≤ 25% (Exc.), 25–50% (Alvo), 50–75% (Mín.), &gt; 75% (Inaceitável)</td>
+<td><a href="#43-procedimento-de-m3-utilizacao-de-cpu">Seção 4.3</a></td>
+<td><a href="../../fase-4/registro-desempenho/#registro-m3">Registro M3</a></td>
+</tr>
+<tr>
+<td><a href="../../fase-1/requisitos-de-avaliacao/#rastreabilidade"><code>R2</code></a> / <a href="../../fase-1/requisitos-de-avaliacao/#requisitante"><code>D1</code></a></td>
+<td><a href="../../fase-2/objetivos/#g1"><code>G1</code></a></td>
+<td><a href="../../fase-2/questoes-hipoteses/#33-q3-utilizacao-de-memoria"><code>Q3</code></a> — Memória disponível</td>
+<td>H3</td>
+<td><a href="../../fase-2/metricas/#14-m4-pico-de-memoria"><code>M4</code></a> — Pico de memória</td>
+<td>Pico ≤ 512 MiB (Exc.), 512–1024 MiB (Alvo), 1024–2048 MiB (Mín.), &gt; 2048 MiB (Inaceitável)</td>
+<td><a href="#44-procedimento-de-m4-pico-de-memoria">Seção 4.4</a></td>
+<td><a href="../../fase-4/registro-desempenho/#registro-m4">Registro M4</a></td>
+</tr>
+<tr>
+<td><a href="../../fase-1/requisitos-de-avaliacao/#rastreabilidade"><code>R2</code></a> / <a href="../../fase-1/requisitos-de-avaliacao/#requisitante"><code>D1</code></a></td>
+<td><a href="../../fase-2/objetivos/#g1"><code>G1</code></a></td>
+<td><a href="../../fase-2/questoes-hipoteses/#34-q4-consumo-de-dados-de-rede"><code>Q4</code></a> — Orçamento de acesso</td>
+<td>H4</td>
+<td><a href="../../fase-2/metricas/#15-m5-dados-transferidos"><code>M5</code></a> — Dados transferidos</td>
+<td>Tráfego ≤ 5 MiB (Exc.), 5–10 MiB (Alvo), 10–20 MiB (Mín.), &gt; 20 MiB (Inaceitável)</td>
+<td><a href="#45-procedimento-de-m5-dados-transferidos">Seção 4.5</a></td>
+<td><a href="../../fase-4/registro-desempenho/#registro-m5">Registro M5</a></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 2. Cadeia de rastreabilidade R1/R2 → G1 → Q1–Q4 → H1–H4 → M1–M5 → Procedimentos. Fonte: Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<p>A Tabela 3 detalha a operacionalização das diretrizes herdadas das fases anteriores em parâmetros executáveis.</p>
+<table>
+<thead>
+<tr>
+<th>Origem</th>
+<th>Diretriz herdada</th>
+<th>Parâmetro operacional na Fase 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../fase-1/escopo-da-avaliacao/#ambientes">Escopo, Tabela 2 e seção 2.3</a></td>
+<td>Medições de desempenho exclusivamente no ambiente de referência <code>A1</code></td>
+<td>Execuções realizadas estritamente em Windows 11 Pro com Chrome Blink (<a href="#31-ambiente-de-referencia-a1">Seção 3.1</a>)</td>
+</tr>
+<tr>
+<td><a href="../../fase-1/escopo-da-avaliacao/#profundidade">Escopo, Tabela 3</a></td>
+<td>1 execução de aquecimento e 5 repetições válidas por tarefa e condição de rede</td>
+<td>Bateria de 1 aquecimento + 5 repetições para Rede Normal e 1 aquecimento + 5 repetições para Rede Limitada (<a href="#6-protocolo-experimental-aquecimento-e-repeticoes">Seção 6</a>)</td>
+</tr>
+<tr>
+<td><a href="../../fase-1/escopo-da-avaliacao/#profundidade">Escopo, Tabela 3</a></td>
+<td>Marcações de início e fim, exportações de rede e planilha de resultados brutos</td>
+<td>Protocolo instrumental de marcas temporais e formulários em Markdown (<a href="#5-roteiros-passo-a-passo-com-marcos-temporais">Seção 5</a> e <a href="#8-formularios-e-modelos-de-registro">8</a>)</td>
+</tr>
+<tr>
+<td><a href="../../fase-1/escopo-da-avaliacao/#limites-de-validade">Escopo, Tabela 5</a></td>
+<td>Resultados não generalizáveis para toda a internet; variações externas registradas</td>
+<td>Critérios de descarte de execução inválida por causa externa e gravação de logs (<a href="#7-validade-sucesso-falha-e-interrupcao">Seção 7</a>)</td>
+</tr>
+<tr>
+<td><a href="../../fase-2/metricas/#1-metricas-detalhadas">Fichas M1 a M5</a></td>
+<td>Mediana/P90 (M1), % de conclusão (M2), CPU média e picos (M3), pico de RAM (M4) e tráfego total (M5)</td>
+<td>Fórmulas, instrumentos de extração e critérios de cálculo consolidados (<a href="#4-procedimentos-especificos-por-metrica">Seção 4</a> e <a href="#9-calculo-interpretacao-e-julgamento">Seção 9</a>)</td>
+</tr>
+<tr>
+<td><a href="../../fase-2/criterios-julgamento/#3-tempo-e-consumo-de-recursos">Critérios, Tabela 3</a></td>
+<td>Limiares: 1/3/10 s (M1), 25/50/75% (M3), 512/1024/2048 MiB (M4), 5/10/20 MiB (M5)</td>
+<td>Tabelas formais de pontuação e matrizes de conversão em notas de 0 a 3 (<a href="#92-conversao-em-notas-e-tabelas-de-julgamento">Seção 9.2</a>)</td>
+</tr>
+<tr>
+<td><a href="../../fase-2/questoes-hipoteses/#3-g1-eficiencia-de-desempenho">Questões e hipóteses H1–H4</a></td>
+<td>Metas de H1 (mediana ≤ 3 s, conclusão ≥ 90%), H2 (CPU média ≤ 50%), H3 (RAM pico ≤ 1024 MiB), H4 (tráfego ≤ 10 MiB)</td>
+<td>Regras explícitas de sustentação ou refutação das hipóteses (<a href="#93-julgamento-das-questoes-q1-a-q4-e-hipoteses-h1-a-h4">Seção 9.3</a>)</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 3. Diretrizes das Fases 1 e 2 operacionalizadas nos procedimentos de desempenho. Fonte: Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<h2 id="3-ambiente-de-teste-instrumentos-e-preparacao">3. Ambiente de teste, instrumentos e preparação<a class="headerlink" href="#3-ambiente-de-teste-instrumentos-e-preparacao" title="Link para esta seção">&para;</a></h2>
+<h3 id="31-ambiente-de-referencia-a1">3.1 Ambiente de referência (<code>A1</code>)<a class="headerlink" href="#31-ambiente-de-referencia-a1" title="Link para esta seção">&para;</a></h3>
+<p>Em conformidade com a Tabela 1 do <a href="../ambiente-de-testes/">Ambiente de testes</a> <a href="#s10">S10</a>, o ambiente <code>A1</code> possui a seguinte especificação:
+- <strong>Sistema Operacional:</strong> Windows 11 Pro 64-bit;
+- <strong>Navegador:</strong> Google Chrome, versão estável 157.0 (motor Blink);
+- <strong>Modalidade de Execução:</strong> Virtualizado sob Docker gerenciado pela interface Winboat;
+- <strong>Recursos Alocados:</strong> 4 GB de memória RAM dedicada e 4 vCPUs;
+- <strong>Resolução de Tela e Janela:</strong> <code>J2</code> = 1920 × 1080 pixels, janela maximizada, nível de zoom fixo em 100%.</p>
+<h3 id="32-perfis-de-conectividade-de-rede">3.2 Perfis de conectividade de rede<a class="headerlink" href="#32-perfis-de-conectividade-de-rede" title="Link para esta seção">&para;</a></h3>
+<p>As medições são conduzidas alternando entre dois perfis controlados de conectividade:</p>
+<table>
+<thead>
+<tr>
+<th>Perfil de rede</th>
+<th>Mecanismo de aplicação</th>
+<th style="text-align: center;">Taxa de download</th>
+<th style="text-align: center;">Taxa de upload</th>
+<th style="text-align: center;">Latência adicional (RTT)</th>
+<th>Justificativa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Rede Normal</strong></td>
+<td>Conexão local direta</td>
+<td style="text-align: center;">Ilimitada (banda nominal do host)</td>
+<td style="text-align: center;">Ilimitada (banda nominal do host)</td>
+<td style="text-align: center;">&lt; 15 ms</td>
+<td>Linha de base de desempenho sob condições ideais de laboratório</td>
+</tr>
+<tr>
+<td><strong>Rede Limitada</strong></td>
+<td>DevTools <em>Network Throttling</em></td>
+<td style="text-align: center;">1.500 kbps (1,5 Mbps)</td>
+<td style="text-align: center;">750 kbps (0,75 Mbps)</td>
+<td style="text-align: center;">150 ms</td>
+<td>Emulação do cenário escolar de banda compartilhada e acesso restrito <a href="#s9">S9</a></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 4. Perfis de conectividade de rede para os ensaios de desempenho. Fonte: Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<h3 id="33-instrumentos-de-medicao-e-diagnostico">3.3 Instrumentos de medição e diagnóstico<a class="headerlink" href="#33-instrumentos-de-medicao-e-diagnostico" title="Link para esta seção">&para;</a></h3>
+<p>Para assegurar precisão e repetibilidade, são utilizados os seguintes instrumentos:</p>
+<ol>
+<li><strong>Google Chrome DevTools (Painel Network):</strong></li>
+<li>Configurado com a opção <em>Disable cache</em> permanentemente marcada durante os testes;</li>
+<li>Coleta de: tempo de resposta da rede, código de status HTTP de cada recurso, volume de bytes transferidos (enviados e recebidos) e dados descompactados;</li>
+<li>Exportação do arquivo de tráfego de rede no formato padrão HTTP Archive (<code>.har</code>) para arquivo e auditoria de cada repetição.</li>
+<li><strong>Google Chrome DevTools (Painel Console / Navigation Timing API):</strong></li>
+<li>Execução de comandos padronizados em JavaScript para obtenção de marcas temporais de alta precisão via <code>performance.now()</code> e da <em>Navigation Timing API</em> (<code>window.performance.timing</code> ou <code>performance.getEntriesByType('navigation')</code>).</li>
+<li><strong>Google Chrome Task Manager (<code>Shift+Esc</code>):</strong></li>
+<li>Monitoramento do consumo percentual de CPU e de memória privada (<em>Private Memory Footprint</em>) do processo da aba e do processo da GPU dedicados à Khan Academy.</li>
+<li><strong>Monitor de Recursos do Windows / Task Manager do SO:</strong></li>
+<li>Monitoramento da carga global de CPU e de memória do sistema virtualizado para certificar que nenhum processo espúrio do Windows comprometa os testes.</li>
+<li><strong>Lighthouse (Auditoria Complementar):</strong></li>
+<li>Ferramenta de auditoria automatizada executada via DevTools nas páginas de entrada dos fluxos, gerando relatórios com os indicadores de laboratório: <em>Performance Score</em>, <em>First Contentful Paint</em> (FCP), <em>Largest Contentful Paint</em> (LCP), <em>Total Blocking Time</em> (TBT) e <em>Speed Index</em>.</li>
+<li><strong>Utilitário de Gravação e Captura de Tela:</strong></li>
+<li>Gravação contínua em vídeo de cada bateria de repetições e captura de tela ao final de cada etapa concluída para composição das evidências brutas.</li>
+</ol>
+<h3 id="34-preparacao-do-ambiente-checklist-pd-1-a-pd-10">3.4 Preparação do ambiente (Checklist PD-1 a PD-10)<a class="headerlink" href="#34-preparacao-do-ambiente-checklist-pd-1-a-pd-10" title="Link para esta seção">&para;</a></h3>
+<p>Antes de iniciar qualquer rodada de medições, a equipe executa as verificações da Tabela 5. Todas as verificações são registradas na tabela de preparação do <a href="../../fase-4/registro-desempenho/#registro-preparacao">registro de execuções de desempenho</a>.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Verificação de preparação</th>
+<th>Critério de conformidade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PD-1</code></td>
+<td>Atualização do SO e navegador</td>
+<td>Sistema Windows e Chrome atualizados; data e <em>builds</em> registradas</td>
+</tr>
+<tr>
+<td><code>PD-2</code></td>
+<td>Congelamento de versões</td>
+<td>Atualizações automáticas do navegador e do Windows temporariamente suspensas</td>
+</tr>
+<tr>
+<td><code>PD-3</code></td>
+<td>Perfil limpo de testes</td>
+<td>Criação de perfil novo no Chrome, sem complementos, temas ou extensões</td>
+</tr>
+<tr>
+<td><code>PD-4</code></td>
+<td>Isolamento de processos</td>
+<td>Fechamento de abas não relacionadas, programas concorrentes e processos em segundo plano</td>
+</tr>
+<tr>
+<td><code>PD-5</code></td>
+<td>Configuração de tela e zoom</td>
+<td>Resolução confirmada em 1920 × 1080 (<code>J2</code>), zoom fixado em 100%, janela maximizada</td>
+</tr>
+<tr>
+<td><code>PD-6</code></td>
+<td>Autenticação padronizada</td>
+<td>Login prévio com a conta de teste congelada <code>D6</code></td>
+</tr>
+<tr>
+<td><code>PD-7</code></td>
+<td>Idioma e localidade</td>
+<td>Plataforma Khan Academy configurada em português do Brasil (<code>pt-BR</code>)</td>
+</tr>
+<tr>
+<td><code>PD-8</code></td>
+<td>Aceite único de termos</td>
+<td>Aceite de cookies e termos de uso realizado uma única vez no perfil novo</td>
+</tr>
+<tr>
+<td><code>PD-9</code></td>
+<td>Disponibilidade da massa de dados</td>
+<td>Confirmação prévia de acesso à disciplina <code>D1</code>, curso <code>D2</code>, aula <code>D3</code>, vídeo <code>D4</code> e exercício <code>D5</code></td>
+</tr>
+<tr>
+<td><code>PD-10</code></td>
+<td>Calibração de rede</td>
+<td>Medição da largura de banda basal do laboratório para registro de conformidade</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 5. Verificações de preparação do ambiente de desempenho. Fonte: Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<h3 id="35-massa-de-dados-congelada-d1-a-d6">3.5 Massa de dados congelada (<code>D1</code> a <code>D6</code>)<a class="headerlink" href="#35-massa-de-dados-congelada-d1-a-d6" title="Link para esta seção">&para;</a></h3>
+<p>Para garantir que todas as execuções de desempenho sejam rigorosamente equivalentes, utiliza-se a massa de dados da Tabela 6, cujos valores são congelados na etapa de preparação da Fase 4.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Elemento de teste</th>
+<th>Requisito de equivalência</th>
+<th>Valor congelado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>D1</code></td>
+<td>Disciplina</td>
+<td>Disciplina curricular ativa na versão brasileira da Khan Academy</td>
+<td><em>a congelar</em></td>
+</tr>
+<tr>
+<td><code>D2</code></td>
+<td>Curso</td>
+<td>Curso estruturado com lista completa de unidades e lições</td>
+<td><em>a congelar</em></td>
+</tr>
+<tr>
+<td><code>D3</code></td>
+<td>Unidade e aula</td>
+<td>Aula padronizada contendo a videoaula de teste</td>
+<td><em>a congelar</em></td>
+</tr>
+<tr>
+<td><code>D4</code></td>
+<td>Videoaula</td>
+<td>Vídeo padronizado com duração conhecida e transcrição disponível (sem suporte a legendas nativas)</td>
+<td><em>a congelar (URL)</em></td>
+</tr>
+<tr>
+<td><code>D5</code></td>
+<td>Exercício</td>
+<td>Lista de exercícios com suporte a dicas e verificação imediata</td>
+<td><em>a congelar (URL)</em></td>
+</tr>
+<tr>
+<td><code>D6</code></td>
+<td>Conta de teste</td>
+<td>Conta de usuário sem dados pessoais, com histórico compatível</td>
+<td><em>a congelar</em></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 6. Massa de dados para os ensaios de desempenho. Fonte: Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<h3 id="36-conhecimento-exigido-do-avaliador">3.6 Conhecimento exigido do avaliador<a class="headerlink" href="#36-conhecimento-exigido-do-avaliador" title="Link para esta seção">&para;</a></h3>
+<p>Em atendimento ao critério <code>F3-C2</code> <a href="#s5">S5</a>, os ensaios exigem do avaliador:
+1. Conhecimento básico operacional do Windows e do navegador Chrome;
+2. Habilidade para abrir e operar o Chrome DevTools (<code>F12</code> ou <code>Ctrl+Shift+I</code>), alternar entre os painéis <em>Network</em>, <em>Console</em> e <em>Lighthouse</em>, ativar o <em>throttling</em> de rede e exportar arquivos <code>.har</code>;
+3. Capacidade de abrir o Gerenciador de Tarefas do Chrome (<code>Shift+Esc</code>) e realizar a leitura de CPU e memória do processo renderizador;
+4. Execução estrita dos passos do roteiro, abstendo-se de interações extras durante as medições de tempo.</p>
+<h2 id="4-procedimentos-especificos-por-metrica">4. Procedimentos específicos por métrica<a class="headerlink" href="#4-procedimentos-especificos-por-metrica" title="Link para esta seção">&para;</a></h2>
+<h3 id="41-procedimento-de-m1-tempo-observavel-por-etapa">4.1 Procedimento de M1: Tempo observável por etapa<a class="headerlink" href="#41-procedimento-de-m1-tempo-observavel-por-etapa" title="Link para esta seção">&para;</a></h3>
+<ul>
+<li><strong>Definição operacional:</strong> O tempo observável por etapa é o intervalo transcorrido entre a ação inicial do usuário (disparo da requisição ou clique em controle interativo) e o momento em que a interface conclui a renderização visual e torna-se novamente utilizável, sem incluir a duração pedagógica da atividade.</li>
+<li><strong>Instrumentação:</strong> </li>
+<li>Para carregamento de páginas inteiras: extração via <em>Navigation Timing API</em> no console DevTools:
+    <div class="highlight"><pre><span></span><code><span class="c1">// Tempo total de carregamento da navegação observável (ms):</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">nav</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">performance</span><span class="p">.</span><span class="nx">getEntriesByType</span><span class="p">(</span><span class="s2">"navigation"</span><span class="p">)[</span><span class="mf">0</span><span class="p">];</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">tempoCarregamento</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="nx">nav</span><span class="p">.</span><span class="nx">loadEventEnd</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">nav</span><span class="p">.</span><span class="nx">startTime</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Tempo observável de etapa (ms):"</span><span class="p">,</span><span class="w"> </span><span class="nx">tempoCarregamento</span><span class="p">);</span>
+</code></pre></div></li>
+<li>Para ações interativas em página única (SPAs) e disparos de controle (ex: abrir dica, enviar resposta, play de vídeo): acionamento manual de cronometragem no Console via <code>performance.now()</code> ou inspeção da marcação temporal de término da requisição no painel Network somada à estabilização de layout no painel Performance.</li>
+<li><strong>Cálculo da métrica:</strong></li>
+<li>Para cada etapa e condição de rede, computa-se o tempo decorrido <span class="arithmatex">\(\Delta t_i = t_{\text{fim}, i} - t_{\text{início}, i}\)</span> nas cinco repetições válidas (<span class="arithmatex">\(i = 1, \dots, 5\)</span>);</li>
+<li>Apuram-se a <strong>mediana</strong> e o <strong>percentil 90 (P90)</strong> dos tempos obtidos;</li>
+<li>A mediana é adotada como indicador principal para confronto com os níveis de pontuação de M1 na <a href="../../fase-2/criterios-julgamento/#3-tempo-e-consumo-de-recursos">Tabela 3 da Fase 2</a>.</li>
+</ul>
+<h3 id="42-procedimento-de-m2-taxa-de-conclusao-das-tentativas">4.2 Procedimento de M2: Taxa de conclusão das tentativas<a class="headerlink" href="#42-procedimento-de-m2-taxa-de-conclusao-das-tentativas" title="Link para esta seção">&para;</a></h3>
+<ul>
+<li><strong>Definição operacional:</strong> Proporção de tentativas iniciadas que concluem com êxito todas as etapas do roteiro padronizado sem interrupções impeditivas, bloqueios da plataforma ou ocorrência de <em>timeouts</em>.</li>
+<li><strong>Fórmula de cálculo:</strong>
+  $<span class="arithmatex">\(M2 = 100 \times \frac{C}{N}\)</span>$
+  onde <span class="arithmatex">\(C\)</span> é o número de tentativas concluídas com sucesso e <span class="arithmatex">\(N\)</span> é o total de tentativas elegíveis iniciadas (incluindo tentativas que falharam ou sofreram timeout decorrente da plataforma).</li>
+<li><strong>Critério de Timeout:</strong> Fixa-se o limiar de <strong>30 segundos</strong> de inatividade ou espera sem resposta da interface como critério operacional de <em>timeout</em>. Tentativas que excedam 30 s sem retorno são classificadas como Falha por Timeout (<code>F-TO</code>).</li>
+<li><strong>Universo de observação:</strong> Para cada fluxo e condição de rede, <span class="arithmatex">\(N\)</span> totaliza as tentativas elegíveis executadas para a obtenção das 5 repetições válidas.</li>
+</ul>
+<h3 id="43-procedimento-de-m3-utilizacao-de-cpu">4.3 Procedimento de M3: Utilização de CPU<a class="headerlink" href="#43-procedimento-de-m3-utilizacao-de-cpu" title="Link para esta seção">&para;</a></h3>
+<ul>
+<li><strong>Definição operacional:</strong> Percentual médio de CPU demandado pelo processo da aba e subprocessos associados à sessão da Khan Academy durante o percurso do fluxo, acompanhado pelo registro do pico instantâneo de processamento e detecção de sobrecarga.</li>
+<li><strong>Instrumentação:</strong></li>
+<li>O avaliador mantém aberta a janela do Gerenciador de Tarefas do Chrome (<code>Shift+Esc</code>) posicionada de forma não sobreposta à área de visualização;</li>
+<li>Durante o percurso do fluxo, registram-se amostras da utilização de CPU da aba a cada 2 segundos;</li>
+<li>Alternativamente, registra-se uma sessão de <em>profiling</em> no painel <em>Performance</em> do DevTools, calculando-se o tempo ocupado pela <em>thread</em> principal em relação à duração total do fluxo:
+    $<span class="arithmatex">\(\text{CPU}_{\text{média}} = \frac{\text{Tempo Total de Processamento da Thread Principal}}{\text{Duração Total do Fluxo}} \times 100\)</span>$</li>
+<li><strong>Detecção de Sobrecarga:</strong> Episódios em que o consumo de CPU atinja ou supere <strong>75%</strong> são anotados como evento de alta demanda de processamento.</li>
+</ul>
+<h3 id="44-procedimento-de-m4-pico-de-memoria">4.4 Procedimento de M4: Pico de memória<a class="headerlink" href="#44-procedimento-de-m4-pico-de-memoria" title="Link para esta seção">&para;</a></h3>
+<ul>
+<li><strong>Definição operacional:</strong> Maior consumo de memória RAM privada (<em>Private Memory Footprint</em> / <em>Commit Size</em>) atribuído à aba e aos processos de renderização da Khan Academy durante o percurso do fluxo.</li>
+<li><strong>Instrumentação:</strong></li>
+<li>Leitura do valor de "Espaço de memória privada" (<em>Memory Footprint</em>) no Gerenciador de Tarefas do Chrome (<code>Shift+Esc</code>);</li>
+<li>O valor de pico observado durante a execução <span class="arithmatex">\(\text{RAM}_{\text{pico}} = \max(\text{RAM}(t))\)</span> é registrado em Megabytes (MiB);</li>
+<li>Ao término de cada repetição, o consumo final é anotado e a aba é fechada para evitar que o acúmulo de <em>garbage collection</em> contamine a repetição seguinte.</li>
+</ul>
+<h3 id="45-procedimento-de-m5-dados-transferidos">4.5 Procedimento de M5: Dados transferidos<a class="headerlink" href="#45-procedimento-de-m5-dados-transferidos" title="Link para esta seção">&para;</a></h3>
+<ul>
+<li><strong>Definição operacional:</strong> Volume total de dados digitais transmitidos pela rede (soma dos bytes recebidos e bytes enviados) para concluir integralmente o fluxo padronizado.</li>
+<li><strong>Instrumentação:</strong></li>
+<li>O painel DevTools <em>Network</em> deve estar com a opção <em>Disable cache</em> ativada;</li>
+<li>Ao iniciar a repetição, clica-se em <em>Clear</em> (limpar histórico de rede);</li>
+<li>Ao concluir a última etapa do fluxo, lê-se o resumo no rodapé do painel <em>Network</em>:
+    $<span class="arithmatex">\(\text{Dados Transferidos (MiB)} = \frac{\text{bytes transferidos (Network payload)}}{1.048.576}\)</span>$</li>
+<li>Registra-se também o volume descompactado dos recursos (<em>resources</em>) para fins de análise complementar;</li>
+<li>O arquivo <code>.har</code> é salvo com a nomenclatura padrão da evidência.</li>
+</ul>
+<h3 id="46-procedimento-de-auditoria-complementar-com-lighthouse">4.6 Procedimento de auditoria complementar com Lighthouse<a class="headerlink" href="#46-procedimento-de-auditoria-complementar-com-lighthouse" title="Link para esta seção">&para;</a></h3>
+<ul>
+<li><strong>Finalidade:</strong> Obter diagnósticos independentes e consolidados de laboratório para as páginas de entrada dos fluxos, gerando subsídios adicionais à análise de qualidade.</li>
+<li><strong>Passos de execução:</strong></li>
+<li>Abrir a URL congelada da página de entrada (<code>D2</code> para FL1, <code>D4</code> para FL2, <code>D5</code> para FL3) em uma aba privativa limpa no ambiente <code>A1</code>;</li>
+<li>Abrir o DevTools e selecionar a aba <strong>Lighthouse</strong>;</li>
+<li>Configurar os parâmetros:<ul>
+<li><em>Mode:</em> Navigation (Padrão);</li>
+<li><em>Device:</em> Desktop;</li>
+<li><em>Categories:</em> Marcar apenas <strong>Performance</strong>;</li>
+</ul>
+</li>
+<li>Executar a auditoria sob as duas condições de rede (Normal e com throttling simulado do Lighthouse);</li>
+<li>Exportar o relatório no formato JSON/HTML e registrar na tabela de auditoria complementar:<ul>
+<li><em>Performance Score</em> (0 a 100);</li>
+<li><em>First Contentful Paint</em> (FCP, em s);</li>
+<li><em>Largest Contentful Paint</em> (LCP, em s);</li>
+<li><em>Total Blocking Time</em> (TBT, em ms);</li>
+<li><em>Speed Index</em> (em s).</li>
+</ul>
+</li>
+</ul>
+<h2 id="5-roteiros-passo-a-passo-com-marcos-temporais">5. Roteiros passo a passo com marcos temporais<a class="headerlink" href="#5-roteiros-passo-a-passo-com-marcos-temporais" title="Link para esta seção">&para;</a></h2>
+<p>Para cada um dos fluxos <code>FL1</code>, <code>FL2</code> e <code>FL3</code>, define-se uma sequência padronizada de etapas contendo os marcos operacionais de início (<code>t_início</code>) e término (<code>t_fim</code>). O avaliador segue o roteiro sem desvios.</p>
+<h3 id="51-roteiro-fl1-navegacao-em-cursos">5.1 Roteiro FL1 — Navegação em cursos<a class="headerlink" href="#51-roteiro-fl1-navegacao-em-cursos" title="Link para esta seção">&para;</a></h3>
+<p>O fluxo <code>FL1</code> avalia o comportamento temporal e o consumo de recursos na navegação da estrutura educacional até a abertura do conteúdo da aula.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Etapa</th>
+<th>Ação do avaliador</th>
+<th>Marco de início (<code>t_início</code>)</th>
+<th>Marco de término (<code>t_fim</code>)</th>
+<th>O que se observa em M1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>E1.1</strong></td>
+<td>Carregamento da página inicial / menu de disciplinas</td>
+<td>Clique no botão de navegação ou acionamento da URL base</td>
+<td>Renderização completa dos cursos e menu de disciplinas interativo</td>
+<td>Tempo de renderização do catálogo inicial</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>E1.2</strong></td>
+<td>Seleção da disciplina <code>D1</code> e abertura do curso <code>D2</code></td>
+<td>Clique sobre o card/link do curso <code>D2</code></td>
+<td>Exibição completa da grade de unidades e lições do curso</td>
+<td>Tempo de resposta para estruturação da grade curricular</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>E1.3</strong></td>
+<td>Seleção da unidade e abertura da aula <code>D3</code></td>
+<td>Clique sobre o link da aula <code>D3</code></td>
+<td>Apresentação completa da página de aula (saída observável de <code>FL1</code>)</td>
+<td>Tempo de carregamento do ambiente da aula selecionada</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 7. Roteiro passo a passo e marcos de medição para FL1. Fonte: Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<h3 id="52-roteiro-fl2-videoaulas">5.2 Roteiro FL2 — Videoaulas<a class="headerlink" href="#52-roteiro-fl2-videoaulas" title="Link para esta seção">&para;</a></h3>
+<p>O fluxo <code>FL2</code> avalia o comportamento temporal e os recursos demandados pelo reprodutor de vídeo e suas ferramentas de acessibilidade.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Etapa</th>
+<th>Ação do avaliador</th>
+<th>Marco de início (<code>t_início</code>)</th>
+<th>Marco de término (<code>t_fim</code>)</th>
+<th>O que se observa em M1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>E2.1</strong></td>
+<td>Carregamento da página da videoaula <code>D4</code></td>
+<td>Clique no link da videoaula <code>D4</code></td>
+<td>Reprodutor de vídeo renderizado com controles disponíveis</td>
+<td>Tempo de montagem da interface do player de vídeo</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>E2.2</strong></td>
+<td>Disparo da reprodução da videoaula</td>
+<td>Clique no botão "Play" / Iniciar reprodução</td>
+<td>Primeiro <em>frame</em> de vídeo em movimento e áudio/tempo correndo</td>
+<td>Tempo de <em>buffer</em> e início efetivo da reprodução (<em>excluída a duração do vídeo</em>)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>E2.3</strong></td>
+<td>Abertura da transcrição</td>
+<td>Clique no controle de transcrição da aula</td>
+<td>Exibição completa do painel textual da transcrição</td>
+<td>Tempo de renderização do texto sincronizado da aula</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 8. Roteiro passo a passo e marcos de medição para FL2. Fonte: Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<blockquote>
+<p>[!IMPORTANT]
+<strong>Isolamento do tempo pedagógico:</strong> Após a verificação do início da reprodução na etapa E2.2 e a contagem de pelo menos 5 segundos de execução para constatação de fluidez, o avaliador deve <strong>pausar o vídeo</strong>. O tempo em que a videoaula permanece em execução pedagógica <strong>não é contabilizado</strong> nas métricas de tempo observável de resposta M1.</p>
+</blockquote>
+<h3 id="53-roteiro-fl3-exercicios">5.3 Roteiro FL3 — Exercícios<a class="headerlink" href="#53-roteiro-fl3-exercicios" title="Link para esta seção">&para;</a></h3>
+<p>O fluxo <code>FL3</code> avalia a agilidade da plataforma na prestação de auxílio pedagógico (dica) e no envio e validação de respostas interativas.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Etapa</th>
+<th>Ação do avaliador</th>
+<th>Marco de início (<code>t_início</code>)</th>
+<th>Marco de término (<code>t_fim</code>)</th>
+<th>O que se observa em M1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>E3.1</strong></td>
+<td>Carregamento da página do exercício <code>D5</code></td>
+<td>Clique no link do exercício <code>D5</code></td>
+<td>Enunciado e área de resposta renderizados e operáveis</td>
+<td>Tempo de carregamento da interface interativa de exercícios</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>E3.2</strong></td>
+<td>Exibição de dica pedagógica</td>
+<td>Inserção de texto/código na caixa de edição da questão</td>
+<td>Apresentação visual automática da dica pela interface</td>
+<td>Tempo de resposta para processamento da entrada e exibição automática da dica</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>E3.3</strong></td>
+<td>Envio de resposta preenchida</td>
+<td>Clique no botão "Verificar" / "Enviar resposta"</td>
+<td>Exibição visual do retorno da plataforma (correto ou tente novamente)</td>
+<td>Tempo de validação e feedback do exercício (<em>excluído o tempo de cálculo do aluno</em>)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>E3.4</strong></td>
+<td>Acionamento de continuidade</td>
+<td>Clique no botão "Próxima questão" ou "Continuar"</td>
+<td>Limpeza e apresentação do exercício seguinte (saída de <code>FL3</code>)</td>
+<td>Tempo de transição de estado da atividade</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 9. Roteiro passo a passo e marcos de medição para FL3. Fonte: Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<blockquote>
+<p>[!NOTE]
+No desafio prático de programação <code>D5</code>, o mecanismo interativo exibe a dica pedagógica automaticamente assim que um comando ou texto preliminar é inserido na caixa de texto do editor, sem necessidade de clicar em botão específico.
+Para o cálculo de M1 na etapa E3.3, o tempo de digitação ou resolução mental do problema pelo avaliador é mantido fora da medição: o cronômetro inicia estritamente no clique de envio e cessa no feedback retornado pela interface.</p>
+</blockquote>
+<h2 id="6-protocolo-experimental-aquecimento-e-repeticoes">6. Protocolo experimental (Aquecimento e repetições)<a class="headerlink" href="#6-protocolo-experimental-aquecimento-e-repeticoes" title="Link para esta seção">&para;</a></h2>
+<h3 id="61-execucao-de-aquecimento-warm-up">6.1 Execução de aquecimento (<em>warm-up</em>)<a class="headerlink" href="#61-execucao-de-aquecimento-warm-up" title="Link para esta seção">&para;</a></h3>
+<p>Antes das repetições oficiais válidas, é realizada <strong>uma execução completa do fluxo (etapas E.1 a E.4) denominada aquecimento (<code>W</code>)</strong>, tanto sob rede normal quanto sob rede limitada. 
+- <strong>Objetivo:</strong> Estabelecer conexões de socket seguras (TLS Handshake), povoar tabelas de resolução de nomes (DNS) e amortecer efeitos de <em>cold start</em> da infraestrutura remota;
+- <strong>Tratamento dos dados:</strong> Os tempos e recursos medidos na execução de aquecimento são anotados na linha <code>W</code> do registro com a marcação "Descartado da Análise Estatística", não entrando no cálculo da mediana, do P90 ou das médias de CPU/RAM.</p>
+<h3 id="62-as-cinco-repeticoes-validas-consecutivas">6.2 As cinco repetições válidas consecutivas<a class="headerlink" href="#62-as-cinco-repeticoes-validas-consecutivas" title="Link para esta seção">&para;</a></h3>
+<p>Para cada combinação de <strong>fluxo</strong> e <strong>condição de rede</strong>, são coletadas <strong>cinco repetições válidas consecutivas</strong> (<code>R1</code>, <code>R2</code>, <code>R3</code>, <code>R4</code>, <code>R5</code>).
+- Caso uma repetição sofra anomalia externa não atribuível à plataforma (queda de internet externa ou erro do operador), ela é rotulada como Inválida (<code>X</code>), descartada e imediatamente refeita até totalizar cinco execuções válidas;
+- Se a anomalia for decorrente da Khan Academy (erro HTTP 500, página travada, script congelado), a repetição é rotulada como Falha (<code>F</code>) e computada no denominador de M2.</p>
+<h3 id="63-ordem-e-sequencia-de-ensaios">6.3 Ordem e sequência de ensaios<a class="headerlink" href="#63-ordem-e-sequencia-de-ensaios" title="Link para esta seção">&para;</a></h3>
+<p>Para mitigar efeitos cruzados e garantir padronização, a ordem dos ensaios segue estritamente a sequência:
+1. <strong>Bateria FL1 — Rede Normal:</strong> 1 Aquecimento (<code>W-FL1-NORM</code>) + 5 Repetições Válidas (<code>R1</code> a <code>R5</code>);
+2. <strong>Bateria FL1 — Rede Limitada:</strong> 1 Aquecimento (<code>W-FL1-LIM</code>) + 5 Repetições Válidas (<code>R1</code> a <code>R5</code>);
+3. <strong>Bateria FL2 — Rede Normal:</strong> 1 Aquecimento (<code>W-FL2-NORM</code>) + 5 Repetições Válidas (<code>R1</code> a <code>R5</code>);
+4. <strong>Bateria FL2 — Rede Limitada:</strong> 1 Aquecimento (<code>W-FL2-LIM</code>) + 5 Repetições Válidas (<code>R1</code> a <code>R5</code>);
+5. <strong>Bateria FL3 — Rede Normal:</strong> 1 Aquecimento (<code>W-FL3-NORM</code>) + 5 Repetições Válidas (<code>R1</code> a <code>R5</code>);
+6. <strong>Bateria FL3 — Rede Limitada:</strong> 1 Aquecimento (<code>W-FL3-LIM</code>) + 5 Repetições Válidas (<code>R1</code> a <code>R5</code>).</p>
+<p>Totalizam-se 36 execuções no ambiente <code>A1</code> (6 de aquecimento e 30 válidas).</p>
+<h3 id="64-higienizacao-entre-repeticoes">6.4 Higienização entre repetições<a class="headerlink" href="#64-higienizacao-entre-repeticoes" title="Link para esta seção">&para;</a></h3>
+<p>Entre repetições sucessivas da mesma bateria:
+1. O arquivo <code>.har</code> e as leituras de CPU/RAM da repetição anterior são salvos;
+2. A aba do navegador em que o fluxo foi executado é <strong>fechada</strong>;
+3. O avaliador aguarda 5 segundos para estabilização de CPU e liberação de memória pelo sistema operacional;
+4. Uma nova aba é aberta no mesmo perfil, garantindo que o histórico de rede seja limpo (<em>Clear Network</em>), mantendo a opção <em>Disable cache</em> ativada.</p>
+<h2 id="7-validade-sucesso-falha-e-interrupcao">7. Validade, sucesso, falha e interrupção<a class="headerlink" href="#7-validade-sucesso-falha-e-interrupcao" title="Link para esta seção">&para;</a></h2>
+<h3 id="71-criterios-de-validade-de-uma-execucao">7.1 Critérios de validade de uma execução<a class="headerlink" href="#71-criterios-de-validade-de-uma-execucao" title="Link para esta seção">&para;</a></h3>
+<p>Uma execução é considerada válida e elegível quando atende cumulativamente aos seguintes critérios:
+1. Ambiente de teste <code>A1</code> operando dentro das especificações de virtualização (4 GB RAM, 4 vCPUs);
+2. Perfil de rede confirmado (Normal ou Limitada com 1.500/750 kbps e 150 ms RTT);
+3. Execução realizada sem aplicativos de terceiros consumindo CPU em segundo plano;
+4. Massa de dados utilizada correspondente exatamente aos valores congelados <code>D1</code> a <code>D6</code>;
+5. Roteiro passo a passo percorrido na íntegra, sem desvios operacionais.</p>
+<p>Se qualquer uma dessas pré-condições for violada, a tentativa é marcada com o código <code>X</code> (Inválida) e descartada.</p>
+<h3 id="72-criterios-de-sucesso-e-falha">7.2 Critérios de sucesso e falha<a class="headerlink" href="#72-criterios-de-sucesso-e-falha" title="Link para esta seção">&para;</a></h3>
+<ul>
+<li><strong>Concluída (<code>C</code>):</strong> Todas as etapas do fluxo atingiram seus respectivos marcos de término sem interrupções impeditivas, as informações e retornos foram renderizados corretamente e nenhum erro impeditivo foi registrado;</li>
+<li><strong>Falha por Bloqueio (<code>F-BLQ</code>):</strong> Ocorreu erro técnico da plataforma (ex: tela branca, quebra de script, erro HTTP 5xx, reprodutor incapaz de iniciar o vídeo mesmo com rede operante) que impossibilitou avançar para a etapa seguinte;</li>
+<li><strong>Falha por Timeout (<code>F-TO</code>):</strong> A plataforma permaneceu mais de 30 segundos sem fornecer retorno visual observável ou concluir o carregamento da etapa;</li>
+<li><strong>Falha por Sobrecarga (<code>F-SOB</code>):</strong> O processo da plataforma travou o navegador ou consumiu 100% de CPU de forma contínua por mais de 15 segundos inviabilizando a interação.</li>
+</ul>
+<h3 id="73-interrupcao-e-cancelamento">7.3 Interrupção e cancelamento<a class="headerlink" href="#73-interrupcao-e-cancelamento" title="Link para esta seção">&para;</a></h3>
+<p>A execução é imediatamente interrompida e classificada como Inválida (<code>X</code>) quando ocorrer:
+- Queda geral de conectividade física ou falha no provedor de internet do laboratório;
+- Travamento do sistema operacional hospedeiro ou do hipervisor de virtualização;
+- Interrupção provocada pelo operador.</p>
+<h3 id="74-protocolo-de-atribuicao-de-causa">7.4 Protocolo de atribuição de causa<a class="headerlink" href="#74-protocolo-de-atribuicao-de-causa" title="Link para esta seção">&para;</a></h3>
+<p>Para garantir a integridade dos dados coletados, toda anomalia observada é classificada segundo a Tabela 10.</p>
+<table>
+<thead>
+<tr>
+<th>Atribuição</th>
+<th>Evidência observada</th>
+<th>Tratamento operacional</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Plataforma Khan Academy</strong></td>
+<td>Erro de script no Console, falha em requisição de API com HTTP 500/503, congelamento reproduzível</td>
+<td>Classificada como Falha (<code>F</code>) e computada no denominador de M2</td>
+</tr>
+<tr>
+<td><strong>Ambiente de Testes / Virtualização</strong></td>
+<td>Falha de alocação de memória no host Docker/Winboat, erro de driver gráfico do sistema convidado</td>
+<td>Descartada (<code>X</code>); reiniciar a máquina virtual e repetir</td>
+</tr>
+<tr>
+<td><strong>Operador / Avaliador</strong></td>
+<td>Clique em elemento incorreto, desvio de rota, atraso na cronometragem manual</td>
+<td>Descartada (<code>X</code>); repetir a execução com atenção ao roteiro</td>
+</tr>
+<tr>
+<td><strong>Conexão Externa da Instituição</strong></td>
+<td>Perda total de conectividade com serviços externos fora do escopo da Khan Academy</td>
+<td>Descartada (<code>X</code>); aguardar o restabelecimento da rede</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 10. Protocolo de atribuição de causa das divergências. Fonte: Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<h2 id="8-formularios-e-modelos-de-registro">8. Formulários e modelos de registro<a class="headerlink" href="#8-formularios-e-modelos-de-registro" title="Link para esta seção">&para;</a></h2>
+<p>Todos os dados brutos e consolidados da avaliação de desempenho são registrados no documento <a href="../../fase-4/registro-desempenho/">Registro de execuções de eficiência de desempenho (M1 a M5)</a> <a href="#s12">S12</a>. </p>
+<p>A Tabela 11 apresenta a organização das seções de registro.</p>
+<table>
+<thead>
+<tr>
+<th>Seção do registro</th>
+<th>Descrição e conteúdo</th>
+<th>Responsável pelo preenchimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../fase-4/registro-desempenho/#registro-preparacao">1. Preparação de A1</a></td>
+<td>Dados de hardware, versões congeladas e checklist <code>PD-1</code> a <code>PD-10</code></td>
+<td>Avaliador / Executor</td>
+</tr>
+<tr>
+<td><a href="../../fase-4/registro-desempenho/#registro-dados">2. Dados congelados</a></td>
+<td>Valores e URLs fixadas de <code>D1</code> a <code>D6</code></td>
+<td>Avaliador / Executor</td>
+</tr>
+<tr>
+<td><a href="../../fase-4/registro-desempenho/#registro-rede">3. Condições de rede</a></td>
+<td>Registro de calibração da rede Normal e parâmetros do Throttling da rede Limitada</td>
+<td>Avaliador / Executor</td>
+</tr>
+<tr>
+<td><a href="../../fase-4/registro-desempenho/#registro-fl1">4. Execuções de FL1</a></td>
+<td>Registros brutos das etapas E1.1–E1.3, M1 a M5, aquecimento e 5 repetições (Normal e Limitada)</td>
+<td>Avaliador e Observador</td>
+</tr>
+<tr>
+<td><a href="../../fase-4/registro-desempenho/#registro-fl2">5. Execuções de FL2</a></td>
+<td>Registros brutos das etapas E2.1–E2.3, M1 a M5, aquecimento e 5 repetições (Normal e Limitada)</td>
+<td>Avaliador e Observador</td>
+</tr>
+<tr>
+<td><a href="../../fase-4/registro-desempenho/#registro-fl3">6. Execuções de FL3</a></td>
+<td>Registros brutos das etapas E3.1–E3.4, M1 a M5, aquecimento e 5 repetições (Normal e Limitada)</td>
+<td>Avaliador e Observador</td>
+</tr>
+<tr>
+<td><a href="../../fase-4/registro-desempenho/#registro-lighthouse">7. Auditoria Lighthouse</a></td>
+<td>Indicadores de laboratório (Performance Score, FCP, LCP, TBT, Speed Index) para <code>D2</code>, <code>D4</code> e <code>D5</code></td>
+<td>Avaliador / Observador</td>
+</tr>
+<tr>
+<td><a href="../../fase-4/registro-desempenho/#registro-ocorrencias">8. Ocorrências</a></td>
+<td>Registro detalhado de qualquer falha ou anomalia (<code>OC-DES-001</code>, ...)</td>
+<td>Avaliador / Observador</td>
+</tr>
+<tr>
+<td><a href="../../fase-4/registro-desempenho/#registro-resumo">9. Resumo e julgamento</a></td>
+<td>Consolidação estatística (medianas, médias, picos, taxas de conclusão), notas de 0 a 3 e desfecho de D1</td>
+<td>Equipe avaliadora</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 11. Organização das seções do registro de execuções de desempenho. Fonte: Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<p><strong>Nomenclatura das evidências:</strong> Os arquivos de evidência gerados durante a coleta seguem o padrão padronizado:
+- Arquivo de tráfego de rede: <code>DES_&lt;fluxo&gt;_&lt;condicao&gt;_&lt;repeticao&gt;_&lt;data&gt;.har</code> (ex: <code>DES_FL1_NORM_R1_20261112.har</code>);
+- Captura de tela: <code>DES_&lt;fluxo&gt;_&lt;etapa&gt;_&lt;condicao&gt;_&lt;repeticao&gt;_&lt;data&gt;.png</code> (ex: <code>DES_FL1_E1.3_NORM_R1_20261112.png</code>);
+- Relatório Lighthouse: <code>LH_&lt;fluxo&gt;_&lt;condicao&gt;_&lt;data&gt;.json</code> (ex: <code>LH_FL2_LIM_20261112.json</code>).</p>
+<h2 id="9-calculo-interpretacao-e-julgamento">9. Cálculo, interpretação e julgamento<a class="headerlink" href="#9-calculo-interpretacao-e-julgamento" title="Link para esta seção">&para;</a></h2>
+<h3 id="91-formulas-e-consolidacao-estatistica">9.1 Fórmulas e consolidação estatística<a class="headerlink" href="#91-formulas-e-consolidacao-estatistica" title="Link para esta seção">&para;</a></h3>
+<p>A Tabela 12 reúne as fórmulas aplicadas sobre as repetições válidas para consolidação dos resultados de cada métrica.</p>
+<table>
+<thead>
+<tr>
+<th>Métrica</th>
+<th>Indicador estatístico</th>
+<th>Fórmula matemática</th>
+<th>Interpretação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>M1</code></td>
+<td>Mediana do tempo observável por etapa</td>
+<td><span class="arithmatex">\(\text{Mediana}(\Delta t_1, \dots, \Delta t_5)\)</span></td>
+<td>Valor central que separa a metade superior da inferior dos tempos de resposta da etapa</td>
+</tr>
+<tr>
+<td><code>M1</code> (apoio)</td>
+<td>Percentil 90 do tempo observável</td>
+<td><span class="arithmatex">\(\text{P90}(\Delta t_1, \dots, \Delta t_5)\)</span></td>
+<td>Tempo abaixo do qual se situam 90% das respostas observadas</td>
+</tr>
+<tr>
+<td><code>M2</code></td>
+<td>Taxa de conclusão das tentativas</td>
+<td><span class="arithmatex">\(100 \times \frac{C}{N}\)</span></td>
+<td>Percentual de tentativas iniciadas que foram concluídas sem falhas</td>
+</tr>
+<tr>
+<td><code>M3</code></td>
+<td>Utilização média de CPU</td>
+<td><span class="arithmatex">\(\text{CPU}_{\text{média}} = \frac{1}{n} \sum_{i=1}^n \text{CPU}_i\)</span></td>
+<td>Carga média demandada da CPU durante o percurso da tarefa</td>
+</tr>
+<tr>
+<td><code>M3</code> (apoio)</td>
+<td>Pico de utilização de CPU</td>
+<td><span class="arithmatex">\(\max(\text{CPU}(t))\)</span></td>
+<td>Maior percentual instantâneo demandado durante a execução</td>
+</tr>
+<tr>
+<td><code>M4</code></td>
+<td>Pico de utilização de memória</td>
+<td><span class="arithmatex">\(\max(\text{RAM}(t))\)</span></td>
+<td>Maior volume em MiB alocado para a aba e processo de renderização</td>
+</tr>
+<tr>
+<td><code>M5</code></td>
+<td>Volume de dados transferidos</td>
+<td><span class="arithmatex">\(D = \frac{\text{Bytes Recebidos} + \text{Bytes Enviados}}{1.048.576}\)</span></td>
+<td>Volume total de tráfego de rede gerado para concluir o fluxo</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 12. Fórmulas de consolidação estatística das métricas de desempenho. Fonte: Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<h3 id="92-conversao-em-notas-e-tabelas-de-julgamento">9.2 Conversão em notas e tabelas de julgamento<a class="headerlink" href="#92-conversao-em-notas-e-tabelas-de-julgamento" title="Link para esta seção">&para;</a></h3>
+<p>A conversão dos indicadores consolidados nas notas de 0 a 3 obedece rigorosamente aos <a href="../../fase-2/criterios-julgamento/">Critérios de julgamento da Fase 2</a> <a href="#s9">S9</a>. A Tabela 13 sintetiza as faixas quantitativas aplicadas.</p>
+<table>
+<thead>
+<tr>
+<th>Métrica</th>
+<th style="text-align: right;">Excelente (3)</th>
+<th style="text-align: right;">Alvo (2)</th>
+<th style="text-align: right;">Mínimo aceitável (1)</th>
+<th style="text-align: right;">Inaceitável (0)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>M1 — Tempo observável por etapa</strong> (mediana)</td>
+<td style="text-align: right;"><span class="arithmatex">\(\le 1\text{ s}\)</span></td>
+<td style="text-align: right;"><span class="arithmatex">\(&gt; 1\text{ a } 3\text{ s}\)</span></td>
+<td style="text-align: right;"><span class="arithmatex">\(&gt; 3\text{ a } 10\text{ s}\)</span></td>
+<td style="text-align: right;"><span class="arithmatex">\(&gt; 10\text{ s}\)</span></td>
+</tr>
+<tr>
+<td><strong>M2 — Taxa de conclusão dos fluxos</strong></td>
+<td style="text-align: right;"><span class="arithmatex">\(100\%\)</span></td>
+<td style="text-align: right;"><span class="arithmatex">\(90\% \le x &lt; 100\%\)</span></td>
+<td style="text-align: right;"><span class="arithmatex">\(75\% \le x &lt; 90\%\)</span></td>
+<td style="text-align: right;"><span class="arithmatex">\(x &lt; 75\%\)</span></td>
+</tr>
+<tr>
+<td><strong>M3 — Utilização de CPU</strong> (média do fluxo)</td>
+<td style="text-align: right;"><span class="arithmatex">\(\le 25\%\)</span></td>
+<td style="text-align: right;"><span class="arithmatex">\(&gt; 25\text{ a } 50\%\)</span></td>
+<td style="text-align: right;"><span class="arithmatex">\(&gt; 50\text{ a } 75\%\)</span></td>
+<td style="text-align: right;"><span class="arithmatex">\(&gt; 75\%\)</span></td>
+</tr>
+<tr>
+<td><strong>M4 — Pico de memória</strong></td>
+<td style="text-align: right;"><span class="arithmatex">\(\le 512\text{ MiB}\)</span></td>
+<td style="text-align: right;"><span class="arithmatex">\(&gt; 512\text{ a } 1024\text{ MiB}\)</span></td>
+<td style="text-align: right;"><span class="arithmatex">\(&gt; 1024\text{ a } 2048\text{ MiB}\)</span></td>
+<td style="text-align: right;"><span class="arithmatex">\(&gt; 2048\text{ MiB}\)</span></td>
+</tr>
+<tr>
+<td><strong>M5 — Dados transferidos</strong> (por fluxo)</td>
+<td style="text-align: right;"><span class="arithmatex">\(\le 5\text{ MiB}\)</span></td>
+<td style="text-align: right;"><span class="arithmatex">\(&gt; 5\text{ a } 10\text{ MiB}\)</span></td>
+<td style="text-align: right;"><span class="arithmatex">\(&gt; 10\text{ a } 20\text{ MiB}\)</span></td>
+<td style="text-align: right;"><span class="arithmatex">\(&gt; 20\text{ MiB}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 13. Níveis de pontuação das métricas de desempenho (M1 a M5). Fonte: Reproduzida de <a href="../../fase-2/criterios-julgamento/#3-tempo-e-consumo-de-recursos">Critérios de julgamento da Fase 2</a></em></p>
+<h3 id="93-julgamento-das-questoes-q1-a-q4-e-hipoteses-h1-a-h4">9.3 Julgamento das questões Q1 a Q4 e hipóteses H1 a H4<a class="headerlink" href="#93-julgamento-das-questoes-q1-a-q4-e-hipoteses-h1-a-h4" title="Link para esta seção">&para;</a></h3>
+<p>Conforme a seção 5 de <a href="../../fase-2/criterios-julgamento/#5-regra-de-julgamento">Critérios de julgamento</a> e a seção 6 de <a href="../../fase-2/questoes-hipoteses/#6-interpretacao-das-hipoteses">Questões e hipóteses</a>:</p>
+<ol>
+<li><strong>Questão Q1 e Hipótese H1 (Comportamento temporal):</strong></li>
+<li><strong>H1:</strong> Prevê que no ambiente <code>A1</code>, em cada etapa e condição de rede, o tempo mediano de resposta será de até 3 s e pelo menos 90% das tentativas elegíveis serão concluídas, sem bloqueio de etapa essencial.</li>
+<li><strong>Classificação de H1:</strong> <ul>
+<li><em>Sustentada na amostra:</em> se para todas as etapas dos fluxos <code>FL1</code> a <code>FL3</code>, em ambas as condições de rede, a mediana de M1 <span class="arithmatex">\(\le 3\text{ s}\)</span>, M2 <span class="arithmatex">\(\ge 90\%\)</span> e não ocorrer bloqueio essencial atribuível à plataforma;</li>
+<li><em>Não sustentada:</em> se qualquer etapa apresentar mediana de M1 <span class="arithmatex">\(&gt; 3\text{ s}\)</span>, M2 <span class="arithmatex">\(&lt; 90\%\)</span> ou houver bloqueio essencial;</li>
+<li><em>Inconclusiva:</em> se houver insuficiência de dados válidos.</li>
+</ul>
+</li>
+<li><strong>Atendimento de Q1:</strong> Considerada atendida quando M1 e M2 alcançarem nota 2 ou 3 em todas as tarefas e nenhuma etapa essencial estiver impedida.</li>
+<li><strong>Questão Q2 e Hipótese H2 (Utilização de CPU):</strong></li>
+<li><strong>H2:</strong> Prevê que no ambiente <code>A1</code>, a utilização média de CPU será de até 50% em cada execução válida de <code>FL1</code> a <code>FL3</code>, sem interrupção impeditiva associada a sobrecarga.</li>
+<li><strong>Classificação de H2:</strong> Sustentada se a média de M3 <span class="arithmatex">\(\le 50\%\)</span> em todas as execuções e não houver travamento por processamento; caso contrário, não sustentada.</li>
+<li><strong>Atendimento de Q2:</strong> Atendida quando M3 atingir nota 2 ou 3.</li>
+<li><strong>Questão Q3 e Hipótese H3 (Utilização de memória):</strong></li>
+<li><strong>H3:</strong> Prevê que no ambiente <code>A1</code>, o pico de memória da sessão/processo monitorado será de até 1.024 MiB em cada execução válida de <code>FL1</code> a <code>FL3</code>, sem esgotamento de memória.</li>
+<li><strong>Classificação de H3:</strong> Sustentada se o pico individual de M4 em cada repetição for <span class="arithmatex">\(\le 1024\text{ MiB}\)</span>; se qualquer repetição exceder 1.024 MiB, H3 é não sustentada.</li>
+<li><strong>Atendimento de Q3:</strong> Atendida quando M4 obtiver nota 2 ou 3.</li>
+<li><strong>Questão Q4 e Hipótese H4 (Consumo de dados de rede):</strong></li>
+<li><strong>H4:</strong> Prevê que no ambiente <code>A1</code>, cada execução concluída do trecho padronizado de navegação e carregamento transferirá no máximo 10 MiB, com política de cache constante.</li>
+<li><strong>Classificação de H4:</strong> Sustentada se M5 <span class="arithmatex">\(\le 10\text{ MiB}\)</span> em cada fluxo concluído; caso contrário, não sustentada.</li>
+<li><strong>Atendimento de Q4:</strong> Atendida quando M5 obtiver nota 2 ou 3.</li>
+</ol>
+<h3 id="94-julgamento-do-objetivo-g1-eficiencia-de-desempenho">9.4 Julgamento do objetivo G1 (Eficiência de desempenho)<a class="headerlink" href="#94-julgamento-do-objetivo-g1-eficiencia-de-desempenho" title="Link para esta seção">&para;</a></h3>
+<p>O objetivo <strong>G1 — Eficiência de Desempenho</strong> é considerado <strong>atendido</strong> se e somente se <strong>todas as quatro questões (<code>Q1</code>, <code>Q2</code>, <code>Q3</code> e <code>Q4</code>) forem atendidas</strong> (nota 2 ou 3 em seus indicadores principais e nenhuma tarefa essencial impedida). Caso qualquer questão receba nota 0 ou 1, G1 é considerado não atendido ou atendido apenas no nível mínimo aceitável.</p>
+<h3 id="95-consistencia-metodologica-com-as-fases-1-e-2">9.5 Consistência metodológica com as Fases 1 e 2<a class="headerlink" href="#95-consistencia-metodologica-com-as-fases-1-e-2" title="Link para esta seção">&para;</a></h3>
+<p>A Tabela 14 demonstra a estrita consistência entre as especificações conceituais e os métodos executáveis estabelecidos neste artefato, atendendo ao critério <code>F3-C8</code> <a href="#s5">S5</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Elemento da Fase 1 ou 2</th>
+<th>Especificação de origem</th>
+<th>Operacionalização na Fase 3</th>
+<th>Avaliação de consistência</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Escopo de fluxos</strong></td>
+<td><code>FL1</code>, <code>FL2</code> e <code>FL3</code> como centrais de desempenho</td>
+<td>Exclusão de <code>FL4</code> dos procedimentos de M1–M5</td>
+<td>Consistência total com o Escopo da Fase 1 <a href="#s5">S5</a></td>
+</tr>
+<tr>
+<td><strong>Ambiente de ensaio</strong></td>
+<td>Ambiente de referência <code>A1</code> em computador com 4 GB RAM</td>
+<td>Virtualização Winboat/Docker com perfil fixo de 4 GB RAM e 4 vCPUs</td>
+<td>Consistência total com os Requisitos <a href="#s4">S4</a> e Ambiente <a href="#s10">S10</a></td>
+</tr>
+<tr>
+<td><strong>Massa de testes</strong></td>
+<td>1 aquecimento + 5 repetições por tarefa e rede</td>
+<td>Bateria de 1 aquecimento descartado e 5 repetições válidas em rede Normal e Limitada</td>
+<td>Atendimento rigoroso ao cronograma amostral</td>
+</tr>
+<tr>
+<td><strong>Fichas M1 a M5</strong></td>
+<td>Definições, fórmulas, fontes e unidades da Fase 2</td>
+<td>Instrumentação direta no DevTools e Task Manager com as mesmas fórmulas</td>
+<td>Coerência matemática e operacional idêntica</td>
+</tr>
+<tr>
+<td><strong>Critérios e limiares</strong></td>
+<td>Faixas de 1/3/10 s, 25/50/75%, 512/1024/2048 MiB, 5/10/20 MiB</td>
+<td>Adoção direta dos limiares da Tabela 3 da Fase 2 para pontuação de 0 a 3</td>
+<td>Rastreabilidade total sem divergência de faixas</td>
+</tr>
+<tr>
+<td><strong>Regras de hipóteses</strong></td>
+<td>Estados: Sustentada, Não sustentada, Inconclusiva</td>
+<td>Aplicação explícita dos estados de interpretação da seção 6 da Fase 2</td>
+<td>Conformidade integral</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 14. Matriz de consistência metodológica entre as Fases 1, 2 e 3. Fonte: Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<h3 id="96-da-medicao-a-decisao-d1-e-acoes-para-o-requisitante">9.6 Da medição à decisão D1 e ações para o requisitante<a class="headerlink" href="#96-da-medicao-a-decisao-d1-e-acoes-para-o-requisitante" title="Link para esta seção">&para;</a></h3>
+<p>Em alinhamento ao propósito prático da avaliação <a href="#s4">S4</a>, a Tabela 15 mapeia como os resultados obtidos nas medições de desempenho se convertem em desfechos da decisão <code>D1</code> e orientam ações para a coordenação escolar.</p>
+<table>
+<thead>
+<tr>
+<th>Resultado consolidado de G1</th>
+<th>Desfecho para a Decisão <code>D1</code></th>
+<th>Ação prática recomendada à coordenação escolar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Q1 a Q4 atendidas plenamente</strong> (Notas 2 ou 3 em rede Normal e Limitada)</td>
+<td><strong>Recomendar sem ressalvas de desempenho</strong></td>
+<td>Adotar a plataforma no laboratório e autorizar o uso pedagógico inclusive em horários de pico de rede</td>
+</tr>
+<tr>
+<td><strong>Q1 a Q4 atendidas em rede Normal, mas com limitações (Nota 1) em rede Limitada</strong></td>
+<td><strong>Recomendar com ressalvas de conectividade</strong></td>
+<td>Adotar a plataforma, mas instruir os professores a não rodar videoaulas simultâneas em turmas grandes ou escalonar o uso</td>
+</tr>
+<tr>
+<td><strong>Falha em Q1 (M1 &gt; 10 s ou falhas recorrentes em rede limitada)</strong></td>
+<td><strong>Recomendar com restrições severas</strong></td>
+<td>Restringir o uso aos exercícios (<code>FL3</code>), desaconselhando o uso de videoaulas (<code>FL2</code>) na infraestrutura da escola</td>
+</tr>
+<tr>
+<td><strong>Falha em Q2 ou Q3 (Esgotamento de CPU ou memória &gt; 2048 MiB)</strong></td>
+<td><strong>Não recomendar nos computadores atuais</strong></td>
+<td>Suspender a adoção da plataforma web até que a escola realize <em>upgrade</em> de hardware ou adote outro método</td>
+</tr>
+<tr>
+<td><strong>Dados inconclusivos ou ensaios incompletos</strong></td>
+<td><strong>Inconclusivo</strong></td>
+<td>Não tomar decisão de adoção antes de concluir as baterias de teste</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 15. Conversão dos resultados de desempenho em desfechos de D1 e ações escolares. Fonte: Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<h2 id="10-rastreabilidade-com-a-issue-25-e-criterios-qsw">10. Rastreabilidade com a issue #25 e critérios QSW<a class="headerlink" href="#10-rastreabilidade-com-a-issue-25-e-criterios-qsw" title="Link para esta seção">&para;</a></h2>
+<p>A Tabela 16 relaciona as tarefas e critérios de aceite de desempenho da issue #25 <a href="#s11">S11</a> ao atendimento neste artefato.</p>
+<table>
+<thead>
+<tr>
+<th>Item da Tarefa 1 da issue #25</th>
+<th>Atendimento neste artefato</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Definir procedimentos para avaliação dos fluxos FL1, FL2 e FL3</td>
+<td><a href="#1-escopo-e-principios-da-avaliacao-de-desempenho">Seção 1</a> e <a href="#5-roteiros-passo-a-passo-com-marcos-temporais">Seção 5</a></td>
+</tr>
+<tr>
+<td>Especificar métodos e instrumentos para M1 (Tempo observável)</td>
+<td><a href="#41-procedimento-de-m1-tempo-observavel-por-etapa">Seção 4.1</a> e <a href="#5-roteiros-passo-a-passo-com-marcos-temporais">Seção 5</a></td>
+</tr>
+<tr>
+<td>Especificar métodos e instrumentos para M2 (Taxa de conclusão)</td>
+<td><a href="#42-procedimento-de-m2-taxa-de-conclusao-das-tentativas">Seção 4.2</a></td>
+</tr>
+<tr>
+<td>Especificar métodos e instrumentos para M3 (Utilização de CPU)</td>
+<td><a href="#43-procedimento-de-m3-utilizacao-de-cpu">Seção 4.3</a></td>
+</tr>
+<tr>
+<td>Especificar métodos e instrumentos para M4 (Utilização de memória)</td>
+<td><a href="#44-procedimento-de-m4-pico-de-memoria">Seção 4.4</a></td>
+</tr>
+<tr>
+<td>Especificar métodos e instrumentos para M5 (Dados transferidos)</td>
+<td><a href="#45-procedimento-de-m5-dados-transferidos">Seção 4.5</a></td>
+</tr>
+<tr>
+<td>Descrever instruções de execução (preparação, início, término, registro)</td>
+<td><a href="#34-preparacao-do-ambiente-checklist-pd-1-a-pd-10">Seção 3.4</a>, <a href="#5-roteiros-passo-a-passo-com-marcos-temporais">Seção 5</a> e <a href="#6-protocolo-experimental-aquecimento-e-repeticoes">Seção 6</a></td>
+</tr>
+<tr>
+<td>Definir procedimentos para DevTools, Lighthouse e monitores de recursos</td>
+<td><a href="#33-instrumentos-de-medicao-e-diagnostico">Seção 3.3</a> e <a href="#46-procedimento-de-auditoria-complementar-com-lighthouse">Seção 4.6</a></td>
+</tr>
+<tr>
+<td>Documentar condições de rede normal e limitada</td>
+<td><a href="#32-perfis-de-conectividade-de-rede">Seção 3.2</a> (Tabela 4)</td>
+</tr>
+<tr>
+<td>Especificar execução de aquecimento e 5 repetições válidas</td>
+<td><a href="#61-execucao-de-aquecimento-warm-up">Seção 6.1</a> e <a href="#62-as-cinco-repeticoes-validas-consecutivas">Seção 6.2</a></td>
+</tr>
+<tr>
+<td>Definir critérios de validade, sucesso, falha e interrupção</td>
+<td><a href="#7-validade-sucesso-falha-e-interrupcao">Seção 7</a></td>
+</tr>
+<tr>
+<td>Roteiros passo a passo por grupo de testes</td>
+<td><a href="#5-roteiros-passo-a-passo-com-marcos-temporais">Seção 5</a> (Tabelas 7, 8 e 9)</td>
+</tr>
+<tr>
+<td>Formulários e modelos de registro</td>
+<td><a href="#8-formularios-e-modelos-de-registro">Seção 8</a> e artefato <a href="../../fase-4/registro-desempenho/">registro-desempenho.md</a></td>
+</tr>
+<tr>
+<td>Rastreabilidade com Q1–Q4, H1–H4 e M1–M5</td>
+<td><a href="#2-rastreabilidade-com-as-fases-1-e-2">Seção 2</a> (Tabelas 2 e 3) e <a href="#93-julgamento-das-questoes-q1-a-q4-e-hipoteses-h1-a-h4">Seção 9.3</a></td>
+</tr>
+<tr>
+<td>Cálculo e interpretação conforme critérios de julgamento</td>
+<td><a href="#91-formulas-e-consolidacao-estatistica">Seção 9.1</a> e <a href="#92-conversao-em-notas-e-tabelas-de-julgamento">Seção 9.2</a></td>
+</tr>
+<tr>
+<td>Consistência com o escopo da Fase 1</td>
+<td><a href="#1-escopo-e-principios-da-avaliacao-de-desempenho">Seção 1</a> e <a href="#95-consistencia-metodologica-com-as-fases-1-e-2">Seção 9.5</a></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 16. Rastreabilidade com os itens da Tarefa 1 da issue #25. Fonte: Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<p>A Tabela 17 detalha como os critérios de avaliação formal QSW da Fase 3 <a href="#s5">S5</a> e da Fase 4 <a href="#s13">S13</a> são contemplados.</p>
+<table>
+<thead>
+<tr>
+<th>Critério QSW</th>
+<th>Contribuição deste artefato</th>
+<th>Seção correspondente</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>F3-C1</code> Método e repetibilidade</td>
+<td>Instruções passo a passo precisas, marcos de temporização objetivos, regras inequívocas de sucesso e descarte</td>
+<td><a href="#4-procedimentos-especificos-por-metrica">Seções 4</a>, <a href="#5-roteiros-passo-a-passo-com-marcos-temporais">5</a>, <a href="#6-protocolo-experimental-aquecimento-e-repeticoes">6</a> e <a href="#7-validade-sucesso-falha-e-interrupcao">7</a></td>
+</tr>
+<tr>
+<td><code>F3-C2</code> Recursos e ambiente</td>
+<td>Especificação minuciosa do ambiente virtualizado <code>A1</code>, perfis de rede calibrados, instrumentos detalhados e massa de dados</td>
+<td><a href="#3-ambiente-de-teste-instrumentos-e-preparacao">Seção 3</a> e <a href="../ambiente-de-testes/">Ambiente de testes</a></td>
+</tr>
+<tr>
+<td><code>F3-C3</code> Cronograma</td>
+<td>Cronograma de trabalho realista integrado à Fase 4 e à Entrega 2</td>
+<td><a href="#12-cronograma-de-execucao">Seção 12</a></td>
+</tr>
+<tr>
+<td><code>F3-C7</code> GitPage da equipe</td>
+<td>Integração navegável na GitPage, hiperlinks estruturados com Fases 1, 2 e 3, ausência de ícones informais</td>
+<td>Estrutura geral do documento</td>
+</tr>
+<tr>
+<td><code>F3-C8</code> Consistência Fases 2 e 3</td>
+<td>Matriz de consistência demonstrando perfeita aderência às métricas, questões e limiares da Fase 2</td>
+<td><a href="#95-consistencia-metodologica-com-as-fases-1-e-2">Seção 9.5</a> (Tabela 14)</td>
+</tr>
+<tr>
+<td><code>F4-C1</code> Obtenção das medidas</td>
+<td>Procedimentos padronizados para execução fiel por qualquer avaliador na Fase 4</td>
+<td><a href="#4-procedimentos-especificos-por-metrica">Seção 4</a> e <a href="#5-roteiros-passo-a-passo-com-marcos-temporais">Seção 5</a></td>
+</tr>
+<tr>
+<td><code>F4-C2</code> Registro e dados brutos</td>
+<td>Modelos de planilhas em Markdown indexadas por repetição com vínculos de evidências (<code>.har</code>, capturas)</td>
+<td><a href="../../fase-4/registro-desempenho/">Registro de desempenho</a></td>
+</tr>
+<tr>
+<td><code>F4-C3</code> Análise estatística e GQM</td>
+<td>Fórmulas explícitas de mediana, P90, média, pico e regras de julgamento de H1 a H4</td>
+<td><a href="#9-calculo-interpretacao-e-julgamento">Seção 9</a></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 17. Contribuição deste artefato aos critérios de avaliação QSW. Fonte: Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<h2 id="11-pontos-pendentes-e-decisoes-da-equipe">11. Pontos pendentes e decisões da equipe<a class="headerlink" href="#11-pontos-pendentes-e-decisoes-da-equipe" title="Link para esta seção">&para;</a></h2>
+<p>A Tabela 18 consolida os pontos operacionais identificados que devem ser ratificados pela equipe avaliadora antes do início da coleta oficial na Fase 4.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Ponto em aberto</th>
+<th>Impacto na medição</th>
+<th>Proposta de encaminhamento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PD-P1</code></td>
+<td>Definição exata das URLs da massa congelada <code>D1</code> a <code>D5</code></td>
+<td>Equivalência dos testes de FL1, FL2 e FL3</td>
+<td>Congelar as URLs na sessão de preparação conjunta em 09/11</td>
+</tr>
+<tr>
+<td><code>PD-P2</code></td>
+<td>Armazenamento dos arquivos <code>.har</code> e vídeos brutos</td>
+<td>Volume de armazenamento e auditoria da Fase 4</td>
+<td>Criar diretório dedicado no repositório ou pasta em nuvem compartilhada e indexar nas tabelas</td>
+</tr>
+<tr>
+<td><code>PD-P3</code></td>
+<td>Política de buffer de vídeo em FL2 (YouTube player)</td>
+<td>Variação de dados transferidos em M5</td>
+<td>Pausar rigorosamente aos 5 segundos de execução para impedir download em segundo plano do restante do vídeo</td>
+</tr>
+<tr>
+<td><code>PD-P4</code></td>
+<td>Validação do perfil de limitação emulada</td>
+<td>Fidelidade ao cenário escolar</td>
+<td>Executar teste piloto com o Throttling do DevTools e validar taxas no painel Network</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 18. Pontos pendentes de desempenho e decisões da equipe. Fonte: Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<h2 id="12-cronograma-de-execucao">12. Cronograma de execução<a class="headerlink" href="#12-cronograma-de-execucao" title="Link para esta seção">&para;</a></h2>
+<p>A Tabela 19 detalha a distribuição das atividades de eficiência de desempenho integradas ao cronograma geral da Fase 4.</p>
+<table>
+<thead>
+<tr>
+<th>Data prevista</th>
+<th>Atividade de avaliação</th>
+<th>Entregável / Produto</th>
+<th>Responsáveis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>09/11/2026</td>
+<td>Resolução dos pontos pendentes (<code>PD-P1</code> a <code>PD-P4</code>) e congelamento da massa <code>D1</code>–<code>D6</code></td>
+<td>Tabela de dados congelados preenchida</td>
+<td>Toda a equipe</td>
+</tr>
+<tr>
+<td>10/11/2026</td>
+<td>Ensaio piloto não oficial no ambiente <code>A1</code> para calibração das ferramentas e roteiros</td>
+<td>Roteiros validados e ajustes operacionais finalizados</td>
+<td><a href="https://github.com/JAugustoM">José Augusto</a> e <a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
+</tr>
+<tr>
+<td>11/11/2026</td>
+<td>Execução oficial das baterias de <code>FL1</code> e <code>FL2</code> sob Rede Normal (aquecimento + 5 repetições)</td>
+<td>Registros brutos, arquivos <code>.har</code> e capturas</td>
+<td><a href="https://github.com/JAugustoM">José Augusto</a> e <a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
+</tr>
+<tr>
+<td>12/11/2026</td>
+<td>Execução oficial das baterias de <code>FL3</code> sob Rede Normal e <code>FL1</code> sob Rede Limitada</td>
+<td>Registros brutos, arquivos <code>.har</code> e capturas</td>
+<td><a href="https://github.com/JAugustoM">José Augusto</a> e <a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
+</tr>
+<tr>
+<td>13/11/2026</td>
+<td>Execução oficial das baterias de <code>FL2</code> e <code>FL3</code> sob Rede Limitada e auditoria complementar Lighthouse</td>
+<td>Registros brutos e relatórios Lighthouse exportados</td>
+<td><a href="https://github.com/JAugustoM">José Augusto</a> e <a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
+</tr>
+<tr>
+<td>14/11/2026</td>
+<td>Repetição de ensaios com anomalias externas (se houver) e consolidação da planilha bruta</td>
+<td>Planilha de dados brutos consolidada</td>
+<td>Toda a equipe</td>
+</tr>
+<tr>
+<td>15/11/2026</td>
+<td>Consolidação estatística: cálculo das medianas, P90, médias de CPU, picos de RAM e tráfego M5</td>
+<td>Resumo estatístico e notas de 0 a 3</td>
+<td><a href="https://github.com/JAugustoM">José Augusto</a> e <a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
+</tr>
+<tr>
+<td>16/11/2026</td>
+<td>Confronto com H1–H4, julgamento de Q1–Q4 e G1 e redação dos desfechos para D1</td>
+<td>Texto analítico para o artigo científico da disciplina</td>
+<td>Toda a equipe</td>
+</tr>
+<tr>
+<td>17/11/2026</td>
+<td>Revisão por pares, cruzamento de dados com a adaptabilidade e fechamento dos relatórios</td>
+<td>Documentos finalizados</td>
+<td>Toda a equipe</td>
+</tr>
+<tr>
+<td>18/11/2026</td>
+<td><strong>Entrega 2 da disciplina</strong></td>
+<td>Artigo e GitPage completos</td>
+<td>Toda a equipe</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 19. Cronograma de execução da avaliação de desempenho na Fase 4. Fonte: Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<h2 id="referencias">Referências<a class="headerlink" href="#referencias" title="Link para esta seção">&para;</a></h2>
+<p><a id="s1"></a></p>
+<blockquote>
+<p>[S1] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. <strong>ISO/IEC 25010:2011</strong>: Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models. Genebra: ISO, 2011.</p>
+</blockquote>
+<p><a id="s2"></a></p>
+<blockquote>
+<p>[S2] INTERNATIONAL ORGANIZATION FOR STANDARDIZATION; INTERNATIONAL ELECTROTECHNICAL COMMISSION. <strong>ISO/IEC 25023:2016</strong>: Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Measurement of system and software product quality. Genebra: ISO, 2016.</p>
+</blockquote>
+<p><a id="s3"></a></p>
+<blockquote>
+<p>[S3] BASILI, Victor R.; CALDIERA, Gianluigi; ROMBACH, H. Dieter. The Goal Question Metric Approach. In: <strong>Encyclopedia of Software Engineering</strong>. John Wiley &amp; Sons, 1994. p. 528–532.</p>
+</blockquote>
+<p><a id="s4"></a></p>
+<blockquote>
+<p>[S4] Requisitos de avaliação — Fase 1. Requisitos R1–R5 e decisões D1–D4. Disponível em: <a href="../../fase-1/requisitos-de-avaliacao/">Requisitos de avaliação</a>.</p>
+</blockquote>
+<p><a id="s5"></a></p>
+<blockquote>
+<p>[S5] Escopo da avaliação — Fase 1. Fluxos, ambientes, profundidade e limites de validade. Disponível em: <a href="../../fase-1/escopo-da-avaliacao/">Escopo da avaliação</a>.</p>
+</blockquote>
+<p><a id="s6"></a></p>
+<blockquote>
+<p>[S6] Objetivos de medição — Fase 2. Objetivo G1. Disponível em: <a href="../../fase-2/objetivos/#g1">Objetivos de medição</a>.</p>
+</blockquote>
+<p><a id="s7"></a></p>
+<blockquote>
+<p>[S7] Questões e hipóteses — Fase 2. Questões Q1–Q4 e Hipóteses H1–H4. Disponível em: <a href="../../fase-2/questoes-hipoteses/#3-g1-eficiencia-de-desempenho">Questões e hipóteses</a>.</p>
+</blockquote>
+<p><a id="s8"></a></p>
+<blockquote>
+<p>[S8] Métricas — Fase 2. Fichas de M1 a M5. Disponível em: <a href="../../fase-2/metricas/#1-metricas-detalhadas">Métricas</a>.</p>
+</blockquote>
+<p><a id="s9"></a></p>
+<blockquote>
+<p>[S9] Níveis de pontuação e critérios de julgamento — Fase 2. Disponível em: <a href="../../fase-2/criterios-julgamento/">Critérios de julgamento</a>.</p>
+</blockquote>
+<p><a id="s10"></a></p>
+<blockquote>
+<p>[S10] Ambiente de testes e ferramentas de avaliação — Fase 3. Disponível em: <a href="../ambiente-de-testes/">Ambiente de testes</a>.</p>
+</blockquote>
+<p><a id="s11"></a></p>
+<blockquote>
+<p>[S11] FCTE-QUALIDADE-DE-SOFTWARE-1. <strong>[Fase 3] Definição dos procedimentos de avaliação de desempenho e adaptabilidade</strong>. Issue #25. Disponível em: <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/25">https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/25</a>.</p>
+</blockquote>
+<p><a id="s12"></a></p>
+<blockquote>
+<p>[S12] Registro de execuções de eficiência de desempenho (M1 a M5) — Fase 3. Disponível em: <a href="../../fase-4/registro-desempenho/">Registro de desempenho</a>.</p>
+</blockquote>
+<p><a id="s13"></a></p>
+<blockquote>
+<p>[S13] Critérios de avaliação QSW — Fase 4. Disponível em: <a href="../../criterios/fase4/">Critérios da Fase 4</a>.</p>
+</blockquote>
+<h2 id="historico-de-versoes">Histórico de versões<a class="headerlink" href="#historico-de-versoes" title="Link para esta seção">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Versão</th>
+<th style="text-align: center;">Data</th>
+<th>Descrição</th>
+<th>Responsável</th>
+<th>Revisor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;">08/11/2026</td>
+<td>Elaboração inicial dos procedimentos de eficiência de desempenho (M1 a M5), abrangendo os fluxos FL1 a FL3, métodos, instrumentos, perfis de rede, roteiros, critérios de validade e rastreabilidade total com as Fases 1 e 2.</td>
+<td><a href="https://github.com/JAugustoM">José Augusto</a></td>
+<td><a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
+</tr>
+<tr>
+<td style="text-align: center;">1.1</td>
+<td style="text-align: center;">13/11/2026</td>
+<td>Supressão da medida de legenda em FL2 (redefinindo E2.3 como abertura da transcrição em consonância com a massa D4) e ajuste do marco de temporização da dica automática em FL3 (E3.2).</td>
+<td><a href="https://github.com/JAugustoM">José Augusto</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.top", "toc.follow", "search.suggest", "search.highlight", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+        <script src="../../js/mathjax.js"></script>
+      
+        <script src="../../js/khan.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

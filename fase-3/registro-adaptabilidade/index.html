@@ -1,0 +1,1903 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Avaliação de qualidade do produto Khan Academy segundo a família SQuaRE, com gestão por medição PSM/CID.">
+      
+      
+      
+        <link rel="canonical" href="https://fcte-qualidade-de-software-1.github.io/2026-2_T02_IRMA_MARY_KELLER/fase-3/registro-adaptabilidade/">
+      
+      
+        <link rel="prev" href="../procedimentos-desempenho/">
+      
+      
+        <link rel="next" href="../../fase-4/registro-desempenho/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/img/marca.svg">
+      <meta name="generator" content="mkdocs-ProperDocs 1.6.7, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>Registro de Execução Adaptabilidade - Avaliação Khan Academy</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Lato";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/khan.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#registro-de-execucoes-m6-e-m7" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      <header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <a href="../.." title="Avaliação Khan Academy" class="khan-marca" aria-label="Avaliação Khan Academy" data-md-component="logo">
+      <img src="../../assets/img/logo_khan_simbolo.png" alt="Logo do Khan Academy" width="32" height="32">
+      <span class="khan-marca__texto">
+        <strong>Avaliação Khan Academy</strong>
+        <small>Qualidade de Software 1 · T02</small>
+      </span>
+    </a>
+    <ul class="khan-abas">
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../..">Início</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../fase-1/">Fase 1</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../fase-2/">Fase 2</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item khan-abas__item--ativa">
+          <a href="../">Fase 3</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../fase-4/registro-desempenho/">Fase 4</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../gestao/plano_de_medicao/">Gestão</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../gestao/artigo/">Artigo</a>
+        </li>
+      
+    </ul>
+    <div class="khan-header__espaco"></div>
+    
+      <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Mudar para o modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Mudar para o modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER" class="khan-botao-repo" title="Repositório da equipe no GitHub">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215m-6.56 0a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"/></svg>
+      <span>Repositório</span>
+    </a>
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary khan-trilha" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Avaliação Khan Academy" class="md-nav__button md-logo" aria-label="Avaliação Khan Academy" data-md-component="logo">
+      
+  <img src="../../assets/img/logo_khan_simbolo.png" alt="logo">
+
+    </a>
+    Avaliação Khan Academy
+  </label>
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  <ul class="khan-trilha__secoes">
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../..">Início</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../fase-1/">Fase 1</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../fase-2/">Fase 2</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../" aria-current="true">Fase 3</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../fase-4/registro-desempenho/">Fase 4</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../gestao/plano_de_medicao/">Gestão</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../gestao/artigo/">Artigo</a></li>
+    
+  </ul>
+  
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    <ol class="khan-trilha__passos">
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--feito">
+          <a href="../">
+            <span class="khan-trilha__bolinha">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>
+            </span>
+            <span>Visão Geral</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--feito">
+          <a href="../ambiente-de-testes/">
+            <span class="khan-trilha__bolinha">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>
+            </span>
+            <span>Ambientes de Testes</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--feito">
+          <a href="../procedimentos-adaptabilidade/">
+            <span class="khan-trilha__bolinha">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>
+            </span>
+            <span>Procedimentos Avaliação Adaptabilidade</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--feito">
+          <a href="../procedimentos-desempenho/">
+            <span class="khan-trilha__bolinha">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>
+            </span>
+            <span>Procedimentos Avaliação Desempenho</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--atual">
+          <a href="./" aria-current="page">
+            <span class="khan-trilha__bolinha">
+              5
+            </span>
+            <span>Registro de Execução Adaptabilidade</span>
+          </a>
+        </li>
+      
+    </ol>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Nesta página">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Nesta página
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-preparacao-dos-ambientes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Preparação dos ambientes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-dados-de-teste-congelados-e-rotulos-dos-controles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Dados de teste congelados e rótulos dos controles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-resolucao-verificada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Resolução verificada
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-registro-de-m6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Registro de M6
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-registro-de-m7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Registro de M7
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-ocorrencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Ocorrências
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-resumo-julgamento-e-decisao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Resumo, julgamento e decisão
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referências
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Histórico de versões
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="registro-de-execucoes-m6-e-m7">Registro de execuções (M6 e M7)<a class="headerlink" href="#registro-de-execucoes-m6-e-m7" title="Link para esta seção">&para;</a></h1>
+<p><strong>Versão 1.0</strong></p>
+<p>Esta página reúne os formulários de registro da avaliação de adaptabilidade definida em <a href="../procedimentos-adaptabilidade/">Procedimentos de avaliação de adaptabilidade</a> <a href="#s1">S1</a>. As tabelas estão <strong>em branco</strong> e serão preenchidas na Fase 4, por <em>pull request</em>, conforme cada execução. Nenhum resultado foi coletado.</p>
+<p><strong>Como preencher.</strong> Mantenha os identificadores das linhas. Use os códigos de resultado <code>C</code> (concluída), <code>F</code> (falha), <code>I</code> (inviável) e <code>X</code> (inválida), definidos em <a href="../procedimentos-adaptabilidade/#43-passos-de-execucao">4.3</a>. Em <code>F</code>, indique <code>F-BLQ</code> ou <code>F-AJ</code>. Nas colunas de evidência, cite o nome do arquivo conforme o padrão da <a href="../procedimentos-adaptabilidade/#8-formularios-e-modelos-de-registro">seção 8</a>. Cada ocorrência recebe um <code>id_ocorrencia</code> (<code>OC-001</code>, <code>OC-002</code>, ...) usado nas tabelas de M6 e M7 e na <a href="#registro-ocorrencias">tabela de ocorrências</a>.</p>
+<p><a id="registro-preparacao"></a></p>
+<h2 id="1-preparacao-dos-ambientes">1. Preparação dos ambientes<a class="headerlink" href="#1-preparacao-dos-ambientes" title="Link para esta seção">&para;</a></h2>
+<p>A Tabela 1 identifica cada ambiente, com os dados já conhecidos do <a href="../ambiente-de-testes/">ambiente de testes</a> <a href="#s2">S2</a>.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Sistema operacional</th>
+<th>Navegador</th>
+<th>Versão</th>
+<th>Modalidade</th>
+<th>Recursos</th>
+<th>Data da preparação</th>
+<th>Responsável</th>
+<th>Build do sistema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>A1</code></td>
+<td>Windows 11 Pro</td>
+<td>Google Chrome</td>
+<td>157.0</td>
+<td>Virtualizado (Docker, Winboat)</td>
+<td>4 GB, 4 vCPUs</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>A2</code></td>
+<td>Windows 11 Pro</td>
+<td>Mozilla Firefox</td>
+<td>159.1</td>
+<td>Virtualizado (Docker, Winboat)</td>
+<td>4 GB, 4 vCPUs</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>A3</code></td>
+<td>macOS (a registrar)</td>
+<td>Apple Safari</td>
+<td>(a registrar)</td>
+<td>Computador real</td>
+<td>(a registrar)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>A4</code></td>
+<td>Ubuntu 26.04</td>
+<td>Mozilla Firefox</td>
+<td>159.0</td>
+<td>Virtualizado (QEMU/KVM, Gnome Boxes)</td>
+<td>4 GB, 4 vCPUs</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 1. Identificação dos ambientes de teste. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a>, com base no <a href="../ambiente-de-testes/">ambiente de testes</a></em></p>
+<p>A Tabela 2 registra as verificações de <a href="../procedimentos-adaptabilidade/#34-preparacao-do-ambiente">preparação</a>. Marque <code>S</code> quando atendida.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th style="text-align: center;">PA-1</th>
+<th style="text-align: center;">PA-2</th>
+<th style="text-align: center;">PA-3</th>
+<th style="text-align: center;">PA-4</th>
+<th style="text-align: center;">PA-5</th>
+<th style="text-align: center;">PA-6</th>
+<th style="text-align: center;">PA-7</th>
+<th style="text-align: center;">PA-8</th>
+<th style="text-align: center;">PA-9</th>
+<th style="text-align: center;">PA-10</th>
+<th>Observações</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>A1</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+</tr>
+<tr>
+<td><code>A2</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+</tr>
+<tr>
+<td><code>A3</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+</tr>
+<tr>
+<td><code>A4</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 2. Verificações de preparação por ambiente. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<p><a id="registro-rotulos"></a></p>
+<h2 id="2-dados-de-teste-congelados-e-rotulos-dos-controles">2. Dados de teste congelados e rótulos dos controles<a class="headerlink" href="#2-dados-de-teste-congelados-e-rotulos-dos-controles" title="Link para esta seção">&para;</a></h2>
+<p>A Tabela 3 registra os dados de teste da <a href="../procedimentos-adaptabilidade/#34-preparacao-do-ambiente">preparação</a>, iguais em todos os ambientes.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Dado</th>
+<th>Valor congelado</th>
+<th>Data do congelamento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>D1</code></td>
+<td>Disciplina</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>D2</code></td>
+<td>Curso</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>D3</code></td>
+<td>Unidade e aula</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>D4</code></td>
+<td>Videoaula (com legenda e transcrição)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>D5</code></td>
+<td>Exercício (com dica)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>D6</code></td>
+<td>Conta de teste (identificador, sem senha)</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 3. Dados de teste congelados. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<p>A Tabela 4 registra o rótulo real de cada item do <a href="../procedimentos-adaptabilidade/#54-inventario-de-controles-essenciais">inventário de controles essenciais</a> na interface em uso.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Conteúdo ou controle essencial</th>
+<th>Rótulo real na interface</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>CE1.1</code></td>
+<td>Menu ou busca para localizar a disciplina</td>
+<td></td>
+</tr>
+<tr>
+<td><code>CE1.2</code></td>
+<td>Item do curso-alvo</td>
+<td></td>
+</tr>
+<tr>
+<td><code>CE1.3</code></td>
+<td>Lista de unidades e aulas do curso</td>
+<td></td>
+</tr>
+<tr>
+<td><code>CE1.4</code></td>
+<td>Conteúdo da aula selecionada</td>
+<td></td>
+</tr>
+<tr>
+<td><code>CE2.1</code></td>
+<td>Área do vídeo e barra de reprodução</td>
+<td></td>
+</tr>
+<tr>
+<td><code>CE2.2</code></td>
+<td>Controle de iniciar e pausar</td>
+<td></td>
+</tr>
+<tr>
+<td><code>CE2.3</code></td>
+<td>Controle de legenda</td>
+<td></td>
+</tr>
+<tr>
+<td><code>CE2.4</code></td>
+<td>Acesso à transcrição</td>
+<td></td>
+</tr>
+<tr>
+<td><code>CE3.1</code></td>
+<td>Enunciado e área de resposta</td>
+<td></td>
+</tr>
+<tr>
+<td><code>CE3.2</code></td>
+<td>Controle de dica</td>
+<td></td>
+</tr>
+<tr>
+<td><code>CE3.3</code></td>
+<td>Controle de envio da resposta</td>
+<td></td>
+</tr>
+<tr>
+<td><code>CE3.4</code></td>
+<td>Retorno da plataforma e controle de continuidade</td>
+<td></td>
+</tr>
+<tr>
+<td><code>CE4.1</code></td>
+<td>Acesso à área do estudante</td>
+<td></td>
+</tr>
+<tr>
+<td><code>CE4.2</code></td>
+<td>Informações de progresso</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 4. Rótulos reais dos controles essenciais. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<p><a id="registro-resolucao"></a></p>
+<h2 id="3-resolucao-verificada">3. Resolução verificada<a class="headerlink" href="#3-resolucao-verificada" title="Link para esta seção">&para;</a></h2>
+<p>A Tabela 5 registra o resultado do comando de <a href="../procedimentos-adaptabilidade/#35-resolucao-e-janela">3.5</a> ao início das sessões de cada ambiente e dimensão. Se algum valor mudar durante a coleta, acrescente uma linha com a data.</p>
+<table>
+<thead>
+<tr>
+<th>Ambiente</th>
+<th>Dimensão</th>
+<th><code>screen</code> (largura × altura)</th>
+<th><code>inner</code> (largura × altura)</th>
+<th><code>dpr</code></th>
+<th>Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>A1</code></td>
+<td><code>J1</code> (1366 × 768)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>A1</code></td>
+<td><code>J2</code> (1920 × 1080)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>A2</code></td>
+<td><code>J1</code> (1366 × 768)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>A2</code></td>
+<td><code>J2</code> (1920 × 1080)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>A3</code></td>
+<td><code>J1</code> (1366 × 768)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>A3</code></td>
+<td><code>J2</code> (1920 × 1080)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>A4</code></td>
+<td><code>J1</code> (1366 × 768)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>A4</code></td>
+<td><code>J2</code> (1920 × 1080)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 5. Resolução e viewport verificados por ambiente e dimensão. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<p><a id="registro-m6"></a></p>
+<h2 id="4-registro-de-m6">4. Registro de M6<a class="headerlink" href="#4-registro-de-m6" title="Link para esta seção">&para;</a></h2>
+<p>A Tabela 6 registra as execuções em <code>J2</code> (1920 × 1080). <code>T1</code> a <code>T3</code> são os resultados das tentativas (<a href="../procedimentos-adaptabilidade/#46-reproducao-de-falhas">reprodução de falhas</a>); o resultado final é <code>C</code> salvo falha confirmada em 2 de 3.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Data</th>
+<th>Executor / observador</th>
+<th style="text-align: center;">T1</th>
+<th style="text-align: center;">T2</th>
+<th style="text-align: center;">T3</th>
+<th style="text-align: center;">Final</th>
+<th style="text-align: center;">Tipo de falha</th>
+<th>Ocorrência</th>
+<th>Evidência</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>M6-A1-FL1</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M6-A1-FL2</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M6-A1-FL3</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M6-A1-FL4</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M6-A2-FL1</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M6-A2-FL2</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M6-A2-FL3</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M6-A2-FL4</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M6-A3-FL1</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M6-A3-FL2</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M6-A3-FL3</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M6-A3-FL4</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M6-A4-FL1</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M6-A4-FL2</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M6-A4-FL3</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M6-A4-FL4</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 6. Registro das execuções de M6. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<p><a id="registro-m7"></a></p>
+<h2 id="5-registro-de-m7">5. Registro de M7<a class="headerlink" href="#5-registro-de-m7" title="Link para esta seção">&para;</a></h2>
+<p>A Tabela 7 registra as execuções de M7. A gravidade máxima segue a <a href="../procedimentos-adaptabilidade/#55-problemas-de-adaptacao-e-gravidade">escala <code>G1</code> a <code>G3</code></a>; use <code>G0</code> quando não houver problema. As linhas em <code>J2</code> aproveitam a sessão de M6, com critério próprio.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Data</th>
+<th>Executor / observador</th>
+<th style="text-align: center;">Resultado</th>
+<th style="text-align: center;">Gravidade máxima</th>
+<th>CE afetados</th>
+<th>Ocorrência</th>
+<th>Evidência</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>M7-A1-J1-FL1</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M7-A1-J1-FL2</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M7-A1-J1-FL3</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M7-A1-J1-FL4</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M7-A1-J2-FL1</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M7-A1-J2-FL2</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M7-A1-J2-FL3</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M7-A1-J2-FL4</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M7-A2-J1-FL1</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M7-A2-J1-FL2</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M7-A2-J1-FL3</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M7-A2-J1-FL4</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M7-A2-J2-FL1</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M7-A2-J2-FL2</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M7-A2-J2-FL3</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M7-A2-J2-FL4</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M7-A3-J1-FL1</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M7-A3-J1-FL2</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M7-A3-J1-FL3</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M7-A3-J1-FL4</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M7-A3-J2-FL1</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M7-A3-J2-FL2</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M7-A3-J2-FL3</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M7-A3-J2-FL4</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M7-A4-J1-FL1</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M7-A4-J1-FL2</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M7-A4-J1-FL3</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M7-A4-J1-FL4</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M7-A4-J2-FL1</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M7-A4-J2-FL2</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M7-A4-J2-FL3</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>M7-A4-J2-FL4</code></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 7. Registro das execuções de M7. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<p><a id="registro-ocorrencias"></a></p>
+<h2 id="6-ocorrencias">6. Ocorrências<a class="headerlink" href="#6-ocorrencias" title="Link para esta seção">&para;</a></h2>
+<p>A Tabela 8 recebe uma linha por problema observado. Atribuição: plataforma, ambiente de teste, executor ou serviço externo, conforme a <a href="../procedimentos-adaptabilidade/#72-atribuicao-de-causa">atribuição de causa</a>.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Combinação</th>
+<th>Ponto de verificação</th>
+<th>CE afetado</th>
+<th>Descrição</th>
+<th>Passos para reproduzir</th>
+<th style="text-align: center;">Gravidade</th>
+<th>Atribuição</th>
+<th style="text-align: center;">Reproduzida (2 de 3)</th>
+<th>Evidência</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>OC-001</code></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td></td>
+</tr>
+<tr>
+<td><code>OC-002</code></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td></td>
+</tr>
+<tr>
+<td><code>OC-003</code></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td></td>
+</tr>
+<tr>
+<td><code>OC-004</code></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td></td>
+</tr>
+<tr>
+<td><code>OC-005</code></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 8. Ocorrências registradas. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<p><a id="registro-resumo"></a></p>
+<h2 id="7-resumo-julgamento-e-decisao">7. Resumo, julgamento e decisão<a class="headerlink" href="#7-resumo-julgamento-e-decisao" title="Link para esta seção">&para;</a></h2>
+<p>Preencher após a coleta, conforme <a href="../procedimentos-adaptabilidade/#9-calculo-interpretacao-e-relato">Cálculo, interpretação e relato</a>. Registrar sempre as contagens absolutas.</p>
+<p><strong>M6.</strong> Na Tabela 9, em cada célula, o resultado final (<code>C</code>, <code>F</code>, <code>I</code> ou <code>X</code>).</p>
+<table>
+<thead>
+<tr>
+<th>Ambiente</th>
+<th style="text-align: center;">FL1</th>
+<th style="text-align: center;">FL2</th>
+<th style="text-align: center;">FL3</th>
+<th style="text-align: center;">FL4</th>
+<th style="text-align: center;">Concluídas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>A1</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">/ 4</td>
+</tr>
+<tr>
+<td><code>A2</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">/ 4</td>
+</tr>
+<tr>
+<td><code>A3</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">/ 4</td>
+</tr>
+<tr>
+<td><code>A4</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">/ 4</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 9. Matriz de resultados de M6. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<p><strong>M7.</strong> Na Tabela 10, em cada célula, o resultado (<code>C</code>, <code>F</code>, <code>I</code> ou <code>X</code>) e, se houver, a gravidade máxima.</p>
+<table>
+<thead>
+<tr>
+<th>Ambiente</th>
+<th>Dimensão</th>
+<th style="text-align: center;">FL1</th>
+<th style="text-align: center;">FL2</th>
+<th style="text-align: center;">FL3</th>
+<th style="text-align: center;">FL4</th>
+<th style="text-align: center;">Preservadas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>A1</code></td>
+<td><code>J1</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">/ 4</td>
+</tr>
+<tr>
+<td><code>A1</code></td>
+<td><code>J2</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">/ 4</td>
+</tr>
+<tr>
+<td><code>A2</code></td>
+<td><code>J1</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">/ 4</td>
+</tr>
+<tr>
+<td><code>A2</code></td>
+<td><code>J2</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">/ 4</td>
+</tr>
+<tr>
+<td><code>A3</code></td>
+<td><code>J1</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">/ 4</td>
+</tr>
+<tr>
+<td><code>A3</code></td>
+<td><code>J2</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">/ 4</td>
+</tr>
+<tr>
+<td><code>A4</code></td>
+<td><code>J1</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">/ 4</td>
+</tr>
+<tr>
+<td><code>A4</code></td>
+<td><code>J2</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">/ 4</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 10. Matriz de resultados de M7. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<p>A Tabela 11 consolida o cálculo, a Tabela 12 registra o julgamento de cada questão e hipótese e a Tabela 13, a decisão e as ações.</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M6: concluídas / elegíveis (<code>C/N</code>)</td>
+<td></td>
+</tr>
+<tr>
+<td>M6: percentual e nota</td>
+<td></td>
+</tr>
+<tr>
+<td>M7: preservadas / elegíveis (<code>C/N</code>)</td>
+<td></td>
+</tr>
+<tr>
+<td>M7: percentual e nota</td>
+<td></td>
+</tr>
+<tr>
+<td>M7, subconjunto <code>FL1</code>–<code>FL3</code> (<code>C/24</code>)</td>
+<td></td>
+</tr>
+<tr>
+<td>Falha confirmada em <code>FL1</code>–<code>FL3</code> em algum ambiente?</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 11. Cálculo de M6 e M7. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<table>
+<thead>
+<tr>
+<th>Questão / hipótese</th>
+<th>Estado</th>
+<th>Justificativa com contagens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Q5</code></td>
+<td>Atendida / não atendida / inconclusiva</td>
+<td></td>
+</tr>
+<tr>
+<td><code>H5</code></td>
+<td>Sustentada / não sustentada / inconclusiva</td>
+<td></td>
+</tr>
+<tr>
+<td><code>Q6</code></td>
+<td>Atendida / não atendida / inconclusiva</td>
+<td></td>
+</tr>
+<tr>
+<td><code>H6</code></td>
+<td>Sustentada / não sustentada / inconclusiva</td>
+<td></td>
+</tr>
+<tr>
+<td><code>G2</code></td>
+<td>Atendido / não atendido</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 12. Julgamento de Q5, Q6, H5, H6 e G2. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<table>
+<thead>
+<tr>
+<th>Desfecho de <code>D1</code> quanto à adaptabilidade</th>
+<th>Ações para a coordenação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 13. Decisão e ações, conforme <a href="../procedimentos-adaptabilidade/#94-da-medicao-a-decisao-e-as-acoes">9.4</a>. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<h2 id="referencias">Referências<a class="headerlink" href="#referencias" title="Link para esta seção">&para;</a></h2>
+<p><a id="s1"></a></p>
+<blockquote>
+<p>[S1] Procedimentos de avaliação de adaptabilidade (M6 e M7) — Fase 3. Disponível em: <a href="../procedimentos-adaptabilidade/">Procedimentos de adaptabilidade</a>.</p>
+</blockquote>
+<p><a id="s2"></a></p>
+<blockquote>
+<p>[S2] Ambiente de testes — Fase 3. Disponível em: <a href="../ambiente-de-testes/">Ambiente de testes</a>.</p>
+</blockquote>
+<h2 id="historico-de-versoes">Histórico de versões<a class="headerlink" href="#historico-de-versoes" title="Link para esta seção">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Versão</th>
+<th style="text-align: center;">Data</th>
+<th>Descrição</th>
+<th>Responsável</th>
+<th>Revisor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;">07/11/2026</td>
+<td>Estrutura dos formulários de registro de M6 e M7, sem dados coletados.</td>
+<td><a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></td>
+<td>A definir</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.top", "toc.follow", "search.suggest", "search.highlight", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+        <script src="../../js/mathjax.js"></script>
+      
+        <script src="../../js/khan.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
