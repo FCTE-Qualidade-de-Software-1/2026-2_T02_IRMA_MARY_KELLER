@@ -14,7 +14,7 @@ A avaliação contempla uma matriz direcionada de ambientes (`A1` a `A4`), compl
 2. **Matriz principal de adaptabilidade (`A1` a `A4`):** Os testes de adaptabilidade entre sistemas operacionais e navegadores (`M6`) e de adaptação ao tamanho da janela (`M7`) utilizam as quatro combinações principais:
    - `A1`: Windows 11 Pro + Google Chrome (motor Blink);
    - `A2`: Windows 11 Pro + Mozilla Firefox (motor Gecko);
-   - `A3`: macOS + Apple Safari (motor WebKit);
+   - `A3`: macOS Tahoe 27.2.1 + Apple Safari (motor WebKit);
    - `A4`: Ubuntu 26.04 LTS + Mozilla Firefox (motor Gecko).
 3. **Ambientes Linux complementares (`AC1` a `AC3`):** Para aprofundar a observação da adaptabilidade em sistemas abertos amplamente utilizados no ambiente desktop, são preparadas distribuições Linux adicionais (Fedora, Arch Linux e openSUSE Leap). Seus resultados são relatados de forma complementar, sem alterar o denominador formal de cálculo de `M6` definido na Fase 2 [S4](#s4).
 
@@ -34,8 +34,8 @@ A Tabela 1 apresenta a lista dos sistemas operacionais e as versões dos navegad
 | Identificador | Sistema operacional | Navegador | Motor de renderização | Versão do navegador | Modalidade de execução | Recursos de hardware |
 |:---:|---|---|---|:---:|---|---|
 | `A1` | Windows 11 Pro | Google Chrome | Blink | 157.0 | Virtualizado (Docker / Winboat) | 4 GB RAM, 4 vCPUs |
-| `A2` | Windows 11 Pro | Mozilla Firefox | Gecko | 159.1 | Virtualizado (Docker / Winboat) | 4 GB RAM, 4 vCPUs |
-| `A3` | macOS (a registrar) | Apple Safari | WebKit | A registrar | Máquina física | A registrar na preparação |
+| `A2` | Windows 11 Pro | Mozilla Firefox | Gecko | 160 | Virtualizado (Docker / Winboat) | 4 GB RAM, 4 vCPUs |
+| `A3` | macOS Tahoe 27.2.1 | Apple Safari | WebKit | 26.5.2 | Máquina física | 32 GB RAM, 10 Núcleos |
 | `A4` | Ubuntu 26.04 | Mozilla Firefox | Gecko | 159.0 | Virtualizado (QEMU/KVM / GNOME Boxes) | 4 GB RAM, 4 vCPUs |
 | `AC1` | Fedora 44 | Chrome / Firefox | Blink / Gecko | 156.0 / 159.0 | Virtualizado (QEMU/KVM / GNOME Boxes) | 4 GB RAM, 4 vCPUs |
 | `AC2` | Arch Linux (*rolling*) | Chrome / Firefox | Blink / Gecko | 156.0 / 159.0 | Virtualizado (QEMU/KVM / GNOME Boxes) | 4 GB RAM, 4 vCPUs |

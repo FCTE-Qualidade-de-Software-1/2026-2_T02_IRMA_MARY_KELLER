@@ -1,4 +1,4 @@
-# Critérios de avaliação QSW - Fase 2
+# Critérios de avaliação QSW (Fase 2)
 
 Os critérios abaixo foram definidos pela professora e **não foram ajustados** de relatório para artigo: são reproduzidos como originalmente fornecidos. Servem como material de consulta e para fazer a rastreabilidade de cada critério ao produzir as demandas da Fase 2.
 
