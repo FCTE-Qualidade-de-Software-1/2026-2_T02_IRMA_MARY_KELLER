@@ -1,10 +1,11 @@
 # Procedimentos de avaliação de eficiência de desempenho (M1 a M5)
 
-**Versão 1.1**
+**Versão 1.3**
 
 Este artefato define e padroniza os métodos, instrumentos, roteiros e critérios para a avaliação da **eficiência de desempenho** da versão web da Khan Academy em computadores. A eficiência de desempenho, englobando as subcaracterísticas de **comportamento temporal** e **utilização de recursos** no modelo da ISO/IEC 25010:2011 [S1](#s1), foi estabelecida como prioridade máxima na [Fase 1](../fase-1/index.md) [S4](#s4), respondendo aos requisitos [`R1`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) e [`R2`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) e subsidiando a decisão [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante).
 
 O documento especifica os procedimentos operacionais para obtenção das métricas:
+
 - [`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa) — Tempo observável por etapa (mediana e P90);
 - [`M2`](../fase-2/metricas.md#12-m2-taxa-de-conclusao-dos-fluxos) — Taxa de conclusão dos fluxos;
 - [`M3`](../fase-2/metricas.md#13-m3-utilizacao-de-cpu) — Utilização de CPU (média e picos);
@@ -13,19 +14,19 @@ O documento especifica os procedimentos operacionais para obtenção das métric
 
 Essas métricas respondem diretamente às questões [`Q1`](../fase-2/questoes-hipoteses.md#31-q1-comportamento-temporal), [`Q2`](../fase-2/questoes-hipoteses.md#32-q2-utilizacao-de-cpu), [`Q3`](../fase-2/questoes-hipoteses.md#33-q3-utilizacao-de-memoria) e [`Q4`](../fase-2/questoes-hipoteses.md#34-q4-consumo-de-dados-de-rede), confrontando as hipóteses [`H1` a `H4`](../fase-2/questoes-hipoteses.md#3-g1-eficiencia-de-desempenho) do objetivo [`G1`](../fase-2/objetivos.md#g1) [S6](#s6), estruturado pela abordagem *Goal–Question–Metric* (GQM) [S3](#s3) com referência nas diretrizes de medição da ISO/IEC 25023:2016 [S2](#s2).
 
-O artefato cumpre integralmente os requisitos da issue #25 (*[Fase 3] Definição dos procedimentos de avaliação de desempenho e adaptabilidade*) [S11](#s11) e opera sobre o [ambiente de testes](ambiente-de-testes.md) [S10](#s10). 
+O artefato cumpre integralmente os requisitos da [`issue #25`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/25) (*[Fase 3] Definição dos procedimentos de avaliação de desempenho e adaptabilidade*) [S11](#s11) e opera sobre o [ambiente de testes](ambiente-de-testes.md) [S10](#s10).
 
 **Situação:** especificação de procedimentos, **sem resultados coletados**. A execução oficial das medições e a análise estatística dos dados pertencem à Fase 4. As faixas quantitativas e os limiares de julgamento seguem estritamente as definições aprovadas em [Critérios de julgamento](../fase-2/criterios-julgamento.md) [S9](#s9).
 
 ## 1. Escopo e princípios da avaliação de desempenho
 
-- **Objeto da avaliação:** A avaliação concentra-se nos três fluxos centrais da jornada do estudante: [`FL1`](../fase-1/escopo-da-avaliacao.md#fluxos) (navegação em cursos), [`FL2`](../fase-1/escopo-da-avaliacao.md#fluxos) (videoaulas) e [`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos) (exercícios). O fluxo secundário `FL4` (progresso) é avaliado exclusivamente sob adaptabilidade (`M6`/`M7`), não integrando a bateria de desempenho, conforme delimitado no escopo da Fase 1 [S5](#s5). A avaliação é externa e caixa-preta, sem acesso ao código-fonte, banco de dados ou infraestrutura de servidores da Khan Academy.
-- **Ambiente de referência exclusivo (`A1`):** Conforme definido na seção 2.3 do [Escopo da avaliação](../fase-1/escopo-da-avaliacao.md#ambientes), todas as medições de desempenho são realizadas no **ambiente `A1`** (Windows 11 Pro virtualizado com Docker/Winboat, navegador Google Chrome, motor Blink, alocação estrita de 4 GB de memória RAM e 4 vCPUs). Essa restrição isola o comportamento da plataforma em um ambiente padronizado que simula os computadores de escolas públicas.
+- **Objeto da avaliação:** A avaliação concentra-se nos três fluxos centrais da jornada do estudante: [`FL1`](../fase-1/escopo-da-avaliacao.md#fluxos) (navegação em cursos), [`FL2`](../fase-1/escopo-da-avaliacao.md#fluxos) (videoaulas) e [`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos) (exercícios). O fluxo secundário [`FL4`](../fase-1/escopo-da-avaliacao.md#fluxos) (progresso) é avaliado exclusivamente sob adaptabilidade ([`M6`](../fase-2/metricas.md#16-m6-execucao-por-ambiente)/[`M7`](../fase-2/metricas.md#17-m7-adaptacao-ao-tamanho-da-janela)), não integrando a bateria de desempenho, conforme delimitado no escopo da Fase 1 [S5](#s5). A avaliação é externa e caixa-preta, sem acesso ao código-fonte, banco de dados ou infraestrutura de servidores da Khan Academy.
+- **Ambiente de referência exclusivo ([`A1`](../fase-1/escopo-da-avaliacao.md#ambientes)):** Conforme definido na seção 2.3 do [Escopo da avaliação](../fase-1/escopo-da-avaliacao.md#ambientes), todas as medições de desempenho são realizadas no **ambiente [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes)** (Windows 11 Pro virtualizado com Docker/Winboat, navegador Google Chrome, motor Blink, alocação estrita de 4 GB de memória RAM e 4 vCPUs). Essa restrição isola o comportamento da plataforma em um ambiente padronizado que simula os computadores de escolas públicas.
 - **Condições de conectividade de rede:** Cada fluxo é testado sob duas condições experimentais:
   1. *Conexão normal:* conexão do laboratório sem limitações artificiais;
   2. *Conexão limitada:* perfil controlado e emulado via *Network Throttling* do Google Chrome DevTools (1.500 kbps de download, 750 kbps de upload e 150 ms de RTT adicional), representando conexões modestas ou compartilhadas de escolas públicas.
 - **Aquecimento e repetições válidas:** Para cada tarefa e condição de rede, realiza-se **uma execução prévia de aquecimento (*warm-up*)**, cujo resultado é descartado da análise estatística, seguida de **cinco repetições válidas consecutivas**. As repetições reduzem o impacto de flutuações pontuais de rede ou serviço e garantem significância às medidas de tendência central.
-- **Exclusão do tempo pedagógico:** A medição temporal restringe-se ao tempo observável de carregamento e resposta da interface (`t_fim − t_início`). O tempo gasto pelo estudante ou avaliador na leitura do enunciado, reflexão, resolução matemática de exercícios ou na assistência contínua do vídeo pedagógico é rigorosamente excluído das medições de M1.
+- **Exclusão do tempo pedagógico:** A medição temporal restringe-se ao tempo observável de carregamento e resposta da interface (`t_fim − t_início`). O tempo gasto pelo estudante ou avaliador na leitura do enunciado, reflexão, resolução matemática de exercícios ou na assistência contínua do vídeo pedagógico é rigorosamente excluído das medições de [`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa).
 - **Instrumentação e auditoria complementar:** Além dos painéis nativos do DevTools (Network, Console e Performance) e do monitor de recursos do sistema/navegador, a ferramenta **Lighthouse** é utilizada como instrumento de auditoria complementar em condições de laboratório para avaliar os indicadores de carregamento das páginas de entrada dos fluxos.
 
 ### 1.1 Justificativa das decisões metodológicas
@@ -34,42 +35,42 @@ A Tabela 1 sintetiza as decisões metodológicas adotadas para a avaliação de 
 
 | Decisão metodológica | Justificativa técnica | Origem |
 |---|---|---|
-| Medição concentrada no ambiente `A1` | Evita confundir variações de desempenho do produto com diferenças entre sistemas operacionais ou sobrecargas de diferentes hipervisores; `A1` é a combinação mais representativa do cenário de referência | [Escopo, seção 2.3](../fase-1/escopo-da-avaliacao.md#ambientes); [Q1–Q4](../fase-2/questoes-hipoteses.md#3-g1-eficiencia-de-desempenho) |
-| Duas condições de rede (Normal e Limitada) | O cenário de escola pública convive com banda compartilhada e instabilidade; comparar as duas condições evidencia a sensibilidade da interface ao tráfego de dados e latência | [Requisitos R1 e R2](../fase-1/requisitos-de-avaliacao.md#rastreabilidade); [Escopo, seção 2.3](../fase-1/escopo-da-avaliacao.md#ambientes) |
+| Medição concentrada no ambiente [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes) | Evita confundir variações de desempenho do produto com diferenças entre sistemas operacionais ou sobrecargas de diferentes hipervisores; [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes) é a combinação mais representativa do cenário de referência | [Escopo, seção 2.3](../fase-1/escopo-da-avaliacao.md#ambientes); [`Q1–Q4`](../fase-2/questoes-hipoteses.md#3-g1-eficiencia-de-desempenho) |
+| Duas condições de rede (Normal e Limitada) | O cenário de escola pública convive com banda compartilhada e instabilidade; comparar as duas condições evidencia a sensibilidade da interface ao tráfego de dados e latência | [`Requisitos R1 e R2`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade); [Escopo, seção 2.3](../fase-1/escopo-da-avaliacao.md#ambientes) |
 | Execução de aquecimento (*warm-up*) não contabilizada | Estabiliza resoluções de DNS, conexões TLS e mecanismos de cache prévio, eliminando anomalias associadas ao primeiro contato na sessão | [Escopo, profundidade](../fase-1/escopo-da-avaliacao.md#profundidade); boas práticas de engenharia de desempenho |
-| Cinco repetições válidas por condição | Minimiza o efeito de ruídos transitórios da infraestrutura de produção e fornece uma amostra confiável para apuração da mediana e do percentil 90 (P90) | [Escopo, profundidade](../fase-1/escopo-da-avaliacao.md#profundidade); [Ficha de M1](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa) |
-| Adoção da mediana e P90 para M1 | A mediana é imune a *outliers* causados por engasgos momentâneos da internet pública; o P90 retrata a cauda longa de espera vivenciada pelos usuários mais penalizados | [Ficha de M1](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa); [Critérios, seção 3](../fase-2/criterios-julgamento.md#3-tempo-e-consumo-de-recursos) |
-| Exclusão do tempo pedagógico de vídeo e exercício | A eficiência de desempenho avalia a capacidade de resposta do software, e não o ritmo de aprendizagem ou a duração didática dos materiais educacionais | [Questão Q1](../fase-2/questoes-hipoteses.md#31-q1-comportamento-temporal); [Ficha de M1](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa) |
-| Controle de cache (*Disable cache*) para M5 | Permite mensurar com precisão o volume bruto de dados requerido pelo fluxo sem mascarar o consumo por transferências pré-existentes na sessão | [Ficha de M5](../fase-2/metricas.md#15-m5-dados-transferidos); [Critérios, seção 3](../fase-2/criterios-julgamento.md#3-tempo-e-consumo-de-recursos) |
+| Cinco repetições válidas por condição | Minimiza o efeito de ruídos transitórios da infraestrutura de produção e fornece uma amostra confiável para apuração da mediana e do percentil 90 (P90) | [Escopo, profundidade](../fase-1/escopo-da-avaliacao.md#profundidade); [`Ficha de M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa) |
+| Adoção da mediana e P90 para [`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa) | A mediana é imune a *outliers* causados por engasgos momentâneos da internet pública; o P90 retrata a cauda longa de espera vivenciada pelos usuários mais penalizados | [`Ficha de M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa); [Critérios, seção 3](../fase-2/criterios-julgamento.md#3-tempo-e-consumo-de-recursos) |
+| Exclusão do tempo pedagógico de vídeo e exercício | A eficiência de desempenho avalia a capacidade de resposta do software, e não o ritmo de aprendizagem ou a duração didática dos materiais educacionais | [`Questão Q1`](../fase-2/questoes-hipoteses.md#31-q1-comportamento-temporal); [`Ficha de M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa) |
+| Controle de cache (*Disable cache*) para [`M5`](../fase-2/metricas.md#15-m5-dados-transferidos) | Permite mensurar com precisão o volume bruto de dados requerido pelo fluxo sem mascarar o consumo por transferências pré-existentes na sessão | [`Ficha de M5`](../fase-2/metricas.md#15-m5-dados-transferidos); [Critérios, seção 3](../fase-2/criterios-julgamento.md#3-tempo-e-consumo-de-recursos) |
 | Uso complementar do Lighthouse | Fornece métricas padronizadas da indústria (FCP, LCP, TBT) em ambiente sintético de laboratório, fortalecendo a repetibilidade e o diagnóstico de gargalos | Critério `F3-C1` [S5](#s5); auditoria de qualidade web |
 
 *Tabela 1. Decisões metodológicas da avaliação de desempenho e justificativas. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
 ## 2. Rastreabilidade com as Fases 1 e 2
 
-A Tabela 2 apresenta a cadeia de rastreabilidade completa, conectando os requisitos da Fase 1, os objetivos, questões, hipóteses e métricas da Fase 2, os critérios de julgamento e os procedimentos e formulários de registro desta fase.
+A Tabela 2 apresenta a cadeia de rastreabilidade completa, conectando os requisitos da Fase 1, os objetivos, questões, hipóteses e métricas da Fase 2, os [critérios de julgamento](../fase-2/criterios-julgamento.md) e os procedimentos e formulários de registro desta fase.
 
 | Requisito (Fase 1) | Objetivo | Questão | Hipótese | Métrica | Critério de julgamento (Fase 2) | Procedimento | Registro |
 |---|---|---|---|---|---|---|---|
-| [`R1`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) / [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante) | [`G1`](../fase-2/objetivos.md#g1) | [`Q1`](../fase-2/questoes-hipoteses.md#31-q1-comportamento-temporal) — Espera nas etapas dos fluxos | H1 | [`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa) — Tempo observável por etapa | Mediana ≤ 1 s (Exc.), 1–3 s (Alvo), 3–10 s (Mín.), > 10 s (Inaceitável) | [Seção 4.1](#41-procedimento-de-m1-tempo-observavel-por-etapa) e [Seção 5](#5-roteiros-passo-a-passo-com-marcos-temporais) | [Registro M1](../fase-4/registro-desempenho.md#registro-m1) |
-| [`R1`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) / [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante) | [`G1`](../fase-2/objetivos.md#g1) | [`Q1`](../fase-2/questoes-hipoteses.md#31-q1-comportamento-temporal) — Conclusão sem bloqueios | H1 | [`M2`](../fase-2/metricas.md#12-m2-taxa-de-conclusao-dos-fluxos) — Taxa de conclusão das tentativas | 100% (Exc.), 90–100% (Alvo), 75–90% (Mín.), < 75% (Inaceitável) | [Seção 4.2](#42-procedimento-de-m2-taxa-de-conclusao-das-tentativas) | [Registro M2](../fase-4/registro-desempenho.md#registro-m2) |
-| [`R2`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) / [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante) | [`G1`](../fase-2/objetivos.md#g1) | [`Q2`](../fase-2/questoes-hipoteses.md#32-q2-utilizacao-de-cpu) — Processamento disponível | H2 | [`M3`](../fase-2/metricas.md#13-m3-utilizacao-de-cpu) — Utilização de CPU | Média ≤ 25% (Exc.), 25–50% (Alvo), 50–75% (Mín.), > 75% (Inaceitável) | [Seção 4.3](#43-procedimento-de-m3-utilizacao-de-cpu) | [Registro M3](../fase-4/registro-desempenho.md#registro-m3) |
-| [`R2`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) / [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante) | [`G1`](../fase-2/objetivos.md#g1) | [`Q3`](../fase-2/questoes-hipoteses.md#33-q3-utilizacao-de-memoria) — Memória disponível | H3 | [`M4`](../fase-2/metricas.md#14-m4-pico-de-memoria) — Pico de memória | Pico ≤ 512 MiB (Exc.), 512–1024 MiB (Alvo), 1024–2048 MiB (Mín.), > 2048 MiB (Inaceitável) | [Seção 4.4](#44-procedimento-de-m4-pico-de-memoria) | [Registro M4](../fase-4/registro-desempenho.md#registro-m4) |
-| [`R2`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) / [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante) | [`G1`](../fase-2/objetivos.md#g1) | [`Q4`](../fase-2/questoes-hipoteses.md#34-q4-consumo-de-dados-de-rede) — Orçamento de acesso | H4 | [`M5`](../fase-2/metricas.md#15-m5-dados-transferidos) — Dados transferidos | Tráfego ≤ 5 MiB (Exc.), 5–10 MiB (Alvo), 10–20 MiB (Mín.), > 20 MiB (Inaceitável) | [Seção 4.5](#45-procedimento-de-m5-dados-transferidos) | [Registro M5](../fase-4/registro-desempenho.md#registro-m5) |
+| [`R1`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) / [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante) | [`G1`](../fase-2/objetivos.md#g1) | [`Q1`](../fase-2/questoes-hipoteses.md#31-q1-comportamento-temporal) — Espera nas etapas dos fluxos | [`H1`](../fase-2/questoes-hipoteses.md#31-q1-comportamento-temporal) | [`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa) — Tempo observável por etapa | Mediana ≤ 1 s (Exc.), 1–3 s (Alvo), 3–10 s (Mín.), > 10 s (Inaceitável) | [Seção 4.1](#41-procedimento-de-m1-tempo-observavel-por-etapa) e [Seção 5](#5-roteiros-passo-a-passo-com-marcos-temporais) | [`Registro M1`](../fase-4/registro-desempenho.md#registro-m1) |
+| [`R1`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) / [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante) | [`G1`](../fase-2/objetivos.md#g1) | [`Q1`](../fase-2/questoes-hipoteses.md#31-q1-comportamento-temporal) — Conclusão sem bloqueios | [`H1`](../fase-2/questoes-hipoteses.md#31-q1-comportamento-temporal) | [`M2`](../fase-2/metricas.md#12-m2-taxa-de-conclusao-dos-fluxos) — Taxa de conclusão das tentativas | 100% (Exc.), 90–100% (Alvo), 75–90% (Mín.), < 75% (Inaceitável) | [Seção 4.2](#42-procedimento-de-m2-taxa-de-conclusao-das-tentativas) | [`Registro M2`](../fase-4/registro-desempenho.md#registro-m2) |
+| [`R2`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) / [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante) | [`G1`](../fase-2/objetivos.md#g1) | [`Q2`](../fase-2/questoes-hipoteses.md#32-q2-utilizacao-de-cpu) — Processamento disponível | [`H2`](../fase-2/questoes-hipoteses.md#32-q2-utilizacao-de-cpu) | [`M3`](../fase-2/metricas.md#13-m3-utilizacao-de-cpu) — Utilização de CPU | Média ≤ 25% (Exc.), 25–50% (Alvo), 50–75% (Mín.), > 75% (Inaceitável) | [Seção 4.3](#43-procedimento-de-m3-utilizacao-de-cpu) | [`Registro M3`](../fase-4/registro-desempenho.md#registro-m3) |
+| [`R2`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) / [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante) | [`G1`](../fase-2/objetivos.md#g1) | [`Q3`](../fase-2/questoes-hipoteses.md#33-q3-utilizacao-de-memoria) — Memória disponível | [`H3`](../fase-2/questoes-hipoteses.md#33-q3-utilizacao-de-memoria) | [`M4`](../fase-2/metricas.md#14-m4-pico-de-memoria) — Pico de memória | Pico ≤ 512 MiB (Exc.), 512–1024 MiB (Alvo), 1024–2048 MiB (Mín.), > 2048 MiB (Inaceitável) | [Seção 4.4](#44-procedimento-de-m4-pico-de-memoria) | [`Registro M4`](../fase-4/registro-desempenho.md#registro-m4) |
+| [`R2`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) / [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante) | [`G1`](../fase-2/objetivos.md#g1) | [`Q4`](../fase-2/questoes-hipoteses.md#34-q4-consumo-de-dados-de-rede) — Orçamento de acesso | [`H4`](../fase-2/questoes-hipoteses.md#34-q4-consumo-de-dados-de-rede) | [`M5`](../fase-2/metricas.md#15-m5-dados-transferidos) — Dados transferidos | Tráfego ≤ 5 MiB (Exc.), 5–10 MiB (Alvo), 10–20 MiB (Mín.), > 20 MiB (Inaceitável) | [Seção 4.5](#45-procedimento-de-m5-dados-transferidos) | [`Registro M5`](../fase-4/registro-desempenho.md#registro-m5) |
 
-*Tabela 2. Cadeia de rastreabilidade R1/R2 → G1 → Q1–Q4 → H1–H4 → M1–M5 → Procedimentos. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
+*Tabela 2. Cadeia de rastreabilidade [`R1`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade)/[`R2`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) → [`G1`](../fase-2/objetivos.md#g1) → [`Q1`](../fase-2/questoes-hipoteses.md#31-q1-comportamento-temporal)–[`Q4`](../fase-2/questoes-hipoteses.md#34-q4-consumo-de-dados-de-rede) → [`H1`](../fase-2/questoes-hipoteses.md#31-q1-comportamento-temporal)–[`H4`](../fase-2/questoes-hipoteses.md#34-q4-consumo-de-dados-de-rede) → [`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa)–[`M5`](../fase-2/metricas.md#15-m5-dados-transferidos) → Procedimentos. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
 A Tabela 3 detalha a operacionalização das diretrizes herdadas das fases anteriores em parâmetros executáveis.
 
 | Origem | Diretriz herdada | Parâmetro operacional na Fase 3 |
 |---|---|---|
-| [Escopo, Tabela 2 e seção 2.3](../fase-1/escopo-da-avaliacao.md#ambientes) | Medições de desempenho exclusivamente no ambiente de referência `A1` | Execuções realizadas estritamente em Windows 11 Pro com Chrome Blink ([Seção 3.1](#31-ambiente-de-referencia-a1)) |
+| [Escopo, Tabela 2 e seção 2.3](../fase-1/escopo-da-avaliacao.md#ambientes) | Medições de desempenho exclusivamente no ambiente de referência [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes) | Execuções realizadas estritamente em Windows 11 Pro com Chrome Blink ([Seção 3.1](#31-ambiente-de-referencia-a1)) |
 | [Escopo, Tabela 3](../fase-1/escopo-da-avaliacao.md#profundidade) | 1 execução de aquecimento e 5 repetições válidas por tarefa e condição de rede | Bateria de 1 aquecimento + 5 repetições para Rede Normal e 1 aquecimento + 5 repetições para Rede Limitada ([Seção 6](#6-protocolo-experimental-aquecimento-e-repeticoes)) |
 | [Escopo, Tabela 3](../fase-1/escopo-da-avaliacao.md#profundidade) | Marcações de início e fim, exportações de rede e planilha de resultados brutos | Protocolo instrumental de marcas temporais e formulários em Markdown ([Seção 5](#5-roteiros-passo-a-passo-com-marcos-temporais) e [8](#8-formularios-e-modelos-de-registro)) |
 | [Escopo, Tabela 5](../fase-1/escopo-da-avaliacao.md#limites-de-validade) | Resultados não generalizáveis para toda a internet; variações externas registradas | Critérios de descarte de execução inválida por causa externa e gravação de logs ([Seção 7](#7-validade-sucesso-falha-e-interrupcao)) |
-| [Fichas M1 a M5](../fase-2/metricas.md#1-metricas-detalhadas) | Mediana/P90 (M1), % de conclusão (M2), CPU média e picos (M3), pico de RAM (M4) e tráfego total (M5) | Fórmulas, instrumentos de extração e critérios de cálculo consolidados ([Seção 4](#4-procedimentos-especificos-por-metrica) e [Seção 9](#9-calculo-interpretacao-e-julgamento)) |
-| [Critérios, Tabela 3](../fase-2/criterios-julgamento.md#3-tempo-e-consumo-de-recursos) | Limiares: 1/3/10 s (M1), 25/50/75% (M3), 512/1024/2048 MiB (M4), 5/10/20 MiB (M5) | Tabelas formais de pontuação e matrizes de conversão em notas de 0 a 3 ([Seção 9.2](#92-conversao-em-notas-e-tabelas-de-julgamento)) |
-| [Questões e hipóteses H1–H4](../fase-2/questoes-hipoteses.md#3-g1-eficiencia-de-desempenho) | Metas de H1 (mediana ≤ 3 s, conclusão ≥ 90%), H2 (CPU média ≤ 50%), H3 (RAM pico ≤ 1024 MiB), H4 (tráfego ≤ 10 MiB) | Regras explícitas de sustentação ou refutação das hipóteses ([Seção 9.3](#93-julgamento-das-questoes-q1-a-q4-e-hipoteses-h1-a-h4)) |
+| [`Fichas M1 a M5`](../fase-2/metricas.md#1-metricas-detalhadas) | Mediana/P90 ([`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa)), % de conclusão ([`M2`](../fase-2/metricas.md#12-m2-taxa-de-conclusao-dos-fluxos)), CPU média e picos ([`M3`](../fase-2/metricas.md#13-m3-utilizacao-de-cpu)), pico de RAM ([`M4`](../fase-2/metricas.md#14-m4-pico-de-memoria)) e tráfego total ([`M5`](../fase-2/metricas.md#15-m5-dados-transferidos)) | Fórmulas, instrumentos de extração e critérios de cálculo consolidados ([Seção 4](#4-procedimentos-especificos-por-metrica) e [Seção 9](#9-calculo-interpretacao-e-julgamento)) |
+| [Critérios, Tabela 3](../fase-2/criterios-julgamento.md#3-tempo-e-consumo-de-recursos) | Limiares: 1/3/10 s ([`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa)), 25/50/75% ([`M3`](../fase-2/metricas.md#13-m3-utilizacao-de-cpu)), 512/1024/2048 MiB ([`M4`](../fase-2/metricas.md#14-m4-pico-de-memoria)), 5/10/20 MiB ([`M5`](../fase-2/metricas.md#15-m5-dados-transferidos)) | Tabelas formais de pontuação e matrizes de conversão em notas de 0 a 3 ([Seção 9.2](#92-conversao-em-notas-e-tabelas-de-julgamento)) |
+| [`Questões e hipóteses H1–H4`](../fase-2/questoes-hipoteses.md#3-g1-eficiencia-de-desempenho) | Metas de [`H1`](../fase-2/questoes-hipoteses.md#31-q1-comportamento-temporal) (mediana ≤ 3 s, conclusão ≥ 90%), [`H2`](../fase-2/questoes-hipoteses.md#32-q2-utilizacao-de-cpu) (CPU média ≤ 50%), [`H3`](../fase-2/questoes-hipoteses.md#33-q3-utilizacao-de-memoria) (RAM pico ≤ 1024 MiB), [`H4`](../fase-2/questoes-hipoteses.md#34-q4-consumo-de-dados-de-rede) (tráfego ≤ 10 MiB) | Regras explícitas de sustentação ou refutação das hipóteses ([Seção 9.3](#93-julgamento-das-questoes-q1-a-q4-e-hipoteses-h1-a-h4)) |
 
 *Tabela 3. Diretrizes das Fases 1 e 2 operacionalizadas nos procedimentos de desempenho. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
@@ -77,7 +78,7 @@ A Tabela 3 detalha a operacionalização das diretrizes herdadas das fases anter
 
 ### 3.1 Ambiente de referência (`A1`)
 
-Em conformidade com a Tabela 1 do [Ambiente de testes](ambiente-de-testes.md) [S10](#s10), o ambiente `A1` possui a seguinte especificação:
+Em conformidade com a Tabela 1 do [Ambiente de testes](ambiente-de-testes.md) [S10](#s10), o ambiente [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes) possui a seguinte especificação:
 - **Sistema Operacional:** Windows 11 Pro 64-bit;
 - **Navegador:** Google Chrome, versão estável 157.0 (motor Blink);
 - **Modalidade de Execução:** Virtualizado sob Docker gerenciado pela interface Winboat;
@@ -128,7 +129,7 @@ Antes de iniciar qualquer rodada de medições, a equipe executa as verificaçõ
 | `PD-6` | Autenticação padronizada | Login prévio com a conta de teste congelada `D6` |
 | `PD-7` | Idioma e localidade | Plataforma Khan Academy configurada em português do Brasil (`pt-BR`) |
 | `PD-8` | Aceite único de termos | Aceite de cookies e termos de uso realizado uma única vez no perfil novo |
-| `PD-9` | Disponibilidade da massa de dados | Confirmação prévia de acesso à disciplina `D1`, curso `D2`, aula `D3`, vídeo `D4` e exercício `D5` |
+| `PD-9` | Disponibilidade da massa de dados | Confirmação prévia de acesso à disciplina [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante), curso [`D2`](../fase-1/requisitos-de-avaliacao.md#requisitante), aula [`D3`](../fase-1/requisitos-de-avaliacao.md#requisitante), vídeo [`D4`](../fase-1/requisitos-de-avaliacao.md#requisitante) e exercício `D5` |
 | `PD-10` | Calibração de rede | Medição da largura de banda basal do laboratório para registro de conformidade |
 
 *Tabela 5. Verificações de preparação do ambiente de desempenho. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
@@ -139,10 +140,10 @@ Para garantir que todas as execuções de desempenho sejam rigorosamente equival
 
 | ID | Elemento de teste | Requisito de equivalência | Valor congelado |
 |---|---|---|---|
-| `D1` | Disciplina | Disciplina curricular ativa na versão brasileira da Khan Academy | *a congelar* |
-| `D2` | Curso | Curso estruturado com lista completa de unidades e lições | *a congelar* |
-| `D3` | Unidade e aula | Aula padronizada contendo a videoaula de teste | *a congelar* |
-| `D4` | Videoaula | Vídeo padronizado com duração conhecida e transcrição disponível (sem suporte a legendas nativas) | *a congelar (URL)* |
+| [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante) | Disciplina | Disciplina curricular ativa na versão brasileira da Khan Academy | *a congelar* |
+| [`D2`](../fase-1/requisitos-de-avaliacao.md#requisitante) | Curso | Curso estruturado com lista completa de unidades e lições | *a congelar* |
+| [`D3`](../fase-1/requisitos-de-avaliacao.md#requisitante) | Unidade e aula | Aula padronizada contendo a videoaula de teste | *a congelar* |
+| [`D4`](../fase-1/requisitos-de-avaliacao.md#requisitante) | Videoaula | Vídeo padronizado com duração conhecida e transcrição disponível (sem suporte a legendas nativas) | *a congelar (URL)* |
 | `D5` | Exercício | Lista de exercícios com suporte a dicas e verificação imediata | *a congelar (URL)* |
 | `D6` | Conta de teste | Conta de usuário sem dados pessoais, com histórico compatível | *a congelar* |
 
@@ -173,13 +174,13 @@ Em atendimento ao critério `F3-C2` [S5](#s5), os ensaios exigem do avaliador:
 - **Cálculo da métrica:**
   - Para cada etapa e condição de rede, computa-se o tempo decorrido $\Delta t_i = t_{\text{fim}, i} - t_{\text{início}, i}$ nas cinco repetições válidas ($i = 1, \dots, 5$);
   - Apuram-se a **mediana** e o **percentil 90 (P90)** dos tempos obtidos;
-  - A mediana é adotada como indicador principal para confronto com os níveis de pontuação de M1 na [Tabela 3 da Fase 2](../fase-2/criterios-julgamento.md#3-tempo-e-consumo-de-recursos).
+  - A mediana é adotada como indicador principal para confronto com os níveis de pontuação de [`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa) na [Tabela 3 da Fase 2](../fase-2/criterios-julgamento.md#3-tempo-e-consumo-de-recursos).
 
 ### 4.2 Procedimento de M2: Taxa de conclusão das tentativas
 
 - **Definição operacional:** Proporção de tentativas iniciadas que concluem com êxito todas as etapas do roteiro padronizado sem interrupções impeditivas, bloqueios da plataforma ou ocorrência de *timeouts*.
 - **Fórmula de cálculo:**
-  $$M2 = 100 \times \frac{C}{N}$$
+  $$[`M2`](../fase-2/metricas.md#12-m2-taxa-de-conclusao-dos-fluxos) = 100 \times \frac{C}{N}$$
   onde $C$ é o número de tentativas concluídas com sucesso e $N$ é o total de tentativas elegíveis iniciadas (incluindo tentativas que falharam ou sofreram timeout decorrente da plataforma).
 - **Critério de Timeout:** Fixa-se o limiar de **30 segundos** de inatividade ou espera sem resposta da interface como critério operacional de *timeout*. Tentativas que excedam 30 s sem retorno são classificadas como Falha por Timeout (`F-TO`).
 - **Universo de observação:** Para cada fluxo e condição de rede, $N$ totaliza as tentativas elegíveis executadas para a obtenção das 5 repetições válidas.
@@ -217,7 +218,7 @@ Em atendimento ao critério `F3-C2` [S5](#s5), os ensaios exigem do avaliador:
 
 - **Finalidade:** Obter diagnósticos independentes e consolidados de laboratório para as páginas de entrada dos fluxos, gerando subsídios adicionais à análise de qualidade.
 - **Passos de execução:**
-  1. Abrir a URL congelada da página de entrada (`D2` para FL1, `D4` para FL2, `D5` para FL3) em uma aba privativa limpa no ambiente `A1`;
+  1. Abrir a URL congelada da página de entrada ([`D2`](../fase-1/requisitos-de-avaliacao.md#requisitante) para [`FL1`](../fase-1/escopo-da-avaliacao.md#fluxos), [`D4`](../fase-1/requisitos-de-avaliacao.md#requisitante) para [`FL2`](../fase-1/escopo-da-avaliacao.md#fluxos), `D5` para [`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos)) em uma aba privativa limpa no ambiente [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes);
   2. Abrir o DevTools e selecionar a aba **Lighthouse**;
   3. Configurar os parâmetros:
      - *Mode:* Navigation (Padrão);
@@ -233,51 +234,51 @@ Em atendimento ao critério `F3-C2` [S5](#s5), os ensaios exigem do avaliador:
 
 ## 5. Roteiros passo a passo com marcos temporais
 
-Para cada um dos fluxos `FL1`, `FL2` e `FL3`, define-se uma sequência padronizada de etapas contendo os marcos operacionais de início (`t_início`) e término (`t_fim`). O avaliador segue o roteiro sem desvios.
+Para cada um dos fluxos [`FL1`](../fase-1/escopo-da-avaliacao.md#fluxos), [`FL2`](../fase-1/escopo-da-avaliacao.md#fluxos) e [`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos), define-se uma sequência padronizada de etapas contendo os marcos operacionais de início (`t_início`) e término (`t_fim`). O avaliador segue o roteiro sem desvios.
 
 ### 5.1 Roteiro FL1 — Navegação em cursos
 
-O fluxo `FL1` avalia o comportamento temporal e o consumo de recursos na navegação da estrutura educacional até a abertura do conteúdo da aula.
+O fluxo [`FL1`](../fase-1/escopo-da-avaliacao.md#fluxos) avalia o comportamento temporal e o consumo de recursos na navegação da estrutura educacional até a abertura do conteúdo da aula.
 
-| Etapa | Ação do avaliador | Marco de início (`t_início`) | Marco de término (`t_fim`) | O que se observa em M1 |
+| Etapa | Ação do avaliador | Marco de início (`t_início`) | Marco de término (`t_fim`) | O que se observa em [`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa) |
 |:---:|---|---|---|---|
 | **E1.1** | Carregamento da página inicial / menu de disciplinas | Clique no botão de navegação ou acionamento da URL base | Renderização completa dos cursos e menu de disciplinas interativo | Tempo de renderização do catálogo inicial |
-| **E1.2** | Seleção da disciplina `D1` e abertura do curso `D2` | Clique sobre o card/link do curso `D2` | Exibição completa da grade de unidades e lições do curso | Tempo de resposta para estruturação da grade curricular |
-| **E1.3** | Seleção da unidade e abertura da aula `D3` | Clique sobre o link da aula `D3` | Apresentação completa da página de aula (saída observável de `FL1`) | Tempo de carregamento do ambiente da aula selecionada |
+| **E1.2** | Seleção da disciplina [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante) e abertura do curso [`D2`](../fase-1/requisitos-de-avaliacao.md#requisitante) | Clique sobre o card/link do curso [`D2`](../fase-1/requisitos-de-avaliacao.md#requisitante) | Exibição completa da grade de unidades e lições do curso | Tempo de resposta para estruturação da grade curricular |
+| **E1.3** | Seleção da unidade e abertura da aula [`D3`](../fase-1/requisitos-de-avaliacao.md#requisitante) | Clique sobre o link da aula [`D3`](../fase-1/requisitos-de-avaliacao.md#requisitante) | Apresentação completa da página de aula (saída observável de [`FL1`](../fase-1/escopo-da-avaliacao.md#fluxos)) | Tempo de carregamento do ambiente da aula selecionada |
 
-*Tabela 7. Roteiro passo a passo e marcos de medição para FL1. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
+*Tabela 7. Roteiro passo a passo e marcos de medição para [`FL1`](../fase-1/escopo-da-avaliacao.md#fluxos). Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
 ### 5.2 Roteiro FL2 — Videoaulas
 
-O fluxo `FL2` avalia o comportamento temporal e os recursos demandados pelo reprodutor de vídeo e suas ferramentas de acessibilidade.
+O fluxo [`FL2`](../fase-1/escopo-da-avaliacao.md#fluxos) avalia o comportamento temporal e os recursos demandados pelo reprodutor de vídeo e suas ferramentas de acessibilidade.
 
-| Etapa | Ação do avaliador | Marco de início (`t_início`) | Marco de término (`t_fim`) | O que se observa em M1 |
+| Etapa | Ação do avaliador | Marco de início (`t_início`) | Marco de término (`t_fim`) | O que se observa em [`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa) |
 |:---:|---|---|---|---|
-| **E2.1** | Carregamento da página da videoaula `D4` | Clique no link da videoaula `D4` | Reprodutor de vídeo renderizado com controles disponíveis | Tempo de montagem da interface do player de vídeo |
+| **E2.1** | Carregamento da página da videoaula [`D4`](../fase-1/requisitos-de-avaliacao.md#requisitante) | Clique no link da videoaula [`D4`](../fase-1/requisitos-de-avaliacao.md#requisitante) | Reprodutor de vídeo renderizado com controles disponíveis | Tempo de montagem da interface do player de vídeo |
 | **E2.2** | Disparo da reprodução da videoaula | Clique no botão "Play" / Iniciar reprodução | Primeiro *frame* de vídeo em movimento e áudio/tempo correndo | Tempo de *buffer* e início efetivo da reprodução (*excluída a duração do vídeo*) |
 | **E2.3** | Abertura da transcrição | Clique no controle de transcrição da aula | Exibição completa do painel textual da transcrição | Tempo de renderização do texto sincronizado da aula |
 
-*Tabela 8. Roteiro passo a passo e marcos de medição para FL2. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
+*Tabela 8. Roteiro passo a passo e marcos de medição para [`FL2`](../fase-1/escopo-da-avaliacao.md#fluxos). Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
 > [!IMPORTANT]
-> **Isolamento do tempo pedagógico:** Após a verificação do início da reprodução na etapa E2.2 e a contagem de pelo menos 5 segundos de execução para constatação de fluidez, o avaliador deve **pausar o vídeo**. O tempo em que a videoaula permanece em execução pedagógica **não é contabilizado** nas métricas de tempo observável de resposta M1.
+> **Isolamento do tempo pedagógico:** Após a verificação do início da reprodução na etapa E2.2 e a contagem de pelo menos 5 segundos de execução para constatação de fluidez, o avaliador deve **pausar o vídeo**. O tempo em que a videoaula permanece em execução pedagógica **não é contabilizado** nas métricas de tempo observável de resposta [`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa).
 
 ### 5.3 Roteiro FL3 — Exercícios
 
-O fluxo `FL3` avalia a agilidade da plataforma na prestação de auxílio pedagógico (dica) e no envio e validação de respostas interativas.
+O fluxo [`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos) avalia a agilidade da plataforma na prestação de auxílio pedagógico (dica) e no envio e validação de respostas interativas.
 
-| Etapa | Ação do avaliador | Marco de início (`t_início`) | Marco de término (`t_fim`) | O que se observa em M1 |
+| Etapa | Ação do avaliador | Marco de início (`t_início`) | Marco de término (`t_fim`) | O que se observa em [`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa) |
 |:---:|---|---|---|---|
 | **E3.1** | Carregamento da página do exercício `D5` | Clique no link do exercício `D5` | Enunciado e área de resposta renderizados e operáveis | Tempo de carregamento da interface interativa de exercícios |
 | **E3.2** | Exibição de dica pedagógica | Inserção de texto/código na caixa de edição da questão | Apresentação visual automática da dica pela interface | Tempo de resposta para processamento da entrada e exibição automática da dica |
 | **E3.3** | Envio de resposta preenchida | Clique no botão "Verificar" / "Enviar resposta" | Exibição visual do retorno da plataforma (correto ou tente novamente) | Tempo de validação e feedback do exercício (*excluído o tempo de cálculo do aluno*) |
-| **E3.4** | Acionamento de continuidade | Clique no botão "Próxima questão" ou "Continuar" | Limpeza e apresentação do exercício seguinte (saída de `FL3`) | Tempo de transição de estado da atividade |
+| **E3.4** | Acionamento de continuidade | Clique no botão "Próxima questão" ou "Continuar" | Limpeza e apresentação do exercício seguinte (saída de [`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos)) | Tempo de transição de estado da atividade |
 
-*Tabela 9. Roteiro passo a passo e marcos de medição para FL3. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
+*Tabela 9. Roteiro passo a passo e marcos de medição para [`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos). Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
 > [!NOTE]
 > No desafio prático de programação `D5`, o mecanismo interativo exibe a dica pedagógica automaticamente assim que um comando ou texto preliminar é inserido na caixa de texto do editor, sem necessidade de clicar em botão específico.
-> Para o cálculo de M1 na etapa E3.3, o tempo de digitação ou resolução mental do problema pelo avaliador é mantido fora da medição: o cronômetro inicia estritamente no clique de envio e cessa no feedback retornado pela interface.
+> Para o cálculo de [`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa) na etapa E3.3, o tempo de digitação ou resolução mental do problema pelo avaliador é mantido fora da medição: o cronômetro inicia estritamente no clique de envio e cessa no feedback retornado pela interface.
 
 ## 6. Protocolo experimental (Aquecimento e repetições)
 
@@ -289,21 +290,22 @@ Antes das repetições oficiais válidas, é realizada **uma execução completa
 
 ### 6.2 As cinco repetições válidas consecutivas
 
-Para cada combinação de **fluxo** e **condição de rede**, são coletadas **cinco repetições válidas consecutivas** (`R1`, `R2`, `R3`, `R4`, `R5`).
+Para cada combinação de **fluxo** e **condição de rede**, são coletadas **cinco repetições válidas consecutivas** ([`R1`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade), [`R2`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade), [`R3`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade), [`R4`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade), [`R5`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade)).
 - Caso uma repetição sofra anomalia externa não atribuível à plataforma (queda de internet externa ou erro do operador), ela é rotulada como Inválida (`X`), descartada e imediatamente refeita até totalizar cinco execuções válidas;
-- Se a anomalia for decorrente da Khan Academy (erro HTTP 500, página travada, script congelado), a repetição é rotulada como Falha (`F`) e computada no denominador de M2.
+- Se a anomalia for decorrente da Khan Academy (erro HTTP 500, página travada, script congelado), a repetição é rotulada como Falha (`F`) e computada no denominador de [`M2`](../fase-2/metricas.md#12-m2-taxa-de-conclusao-dos-fluxos).
 
 ### 6.3 Ordem e sequência de ensaios
 
 Para mitigar efeitos cruzados e garantir padronização, a ordem dos ensaios segue estritamente a sequência:
-1. **Bateria FL1 — Rede Normal:** 1 Aquecimento (`W-FL1-NORM`) + 5 Repetições Válidas (`R1` a `R5`);
-2. **Bateria FL1 — Rede Limitada:** 1 Aquecimento (`W-FL1-LIM`) + 5 Repetições Válidas (`R1` a `R5`);
-3. **Bateria FL2 — Rede Normal:** 1 Aquecimento (`W-FL2-NORM`) + 5 Repetições Válidas (`R1` a `R5`);
-4. **Bateria FL2 — Rede Limitada:** 1 Aquecimento (`W-FL2-LIM`) + 5 Repetições Válidas (`R1` a `R5`);
-5. **Bateria FL3 — Rede Normal:** 1 Aquecimento (`W-FL3-NORM`) + 5 Repetições Válidas (`R1` a `R5`);
-6. **Bateria FL3 — Rede Limitada:** 1 Aquecimento (`W-FL3-LIM`) + 5 Repetições Válidas (`R1` a `R5`).
 
-Totalizam-se 36 execuções no ambiente `A1` (6 de aquecimento e 30 válidas).
+1. **Bateria [`FL1`](../fase-1/escopo-da-avaliacao.md#fluxos) — Rede Normal:** 1 Aquecimento (`W-FL1-NORM`) + 5 Repetições Válidas ([`R1`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) a [`R5`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade));
+2. **Bateria [`FL1`](../fase-1/escopo-da-avaliacao.md#fluxos) — Rede Limitada:** 1 Aquecimento (`W-FL1-LIM`) + 5 Repetições Válidas ([`R1`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) a [`R5`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade));
+3. **Bateria [`FL2`](../fase-1/escopo-da-avaliacao.md#fluxos) — Rede Normal:** 1 Aquecimento (`W-FL2-NORM`) + 5 Repetições Válidas ([`R1`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) a [`R5`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade));
+4. **Bateria [`FL2`](../fase-1/escopo-da-avaliacao.md#fluxos) — Rede Limitada:** 1 Aquecimento (`W-FL2-LIM`) + 5 Repetições Válidas ([`R1`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) a [`R5`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade));
+5. **Bateria [`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos) — Rede Normal:** 1 Aquecimento (`W-FL3-NORM`) + 5 Repetições Válidas ([`R1`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) a [`R5`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade));
+6. **Bateria [`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos) — Rede Limitada:** 1 Aquecimento (`W-FL3-LIM`) + 5 Repetições Válidas ([`R1`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) a [`R5`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade)).
+
+Totalizam-se 36 execuções no ambiente [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes) (6 de aquecimento e 30 válidas).
 
 ### 6.4 Higienização entre repetições
 
@@ -318,10 +320,10 @@ Entre repetições sucessivas da mesma bateria:
 ### 7.1 Critérios de validade de uma execução
 
 Uma execução é considerada válida e elegível quando atende cumulativamente aos seguintes critérios:
-1. Ambiente de teste `A1` operando dentro das especificações de virtualização (4 GB RAM, 4 vCPUs);
+1. Ambiente de teste [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes) operando dentro das especificações de virtualização (4 GB RAM, 4 vCPUs);
 2. Perfil de rede confirmado (Normal ou Limitada com 1.500/750 kbps e 150 ms RTT);
 3. Execução realizada sem aplicativos de terceiros consumindo CPU em segundo plano;
-4. Massa de dados utilizada correspondente exatamente aos valores congelados `D1` a `D6`;
+4. Massa de dados utilizada correspondente exatamente aos valores congelados [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante) a `D6`;
 5. Roteiro passo a passo percorrido na íntegra, sem desvios operacionais.
 
 Se qualquer uma dessas pré-condições for violada, a tentativa é marcada com o código `X` (Inválida) e descartada.
@@ -346,8 +348,8 @@ Para garantir a integridade dos dados coletados, toda anomalia observada é clas
 
 | Atribuição | Evidência observada | Tratamento operacional |
 |---|---|---|
-| **Plataforma Khan Academy** | Erro de script no Console, falha em requisição de API com HTTP 500/503, congelamento reproduzível | Classificada como Falha (`F`) e computada no denominador de M2 |
-| **Ambiente de Testes / Virtualização** | Falha de alocação de memória no host Docker/Winboat, erro de driver gráfico do sistema convidado | Descartada (`X`); reiniciar a máquina virtual e repetir |
+| **Plataforma Khan Academy** | Erro de script no Console, falha em requisição de API com HTTP 500/503, congelamento reproduzível | Classificada como Falha (`F`) e computada no denominador de [`M2`](../fase-2/metricas.md#12-m2-taxa-de-conclusao-dos-fluxos) |
+| **[Ambiente de Testes](ambiente-de-testes.md) / Virtualização** | Falha de alocação de memória no host Docker/Winboat, erro de driver gráfico do sistema convidado | Descartada (`X`); reiniciar a máquina virtual e repetir |
 | **Operador / Avaliador** | Clique em elemento incorreto, desvio de rota, atraso na cronometragem manual | Descartada (`X`); repetir a execução com atenção ao roteiro |
 | **Conexão Externa da Instituição** | Perda total de conectividade com serviços externos fora do escopo da Khan Academy | Descartada (`X`); aguardar o restabelecimento da rede |
 
@@ -355,25 +357,26 @@ Para garantir a integridade dos dados coletados, toda anomalia observada é clas
 
 ## 8. Formulários e modelos de registro
 
-Todos os dados brutos e consolidados da avaliação de desempenho são registrados no documento [Registro de execuções de eficiência de desempenho (M1 a M5)](../fase-4/registro-desempenho.md) [S12](#s12). 
+Todos os dados brutos e consolidados da avaliação de desempenho são registrados no documento [`Registro de execuções de eficiência de desempenho (M1 a M5)`](../fase-4/registro-desempenho.md) [S12](#s12).
 
 A Tabela 11 apresenta a organização das seções de registro.
 
 | Seção do registro | Descrição e conteúdo | Responsável pelo preenchimento |
 |---|---|---|
-| [1. Preparação de A1](../fase-4/registro-desempenho.md#registro-preparacao) | Dados de hardware, versões congeladas e checklist `PD-1` a `PD-10` | Avaliador / Executor |
-| [2. Dados congelados](../fase-4/registro-desempenho.md#registro-dados) | Valores e URLs fixadas de `D1` a `D6` | Avaliador / Executor |
+| [`1. Preparação de A1`](../fase-4/registro-desempenho.md#registro-preparacao) | Dados de hardware, versões congeladas e checklist `PD-1` a `PD-10` | Avaliador / Executor |
+| [2. Dados congelados](../fase-4/registro-desempenho.md#registro-dados) | Valores e URLs fixadas de [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante) a `D6` | Avaliador / Executor |
 | [3. Condições de rede](../fase-4/registro-desempenho.md#registro-rede) | Registro de calibração da rede Normal e parâmetros do Throttling da rede Limitada | Avaliador / Executor |
-| [4. Execuções de FL1](../fase-4/registro-desempenho.md#registro-fl1) | Registros brutos das etapas E1.1–E1.3, M1 a M5, aquecimento e 5 repetições (Normal e Limitada) | Avaliador e Observador |
-| [5. Execuções de FL2](../fase-4/registro-desempenho.md#registro-fl2) | Registros brutos das etapas E2.1–E2.3, M1 a M5, aquecimento e 5 repetições (Normal e Limitada) | Avaliador e Observador |
-| [6. Execuções de FL3](../fase-4/registro-desempenho.md#registro-fl3) | Registros brutos das etapas E3.1–E3.4, M1 a M5, aquecimento e 5 repetições (Normal e Limitada) | Avaliador e Observador |
-| [7. Auditoria Lighthouse](../fase-4/registro-desempenho.md#registro-lighthouse) | Indicadores de laboratório (Performance Score, FCP, LCP, TBT, Speed Index) para `D2`, `D4` e `D5` | Avaliador / Observador |
+| [`4. Execuções de FL1`](../fase-4/registro-desempenho.md#registro-fl1) | Registros brutos das etapas E1.1–E1.3, [`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa) a [`M5`](../fase-2/metricas.md#15-m5-dados-transferidos), aquecimento e 5 repetições (Normal e Limitada) | Avaliador e Observador |
+| [`5. Execuções de FL2`](../fase-4/registro-desempenho.md#registro-fl2) | Registros brutos das etapas E2.1–E2.3, [`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa) a [`M5`](../fase-2/metricas.md#15-m5-dados-transferidos), aquecimento e 5 repetições (Normal e Limitada) | Avaliador e Observador |
+| [`6. Execuções de FL3`](../fase-4/registro-desempenho.md#registro-fl3) | Registros brutos das etapas E3.1–E3.4, [`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa) a [`M5`](../fase-2/metricas.md#15-m5-dados-transferidos), aquecimento e 5 repetições (Normal e Limitada) | Avaliador e Observador |
+| [7. Auditoria Lighthouse](../fase-4/registro-desempenho.md#registro-lighthouse) | Indicadores de laboratório (Performance Score, FCP, LCP, TBT, Speed Index) para [`D2`](../fase-1/requisitos-de-avaliacao.md#requisitante), [`D4`](../fase-1/requisitos-de-avaliacao.md#requisitante) e `D5` | Avaliador / Observador |
 | [8. Ocorrências](../fase-4/registro-desempenho.md#registro-ocorrencias) | Registro detalhado de qualquer falha ou anomalia (`OC-DES-001`, ...) | Avaliador / Observador |
-| [9. Resumo e julgamento](../fase-4/registro-desempenho.md#registro-resumo) | Consolidação estatística (medianas, médias, picos, taxas de conclusão), notas de 0 a 3 e desfecho de D1 | Equipe avaliadora |
+| [9. Resumo e julgamento](../fase-4/registro-desempenho.md#registro-resumo) | Consolidação estatística (medianas, médias, picos, taxas de conclusão), notas de 0 a 3 e desfecho de [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante) | Equipe avaliadora |
 
 *Tabela 11. Organização das seções do registro de execuções de desempenho. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
 **Nomenclatura das evidências:** Os arquivos de evidência gerados durante a coleta seguem o padrão padronizado:
+
 - Arquivo de tráfego de rede: `DES_<fluxo>_<condicao>_<repeticao>_<data>.har` (ex: `DES_FL1_NORM_R1_20261112.har`);
 - Captura de tela: `DES_<fluxo>_<etapa>_<condicao>_<repeticao>_<data>.png` (ex: `DES_FL1_E1.3_NORM_R1_20261112.png`);
 - Relatório Lighthouse: `LH_<fluxo>_<condicao>_<data>.json` (ex: `LH_FL2_LIM_20261112.json`).
@@ -386,13 +389,13 @@ A Tabela 12 reúne as fórmulas aplicadas sobre as repetições válidas para co
 
 | Métrica | Indicador estatístico | Fórmula matemática | Interpretação |
 |---|---|---|---|
-| `M1` | Mediana do tempo observável por etapa | $\text{Mediana}(\Delta t_1, \dots, \Delta t_5)$ | Valor central que separa a metade superior da inferior dos tempos de resposta da etapa |
-| `M1` (apoio) | Percentil 90 do tempo observável | $\text{P90}(\Delta t_1, \dots, \Delta t_5)$ | Tempo abaixo do qual se situam 90% das respostas observadas |
-| `M2` | Taxa de conclusão das tentativas | $100 \times \frac{C}{N}$ | Percentual de tentativas iniciadas que foram concluídas sem falhas |
-| `M3` | Utilização média de CPU | $\text{CPU}_{\text{média}} = \frac{1}{n} \sum_{i=1}^n \text{CPU}_i$ | Carga média demandada da CPU durante o percurso da tarefa |
-| `M3` (apoio) | Pico de utilização de CPU | $\max(\text{CPU}(t))$ | Maior percentual instantâneo demandado durante a execução |
-| `M4` | Pico de utilização de memória | $\max(\text{RAM}(t))$ | Maior volume em MiB alocado para a aba e processo de renderização |
-| `M5` | Volume de dados transferidos | $D = \frac{\text{Bytes Recebidos} + \text{Bytes Enviados}}{1.048.576}$ | Volume total de tráfego de rede gerado para concluir o fluxo |
+| [`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa) | Mediana do tempo observável por etapa | $\text{Mediana}(\Delta t_1, \dots, \Delta t_5)$ | Valor central que separa a metade superior da inferior dos tempos de resposta da etapa |
+| [`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa) (apoio) | Percentil 90 do tempo observável | $\text{P90}(\Delta t_1, \dots, \Delta t_5)$ | Tempo abaixo do qual se situam 90% das respostas observadas |
+| [`M2`](../fase-2/metricas.md#12-m2-taxa-de-conclusao-dos-fluxos) | Taxa de conclusão das tentativas | $100 \times \frac{C}{N}$ | Percentual de tentativas iniciadas que foram concluídas sem falhas |
+| [`M3`](../fase-2/metricas.md#13-m3-utilizacao-de-cpu) | Utilização média de CPU | $\text{CPU}_{\text{média}} = \frac{1}{n} \sum_{i=1}^n \text{CPU}_i$ | Carga média demandada da CPU durante o percurso da tarefa |
+| [`M3`](../fase-2/metricas.md#13-m3-utilizacao-de-cpu) (apoio) | Pico de utilização de CPU | $\max(\text{CPU}(t))$ | Maior percentual instantâneo demandado durante a execução |
+| [`M4`](../fase-2/metricas.md#14-m4-pico-de-memoria) | Pico de utilização de memória | $\max(\text{RAM}(t))$ | Maior volume em MiB alocado para a aba e processo de renderização |
+| [`M5`](../fase-2/metricas.md#15-m5-dados-transferidos) | Volume de dados transferidos | $D = \frac{\text{Bytes Recebidos} + \text{Bytes Enviados}}{1.048.576}$ | Volume total de tráfego de rede gerado para concluir o fluxo |
 
 *Tabela 12. Fórmulas de consolidação estatística das métricas de desempenho. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
@@ -402,41 +405,41 @@ A conversão dos indicadores consolidados nas notas de 0 a 3 obedece rigorosamen
 
 | Métrica | Excelente (3) | Alvo (2) | Mínimo aceitável (1) | Inaceitável (0) |
 |---|---:|---:|---:|---:|
-| **M1 — Tempo observável por etapa** (mediana) | $\le 1\text{ s}$ | $> 1\text{ a } 3\text{ s}$ | $> 3\text{ a } 10\text{ s}$ | $> 10\text{ s}$ |
-| **M2 — Taxa de conclusão dos fluxos** | $100\%$ | $90\% \le x < 100\%$ | $75\% \le x < 90\%$ | $x < 75\%$ |
-| **M3 — Utilização de CPU** (média do fluxo) | $\le 25\%$ | $> 25\text{ a } 50\%$ | $> 50\text{ a } 75\%$ | $> 75\%$ |
-| **M4 — Pico de memória** | $\le 512\text{ MiB}$ | $> 512\text{ a } 1024\text{ MiB}$ | $> 1024\text{ a } 2048\text{ MiB}$ | $> 2048\text{ MiB}$ |
-| **M5 — Dados transferidos** (por fluxo) | $\le 5\text{ MiB}$ | $> 5\text{ a } 10\text{ MiB}$ | $> 10\text{ a } 20\text{ MiB}$ | $> 20\text{ MiB}$ |
+| **[`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa) — Tempo observável por etapa** (mediana) | $\le 1\text{ s}$ | $> 1\text{ a } 3\text{ s}$ | $> 3\text{ a } 10\text{ s}$ | $> 10\text{ s}$ |
+| **[`M2`](../fase-2/metricas.md#12-m2-taxa-de-conclusao-dos-fluxos) — Taxa de conclusão dos fluxos** | $100\%$ | $90\% \le x < 100\%$ | $75\% \le x < 90\%$ | $x < 75\%$ |
+| **[`M3`](../fase-2/metricas.md#13-m3-utilizacao-de-cpu) — Utilização de CPU** (média do fluxo) | $\le 25\%$ | $> 25\text{ a } 50\%$ | $> 50\text{ a } 75\%$ | $> 75\%$ |
+| **[`M4`](../fase-2/metricas.md#14-m4-pico-de-memoria) — Pico de memória** | $\le 512\text{ MiB}$ | $> 512\text{ a } 1024\text{ MiB}$ | $> 1024\text{ a } 2048\text{ MiB}$ | $> 2048\text{ MiB}$ |
+| **[`M5`](../fase-2/metricas.md#15-m5-dados-transferidos) — Dados transferidos** (por fluxo) | $\le 5\text{ MiB}$ | $> 5\text{ a } 10\text{ MiB}$ | $> 10\text{ a } 20\text{ MiB}$ | $> 20\text{ MiB}$ |
 
-*Tabela 13. Níveis de pontuação das métricas de desempenho (M1 a M5). Fonte: Reproduzida de [Critérios de julgamento da Fase 2](../fase-2/criterios-julgamento.md#3-tempo-e-consumo-de-recursos)*
+*Tabela 13. Níveis de pontuação das métricas de desempenho ([`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa) a [`M5`](../fase-2/metricas.md#15-m5-dados-transferidos)). Fonte: Reproduzida de [Critérios de julgamento da Fase 2](../fase-2/criterios-julgamento.md#3-tempo-e-consumo-de-recursos)*
 
 ### 9.3 Julgamento das questões Q1 a Q4 e hipóteses H1 a H4
 
 Conforme a seção 5 de [Critérios de julgamento](../fase-2/criterios-julgamento.md#5-regra-de-julgamento) e a seção 6 de [Questões e hipóteses](../fase-2/questoes-hipoteses.md#6-interpretacao-das-hipoteses):
 
-1. **Questão Q1 e Hipótese H1 (Comportamento temporal):**
-   - **H1:** Prevê que no ambiente `A1`, em cada etapa e condição de rede, o tempo mediano de resposta será de até 3 s e pelo menos 90% das tentativas elegíveis serão concluídas, sem bloqueio de etapa essencial.
-   - **Classificação de H1:** 
-     - *Sustentada na amostra:* se para todas as etapas dos fluxos `FL1` a `FL3`, em ambas as condições de rede, a mediana de M1 $\le 3\text{ s}$, M2 $\ge 90\%$ e não ocorrer bloqueio essencial atribuível à plataforma;
-     - *Não sustentada:* se qualquer etapa apresentar mediana de M1 $> 3\text{ s}$, M2 $< 90\%$ ou houver bloqueio essencial;
+1. **Questão [`Q1`](../fase-2/questoes-hipoteses.md#31-q1-comportamento-temporal) e Hipótese [`H1`](../fase-2/questoes-hipoteses.md#31-q1-comportamento-temporal) (Comportamento temporal):**
+   - **[`H1`](../fase-2/questoes-hipoteses.md#31-q1-comportamento-temporal):** Prevê que no ambiente [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes), em cada etapa e condição de rede, o tempo mediano de resposta será de até 3 s e pelo menos 90% das tentativas elegíveis serão concluídas, sem bloqueio de etapa essencial.
+   - **Classificação de [`H1`](../fase-2/questoes-hipoteses.md#31-q1-comportamento-temporal):**
+     - *Sustentada na amostra:* se para todas as etapas dos fluxos [`FL1`](../fase-1/escopo-da-avaliacao.md#fluxos) a [`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos), em ambas as condições de rede, a mediana de [`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa) $\le 3\text{ s}$, [`M2`](../fase-2/metricas.md#12-m2-taxa-de-conclusao-dos-fluxos) $\ge 90\%$ e não ocorrer bloqueio essencial atribuível à plataforma;
+     - *Não sustentada:* se qualquer etapa apresentar mediana de [`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa) $> 3\text{ s}$, [`M2`](../fase-2/metricas.md#12-m2-taxa-de-conclusao-dos-fluxos) $< 90\%$ ou houver bloqueio essencial;
      - *Inconclusiva:* se houver insuficiência de dados válidos.
-   - **Atendimento de Q1:** Considerada atendida quando M1 e M2 alcançarem nota 2 ou 3 em todas as tarefas e nenhuma etapa essencial estiver impedida.
-2. **Questão Q2 e Hipótese H2 (Utilização de CPU):**
-   - **H2:** Prevê que no ambiente `A1`, a utilização média de CPU será de até 50% em cada execução válida de `FL1` a `FL3`, sem interrupção impeditiva associada a sobrecarga.
-   - **Classificação de H2:** Sustentada se a média de M3 $\le 50\%$ em todas as execuções e não houver travamento por processamento; caso contrário, não sustentada.
-   - **Atendimento de Q2:** Atendida quando M3 atingir nota 2 ou 3.
-3. **Questão Q3 e Hipótese H3 (Utilização de memória):**
-   - **H3:** Prevê que no ambiente `A1`, o pico de memória da sessão/processo monitorado será de até 1.024 MiB em cada execução válida de `FL1` a `FL3`, sem esgotamento de memória.
-   - **Classificação de H3:** Sustentada se o pico individual de M4 em cada repetição for $\le 1024\text{ MiB}$; se qualquer repetição exceder 1.024 MiB, H3 é não sustentada.
-   - **Atendimento de Q3:** Atendida quando M4 obtiver nota 2 ou 3.
-4. **Questão Q4 e Hipótese H4 (Consumo de dados de rede):**
-   - **H4:** Prevê que no ambiente `A1`, cada execução concluída do trecho padronizado de navegação e carregamento transferirá no máximo 10 MiB, com política de cache constante.
-   - **Classificação de H4:** Sustentada se M5 $\le 10\text{ MiB}$ em cada fluxo concluído; caso contrário, não sustentada.
-   - **Atendimento de Q4:** Atendida quando M5 obtiver nota 2 ou 3.
+   - **Atendimento de [`Q1`](../fase-2/questoes-hipoteses.md#31-q1-comportamento-temporal):** Considerada atendida quando [`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa) e [`M2`](../fase-2/metricas.md#12-m2-taxa-de-conclusao-dos-fluxos) alcançarem nota 2 ou 3 em todas as tarefas e nenhuma etapa essencial estiver impedida.
+2. **Questão [`Q2`](../fase-2/questoes-hipoteses.md#32-q2-utilizacao-de-cpu) e Hipótese [`H2`](../fase-2/questoes-hipoteses.md#32-q2-utilizacao-de-cpu) (Utilização de CPU):**
+   - **[`H2`](../fase-2/questoes-hipoteses.md#32-q2-utilizacao-de-cpu):** Prevê que no ambiente [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes), a utilização média de CPU será de até 50% em cada execução válida de [`FL1`](../fase-1/escopo-da-avaliacao.md#fluxos) a [`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos), sem interrupção impeditiva associada a sobrecarga.
+   - **Classificação de [`H2`](../fase-2/questoes-hipoteses.md#32-q2-utilizacao-de-cpu):** Sustentada se a média de [`M3`](../fase-2/metricas.md#13-m3-utilizacao-de-cpu) $\le 50\%$ em todas as execuções e não houver travamento por processamento; caso contrário, não sustentada.
+   - **Atendimento de [`Q2`](../fase-2/questoes-hipoteses.md#32-q2-utilizacao-de-cpu):** Atendida quando [`M3`](../fase-2/metricas.md#13-m3-utilizacao-de-cpu) atingir nota 2 ou 3.
+3. **Questão [`Q3`](../fase-2/questoes-hipoteses.md#33-q3-utilizacao-de-memoria) e Hipótese [`H3`](../fase-2/questoes-hipoteses.md#33-q3-utilizacao-de-memoria) (Utilização de memória):**
+   - **[`H3`](../fase-2/questoes-hipoteses.md#33-q3-utilizacao-de-memoria):** Prevê que no ambiente [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes), o pico de memória da sessão/processo monitorado será de até 1.024 MiB em cada execução válida de [`FL1`](../fase-1/escopo-da-avaliacao.md#fluxos) a [`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos), sem esgotamento de memória.
+   - **Classificação de [`H3`](../fase-2/questoes-hipoteses.md#33-q3-utilizacao-de-memoria):** Sustentada se o pico individual de [`M4`](../fase-2/metricas.md#14-m4-pico-de-memoria) em cada repetição for $\le 1024\text{ MiB}$; se qualquer repetição exceder 1.024 MiB, [`H3`](../fase-2/questoes-hipoteses.md#33-q3-utilizacao-de-memoria) é não sustentada.
+   - **Atendimento de [`Q3`](../fase-2/questoes-hipoteses.md#33-q3-utilizacao-de-memoria):** Atendida quando [`M4`](../fase-2/metricas.md#14-m4-pico-de-memoria) obtiver nota 2 ou 3.
+4. **Questão [`Q4`](../fase-2/questoes-hipoteses.md#34-q4-consumo-de-dados-de-rede) e Hipótese [`H4`](../fase-2/questoes-hipoteses.md#34-q4-consumo-de-dados-de-rede) (Consumo de dados de rede):**
+   - **[`H4`](../fase-2/questoes-hipoteses.md#34-q4-consumo-de-dados-de-rede):** Prevê que no ambiente [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes), cada execução concluída do trecho padronizado de navegação e carregamento transferirá no máximo 10 MiB, com política de cache constante.
+   - **Classificação de [`H4`](../fase-2/questoes-hipoteses.md#34-q4-consumo-de-dados-de-rede):** Sustentada se [`M5`](../fase-2/metricas.md#15-m5-dados-transferidos) $\le 10\text{ MiB}$ em cada fluxo concluído; caso contrário, não sustentada.
+   - **Atendimento de [`Q4`](../fase-2/questoes-hipoteses.md#34-q4-consumo-de-dados-de-rede):** Atendida quando [`M5`](../fase-2/metricas.md#15-m5-dados-transferidos) obtiver nota 2 ou 3.
 
 ### 9.4 Julgamento do objetivo G1 (Eficiência de desempenho)
 
-O objetivo **G1 — Eficiência de Desempenho** é considerado **atendido** se e somente se **todas as quatro questões (`Q1`, `Q2`, `Q3` e `Q4`) forem atendidas** (nota 2 ou 3 em seus indicadores principais e nenhuma tarefa essencial impedida). Caso qualquer questão receba nota 0 ou 1, G1 é considerado não atendido ou atendido apenas no nível mínimo aceitável.
+O objetivo **[`G1`](../fase-2/objetivos.md#g1) — Eficiência de Desempenho** é considerado **atendido** se e somente se **todas as quatro questões ([`Q1`](../fase-2/questoes-hipoteses.md#31-q1-comportamento-temporal), [`Q2`](../fase-2/questoes-hipoteses.md#32-q2-utilizacao-de-cpu), [`Q3`](../fase-2/questoes-hipoteses.md#33-q3-utilizacao-de-memoria) e [`Q4`](../fase-2/questoes-hipoteses.md#34-q4-consumo-de-dados-de-rede)) forem atendidas** (nota 2 ou 3 em seus indicadores principais e nenhuma tarefa essencial impedida). Caso qualquer questão receba nota 0 ou 1, [`G1`](../fase-2/objetivos.md#g1) é considerado não atendido ou atendido apenas no nível mínimo aceitável.
 
 ### 9.5 Consistência metodológica com as Fases 1 e 2
 
@@ -444,10 +447,10 @@ A Tabela 14 demonstra a estrita consistência entre as especificações conceitu
 
 | Elemento da Fase 1 ou 2 | Especificação de origem | Operacionalização na Fase 3 | Avaliação de consistência |
 |---|---|---|---|
-| **Escopo de fluxos** | `FL1`, `FL2` e `FL3` como centrais de desempenho | Exclusão de `FL4` dos procedimentos de M1–M5 | Consistência total com o Escopo da Fase 1 [S5](#s5) |
-| **Ambiente de ensaio** | Ambiente de referência `A1` em computador com 4 GB RAM | Virtualização Winboat/Docker com perfil fixo de 4 GB RAM e 4 vCPUs | Consistência total com os Requisitos [S4](#s4) e Ambiente [S10](#s10) |
+| **Escopo de fluxos** | [`FL1`](../fase-1/escopo-da-avaliacao.md#fluxos), [`FL2`](../fase-1/escopo-da-avaliacao.md#fluxos) e [`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos) como centrais de desempenho | Exclusão de [`FL4`](../fase-1/escopo-da-avaliacao.md#fluxos) dos procedimentos de [`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa)–[`M5`](../fase-2/metricas.md#15-m5-dados-transferidos) | Consistência total com o Escopo da Fase 1 [S5](#s5) |
+| **Ambiente de ensaio** | Ambiente de referência [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes) em computador com 4 GB RAM | Virtualização Winboat/Docker com perfil fixo de 4 GB RAM e 4 vCPUs | Consistência total com os Requisitos [S4](#s4) e Ambiente [S10](#s10) |
 | **Massa de testes** | 1 aquecimento + 5 repetições por tarefa e rede | Bateria de 1 aquecimento descartado e 5 repetições válidas em rede Normal e Limitada | Atendimento rigoroso ao cronograma amostral |
-| **Fichas M1 a M5** | Definições, fórmulas, fontes e unidades da Fase 2 | Instrumentação direta no DevTools e Task Manager com as mesmas fórmulas | Coerência matemática e operacional idêntica |
+| **Fichas [`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa) a [`M5`](../fase-2/metricas.md#15-m5-dados-transferidos)** | Definições, fórmulas, fontes e unidades da Fase 2 | Instrumentação direta no DevTools e Task Manager com as mesmas fórmulas | Coerência matemática e operacional idêntica |
 | **Critérios e limiares** | Faixas de 1/3/10 s, 25/50/75%, 512/1024/2048 MiB, 5/10/20 MiB | Adoção direta dos limiares da Tabela 3 da Fase 2 para pontuação de 0 a 3 | Rastreabilidade total sem divergência de faixas |
 | **Regras de hipóteses** | Estados: Sustentada, Não sustentada, Inconclusiva | Aplicação explícita dos estados de interpretação da seção 6 da Fase 2 | Conformidade integral |
 
@@ -455,30 +458,30 @@ A Tabela 14 demonstra a estrita consistência entre as especificações conceitu
 
 ### 9.6 Da medição à decisão D1 e ações para o requisitante
 
-Em alinhamento ao propósito prático da avaliação [S4](#s4), a Tabela 15 mapeia como os resultados obtidos nas medições de desempenho se convertem em desfechos da decisão `D1` e orientam ações para a coordenação escolar.
+Em alinhamento ao propósito prático da avaliação [S4](#s4), a Tabela 15 mapeia como os resultados obtidos nas medições de desempenho se convertem em desfechos da decisão [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante) e orientam ações para a coordenação escolar.
 
-| Resultado consolidado de G1 | Desfecho para a Decisão `D1` | Ação prática recomendada à coordenação escolar |
+| Resultado consolidado de [`G1`](../fase-2/objetivos.md#g1) | Desfecho para a Decisão [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante) | Ação prática recomendada à coordenação escolar |
 |---|---|---|
-| **Q1 a Q4 atendidas plenamente** (Notas 2 ou 3 em rede Normal e Limitada) | **Recomendar sem ressalvas de desempenho** | Adotar a plataforma no laboratório e autorizar o uso pedagógico inclusive em horários de pico de rede |
-| **Q1 a Q4 atendidas em rede Normal, mas com limitações (Nota 1) em rede Limitada** | **Recomendar com ressalvas de conectividade** | Adotar a plataforma, mas instruir os professores a não rodar videoaulas simultâneas em turmas grandes ou escalonar o uso |
-| **Falha em Q1 (M1 > 10 s ou falhas recorrentes em rede limitada)** | **Recomendar com restrições severas** | Restringir o uso aos exercícios (`FL3`), desaconselhando o uso de videoaulas (`FL2`) na infraestrutura da escola |
-| **Falha em Q2 ou Q3 (Esgotamento de CPU ou memória > 2048 MiB)** | **Não recomendar nos computadores atuais** | Suspender a adoção da plataforma web até que a escola realize *upgrade* de hardware ou adote outro método |
+| **[`Q1`](../fase-2/questoes-hipoteses.md#31-q1-comportamento-temporal) a [`Q4`](../fase-2/questoes-hipoteses.md#34-q4-consumo-de-dados-de-rede) atendidas plenamente** (Notas 2 ou 3 em rede Normal e Limitada) | **Recomendar sem ressalvas de desempenho** | Adotar a plataforma no laboratório e autorizar o uso pedagógico inclusive em horários de pico de rede |
+| **[`Q1`](../fase-2/questoes-hipoteses.md#31-q1-comportamento-temporal) a [`Q4`](../fase-2/questoes-hipoteses.md#34-q4-consumo-de-dados-de-rede) atendidas em rede Normal, mas com limitações (Nota 1) em rede Limitada** | **Recomendar com ressalvas de conectividade** | Adotar a plataforma, mas instruir os professores a não rodar videoaulas simultâneas em turmas grandes ou escalonar o uso |
+| **Falha em [`Q1`](../fase-2/questoes-hipoteses.md#31-q1-comportamento-temporal) ([`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa) > 10 s ou falhas recorrentes em rede limitada)** | **Recomendar com restrições severas** | Restringir o uso aos exercícios ([`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos)), desaconselhando o uso de videoaulas ([`FL2`](../fase-1/escopo-da-avaliacao.md#fluxos)) na infraestrutura da escola |
+| **Falha em [`Q2`](../fase-2/questoes-hipoteses.md#32-q2-utilizacao-de-cpu) ou [`Q3`](../fase-2/questoes-hipoteses.md#33-q3-utilizacao-de-memoria) (Esgotamento de CPU ou memória > 2048 MiB)** | **Não recomendar nos computadores atuais** | Suspender a adoção da plataforma web até que a escola realize *upgrade* de hardware ou adote outro método |
 | **Dados inconclusivos ou ensaios incompletos** | **Inconclusivo** | Não tomar decisão de adoção antes de concluir as baterias de teste |
 
-*Tabela 15. Conversão dos resultados de desempenho em desfechos de D1 e ações escolares. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
+*Tabela 15. Conversão dos resultados de desempenho em desfechos de [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante) e ações escolares. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
 ## 10. Rastreabilidade com a issue #25 e critérios QSW
 
-A Tabela 16 relaciona as tarefas e critérios de aceite de desempenho da issue #25 [S11](#s11) ao atendimento neste artefato.
+A Tabela 16 relaciona as tarefas e critérios de aceite de desempenho da [`issue #25`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/25) [S11](#s11) ao atendimento neste artefato.
 
-| Item da Tarefa 1 da issue #25 | Atendimento neste artefato |
+| Item da Tarefa 1 da [`issue #25`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/25) | Atendimento neste artefato |
 |---|---|
-| Definir procedimentos para avaliação dos fluxos FL1, FL2 e FL3 | [Seção 1](#1-escopo-e-principios-da-avaliacao-de-desempenho) e [Seção 5](#5-roteiros-passo-a-passo-com-marcos-temporais) |
-| Especificar métodos e instrumentos para M1 (Tempo observável) | [Seção 4.1](#41-procedimento-de-m1-tempo-observavel-por-etapa) e [Seção 5](#5-roteiros-passo-a-passo-com-marcos-temporais) |
-| Especificar métodos e instrumentos para M2 (Taxa de conclusão) | [Seção 4.2](#42-procedimento-de-m2-taxa-de-conclusao-das-tentativas) |
-| Especificar métodos e instrumentos para M3 (Utilização de CPU) | [Seção 4.3](#43-procedimento-de-m3-utilizacao-de-cpu) |
-| Especificar métodos e instrumentos para M4 (Utilização de memória) | [Seção 4.4](#44-procedimento-de-m4-pico-de-memoria) |
-| Especificar métodos e instrumentos para M5 (Dados transferidos) | [Seção 4.5](#45-procedimento-de-m5-dados-transferidos) |
+| Definir procedimentos para avaliação dos fluxos [`FL1`](../fase-1/escopo-da-avaliacao.md#fluxos), [`FL2`](../fase-1/escopo-da-avaliacao.md#fluxos) e [`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos) | [Seção 1](#1-escopo-e-principios-da-avaliacao-de-desempenho) e [Seção 5](#5-roteiros-passo-a-passo-com-marcos-temporais) |
+| Especificar métodos e instrumentos para [`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa) (Tempo observável) | [Seção 4.1](#41-procedimento-de-m1-tempo-observavel-por-etapa) e [Seção 5](#5-roteiros-passo-a-passo-com-marcos-temporais) |
+| Especificar métodos e instrumentos para [`M2`](../fase-2/metricas.md#12-m2-taxa-de-conclusao-dos-fluxos) (Taxa de conclusão) | [Seção 4.2](#42-procedimento-de-m2-taxa-de-conclusao-das-tentativas) |
+| Especificar métodos e instrumentos para [`M3`](../fase-2/metricas.md#13-m3-utilizacao-de-cpu) (Utilização de CPU) | [Seção 4.3](#43-procedimento-de-m3-utilizacao-de-cpu) |
+| Especificar métodos e instrumentos para [`M4`](../fase-2/metricas.md#14-m4-pico-de-memoria) (Utilização de memória) | [Seção 4.4](#44-procedimento-de-m4-pico-de-memoria) |
+| Especificar métodos e instrumentos para [`M5`](../fase-2/metricas.md#15-m5-dados-transferidos) (Dados transferidos) | [Seção 4.5](#45-procedimento-de-m5-dados-transferidos) |
 | Descrever instruções de execução (preparação, início, término, registro) | [Seção 3.4](#34-preparacao-do-ambiente-checklist-pd-1-a-pd-10), [Seção 5](#5-roteiros-passo-a-passo-com-marcos-temporais) e [Seção 6](#6-protocolo-experimental-aquecimento-e-repeticoes) |
 | Definir procedimentos para DevTools, Lighthouse e monitores de recursos | [Seção 3.3](#33-instrumentos-de-medicao-e-diagnostico) e [Seção 4.6](#46-procedimento-de-auditoria-complementar-com-lighthouse) |
 | Documentar condições de rede normal e limitada | [Seção 3.2](#32-perfis-de-conectividade-de-rede) (Tabela 4) |
@@ -486,24 +489,24 @@ A Tabela 16 relaciona as tarefas e critérios de aceite de desempenho da issue #
 | Definir critérios de validade, sucesso, falha e interrupção | [Seção 7](#7-validade-sucesso-falha-e-interrupcao) |
 | Roteiros passo a passo por grupo de testes | [Seção 5](#5-roteiros-passo-a-passo-com-marcos-temporais) (Tabelas 7, 8 e 9) |
 | Formulários e modelos de registro | [Seção 8](#8-formularios-e-modelos-de-registro) e artefato [registro-desempenho.md](../fase-4/registro-desempenho.md) |
-| Rastreabilidade com Q1–Q4, H1–H4 e M1–M5 | [Seção 2](#2-rastreabilidade-com-as-fases-1-e-2) (Tabelas 2 e 3) e [Seção 9.3](#93-julgamento-das-questoes-q1-a-q4-e-hipoteses-h1-a-h4) |
-| Cálculo e interpretação conforme critérios de julgamento | [Seção 9.1](#91-formulas-e-consolidacao-estatistica) e [Seção 9.2](#92-conversao-em-notas-e-tabelas-de-julgamento) |
+| Rastreabilidade com [`Q1`](../fase-2/questoes-hipoteses.md#31-q1-comportamento-temporal)–[`Q4`](../fase-2/questoes-hipoteses.md#34-q4-consumo-de-dados-de-rede), [`H1`](../fase-2/questoes-hipoteses.md#31-q1-comportamento-temporal)–[`H4`](../fase-2/questoes-hipoteses.md#34-q4-consumo-de-dados-de-rede) e [`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa)–[`M5`](../fase-2/metricas.md#15-m5-dados-transferidos) | [Seção 2](#2-rastreabilidade-com-as-fases-1-e-2) (Tabelas 2 e 3) e [Seção 9.3](#93-julgamento-das-questoes-q1-a-q4-e-hipoteses-h1-a-h4) |
+| Cálculo e interpretação conforme [critérios de julgamento](../fase-2/criterios-julgamento.md) | [Seção 9.1](#91-formulas-e-consolidacao-estatistica) e [Seção 9.2](#92-conversao-em-notas-e-tabelas-de-julgamento) |
 | Consistência com o escopo da Fase 1 | [Seção 1](#1-escopo-e-principios-da-avaliacao-de-desempenho) e [Seção 9.5](#95-consistencia-metodologica-com-as-fases-1-e-2) |
 
-*Tabela 16. Rastreabilidade com os itens da Tarefa 1 da issue #25. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
+*Tabela 16. Rastreabilidade com os itens da Tarefa 1 da [`issue #25`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/25). Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
 A Tabela 17 detalha como os critérios de avaliação formal QSW da Fase 3 [S5](#s5) e da Fase 4 [S13](#s13) são contemplados.
 
 | Critério QSW | Contribuição deste artefato | Seção correspondente |
 |---|---|---|
 | `F3-C1` Método e repetibilidade | Instruções passo a passo precisas, marcos de temporização objetivos, regras inequívocas de sucesso e descarte | [Seções 4](#4-procedimentos-especificos-por-metrica), [5](#5-roteiros-passo-a-passo-com-marcos-temporais), [6](#6-protocolo-experimental-aquecimento-e-repeticoes) e [7](#7-validade-sucesso-falha-e-interrupcao) |
-| `F3-C2` Recursos e ambiente | Especificação minuciosa do ambiente virtualizado `A1`, perfis de rede calibrados, instrumentos detalhados e massa de dados | [Seção 3](#3-ambiente-de-teste-instrumentos-e-preparacao) e [Ambiente de testes](ambiente-de-testes.md) |
-| `F3-C3` Cronograma | Cronograma de trabalho realista integrado à Fase 4 e à Entrega 2 | [Seção 12](#12-cronograma-de-execucao) |
+| `F3-C2` Recursos e ambiente | Especificação minuciosa do ambiente virtualizado [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes), perfis de rede calibrados, instrumentos detalhados e massa de dados | [Seção 3](#3-ambiente-de-teste-instrumentos-e-preparacao) e [Ambiente de testes](ambiente-de-testes.md) |
+| `F3-C3` Cronograma | Cronograma de trabalho realista integrado à Fase 4 e à Entrega 2 | [`Cronograma da Fase 4`](cronograma.md#2-execucao-e-analise-da-fase-4) |
 | `F3-C7` GitPage da equipe | Integração navegável na GitPage, hiperlinks estruturados com Fases 1, 2 e 3, ausência de ícones informais | Estrutura geral do documento |
 | `F3-C8` Consistência Fases 2 e 3 | Matriz de consistência demonstrando perfeita aderência às métricas, questões e limiares da Fase 2 | [Seção 9.5](#95-consistencia-metodologica-com-as-fases-1-e-2) (Tabela 14) |
 | `F4-C1` Obtenção das medidas | Procedimentos padronizados para execução fiel por qualquer avaliador na Fase 4 | [Seção 4](#4-procedimentos-especificos-por-metrica) e [Seção 5](#5-roteiros-passo-a-passo-com-marcos-temporais) |
 | `F4-C2` Registro e dados brutos | Modelos de planilhas em Markdown indexadas por repetição com vínculos de evidências (`.har`, capturas) | [Registro de desempenho](../fase-4/registro-desempenho.md) |
-| `F4-C3` Análise estatística e GQM | Fórmulas explícitas de mediana, P90, média, pico e regras de julgamento de H1 a H4 | [Seção 9](#9-calculo-interpretacao-e-julgamento) |
+| `F4-C3` Análise estatística e GQM | Fórmulas explícitas de mediana, P90, média, pico e regras de julgamento de [`H1`](../fase-2/questoes-hipoteses.md#31-q1-comportamento-temporal) a [`H4`](../fase-2/questoes-hipoteses.md#34-q4-consumo-de-dados-de-rede) | [Seção 9](#9-calculo-interpretacao-e-julgamento) |
 
 *Tabela 17. Contribuição deste artefato aos critérios de avaliação QSW. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
@@ -513,31 +516,12 @@ A Tabela 18 consolida os pontos operacionais identificados que devem ser ratific
 
 | ID | Ponto em aberto | Impacto na medição | Proposta de encaminhamento |
 |---|---|---|---|
-| `PD-P1` | Definição exata das URLs da massa congelada `D1` a `D5` | Equivalência dos testes de FL1, FL2 e FL3 | Congelar as URLs na sessão de preparação conjunta em 09/11 |
+| `PD-P1` | Definição exata das URLs da massa congelada [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante) a `D5` | Equivalência dos testes de [`FL1`](../fase-1/escopo-da-avaliacao.md#fluxos), [`FL2`](../fase-1/escopo-da-avaliacao.md#fluxos) e [`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos) | Congelar as URLs na sessão de preparação conjunta em 09/11 |
 | `PD-P2` | Armazenamento dos arquivos `.har` e vídeos brutos | Volume de armazenamento e auditoria da Fase 4 | Criar diretório dedicado no repositório ou pasta em nuvem compartilhada e indexar nas tabelas |
-| `PD-P3` | Política de buffer de vídeo em FL2 (YouTube player) | Variação de dados transferidos em M5 | Pausar rigorosamente aos 5 segundos de execução para impedir download em segundo plano do restante do vídeo |
+| `PD-P3` | Política de buffer de vídeo em [`FL2`](../fase-1/escopo-da-avaliacao.md#fluxos) (YouTube player) | Variação de dados transferidos em [`M5`](../fase-2/metricas.md#15-m5-dados-transferidos) | Pausar rigorosamente aos 5 segundos de execução para impedir download em segundo plano do restante do vídeo |
 | `PD-P4` | Validação do perfil de limitação emulada | Fidelidade ao cenário escolar | Executar teste piloto com o Throttling do DevTools e validar taxas no painel Network |
 
 *Tabela 18. Pontos pendentes de desempenho e decisões da equipe. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
-
-## 12. Cronograma de execução
-
-A Tabela 19 detalha a distribuição das atividades de eficiência de desempenho integradas ao cronograma geral da Fase 4.
-
-| Data prevista | Atividade de avaliação | Entregável / Produto | Responsáveis |
-|---|---|---|---|
-| 09/11/2026 | Resolução dos pontos pendentes (`PD-P1` a `PD-P4`) e congelamento da massa `D1`–`D6` | Tabela de dados congelados preenchida | Toda a equipe |
-| 10/11/2026 | Ensaio piloto não oficial no ambiente `A1` para calibração das ferramentas e roteiros | Roteiros validados e ajustes operacionais finalizados | [José Augusto](https://github.com/JAugustoM) e [Pedro Lucas](https://github.com/Pwdrinho) |
-| 11/11/2026 | Execução oficial das baterias de `FL1` e `FL2` sob Rede Normal (aquecimento + 5 repetições) | Registros brutos, arquivos `.har` e capturas | [José Augusto](https://github.com/JAugustoM) e [Pedro Lucas](https://github.com/Pwdrinho) |
-| 12/11/2026 | Execução oficial das baterias de `FL3` sob Rede Normal e `FL1` sob Rede Limitada | Registros brutos, arquivos `.har` e capturas | [José Augusto](https://github.com/JAugustoM) e [Pedro Lucas](https://github.com/Pwdrinho) |
-| 13/11/2026 | Execução oficial das baterias de `FL2` e `FL3` sob Rede Limitada e auditoria complementar Lighthouse | Registros brutos e relatórios Lighthouse exportados | [José Augusto](https://github.com/JAugustoM) e [Pedro Lucas](https://github.com/Pwdrinho) |
-| 14/11/2026 | Repetição de ensaios com anomalias externas (se houver) e consolidação da planilha bruta | Planilha de dados brutos consolidada | Toda a equipe |
-| 15/11/2026 | Consolidação estatística: cálculo das medianas, P90, médias de CPU, picos de RAM e tráfego M5 | Resumo estatístico e notas de 0 a 3 | [José Augusto](https://github.com/JAugustoM) e [Pedro Lucas](https://github.com/Pwdrinho) |
-| 16/11/2026 | Confronto com H1–H4, julgamento de Q1–Q4 e G1 e redação dos desfechos para D1 | Texto analítico para o artigo científico da disciplina | Toda a equipe |
-| 17/11/2026 | Revisão por pares, cruzamento de dados com a adaptabilidade e fechamento dos relatórios | Documentos finalizados | Toda a equipe |
-| 18/11/2026 | **Entrega 2 da disciplina** | Artigo e GitPage completos | Toda a equipe |
-
-*Tabela 19. Cronograma de execução da avaliação de desempenho na Fase 4. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
 ## Referências
 
@@ -555,7 +539,7 @@ A Tabela 19 detalha a distribuição das atividades de eficiência de desempenho
 
 <a id="s4"></a>
 
-> [S4] Requisitos de avaliação — Fase 1. Requisitos R1–R5 e decisões D1–D4. Disponível em: [Requisitos de avaliação](../fase-1/requisitos-de-avaliacao.md).
+> [S4] Requisitos de avaliação — Fase 1. Requisitos [`R1`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade)–[`R5`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) e decisões [`D1`](../fase-1/requisitos-de-avaliacao.md#requisitante)–[`D4`](../fase-1/requisitos-de-avaliacao.md#requisitante). Disponível em: [Requisitos de avaliação](../fase-1/requisitos-de-avaliacao.md).
 
 <a id="s5"></a>
 
@@ -563,15 +547,15 @@ A Tabela 19 detalha a distribuição das atividades de eficiência de desempenho
 
 <a id="s6"></a>
 
-> [S6] Objetivos de medição — Fase 2. Objetivo G1. Disponível em: [Objetivos de medição](../fase-2/objetivos.md#g1).
+> [S6] Objetivos de medição — Fase 2. Objetivo [`G1`](../fase-2/objetivos.md#g1). Disponível em: [Objetivos de medição](../fase-2/objetivos.md#g1).
 
 <a id="s7"></a>
 
-> [S7] Questões e hipóteses — Fase 2. Questões Q1–Q4 e Hipóteses H1–H4. Disponível em: [Questões e hipóteses](../fase-2/questoes-hipoteses.md#3-g1-eficiencia-de-desempenho).
+> [S7] Questões e hipóteses — Fase 2. Questões [`Q1`](../fase-2/questoes-hipoteses.md#31-q1-comportamento-temporal)–[`Q4`](../fase-2/questoes-hipoteses.md#34-q4-consumo-de-dados-de-rede) e Hipóteses [`H1`](../fase-2/questoes-hipoteses.md#31-q1-comportamento-temporal)–[`H4`](../fase-2/questoes-hipoteses.md#34-q4-consumo-de-dados-de-rede). Disponível em: [Questões e hipóteses](../fase-2/questoes-hipoteses.md#3-g1-eficiencia-de-desempenho).
 
 <a id="s8"></a>
 
-> [S8] Métricas — Fase 2. Fichas de M1 a M5. Disponível em: [Métricas](../fase-2/metricas.md#1-metricas-detalhadas).
+> [S8] Métricas — Fase 2. Fichas de [`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa) a [`M5`](../fase-2/metricas.md#15-m5-dados-transferidos). Disponível em: [Métricas](../fase-2/metricas.md#1-metricas-detalhadas).
 
 <a id="s9"></a>
 
@@ -587,7 +571,7 @@ A Tabela 19 detalha a distribuição das atividades de eficiência de desempenho
 
 <a id="s12"></a>
 
-> [S12] Registro de execuções de eficiência de desempenho (M1 a M5) — Fase 3. Disponível em: [Registro de desempenho](../fase-4/registro-desempenho.md).
+> [S12] Registro de execuções de eficiência de desempenho ([`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa) a [`M5`](../fase-2/metricas.md#15-m5-dados-transferidos)) — Fase 3. Disponível em: [Registro de desempenho](../fase-4/registro-desempenho.md).
 
 <a id="s13"></a>
 
@@ -597,5 +581,7 @@ A Tabela 19 detalha a distribuição das atividades de eficiência de desempenho
 
 | Versão | Data | Descrição | Responsável | Revisor |
 |:---:|:---:|---|---|---|
-| 1.0 | 08/11/2026 | Elaboração inicial dos procedimentos de eficiência de desempenho (M1 a M5), abrangendo os fluxos FL1 a FL3, métodos, instrumentos, perfis de rede, roteiros, critérios de validade e rastreabilidade total com as Fases 1 e 2. | [José Augusto](https://github.com/JAugustoM) | [Pedro Lucas](https://github.com/Pwdrinho) |
-| 1.1 | 13/11/2026 | Supressão da medida de legenda em FL2 (redefinindo E2.3 como abertura da transcrição em consonância com a massa D4) e ajuste do marco de temporização da dica automática em FL3 (E3.2). | [José Augusto](https://github.com/JAugustoM) | |
+| 1.0 | 08/11/2026 | Elaboração inicial dos procedimentos de eficiência de desempenho ([`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa) a [`M5`](../fase-2/metricas.md#15-m5-dados-transferidos)), abrangendo os fluxos [`FL1`](../fase-1/escopo-da-avaliacao.md#fluxos) a [`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos), métodos, instrumentos, perfis de rede, roteiros, critérios de validade e rastreabilidade total com as Fases 1 e 2. | [José Augusto](https://github.com/JAugustoM) | [Pedro Lucas](https://github.com/Pwdrinho) |
+| 1.1 | 13/11/2026 | Supressão da medida de legenda em [`FL2`](../fase-1/escopo-da-avaliacao.md#fluxos) (redefinindo E2.3 como abertura da transcrição em consonância com a massa [`D4`](../fase-1/requisitos-de-avaliacao.md#requisitante)) e ajuste do marco de temporização da dica automática em [`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos) (E3.2). | [José Augusto](https://github.com/JAugustoM) | [Pedro Lucas](https://github.com/Pwdrinho) |
+| 1.2 | 15/11/2026 | Inclusão dos links para métricas, questões, hipóteses, fluxos e ambientes e padronização do destaque dos identificadores vinculados. | [Camila Silva](https://github.com/CamilaSilvaC) e [Geovanna Alves](https://github.com/GeovannaUmbelino) | [Pedro Lucas](https://github.com/Pwdrinho) |
+| 1.3 | 15/11/2026 | Remoção do cronograma de execução do procedimento e atualização da referência para o cronograma consolidado. | [Camila Silva](https://github.com/CamilaSilvaC) e [Geovanna Alves](https://github.com/GeovannaUmbelino) | [Pedro Lucas](https://github.com/Pwdrinho) |

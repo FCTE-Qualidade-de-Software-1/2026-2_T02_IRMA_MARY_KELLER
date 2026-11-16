@@ -347,7 +347,7 @@ A Tabela 19 documenta a conversão dos achados no desfecho da decisão `D1` e or
 | Versão | Data | Descrição | Responsável | Revisor |
 | :----: | :--: | --------- | ----------- | ------- |
 | 1.0 | 08/11/2026 | Estruturação inicial das planilhas e formulários de registro para eficiência de desempenho (M1 a M5), sem resultados coletados. | [José Augusto](https://github.com/JAugustoM) | [Pedro Lucas](https://github.com/Pwdrinho) |
-| 1.1 | 11/11/2026 | Congelamento do ambiente de testes e realização dos testes sintéticos com Lighthouse | [José Augusto](https://github.com/JAugustoM) | |
-| 1.2 | 13/11/2026 | Preenchimento dos dados brutos das baterias manuais (Tabelas 5 a 10), registro de ocorrências (Tabela 12) e consolidação estatística com julgamento de hipóteses e decisão D1 (Capítulo 9). | [José Augusto](https://github.com/JAugustoM) | |
-| 1.3 | 13/11/2026 | Migração do documento para a Fase 4 (`docs/fase-4/`) com atualização integral dos links relativos e vínculos de evidências. | [José Augusto](https://github.com/JAugustoM) | |
-| 1.4 | 15/11/2026 | Adiciona link do drive com as evidências em vídeo | [José Augusto](https://github.com/JAugustoM) | |
+| 1.1 | 11/11/2026 | Congelamento do ambiente de testes e realização dos testes sintéticos com Lighthouse | [José Augusto](https://github.com/JAugustoM) | [Pedro Lucas](https://github.com/Pwdrinho) |
+| 1.2 | 13/11/2026 | Preenchimento dos dados brutos das baterias manuais (Tabelas 5 a 10), registro de ocorrências (Tabela 12) e consolidação estatística com julgamento de hipóteses e decisão D1 (Capítulo 9). | [José Augusto](https://github.com/JAugustoM) | [Pedro Lucas](https://github.com/Pwdrinho) |
+| 1.3 | 13/11/2026 | Migração do documento para a Fase 4 (`docs/fase-4/`) com atualização integral dos links relativos e vínculos de evidências. | [José Augusto](https://github.com/JAugustoM) | [Pedro Lucas](https://github.com/Pwdrinho) |
+| 1.4 | 15/11/2026 | Adiciona link do drive com as evidências em vídeo | [José Augusto](https://github.com/JAugustoM) | [Pedro Lucas](https://github.com/Pwdrinho) |
