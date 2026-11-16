@@ -402,8 +402,6 @@
     
       
     
-      
-    
     <ol class="khan-trilha__passos">
       
         
@@ -508,19 +506,9 @@
       
         
         <li class="khan-trilha__passo khan-trilha__passo--pendente">
-          <a href="../registro-adaptabilidade/">
-            <span class="khan-trilha__bolinha">
-              11
-            </span>
-            <span>Registro de Execução Adaptabilidade</span>
-          </a>
-        </li>
-      
-        
-        <li class="khan-trilha__passo khan-trilha__passo--pendente">
           <a href="../procedimentos-acessibilidade-apreensibilidade/">
             <span class="khan-trilha__bolinha">
-              12
+              11
             </span>
             <span>Procedimentos Acessibilidade e Apreensibilidade</span>
           </a>
@@ -1060,21 +1048,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#11-pontos-pendentes-e-decisoes-da-equipe" class="md-nav__link">
+  <a href="#11-cronograma-de-execucao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        11. Pontos pendentes e decisões da equipe
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#12-cronograma-de-execucao" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        12. Cronograma de execução
+        11. Cronograma de execução
       
     </span>
   </a>
@@ -1124,10 +1101,10 @@
 
 
 <h1 id="procedimentos-de-avaliacao-de-adaptabilidade-m6-e-m7">Procedimentos de avaliação de adaptabilidade (M6 e M7)<a class="headerlink" href="#procedimentos-de-avaliacao-de-adaptabilidade-m6-e-m7" title="Link para esta seção">&para;</a></h1>
-<p><strong>Versão 1.0</strong></p>
+<p><strong>Versão 1.1</strong></p>
 <p>Este artefato define como será avaliada a <strong>adaptabilidade</strong> da versão web da Khan Academy em computadores, subcaracterística da <strong>portabilidade</strong> no modelo da ISO/IEC 25010:2011 <a href="#s1">S1</a>, característica priorizada na <a href="../../fase-1/">Fase 1</a> <a href="#s4">S4</a>. Ele especifica os procedimentos de obtenção das métricas <a href="../../fase-2/metricas/#16-m6-execucao-por-ambiente"><code>M6</code></a> (execução por ambiente) e <a href="../../fase-2/metricas/#17-m7-adaptacao-ao-tamanho-da-janela"><code>M7</code></a> (adaptação ao tamanho da janela) <a href="#s8">S8</a>, que respondem às questões <a href="../../fase-2/questoes-hipoteses/#41-q5-adaptacao-entre-sistemas-operacionais-e-navegadores"><code>Q5</code></a> e <a href="../../fase-2/questoes-hipoteses/#42-q6-adaptacao-a-tamanhos-de-janela"><code>Q6</code></a> <a href="#s7">S7</a> do objetivo <a href="../../fase-2/objetivos/#g2"><code>G2</code></a> <a href="#s6">S6</a>, estruturado pela abordagem <em>Goal–Question–Metric</em> (GQM) <a href="#s3">S3</a>. A Fase 2 propôs as métricas com a ISO/IEC 25023:2016 como referência <a href="#s2">S2</a>, sem transcrevê-la.</p>
 <p>O documento atende à parte de adaptabilidade da issue #25 (<em>[Fase 3] Definição dos procedimentos de avaliação de desempenho e adaptabilidade</em>) <a href="#s16">S16</a> e usa o <a href="../ambiente-de-testes/">ambiente de testes</a> da Fase 3 <a href="#s10">S10</a>. Os procedimentos de desempenho (M1–M5) são tratados em artefato próprio, mas compartilham com este as condições de preparação da <a href="#3-ambiente-de-teste-e-instrumentos">seção 3</a>.</p>
-<p><strong>Situação:</strong> especificação de procedimentos, <strong>sem resultados coletados</strong>. A execução oficial e a análise das medições pertencem à Fase 4. Os limiares e as regras de julgamento são os de <a href="../../fase-2/criterios-julgamento/">Critérios de julgamento</a> <a href="#s9">S9</a>, que devem ser aprovados pela equipe antes da coleta; as regras operacionais propostas aqui e ainda não ratificadas estão reunidas na <a href="#11-pontos-pendentes-e-decisoes-da-equipe">seção 11</a>.</p>
+<p><strong>Situação:</strong> especificação de procedimentos, <strong>sem resultados coletados</strong>. A execução oficial e a aplicação das regras de cálculo e interpretação (seção 9) aos dados coletados pertencem à Fase 4. Os limiares e as regras de julgamento são os de <a href="../../fase-2/criterios-julgamento/">Critérios de julgamento</a> <a href="#s9">S9</a>, que devem ser aprovados pela equipe antes da coleta.</p>
 <h2 id="1-escopo-e-principios">1. Escopo e princípios<a class="headerlink" href="#1-escopo-e-principios" title="Link para esta seção">&para;</a></h2>
 <ul>
 <li><strong>Objeto:</strong> fluxos <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL1</code></a> a <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL4</code></a> da plataforma web, sem alterar o produto e sem acesso interno (avaliação externa, caixa-preta) <a href="#s5">S5</a>.</li>
@@ -1183,7 +1160,7 @@
 <td><a href="../../fase-2/questoes-hipoteses/#42-q6-adaptacao-a-tamanhos-de-janela">Q6, verificação</a></td>
 </tr>
 <tr>
-<td>Gravidade <code>G2</code> conta como falha</td>
+<td>Gravidade <code>Gr2</code> conta como falha</td>
 <td>A ficha de M7 exige conteúdo <strong>e</strong> controles preservados, não apenas tarefa concluída</td>
 <td><a href="../../fase-2/metricas/#17-m7-adaptacao-ao-tamanho-da-janela">Ficha de M7</a></td>
 </tr>
@@ -1339,7 +1316,7 @@
 <p><em>Tabela 4. Ambientes <code>A1</code>–<code>A4</code> e dados de configuração. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a>, com base no <a href="../ambiente-de-testes/">ambiente de testes</a></em></p>
 <p>As versões acima estão na data do quadro do ambiente de testes e devem ser <strong>reconfirmadas e congeladas</strong> na preparação (<a href="#34-preparacao-do-ambiente">3.4</a>).</p>
 <h3 id="32-ambientes-complementares">3.2 Ambientes complementares<a class="headerlink" href="#32-ambientes-complementares" title="Link para esta seção">&para;</a></h3>
-<p>O ambiente de testes inclui três distribuições Linux além do Ubuntu. Como a Fase 1 e a hipótese H5 delimitam <code>A1</code>–<code>A4</code>, essas distribuições <strong>não entram no denominador de M6 nem na nota de Q5</strong>. Se a equipe decidir executá-las (<a href="#11-pontos-pendentes-e-decisoes-da-equipe">ponto P2</a>), seus resultados são relatados à parte, como evidência complementar de adaptabilidade.</p>
+<p>O ambiente de testes inclui três distribuições Linux além do Ubuntu. Como a Fase 1 e a hipótese H5 delimitam <code>A1</code>–<code>A4</code>, essas distribuições <strong>não entram no denominador de M6 nem na nota de Q5</strong>. Se a equipe decidir executá-las, seus resultados são relatados à parte, como evidência complementar de adaptabilidade.</p>
 <table>
 <thead>
 <tr>
@@ -1399,7 +1376,7 @@
 </tr>
 <tr>
 <td>Gravação de tela</td>
-<td>Recomendada em todas as sessões em <code>J2</code> e obrigatória para falhas (<a href="#11-pontos-pendentes-e-decisoes-da-equipe">ponto P10</a>); evidência de execução para a Fase 4</td>
+<td>Recomendada em todas as sessões em <code>J2</code> e obrigatória para falhas; evidência de execução para a Fase 4</td>
 </tr>
 </tbody>
 </table>
@@ -1445,7 +1422,7 @@
 </tr>
 <tr>
 <td>PA-8</td>
-<td>Em máquinas virtuais, registrar vCPUs, memória e modalidade. Em <code>A3</code>, registrar o hardware.</td>
+<td>Em máquinas virtuais, registrar vCPUs, memória e modalidade.</td>
 </tr>
 <tr>
 <td>PA-9</td>
@@ -1580,7 +1557,7 @@
 </tbody>
 </table>
 <p><em>Tabela 10. Requisitos de hardware e software da avaliação de adaptabilidade. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a>, com base em <a href="../ambiente-de-testes/">ambiente de testes</a> e na central de ajuda da Khan Academy</em></p>
-<p>O suporte declarado não inclui Linux nem o Edge. Isso não altera a matriz da Fase 1 nem os critérios, mas é contexto para interpretar falhas em <code>A4</code> e nos ambientes complementares (<a href="#11-pontos-pendentes-e-decisoes-da-equipe">ponto P12</a>).</p>
+<p>O suporte declarado não inclui Linux nem o Edge. Isso não altera a matriz da Fase 1 nem os critérios, mas é contexto para interpretar falhas em <code>A4</code> e nos ambientes complementares.</p>
 <p><strong>Conhecimento exigido do avaliador.</strong> A Tabela 11 resume o nível exigido.</p>
 <table>
 <thead>
@@ -1604,7 +1581,7 @@
 <tr>
 <td>Preparação do avaliador</td>
 <td>Ler este documento e participar do ensaio piloto em <code>A1</code></td>
-<td><a href="#12-cronograma-de-execucao">Seção 12</a></td>
+<td><a href="#11-cronograma-de-execucao">Seção 11</a></td>
 </tr>
 </tbody>
 </table>
@@ -1809,7 +1786,7 @@
 <li>Registrar cada problema como ocorrência, com a gravidade da Tabela 17 e a captura de tela.</li>
 <li>Classificar a combinação (<code>C</code> ou <code>F</code>) e preencher a linha da combinação na <a href="../registro-adaptabilidade/#registro-m7">tabela de M7</a> do registro.</li>
 </ol>
-<p>Uma combinação é <code>C</code> quando o roteiro é concluído e <strong>nenhum</strong> problema de gravidade <code>G2</code> ou <code>G3</code> é registrado. Os códigos <code>I</code> e <code>X</code> e a reprodução em 2 de 3 seguem <a href="#43-passos-de-execucao">4.3</a>, <a href="#45-combinacoes-inviaveis">4.5</a> e <a href="#46-reproducao-de-falhas">4.6</a>.</p>
+<p>Uma combinação é <code>C</code> quando o roteiro é concluído e <strong>nenhum</strong> problema de gravidade <code>Gr2</code> ou <code>Gr3</code> é registrado. Os códigos <code>I</code> e <code>X</code> e a reprodução em 2 de 3 seguem <a href="#43-passos-de-execucao">4.3</a>, <a href="#45-combinacoes-inviaveis">4.5</a> e <a href="#46-reproducao-de-falhas">4.6</a>.</p>
 <h3 id="54-inventario-de-controles-essenciais">5.4 Inventário de controles essenciais<a class="headerlink" href="#54-inventario-de-controles-essenciais" title="Link para esta seção">&para;</a></h3>
 <p>A Tabela 16 lista o conteúdo e os controles que M7 exige preservados. A descrição é funcional, pois os rótulos da interface podem mudar. O avaliador registra o rótulo real de cada item na <a href="../registro-adaptabilidade/#registro-rotulos">tabela de rótulos</a> do registro, durante a preparação.</p>
 <table>
@@ -1907,19 +1884,19 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;"><code>G3</code> Bloqueante</td>
+<td style="text-align: center;"><code>Gr3</code> Bloqueante</td>
 <td>Impede concluir o roteiro ou acionar um controle essencial</td>
 <td>Botão de envio fora da área alcançável; menu que não abre; sobreposição que cobre o controle</td>
 <td><code>F</code></td>
 </tr>
 <tr>
-<td style="text-align: center;"><code>G2</code> Maior</td>
+<td style="text-align: center;"><code>Gr2</code> Maior</td>
 <td>Perda parcial de conteúdo ou controle essencial, sem impedir a conclusão</td>
 <td>Texto cortado; controle parcialmente sobreposto; necessidade de rolagem horizontal para alcançar um controle essencial</td>
 <td><code>F</code></td>
 </tr>
 <tr>
-<td style="text-align: center;"><code>G1</code> Menor</td>
+<td style="text-align: center;"><code>Gr1</code> Menor</td>
 <td>Defeito visual sem perda de conteúdo ou controle essencial</td>
 <td>Alinhamento ou espaçamento irregular</td>
 <td><code>C</code>, com ocorrência anotada</td>
@@ -1974,8 +1951,8 @@
 <p><em>Tabela 18. Notas de M7 em contagens absolutas. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a>, com base em <a href="../../fase-2/criterios-julgamento/#2-metricas-percentuais">Critérios de julgamento</a></em></p>
 <ul>
 <li>A <strong>nota de M7</strong> usa as 32 combinações, como na ficha da métrica.</li>
-<li><strong>H6</strong> fala em "combinações essenciais". Por isso é verificada no subconjunto <code>FL1</code>–<code>FL3</code> (24 combinações), em que são necessárias ao menos 22 combinações preservadas, e o resultado dos dois recortes é apresentado (<a href="#11-pontos-pendentes-e-decisoes-da-equipe">ponto P4</a>).</li>
-<li><strong>Q6</strong> é atendida quando M7 tem nota 2 ou 3 <strong>e</strong> nenhum fluxo essencial é impedido (<code>G3</code> em <code>FL1</code>–<code>FL3</code>).</li>
+<li><strong>H6</strong> fala em "combinações essenciais". Por isso é verificada no subconjunto <code>FL1</code>–<code>FL3</code> (24 combinações), em que são necessárias ao menos 22 combinações preservadas, e o resultado dos dois recortes é apresentado.</li>
+<li><strong>Q6</strong> é atendida quando M7 tem nota 2 ou 3 <strong>e</strong> nenhum fluxo essencial é impedido (<code>Gr3</code> em <code>FL1</code>–<code>FL3</code>).</li>
 </ul>
 <h2 id="6-roteiros-passo-a-passo">6. Roteiros passo a passo<a class="headerlink" href="#6-roteiros-passo-a-passo" title="Link para esta seção">&para;</a></h2>
 <p>Cada roteiro é único e serve às duas métricas: em M6 conta a conclusão de todos os pontos de verificação (<code>P</code>); em M7 conta também a presença e a operabilidade dos controles essenciais (<code>CE</code>) em cada ponto. O ponto de partida é a página inicial da plataforma, com a conta <code>D6</code> autenticada.</p>
@@ -2168,7 +2145,6 @@
 </tbody>
 </table>
 <p><em>Tabela 23. Atribuição de causa das falhas. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
-<p>Distribuições Linux podem não incluir codecs de mídia por padrão, o que afeta <code>FL2</code>. Antes da coleta, a equipe decide se a instalação de codecs conta como preparação normal do ambiente e registra a decisão (<a href="#11-pontos-pendentes-e-decisoes-da-equipe">ponto P5</a>).</p>
 <h3 id="73-interrupcao">7.3 Interrupção<a class="headerlink" href="#73-interrupcao" title="Link para esta seção">&para;</a></h3>
 <p>A execução é interrompida e marcada <code>X</code> em caso de perda de conexão, travamento da máquina virtual, sessão expirada por inatividade do avaliador ou indisponibilidade do serviço. Uma falha da própria plataforma, como o travamento do navegador reproduzido em 2 de 3 execuções, não é interrupção: é <code>F</code>.</p>
 <h2 id="8-formularios-e-modelos-de-registro">8. Formulários e modelos de registro<a class="headerlink" href="#8-formularios-e-modelos-de-registro" title="Link para esta seção">&para;</a></h2>
@@ -2220,7 +2196,7 @@
 </tbody>
 </table>
 <p><em>Tabela 24. Partes do registro de execuções. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
-<p><strong>Evidências e rastreabilidade do dado bruto à métrica.</strong> Todo registro é indexado pelo identificador da combinação (<code>M6-A1-FL2</code>, <code>M7-A1-J1-FL2</code>). Cada captura segue o padrão <code>&lt;id_combinacao&gt;_&lt;tentativa&gt;_&lt;AAAAMMDD&gt;.png</code>, por exemplo, <code>M6-A1-FL2_t1_20261112.png</code>, e a coluna de evidência cita esse nome. A coluna de ocorrência cita o <code>id_ocorrencia</code>, que também aparece na tabela de ocorrências. Assim, é possível ir da métrica calculada à linha de registro, à captura ou gravação e à ocorrência. O local de armazenamento das evidências deve ser definido antes da coleta (<a href="#11-pontos-pendentes-e-decisoes-da-equipe">ponto P7</a>).</p>
+<p><strong>Evidências e rastreabilidade do dado bruto à métrica.</strong> Todo registro é indexado pelo identificador da combinação (<code>M6-A1-FL2</code>, <code>M7-A1-J1-FL2</code>). Cada captura segue o padrão <code>&lt;id_combinacao&gt;_&lt;tentativa&gt;_&lt;AAAAMMDD&gt;.png</code>, por exemplo, <code>M6-A1-FL2_t1_20261112.png</code>, e a coluna de evidência cita esse nome. A coluna de ocorrência cita o <code>id_ocorrencia</code>, que também aparece na tabela de ocorrências. Assim, é possível ir da métrica calculada à linha de registro, à captura ou gravação e à ocorrência. O local de armazenamento das evidências deve ser definido antes da coleta.</p>
 <h2 id="9-calculo-interpretacao-e-relato">9. Cálculo, interpretação e relato<a class="headerlink" href="#9-calculo-interpretacao-e-relato" title="Link para esta seção">&para;</a></h2>
 <h3 id="91-formulas">9.1 Fórmulas<a class="headerlink" href="#91-formulas" title="Link para esta seção">&para;</a></h3>
 <p>A Tabela 25 apresenta as fórmulas de M6 e M7.</p>
@@ -2258,7 +2234,6 @@
 <li>Relatar as matrizes ambiente × fluxo (M6) e ambiente × dimensão × fluxo (M7), as contagens absolutas, as ocorrências por gravidade e as versões testadas.</li>
 <li>Redigir as conclusões dentro dos <a href="../../fase-1/escopo-da-avaliacao/#limites-de-validade">limites de validade</a>: valem para os ambientes, versões e período registrados, não para outros navegadores, sistemas ou dispositivos móveis.</li>
 </ol>
-<p>Se a equipe não aprovar os critérios antes da coleta, o resultado permanece inconclusivo, conforme <a href="../../fase-2/criterios-julgamento/#5-regra-de-julgamento">Critérios de julgamento</a>.</p>
 <h3 id="93-consistencia-entre-os-metodos-desta-fase-e-a-especificacao-da-fase-2">9.3 Consistência entre os métodos desta fase e a especificação da Fase 2<a class="headerlink" href="#93-consistencia-entre-os-metodos-desta-fase-e-a-especificacao-da-fase-2" title="Link para esta seção">&para;</a></h3>
 <p>A Tabela 26 explicita a coerência entre o que a Fase 2 especifica <a href="#s8">S8</a>, <a href="#s9">S9</a> e o que a Fase 3 usa para obter e julgar cada métrica.</p>
 <table>
@@ -2308,12 +2283,11 @@
 <tr>
 <td>Ambientes <code>A1</code>–<code>A4</code> e fluxos <code>FL1</code>–<code>FL4</code></td>
 <td><a href="#31-ambientes-da-matriz-a1a4">3.1</a> e <a href="#6-roteiros-passo-a-passo">seção 6</a></td>
-<td>Coerente, com <code>A3</code> pendente de versões (<a href="#11-pontos-pendentes-e-decisoes-da-equipe">P6</a>)</td>
+<td>Coerente, com <code>A3</code> pendente de versões</td>
 </tr>
 </tbody>
 </table>
 <p><em>Tabela 26. Consistência entre a especificação da Fase 2 e os métodos da Fase 3. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
-<p>Três pontos exigem alinhamento formal porque a Fase 3 não pode contradizer as fases anteriores: o conjunto de ambientes (P1), a virtualização do Windows (P3) e o sentido de "essenciais" em H6 (P4). Eles estão na <a href="#11-pontos-pendentes-e-decisoes-da-equipe">seção 11</a>.</p>
 <h3 id="94-da-medicao-a-decisao-e-as-acoes">9.4 Da medição à decisão e às ações<a class="headerlink" href="#94-da-medicao-a-decisao-e-as-acoes" title="Link para esta seção">&para;</a></h3>
 <p>O propósito da Fase 1 é apoiar a decisão <a href="../../fase-1/requisitos-de-avaliacao/#requisitante"><code>D1</code></a>. A Tabela 27 indica como cada resultado de M6 e M7 se traduz no desfecho de <code>D1</code> e em uma ação para a coordenação. A decisão final também depende de M1–M5.</p>
 <table>
@@ -2331,7 +2305,7 @@
 <td>Manter como configuração recomendada os sistemas, navegadores e resoluções testados, informando as versões</td>
 </tr>
 <tr>
-<td>Falha confirmada só em <code>FL4</code> ou apenas com gravidade <code>G2</code> em uma dimensão</td>
+<td>Falha confirmada só em <code>FL4</code> ou apenas com gravidade <code>Gr2</code> em uma dimensão</td>
 <td>Com ressalva</td>
 <td>Orientar o uso da outra dimensão ou ambiente e registrar a ocorrência no canal de suporte da plataforma</td>
 </tr>
@@ -2401,7 +2375,7 @@
 </tr>
 <tr>
 <td>Revisar a consistência com o escopo da Fase 1</td>
-<td><a href="#31-ambientes-da-matriz-a1a4">3.1</a>, <a href="#11-pontos-pendentes-e-decisoes-da-equipe">11</a></td>
+<td><a href="#31-ambientes-da-matriz-a1a4">3.1</a></td>
 </tr>
 <tr>
 <td>Critério de aceite: instrumentos, condições e dados de teste identificados</td>
@@ -2441,7 +2415,7 @@
 <tr>
 <td><code>F3-C3</code> Cronograma</td>
 <td>Cronograma de execução proposto, alinhado à Fase 4</td>
-<td><a href="#12-cronograma-de-execucao">12</a></td>
+<td><a href="#11-cronograma-de-execucao">11</a></td>
 </tr>
 <tr>
 <td><code>F3-C7</code> GitPage</td>
@@ -2481,95 +2455,8 @@
 </tbody>
 </table>
 <p><em>Tabela 29. Contribuição deste artefato aos critérios das Fases 3 e 4. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
-<h2 id="11-pontos-pendentes-e-decisoes-da-equipe">11. Pontos pendentes e decisões da equipe<a class="headerlink" href="#11-pontos-pendentes-e-decisoes-da-equipe" title="Link para esta seção">&para;</a></h2>
-<p>Estes pontos aparecem na comparação entre o ambiente de testes, a Fase 1 e a Fase 2, e a Tabela 30 os reúne. Os que afetam a coleta devem ser resolvidos antes da Fase 4.</p>
-<table>
-<thead>
-<tr>
-<th>ID</th>
-<th>Ponto</th>
-<th>Onde afeta</th>
-<th>Proposta</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>P1</td>
-<td>O ambiente de testes lista <strong>seis sistemas operacionais</strong>, mas a Fase 1 e H5 delimitam <code>A1</code>–<code>A4</code> (Windows com Chrome e Firefox, macOS com Safari, Ubuntu com Firefox)</td>
-<td>Denominador de M6, H5</td>
-<td>Manter <code>A1</code>–<code>A4</code> como universo formal. Se a equipe quiser incluir as demais distribuições no julgamento, atualizar Fase 1 (escopo), H5 e <code>M6</code> antes da coleta</td>
-</tr>
-<tr>
-<td>P2</td>
-<td>Executar ou não os ambientes complementares <code>AC1</code>–<code>AC3</code></td>
-<td>Esforço (24 execuções)</td>
-<td>Executar somente se houver tempo, relatando à parte</td>
-</tr>
-<tr>
-<td>P3</td>
-<td>A Fase 1 (seção 2.2) prevê Windows e macOS em <strong>computadores reais</strong>, mas o ambiente de testes <strong>virtualiza o Windows</strong> (Winboat/Docker)</td>
-<td>Escopo, seção 2.2; condição de <code>A1</code> e <code>A2</code></td>
-<td>Atualizar o escopo para refletir a virtualização, registrando-a como limite de validade. Não comparar consumo de recursos entre máquinas distintas</td>
-</tr>
-<tr>
-<td>P4</td>
-<td>H6 fala em combinações "essenciais" e a ficha de M7 em combinações "testadas"</td>
-<td>Julgamento de H6</td>
-<td>Nota de M7 nas 32 combinações; H6 no subconjunto <code>FL1</code>–<code>FL3</code>; relatar os dois</td>
-</tr>
-<tr>
-<td>P5</td>
-<td>Codecs de mídia em Linux (Fedora, openSUSE) e ausência de som em máquinas virtuais</td>
-<td><code>FL2</code> em <code>A4</code> e em <code>AC1</code>–<code>AC3</code></td>
-<td>Decidir se a instalação de codecs é preparação normal e registrar</td>
-</tr>
-<tr>
-<td>P6</td>
-<td><code>A3</code>: versão do macOS e do Safari ausentes (marcadas <code>X</code>); a linha do Safari não existe no quadro de versões; hardware sem registro</td>
-<td>Existência de <code>A3</code>, que cobre o motor WebKit</td>
-<td>Completar o quadro. Confirmar se o computador dispõe de <code>J1</code> e <code>J2</code>; se não, registrar a configuração mais próxima como desvio de protocolo</td>
-</tr>
-<tr>
-<td>P7</td>
-<td>Local de armazenamento das evidências (capturas e gravações)</td>
-<td>Seção 8</td>
-<td>Definir pasta no repositório ou repositório externo antes da coleta</td>
-</tr>
-<tr>
-<td>P8</td>
-<td>Regras de falha confirmada (2 de 3), de gravidade <code>G2</code> como falha e de essencial como <code>FL1</code>–<code>FL3</code></td>
-<td>Julgamento de M6 e M7</td>
-<td>Aprovar com os demais critérios antes da coleta, como exige a Fase 2</td>
-</tr>
-<tr>
-<td>P9</td>
-<td>Ajustes editoriais no ambiente de testes: data da atualização (<code>dia X</code>), "propietários", "maquinas"; Chrome do Windows (157.0) em versão diferente do Chrome Linux (156.0); Firefox do openSUSE em 153.5, abaixo dos demais</td>
-<td>Registro de versões</td>
-<td>Corrigir o texto, preencher a data e registrar as diferenças de versão na discussão</td>
-</tr>
-<tr>
-<td>P10</td>
-<td>Gravação de vídeo das sessões: o critério <code>F4-C2</code> menciona vídeos de testes</td>
-<td>Esforço e armazenamento</td>
-<td>Gravar todas as sessões em <code>J2</code> (16) e toda sessão com falha; decidir onde guardar os arquivos</td>
-</tr>
-<tr>
-<td>P11</td>
-<td>Datas do cronograma da seção 12</td>
-<td>Entrega 2 em 18/11</td>
-<td>Ajustar ao cronograma geral da Fase 4 e à execução de M1–M5 em <code>A1</code></td>
-</tr>
-<tr>
-<td>P12</td>
-<td>O suporte declarado pela Khan Academy não inclui Linux nem o Edge</td>
-<td>Interpretação de falhas em <code>A4</code> e em <code>AC1</code>–<code>AC3</code></td>
-<td>Registrar o dado na discussão dos resultados, sem alterar a matriz nem os critérios</td>
-</tr>
-</tbody>
-</table>
-<p><em>Tabela 30. Pontos pendentes e decisões da equipe. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
-<h2 id="12-cronograma-de-execucao">12. Cronograma de execução<a class="headerlink" href="#12-cronograma-de-execucao" title="Link para esta seção">&para;</a></h2>
-<p>A Tabela 31 é uma <strong>proposta</strong> de cronograma para alinhar a execução de M6 e M7 à Fase 4 e à Entrega 2 de 18/11/2026, mantendo margem de revisão. As datas devem ser ajustadas ao cronograma geral e à execução de M1–M5 em <code>A1</code> (<a href="#11-pontos-pendentes-e-decisoes-da-equipe">ponto P11</a>).</p>
+<h2 id="11-cronograma-de-execucao">11. Cronograma de execução<a class="headerlink" href="#11-cronograma-de-execucao" title="Link para esta seção">&para;</a></h2>
+<p>Esta seção traz o cronograma <strong>exclusivo da execução de M6 e M7</strong>, alinhado à Fase 4 e à Entrega 2 de 18/11/2026, mantendo margem de revisão (Tabela 30). As demais medições seguem outro cronograma, mais geral, mantido pela equipe à parte.</p>
 <table>
 <thead>
 <tr>
@@ -2582,9 +2469,9 @@
 <tbody>
 <tr>
 <td>09/11</td>
-<td>Resolver os pontos P1 a P9 e aprovar critérios e regras de julgamento</td>
+<td>Aprovar critérios e regras de julgamento</td>
 <td>Decisões registradas e versões ajustadas</td>
-<td><a href="#11-pontos-pendentes-e-decisoes-da-equipe">11</a></td>
+<td><a href="#9-calculo-interpretacao-e-relato">9</a></td>
 </tr>
 <tr>
 <td>09 a 10/11</td>
@@ -2622,21 +2509,9 @@
 <td>Texto de análise para o artigo</td>
 <td><a href="#94-da-medicao-a-decisao-e-as-acoes">9.4</a></td>
 </tr>
-<tr>
-<td>17/11</td>
-<td>Revisão de conteúdo e de formatação</td>
-<td>Versão final</td>
-<td></td>
-</tr>
-<tr>
-<td>18/11</td>
-<td>Entrega 2</td>
-<td>Fases 3 e 4 e artigo completo</td>
-<td></td>
-</tr>
 </tbody>
 </table>
-<p><em>Tabela 31. Cronograma de execução proposto para M6 e M7. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<p><em>Tabela 30. Cronograma de execução proposto para M6 e M7. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
 <h2 id="referencias">Referências<a class="headerlink" href="#referencias" title="Link para esta seção">&para;</a></h2>
 <p><a id="s1"></a></p>
 <blockquote>
@@ -2719,7 +2594,14 @@
 <td style="text-align: center;">07/11/2026</td>
 <td>Elaboração dos procedimentos de M6 e M7, com rastreabilidade com as Fases 1 e 2, requisitos e massa de dados, consistência com a Fase 2, cronograma e registro em Markdown.</td>
 <td><a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></td>
-<td>A definir</td>
+<td><a href="https://github.com/GeovannaUmbelino">Geovanna Umbelino</a></td>
+</tr>
+<tr>
+<td style="text-align: center;">1.1</td>
+<td style="text-align: center;">15/11/2026</td>
+<td>Remoção dos pontos pendentes e correção de alguns pontos</td>
+<td><a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></td>
+<td><a href="https://github.com/GeovannaUmbelino">Geovanna Umbelino</a></td>
 </tr>
 </tbody>
 </table>
