@@ -2,9 +2,9 @@
 
 **Versão 1.1**
 
-<a class="cartao-arquivo" href="../../artigo/QSW_Aval_Qualidade_de_Produto_Khan_Academy_Entrega_1.pdf" target="_blank" rel="noopener">
+<a class="cartao-arquivo" href="../../artigo/QSW_Aval_Qualidade_de_Produto_Khan_Academy_Entrega_2.pdf" target="_blank" rel="noopener">
   <span class="cartao-arquivo__icone">PDF</span>
-  <span class="cartao-arquivo__texto"><strong>Artigo da Entrega 1</strong></span>
+  <span class="cartao-arquivo__texto"><strong>Artigo da Entrega 2</strong></span>
   <span class="cartao-arquivo__acao">Abrir artigo</span>
 </a>
 
