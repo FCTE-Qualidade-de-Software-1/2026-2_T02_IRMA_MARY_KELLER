@@ -717,6 +717,22 @@ body {
   box-shadow: none;
 }
 
+.md-typeset .tabela-ocorrencias .md-typeset__table {
+  box-sizing: border-box;
+  display: block;
+  padding-inline: 0;
+}
+
+.md-typeset .tabela-ocorrencias table:not([class]) {
+  min-width: 36rem;
+  table-layout: fixed;
+}
+
+.md-typeset .tabela-ocorrencias table:not([class]) :is(th, td) {
+  overflow-wrap: anywhere;
+  padding-inline: 0.65em;
+}
+
 .md-typeset table:not([class]) img {
   border-radius: 50%;
 }
