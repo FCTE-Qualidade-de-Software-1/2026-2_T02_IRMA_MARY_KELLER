@@ -62,8 +62,8 @@ nav:
       - Matriz de rastreabilidade: fase-3/matriz-rastreabilidade.md
   - Fase 4:
       - Visão Geral: fase-4/index.md
-      - Registro de execução de adaptabilidade: fase-4/registro-adaptabilidade.md
       - Resultados da Avaliação de Desempenho: fase-4/registro-desempenho.md
+      - Registro de execução de adaptabilidade: fase-4/registro-adaptabilidade.md
   - Gestão:
       - Plano de medição: gestao/plano_de_medicao.md
       - Painel PSM/CID: gestao/horas_consolidadas.md
@@ -72,8 +72,10 @@ nav:
       - Uso de IA: gestao/uso_de_ia.md
       - Critérios Fase 1: criterios/fase1.md
       - Critérios Fase 2: criterios/fase2.md
+      - Critérios Fase 3: criterios/fase3.md
+      - Critérios Fase 4: criterios/fase4.md
   - Artigo: gestao/artigo.md
-
+  
 plugins:
   - search:
       lang: pt
