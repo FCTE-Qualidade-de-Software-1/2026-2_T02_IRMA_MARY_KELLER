@@ -27,7 +27,7 @@ A Tabela 2 registra as verificações de [preparação](procedimentos-adaptabili
 |---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|---|
 | [`A1`](#registro-preparacao) | S | S | S | S | S | S | S | S | S | S | [Preparação A1](https://drive.google.com/drive/folders/1ujNCfzS-N_-qRWwtbEr2eSqumHExfJiz) |
 | [`A2`](#registro-preparacao) | S | S | S | S | S | S | S | S | S | S | [Preparação A2](https://drive.google.com/drive/folders/1ujNCfzS-N_-qRWwtbEr2eSqumHExfJiz) |
-| [`A3`](#registro-preparacao) | | | | | | | | | | | [Preparação A3]() |
+| [`A3`](#registro-preparacao) | S | S | S | S | S | S | S | S | S | S | [Preparação A3](https://drive.google.com/drive/folders/1ujNCfzS-N_-qRWwtbEr2eSqumHExfJiz) |
 | [`A4`](#registro-preparacao) | S | S | S | S | S | S | S | S | S | S | [Preparação A4](https://drive.google.com/drive/folders/1ujNCfzS-N_-qRWwtbEr2eSqumHExfJiz) |
 
 *Tabela 2. Verificações de preparação por ambiente. Fonte: Elaborada por: [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM)*
@@ -74,17 +74,17 @@ A Tabela 5 registra as características do ambiente [`A3`](#registro-preparacao)
 
 | Parâmetro de configuração | Valor especificado | Valor verificado no ensaio | Situação |
 | --- | --- | --- | :-: |
-| Sistema operacional | macOS Tahoe |  | Pendente |
-| *Build* exata do sistema | 27.2.1 |  | Pendente |
-| Navegador e motor | Apple Safari 26.5.2 |  | Pendente |
-| Modalidade de execução | Computador real |  | Pendente |
-| Alocação de memória RAM | 32 GB |  | Pendente |
-| Alocação de vCPUs | 10 núcleos (computador real) |  | Pendente |
-| Resolução de tela e janela | 1366 × 768 pixels (`J1`), maximizada |  | Pendente |
-| Resolução de tela e janela | 1920 × 1080 pixels (`J2`), maximizada |  | Pendente |
-| Nível de zoom | 100% |  | Pendente |
-| Data da preparação formal | xx/11/2026 (prevista) |  | Pendente |
-| Responsável pela preparação | [Luisa de Souza](https://github.com/luisa12ll) e [Pedro Lucas](https://github.com/Pwdrinho) |  | Pendente |
+| Sistema operacional | macOS Tahoe | macOS Tahoe | Conforme |
+| *Build* exata do sistema | 27.2.1 | 27.2.1 | Conforme |
+| Navegador e motor | Apple Safari 26.5.2 | 26.5.2 | Conforme |
+| Modalidade de execução | Computador real | Computador real | Conforme |
+| Alocação de memória RAM | 32 GB | 32 GB | Conforme |
+| Alocação de vCPUs | 10 núcleos (computador real) | 10 núcleos (computador real)  | Conforme |
+| Resolução de tela e janela | 1366 × 768 pixels (`J1`), maximizada | 1366 × 768 pixels (`J1`), maximizada | Conforme |
+| Resolução de tela e janela | 1920 × 1080 pixels (`J2`), maximizada | 1920 × 1080 pixels (`J2`), maximizada | Conforme |
+| Nível de zoom | 100% | 100% | Conforme |
+| Data da preparação formal | 17/11/2026 | 17/11/2026 | Conforme |
+| Responsável pela preparação | [Luisa de Souza](https://github.com/luisa12ll) e [Pedro Lucas](https://github.com/Pwdrinho) | [Luisa de Souza](https://github.com/luisa12ll) e [Pedro Lucas](https://github.com/Pwdrinho) | Conforme |
 
 *Tabela 5. Verificação do ambiente de referência [`A3`](#registro-preparacao). Fonte: Elaborada por: [Pedro Lucas](https://github.com/Pwdrinho)*
 
@@ -181,10 +181,10 @@ A Tabela 10 registra as execuções em `J2` (1920 × 1080). `T1` a `T3` são os 
 | `M6-A2-FL2` | 14/11/2026 | [José Augusto](https://github.com/JAugustoM) e [Pedro Lucas](https://github.com/Pwdrinho) | `C` | --- | --- | `C` | --- | --- | [Video M6-A2-FL1-FL4](https://drive.google.com/drive/folders/1ujNCfzS-N_-qRWwtbEr2eSqumHExfJiz) |
 | `M6-A2-FL3` | 14/11/2026 | [José Augusto](https://github.com/JAugustoM) e [Pedro Lucas](https://github.com/Pwdrinho) | `C` | --- | --- | `C` | --- | --- | [Video M6-A2-FL1-FL4](https://drive.google.com/drive/folders/1ujNCfzS-N_-qRWwtbEr2eSqumHExfJiz) |
 | `M6-A2-FL4` | 14/11/2026 | [José Augusto](https://github.com/JAugustoM) e [Pedro Lucas](https://github.com/Pwdrinho) | `C` | --- | --- | `C` | --- | --- | [Video M6-A2-FL1-FL4](https://drive.google.com/drive/folders/1ujNCfzS-N_-qRWwtbEr2eSqumHExfJiz) |
-| `M6-A3-FL1` | | | | | | | | | |
-| `M6-A3-FL2` | | | | | | | | | |
-| `M6-A3-FL3` | | | | | | | | | |
-| `M6-A3-FL4` | | | | | | | | | |
+| `M6-A3-FL1` | 17/11/2026 | | | | | | | | |
+| `M6-A3-FL2` | 17/11/2026 | | | | | | | | |
+| `M6-A3-FL3` | 17/11/2026 | | | | | | | | | Quando vc responde já tendo visto a resolução, aparece uma opção pra voce ver o passo a passo mas quando clica nao tem nenhum comportamento
+| `M6-A3-FL4` | 17/11/2026 | | | | | | | | | Botão proximo e anterior sumindo no progresso (dois J1 e J2)
 | `M6-A4-FL1` | 14/11/2026 | [José Augusto](https://github.com/JAugustoM) e [Pedro Lucas](https://github.com/Pwdrinho) | `C` | --- | --- | `C` | --- | --- | [Video M7-A4-J2-FL1-FL4](https://drive.google.com/drive/folders/1ujNCfzS-N_-qRWwtbEr2eSqumHExfJiz) |
 | `M6-A4-FL2` | 14/11/2026 | [José Augusto](https://github.com/JAugustoM) e [Pedro Lucas](https://github.com/Pwdrinho) | `C` | --- | --- | `C` | --- | --- | [Video M7-A4-J2-FL1-FL4](https://drive.google.com/drive/folders/1ujNCfzS-N_-qRWwtbEr2eSqumHExfJiz) |
 | `M6-A4-FL3` | 14/11/2026 | [José Augusto](https://github.com/JAugustoM) e [Pedro Lucas](https://github.com/Pwdrinho) | `C` | --- | --- | `C` | --- | --- | [Video M7-A4-J2-FL1-FL4](https://drive.google.com/drive/folders/1ujNCfzS-N_-qRWwtbEr2eSqumHExfJiz) |
@@ -216,14 +216,14 @@ A Tabela 11 registra as execuções de `M7`. A gravidade máxima segue a [escala
 | `M7-A2-J2-FL2` | 14/11/2026 | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | `C` | `Gr0` | --- | --- | [Video M7-A2-J2-FL1-FL4 ](https://drive.google.com/drive/folders/1ujNCfzS-N_-qRWwtbEr2eSqumHExfJiz) |
 | `M7-A2-J2-FL3` | 14/11/2026 | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | `C` | `Gr0` | --- | --- | [Video M7-A2-J2-FL1-FL4 ](https://drive.google.com/drive/folders/1ujNCfzS-N_-qRWwtbEr2eSqumHExfJiz) |
 | `M7-A2-J2-FL4` | 14/11/2026 | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | `C` | `Gr2` | `CE4.2` | `OC-001`, `OC-002` | [Video M7-A2-J2-FL1-FL4 ](https://drive.google.com/drive/folders/1ujNCfzS-N_-qRWwtbEr2eSqumHExfJiz) |
-| `M7-A3-J1-FL1` | | | | | | | |
-| `M7-A3-J1-FL2` | | | | | | | |
-| `M7-A3-J1-FL3` | | | | | | | |
-| `M7-A3-J1-FL4` | | | | | | | |
-| `M7-A3-J2-FL1` | | | | | | | |
-| `M7-A3-J2-FL2` | | | | | | | |
-| `M7-A3-J2-FL3` | | | | | | | |
-| `M7-A3-J2-FL4` | | | | | | | |
+| `M7-A3-J1-FL1` | | | | | | | |C
+| `M7-A3-J1-FL2` | | | | | | | |C
+| `M7-A3-J1-FL3` | | | | | | | |C
+| `M7-A3-J1-FL4` | | | | | | | |C Botão proximo e anterior sumindo no progresso (dois J1 e J2)
+| `M7-A3-J2-FL1` | | | | | | | |C
+| `M7-A3-J2-FL2` | | | | | | | |C
+| `M7-A3-J2-FL3` | | | | | | | |C
+| `M7-A3-J2-FL4` | | | | | | | |C Botão proximo e anterior sumindo no progresso (dois J1 e J2)
 | `M7-A4-J1-FL1` | 14/11/2026 | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | `C` | `Gr0` | --- | --- | [Video M7-A4-J1-FL1-FL4 ](https://drive.google.com/drive/folders/1ujNCfzS-N_-qRWwtbEr2eSqumHExfJiz) |
 | `M7-A4-J1-FL2` | 14/11/2026 | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | `C` | `Gr2` | `CE2.4` | `OC-003` | [Video M7-A4-J1-FL1-FL4 ](https://drive.google.com/drive/folders/1ujNCfzS-N_-qRWwtbEr2eSqumHExfJiz) |
 | `M7-A4-J1-FL3` | 14/11/2026 | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | `C` | `Gr0` | --- | --- | [Video M7-A4-J1-FL1-FL4 ](https://drive.google.com/drive/folders/1ujNCfzS-N_-qRWwtbEr2eSqumHExfJiz) |
