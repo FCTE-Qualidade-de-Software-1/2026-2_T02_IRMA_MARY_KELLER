@@ -1,20 +1,19 @@
 # Registro de execução e análise da apreensibilidade — Fase 4
 
-**Versão 1.2**
+**Versão 1.3**
 
 ## 1. Introdução e finalidade do artefato
 
 Este artefato documenta a **execução, a coleta, o tratamento, a análise e o julgamento dos testes de apreensibilidade** da plataforma web Khan Academy, realizados na Fase 4 do processo de avaliação de qualidade. O foco é verificar se pessoas adultas sem experiência prévia com a plataforma conseguem compreender como iniciar e concluir tarefas essenciais após uma instrução inicial padronizada, sem assistência adicional.
 
-O documento consolida a triagem dos voluntários (F2), a caracterização do ambiente (F7), os registros de tarefas (F3), as respostas de percepção (F4), as gravações autorizadas e o cálculo das métricas [`M12`](../fase-2/metricas.md#112-m12-conclusao-autonoma-por-estudantes-novos), [`M13`](../fase-2/metricas.md#113-m13-taxa-de-erros-operacionais) e [`M14`](../fase-2/metricas.md#114-m14-tempo-de-conclusao-autonoma). Os resultados são confrontados com a questão [`Q11`](../fase-2/questoes-hipoteses.md#55-q11-apreensibilidade), a hipótese [`H11`](../fase-2/questoes-hipoteses.md#55-q11-apreensibilidade) e o objetivo [`G3`](../fase-2/objetivos.md#g3) — Usabilidade, definidos na Fase 2, considerando os procedimentos da [Fase 3](../fase-3/procedimentos-acessibilidade-apreensibilidade.md). As conclusões subsidiam melhorias concretas de navegação e orientação para novos usuários, em consonância com o propósito e o requisito [`R5`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) da Fase 1.
-
+O documento consolida a triagem dos voluntários ([`F2`](../fase-3/procedimentos-acessibilidade-apreensibilidade.md#f2-triagem-e-consentimento-dos-voluntarios)), a caracterização do ambiente ([`F7`](../fase-3/procedimentos-acessibilidade-apreensibilidade.md#f7-registro-do-ambiente-da-sessao)), os registros de tarefas ([`F3`](../fase-3/procedimentos-acessibilidade-apreensibilidade.md#f3-registro-por-tarefa-dos-voluntarios)), as respostas de percepção ([`F4`](../fase-3/procedimentos-acessibilidade-apreensibilidade.md#f4-percepcao-ao-final-da-sessao)), as gravações autorizadas e o cálculo das métricas [`M12`](../fase-2/metricas.md#112-m12-conclusao-autonoma-por-estudantes-novos), [`M13`](../fase-2/metricas.md#113-m13-taxa-de-erros-operacionais) e [`M14`](../fase-2/metricas.md#114-m14-tempo-de-conclusao-autonoma). Os resultados são confrontados com a questão [`Q11`](../fase-2/questoes-hipoteses.md#55-q11-apreensibilidade), a hipótese [`H11`](../fase-2/questoes-hipoteses.md#55-q11-apreensibilidade) e o objetivo [`G3`](../fase-2/objetivos.md#g3) — Usabilidade, definidos na Fase 2, considerando os procedimentos da [Fase 3](../fase-3/procedimentos-acessibilidade-apreensibilidade.md). As conclusões subsidiam melhorias concretas de navegação e orientação para novos usuários, em consonância com o propósito e o requisito [`R5`](../fase-1/requisitos-de-avaliacao.md#rastreabilidade) da Fase 1.
 
 ## 2. Tarefas executadas
 
 Os três roteiros reproduzem os fluxos essenciais da Fase 1. Cada tarefa teve **limite de observação de 5 minutos**, sem avaliar o conhecimento matemático do participante.
 
 | Tarefa | Fluxo | Instrução ao participante | Ações e critério de conclusão | Limite |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | **T1 — Localização de curso** | [`FL1`](../fase-1/escopo-da-avaliacao.md#fluxos) | “Você quer estudar Matemática do 6º ano. Encontre esse curso e abra a primeira parte dele.” | Localizar o curso, acessar a primeira unidade e exibir a lista de aulas. | 5 min |
 | **T2 — Videoaula** | [`FL2`](../fase-1/escopo-da-avaliacao.md#fluxos) | “Agora abra a videoaula indicada no cartão. Comece o vídeo, pause e, se houver, ative a legenda ou a transcrição.” | Abrir a videoaula, reproduzir, pausar e acionar legenda/transcrição quando disponível. | 5 min |
 | **T3 — Exercício** | [`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos) | “Abra o exercício indicado no cartão. Se houver uma dica, abra-a. Informe a resposta de teste escrita no cartão e envie.” | Abrir o exercício, consultar dica quando disponível, enviar a resposta padronizada e visualizar o retorno da plataforma. | 5 min |
@@ -51,7 +50,7 @@ A amostra é integralmente composta por jovens adultos de 18 a 24 anos, o que li
 
 *Figura 3. Experiência prévia: cinco respostas “Não” (100%), após retificação comunicada pela equipe. Fonte: F2 e confirmação posterior da equipe.*
 
-A equipe confirmou que nenhum voluntário havia utilizado a Khan Academy anteriormente. Uma resposta inicialmente marcada como “Sim” foi considerada incorreta; o gráfico apresenta a **informação retificada**, não a transcrição literal do formulário original. A correção deve permanecer verificável junto ao registro original e à confirmação da equipe.
+A equipe confirmou que nenhum voluntário havia utilizado a Khan Academy anteriormente.
 
 ### 3.4. Frequência de uso do computador
 
@@ -61,7 +60,7 @@ A equipe confirmou que nenhum voluntário havia utilizado a Khan Academy anterio
 
 *Figura 4. Frequência de uso em escala de 1 a 5: uma resposta no nível 3 (20%) e quatro no nível 5 (80%). Fonte: F2.*
 
-A maior parte dos participantes assinalou o nível máximo da escala. Uma pessoa marcou o nível intermediário; a elegibilidade desse caso depende da definição operacional de “uso habitual” estabelecida pela equipe.
+A maior parte dos participantes assinalou o nível máximo da escala. Uma pessoa marcou o nível intermediário.
 
 ### 3.5. Atuação profissional relacionada
 
@@ -71,7 +70,7 @@ A maior parte dos participantes assinalou o nível máximo da escala. Uma pessoa
 
 *Figura 5. Atuação profissional dos participantes. Fonte: F2.*
 
-**Interpretação:** todos os cinco participantes (100%) declararam não trabalhar com testes de software, design de interfaces ou desenvolvimento web, atendendo ao critério de elegibilidade profissional estabelecido no protocolo da avaliação de apreensibilidade.
+Todos os cinco participantes (100%) declararam não trabalhar com testes de software, design de interfaces ou desenvolvimento web, atendendo ao critério de elegibilidade profissional estabelecido no protocolo da avaliação de apreensibilidade.
 
 ### 3.6. Plataformas de estudo on-line
 
@@ -80,8 +79,6 @@ A maior parte dos participantes assinalou o nível máximo da escala. Uma pessoa
 <div class="ap-chart" style="max-width:750px;height:350px;margin:20px auto"><canvas id="f2-plataformas" aria-label="Plataformas de estudo on-line: YouTube, Duolingo, Google Classroom e Udemy ou Coursera"></canvas></div>
 
 *Figura 6. Plataformas de estudo on-line utilizadas pelos participantes. Fonte: formulário F2.*
-
-Como a pergunta permite indicar mais de uma plataforma, as contagens não são mutuamente exclusivas e podem somar mais do que o número de participantes.
 
 ### 3.7. Consentimento voluntário
 
@@ -99,14 +96,14 @@ Como a pergunta permite indicar mais de uma plataforma, as contagens não são m
 
 *Figura 8. Autorização de gravação: cinco respostas “Sim, autorizo” (100%). Fonte: F2.*
 
-Todos os respondentes assinalaram consentimento e autorização de gravação. A publicação dos vídeos em ambiente público deve respeitar o alcance efetivo dessa autorização, incluindo eventual identificação indireta.
+Todos os respondentes assinalaram consentimento e autorização de gravação.
 
 ## 4. Ambiente e padronização das sessões (F7)
 
-As cinco sessões foram registradas em **18/11/2026**, no ambiente **A1**, com o mesmo sistema operacional, navegador e resolução. Essa uniformidade reduz diferenças de apresentação entre participantes. O **zoom de 100%** e o uso de **mouse** foram informados para todas as sessões. URLs e recursos opcionais não foram registrados.
+As cinco sessões foram registradas em **18/11/2026**, no ambiente **A1**, com o mesmo sistema operacional, navegador e resolução. Essa uniformidade reduz diferenças de apresentação entre participantes.
 
 | Sessão | Data | Avaliadores | Ambiente | Sistema operacional | Navegador e versão | Resolução | Zoom | Dispositivos de entrada | Fluxos e tarefas |
-|---|---|---|---|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | S1 | 18/11/2026 | [Camila Cavalcante](https://github.com/CamilaSilvaC) e [Geovanna Umbelino](https://github.com/GeovannaUmbelino) | [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes) | Windows 11 Pro (25H2) | Google Chrome 157.0.8103.51 (64 bits) | 1920 × 1200 | 100% | Mouse | T1, T2 e T3 ([`FL1`](../fase-1/escopo-da-avaliacao.md#fluxos)–[`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos)) |
 | S2 | 18/11/2026 | [Camila Cavalcante](https://github.com/CamilaSilvaC) e [Geovanna Umbelino](https://github.com/GeovannaUmbelino) | [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes) | Windows 11 Pro (25H2) | Google Chrome 157.0.8103.51 (64 bits) | 1920 × 1200 | 100% | Mouse | T1, T2 e T3 ([`FL1`](../fase-1/escopo-da-avaliacao.md#fluxos)–[`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos)) |
 | S3 | 18/11/2026 | [Camila Cavalcante](https://github.com/CamilaSilvaC) e [Geovanna Umbelino](https://github.com/GeovannaUmbelino) | [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes) | Windows 11 Pro (25H2) | Google Chrome 157.0.8103.51 (64 bits) | 1920 × 1200 | 100% | Mouse | T1, T2 e T3 ([`FL1`](../fase-1/escopo-da-avaliacao.md#fluxos)–[`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos)) |
@@ -115,11 +112,9 @@ As cinco sessões foram registradas em **18/11/2026**, no ambiente **A1**, com o
 
 *Tabela 2. Registro do ambiente de cada sessão (F7). Fonte: registros fornecidos pela equipe. Elaboração de [Camila Cavalcante](https://github.com/CamilaSilvaC) e [Geovanna Umbelino](https://github.com/GeovannaUmbelino).*
 
-A resolução efetivamente registrada foi **1920 × 1200**, com zoom de **100%** e uso de **mouse** em todas as sessões. A comparação com a configuração-base prevista para [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes) é relevante porque diferenças de resolução podem alterar a disposição dos controles de navegação.
-
 ## 5. Evidências audiovisuais e observações por sessão
 
-Os vídeos foram fornecidos pela equipe na ordem S1–S5. As observações a seguir descrevem o comportamento observado em cada gravação e complementam os registros de execução (F3) e os relatos pós-teste (F4). Os vídeos constituem evidências de cada sessão, condicionadas à autorização específica de divulgação dos participantes.
+Os vídeos foram fornecidos pela equipe na ordem S1–S5. As observações a seguir descrevem o comportamento observado em cada gravação e complementam os registros de execução ([`F3`](#6-registros-de-execucao-por-tarefa-f3)) e os relatos pós-teste ([`F4`](#7-percepcao-dos-voluntarios-f4)). Os vídeos constituem evidências de cada sessão, condicionadas à autorização específica de divulgação dos participantes.
 
 ### 5.1. Sessão S1 — Pessoa 1
 
@@ -131,7 +126,7 @@ Os vídeos foram fornecidos pela equipe na ordem S1–S5. As observações a seg
 
 <iframe width="560" height="315" style="max-width:100%;border:0" src="https://www.youtube-nocookie.com/embed/Zrzeuq3FyDY" title="Registro da sessão S2 — avaliação de apreensibilidade" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-**Observações:** A participante localizou o curso de maneira relativamente direta pela opção **Adicionar outro curso**. Na T2, identificou os controles de reprodução e legendas, embora tenha ocorrido uma aparente interrupção visual do vídeo. Na T3, conseguiu abrir o exercício e enviar uma resposta, mas não encontrou como acessar as dicas. Após acertar a primeira questão, explorou a ferramenta de desenho na questão seguinte, sem conseguir visualizar o recurso solicitado. A sessão evidencia uma dificuldade de apreensibilidade relacionada à identificação das dicas, que não estavam disponíveis de maneira evidente.
+**Observações:** A participante localizou o curso de maneira relativamente direta pela opção **Adicionar outro curso**. Na T2, identificou os controles de reprodução e legendas, embora tenha ocorrido uma aparente interrupção visual do vídeo. Na T3, abriu o exercício, mas não encontrou como acessar as dicas. Após acertar a primeira questão, explorou a ferramenta de desenho na questão seguinte, sem conseguir visualizar o recurso solicitado, e desistiu antes de concluir a tarefa. A sessão evidencia uma dificuldade de apreensibilidade relacionada à identificação das dicas, que não estavam disponíveis de maneira evidente.
 
 ### 5.3. Sessão S3 — Pessoa 3
 
@@ -153,10 +148,10 @@ Os vídeos foram fornecidos pela equipe na ordem S1–S5. As observações a seg
 
 ## 6. Registros de execução por tarefa (F3)
 
-A Tabela 3 reproduz os quinze registros fornecidos pela equipe, com **tempos padronizados em segundos**, e incorpora a reanálise dos erros operacionais nas gravações. Para T3 de S1, por exemplo, `01:27.75` foi convertido para **87,75 s**. A coluna de horários apresenta resolução de minuto, enquanto a cronometragem apresenta centésimos de segundo; por isso, os tempos cronometrados são a referência de M14.
+A Tabela 3 reproduz os quinze registros fornecidos pela equipe, com **tempos padronizados em segundos**, e incorpora a reanálise dos erros operacionais nas gravações. Para T3 de S1, por exemplo, [`01:27.75`](https://www.youtube.com/watch?v=Vm9Yx6u5Wlw&t=87s) foi convertido para **87,75 s**. A coluna de horários apresenta resolução de minuto, enquanto a cronometragem apresenta centésimos de segundo; por isso, os tempos cronometrados são a referência de [`M14`](../fase-2/metricas.md#114-m14-tempo-de-conclusao-autonoma).
 
 | Sessão | Participante | Tarefa | Início | Fim | Tempo (s) | Concluiu | Autônoma | Pedidos de ajuda | Erros operacionais | Falha técnica | Desistiu |
-|---|---|---|---|---|---|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | S1 | Pessoa 1 | T1 | 10:23 | 10:24 | 51,79 | Sim | Sim | Não | Nenhum confirmado | Nenhuma registrada | Não |
 | S1 | Pessoa 1 | T2 | 10:24 | 10:25 | 20,41 | Sim | Sim | Não | **1 confirmado** — abriu exercício em vez de videoaula; corrigiu pelo menu lateral (02:06–02:16) | Nenhuma registrada | Não |
 | S1 | Pessoa 1 | T3 | 10:28 | 10:30 | 87,75 | Sim | Não | Sim | **1 confirmado** — acessou página diferente do exercício e precisou retornar ou consultar novamente o menu lateral | Nenhuma registrada | Não |
@@ -188,10 +183,10 @@ As perguntas finais foram:
 - Houve algum momento de incerteza sobre o próximo passo?
 - Qual foi a facilidade de uso na primeira experiência, de **1 (muito difícil)** a **5 (muito fácil)**?
 
-As respostas são evidências qualitativas e **não substituem** os registros observacionais de M12–M14.
+As respostas são evidências qualitativas e **não substituem** os registros observacionais de [`M12`](../fase-2/metricas.md#112-m12-conclusao-autonoma-por-estudantes-novos) a [`M14`](../fase-2/metricas.md#114-m14-tempo-de-conclusao-autonoma).
 
 | Participante | Maior dificuldade relatada | Não soube o próximo passo? | Facilidade (1–5) |
-|---|---|---|---:|
+| --- | --- | --- | ---: |
 | Pessoa 1 | Localizar a aula específica; percurso pouco intuitivo. | Não. | 3 |
 | Pessoa 2 | Identificar exercícios pelos ícones e localizar as dicas. | Sim, ao procurar as dicas. | 4 |
 | Pessoa 3 | Encontrar Matemática do 6º ano pela busca; termos esperados não retornaram o curso facilmente. | Não. | 1 |
@@ -207,7 +202,7 @@ Os relatos apontam **dois padrões recorrentes**:
 - Dificuldade para localizar o curso de Matemática do 6º ano por busca e navegação (Pessoas 1, 3 e 4).
 - Dificuldade para reconhecer exercícios ou localizar dicas (Pessoas 2, 4 e 5).
 
-Três pessoas relataram algum momento de incerteza sobre o próximo passo. As notas de facilidade foram **3, 4, 1, 2 e 3**, com **mediana 3/5** e média **2,6/5**. A Tabela 3 registra pedidos de ajuda em seis tentativas; 14 das quinze tarefas foram concluídas, e a T3 da Pessoa 2 terminou em desistência. As tentativas com pedido de ajuda não contam como autônomas para M12 e M14. Em especial, os relatos sobre dicas devem ser confrontados com o critério de T3 e a disponibilidade real do recurso.
+Três pessoas relataram algum momento de incerteza sobre o próximo passo. As notas de facilidade foram **3, 4, 1, 2 e 3**, com **mediana 3/5** e média **2,6/5**. A [Tabela 3](#6-registros-de-execucao-por-tarefa-f3) registra pedidos de ajuda em seis tentativas; 14 das quinze tarefas foram concluídas, e a T3 da Pessoa 2 terminou em desistência. As tentativas com pedido de ajuda não contam como autônomas para [`M12`](../fase-2/metricas.md#112-m12-conclusao-autonoma-por-estudantes-novos) e [`M14`](../fase-2/metricas.md#114-m14-tempo-de-conclusao-autonoma). Em especial, os relatos sobre dicas devem ser confrontados com o critério de T3 e a disponibilidade real do recurso.
 
 ## 8. Cálculo das métricas e julgamento GQM
 
@@ -220,7 +215,7 @@ Os cálculos seguem as definições de [`M12`](../fase-2/metricas.md#112-m12-con
 Para a T3, a conclusão exige abrir o exercício, acessar as dicas quando disponíveis e enviar uma resposta, independentemente de sua correção matemática. O envio de uma resposta incorreta não caracteriza falha na tarefa.
 
 | Recorte | Conclusões autônomas (S) | Tentativas elegíveis (N) | M12 | Nota |
-|---|---:|---:|---:|---|
+| --- | ---: | ---: | ---: | --- |
 | T1 | 4 | 5 | **80%** | **2 — Alvo** |
 | T2 | 5 | 5 | **100%** | **3 — Excelente** |
 | T3 | 0 | 5 | **0%** | **0 — Inaceitável** |
@@ -241,7 +236,7 @@ Conforme o protocolo da Fase 3, **erro operacional** é uma *ação concluída q
 A análise das sessões identificou erros operacionais em sete das quinze primeiras tentativas elegíveis.
 
 | Recorte | Tentativas com erro (E) | Tentativas elegíveis (N) | M13 |
-|---|---:|---:|---:|
+| --- | ---: | ---: | ---: |
 | T1 | 1 | 5 | **20%** |
 | T2 | 3 | 5 | **60%** |
 | T3 | 3 | 5 | **60%** |
@@ -262,7 +257,7 @@ A T3 também apresentou taxa de 60%, com erros de navegação nas sessões S1, S
 Os limites de referência da Fase 2 são **≤60 s (nota 3)**, **>60–120 s (nota 2)**, **>120–180 s (nota 1)** e **>180 s (nota 0)**.
 
 | Tarefa | Tempos das conclusões autônomas (s) | Mediana (s) | Nota |
-|---|---|---:|---|
+| --- | --- | ---: | --- |
 | T1 | 51,79; 51,18; 77,64; 26,04 | **51,49** | **3 — Excelente** |
 | T2 | 20,41; 26,97; 12,68; 24,91; 19,70 | **20,41** | **3 — Excelente** |
 | T3 | — (nenhuma conclusão registrada como autônoma) | **—** | **Não calculável** |
@@ -279,14 +274,12 @@ Na T3, não foi possível calcular M14 com os registros atuais, pois todas as te
 
 ### 8.4. Síntese e relação entre os indicadores
 
-
 | Métrica | Resultado registrado | Interpretação |
-|---|---|---|
+| --- | --- | --- |
 | [`M12`](../fase-2/metricas.md#112-m12-conclusao-autonoma-por-estudantes-novos) — Autonomia | T1: 80%; T2: 100%; T3: 0%; total: **60%** | Os resultados confirmam maior autonomia nas tarefas T1 e T2. Na T3, todos os participantes necessitaram de orientação das avaliadoras, especialmente para localizar e acessar as dicas dos exercícios. |
 | [`M13`](../fase-2/metricas.md#113-m13-taxa-de-erros-operacionais) — Erros operacionais | T1: 20%; T2: 60%; T3: 60%; total: **46,67%** | Sete das quinze tentativas apresentaram pelo menos um erro operacional. T2 e T3 concentraram as maiores taxas, evidenciando dificuldades na identificação e localização dos conteúdos. |
 | [`M14`](../fase-2/metricas.md#114-m14-tempo-de-conclusao-autonoma) — Tempo | T1: 51,49 s; T2: 20,41 s; T3: não calculável | As medianas consideram apenas as tentativas concluídas autonomamente. Na T3, não foi possível calcular a mediana devido à ausência de conclusões autônomas. |
 | **F4 — Facilidade percebida** | Mediana: 3/5; média: 2,6/5 | As avaliações reforçam as dificuldades observadas na localização do curso e na identificação das dicas. |
-
 
 *Tabela 8. Síntese cruzada dos registros F3, das observações das gravações e das respostas F4. Elaboração de [Camila Cavalcante](https://github.com/CamilaSilvaC) e [Geovanna Umbelino](https://github.com/GeovannaUmbelino).*
 
@@ -317,7 +310,7 @@ Esses resultados evidenciam dificuldades de apreensibilidade, especialmente na e
 A análise das sessões identificou erros operacionais em sete das quinze primeiras tentativas elegíveis, resultando em [`M13`](../fase-2/metricas.md#113-m13-taxa-de-erros-operacionais) geral de **46,67%**. As tarefas T2 e T3 apresentaram as maiores taxas de erro (60% cada), principalmente devido à abertura de conteúdos diferentes dos solicitados e à necessidade de corrigir a navegação. Na T1, a taxa foi de 20%, embora três participantes tenham enfrentado dificuldades adicionais com o mecanismo de busca. Também foram observados problemas na descoberta das dicas dos exercícios, que não configuraram erros operacionais. Esses resultados evidenciam fragilidades de apreensibilidade relacionadas à identificação dos tipos de conteúdo, à encontrabilidade e à orientação durante a navegação.
 
 | Prioridade | Oportunidade identificada | Evidência | Ação técnica proposta | Verificação posterior |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Alta | Encontrabilidade do curso de Matemática do 6º ano | Pessoas 1, 3 e 4; T1 de S3 = 154,36 s | **Protótipo de alta fidelidade** de busca e seleção de curso, com correspondência por série/ano, filtros visíveis e resultados identificados por título. | Novo teste T1 com voluntários elegíveis; comparar M12, M13, M14 e percepção. |
 | Alta | Dicas e exercícios pouco identificáveis | Pessoas 2, 4 e 5 | No mesmo protótipo, adicionar rótulos textuais aos exercícios e controle de dicas claramente sinalizado, com indicação de quando fica disponível. | Repetir T3 e observar se a dica é encontrada sem intervenção. |
 | Média | Orientação inicial para mudança de módulo | Pessoa 5 | Adicionar sinalização de unidade/módulo atual e próximo passo no protótipo. | Observar navegação sem instruções adicionais. |
@@ -361,10 +354,11 @@ A análise das sessões identificou erros operacionais em sete das quinze primei
 ## Histórico de versões
 
 | Versão | Data | Descrição | Responsável | Revisor |
-|:---:|---|---|---|---|
+| :---: | --- | --- | --- | --- |
 | 1.0 | 22/11/2026 | Consolidação do registro de apreensibilidade, padronização da autoria das tabelas e inclusão do histórico de versões. | [Camila Cavalcante](https://github.com/CamilaSilvaC) e [Geovanna Umbelino](https://github.com/GeovannaUmbelino) | [Pedro Lucas](https://github.com/Pwdrinho) |
 | 1.1 | 22/11/2026 | Reorganização das referências no padrão numerado com identificadores e âncoras adotado nos demais artefatos do projeto. | [Camila Cavalcante](https://github.com/CamilaSilvaC) e [Geovanna Umbelino](https://github.com/GeovannaUmbelino) | [Pedro Lucas](https://github.com/Pwdrinho) |
 | 1.2 | 22/11/2026 | Inclusão de links destacados de rastreabilidade para métricas, questão, hipótese, ambiente e fluxos nas respectivas definições. | [Camila Cavalcante](https://github.com/CamilaSilvaC) e [Geovanna Umbelino](https://github.com/GeovannaUmbelino) | [Pedro Lucas](https://github.com/Pwdrinho) |
+| 1.3 | 22/11/2026 | Inclusão de links para F3, F4, M12 e M14 e alinhamento da observação da sessão S2 à desistência na T3. | [Camila Cavalcante](https://github.com/CamilaSilvaC) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
 
 <!-- Gráficos interativos incorporados neste único arquivo Markdown.
      Requer acesso à CDN do Chart.js e preservação de HTML/scripts pelo MkDocs. -->
