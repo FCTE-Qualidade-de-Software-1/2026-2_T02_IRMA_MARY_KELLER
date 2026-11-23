@@ -1,0 +1,2969 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Avaliação de qualidade do produto Khan Academy segundo a família SQuaRE, com gestão por medição PSM/CID.">
+      
+      
+      
+        <link rel="canonical" href="https://fcte-qualidade-de-software-1.github.io/2026-2_T02_IRMA_MARY_KELLER/fase-4/registro-acessibilidade/">
+      
+      
+        <link rel="prev" href="../registro-adaptabilidade/">
+      
+      
+        <link rel="next" href="../registro-apreensibilidade/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/img/marca.svg">
+      <meta name="generator" content="mkdocs-ProperDocs 1.6.7, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>Registro de Acessibilidade - Avaliação Khan Academy</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Lato";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/khan.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#registro-de-execucoes-de-acessibilidade-m8m11" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      <header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <a href="../.." title="Avaliação Khan Academy" class="khan-marca" aria-label="Avaliação Khan Academy" data-md-component="logo">
+      <img src="../../assets/img/logo_khan_simbolo.png" alt="Logo do Khan Academy" width="32" height="32">
+      <span class="khan-marca__texto">
+        <strong>Avaliação Khan Academy</strong>
+        <small>Qualidade de Software 1 · T02</small>
+      </span>
+    </a>
+    <ul class="khan-abas">
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../..">Início</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../fase-1/">Fase 1</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../fase-2/">Fase 2</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../fase-3/">Fase 3</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item khan-abas__item--ativa">
+          <a href="../">Fase 4</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../gestao/plano_de_medicao/">Gestão</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../gestao/artigo/">Artigo</a>
+        </li>
+      
+    </ul>
+    <div class="khan-header__espaco"></div>
+    
+      <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Mudar para o modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Mudar para o modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER" class="khan-botao-repo" title="Repositório da equipe no GitHub">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215m-6.56 0a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"/></svg>
+      <span>Repositório</span>
+    </a>
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary khan-trilha" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Avaliação Khan Academy" class="md-nav__button md-logo" aria-label="Avaliação Khan Academy" data-md-component="logo">
+      
+  <img src="../../assets/img/logo_khan_simbolo.png" alt="logo">
+
+    </a>
+    Avaliação Khan Academy
+  </label>
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  <ul class="khan-trilha__secoes">
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../..">Início</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../fase-1/">Fase 1</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../fase-2/">Fase 2</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../fase-3/">Fase 3</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../" aria-current="true">Fase 4</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../gestao/plano_de_medicao/">Gestão</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../gestao/artigo/">Artigo</a></li>
+    
+  </ul>
+  
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    <ol class="khan-trilha__passos">
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--feito">
+          <a href="../">
+            <span class="khan-trilha__bolinha">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>
+            </span>
+            <span>Visão Geral</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--feito">
+          <a href="../registro-desempenho/">
+            <span class="khan-trilha__bolinha">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>
+            </span>
+            <span>Resultados da Avaliação de Desempenho</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--feito">
+          <a href="../registro-adaptabilidade/">
+            <span class="khan-trilha__bolinha">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>
+            </span>
+            <span>Registro de Execução de Adaptabilidade</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--atual">
+          <a href="./" aria-current="page">
+            <span class="khan-trilha__bolinha">
+              4
+            </span>
+            <span>Registro de Acessibilidade</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--pendente">
+          <a href="../registro-apreensibilidade/">
+            <span class="khan-trilha__bolinha">
+              5
+            </span>
+            <span>Registro de Apreensibilidade</span>
+          </a>
+        </li>
+      
+    </ol>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Nesta página">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Nesta página
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-preparacao-dos-ambientes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Preparação dos ambientes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Preparação dos ambientes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-a1-windowschrome" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 A1 — Windows/Chrome
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-a3-macossafari" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 A3 — macOS/Safari
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-a4-ubuntufirefox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 A4 — Ubuntu/Firefox
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-registro-das-sessoes-formulario-f7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Registro das sessões — Formulário F7
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Registro das sessões — Formulário F7">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-conteudo-das-tarefas-cartao-executado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Conteúdo das tarefas — cartão executado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-registro-de-m8-navegacao-por-teclado-formulario-f5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Registro de M8 — navegação por teclado (Formulário F5)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-registro-de-m9-leitores-de-tela-formulario-f5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Registro de M9 — leitores de tela (Formulário F5)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-registro-de-m10-ampliacao-de-200-formulario-f5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Registro de M10 — ampliação de 200% (Formulário F5)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-registro-de-m11-contraste-textual-e-alto-contraste" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Registro de M11 — contraste textual e alto contraste
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Registro de M11 — contraste textual e alto contraste">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-alto-contraste-formulario-f5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 Alto contraste — Formulário F5
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-contraste-textual-formulario-f6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Contraste textual — Formulário F6
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-resultado-por-combinacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Resultado por combinação
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-registro-das-barreiras" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Registro das barreiras
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-calculo-e-julgamento-de-m8m11-q7q10-e-h7h10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Cálculo e julgamento de M8–M11, Q7–Q10 e H7–H10
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Cálculo e julgamento de M8–M11, Q7–Q10 e H7–H10">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-escalas-e-formulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 Escalas e fórmulas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-contraste-textual-de-m11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 Contraste textual de M11
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-respostas-as-questoes-e-hipoteses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 Respostas às questões e hipóteses
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94-recomendacoes-priorizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.4 Recomendações priorizadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#95-sintese-analitica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.5 Síntese analítica
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referências
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Histórico de versões
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="registro-de-execucoes-de-acessibilidade-m8m11">Registro de execuções de acessibilidade (M8–M11)<a class="headerlink" href="#registro-de-execucoes-de-acessibilidade-m8m11" title="Link para esta seção">&para;</a></h1>
+<p>Este documento reúne a preparação dos ambientes, sessões e formulários de coleta de acessibilidade da versão web da <strong>Khan Academy</strong>, no recorte de <code>M8</code> (teclado), <code>M9</code> (leitores de tela), <code>M10</code> (ampliação a 200%) e <code>M11</code> (contraste textual e alto contraste).</p>
+<p><strong>Base metodológica:</strong> <a href="../../fase-3/procedimentos-acessibilidade-apreensibilidade/">procedimentos de acessibilidade da Fase 3</a>, <a href="../../fase-2/metricas/">métricas da Fase 2</a>, <a href="../../fase-2/questoes-hipoteses/">questões e hipóteses</a> e <a href="../../fase-2/criterios-julgamento/">critérios de julgamento</a>. Este documento contém observações da amostra e não certifica conformidade integral da plataforma com a WCAG.</p>
+<p><strong>Legenda de classificação:</strong> <code>S</code> = sucesso; <code>SB</code> = sucesso com barreira não essencial; <code>F</code> = falha; <code>IMP</code> = impedimento por barreira da plataforma; <code>X</code> = execução inválida. <code>S</code> e <code>SB</code> entram no numerador das taxas de conclusão; <code>F</code> e <code>IMP</code> somente no denominador.</p>
+<hr />
+<p><a id="registro-preparacao"></a></p>
+<h2 id="1-preparacao-dos-ambientes">1. Preparação dos ambientes<a class="headerlink" href="#1-preparacao-dos-ambientes" title="Link para esta seção">&para;</a></h2>
+<p>A Tabela 1 identifica os ambientes físicos utilizados, distinguindo-os de eventuais máquinas virtuais empregadas em avaliações de adaptabilidade. A data de preparação só é apresentada como tal quando foi registrada; as demais datas correspondem às sessões.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Sistema operacional</th>
+<th>Navegador</th>
+<th>Versão</th>
+<th>Modalidade</th>
+<th>Recursos</th>
+<th>Data da preparação</th>
+<th>Responsável</th>
+<th>Build / kernel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>A1</code></td>
+<td>Windows 11, 25H2</td>
+<td>Google Chrome</td>
+<td>157.0.8103.79</td>
+<td>Computador real, Samsung Galaxy Book4 360</td>
+<td>Intel Core 7 150U; 16 GB RAM</td>
+<td>Sessões em 17/11/2026 e 21/11/2026</td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td>Build 26200.9974</td>
+</tr>
+<tr>
+<td><code>A3</code></td>
+<td>macOS Tahoe</td>
+<td>Apple Safari</td>
+<td>26.5.2 (21624.2.5.11.8)</td>
+<td>Computador real, MacBook Pro M4</td>
+<td>32 GB RAM; 10 núcleos</td>
+<td>21/11/2026</td>
+<td><a href="https://github.com/luisa12ll">Luisa de Souza</a></td>
+<td>Build 27.2.1</td>
+</tr>
+<tr>
+<td><code>A4</code></td>
+<td>Ubuntu 26.10</td>
+<td>Mozilla Firefox</td>
+<td>160.0.1</td>
+<td>Computador real, Samsung Galaxy Book4 360 (dual boot)</td>
+<td>Intel Core 7 150U; 16 GB RAM</td>
+<td>Não registrada separadamente; sessões em 21/11/2026</td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td>Kernel informado: 7.3.0-10</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 1. Identificação dos ambientes avaliados. Fonte: registros de execução de <a href="https://github.com/menali17">Enzo Menali</a>  e  <a href="https://github.com/luisa12ll">Luisa de Souza</a></em></p>
+<h3 id="11-a1-windowschrome">1.1 A1 — Windows/Chrome<a class="headerlink" href="#11-a1-windowschrome" title="Link para esta seção">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Parâmetro</th>
+<th>Valor especificado no protocolo</th>
+<th>Valor registrado</th>
+<th style="text-align: center;">Situação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sistema e build</td>
+<td>Identificar Windows e build</td>
+<td>Windows 11 25H2, build 26200.9974</td>
+<td style="text-align: center;">Conforme</td>
+</tr>
+<tr>
+<td>Navegador</td>
+<td>Chrome e versão</td>
+<td>Chrome 157.0.8103.79</td>
+<td style="text-align: center;">Conforme</td>
+</tr>
+<tr>
+<td>Processador</td>
+<td>Registrar modelo</td>
+<td>Intel Core 7 150U</td>
+<td style="text-align: center;">Registrado</td>
+</tr>
+<tr>
+<td>Memória</td>
+<td>Registrar capacidade</td>
+<td>16 GB</td>
+<td style="text-align: center;">Registrado</td>
+</tr>
+<tr>
+<td>Modalidade</td>
+<td>Computador real ou VM identificada</td>
+<td>Galaxy Book4 360, computador real</td>
+<td style="text-align: center;">Conforme</td>
+</tr>
+<tr>
+<td>Resolução do ensaio</td>
+<td>1366 × 768</td>
+<td>1366 × 768</td>
+<td style="text-align: center;">Conforme</td>
+</tr>
+<tr>
+<td>Zoom em M8/M9</td>
+<td>100%, conforme preparação comum</td>
+<td>Configuração padrão utilizada</td>
+<td style="text-align: center;">Conforme</td>
+</tr>
+<tr>
+<td>Zoom em M10</td>
+<td>200%</td>
+<td>200%</td>
+<td style="text-align: center;">Conforme</td>
+</tr>
+<tr>
+<td>Tema de contraste em M11</td>
+<td>Registrar tema</td>
+<td>Céu noturno</td>
+<td style="text-align: center;">Conforme</td>
+</tr>
+<tr>
+<td>Leitor de tela em M9</td>
+<td>NVDA; voz em português</td>
+<td>NVDA 2026.3.1</td>
+<td style="text-align: center;">Versão registrada</td>
+</tr>
+<tr>
+<td>Idioma da plataforma</td>
+<td>Português do Brasil</td>
+<td>Conteúdos e interface em português nas evidências</td>
+<td style="text-align: center;">Observado</td>
+</tr>
+<tr>
+<td>Perfil do navegador</td>
+<td>Sem extensões, salvo ferramentas autorizadas</td>
+<td>Não documentado individualmente</td>
+<td style="text-align: center;">Verificado</td>
+</tr>
+<tr>
+<td>Notificações</td>
+<td>Desativadas</td>
+<td>Não documentado individualmente</td>
+<td style="text-align: center;">Verificado</td>
+</tr>
+<tr>
+<td>Conta utilizada</td>
+<td>Conta de teste controlada pela equipe</td>
+<td>Conta pessoal autenticada durante os ensaios</td>
+<td style="text-align: center;">Verificado</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 2. Verificação do ambiente A1. Fonte: registros de execução de <a href="https://github.com/menali17">Enzo Menali</a> .</em></p>
+<h3 id="12-a3-macossafari">1.2 A3 — macOS/Safari<a class="headerlink" href="#12-a3-macossafari" title="Link para esta seção">&para;</a></h3>
+<p>A tabela abaixo foi <strong>preservada do documento da avaliadora</strong>, inclusive as lacunas que já existiam nos campos não preenchidos e a não conformidade registrada para a conta de teste.</p>
+<table>
+<thead>
+<tr>
+<th>Parâmetro de configuração</th>
+<th>Valor especificado</th>
+<th>Valor verificado no ensaio</th>
+<th style="text-align: center;">Situação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sistema operacional</td>
+<td>macOS Tahoe</td>
+<td>macOS Tahoe</td>
+<td style="text-align: center;">Conforme</td>
+</tr>
+<tr>
+<td><em>Build</em> exata do sistema</td>
+<td>27.2.1</td>
+<td>27.2.1</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Navegador</td>
+<td>Apple Safari 26.5.2</td>
+<td>Apple Safari 26.5.2 (21624.2.5.11.8)</td>
+<td style="text-align: center;">Conforme</td>
+</tr>
+<tr>
+<td>Modalidade de execução</td>
+<td>Computador real</td>
+<td>Computador real</td>
+<td style="text-align: center;">Conforme</td>
+</tr>
+<tr>
+<td>Memória RAM</td>
+<td>32 GB</td>
+<td>32 GB</td>
+<td style="text-align: center;">Conforme</td>
+</tr>
+<tr>
+<td>Processador</td>
+<td>10 núcleos (computador real)</td>
+<td>10 núcleos (computador real)</td>
+<td style="text-align: center;">Conforme</td>
+</tr>
+<tr>
+<td>Resolução da tela</td>
+<td>Registrar a resolução usada</td>
+<td>1470 × 956 (padrão; Retina 2560 × 1664), janela maximizada</td>
+<td style="text-align: center;">Conforme</td>
+</tr>
+<tr>
+<td>Nível de zoom</td>
+<td>100%</td>
+<td></td>
+<td style="text-align: center;">Conforme</td>
+</tr>
+<tr>
+<td>Idioma da plataforma</td>
+<td>Português do Brasil</td>
+<td></td>
+<td style="text-align: center;">Conforme</td>
+</tr>
+<tr>
+<td>Perfil do navegador</td>
+<td>Sem extensões</td>
+<td>Janela privada do Safari, sem extensões</td>
+<td style="text-align: center;">Conforme</td>
+</tr>
+<tr>
+<td>Navegação por Tab no Safari</td>
+<td>"Pressionar Tab para destacar cada item" ativado</td>
+<td>Ativado</td>
+<td style="text-align: center;">Conforme</td>
+</tr>
+<tr>
+<td>Navegação pelo teclado no macOS</td>
+<td>Ativada</td>
+<td></td>
+<td style="text-align: center;">Conforme</td>
+</tr>
+<tr>
+<td>Notificações do sistema</td>
+<td>Desativadas (Não Perturbe)</td>
+<td></td>
+<td style="text-align: center;">Conforme</td>
+</tr>
+<tr>
+<td>Conta de teste</td>
+<td>Mesma conta das demais sessões, autenticada antes da tarefa</td>
+<td>Conta da avaliadora</td>
+<td style="text-align: center;">Não conforme</td>
+</tr>
+<tr>
+<td>Leitor de tela (<a href="../../fase-2/metricas/#19-m9-execucao-com-leitor-de-tela"><code>M9</code></a>)</td>
+<td>VoiceOver, voz em português, velocidade padrão</td>
+<td></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Gravação de áudio (<a href="../../fase-2/metricas/#19-m9-execucao-com-leitor-de-tela"><code>M9</code></a>)</td>
+<td>Áudio do VoiceOver audível na gravação</td>
+<td></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 3. Verificação do ambiente A3. Fonte: <a href="https://github.com/luisa12ll">Luisa de Souza</a>.</em></p>
+<h3 id="13-a4-ubuntufirefox">1.3 A4 — Ubuntu/Firefox<a class="headerlink" href="#13-a4-ubuntufirefox" title="Link para esta seção">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Parâmetro</th>
+<th>Valor especificado no protocolo</th>
+<th>Valor registrado</th>
+<th style="text-align: center;">Situação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sistema operacional</td>
+<td>Ubuntu LTS segundo escopo da Fase 1</td>
+<td>Ubuntu 26.10 (não LTS)</td>
+<td style="text-align: center;">Divergência documentada</td>
+</tr>
+<tr>
+<td>Kernel</td>
+<td>Registrar versão</td>
+<td>7.3.0-10 (informado na coleta)</td>
+<td style="text-align: center;">Registrado</td>
+</tr>
+<tr>
+<td>Navegador</td>
+<td>Firefox e versão</td>
+<td>Firefox 160.0.1</td>
+<td style="text-align: center;">Conforme</td>
+</tr>
+<tr>
+<td>Modalidade</td>
+<td>Computador real ou VM identificada</td>
+<td>Galaxy Book4 360, dual boot</td>
+<td style="text-align: center;">Conforme</td>
+</tr>
+<tr>
+<td>Processador</td>
+<td>Registrar modelo</td>
+<td>Intel Core 7 150U</td>
+<td style="text-align: center;">Registrado</td>
+</tr>
+<tr>
+<td>Memória</td>
+<td>Registrar capacidade</td>
+<td>16 GB</td>
+<td style="text-align: center;">Registrado</td>
+</tr>
+<tr>
+<td>Resolução</td>
+<td>Registrar resolução usada</td>
+<td>1920 × 1080</td>
+<td style="text-align: center;">Conforme</td>
+</tr>
+<tr>
+<td>Escala/orientação</td>
+<td>Registrar configuração</td>
+<td>100%, paisagem</td>
+<td style="text-align: center;">Registrado</td>
+</tr>
+<tr>
+<td>Zoom em M8/M9</td>
+<td>100% conforme preparação comum</td>
+<td>Configuração padrão utilizada</td>
+<td style="text-align: center;">Informado; não aferido isoladamente</td>
+</tr>
+<tr>
+<td>Leitor de tela em M9</td>
+<td>Orca, voz em português</td>
+<td>Orca 46.1</td>
+<td style="text-align: center;">Versão registrada</td>
+</tr>
+<tr>
+<td>Idioma da plataforma</td>
+<td>Português do Brasil</td>
+<td>Conteúdos e interface em português nas evidências</td>
+<td style="text-align: center;">Observado</td>
+</tr>
+<tr>
+<td>Perfil do navegador</td>
+<td>Sem extensões, salvo ferramentas autorizadas</td>
+<td>Não documentado individualmente</td>
+<td style="text-align: center;">Não verificado</td>
+</tr>
+<tr>
+<td>Notificações</td>
+<td>Desativadas</td>
+<td>Não documentado individualmente</td>
+<td style="text-align: center;">Não verificado</td>
+</tr>
+<tr>
+<td>Conta utilizada</td>
+<td>Conta de teste controlada pela equipe</td>
+<td>Equivalência entre as sessões não comprovada</td>
+<td style="text-align: center;">Não verificado</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 4. Verificação do ambiente A4. Fonte: registros de execução de <a href="https://github.com/menali17">Enzo Menali</a>.</em></p>
+<p><strong>Nota de comparabilidade:</strong> A4 foi executado em Ubuntu 26.10, ao passo que o <a href="../../fase-1/escopo-da-avaliacao/#ambientes">escopo da Fase 1</a> especifica Ubuntu LTS. Os dados refletem o ambiente efetivamente utilizado; essa divergência deve acompanhar a interpretação dos resultados, sem substituição retroativa da versão do sistema.</p>
+<p><a id="registro-sessoes"></a></p>
+<h2 id="2-registro-das-sessoes-formulario-f7">2. Registro das sessões — Formulário F7<a class="headerlink" href="#2-registro-das-sessoes-formulario-f7" title="Link para esta seção">&para;</a></h2>
+<p>Os IDs de <code>A3</code> foram mantidos como no documento original. Os IDs adicionais de <code>A1</code>/<code>A4</code> foram estabelecidos <strong>nesta consolidação</strong> como referências de sessão; os nomes dos arquivos brutos permanecem inalterados.</p>
+<table>
+<thead>
+<tr>
+<th>Sessão</th>
+<th>Data</th>
+<th>Avaliador</th>
+<th>Observador</th>
+<th>Ambiente</th>
+<th>Métrica</th>
+<th>Sistema / navegador</th>
+<th>Recurso / configuração</th>
+<th>Resolução</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>AC-20261117-01</code></td>
+<td>17/11/2026</td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td>Não identificado</td>
+<td><code>A1</code></td>
+<td>M8</td>
+<td>Windows 11 25H2 / Chrome 157.0.8103.79</td>
+<td>Exclusivamente teclado; configuração-base</td>
+<td>1366 × 768</td>
+</tr>
+<tr>
+<td><code>AC-20261117-02</code></td>
+<td>17/11/2026</td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td>Não identificado</td>
+<td><code>A1</code></td>
+<td>M10</td>
+<td>Windows 11 25H2 / Chrome 157.0.8103.79</td>
+<td>Zoom de 200%</td>
+<td>1366 × 768</td>
+</tr>
+<tr>
+<td><code>AC-20261117-03</code></td>
+<td>17/11/2026</td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td>Não identificado</td>
+<td><code>A1</code></td>
+<td>M11 — texto</td>
+<td>Windows 11 25H2 / Chrome 157.0.8103.79</td>
+<td>CCA; inspeções Lighthouse/axe; tema padrão</td>
+<td>1366 × 768</td>
+</tr>
+<tr>
+<td><code>AC-20261117-04</code></td>
+<td>17/11/2026</td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td>Não identificado</td>
+<td><code>A1</code></td>
+<td>M11 — alto contraste</td>
+<td>Windows 11 25H2 / Chrome 157.0.8103.79</td>
+<td>Tema Céu noturno</td>
+<td>1366 × 768</td>
+</tr>
+<tr>
+<td><code>AC-20261121-01</code></td>
+<td>21/11/2026</td>
+<td><a href="https://github.com/luisa12ll">Luisa de Souza</a></td>
+<td>Não indicado</td>
+<td><code>A3</code></td>
+<td>M8</td>
+<td>macOS Tahoe / Safari 26.5.2</td>
+<td>Exclusivamente teclado; zoom 100%</td>
+<td>1470 × 956</td>
+</tr>
+<tr>
+<td><code>AC-20261121-02</code></td>
+<td>21/11/2026</td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td>Não identificado</td>
+<td><code>A1</code></td>
+<td>M9</td>
+<td>Windows 11 25H2 / Chrome 157.0.8103.79</td>
+<td>NVDA 2026.3.1</td>
+<td>1366 × 768</td>
+</tr>
+<tr>
+<td><code>AC-20261121-03</code></td>
+<td>21/11/2026</td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td>Não identificado</td>
+<td><code>A4</code></td>
+<td>M8</td>
+<td>Ubuntu 26.10 / Firefox 160.0.1</td>
+<td>Exclusivamente teclado</td>
+<td>1920 × 1080</td>
+</tr>
+<tr>
+<td><code>AC-20261121-04</code></td>
+<td>21/11/2026</td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td>Não identificado</td>
+<td><code>A4</code></td>
+<td>M9</td>
+<td>Ubuntu 26.10 / Firefox 160.0.1</td>
+<td>Orca 46.1</td>
+<td>1920 × 1080</td>
+</tr>
+<tr>
+<td><code>AC-20261122-02</code></td>
+<td>22/11/2026</td>
+<td><a href="https://github.com/luisa12ll">Luisa de Souza</a></td>
+<td>Não indicado</td>
+<td><code>A3</code></td>
+<td>M9</td>
+<td>macOS Tahoe / Safari 26.5.2</td>
+<td>VoiceOver, voz em português; zoom 100%</td>
+<td>1470 × 956</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 5. Registro das sessões, adaptação do F7. Fonte: <a href="https://github.com/menali17">Enzo Menali</a> .</em></p>
+<p><strong>Dados adicionais do F7:</strong> no <code>M8-A4-T1</code>, a execução começou na seção <strong>Meus cursos</strong>, em vez da página inicial; as sessões de <code>A3</code> utilizaram conta da avaliadora, conforme a Tabela 3. Valores como <code>Clear storage</code>, URLs finais por estado e configurações que não foram anotadas não devem ser preenchidos por inferência. As auditorias de P1–P6 e os testes com tecnologias assistivas são registros de naturezas distintas.</p>
+<h3 id="21-conteudo-das-tarefas-cartao-executado">2.1 Conteúdo das tarefas — cartão executado<a class="headerlink" href="#21-conteudo-das-tarefas-cartao-executado" title="Link para esta seção">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Tarefa</th>
+<th>Fluxo</th>
+<th>Conteúdo-base</th>
+<th>Variações efetivamente registradas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>T1</code></td>
+<td><code>FL1</code></td>
+<td>Curso Matemática EF: 6º Ano; primeira unidade <em>Números: sistema de numeração decimal</em></td>
+<td>Em <code>M8-A4-T1</code>, o ponto inicial foi <strong>Meus cursos</strong>; no macOS, o curso já constava dessa área.</td>
+</tr>
+<tr>
+<td><code>T2</code></td>
+<td><code>FL2</code></td>
+<td>Videoaula <em>História dos números</em>; iniciar, pausar e ativar legenda/transcrição quando disponível</td>
+<td>Na execução <code>M9-A3-T2</code>, a avaliadora selecionou outra videoaula (<em>Exemplo de conversão de algarismos romanos</em>). A barreira registrada foi a impossibilidade de acessar/reproduzir o conteúdo com VoiceOver, não a escolha da aula.</td>
+</tr>
+<tr>
+<td><code>T3</code></td>
+<td><code>FL3</code></td>
+<td>Exercício <em>Semelhanças e diferenças entre sistemas de numeração</em>; abrir, selecionar/preencher, enviar e observar retorno</td>
+<td><code>A1</code>/<code>A4</code> encontraram alternativas SIM/NÃO. Em <code>M8-A3-T3</code>, apareceram listas suspensas de sistemas posicionais; em <code>M9-A3-T3</code>, questão para converter <code>XXXI</code> para decimal; resposta de teste <code>122</code>, com retorno anunciado <em>Não é dessa vez</em>.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Link do exercício-base:</strong> <a href="https://pt.khanacademy.org/math/6-ano-matematica/numeros-sistema-de-numeracao-decimal-6ano/os-numeros/e/semelhancas-e-diferencas-entre-sistemas-de-numeracao">Semelhanças e diferenças entre sistemas de numeração — Khan Academy</a>.</p>
+<p><em>Tabela 6. Conteúdo e variações observadas. Fonte: registros originais de A3 e execução em A1/A4.</em></p>
+<p><strong>Nota metodológica:</strong> variações de pergunta ou videoaula não são tratadas como ausência de registro. No julgamento, elas delimitam a comparabilidade entre as combinações de acordo com a <a href="../../fase-3/procedimentos-acessibilidade-apreensibilidade/#41-tarefas-de-referencia">seção 4.1 do procedimento</a>.</p>
+<p><a id="registro-m8"></a></p>
+<h2 id="3-registro-de-m8-navegacao-por-teclado-formulario-f5">3. Registro de M8 — navegação por teclado (Formulário F5)<a class="headerlink" href="#3-registro-de-m8-navegacao-por-teclado-formulario-f5" title="Link para esta seção">&para;</a></h2>
+<p>Teste de T1–T3 nos ambientes A1, A3 e A4, com foco, acionamento, ordem de navegação e conclusão registrados. <strong>As 10 linhas do macOS abaixo reproduzem as observações da avaliadora, com links para os vídeos incorporados ao repositório.</strong></p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Tarefa</th>
+<th>Etapa</th>
+<th>Observação</th>
+<th>Barreira</th>
+<th>Evidência</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>M8-A1-T1-E1</code></td>
+<td><code>T1</code></td>
+<td>Localizar curso</td>
+<td>Curso localizado pela navegação do teclado, com foco visível e ordem lógica no caminho observado</td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A1/M8_A1_Piloto_T1_FL1.mp4">M8_A1_Piloto_T1_FL1.mp4</a></td>
+</tr>
+<tr>
+<td><code>M8-A1-T1-E2</code></td>
+<td><code>T1</code></td>
+<td>Abrir curso</td>
+<td>Acesso realizado pelo teclado</td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A1/M8_A1_Piloto_T1_FL1.mp4">M8_A1_Piloto_T1_FL1.mp4</a></td>
+</tr>
+<tr>
+<td><code>M8-A1-T1-E3</code></td>
+<td><code>T1</code></td>
+<td>Abrir unidade</td>
+<td>Primeira unidade alcançada, sem armadilha de foco identificada</td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A1/M8_A1_Piloto_T1_FL1.mp4">M8_A1_Piloto_T1_FL1.mp4</a></td>
+</tr>
+<tr>
+<td><code>M8-A1-T2-E1</code></td>
+<td><code>T2</code></td>
+<td>Abrir videoaula</td>
+<td>Videoaula <em>História dos números</em> localizada; navegação extensa por Tab registrada na execução</td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A1/M8_A1_Piloto_T2_FL2.mp4">M8_A1_Piloto_T2_FL2.mp4</a></td>
+</tr>
+<tr>
+<td><code>M8-A1-T2-E2</code></td>
+<td><code>T2</code></td>
+<td>Reproduzir</td>
+<td>Reprodução acionada pelo teclado</td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A1/M8_A1_Piloto_T2_FL2.mp4">M8_A1_Piloto_T2_FL2.mp4</a></td>
+</tr>
+<tr>
+<td><code>M8-A1-T2-E3</code></td>
+<td><code>T2</code></td>
+<td>Pausar</td>
+<td>Reprodução pausada pelo teclado</td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A1/M8_A1_Piloto_T2_FL2.mp4">M8_A1_Piloto_T2_FL2.mp4</a></td>
+</tr>
+<tr>
+<td><code>M8-A1-T2-E4</code></td>
+<td><code>T2</code></td>
+<td>Legenda/transcrição</td>
+<td>Recurso acionado conforme registro da execução, com acesso funcional ao estado de conclusão</td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A1/M8_A1_Piloto_T2_FL2.mp4">M8_A1_Piloto_T2_FL2.mp4</a></td>
+</tr>
+<tr>
+<td><code>M8-A1-T3-E1</code></td>
+<td><code>T3</code></td>
+<td>Abrir exercício</td>
+<td>Exercício acessado utilizando o teclado</td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A1/M8_A1_Piloto_T3_FL3.mp4">M8_A1_Piloto_T3_FL3.mp4</a></td>
+</tr>
+<tr>
+<td><code>M8-A1-T3-E2</code></td>
+<td><code>T3</code></td>
+<td>Solicitar dica, quando disponível</td>
+<td>Ação de dica não individualizada na evidência de conclusão; não atribuir sucesso/falha à etapa opcional</td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A1/M8_A1_Piloto_T3_FL3.mp4">M8_A1_Piloto_T3_FL3.mp4</a></td>
+</tr>
+<tr>
+<td><code>M8-A1-T3-E3</code></td>
+<td><code>T3</code></td>
+<td>Selecionar resposta</td>
+<td>Alternativas SIM/NÃO não alcançadas nem acionadas pelos comandos convencionais tentados</td>
+<td><code>B-09</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A1/M8_A1_Piloto_T3_FL3.mp4">M8_A1_Piloto_T3_FL3.mp4</a></td>
+</tr>
+<tr>
+<td><code>M8-A1-T3-E4</code></td>
+<td><code>T3</code></td>
+<td>Enviar resposta</td>
+<td>Etapa essencial bloqueada pela impossibilidade de selecionar as alternativas</td>
+<td><code>B-09</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A1/M8_A1_Piloto_T3_FL3.mp4">M8_A1_Piloto_T3_FL3.mp4</a></td>
+</tr>
+<tr>
+<td><code>M8-A3-T1-E1</code></td>
+<td><code>T1</code></td>
+<td>Localizar o curso</td>
+<td>Foco visível em todos os itens e ordem coerente com a ordem visual; 19 Tabs a partir da barra de endereço até a área do curso em "Meus cursos"</td>
+<td>---</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M8/AC-20261121-01_M8-A3-T1.mov"><code>AC-20261121-01_M8-A3-T1</code></a></td>
+</tr>
+<tr>
+<td><code>M8-A3-T1-E2</code></td>
+<td><code>T1</code></td>
+<td>Abrir o curso</td>
+<td>O título "Matemática EF: 6º Ano" é texto e não recebe foco, assim como não é clicável com o mouse; o foco passa por "Ver tudo (10)" e segue para a primeira unidade, por onde o curso é acessado</td>
+<td>---</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M8/AC-20261121-01_M8-A3-T1.mov"><code>AC-20261121-01_M8-A3-T1</code></a></td>
+</tr>
+<tr>
+<td><code>M8-A3-T1-E3</code></td>
+<td><code>T1</code></td>
+<td>Abrir a primeira unidade</td>
+<td>Enter em "Números: sistema de numeração decimal" abriu a lista de aulas; sem armadilha de foco. A tarefa foi repetida três vezes na mesma gravação, com o mesmo comportamento, retornando à página inicial pelo logotipo com Tab</td>
+<td>---</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M8/AC-20261121-01_M8-A3-T1.mov"><code>AC-20261121-01_M8-A3-T1</code></a></td>
+</tr>
+<tr>
+<td><code>M8-A3-T2-E1</code></td>
+<td><code>T2</code></td>
+<td>Abrir a videoaula</td>
+<td>Foco visível e ordem coerente; 63 Tabs da barra de endereço até "História dos números"</td>
+<td><code>B-03</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M8/AC-20261121-01_M8-A3-T2.mov"><code>AC-20261121-01_M8-A3-T2</code></a></td>
+</tr>
+<tr>
+<td><code>M8-A3-T2-E2</code></td>
+<td><code>T2</code></td>
+<td>Iniciar a reprodução</td>
+<td>40 Tabs até o player; Espaço inicia a reprodução</td>
+<td><code>B-03</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M8/AC-20261121-01_M8-A3-T2.mov"><code>AC-20261121-01_M8-A3-T2</code></a></td>
+</tr>
+<tr>
+<td><code>M8-A3-T2-E3</code></td>
+<td><code>T2</code></td>
+<td>Pausar</td>
+<td>Espaço pausa a reprodução</td>
+<td>---</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M8/AC-20261121-01_M8-A3-T2.mov"><code>AC-20261121-01_M8-A3-T2</code></a></td>
+</tr>
+<tr>
+<td><code>M8-A3-T2-E4</code></td>
+<td><code>T2</code></td>
+<td>Ativar legenda ou transcrição</td>
+<td>Os controles do player (volume, CC e configurações) só aparecem e recebem foco com o ponteiro sobre o vídeo; pausado pelo teclado, continuam ocultos e fora da ordem do Tab. Com os controles visíveis, Enter no CC ativa a legenda. O menu de configurações prende o foco: Tab, Shift+Tab, setas e Esc não saem dele. A transcrição é acessível pelo teclado: Tab até a aba "Sobre" e seta para a direita até "Transcrição". Na gravação principal a avaliadora usou o <strong>trackpad</strong> para exibir os controles; o caminho somente por teclado foi demonstrado na gravação de verificação</td>
+<td><code>B-01</code>, <code>B-02</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M8/AC-20261121-01_M8-A3-T2.mov"><code>AC-20261121-01_M8-A3-T2</code></a>, <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M8/AC-20261121-01_M8-A3-T2-verificacao.mov"><code>AC-20261121-01_M8-A3-T2-verificacao</code></a></td>
+</tr>
+<tr>
+<td><code>M8-A3-T3-E1</code></td>
+<td><code>T3</code></td>
+<td>Abrir o exercício</td>
+<td>34 Tabs até "Vamos lá"; Enter abre a primeira pergunta. Foco visível e ordem coerente</td>
+<td><code>B-03</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M8/AC-20261121-01_M8-A3-T3.mov"><code>AC-20261121-01_M8-A3-T3</code></a></td>
+</tr>
+<tr>
+<td><code>M8-A3-T3-E2</code></td>
+<td><code>T3</code></td>
+<td>Solicitar a dica</td>
+<td>Botão de dica recebe foco e Enter exibe as dicas</td>
+<td>---</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M8/AC-20261121-01_M8-A3-T3.mov"><code>AC-20261121-01_M8-A3-T3</code></a></td>
+</tr>
+<tr>
+<td><code>M8-A3-T3-E3</code></td>
+<td><code>T3</code></td>
+<td>Selecionar a resposta de teste</td>
+<td>45 Tabs até a primeira lista suspensa; Enter abre a lista, o foco fica visível na opção e Enter confirma a seleção. As duas listas são acessíveis pelo teclado</td>
+<td><code>B-03</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M8/AC-20261121-01_M8-A3-T3.mov"><code>AC-20261121-01_M8-A3-T3</code></a></td>
+</tr>
+<tr>
+<td><code>M8-A3-T3-E4</code></td>
+<td><code>T3</code></td>
+<td>Enviar e visualizar o retorno</td>
+<td>5 Tabs da última seleção até "Verificar"; Enter envia e o retorno da plataforma é exibido. Sem armadilha de foco e sem uso do <strong>trackpad</strong></td>
+<td>---</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M8/AC-20261121-01_M8-A3-T3.mov"><code>AC-20261121-01_M8-A3-T3</code></a></td>
+</tr>
+<tr>
+<td><code>M8-A4-T1-E1</code></td>
+<td><code>T1</code></td>
+<td>Localizar curso</td>
+<td>Curso localizado pelo teclado; partida em <strong>Meus cursos</strong>, e não na página inicial</td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A4/M8_A4_T1_FL1.webm">M8_A4_T1_FL1.webm</a></td>
+</tr>
+<tr>
+<td><code>M8-A4-T1-E2</code></td>
+<td><code>T1</code></td>
+<td>Abrir curso</td>
+<td>Acesso realizado pelo teclado</td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A4/M8_A4_T1_FL1.webm">M8_A4_T1_FL1.webm</a></td>
+</tr>
+<tr>
+<td><code>M8-A4-T1-E3</code></td>
+<td><code>T1</code></td>
+<td>Abrir unidade</td>
+<td>Primeira unidade acessada</td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A4/M8_A4_T1_FL1.webm">M8_A4_T1_FL1.webm</a></td>
+</tr>
+<tr>
+<td><code>M8-A4-T2-E1</code></td>
+<td><code>T2</code></td>
+<td>Abrir videoaula</td>
+<td><em>História dos números</em> localizada</td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A4/M8_A4_T2_FL2.webm">M8_A4_T2_FL2.webm</a></td>
+</tr>
+<tr>
+<td><code>M8-A4-T2-E2</code></td>
+<td><code>T2</code></td>
+<td>Reproduzir</td>
+<td>Reprodução iniciada</td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A4/M8_A4_T2_FL2.webm">M8_A4_T2_FL2.webm</a></td>
+</tr>
+<tr>
+<td><code>M8-A4-T2-E3</code></td>
+<td><code>T2</code></td>
+<td>Pausar</td>
+<td>Reprodução pausada</td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A4/M8_A4_T2_FL2.webm">M8_A4_T2_FL2.webm</a></td>
+</tr>
+<tr>
+<td><code>M8-A4-T2-E4</code></td>
+<td><code>T2</code></td>
+<td>Legenda/transcrição</td>
+<td>Etapa relatada como concluída na execução</td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A4/M8_A4_T2_FL2.webm">M8_A4_T2_FL2.webm</a></td>
+</tr>
+<tr>
+<td><code>M8-A4-T3-E1</code></td>
+<td><code>T3</code></td>
+<td>Abrir exercício</td>
+<td>Exercício acessado</td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A4/M8_A4_T3_FL3.webm">M8_A4_T3_FL3.webm</a></td>
+</tr>
+<tr>
+<td><code>M8-A4-T3-E2</code></td>
+<td><code>T3</code></td>
+<td>Solicitar dica, quando disponível</td>
+<td>Dica não individualizada na evidência; etapa opcional sem classificação própria</td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A4/M8_A4_T3_FL3.webm">M8_A4_T3_FL3.webm</a></td>
+</tr>
+<tr>
+<td><code>M8-A4-T3-E3</code></td>
+<td><code>T3</code></td>
+<td>Selecionar resposta</td>
+<td>Tab, Shift+Tab, setas e Espaço não permitiram acionar as alternativas SIM/NÃO</td>
+<td><code>B-10</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A4/M8_A4_T3_FL3.webm">M8_A4_T3_FL3.webm</a></td>
+</tr>
+<tr>
+<td><code>M8-A4-T3-E4</code></td>
+<td><code>T3</code></td>
+<td>Enviar resposta</td>
+<td>Etapa essencial não alcançada devido a B-10</td>
+<td><code>B-10</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A4/M8_A4_T3_FL3.webm">M8_A4_T3_FL3.webm</a></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 7. Registro das etapas de M8 (A1, A3 e A4). Fonte: registros de <a href="https://github.com/menali17">Enzo Menali</a> e <a href="https://github.com/luisa12ll">Luisa de Souza</a>.</em></p>
+<p><strong>Nota sobre <code>M8-A3-T2</code>:</strong> a gravação principal contém uso de trackpad para revelar controles, enquanto a gravação complementar demonstra alternativa de transcrição acessível somente pelo teclado. A classificação original <code>SB</code> foi mantida na matriz de resultados, com a divergência metodológica descrita na análise.</p>
+<p><strong>Nome do arquivo:</strong> na pasta recebida, T3 está identificado como <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A1/M8_A1_Piloto_T3_FL3.mp4">M8_A1_Piloto_T3_FL3.mp4</a>. O nome do arquivo foi preservado.</p>
+<p><a id="registro-m9"></a></p>
+<h2 id="4-registro-de-m9-leitores-de-tela-formulario-f5">4. Registro de M9 — leitores de tela (Formulário F5)<a class="headerlink" href="#4-registro-de-m9-leitores-de-tela-formulario-f5" title="Link para esta seção">&para;</a></h2>
+<p>Leitores e ambientes: NVDA 2026.3.1/Chrome/Windows (A1), VoiceOver/Safari/macOS (A3) e Orca 46.1/Firefox/Ubuntu (A4). A coluna de anúncio distingue fala efetiva do leitor de observações visuais; sem transcrição literal, registra-se apenas o comportamento sustentado pelos relatos. <strong>As 11 linhas originais de A3 foram preservadas.</strong></p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Tarefa</th>
+<th>Etapa</th>
+<th>O que foi anunciado / interação</th>
+<th>Observação</th>
+<th>Barreira</th>
+<th>Evidência</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>M9-A1-T1-E1</code></td>
+<td><code>T1</code></td>
+<td>Localizar curso</td>
+<td>Curso localizado pelo NVDA</td>
+<td>Anúncios funcionais de navegação conforme o ensaio, sem transcrição literal completa disponível</td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A1/M9_A1_T1_FL1.mp4">M9_A1_T1_FL1.mp4</a></td>
+</tr>
+<tr>
+<td><code>M9-A1-T1-E2</code></td>
+<td><code>T1</code></td>
+<td>Abrir curso</td>
+<td>Acesso realizado com o NVDA</td>
+<td>Controles navegáveis e identificados pelo leitor</td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A1/M9_A1_T1_FL1.mp4">M9_A1_T1_FL1.mp4</a></td>
+</tr>
+<tr>
+<td><code>M9-A1-T1-E3</code></td>
+<td><code>T1</code></td>
+<td>Abrir primeira unidade</td>
+<td>Lista da unidade acessada</td>
+<td>Navegação por estrutura/rótulos do NVDA concluída</td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A1/M9_A1_T1_FL1.mp4">M9_A1_T1_FL1.mp4</a></td>
+</tr>
+<tr>
+<td><code>M9-A1-T2-E1</code></td>
+<td><code>T2</code></td>
+<td>Abrir videoaula</td>
+<td>Videoaula acessada</td>
+<td>Informações de navegação identificadas pelo NVDA</td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A1/M9_A1_T2_FL2.mp4">M9_A1_T2_FL2.mp4</a></td>
+</tr>
+<tr>
+<td><code>M9-A1-T2-E2</code></td>
+<td><code>T2</code></td>
+<td>Reproduzir</td>
+<td>Reprodução iniciada</td>
+<td>Sobreposição dos anúncios do NVDA com o áudio da videoaula</td>
+<td><code>B-11</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A1/M9_A1_T2_FL2.mp4">M9_A1_T2_FL2.mp4</a></td>
+</tr>
+<tr>
+<td><code>M9-A1-T2-E3</code></td>
+<td><code>T2</code></td>
+<td>Pausar</td>
+<td>Reprodução pausada</td>
+<td>Persistência de dificuldade de escuta durante a interação</td>
+<td><code>B-11</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A1/M9_A1_T2_FL2.mp4">M9_A1_T2_FL2.mp4</a></td>
+</tr>
+<tr>
+<td><code>M9-A1-T2-E4</code></td>
+<td><code>T2</code></td>
+<td>Legenda/transcrição</td>
+<td>Etapa concluída no ensaio</td>
+<td>Sobreposição sonora afetou a clareza dos anúncios</td>
+<td><code>B-11</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A1/M9_A1_T2_FL2.mp4">M9_A1_T2_FL2.mp4</a></td>
+</tr>
+<tr>
+<td><code>M9-A1-T3-E1</code></td>
+<td><code>T3</code></td>
+<td>Abrir exercício</td>
+<td>Exercício acessado utilizando NVDA</td>
+<td>Leitor anunciou elementos estruturais; enunciado em tabela demandou navegação por comandos próprios</td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A1/M9_A1_T3_FL3.mp4">M9_A1_T3_FL3.mp4</a></td>
+</tr>
+<tr>
+<td><code>M9-A1-T3-E2</code></td>
+<td><code>T3</code></td>
+<td>Solicitar dica, quando disponível</td>
+<td>Dica não individualizada no relato final</td>
+<td>Sem transcrição literal do anúncio</td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A1/M9_A1_T3_FL3.mp4">M9_A1_T3_FL3.mp4</a></td>
+</tr>
+<tr>
+<td><code>M9-A1-T3-E3</code></td>
+<td><code>T3</code></td>
+<td>Selecionar resposta</td>
+<td>Comandos de navegação específicos do NVDA permitiram chegar às alternativas SIM/NÃO</td>
+<td>Rótulos podem ser soletrados; a navegação exclusivamente por Tab havia falhado em M8</td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A1/M9_A1_T3_FL3.mp4">M9_A1_T3_FL3.mp4</a></td>
+</tr>
+<tr>
+<td><code>M9-A1-T3-E4</code></td>
+<td><code>T3</code></td>
+<td>Enviar resposta</td>
+<td>Resposta enviada, com retorno visual <em>Bom trabalho!</em></td>
+<td>Não se atribui anúncio literal do retorno ao NVDA sem comprovação de áudio</td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A1/M9_A1_T3_FL3.mp4">M9_A1_T3_FL3.mp4</a></td>
+</tr>
+<tr>
+<td><code>M9-A3-T1-E1</code></td>
+<td><code>T1</code></td>
+<td>Localizar o curso</td>
+<td>Rotor (VO+U), lista de links: "Pular para o conteúdo principal", "Cursos", "Ver tudo (10)", "Números: sistema de numeração decimal" e demais unidades</td>
+<td>Nomes dos links claros. O título "Matemática EF: 6º Ano" não é anunciado na lista de links, e "Números: sistema de numeração decimal" aparece duas vezes sem indicar o curso; foi escolhida a primeira ocorrência</td>
+<td>---</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M9/AC-20261122-02_M9-A3-T1.mov"><code>AC-20261122-02_M9-A3-T1</code></a></td>
+</tr>
+<tr>
+<td><code>M9-A3-T1-E2</code></td>
+<td><code>T1</code></td>
+<td>Abrir o curso</td>
+<td>---</td>
+<td>O curso é acessado pela unidade, como em <code>M8</code></td>
+<td>---</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M9/AC-20261122-02_M9-A3-T1.mov"><code>AC-20261122-02_M9-A3-T1</code></a></td>
+</tr>
+<tr>
+<td><code>M9-A3-T1-E3</code></td>
+<td><code>T1</code></td>
+<td>Abrir a primeira unidade</td>
+<td>Nenhum anúncio após o Enter; o cursor do VoiceOver para em um elemento vazio acima de "Sobre esta unidade". Com VO+seta, a leitura fica nos quadrados da barra de progresso da unidade, lidos um a um e soletrados</td>
+<td>A mudança de página não é anunciada e o cursor do VoiceOver não avança da barra de progresso até "Sobre esta unidade" e às aulas. A avaliadora consultou a tela para entender o estado da página</td>
+<td><code>B-04</code>, <code>B-05</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M9/AC-20261122-02_M9-A3-T1.mov"><code>AC-20261122-02_M9-A3-T1</code></a>, <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M9/AC-20261122-02_M9-A3-T1-verificacao.mov"><code>AC-20261122-02_M9-A3-T1-verificacao</code></a></td>
+</tr>
+<tr>
+<td><code>M9-A3-T2-E1</code></td>
+<td><code>T2</code></td>
+<td>Abrir a videoaula</td>
+<td>Nenhum anúncio após o Enter no link "História dos números" do rotor. Ao reabrir o rotor, o link do vídeo é indicado como página atual</td>
+<td>A página do vídeo abre, mas a mudança não é anunciada; a avaliadora confirmou a localização pelo rotor</td>
+<td><code>B-04</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M9/AC-20261122-02_M9-A3-T2.mov"><code>AC-20261122-02_M9-A3-T2</code></a></td>
+</tr>
+<tr>
+<td><code>M9-A3-T2-E2</code></td>
+<td><code>T2</code></td>
+<td>Iniciar a reprodução</td>
+<td>Com VO+seta para a direita, a leitura percorre a navegação lateral com as demais aulas, sem chegar ao player</td>
+<td>Espaço e VO+seta não levam ao vídeo; não foi possível iniciar a reprodução</td>
+<td><code>B-06</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M9/AC-20261122-02_M9-A3-T2.mov"><code>AC-20261122-02_M9-A3-T2</code></a></td>
+</tr>
+<tr>
+<td><code>M9-A3-T2-E3</code></td>
+<td><code>T2</code></td>
+<td>Pausar</td>
+<td>---</td>
+<td>Etapa não alcançada</td>
+<td><code>B-06</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M9/AC-20261122-02_M9-A3-T2.mov"><code>AC-20261122-02_M9-A3-T2</code></a></td>
+</tr>
+<tr>
+<td><code>M9-A3-T2-E4</code></td>
+<td><code>T2</code></td>
+<td>Ativar legenda ou transcrição</td>
+<td>"Sobre" e "Transcrição" não foram anunciados</td>
+<td>Etapa não alcançada. A avaliadora consultou a tela no fim para confirmar onde estava; sem uso do <strong>trackpad</strong></td>
+<td><code>B-06</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M9/AC-20261122-02_M9-A3-T2.mov"><code>AC-20261122-02_M9-A3-T2</code></a></td>
+</tr>
+<tr>
+<td><code>M9-A3-T3-E1</code></td>
+<td><code>T3</code></td>
+<td>Abrir o exercício</td>
+<td>"Vamos lá" anunciado e acionado</td>
+<td>A pergunta sorteada foi de digitar: escrever XXXI na forma decimal</td>
+<td>---</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M9/AC-20261122-02_M9-A3-T3.mov"><code>AC-20261122-02_M9-A3-T3</code></a></td>
+</tr>
+<tr>
+<td><code>M9-A3-T3-E2</code></td>
+<td><code>T3</code></td>
+<td>Solicitar a dica</td>
+<td>Botão de dica alcançado com Tab e acionado após o retorno da resposta; o texto da dica não foi lido</td>
+<td>A dica aparece na tela, mas o conteúdo não é anunciado</td>
+<td><code>B-08</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M9/AC-20261122-02_M9-A3-T3.mov"><code>AC-20261122-02_M9-A3-T3</code></a></td>
+</tr>
+<tr>
+<td><code>M9-A3-T3-E3</code></td>
+<td><code>T3</code></td>
+<td>Selecionar a resposta de teste</td>
+<td>Campo anunciado como caixa de texto para digitar a resposta; o enunciado "Escreva o número na forma decimal" e a expressão "XXXI" não foram lidos</td>
+<td>Sem o enunciado, a avaliadora digitou uma resposta sem saber a pergunta (122)</td>
+<td><code>B-07</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M9/AC-20261122-02_M9-A3-T3.mov"><code>AC-20261122-02_M9-A3-T3</code></a></td>
+</tr>
+<tr>
+<td><code>M9-A3-T3-E4</code></td>
+<td><code>T3</code></td>
+<td>Enviar e ouvir o retorno</td>
+<td>Após "Verificar", anunciou "Não é dessa vez"</td>
+<td>Retorno da resposta anunciado, o que conclui a tarefa somente pelo áudio. A avaliadora consultou a tela depois do retorno e da tentativa de ouvir a dica; sem uso do <strong>trackpad</strong></td>
+<td>---</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M9/AC-20261122-02_M9-A3-T3.mov"><code>AC-20261122-02_M9-A3-T3</code></a></td>
+</tr>
+<tr>
+<td><code>M9-A4-T1-E1</code></td>
+<td><code>T1</code></td>
+<td>Localizar curso</td>
+<td>Curso localizado com Orca</td>
+<td>Navegação estrutural do leitor permitiu identificar o curso</td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A4/M9_A4_T1_FL1.webm">M9_A4_T1_FL1.webm</a></td>
+</tr>
+<tr>
+<td><code>M9-A4-T1-E2</code></td>
+<td><code>T1</code></td>
+<td>Abrir curso</td>
+<td>Curso acessado com Orca</td>
+<td>Estado de navegação concluído</td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A4/M9_A4_T1_FL1.webm">M9_A4_T1_FL1.webm</a></td>
+</tr>
+<tr>
+<td><code>M9-A4-T1-E3</code></td>
+<td><code>T1</code></td>
+<td>Abrir primeira unidade</td>
+<td>Lista de aulas da unidade acessada</td>
+<td>Resultado classificado <code>S</code> na coleta</td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A4/M9_A4_T1_FL1.webm">M9_A4_T1_FL1.webm</a></td>
+</tr>
+<tr>
+<td><code>M9-A4-T2-E1</code></td>
+<td><code>T2</code></td>
+<td>Abrir videoaula</td>
+<td>Videoaula localizada e aberta</td>
+<td>Leitor ativo e interagindo com a página</td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A4/M9_A4_T2_FL2.webm">M9_A4_T2_FL2.webm</a></td>
+</tr>
+<tr>
+<td><code>M9-A4-T2-E2</code></td>
+<td><code>T2</code></td>
+<td>Reproduzir</td>
+<td>Reprodução iniciada</td>
+<td>Sobreposição do áudio de aula e anúncios do Orca</td>
+<td><code>B-12</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A4/M9_A4_T2_FL2.webm">M9_A4_T2_FL2.webm</a></td>
+</tr>
+<tr>
+<td><code>M9-A4-T2-E3</code></td>
+<td><code>T2</code></td>
+<td>Pausar</td>
+<td>Reprodução pausada</td>
+<td>Clareza do leitor prejudicada durante o vídeo</td>
+<td><code>B-12</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A4/M9_A4_T2_FL2.webm">M9_A4_T2_FL2.webm</a></td>
+</tr>
+<tr>
+<td><code>M9-A4-T2-E4</code></td>
+<td><code>T2</code></td>
+<td>Legenda/transcrição</td>
+<td>Etapa relatada como concluída</td>
+<td>Sobreposição de áudio persistiu como dificuldade não impeditiva</td>
+<td><code>B-12</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A4/M9_A4_T2_FL2.webm">M9_A4_T2_FL2.webm</a></td>
+</tr>
+<tr>
+<td><code>M9-A4-T3-E1</code></td>
+<td><code>T3</code></td>
+<td>Abrir exercício</td>
+<td>Exercício acessado</td>
+<td>Enunciado fragmentado ou soletrado, dificultando a compreensão</td>
+<td><code>B-14</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A4/M9_A4_T3_FL3.webm">M9_A4_T3_FL3.webm</a></td>
+</tr>
+<tr>
+<td><code>M9-A4-T3-E2</code></td>
+<td><code>T3</code></td>
+<td>Solicitar dica, quando disponível</td>
+<td>Etapa opcional não individualizada na gravação</td>
+<td>Sem anúncio literal documentado</td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A4/M9_A4_T3_FL3.webm">M9_A4_T3_FL3.webm</a></td>
+</tr>
+<tr>
+<td><code>M9-A4-T3-E3</code></td>
+<td><code>T3</code></td>
+<td>Selecionar resposta</td>
+<td>Alternativas SIM/NÃO não puderam ser acionadas pelos comandos usados com Orca</td>
+<td>Nomes das opções foram pronunciados letra a letra</td>
+<td><code>B-13</code>, <code>B-14</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A4/M9_A4_T3_FL3.webm">M9_A4_T3_FL3.webm</a></td>
+</tr>
+<tr>
+<td><code>M9-A4-T3-E4</code></td>
+<td><code>T3</code></td>
+<td>Enviar resposta</td>
+<td>Não foi possível atingir o envio</td>
+<td>Impedimento em controle essencial</td>
+<td><code>B-13</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A4/M9_A4_T3_FL3.webm">M9_A4_T3_FL3.webm</a></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 8. Registro das etapas de M9 (A1, A3 e A4). Fonte: registros de <a href="https://github.com/menali17">Enzo Menali</a> e <a href="https://github.com/luisa12ll">Luisa de Souza</a>.</em></p>
+<p><strong>Nota sobre <code>M9-A3-T2</code>:</strong> a videoaula escolhida durante a sessão foi diferente da videoaula-base. O impedimento registrado refere-se à navegação/ativação do player com VoiceOver; não se considera a escolha de conteúdo, por si só, uma falha da plataforma.</p>
+<p><strong>Nota sobre <code>M9-A3-T3</code>:</strong> a avaliadora conseguiu enviar a resposta e ouvir <em>Não é dessa vez</em>, mas o VoiceOver não anunciou a expressão <code>XXXI</code> nem o enunciado. O registro original a classifica como <code>SB</code>, e essa classificação foi <strong>preservada</strong>, com análise adicional do requisito de percepção de informação essencial na seção 9.</p>
+<p><strong>Nome do arquivo:</strong> na pasta recebida, T2 está identificado como <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A1/M9_A1_T2_FL2.mp4">M9_A1_T2_FL2.mp4</a>.</p>
+<p><a id="registro-m10"></a></p>
+<h2 id="5-registro-de-m10-ampliacao-de-200-formulario-f5">5. Registro de M10 — ampliação de 200% (Formulário F5)<a class="headerlink" href="#5-registro-de-m10-ampliacao-de-200-formulario-f5" title="Link para esta seção">&para;</a></h2>
+<p><strong>Condição:</strong> A1, Chrome em 1366 × 768, zoom do navegador em 200%. A tarefa poderia ser conduzida com mouse e teclado, sem voltar ao zoom padrão. As capturas pertencem ao pacote <code>Coletas de Qualidade.zip</code>.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Tarefa</th>
+<th>Etapa</th>
+<th>Observação</th>
+<th>Barreira</th>
+<th>Evidência</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>M10-A1-T1-E1</code></td>
+<td><code>T1</code></td>
+<td>Localizar curso</td>
+<td>Curso localizado a 200%, sem redução de zoom</td>
+<td>—</td>
+<td><a href="../evidencias/acessibilidade/A1/M10_A1_T1_02_MeusCursos.png">M10_A1_T1_02_MeusCursos.png</a></td>
+</tr>
+<tr>
+<td><code>M10-A1-T1-E2</code></td>
+<td><code>T1</code></td>
+<td>Abrir curso</td>
+<td>Curso acessado preservando ampliação</td>
+<td>—</td>
+<td><a href="../evidencias/acessibilidade/A1/M10_A1_T1_03_Unidade1.png">M10_A1_T1_03_Unidade1.png</a></td>
+</tr>
+<tr>
+<td><code>M10-A1-T1-E3</code></td>
+<td><code>T1</code></td>
+<td>Abrir unidade</td>
+<td>Lista de aulas da primeira unidade exibida e acessada</td>
+<td>—</td>
+<td><a href="../evidencias/acessibilidade/A1/M10_A1_T1_04_ListaDeAulas.png">M10_A1_T1_04_ListaDeAulas.png</a></td>
+</tr>
+<tr>
+<td><code>M10-A1-T2-E1</code></td>
+<td><code>T2</code></td>
+<td>Abrir videoaula</td>
+<td>Videoaula <em>História dos números</em> acessada</td>
+<td>—</td>
+<td><a href="../evidencias/acessibilidade/A1/M10_A1_T2_01_Videoaula.png">M10_A1_T2_01_Videoaula.png</a></td>
+</tr>
+<tr>
+<td><code>M10-A1-T2-E2</code></td>
+<td><code>T2</code></td>
+<td>Iniciar reprodução</td>
+<td>Reprodução iniciada; enquadramento do vídeo limitado a 200%</td>
+<td><code>B-15</code></td>
+<td><a href="../evidencias/acessibilidade/A1/M10_A1_T2_02_Reproducao.png">M10_A1_T2_02_Reproducao.png</a></td>
+</tr>
+<tr>
+<td><code>M10-A1-T2-E3</code></td>
+<td><code>T2</code></td>
+<td>Pausar</td>
+<td>Etapa de pausa concluída conforme relato; não há captura isolada com esse nome</td>
+<td><code>B-15</code></td>
+<td><a href="../evidencias/acessibilidade/A1/M10_A1_T2_02_Reproducao.png">M10_A1_T2_02_Reproducao.png</a></td>
+</tr>
+<tr>
+<td><code>M10-A1-T2-E4</code></td>
+<td><code>T2</code></td>
+<td>Legenda/transcrição</td>
+<td>Legendas visíveis e acessíveis</td>
+<td>—</td>
+<td><a href="../evidencias/acessibilidade/A1/M10_A1_T2_02_Legendas.png">M10_A1_T2_02_Legendas.png</a></td>
+</tr>
+<tr>
+<td><code>M10-A1-T3-E1</code></td>
+<td><code>T3</code></td>
+<td>Abrir exercício</td>
+<td>Exercício aberto com zoom de 200%</td>
+<td>—</td>
+<td><a href="../evidencias/acessibilidade/A1/M10_A1_T3_01_Exercicio.png">M10_A1_T3_01_Exercicio.png</a></td>
+</tr>
+<tr>
+<td><code>M10-A1-T3-E2</code></td>
+<td><code>T3</code></td>
+<td>Dica, quando disponível</td>
+<td>Ação de dica não capturada isoladamente; não imputar falha a recurso opcional</td>
+<td>—</td>
+<td><a href="../evidencias/acessibilidade/A1/M10_A1_T3_01_Exercicio.png">M10_A1_T3_01_Exercicio.png</a></td>
+</tr>
+<tr>
+<td><code>M10-A1-T3-E3</code></td>
+<td><code>T3</code></td>
+<td>Selecionar resposta</td>
+<td>Resposta selecionada</td>
+<td>—</td>
+<td><a href="../evidencias/acessibilidade/A1/M10_A1_T3_02_Resposta.png">M10_A1_T3_02_Resposta.png</a></td>
+</tr>
+<tr>
+<td><code>M10-A1-T3-E4</code></td>
+<td><code>T3</code></td>
+<td>Enviar e verificar retorno</td>
+<td>Retorno <em>Bom trabalho!</em> exibido</td>
+<td>—</td>
+<td><a href="../evidencias/acessibilidade/A1/M10_A1_T3_03_Retorno.png">M10_A1_T3_03_Retorno.png</a></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 9. Registro das etapas de M10 em A1. Fonte: execução e capturas de <a href="https://github.com/menali17">Enzo Menali</a>.</em></p>
+<p><strong>Resultado por tarefa:</strong> <code>M10-A1-T1 = S</code>; <code>M10-A1-T2 = SB</code> (B-15); <code>M10-A1-T3 = S</code>. As três tarefas foram concluídas. O vídeo apresentou enquadramento limitado, mas os controles utilizados permaneceram operáveis; o percentual funcional não constitui, isoladamente, certificação WCAG 1.4.4.</p>
+<p><a id="registro-m11"></a></p>
+<h2 id="6-registro-de-m11-contraste-textual-e-alto-contraste">6. Registro de M11 — contraste textual e alto contraste<a class="headerlink" href="#6-registro-de-m11-contraste-textual-e-alto-contraste" title="Link para esta seção">&para;</a></h2>
+<h3 id="61-alto-contraste-formulario-f5">6.1 Alto contraste — Formulário F5<a class="headerlink" href="#61-alto-contraste-formulario-f5" title="Link para esta seção">&para;</a></h3>
+<p><strong>Condição:</strong> A1/Windows, tema de contraste <strong>Céu noturno</strong> ativado durante toda a execução de T1–T3. A conclusão funcional é registrada separadamente da medição textual.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Tarefa</th>
+<th>Etapa</th>
+<th>Observação</th>
+<th>Barreira</th>
+<th>Evidência</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>M11-A1-T1-E1</code></td>
+<td><code>T1</code></td>
+<td>Localizar curso</td>
+<td>Página inicial com tema Céu noturno; curso localizado</td>
+<td>—</td>
+<td><a href="../evidencias/acessibilidade/A1/M11_A1_T1_01_PaginaInicial.png">M11_A1_T1_01_PaginaInicial.png</a></td>
+</tr>
+<tr>
+<td><code>M11-A1-T1-E2</code></td>
+<td><code>T1</code></td>
+<td>Abrir curso</td>
+<td>Curso aberto com tema ativo</td>
+<td>—</td>
+<td><a href="../evidencias/acessibilidade/A1/M11_A1_T1_02_Curso.png">M11_A1_T1_02_Curso.png</a></td>
+</tr>
+<tr>
+<td><code>M11-A1-T1-E3</code></td>
+<td><code>T1</code></td>
+<td>Abrir unidade</td>
+<td>Lista de aulas exibida</td>
+<td>—</td>
+<td><a href="../evidencias/acessibilidade/A1/M11_A1_T1_03_ListaDeAulas.png">M11_A1_T1_03_ListaDeAulas.png</a></td>
+</tr>
+<tr>
+<td><code>M11-A1-T2-E1</code></td>
+<td><code>T2</code></td>
+<td>Abrir videoaula</td>
+<td>Página da videoaula aberta com tema ativo</td>
+<td>—</td>
+<td><a href="../evidencias/acessibilidade/A1/M11_A1_T2_01_Videoaula.png">M11_A1_T2_01_Videoaula.png</a></td>
+</tr>
+<tr>
+<td><code>M11-A1-T2-E2</code></td>
+<td><code>T2</code></td>
+<td>Reproduzir</td>
+<td>Vídeo iniciado</td>
+<td>—</td>
+<td><a href="../evidencias/acessibilidade/A1/M11_A1_T2_02_Reproducao.png">M11_A1_T2_02_Reproducao.png</a></td>
+</tr>
+<tr>
+<td><code>M11-A1-T2-E3</code></td>
+<td><code>T2</code></td>
+<td>Pausar</td>
+<td>Pausa concluída conforme relato; sem captura isolada</td>
+<td>—</td>
+<td><a href="../evidencias/acessibilidade/A1/M11_A1_T2_02_Reproducao.png">M11_A1_T2_02_Reproducao.png</a></td>
+</tr>
+<tr>
+<td><code>M11-A1-T2-E4</code></td>
+<td><code>T2</code></td>
+<td>Legenda/transcrição</td>
+<td>Legendas visíveis na captura</td>
+<td>—</td>
+<td><a href="../evidencias/acessibilidade/A1/M11_A1_T2_03_Legendas.png">M11_A1_T2_03_Legendas.png</a></td>
+</tr>
+<tr>
+<td><code>M11-A1-T3-E1</code></td>
+<td><code>T3</code></td>
+<td>Abrir exercício</td>
+<td>Exercício acessado; registro visual associado às capturas da resposta</td>
+<td>—</td>
+<td><a href="../evidencias/acessibilidade/A1/M11_A1_T3_02_Resposta.png">M11_A1_T3_02_Resposta.png</a></td>
+</tr>
+<tr>
+<td><code>M11-A1-T3-E2</code></td>
+<td><code>T3</code></td>
+<td>Dica, quando disponível</td>
+<td>Ação de dica não capturada isoladamente</td>
+<td>—</td>
+<td><a href="../evidencias/acessibilidade/A1/M11_A1_T3_02_Resposta.png">M11_A1_T3_02_Resposta.png</a></td>
+</tr>
+<tr>
+<td><code>M11-A1-T3-E3</code></td>
+<td><code>T3</code></td>
+<td>Selecionar resposta</td>
+<td>Resposta selecionada com tema ativo</td>
+<td>—</td>
+<td><a href="../evidencias/acessibilidade/A1/M11_A1_T3_02_Resposta.png">M11_A1_T3_02_Resposta.png</a></td>
+</tr>
+<tr>
+<td><code>M11-A1-T3-E4</code></td>
+<td><code>T3</code></td>
+<td>Enviar resposta</td>
+<td>Retorno <em>Bom trabalho!</em> exibido</td>
+<td>—</td>
+<td><a href="../evidencias/acessibilidade/A1/M11_A1_T3_03_Retorno.png">M11_A1_T3_03_Retorno.png</a></td>
+</tr>
+<tr>
+<td><code>M11-A1-T3-E5</code></td>
+<td><code>T3</code></td>
+<td>Inspecionar ícone Recomeçar</td>
+<td>Ícone pouco perceptível sem hover, reaparecendo com o ponteiro</td>
+<td><code>B-18</code></td>
+<td><a href="../evidencias/acessibilidade/A1/M11_A1_T3_04_IconeRecomecar.png.png">M11_A1_T3_04_IconeRecomecar.png.png</a></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 10. Registro funcional de alto contraste em A1. Fonte: execução e capturas de <a href="https://github.com/menali17">Enzo Menali</a>.</em></p>
+<p><strong>Resultado por tarefa:</strong> <code>M11-A1-T1 = S</code>; <code>M11-A1-T2 = S</code>; <code>M11-A1-T3 = SB</code> (B-18). Conclusão de <strong>3/3 tarefas (100%)</strong>, sem desativação do tema durante a execução.</p>
+<h3 id="62-contraste-textual-formulario-f6">6.2 Contraste textual — Formulário F6<a class="headerlink" href="#62-contraste-textual-formulario-f6" title="Link para esta seção">&para;</a></h3>
+<p>O F6 da Fase 3 exige página, elemento, essencialidade, cores, tamanho, razão, conformidade AA/AAA e evidência. As <strong>11 razões numéricas abaixo</strong> foram reunidas nas anotações de coleta; os relatórios JSON/HTML enviados <strong>não comprovam individualmente todas as 11 medições manuais</strong>. Onde não existem valores brutos de cor/tamanho confirmados, consta <code>NR</code> (não registrado na evidência recebida). Os julgamentos AA/AAA dessa amostra refletem os registros manuais e a <strong>hipótese de texto comum nos elementos com tamanho não aferido</strong>, não uma medição posteriormente inventada.</p>
+<table>
+<thead>
+<tr>
+<th>Página atribuída</th>
+<th>Elemento</th>
+<th>Essencialidade no roteiro</th>
+<th>Cor do texto / fundo</th>
+<th>Tamanho</th>
+<th style="text-align: right;">Razão anotada</th>
+<th>AA (anotação)</th>
+<th>AAA (anotação)</th>
+<th>Origem e evidência</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P1</td>
+<td>Matemática EF: 6º Ano</td>
+<td>Referência para T1</td>
+<td>NR / NR</td>
+<td>NR</td>
+<td style="text-align: right;">15,5:1</td>
+<td>Sim</td>
+<td>Sim</td>
+<td>Anotação manual; <a href="../evidencias/acessibilidade/A1/foto_p1.png">foto_p1.png</a> é captura de página, não leitura CCA</td>
+</tr>
+<tr>
+<td>P1</td>
+<td>Números: sistema de numeração decimal</td>
+<td><strong>Sim — link necessário em T1</strong>, a confirmar a aplicabilidade exata do limite por tamanho</td>
+<td>NR / NR</td>
+<td>NR</td>
+<td style="text-align: right;"><strong>4,0:1</strong></td>
+<td><strong>Não, se texto comum</strong></td>
+<td>Não, se texto comum</td>
+<td>Anotação manual B-16, sem captura específica de leitura CCA</td>
+</tr>
+<tr>
+<td>P1</td>
+<td>Retomar</td>
+<td>Contextual/controle de navegação</td>
+<td>NR / NR</td>
+<td>NR</td>
+<td style="text-align: right;">4,9:1</td>
+<td>Sim</td>
+<td>Não, se texto comum</td>
+<td>Anotação manual</td>
+</tr>
+<tr>
+<td>P2</td>
+<td>Título do curso</td>
+<td>Referência para T1</td>
+<td>NR / NR</td>
+<td>NR</td>
+<td style="text-align: right;">16,1:1</td>
+<td>Sim</td>
+<td>Sim</td>
+<td>Anotação manual</td>
+</tr>
+<tr>
+<td>P2</td>
+<td><strong>A SEGUIR!</strong></td>
+<td>Controle de progressão; verificar essencialidade específica</td>
+<td><strong><code>#686D75</code> / <code>#E7EFF8</code></strong></td>
+<td><strong>12 px negrito</strong></td>
+<td style="text-align: right;"><strong>4,48:1</strong></td>
+<td><strong>Não</strong></td>
+<td><strong>Não</strong></td>
+<td><strong>Lighthouse/axe-core</strong>, B-17: <a href="../evidencias/acessibilidade/A1/P2_Lighthouse_R1.json">P2_Lighthouse_R1.json</a>, <a href="../evidencias/acessibilidade/A1/P2_Axe_R1_Contraste_Aseguir.png">P2_Axe_R1_Contraste_Aseguir.png</a></td>
+</tr>
+<tr>
+<td>P3</td>
+<td>Título da unidade</td>
+<td>Referência para T1/T2</td>
+<td>NR / NR</td>
+<td>NR</td>
+<td style="text-align: right;">15,0:1</td>
+<td>Sim</td>
+<td>Sim</td>
+<td>Anotação manual; auditoria P3 repetiu a URL de P2</td>
+</tr>
+<tr>
+<td>P3</td>
+<td>História dos números</td>
+<td>Referência para T2</td>
+<td>NR / NR</td>
+<td>NR</td>
+<td style="text-align: right;">4,7:1</td>
+<td>Sim</td>
+<td>Não, se texto comum</td>
+<td>Anotação manual</td>
+</tr>
+<tr>
+<td>P4</td>
+<td>Título da videoaula</td>
+<td>Referência para T2</td>
+<td>NR / NR</td>
+<td>NR</td>
+<td style="text-align: right;">16,2:1</td>
+<td>Sim</td>
+<td>Sim</td>
+<td>Anotação manual</td>
+</tr>
+<tr>
+<td>P5</td>
+<td>Enunciado do exercício</td>
+<td>Informação necessária em T3</td>
+<td>NR / NR</td>
+<td>NR</td>
+<td style="text-align: right;">15,5:1</td>
+<td>Sim</td>
+<td>Sim</td>
+<td>Anotação manual</td>
+</tr>
+<tr>
+<td>P5</td>
+<td>Verificar</td>
+<td>Controle essencial para envio de T3</td>
+<td>NR / NR</td>
+<td>NR</td>
+<td style="text-align: right;">4,8:1</td>
+<td>Sim</td>
+<td>Não, se texto comum</td>
+<td>Anotação manual</td>
+</tr>
+<tr>
+<td>P6</td>
+<td>Bom trabalho!</td>
+<td>Retorno de T3</td>
+<td>NR / NR</td>
+<td>NR</td>
+<td style="text-align: right;">16,1:1</td>
+<td>Sim</td>
+<td>Sim</td>
+<td>Anotação manual</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 11. Checklist consolidado F6 de M11. Fonte: anotações manuais de <a href="https://github.com/menali17">Enzo Menali</a> e relatórios de inspeção enviados no ZIP.</em></p>
+<p><strong>Cálculo das anotações:</strong> <code>E_a = 11</code>; <code>E_c(AA) = 9</code> e <code>E_c(AAA) = 6</code>, equivalentes a <strong>81,82% AA</strong> e <strong>54,55% AAA</strong> no conjunto anotado. Esses percentuais são apresentados como <strong>consolidação das anotações</strong>, não como auditoria automatizada completa. As classificações dos elementos com tamanho não documentado dependem das premissas assinaladas.</p>
+<p><strong>Achado automatizado confirmado:</strong> o texto <strong>A SEGUIR!</strong> apresentou aproximadamente <strong>4,48:1</strong>, com fonte de <strong>12 px em negrito</strong>, abaixo do mínimo <strong>4,5:1</strong> para texto comum (WCAG 2.1, 1.4.3 AA). As auditorias identificadas como P2 e P3 no pacote utilizaram a <strong>mesma URL</strong>, de modo que devem ser descritas como duas detecções do mesmo problema e não como falhas independentes em páginas distintas.</p>
+<p><strong>Avaliação técnica:</strong> o tema de alto contraste não corrige retroativamente os problemas medidos no tema padrão; os dois resultados são relatados lado a lado. A nota da parte textual exige avaliar o efeito dos elementos não conformes sobre informação essencial conforme os <a href="../../fase-2/criterios-julgamento/#4-criterios-tecnicos-de-acessibilidade">critérios de julgamento da Fase 2</a>.</p>
+<p><a id="registro-resultados"></a></p>
+<h2 id="7-resultado-por-combinacao">7. Resultado por combinação<a class="headerlink" href="#7-resultado-por-combinacao" title="Link para esta seção">&para;</a></h2>
+<p>A matriz abaixo registra <strong>24 combinações de tarefa e condição</strong>: nove de M8, nove de M9, três de M10 e três do teste funcional de alto contraste de M11. <strong>Medições textuais de M11 não são tarefas e permanecem na Tabela 11.</strong> As seis linhas de A3 mantêm as classificações e URLs originais da avaliadora.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Sessão</th>
+<th>Data</th>
+<th>Executor / observador</th>
+<th style="text-align: center;">Classificação</th>
+<th>Barreiras</th>
+<th>Evidência</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>M8-A1-T1</code></td>
+<td><code>AC-20261117-01</code></td>
+<td>17/11/2026</td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td style="text-align: center;"><code>S</code></td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A1/M8_A1_Piloto_T1_FL1.mp4">M8_A1_Piloto_T1_FL1.mp4</a></td>
+</tr>
+<tr>
+<td><code>M8-A1-T2</code></td>
+<td><code>AC-20261117-01</code></td>
+<td>17/11/2026</td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td style="text-align: center;"><code>S</code></td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A1/M8_A1_Piloto_T2_FL2.mp4">M8_A1_Piloto_T2_FL2.mp4</a></td>
+</tr>
+<tr>
+<td><code>M8-A1-T3</code></td>
+<td><code>AC-20261117-01</code></td>
+<td>17/11/2026</td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td style="text-align: center;"><code>IMP</code></td>
+<td><code>B-09</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A1/M8_A1_Piloto_T3_FL3.mp4">M8_A1_Piloto_T3_FL3.mp4</a></td>
+</tr>
+<tr>
+<td><code>M8-A3-T1</code></td>
+<td><code>AC-20261121-01</code></td>
+<td>21/11/2026</td>
+<td><a href="https://github.com/luisa12ll">Luisa de Souza</a></td>
+<td style="text-align: center;"><code>S</code></td>
+<td>---</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M8/AC-20261121-01_M8-A3-T1.mov"><code>AC-20261121-01_M8-A3-T1</code></a></td>
+</tr>
+<tr>
+<td><code>M8-A3-T2</code></td>
+<td><code>AC-20261121-01</code></td>
+<td>21/11/2026</td>
+<td><a href="https://github.com/luisa12ll">Luisa de Souza</a></td>
+<td style="text-align: center;"><code>SB</code></td>
+<td><code>B-01</code>, <code>B-02</code>, <code>B-03</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M8/AC-20261121-01_M8-A3-T2.mov"><code>AC-20261121-01_M8-A3-T2</code></a></td>
+</tr>
+<tr>
+<td><code>M8-A3-T3</code></td>
+<td><code>AC-20261121-01</code></td>
+<td>21/11/2026</td>
+<td><a href="https://github.com/luisa12ll">Luisa de Souza</a></td>
+<td style="text-align: center;"><code>SB</code></td>
+<td><code>B-03</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M8/AC-20261121-01_M8-A3-T3.mov"><code>AC-20261121-01_M8-A3-T3</code></a></td>
+</tr>
+<tr>
+<td><code>M8-A4-T1</code></td>
+<td><code>AC-20261121-03</code></td>
+<td>21/11/2026</td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td style="text-align: center;"><code>S</code></td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A4/M8_A4_T1_FL1.webm">M8_A4_T1_FL1.webm</a></td>
+</tr>
+<tr>
+<td><code>M8-A4-T2</code></td>
+<td><code>AC-20261121-03</code></td>
+<td>21/11/2026</td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td style="text-align: center;"><code>S</code></td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A4/M8_A4_T2_FL2.webm">M8_A4_T2_FL2.webm</a></td>
+</tr>
+<tr>
+<td><code>M8-A4-T3</code></td>
+<td><code>AC-20261121-03</code></td>
+<td>21/11/2026</td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td style="text-align: center;"><code>IMP</code></td>
+<td><code>B-10</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A4/M8_A4_T3_FL3.webm">M8_A4_T3_FL3.webm</a></td>
+</tr>
+<tr>
+<td><code>M9-A1-T1</code></td>
+<td><code>AC-20261121-02</code></td>
+<td>21/11/2026</td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td style="text-align: center;"><code>S</code></td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A1/M9_A1_T1_FL1.mp4">M9_A1_T1_FL1.mp4</a></td>
+</tr>
+<tr>
+<td><code>M9-A1-T2</code></td>
+<td><code>AC-20261121-02</code></td>
+<td>21/11/2026</td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td style="text-align: center;"><code>SB</code></td>
+<td><code>B-11</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A1/M9_A1_T2_FL2.mp4">M9_A1_T2_FL2.mp4</a></td>
+</tr>
+<tr>
+<td><code>M9-A1-T3</code></td>
+<td><code>AC-20261121-02</code></td>
+<td>21/11/2026</td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td style="text-align: center;"><code>S</code></td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A1/M9_A1_T3_FL3.mp4">M9_A1_T3_FL3.mp4</a></td>
+</tr>
+<tr>
+<td><code>M9-A3-T1</code></td>
+<td><code>AC-20261122-02</code></td>
+<td>22/11/2026</td>
+<td><a href="https://github.com/luisa12ll">Luisa de Souza</a></td>
+<td style="text-align: center;"><code>IMP</code></td>
+<td><code>B-04</code>, <code>B-05</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M9/AC-20261122-02_M9-A3-T1.mov"><code>AC-20261122-02_M9-A3-T1</code></a></td>
+</tr>
+<tr>
+<td><code>M9-A3-T2</code></td>
+<td><code>AC-20261122-02</code></td>
+<td>22/11/2026</td>
+<td><a href="https://github.com/luisa12ll">Luisa de Souza</a></td>
+<td style="text-align: center;"><code>IMP</code></td>
+<td><code>B-04</code>, <code>B-06</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M9/AC-20261122-02_M9-A3-T2.mov"><code>AC-20261122-02_M9-A3-T2</code></a></td>
+</tr>
+<tr>
+<td><code>M9-A3-T3</code></td>
+<td><code>AC-20261122-02</code></td>
+<td>22/11/2026</td>
+<td><a href="https://github.com/luisa12ll">Luisa de Souza</a></td>
+<td style="text-align: center;"><code>SB</code></td>
+<td><code>B-07</code>, <code>B-08</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M9/AC-20261122-02_M9-A3-T3.mov"><code>AC-20261122-02_M9-A3-T3</code></a></td>
+</tr>
+<tr>
+<td><code>M9-A4-T1</code></td>
+<td><code>AC-20261121-04</code></td>
+<td>21/11/2026</td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td style="text-align: center;"><code>S</code></td>
+<td>—</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A4/M9_A4_T1_FL1.webm">M9_A4_T1_FL1.webm</a></td>
+</tr>
+<tr>
+<td><code>M9-A4-T2</code></td>
+<td><code>AC-20261121-04</code></td>
+<td>21/11/2026</td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td style="text-align: center;"><code>SB</code></td>
+<td><code>B-12</code></td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A4/M9_A4_T2_FL2.webm">M9_A4_T2_FL2.webm</a></td>
+</tr>
+<tr>
+<td><code>M9-A4-T3</code></td>
+<td><code>AC-20261121-04</code></td>
+<td>21/11/2026</td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td style="text-align: center;"><code>IMP</code></td>
+<td>B-13, B-14</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A4/M9_A4_T3_FL3.webm">M9_A4_T3_FL3.webm</a></td>
+</tr>
+<tr>
+<td><code>M10-A1-T1</code></td>
+<td><code>AC-20261117-02</code></td>
+<td>17/11/2026</td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td style="text-align: center;"><code>S</code></td>
+<td>—</td>
+<td><a href="../evidencias/acessibilidade/A1/M10_A1_T1_04_ListaDeAulas.png">M10_A1_T1_04_ListaDeAulas.png</a></td>
+</tr>
+<tr>
+<td><code>M10-A1-T2</code></td>
+<td><code>AC-20261117-02</code></td>
+<td>17/11/2026</td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td style="text-align: center;"><code>SB</code></td>
+<td><code>B-15</code></td>
+<td><a href="../evidencias/acessibilidade/A1/M10_A1_T2_02_Legendas.png">M10_A1_T2_02_Legendas.png</a></td>
+</tr>
+<tr>
+<td><code>M10-A1-T3</code></td>
+<td><code>AC-20261117-02</code></td>
+<td>17/11/2026</td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td style="text-align: center;"><code>S</code></td>
+<td>—</td>
+<td><a href="../evidencias/acessibilidade/A1/M10_A1_T3_03_Retorno.png">M10_A1_T3_03_Retorno.png</a></td>
+</tr>
+<tr>
+<td><code>M11-A1-T1</code></td>
+<td><code>AC-20261117-04</code></td>
+<td>17/11/2026</td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td style="text-align: center;"><code>S</code></td>
+<td>—</td>
+<td><a href="../evidencias/acessibilidade/A1/M11_A1_T1_03_ListaDeAulas.png">M11_A1_T1_03_ListaDeAulas.png</a></td>
+</tr>
+<tr>
+<td><code>M11-A1-T2</code></td>
+<td><code>AC-20261117-04</code></td>
+<td>17/11/2026</td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td style="text-align: center;"><code>S</code></td>
+<td>—</td>
+<td><a href="../evidencias/acessibilidade/A1/M11_A1_T2_03_Legendas.png">M11_A1_T2_03_Legendas.png</a></td>
+</tr>
+<tr>
+<td><code>M11-A1-T3</code></td>
+<td><code>AC-20261117-04</code></td>
+<td>17/11/2026</td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td style="text-align: center;"><code>SB</code></td>
+<td><code>B-18</code></td>
+<td><a href="../evidencias/acessibilidade/A1/M11_A1_T3_03_Retorno.png">M11_A1_T3_03_Retorno.png</a></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 12. Resultado por combinação. Fonte: registros das sessões e evidências consolidadas.</em></p>
+<p><strong>Gravações A3 no repositório:</strong> <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/tree/main/assets/dados/fase4/acessibilidade/A3">pasta A3</a>, <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/tree/main/assets/dados/fase4/acessibilidade/A3/M8">pasta M8</a> e <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/tree/main/assets/dados/fase4/acessibilidade/A3/M9">pasta M9</a>. Evidências adicionais: <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/AC_Preparacao-A3.mov">preparação de A3</a> e <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M9/AC-20261122-02_Preparacao-VoiceOver.mov">preparação do VoiceOver</a>.</p>
+<p><strong>Uso dos resultados:</strong> a classificação <code>SB</code> de <code>M9-A3-T3</code> foi preservada para manter a fidelidade ao documento original. A nota e as conclusões de Q8 são as mesmas se a combinação for reclassificada como impedimento: 6/9 (66,67%) ou 5/9 (55,56%), ambos abaixo da meta.</p>
+<p><a id="registro-barreiras"></a></p>
+<h2 id="8-registro-das-barreiras">8. Registro das barreiras<a class="headerlink" href="#8-registro-das-barreiras" title="Link para esta seção">&para;</a></h2>
+<p><strong>Gravidade adotada:</strong> <em>bloqueia</em> (impede etapa essencial), <em>dificulta</em> (demanda contorno ou reduz compreensão) e <em>incomoda</em> (não altera a conclusão). A associação WCAG é <strong>indicativa e específica do achado observado</strong>, não uma declaração de descumprimento global da plataforma.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Combinação e etapa</th>
+<th>Passos para reproduzir</th>
+<th>Comportamento esperado</th>
+<th>Comportamento observado</th>
+<th>Critério WCAG</th>
+<th style="text-align: center;">Gravidade</th>
+<th>Evidência</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>B-01</code></td>
+<td><code>M8-A3-T2</code>, etapa 4</td>
+<td>Abrir "História dos números", iniciar e pausar com Espaço e pressionar Tab sem mover o ponteiro</td>
+<td>Botões CC e configurações recebem foco pelo teclado</td>
+<td>Os controles só aparecem com o ponteiro sobre o vídeo; sem ele, ficam ocultos e o Tab não os alcança, impedindo ativar a legenda pelo teclado. A transcrição pelas abas é alternativa acessível</td>
+<td>2.1.1</td>
+<td style="text-align: center;">Dificulta</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M8/AC-20261121-01_M8-A3-T2-verificacao.mov"><code>AC-20261121-01_M8-A3-T2-verificacao</code></a></td>
+</tr>
+<tr>
+<td><code>B-02</code></td>
+<td><code>M8-A3-T2</code>, etapa 4</td>
+<td>Com os controles visíveis, levar o foco ao botão de configurações e pressionar Enter</td>
+<td>Esc fecha o menu e o foco volta ao player</td>
+<td>Tab, Shift+Tab, setas e Esc não saem do menu; foi preciso usar o <strong>trackpad</strong></td>
+<td>2.1.2</td>
+<td style="text-align: center;">Dificulta</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M8/AC-20261121-01_M8-A3-T2-verificacao.mov"><code>AC-20261121-01_M8-A3-T2-verificacao</code></a></td>
+</tr>
+<tr>
+<td><code>B-03</code></td>
+<td><code>M8-A3-T2</code>, etapas 1 e 2; <code>M8-A3-T3</code>, etapas 1 e 3</td>
+<td>Da barra de endereço, avançar com Tab até a videoaula, o player, o botão "Vamos lá" e a primeira resposta</td>
+<td>Chegar ao conteúdo da tarefa com poucas teclas</td>
+<td>63 Tabs até a videoaula, 40 até o player, 34 até "Vamos lá" e 45 até a primeira resposta. A página tem o link "Pular para o conteúdo principal", identificado no rotor do VoiceOver</td>
+<td>---</td>
+<td style="text-align: center;">Incomoda</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M8/AC-20261121-01_M8-A3-T2.mov"><code>AC-20261121-01_M8-A3-T2</code></a>, <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M8/AC-20261121-01_M8-A3-T3.mov"><code>AC-20261121-01_M8-A3-T3</code></a></td>
+</tr>
+<tr>
+<td><code>B-04</code></td>
+<td><code>M9-A3-T1</code>, etapa 3; <code>M9-A3-T2</code>, etapa 1</td>
+<td>Com o VoiceOver ativo, abrir pelo rotor a unidade "Números: sistema de numeração decimal"</td>
+<td>Anúncio da nova página e foco no início do conteúdo</td>
+<td>Nenhum anúncio; o cursor do VoiceOver fica em um elemento vazio, sem nome, acima de "Sobre esta unidade"</td>
+<td>2.4.3, 4.1.2</td>
+<td style="text-align: center;">Dificulta</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M9/AC-20261122-02_M9-A3-T1.mov"><code>AC-20261122-02_M9-A3-T1</code></a>, <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M9/AC-20261122-02_M9-A3-T2.mov"><code>AC-20261122-02_M9-A3-T2</code></a></td>
+</tr>
+<tr>
+<td><code>B-05</code></td>
+<td><code>M9-A3-T1</code>, etapa 3</td>
+<td>Na página da unidade, avançar com VO+seta para a direita a partir do topo do conteúdo</td>
+<td>Leitura resumida do progresso e passagem para "Sobre esta unidade" e a lista de aulas</td>
+<td>Os quadrados da barra de progresso são lidos um a um e soletrados, e o cursor não avança até o conteúdo da unidade, impedindo ouvir a lista de aulas</td>
+<td>1.3.1, 4.1.2</td>
+<td style="text-align: center;">Bloqueia</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M9/AC-20261122-02_M9-A3-T1-verificacao.mov"><code>AC-20261122-02_M9-A3-T1-verificacao</code></a></td>
+</tr>
+<tr>
+<td><code>B-06</code></td>
+<td><code>M9-A3-T2</code>, etapas 2 a 4</td>
+<td>Com o VoiceOver ativo, abrir "História dos números" pelo rotor e avançar com VO+seta para a direita ou Espaço</td>
+<td>O cursor do VoiceOver alcança o player, anuncia os controles de reprodução e chega às abas "Sobre" e "Transcrição"</td>
+<td>O cursor percorre a navegação lateral com as demais aulas e não alcança o player nem as abas; não é possível iniciar o vídeo nem abrir a transcrição</td>
+<td>2.1.1, 4.1.2</td>
+<td style="text-align: center;">Bloqueia</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M9/AC-20261122-02_M9-A3-T2.mov"><code>AC-20261122-02_M9-A3-T2</code></a></td>
+</tr>
+<tr>
+<td><code>B-07</code></td>
+<td><code>M9-A3-T3</code>, etapa 3</td>
+<td>Com o VoiceOver ativo, abrir o exercício, acionar "Vamos lá" e levar o foco ao campo de resposta</td>
+<td>O campo é anunciado com o enunciado e a expressão a converter</td>
+<td>O campo é anunciado apenas como caixa de texto; o enunciado e a expressão matemática não são lidos, e não é possível saber o que responder</td>
+<td>1.3.1, 3.3.2</td>
+<td style="text-align: center;">Dificulta</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M9/AC-20261122-02_M9-A3-T3.mov"><code>AC-20261122-02_M9-A3-T3</code></a></td>
+</tr>
+<tr>
+<td><code>B-08</code></td>
+<td><code>M9-A3-T3</code>, etapa 2</td>
+<td>Com o VoiceOver ativo, levar o foco ao botão de dica com Tab e acioná-lo</td>
+<td>O texto da dica é anunciado ou o foco vai para ele</td>
+<td>A dica aparece na tela, mas não é anunciada</td>
+<td>4.1.3</td>
+<td style="text-align: center;">Dificulta</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A3/M9/AC-20261122-02_M9-A3-T3.mov"><code>AC-20261122-02_M9-A3-T3</code></a></td>
+</tr>
+<tr>
+<td><code>B-09</code></td>
+<td><code>M8-A1-T3-E3/E4</code></td>
+<td>No Chrome/Windows, abrir o exercício de T3; percorrer alternativas SIM/NÃO usando Tab, Shift+Tab, setas, Enter e Espaço</td>
+<td>Alternativas recebem foco e podem ser escolhidas pelo teclado</td>
+<td>Opções não foram alcançadas/acionadas, impossibilitando envio da resposta</td>
+<td>2.1.1</td>
+<td style="text-align: center;">Bloqueia</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A1/M8_A1_Piloto_T3_FL3.mp4">M8_A1_Piloto_T3_FL3.mp4</a> (nome do arquivo recebido; T3)</td>
+</tr>
+<tr>
+<td><code>B-10</code></td>
+<td><code>M8-A4-T3-E3/E4</code></td>
+<td>No Firefox/Ubuntu, abrir T3 e percorrer SIM/NÃO com Tab, Shift+Tab, setas e Espaço</td>
+<td>Alternativas acessíveis e acionáveis</td>
+<td>As opções não puderam ser selecionadas, impedindo envio</td>
+<td>2.1.1</td>
+<td style="text-align: center;">Bloqueia</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A4/M8_A4_T3_FL3.webm">M8_A4_T3_FL3.webm</a></td>
+</tr>
+<tr>
+<td><code>B-11</code></td>
+<td><code>M9-A1-T2-E2/E4</code></td>
+<td>Com NVDA ativo, abrir T2 e iniciar vídeo com anúncios do leitor habilitados</td>
+<td>Controles e mensagens essenciais permanecem compreensíveis</td>
+<td>Áudio do conteúdo e voz do NVDA se sobrepuseram</td>
+<td>1.4.2 (referência de áudio; relação indicativa)</td>
+<td style="text-align: center;">Dificulta</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A1/M9_A1_T2_FL2.mp4">M9_A1_T2_FL2.mp4</a> (nome do arquivo recebido; T2)</td>
+</tr>
+<tr>
+<td><code>B-12</code></td>
+<td><code>M9-A4-T2-E2/E4</code></td>
+<td>Com Orca ativo, iniciar reprodução da videoaula</td>
+<td>Fala do leitor identificável durante a interação</td>
+<td>Fala do Orca sobreposta ao áudio do conteúdo</td>
+<td>1.4.2 (relação indicativa)</td>
+<td style="text-align: center;">Dificulta</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A4/M9_A4_T2_FL2.webm">M9_A4_T2_FL2.webm</a></td>
+</tr>
+<tr>
+<td><code>B-13</code></td>
+<td><code>M9-A4-T3-E3/E4</code></td>
+<td>Percorrer controles de T3 com Orca/Firefox e tentar selecionar SIM/NÃO</td>
+<td>Controle anunciado e acionável com tecnologia assistiva</td>
+<td>Alternativas inacessíveis pelos comandos utilizados e impossibilidade de enviar</td>
+<td>2.1.1, 4.1.2 (indícios a confirmar)</td>
+<td style="text-align: center;">Bloqueia</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A4/M9_A4_T3_FL3.webm">M9_A4_T3_FL3.webm</a></td>
+</tr>
+<tr>
+<td><code>B-14</code></td>
+<td><code>M9-A4-T3-E1/E3</code></td>
+<td>Navegar pelo enunciado e alternativas de T3 usando Orca</td>
+<td>Leitura inteligível dos enunciados/alternativas</td>
+<td>Conteúdo fragmentado, inclusive soletração de alternativas</td>
+<td>1.3.1, 4.1.2 (associação indicativa)</td>
+<td style="text-align: center;">Dificulta</td>
+<td><a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/dados/fase4/acessibilidade/A4/M9_A4_T3_FL3.webm">M9_A4_T3_FL3.webm</a></td>
+</tr>
+<tr>
+<td><code>B-15</code></td>
+<td><code>M10-A1-T2-E2</code></td>
+<td>Ajustar Chrome para 200%, abrir e reproduzir a videoaula</td>
+<td>Conteúdo e controles essenciais preservados</td>
+<td>Área visível do reprodutor ficou limitada; tarefa ainda concluída</td>
+<td>1.4.4 (análise funcional; não é violação comprovada)</td>
+<td style="text-align: center;">Incomoda</td>
+<td><a href="../evidencias/acessibilidade/A1/M10_A1_T2_02_Reproducao.png">M10_A1_T2_02_Reproducao.png</a></td>
+</tr>
+<tr>
+<td><code>B-16</code></td>
+<td><code>M11-A1/P1</code></td>
+<td>Inspecionar o link <em>Números: sistema de numeração decimal</em> com CCA no tema padrão</td>
+<td>Contraste mínimo compatível com tamanho de fonte</td>
+<td>Razão manual anotada de <strong>4,0:1</strong>; captura numérica específica não localizada</td>
+<td>1.4.3 (condicional ao tamanho)</td>
+<td style="text-align: center;">Dificulta</td>
+<td>Registro manual de F6; <a href="../evidencias/acessibilidade/A1/foto_p1.png">foto_p1.png</a> apenas para contexto</td>
+</tr>
+<tr>
+<td><code>B-17</code></td>
+<td><code>M11-A1/P2–P3</code></td>
+<td>Inspecionar o texto <em>A SEGUIR!</em> e executar contraste do Lighthouse/axe</td>
+<td>Texto comum com razão mínima AA de 4,5:1</td>
+<td>Razão <strong>4,48:1</strong>, com texto de 12 px negrito e cores <code>#686D75</code>/<code>#E7EFF8</code>; duas detecções da mesma URL</td>
+<td>1.4.3</td>
+<td style="text-align: center;">Dificulta</td>
+<td><a href="../evidencias/acessibilidade/A1/P2_Axe_R1_Contraste_Aseguir.png">P2_Axe_R1_Contraste_Aseguir.png</a>, <a href="../evidencias/acessibilidade/A1/P2_Lighthouse_R1.json">P2_Lighthouse_R1.json</a>, <a href="../evidencias/acessibilidade/A1/P3_Lighthouse_R1.json">P3_Lighthouse_R1.json</a></td>
+</tr>
+<tr>
+<td><code>B-18</code></td>
+<td><code>M11-A1-T3-E5</code></td>
+<td>Com tema Céu noturno, observar controle Recomeçar antes de posicionar o mouse</td>
+<td>Ícone perceptível mesmo sem hover</td>
+<td>Ícone quase indistinguível sem hover, tornando-se perceptível com ponteiro sobre ele</td>
+<td>1.4.11 (associação indicativa para contraste não textual)</td>
+<td style="text-align: center;">Dificulta</td>
+<td><a href="../evidencias/acessibilidade/A1/M11_A1_T3_04_IconeRecomecar.png.png">M11_A1_T3_04_IconeRecomecar.png.png</a></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 13. Barreiras B-01 a B-18. As barreiras B-01 a B-08 foram preservadas da versão 1.0 de Luisa de Souza; B-09 a B-18 foram consolidadas com base nas observações de <a href="https://github.com/menali17">Enzo Menali</a>.</em></p>
+<p><strong>Observação:</strong> B-11 e B-12 descrevem dificuldades de sobreposição de áudio observadas nos testes. Sem ensaio adicional específico, não se atribui automaticamente a origem à implementação da Khan Academy ou ao sistema operacional. Em B-16, a razão de 4,0:1 foi anotada manualmente e não recebe o mesmo grau de comprovação automatizada de B-17.</p>
+<p><a id="registro-julgamento"></a></p>
+<h2 id="9-calculo-e-julgamento-de-m8m11-q7q10-e-h7h10">9. Cálculo e julgamento de M8–M11, Q7–Q10 e H7–H10<a class="headerlink" href="#9-calculo-e-julgamento-de-m8m11-q7q10-e-h7h10" title="Link para esta seção">&para;</a></h2>
+<h3 id="91-escalas-e-formulas">9.1 Escalas e fórmulas<a class="headerlink" href="#91-escalas-e-formulas" title="Link para esta seção">&para;</a></h3>
+<p>Para M8, M9 e M10:</p>
+<p><code>Taxa de conclusão = 100 × A / N</code>, com <code>A = S + SB</code> e <code>N = S + SB + F + IMP</code> entre as combinações válidas (<code>X</code> não é contabilizada).</p>
+<p>Na <a href="../../fase-2/criterios-julgamento/#2-metricas-percentuais">Fase 2</a>, os níveis são <strong>3 = 100%</strong>, <strong>2 = de 90% até menos de 100%</strong>, <strong>1 = de 75% até menos de 90%</strong> e <strong>0 = menos de 75%</strong>. Para aprovar uma questão, além da nota mínima 2, não pode haver impedimento de tarefa essencial.</p>
+<table>
+<thead>
+<tr>
+<th>Métrica</th>
+<th style="text-align: right;">S</th>
+<th style="text-align: right;">SB</th>
+<th style="text-align: right;">IMP</th>
+<th style="text-align: right;">F</th>
+<th style="text-align: right;">Total válido</th>
+<th style="text-align: right;">Conclusões válidas</th>
+<th style="text-align: right;">Resultado</th>
+<th>Nota</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>M8</strong> — teclado</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;"><strong>9</strong></td>
+<td style="text-align: right;"><strong>7</strong></td>
+<td style="text-align: right;"><strong>77,78%</strong></td>
+<td><strong>1 — Mínimo aceitável</strong></td>
+</tr>
+<tr>
+<td><strong>M9</strong> — leitor de tela (classificações originais)</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;"><strong>9</strong></td>
+<td style="text-align: right;"><strong>6</strong></td>
+<td style="text-align: right;"><strong>66,67%</strong></td>
+<td><strong>0 — Inaceitável</strong></td>
+</tr>
+<tr>
+<td><strong>M10</strong> — zoom a 200%</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;"><strong>3</strong></td>
+<td style="text-align: right;"><strong>3</strong></td>
+<td style="text-align: right;"><strong>100%</strong></td>
+<td><strong>3 — Excelente</strong></td>
+</tr>
+<tr>
+<td><strong>M11</strong> — alto contraste funcional (complementar)</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;"><strong>3</strong></td>
+<td style="text-align: right;"><strong>3</strong></td>
+<td style="text-align: right;"><strong>100%</strong></td>
+<td><strong>Sem nota percentual isolada para M11</strong></td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 14. Contagens, percentuais e notas. Fonte: resultados válidos da Tabela 12 e critérios de julgamento da Fase 2.</em></p>
+<p><strong>Verificação aritmética:</strong> <code>M8 = 7/9 × 100 = 77,78%</code>; <code>M9 = 6/9 × 100 = 66,67%</code>; <code>M10 = 3/3 × 100 = 100%</code>; alto contraste <code>3/3 × 100 = 100%</code> (indicador complementar de M11).</p>
+<h3 id="92-contraste-textual-de-m11">9.2 Contraste textual de M11<a class="headerlink" href="#92-contraste-textual-de-m11" title="Link para esta seção">&para;</a></h3>
+<p>Nas <strong>anotações</strong> do F6: <code>E_a = 11</code>, <code>E_c(AA) = 9</code> (<strong>81,82%</strong>) e <code>E_c(AAA) = 6</code> (<strong>54,55%</strong>). O nível Alvo (2) exige que <strong>todos</strong> os textos aplicáveis inspecionados atendam AA; a observação confirmada B-17 impede essa condição. O resultado do tema Céu noturno é relatado separadamente e não substitui a medição textual.</p>
+<p><strong>Nota proposta de M11: 0 — Inaceitável, sob a interpretação de que B-16 compromete o texto do link necessário à tarefa T1 e de que a razão manual de 4,0:1 se aplica a texto comum.</strong> Esse é um <strong>julgamento condicionado e rastreado</strong>, não comprovação independente da razão de 4,0:1 por arquivo do CCA. Caso o link não seja considerado essencial ou a medição não seja aplicável após verificar o tamanho, o critério da Fase 2 prevê <strong>nota 1</strong> se a falha remanescente afetar apenas elementos não essenciais. Em ambos os cenários, <strong>Q10 não atende integralmente ao alvo AA</strong> e <strong>H10 não é sustentada na amostra</strong>, em virtude da falha de contraste textual B-17 confirmada.</p>
+<h3 id="93-respostas-as-questoes-e-hipoteses">9.3 Respostas às questões e hipóteses<a class="headerlink" href="#93-respostas-as-questoes-e-hipoteses" title="Link para esta seção">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Questão / hipótese</th>
+<th>Evidência principal</th>
+<th>Questão atendida?</th>
+<th>Hipótese na amostra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Q7/H7 — teclado</strong></td>
+<td>M8 7/9 = 77,78%; T3 bloqueada em A1 e A4 (B-09, B-10)</td>
+<td><strong>Não</strong></td>
+<td><strong>H7 não sustentada</strong>; meta 90% não atingida</td>
+</tr>
+<tr>
+<td><strong>Q8/H8 — leitor de tela</strong></td>
+<td>M9 6/9 = 66,67%; impedimentos em A3 e A4</td>
+<td><strong>Não</strong></td>
+<td><strong>H8 não sustentada</strong>; meta 90% não atingida</td>
+</tr>
+<tr>
+<td><strong>Q9/H9 — ampliação</strong></td>
+<td>M10 3/3 = 100%; sem bloqueio essencial a 200%</td>
+<td><strong>Sim</strong>, no recorte testado</td>
+<td><strong>H9 sustentada na amostra</strong></td>
+</tr>
+<tr>
+<td><strong>Q10/H10 — contraste</strong></td>
+<td>B-17 confirmada; 3/3 tarefas em Céu noturno</td>
+<td><strong>Não integralmente</strong></td>
+<td><strong>H10 não sustentada</strong>; requisito textual não atendido</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 15. Julgamento das questões Q7–Q10 e hipóteses H7–H10.</em></p>
+<p><strong>Ressalva de M9/A3/T3:</strong> o registro original <code>SB</code> foi preservado, embora a falta de anúncio de informação essencial (B-07) seja metodologicamente relevante. Aplicando leitura estrita da definição de M9, essa combinação poderia ser reclassificada como impedimento, resultando em <strong>5/9 = 55,56%</strong>. Esse cenário alternativo não altera a nota 0 de M9 nem a conclusão negativa de Q8/H8.</p>
+<h3 id="94-recomendacoes-priorizadas">9.4 Recomendações priorizadas<a class="headerlink" href="#94-recomendacoes-priorizadas" title="Link para esta seção">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Prioridade proposta</th>
+<th>Barreiras associadas</th>
+<th>Recomendação de melhoria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Alta</strong></td>
+<td>B-09, B-10, B-13</td>
+<td>Tornar alternativas SIM/NÃO focáveis, identificáveis e acionáveis por teclado e leitores de tela; verificar HTML semântico, rótulos e gerenciamento de foco.</td>
+</tr>
+<tr>
+<td><strong>Alta</strong></td>
+<td>B-05, B-06, B-07, B-08, B-14</td>
+<td>Corrigir ordem e estrutura de leitura para progressão, enunciados, controles de vídeo e dicas; anunciar contexto e mudanças de estado.</td>
+</tr>
+<tr>
+<td><strong>Alta</strong></td>
+<td>B-16, B-17</td>
+<td>Adequar contraste dos textos identificados, especialmente links e rótulos de navegação; confirmar tamanhos e estados de interface.</td>
+</tr>
+<tr>
+<td><strong>Média</strong></td>
+<td>B-01, B-02, B-04</td>
+<td>Permitir revelar e operar controles do player exclusivamente pelo teclado; garantir saída de menus e anúncio de mudanças de página.</td>
+</tr>
+<tr>
+<td><strong>Média</strong></td>
+<td>B-18</td>
+<td>Tornar o ícone Recomeçar perceptível sem depender exclusivamente de hover no tema de contraste.</td>
+</tr>
+<tr>
+<td><strong>Baixa/Média</strong></td>
+<td>B-03, B-11, B-12, B-15</td>
+<td>Reduzir navegação excessiva, investigar clareza simultânea de áudio e melhorar o enquadramento do reprodutor com zoom.</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 16. Recomendações derivadas das barreiras observadas; prioridades indicativas da avaliação, não classificações automatizadas.</em></p>
+<h3 id="95-sintese-analitica">9.5 Síntese analítica<a class="headerlink" href="#95-sintese-analitica" title="Link para esta seção">&para;</a></h3>
+<p>A avaliação demonstrou que a ampliação de 200% preservou as tarefas essenciais do recorte observado no Windows (<code>M10 = 100%</code>, nota 3), enquanto a navegação por teclado (<code>M8 = 77,78%</code>, nota 1) e o uso de leitores de tela (<code>M9 = 66,67%</code>, nota 0 conforme registro original) apresentaram impedimentos importantes. O contraste textual apresentou ao menos uma não conformidade AA confirmada automaticamente, embora os três fluxos tenham sido concluídos com o tema Céu noturno. Assim, <strong>H9 foi sustentada na amostra e H7, H8 e H10 não foram sustentadas</strong>. As conclusões dependem do escopo efetivamente ensaiado e não representam avaliação de todas as páginas, pessoas ou tecnologias assistivas.</p>
+<h2 id="referencias">Referências<a class="headerlink" href="#referencias" title="Link para esta seção">&para;</a></h2>
+<p><a id="s1"></a></p>
+<blockquote>
+<p><strong>[S1]</strong> FCTE/UnB. <em>Procedimentos de avaliação de acessibilidade e apreensibilidade (M8 a M14)</em>, Fase 3. <a href="../../fase-3/procedimentos-acessibilidade-apreensibilidade/">Acessar</a>.</p>
+</blockquote>
+<p><a id="s2"></a></p>
+<blockquote>
+<p><strong>[S2]</strong> FCTE/UnB. <em>Registro de execuções de adaptabilidade (M6 e M7)</em>, Fase 4. <a href="../registro-adaptabilidade/">Acessar</a>.</p>
+</blockquote>
+<p><a id="s3"></a></p>
+<blockquote>
+<p><strong>[S3]</strong> APPLE. <em>VoiceOver User Guide for Mac</em>. <a href="https://support.apple.com/guide/voiceover/welcome/mac">Acessar</a>. Acesso registrado em 22 nov. 2026 pela versão original.</p>
+</blockquote>
+<p><a id="s4"></a></p>
+<blockquote>
+<p><strong>[S4]</strong> FCTE/UnB. <em>Especificação das métricas M1–M14</em>, Fase 2. <a href="../../fase-2/metricas/">Acessar</a>.</p>
+</blockquote>
+<p><a id="s5"></a></p>
+<blockquote>
+<p><strong>[S5]</strong> FCTE/UnB. <em>Questões e hipóteses Q1–Q11</em>, Fase 2. <a href="../../fase-2/questoes-hipoteses/">Acessar</a>.</p>
+</blockquote>
+<p><a id="s6"></a></p>
+<blockquote>
+<p><strong>[S6]</strong> FCTE/UnB. <em>Níveis de pontuação e critérios de julgamento</em>, versão 1.5, Fase 2. <a href="../../fase-2/criterios-julgamento/">Acessar</a>.</p>
+</blockquote>
+<p><a id="s7"></a></p>
+<blockquote>
+<p><strong>[S7]</strong> FCTE/UnB. <em>Escopo da avaliação</em>, Fase 1. <a href="../../fase-1/escopo-da-avaliacao/">Acessar</a>.</p>
+</blockquote>
+<p><a id="s8"></a></p>
+<blockquote>
+<p><strong>[S8]</strong> W3C. <em>Web Content Accessibility Guidelines (WCAG) 2.1</em>. <a href="https://www.w3.org/TR/WCAG21/">Acessar</a>.</p>
+</blockquote>
+<p><a id="s9"></a></p>
+<blockquote>
+<p><strong>[S9]</strong> GOOGLE. <em>Lighthouse — Chrome for Developers</em>. <a href="https://developer.chrome.com/docs/devtools/lighthouse/">Acessar</a>.</p>
+</blockquote>
+<p><a id="s10"></a></p>
+<blockquote>
+<p><strong>[S10]</strong> DEQUE SYSTEMS. <em>axe-core — Accessibility engine for automated Web UI testing</em>. <a href="https://github.com/dequelabs/axe-core">Acessar</a>.</p>
+</blockquote>
+<p><em>O protocolo da Fase 3 também reúne as referências normativas e de ferramentas para Colour Contrast Analyser, NVDA, Orca e o tema de contraste do Windows.</em></p>
+<h2 id="historico-de-versoes">Histórico de versões<a class="headerlink" href="#historico-de-versoes" title="Link para esta seção">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Versão</th>
+<th style="text-align: center;">Data</th>
+<th>Descrição</th>
+<th>Responsável</th>
+<th>Revisor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;">22/11/2026</td>
+<td>Estrutura de registro M8/M9 e preparação do ambiente A3, com observações, barreiras e evidências da avaliadora.</td>
+<td><a href="https://github.com/luisa12ll">Luisa de Souza</a></td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+</tr>
+<tr>
+<td style="text-align: center;">1.1</td>
+<td style="text-align: center;"><strong>22/11/2026</strong></td>
+<td>Consolidação de A1/A3/A4; M8–M11, F5/F6/F7, resultados, barreiras B-01 a B-18, julgamento Q7–Q10/H7–H10, referências e inventário de evidências para integração posterior.</td>
+<td><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td><a href="https://github.com/luisa12ll">Luisa de Souza</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.top", "toc.follow", "search.suggest", "search.highlight", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+        <script src="../../js/mathjax.js"></script>
+      
+        <script src="../../js/khan.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
