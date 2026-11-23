@@ -63,8 +63,9 @@ nav:
   - Fase 4:
       - Visão Geral: fase-4/index.md
       - Resultados da Avaliação de Desempenho: fase-4/registro-desempenho.md
-      - Registro de execução de adaptabilidade: fase-4/registro-adaptabilidade.md
-      - Registro de execução de acessibilidade: fase-4/registro-acessibilidade.md
+      - Registro de Execução de Adaptabilidade: fase-4/registro-adaptabilidade.md
+      - Registro de Acessibilidade: fase-4/registro-acessibilidade.md
+      - Registro de Apreensibilidade: fase-4/registro-apreensibilidade.md
   - Gestão:
       - Plano de medição: gestao/plano_de_medicao.md
       - Painel PSM/CID: gestao/horas_consolidadas.md
