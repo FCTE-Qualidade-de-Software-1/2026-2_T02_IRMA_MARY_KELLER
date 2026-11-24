@@ -60,7 +60,7 @@ A Tabela 2 define combinações com finalidade específica. A avaliação não e
 | `A1` | Windows | Google Chrome | Ambiente de referência para eficiência de desempenho, adaptabilidade e acessibilidade | NVDA e navegação por teclado |
 | `A2` | Windows | Mozilla Firefox | Comparação de adaptabilidade com o motor Gecko | Navegação por teclado |
 | `A3` | macOS | Apple Safari | Adaptabilidade no motor WebKit e acessibilidade no ecossistema Apple | VoiceOver e navegação por teclado |
-| `A4` | Ubuntu LTS | Mozilla Firefox | Adaptabilidade em sistema livre e acessibilidade no Linux | Orca e navegação por teclado |
+| `A4` | Ubuntu | Mozilla Firefox | Adaptabilidade em sistema livre e acessibilidade no Linux | Orca e navegação por teclado |
 
 *Tabela 2. Matriz direcionada de ambientes e finalidade de cada combinação. Fonte: Elaborada por: [Enzo Menali](https://github.com/menali17) e [José Augusto](https://github.com/JAugustoM)*
 

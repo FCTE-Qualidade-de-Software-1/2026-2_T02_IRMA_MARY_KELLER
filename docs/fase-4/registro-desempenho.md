@@ -52,8 +52,8 @@ A Tabela 3 documenta os valores e URLs congeladas antes do início das mediçõe
 | `D1` | Disciplina | https://pt.khanacademy.org/computing | 11/11/2026 |
 | `D2` | Curso | https://pt.khanacademy.org/computing/computer-programming | 11/11/2026 |
 | `D3` | Unidade e aula | https://pt.khanacademy.org/computing/computer-programming/programming | 11/11/2026 |
-| `D4` | Videoaula (com transcrição) | https://pt.khanacademy.org/computing/computer-programming/programming/drawing-basics/pt/making-drawings-with-code | 11/11/2026 |
-| `D5` | Exercício (com suporte a dicas) | https://pt.khanacademy.org/computing/computer-programming/programming/drawing-basics/pc/challenge-simple-snowman | 11/11/2026 |
+| `D4` | Videoaula | https://pt.khanacademy.org/computing/computer-programming/programming/drawing-basics/pt/making-drawings-with-code | 11/11/2026 |
+| `D5` | Exercício | https://pt.khanacademy.org/computing/computer-programming/programming/drawing-basics/pc/challenge-simple-snowman | 11/11/2026 |
 | `D6` | Conta de teste (login/usuário) | José Moraes  | 11/11/2026 |
 
 *Tabela 3. Massa de dados congelada para os ensaios de desempenho. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
@@ -79,14 +79,14 @@ A Tabela 4 documenta a calibração da conexão do laboratório e os parâmetros
 
 A Tabela 5 registra o aquecimento (`W`) e as 5 repetições válidas (`R1` a `R5`) de `FL1` em conexão normal.
 
-| ID Repetição  | Data / Hora | Avaliador / Observador | Tempo E1.1 (s) | Tempo E1.2 (s) | Tempo E1.3 (s) | Resultado M2 | CPU média M3 (%) | CPU pico M3 (%) | RAM pico M4 (MiB) | Dados M5 (MiB) | Arquivo de evidência (.har / .png) | Ocorrência |
-| ------------- | ----------- | ---------------------- | :------------: | :------------: | :------------: | :----------: | :--------------: | :-------------: | :---------------: | :------------: | ---------------------------------- | :--------: |
-| `W-FL1-NORM`  | 13/11/2026 11:32 | José Augusto | 2,28 | 2,14 | - | C | 14,2 | 38,5 | 210 | 3,39 | [har](evidencias/desempenho/manual/FL1/NORM/W-FL1-NORM.har)/[jpg](evidencias/desempenho/manual/FL1/NORM/W-FL1-NORM.jpg) | - |
-| `R1-FL1-NORM` | 13/11/2026 11:34 | José Augusto | 1,00 | 1,85 | - | C | 13,2 | 39,4 | 261 | 3,32 | [har](evidencias/desempenho/manual/FL1/NORM/R1-FL1-NORM.har)/[jpg](evidencias/desempenho/manual/FL1/NORM/R1-FL1-NORM.jpg) | - |
-| `R2-FL1-NORM` | 13/11/2026 11:37 | José Augusto | 0,96 | 1,92 | - | C | 14,5 | 42,0 | 265 | 3,39 | [har](evidencias/desempenho/manual/FL1/NORM/R2-FL1-NORM.har)/[jpg](evidencias/desempenho/manual/FL1/NORM/R2-FL1-NORM.jpg) | - |
-| `R3-FL1-NORM` | 13/11/2026 11:39 | José Augusto | 1,10 | 1,88 | - | C | 12,8 | 36,5 | 269 | 3,39 | [har](evidencias/desempenho/manual/FL1/NORM/R3-FL1-NORM.har)/[jpg](evidencias/desempenho/manual/FL1/NORM/R3-FL1-NORM.jpg) | - |
-| `R4-FL1-NORM` | 13/11/2026 11:49 | José Augusto | 2,10 | 2,05 | - | C | 13,0 | 38,0 | 218 | 3,39 | [har](evidencias/desempenho/manual/FL1/NORM/R4-FL1-NORM.har)/[jpg](evidencias/desempenho/manual/FL1/NORM/R4-FL1-NORM.jpg) | - |
-| `R5-FL1-NORM` | 13/11/2026 11:54 | José Augusto | 0,98 | 1,84 | - | C | 12,5 | 37,0 | 210 | 3,39 | [har](evidencias/desempenho/manual/FL1/NORM/R5-FL1-NORM.har)/[jpg](evidencias/desempenho/manual/FL1/NORM/R5-FL1-NORM.jpg) | - |
+| ID Repetição  | Data / Hora | Avaliador / Observador | Tempo E1.1 (s) | Tempo E1.2 (s) | Resultado M2 | CPU média M3 (%) | CPU pico M3 (%) | RAM pico M4 (MiB) | Dados M5 (MiB) | Arquivo de evidência (.har / .png) | Ocorrência |
+| ------------- | ----------- | ---------------------- | :------------: | :------------: | :----------: | :--------------: | :-------------: | :---------------: | :------------: | ---------------------------------- | :--------: |
+| `W-FL1-NORM`  | 13/11/2026 11:32 | José Augusto | 2,28 | 2,14 | C | 14,2 | 38,5 | 210 | 3,39 | [har](evidencias/desempenho/manual/FL1/NORM/W-FL1-NORM.har)/[jpg](evidencias/desempenho/manual/FL1/NORM/W-FL1-NORM.jpg) | - |
+| `R1-FL1-NORM` | 13/11/2026 11:34 | José Augusto | 1,00 | 1,85 | C | 13,2 | 39,4 | 261 | 3,32 | [har](evidencias/desempenho/manual/FL1/NORM/R1-FL1-NORM.har)/[jpg](evidencias/desempenho/manual/FL1/NORM/R1-FL1-NORM.jpg) | - |
+| `R2-FL1-NORM` | 13/11/2026 11:37 | José Augusto | 0,96 | 1,92 | C | 14,5 | 42,0 | 265 | 3,39 | [har](evidencias/desempenho/manual/FL1/NORM/R2-FL1-NORM.har)/[jpg](evidencias/desempenho/manual/FL1/NORM/R2-FL1-NORM.jpg) | - |
+| `R3-FL1-NORM` | 13/11/2026 11:39 | José Augusto | 1,10 | 1,88 | C | 12,8 | 36,5 | 269 | 3,39 | [har](evidencias/desempenho/manual/FL1/NORM/R3-FL1-NORM.har)/[jpg](evidencias/desempenho/manual/FL1/NORM/R3-FL1-NORM.jpg) | - |
+| `R4-FL1-NORM` | 13/11/2026 11:49 | José Augusto | 2,10 | 2,05 | C | 13,0 | 38,0 | 218 | 3,39 | [har](evidencias/desempenho/manual/FL1/NORM/R4-FL1-NORM.har)/[jpg](evidencias/desempenho/manual/FL1/NORM/R4-FL1-NORM.jpg) | - |
+| `R5-FL1-NORM` | 13/11/2026 11:54 | José Augusto | 0,98 | 1,84 | C | 12,5 | 37,0 | 210 | 3,39 | [har](evidencias/desempenho/manual/FL1/NORM/R5-FL1-NORM.har)/[jpg](evidencias/desempenho/manual/FL1/NORM/R5-FL1-NORM.jpg) | - |
 
 *Tabela 5. Registro bruto de FL1 sob Rede Normal. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
@@ -94,14 +94,14 @@ A Tabela 5 registra o aquecimento (`W`) e as 5 repetições válidas (`R1` a `R5
 
 A Tabela 6 registra o aquecimento (`W`) e as 5 repetições válidas (`R1` a `R5`) de `FL1` em conexão limitada.
 
-| ID Repetição | Data / Hora | Avaliador / Observador | Tempo E1.1 (s) | Tempo E1.2 (s) | Tempo E1.3 (s) | Resultado M2 | CPU média M3 (%) | CPU pico M3 (%) | RAM pico M4 (MiB) | Dados M5 (MiB) | Arquivo de evidência (.har / .png) | Ocorrência |
-| ------------ | ----------- | ---------------------- | :------------: | :------------: | :------------: | :----------: | :--------------: | :-------------: | :---------------: | :------------: | ---------------------------------- | :--------: |
-| `W-FL1-LIM`  | 13/11/2026 12:20 | José Augusto | 5,80 | 5,20 | - | C | 15,8 | 46,0 | 211 | 3,39 | [har](evidencias/desempenho/manual/FL1/LIM/W-FL1-LIM.har)/[jpg](evidencias/desempenho/manual/FL1/LIM/W-FL1-LIM.jpg) | - |
-| `R1-FL1-LIM` | 13/11/2026 12:24 | José Augusto | 5,69 | 4,85 | - | C | 15,4 | 45,2 | 230 | 3,39 | [har](evidencias/desempenho/manual/FL1/LIM/R1-FL1-LIM.har)/[jpg](evidencias/desempenho/manual/FL1/LIM/R1-FL1-LIM.jpg) | - |
-| `R2-FL1-LIM` | 13/11/2026 12:25 | José Augusto | 5,74 | 4,90 | - | C | 16,1 | 48,0 | 236 | 3,39 | [har](evidencias/desempenho/manual/FL1/LIM/R2-FL1-LIM.har)/[jpg](evidencias/desempenho/manual/FL1/LIM/R2-FL1-LIM.jpg) | - |
-| `R3-FL1-LIM` | 13/11/2026 12:27 | José Augusto | 5,63 | 4,75 | - | C | 14,8 | 42,6 | 227 | 3,39 | [har](evidencias/desempenho/manual/FL1/LIM/R3-FL1-LIM.har)/[jpg](evidencias/desempenho/manual/FL1/LIM/R3-FL1-LIM.jpg) | - |
-| `R4-FL1-LIM` | 13/11/2026 12:28 | José Augusto | 5,65 | 4,80 | - | C | 15,5 | 46,1 | 236 | 3,39 | [har](evidencias/desempenho/manual/FL1/LIM/R4-FL1-LIM.har)/[jpg](evidencias/desempenho/manual/FL1/LIM/R4-FL1-LIM.jpg) | - |
-| `R5-FL1-LIM` | 13/11/2026 12:30 | José Augusto | 5,63 | 4,72 | - | C | 15,0 | 44,5 | 268 | 3,39 | [har](evidencias/desempenho/manual/FL1/LIM/R5-FL1-LIM.har)/[jpg](evidencias/desempenho/manual/FL1/LIM/R5-FL1-LIM.jpg) | - |
+| ID Repetição | Data / Hora | Avaliador / Observador | Tempo E1.1 (s) | Tempo E1.2 (s) | Resultado M2 | CPU média M3 (%) | CPU pico M3 (%) | RAM pico M4 (MiB) | Dados M5 (MiB) | Arquivo de evidência (.har / .png) | Ocorrência |
+| ------------ | ----------- | ---------------------- | :------------: | :------------: | :----------: | :--------------: | :-------------: | :---------------: | :------------: | ---------------------------------- | :--------: |
+| `W-FL1-LIM`  | 13/11/2026 12:20 | José Augusto | 5,80 | 5,20 | C | 15,8 | 46,0 | 211 | 3,39 | [har](evidencias/desempenho/manual/FL1/LIM/W-FL1-LIM.har)/[jpg](evidencias/desempenho/manual/FL1/LIM/W-FL1-LIM.jpg) | - |
+| `R1-FL1-LIM` | 13/11/2026 12:24 | José Augusto | 5,69 | 4,85 | C | 15,4 | 45,2 | 230 | 3,39 | [har](evidencias/desempenho/manual/FL1/LIM/R1-FL1-LIM.har)/[jpg](evidencias/desempenho/manual/FL1/LIM/R1-FL1-LIM.jpg) | - |
+| `R2-FL1-LIM` | 13/11/2026 12:25 | José Augusto | 5,74 | 4,90 | C | 16,1 | 48,0 | 236 | 3,39 | [har](evidencias/desempenho/manual/FL1/LIM/R2-FL1-LIM.har)/[jpg](evidencias/desempenho/manual/FL1/LIM/R2-FL1-LIM.jpg) | - |
+| `R3-FL1-LIM` | 13/11/2026 12:27 | José Augusto | 5,63 | 4,75 | C | 14,8 | 42,6 | 227 | 3,39 | [har](evidencias/desempenho/manual/FL1/LIM/R3-FL1-LIM.har)/[jpg](evidencias/desempenho/manual/FL1/LIM/R3-FL1-LIM.jpg) | - |
+| `R4-FL1-LIM` | 13/11/2026 12:28 | José Augusto | 5,65 | 4,80 | C | 15,5 | 46,1 | 236 | 3,39 | [har](evidencias/desempenho/manual/FL1/LIM/R4-FL1-LIM.har)/[jpg](evidencias/desempenho/manual/FL1/LIM/R4-FL1-LIM.jpg) | - |
+| `R5-FL1-LIM` | 13/11/2026 12:30 | José Augusto | 5,63 | 4,72 | C | 15,0 | 44,5 | 268 | 3,39 | [har](evidencias/desempenho/manual/FL1/LIM/R5-FL1-LIM.har)/[jpg](evidencias/desempenho/manual/FL1/LIM/R5-FL1-LIM.jpg) | - |
 
 *Tabela 6. Registro bruto de FL1 sob Rede Limitada. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
@@ -199,8 +199,6 @@ A Tabela 12 reúne todas as falhas, anomalias, picos anormais de carga ou ocorr�
 | ID Ocorrência | Bateria / Repetição | Etapa | Descrição detalhada do comportamento | Gravidade | Atribuição da causa | Impacto na repetição | Evidência (.png / .log) |
 | ------------- | ------------------- | ----- | ------------------------------------ | :-------: | ------------------- | -------------------- | ----------------------- |
 | `OC-DES-001`  | Auditoria Complementar (FL1) | Entrada `D2` | Deslocamento cumulativo de layout severo (*CLS = 0,531*) sob Rede Normal decorrente da injeção assíncrona do bloco de grade curricular sem reserva prévia de espaço visual, penalizando o score sintético. | Baixa | Plataforma Khan Academy | Sem bloqueio operacional; instabilidade visual momentânea na conexão rápida | [json](evidencias/desempenho/lighthouse/FL1/LH_FL1_NOR_20261111.json) |
-| `OC-DES-002`  | Baterias FL2 (Normal e Limitada) | E2.3 original | Inexistência de faixa de legendas sobrepostas (*CC*) no reprodutor da videoaula de computação `D4`, disponibilizando apenas o painel de transcrição textual sincronizada. | Baixa | Plataforma Khan Academy | Adequação do roteiro: etapa de legendas suprimida e transcrição mantida como E2.3 | [jpg](evidencias/desempenho/manual/FL2/NORM/W-FL2-NORM.jpg) |
-| `OC-DES-003`  | Baterias FL3 (Normal e Limitada) | E3.2 | No editor interativo de código (*live editor* do desafio `D5`), o auxílio pedagógico (dica) não requer acionamento de botão, sendo disparado automaticamente após a digitação inicial de caracteres. | Baixa | Plataforma Khan Academy | Adequação do marco inicial de temporização de E3.2 para a entrada de texto | [jpg](evidencias/desempenho/manual/FL3/NORM/W-FL3-NORM.jpg) |
 
 *Tabela 12. Ocorrências registradas na avaliação de desempenho. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
@@ -220,8 +218,6 @@ A Tabela 13 consolida a mediana e o P90 de cada etapa avaliada, convertendo o re
 | `FL1` | E1.1 (Catálogo inicial) | Rede Limitada | 5,65 | 5,72 | Mínimo aceitável (> 3 a 10 s) | 1 |
 | `FL1` | E1.2 (Grade do curso) | Rede Normal | 1,88 | 2,00 | Alvo (> 1 a 3 s) | 2 |
 | `FL1` | E1.2 (Grade do curso) | Rede Limitada | 4,80 | 4,88 | Mínimo aceitável (> 3 a 10 s) | 1 |
-| `FL1` | E1.3 (Ambiente da aula) | Rede Normal | - | - | Delimitado na grade D2 | - |
-| `FL1` | E1.3 (Ambiente da aula) | Rede Limitada | - | - | Delimitado na grade D2 | - |
 | `FL2` | E2.1 (Interface do player) | Rede Normal | 0,83 | 0,92 | Excelente (≤ 1 s) | 3 |
 | `FL2` | E2.1 (Interface do player) | Rede Limitada | 5,51 | 5,76 | Mínimo aceitável (> 3 a 10 s) | 1 |
 | `FL2` | E2.2 (Disparo do vídeo) | Rede Normal | 0,72 | 0,77 | Excelente (≤ 1 s) | 3 |
@@ -306,15 +302,15 @@ A Tabela 18 registra a classificação final de cada questão, hipótese e o ate
 
 | Questão / Hipótese | Métricas de suporte | Estado formal | Justificativa com base nos dados consolidados |
 | ------------------ | ------------------- | ------------- | --------------------------------------------- |
-| **Questão Q1** (Espera nas etapas) | M1, M2 | Atendida | Todas as etapas alcançaram nota 2 ou 3 em Rede Normal e notas 1 a 3 em Rede Limitada, com taxa de conclusão de 100% e ausência de bloqueios operacionais ou timeouts. |
-| **Hipótese H1** (Mediana ≤ 3 s e Conclusão ≥ 90%) | M1, M2 | Sustentada em Rede Normal / Não sustentada na totalidade em Rede Limitada | Em Rede Normal todas as etapas obtiveram mediana ≤ 1,88 s (Nota 2 e 3) e M2 = 100%. Em Rede Limitada, os carregamentos de página inicial (E1.1, E2.1 e E3.1) e abertura de curso (E1.2) situaram-se entre 4,80 s e 5,75 s (Nota 1), embora as interações em SPA tenham permanecido ≤ 2,42 s. |
+| **Questão Q1** (Espera nas etapas) | M1, M2 | Não atendida | Em Rede Normal todas as etapas alcançaram nota 2 ou 3, mas em Rede Limitada as etapas de carregamento inicial (E1.1, E1.2, E2.1 e E3.1) obtiveram nota 1 (mínimo aceitável), não atingindo o patamar de nota 2 ou 3 exigido em ambas as condições de rede, apesar da taxa de conclusão de 100% e ausência de bloqueios. |
+| **Hipótese H1** (Mediana ≤ 3 s e Conclusão ≥ 90%) | M1, M2 | Não sustentada | Embora em Rede Normal todas as etapas tenham obtido mediana ≤ 1,88 s (Notas 2 e 3) e M2 = 100%, a hipótese exige atendimento estrito em ambas as condições de rede. Em Rede Limitada, os carregamentos de página inicial (E1.1, E2.1 e E3.1) e abertura de curso (E1.2) situaram-se entre 4,80 s e 5,75 s (Nota 1), acima do limite de 3 s, ainda que as interações dentro da página tenham permanecido ≤ 2,42 s. |
 | **Questão Q2** (Processamento disponível) | M3 | Atendida | Nota 3 (Excelente) obtida em todos os fluxos e condições, sem registros de sobrecarga contínua de CPU acima de 75%. |
 | **Hipótese H2** (CPU média ≤ 50%) | M3 | Sustentada | A média de utilização de CPU oscilou entre 11,3% e 15,4% e os picos máximos pontuais não excederam 48,0%, cumprindo com folga a meta de H2. |
 | **Questão Q3** (Memória disponível) | M4 | Atendida | Nota 3 (Excelente) atingida em todas as baterias, com consumo privado de memória muito abaixo do teto de segurança. |
 | **Hipótese H3** (Pico de RAM ≤ 1024 MiB) | M4 | Sustentada | O maior pico instantâneo observado em toda a avaliação foi de 269 MiB (no fluxo FL1), quatro vezes inferior ao limite de 1.024 MiB de H3. |
 | **Questão Q4** (Orçamento de acesso) | M5 | Atendida | Nota 3 (Excelente) alcançada em todos os fluxos sob ambas as condições de conectividade. |
 | **Hipótese H4** (Volume transferido ≤ 10 MiB) | M5 | Sustentada | O volume mediano de dados transmitido variou entre 3,39 MiB e 4,82 MiB, respeitando com ampla margem o orçamento máximo de 10 MiB por fluxo. |
-| **Objetivo G1** (Eficiência de desempenho) | M1 a M5 | Atendido | Todas as questões de pesquisa (Q1 a Q4) foram atendidas, com notas máximas em M2, M3, M4 e M5, comprovando a eficiência operacional da plataforma no ambiente A1. |
+| **Objetivo G1** (Eficiência de desempenho) | M1 a M5 | Não atendido (nível mínimo aceitável) | As questões Q2, Q3 e Q4 foram plenamente atendidas (Nota 3 em M3, M4 e M5) e M2 atingiu 100%, mas Q1 não foi atendida devido às notas 1 em M1 nos carregamentos iniciais sob Rede Limitada, impedindo o atendimento pleno de G1. |
 
 *Tabela 18. Julgamento formal de Q1–Q4, H1–H4 e objetivo G1. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
