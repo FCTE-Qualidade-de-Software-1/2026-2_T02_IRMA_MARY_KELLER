@@ -28,6 +28,9 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
+**Procedimento operacional (Fase 3):** [Procedimentos de avaliação de eficiência de desempenho](../fase-3/procedimentos-desempenho.md).
+
+**Registro de execução (Fase 4):** [Resultados da avaliação de desempenho](../fase-4/registro-desempenho.md).
 ---
 
 ### 1.2 M2: Taxa de conclusão dos fluxos
@@ -50,6 +53,9 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
+**Procedimento operacional (Fase 3):** [Procedimentos de avaliação de eficiência de desempenho](../fase-3/procedimentos-desempenho.md).
+
+**Registro de execução (Fase 4):** [Resultados da avaliação de desempenho](../fase-4/registro-desempenho.md).
 ---
 
 ### 1.3 M3: Utilização de CPU
@@ -72,6 +78,9 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
+**Procedimento operacional (Fase 3):** [Procedimentos de avaliação de eficiência de desempenho](../fase-3/procedimentos-desempenho.md).
+
+**Registro de execução (Fase 4):** [Resultados da avaliação de desempenho](../fase-4/registro-desempenho.md).
 ---
 
 ### 1.4 M4: Pico de memória
@@ -94,6 +103,9 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
+**Procedimento operacional (Fase 3):** [Procedimentos de avaliação de eficiência de desempenho](../fase-3/procedimentos-desempenho.md).
+
+**Registro de execução (Fase 4):** [Resultados da avaliação de desempenho](../fase-4/registro-desempenho.md).
 ---
 
 ### 1.5 M5: Dados transferidos
@@ -116,6 +128,9 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
+**Procedimento operacional (Fase 3):** [Procedimentos de avaliação de eficiência de desempenho](../fase-3/procedimentos-desempenho.md).
+
+**Registro de execução (Fase 4):** [Resultados da avaliação de desempenho](../fase-4/registro-desempenho.md).
 ---
 
 ### 1.6 M6: Execução por ambiente
@@ -138,6 +153,9 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
+**Procedimento operacional (Fase 3):** [Procedimentos de avaliação de adaptabilidade](../fase-3/procedimentos-adaptabilidade.md).
+
+**Registro de execução (Fase 4):** [Registro de execução de adaptabilidade](../fase-4/registro-adaptabilidade.md).
 ---
 
 ### 1.7 M7: Adaptação ao tamanho da janela
@@ -160,6 +178,9 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
+**Procedimento operacional (Fase 3):** [Procedimentos de avaliação de adaptabilidade](../fase-3/procedimentos-adaptabilidade.md).
+
+**Registro de execução (Fase 4):** [Registro de execução de adaptabilidade](../fase-4/registro-adaptabilidade.md).
 ---
 
 ### 1.8 M8: Execução por teclado
@@ -182,6 +203,9 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
+**Procedimento operacional (Fase 3):** [Procedimentos de avaliação de acessibilidade](../fase-3/procedimentos-acessibilidade-apreensibilidade.md#4-roteiros-de-inspecao-e-testes-manuais-de-acessibilidade).
+
+**Registro de execução (Fase 4):** [Registro de execução de acessibilidade](../fase-4/registro-acessibilidade.md).
 ---
 
 ### 1.9 M9: Execução com leitor de tela
@@ -204,6 +228,9 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
+**Procedimento operacional (Fase 3):** [Procedimentos de avaliação de acessibilidade](../fase-3/procedimentos-acessibilidade-apreensibilidade.md#4-roteiros-de-inspecao-e-testes-manuais-de-acessibilidade).
+
+**Registro de execução (Fase 4):** [Registro de execução de acessibilidade](../fase-4/registro-acessibilidade.md).
 ---
 
 ### 1.10 M10: Preservação com ampliação
@@ -226,6 +253,9 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
+**Procedimento operacional (Fase 3):** [Procedimentos de avaliação de acessibilidade](../fase-3/procedimentos-acessibilidade-apreensibilidade.md#4-roteiros-de-inspecao-e-testes-manuais-de-acessibilidade).
+
+**Registro de execução (Fase 4):** [Registro de execução de acessibilidade](../fase-4/registro-acessibilidade.md).
 ---
 
 ### 1.11 M11: Conformidade de contraste
@@ -248,6 +278,9 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
+**Procedimento operacional (Fase 3):** [Procedimentos de avaliação de acessibilidade](../fase-3/procedimentos-acessibilidade-apreensibilidade.md#4-roteiros-de-inspecao-e-testes-manuais-de-acessibilidade).
+
+**Registro de execução (Fase 4):** [Registro de execução de acessibilidade](../fase-4/registro-acessibilidade.md).
 ---
 
 ### 1.12 M12: Conclusão autônoma por estudantes novos
@@ -270,6 +303,9 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
+**Procedimento operacional (Fase 3):** [Procedimentos de testes com voluntários](../fase-3/procedimentos-acessibilidade-apreensibilidade.md#5-testes-de-apreensibilidade-com-voluntarios).
+
+**Registro de execução (Fase 4):** [Registro de execução de apreensibilidade](../fase-4/registro-apreensibilidade.md).
 ---
 
 ### 1.13 M13: Taxa de erros operacionais
@@ -292,6 +328,9 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
+**Procedimento operacional (Fase 3):** [Procedimentos de testes com voluntários](../fase-3/procedimentos-acessibilidade-apreensibilidade.md#5-testes-de-apreensibilidade-com-voluntarios).
+
+**Registro de execução (Fase 4):** [Registro de execução de apreensibilidade](../fase-4/registro-apreensibilidade.md).
 ---
 
 ### 1.14 M14: Tempo de conclusão autônoma
@@ -313,6 +352,10 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 **Justificativa dos níveis:** As faixas propostas de 60, 120 e 180 segundos aplicam-se somente a tarefas curtas e padronizadas, não ao tempo pedagógico. Registrar abandonos e pedidos de ajuda à parte.
 
 **Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
+
+**Procedimento operacional (Fase 3):** [Procedimentos de testes com voluntários](../fase-3/procedimentos-acessibilidade-apreensibilidade.md#5-testes-de-apreensibilidade-com-voluntarios).
+
+**Registro de execução (Fase 4):** [Registro de execução de apreensibilidade](../fase-4/registro-apreensibilidade.md).
 
 ## Referências
 
@@ -348,3 +391,4 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 | 1.1 | 20/10/2026 | Inclusão dos indicadores complementares de conclusão, erros e tempo sem alterar Q1-Q11. | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |[Pedro Lucas](https://github.com/Pwdrinho) |
 | 1.2 | 21/10/2026 | Inclusão das referências utilizadas para elaborar o artefato |  [Camila Cavalcante](https://github.com/CamilaSilvaC) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
 | 1.3 | 26/10/2026 | Padronização | [Pedro Lucas](https://github.com/Pwdrinho) | [Camila Cavalcante](https://github.com/CamilaSilvaC) |
+| 1.4 | 24/11/2026 | Adiciona rastros com a fase 3 e resultados da fase 4 | [Camila Cavalcante](https://github.com/CamilaSilvaC) |
