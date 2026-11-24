@@ -570,10 +570,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#32-ambientes-complementares" class="md-nav__link">
+  <a href="#32-instrumentos" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.2 Ambientes complementares
+        3.2 Instrumentos
       
     </span>
   </a>
@@ -581,10 +581,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#33-instrumentos" class="md-nav__link">
+  <a href="#33-preparacao-do-ambiente" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.3 Instrumentos
+        3.3 Preparação do ambiente
       
     </span>
   </a>
@@ -592,10 +592,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#34-preparacao-do-ambiente" class="md-nav__link">
+  <a href="#34-resolucao-e-janela" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.4 Preparação do ambiente
+        3.4 Resolução e janela
       
     </span>
   </a>
@@ -603,10 +603,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#35-resolucao-e-janela" class="md-nav__link">
+  <a href="#35-requisitos-conhecimento-do-avaliador-e-massa-de-dados" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.5 Resolução e janela
+        3.5 Requisitos, conhecimento do avaliador e massa de dados
       
     </span>
   </a>
@@ -614,21 +614,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#36-requisitos-conhecimento-do-avaliador-e-massa-de-dados" class="md-nav__link">
+  <a href="#36-guia-de-operacoes-por-ambiente" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.6 Requisitos, conhecimento do avaliador e massa de dados
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#37-guia-de-operacoes-por-ambiente" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3.7 Guia de operações por ambiente
+        3.6 Guia de operações por ambiente
       
     </span>
   </a>
@@ -1061,7 +1050,7 @@
 <h2 id="1-escopo-e-principios">1. Escopo e princípios<a class="headerlink" href="#1-escopo-e-principios" title="Link para esta seção">&para;</a></h2>
 <ul>
 <li><strong>Objeto:</strong> fluxos <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL1</code></a> a <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL4</code></a> da plataforma web, sem alterar o produto e sem acesso interno (avaliação externa, caixa-preta) <a href="#s5">S5</a>.</li>
-<li><strong>Ambientes:</strong> combinações <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a> a <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A4</code></a> da matriz direcionada da Fase 1. Os demais sistemas do <a href="../ambiente-de-testes/">ambiente de testes</a> são tratados como complementares (<a href="#32-ambientes-complementares">seção 3.2</a>).</li>
+<li><strong>Ambientes:</strong> combinações <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a> a <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A4</code></a> da matriz direcionada da Fase 1.</li>
 <li><strong>Dimensões:</strong> duas resoluções de referência, <code>J1</code> = 1366 × 768 e <code>J2</code> = 1920 × 1080, com zoom de 100%. Zoom de 200% e alto contraste pertencem a <a href="../../fase-2/objetivos/#g3"><code>G3</code></a> (<a href="../../fase-2/metricas/#110-m10-preservacao-com-ampliacao"><code>M10</code></a> e <a href="../../fase-2/metricas/#111-m11-conformidade-de-contraste"><code>M11</code></a>) e <strong>não</strong> entram aqui.</li>
 <li><strong>Rede:</strong> conexão sem limitação artificial. Os perfis de rede normal e limitada aplicam-se apenas a <a href="../../fase-2/metricas/#11-m1-tempo-observavel-por-etapa"><code>M1</code></a>–<a href="../../fase-2/metricas/#15-m5-dados-transferidos"><code>M5</code></a> em <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a>.</li>
 <li><strong>Reprodutibilidade:</strong> um segundo avaliador deve conseguir repetir cada execução apenas com este documento, os dados de teste congelados e o <a href="../../fase-4/registro-adaptabilidade/">registro de execuções</a>, descrito na <a href="#8-formularios-e-modelos-de-registro">seção 8</a>.</li>
@@ -1267,46 +1256,9 @@
 </tbody>
 </table>
 <p><em>Tabela 4. Ambientes <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a>–<a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A4</code></a> e dados de configuração. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a>, com base no <a href="../ambiente-de-testes/">ambiente de testes</a></em></p>
-<p>As versões acima estão na data do quadro do <a href="../ambiente-de-testes/">ambiente de testes</a> e devem ser <strong>reconfirmadas e congeladas</strong> na preparação (<a href="#34-preparacao-do-ambiente">3.4</a>).</p>
-<h3 id="32-ambientes-complementares">3.2 Ambientes complementares<a class="headerlink" href="#32-ambientes-complementares" title="Link para esta seção">&para;</a></h3>
-<p>O <a href="../ambiente-de-testes/">ambiente de testes</a> inclui três distribuições Linux além do Ubuntu. Como a Fase 1 e a hipótese <a href="../../fase-2/questoes-hipoteses/#41-q5-adaptacao-entre-sistemas-operacionais-e-navegadores"><code>H5</code></a> delimitam <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a>–<a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A4</code></a>, essas distribuições <strong>não entram no denominador de <a href="../../fase-2/metricas/#16-m6-execucao-por-ambiente"><code>M6</code></a> nem na nota de <a href="../../fase-2/questoes-hipoteses/#41-q5-adaptacao-entre-sistemas-operacionais-e-navegadores"><code>Q5</code></a></strong>. Se a equipe decidir executá-las, seus resultados são relatados à parte, como evidência complementar de adaptabilidade.</p>
-<table>
-<thead>
-<tr>
-<th>ID proposto</th>
-<th>Sistema operacional</th>
-<th>Chrome</th>
-<th>Firefox</th>
-<th>Execução proposta</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="#32-ambientes-complementares"><code>AC1</code></a></td>
-<td>Fedora 44</td>
-<td>156.0</td>
-<td>159.0</td>
-<td><a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL1</code></a>–<a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL4</code></a>, em <code>J2</code>, nos dois navegadores</td>
-</tr>
-<tr>
-<td><a href="#32-ambientes-complementares"><code>AC2</code></a></td>
-<td>Arch Linux (sem versão fixa)</td>
-<td>156.0</td>
-<td>159.0</td>
-<td><a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL1</code></a>–<a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL4</code></a>, em <code>J2</code>, nos dois navegadores</td>
-</tr>
-<tr>
-<td><a href="#32-ambientes-complementares"><code>AC3</code></a></td>
-<td>openSUSE Leap 16.1</td>
-<td>156.0</td>
-<td>153.5</td>
-<td><a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL1</code></a>–<a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL4</code></a>, em <code>J2</code>, nos dois navegadores</td>
-</tr>
-</tbody>
-</table>
-<p><em>Tabela 5. Ambientes complementares propostos (24 execuções). Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a>, com base no <a href="../ambiente-de-testes/">ambiente de testes</a></em></p>
-<h3 id="33-instrumentos">3.3 Instrumentos<a class="headerlink" href="#33-instrumentos" title="Link para esta seção">&para;</a></h3>
-<p>A Tabela 6 lista os instrumentos de coleta.</p>
+<p>As versões acima estão na data do quadro do <a href="../ambiente-de-testes/">ambiente de testes</a> e devem ser <strong>reconfirmadas e congeladas</strong> na preparação (<a href="#33-preparacao-do-ambiente">3.3</a>).</p>
+<h3 id="32-instrumentos">3.2 Instrumentos<a class="headerlink" href="#32-instrumentos" title="Link para esta seção">&para;</a></h3>
+<p>A Tabela 5 lista os instrumentos de coleta.</p>
 <table>
 <thead>
 <tr>
@@ -1317,7 +1269,7 @@
 <tbody>
 <tr>
 <td>Navegador do ambiente (console de desenvolvedor)</td>
-<td>Registrar a resolução da tela, o viewport e o <code>devicePixelRatio</code> (<a href="#35-resolucao-e-janela">3.5</a>)</td>
+<td>Registrar a resolução da tela, o viewport e o <code>devicePixelRatio</code> (<a href="#34-resolucao-e-janela">3.4</a>)</td>
 </tr>
 <tr>
 <td>Captura de tela nativa do sistema operacional</td>
@@ -1333,10 +1285,10 @@
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 6. Instrumentos de coleta de <a href="../../fase-2/metricas/#16-m6-execucao-por-ambiente"><code>M6</code></a> e <a href="../../fase-2/metricas/#17-m7-adaptacao-ao-tamanho-da-janela"><code>M7</code></a>. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<p><em>Tabela 5. Instrumentos de coleta de <a href="../../fase-2/metricas/#16-m6-execucao-por-ambiente"><code>M6</code></a> e <a href="../../fase-2/metricas/#17-m7-adaptacao-ao-tamanho-da-janela"><code>M7</code></a>. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
 <p>O Lighthouse listado no <a href="../ambiente-de-testes/">ambiente de testes</a> <strong>não</strong> é instrumento de <a href="../../fase-2/metricas/#16-m6-execucao-por-ambiente"><code>M6</code></a> nem de <a href="../../fase-2/metricas/#17-m7-adaptacao-ao-tamanho-da-janela"><code>M7</code></a>. Os leitores de tela também não são usados nesta avaliação.</p>
-<h3 id="34-preparacao-do-ambiente">3.4 Preparação do ambiente<a class="headerlink" href="#34-preparacao-do-ambiente" title="Link para esta seção">&para;</a></h3>
-<p>Cada ambiente passa pelas verificações da Tabela 7 antes da primeira execução oficial. O responsável preenche, por ambiente, as tabelas de <a href="../../fase-4/registro-adaptabilidade/#registro-preparacao">preparação</a> do registro.</p>
+<h3 id="33-preparacao-do-ambiente">3.3 Preparação do ambiente<a class="headerlink" href="#33-preparacao-do-ambiente" title="Link para esta seção">&para;</a></h3>
+<p>Cada ambiente passa pelas verificações da Tabela 6 antes da primeira execução oficial. O responsável preenche, por ambiente, as tabelas de <a href="../../fase-4/registro-adaptabilidade/#registro-preparacao">preparação</a> do registro.</p>
 <table>
 <thead>
 <tr>
@@ -1367,7 +1319,7 @@
 </tr>
 <tr>
 <td>PA-6</td>
-<td>Confirmar zoom do navegador em 100%, janela <strong>maximizada</strong> (não em tela cheia) e escala do sistema conforme <a href="#35-resolucao-e-janela">3.5</a>.</td>
+<td>Confirmar zoom do navegador em 100%, janela <strong>maximizada</strong> (não em tela cheia) e escala do sistema conforme <a href="#34-resolucao-e-janela">3.4</a>.</td>
 </tr>
 <tr>
 <td>PA-7</td>
@@ -1387,7 +1339,7 @@
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 7. Verificações de preparação do ambiente. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<p><em>Tabela 6. Verificações de preparação do ambiente. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
 <p><strong>Dados de teste.</strong> Como o conteúdo da plataforma pode mudar, a equipe fixa os itens abaixo na preparação e usa <strong>os mesmos</strong> em todos os ambientes e resoluções.</p>
 <table>
 <thead>
@@ -1437,9 +1389,9 @@
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 8. Dados de teste a congelar antes da coleta. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
-<h3 id="35-resolucao-e-janela">3.5 Resolução e janela<a class="headerlink" href="#35-resolucao-e-janela" title="Link para esta seção">&para;</a></h3>
-<p>A Fase 1 define resoluções de referência e a ficha de <a href="../../fase-2/metricas/#17-m7-adaptacao-ao-tamanho-da-janela"><code>M7</code></a> fala em dimensão da janela. Para unificar os dois termos, a <strong>dimensão avaliada é a janela maximizada do navegador sob a resolução configurada no sistema</strong>, conforme a Tabela 9.</p>
+<p><em>Tabela 7. Dados de teste a congelar antes da coleta. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<h3 id="34-resolucao-e-janela">3.4 Resolução e janela<a class="headerlink" href="#34-resolucao-e-janela" title="Link para esta seção">&para;</a></h3>
+<p>A Fase 1 define resoluções de referência e a ficha de <a href="../../fase-2/metricas/#17-m7-adaptacao-ao-tamanho-da-janela"><code>M7</code></a> fala em dimensão da janela. Para unificar os dois termos, a <strong>dimensão avaliada é a janela maximizada do navegador sob a resolução configurada no sistema</strong>, conforme a Tabela 8.</p>
 <table>
 <thead>
 <tr>
@@ -1461,13 +1413,13 @@
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 9. Dimensões de referência de <a href="../../fase-2/metricas/#17-m7-adaptacao-ao-tamanho-da-janela"><code>M7</code></a>. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a>, com base no <a href="../../fase-1/escopo-da-avaliacao/#profundidade">escopo</a></em></p>
+<p><em>Tabela 8. Dimensões de referência de <a href="../../fase-2/metricas/#17-m7-adaptacao-ao-tamanho-da-janela"><code>M7</code></a>. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a>, com base no <a href="../../fase-1/escopo-da-avaliacao/#profundidade">escopo</a></em></p>
 <p>Em cada execução, o avaliador roda o comando abaixo no console e anota o resultado na <a href="../../fase-4/registro-adaptabilidade/#registro-resolucao">tabela de resolução verificada</a> do registro. A resolução é considerada configurada quando <code>sw</code> e <code>sh</code> coincidem com a dimensão nominal em pixels CSS. O <code>dpr</code> é apenas registrado, pois telas de alta densidade podem ter valor diferente de 1.</p>
 <div class="highlight"><pre><span></span><code><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">({</span><span class="nx">sw</span><span class="o">:</span><span class="w"> </span><span class="nx">screen</span><span class="p">.</span><span class="nx">width</span><span class="p">,</span><span class="w"> </span><span class="nx">sh</span><span class="o">:</span><span class="w"> </span><span class="nx">screen</span><span class="p">.</span><span class="nx">height</span><span class="p">,</span><span class="w"> </span><span class="nx">iw</span><span class="o">:</span><span class="w"> </span><span class="nx">innerWidth</span><span class="p">,</span><span class="w"> </span><span class="nx">ih</span><span class="o">:</span><span class="w"> </span><span class="nx">innerHeight</span><span class="p">,</span><span class="w"> </span><span class="nx">dpr</span><span class="o">:</span><span class="w"> </span><span class="nx">devicePixelRatio</span><span class="p">})</span>
 </code></pre></div>
 <p>O modo de design responsivo ou de emulação de dispositivo do navegador <strong>não</strong> substitui a resolução real do ambiente.</p>
-<h3 id="36-requisitos-conhecimento-do-avaliador-e-massa-de-dados">3.6 Requisitos, conhecimento do avaliador e massa de dados<a class="headerlink" href="#36-requisitos-conhecimento-do-avaliador-e-massa-de-dados" title="Link para esta seção">&para;</a></h3>
-<p><strong>Recursos de hardware e software.</strong> A Tabela 10 reúne os requisitos.</p>
+<h3 id="35-requisitos-conhecimento-do-avaliador-e-massa-de-dados">3.5 Requisitos, conhecimento do avaliador e massa de dados<a class="headerlink" href="#35-requisitos-conhecimento-do-avaliador-e-massa-de-dados" title="Link para esta seção">&para;</a></h3>
+<p><strong>Recursos de hardware e software.</strong> A Tabela 9 reúne os requisitos.</p>
 <table>
 <thead>
 <tr>
@@ -1489,8 +1441,8 @@
 </tr>
 <tr>
 <td>Navegadores</td>
-<td>Versões das Tabelas 4 e 5, congeladas em PA-3</td>
-<td><a href="#31-ambientes-da-matriz-a1a4">3.1</a>, <a href="#32-ambientes-complementares">3.2</a></td>
+<td>Versões da Tabela 4, congeladas em PA-3</td>
+<td><a href="#31-ambientes-da-matriz-a1a4">3.1</a></td>
 </tr>
 <tr>
 <td>Rede</td>
@@ -1509,8 +1461,8 @@
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 10. Requisitos de hardware e software da avaliação de adaptabilidade. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a>, com base em <a href="../ambiente-de-testes/">ambiente de testes</a> e na central de ajuda da Khan Academy</em></p>
-<p><strong>Conhecimento exigido do avaliador.</strong> A Tabela 11 resume o nível exigido.</p>
+<p><em>Tabela 9. Requisitos de hardware e software da avaliação de adaptabilidade. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a>, com base em <a href="../ambiente-de-testes/">ambiente de testes</a> e na central de ajuda da Khan Academy</em></p>
+<p><strong>Conhecimento exigido do avaliador.</strong> A Tabela 10 resume o nível exigido.</p>
 <table>
 <thead>
 <tr>
@@ -1523,7 +1475,7 @@
 <tr>
 <td>Informática</td>
 <td>Operar o navegador e o sistema: abrir o console, capturar a tela, ajustar a resolução e consultar versões</td>
-<td>Guia de operações da <a href="#37-guia-de-operacoes-por-ambiente">3.7</a></td>
+<td>Guia de operações da <a href="#36-guia-de-operacoes-por-ambiente">3.6</a></td>
 </tr>
 <tr>
 <td>Domínio da aplicação</td>
@@ -1537,17 +1489,17 @@
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 11. Conhecimento exigido do avaliador. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
-<p><strong>Massa de dados.</strong> Os dados <a href="../../fase-1/requisitos-de-avaliacao/#requisitante"><code>D1</code></a>–<code>D6</code> da <a href="#34-preparacao-do-ambiente">Tabela 8</a> existem para dois fins: manter o conteúdo idêntico em todas as execuções e dispensar a procura por conteúdo a cada sessão, que seria fonte de variação e de atraso. A conta <code>D6</code> deve ser preparada uma única vez, com histórico mínimo de progresso, para que <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL4</code></a> apresente informação desde a primeira execução. O volume é pequeno (um curso, uma aula, um vídeo, um exercício e uma conta) porque <a href="../../fase-2/metricas/#16-m6-execucao-por-ambiente"><code>M6</code></a> e <a href="../../fase-2/metricas/#17-m7-adaptacao-ao-tamanho-da-janela"><code>M7</code></a> não medem tempo nem consumo de recursos, o que dispensa grandes massas de dados.</p>
-<h3 id="37-guia-de-operacoes-por-ambiente">3.7 Guia de operações por ambiente<a class="headerlink" href="#37-guia-de-operacoes-por-ambiente" title="Link para esta seção">&para;</a></h3>
-<p>O guia da Tabela 12 reduz o conhecimento prévio exigido do avaliador. Rótulos de menu podem variar entre versões e devem ser anotados quando diferirem.</p>
+<p><em>Tabela 10. Conhecimento exigido do avaliador. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<p><strong>Massa de dados.</strong> Os dados <a href="../../fase-1/requisitos-de-avaliacao/#requisitante"><code>D1</code></a>–<code>D6</code> da <a href="#33-preparacao-do-ambiente">Tabela 7</a> existem para dois fins: manter o conteúdo idêntico em todas as execuções e dispensar a procura por conteúdo a cada sessão, que seria fonte de variação e de atraso. A conta <code>D6</code> deve ser preparada uma única vez, com histórico mínimo de progresso, para que <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL4</code></a> apresente informação desde a primeira execução. O volume é pequeno (um curso, uma aula, um vídeo, um exercício e uma conta) porque <a href="../../fase-2/metricas/#16-m6-execucao-por-ambiente"><code>M6</code></a> e <a href="../../fase-2/metricas/#17-m7-adaptacao-ao-tamanho-da-janela"><code>M7</code></a> não medem tempo nem consumo de recursos, o que dispensa grandes massas de dados.</p>
+<h3 id="36-guia-de-operacoes-por-ambiente">3.6 Guia de operações por ambiente<a class="headerlink" href="#36-guia-de-operacoes-por-ambiente" title="Link para esta seção">&para;</a></h3>
+<p>O guia da Tabela 11 reduz o conhecimento prévio exigido do avaliador. Rótulos de menu podem variar entre versões e devem ser anotados quando diferirem.</p>
 <table>
 <thead>
 <tr>
 <th>Operação</th>
 <th>Windows (<a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a>, <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A2</code></a>)</th>
 <th>macOS (<a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A3</code></a>)</th>
-<th>Ubuntu (<a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A4</code></a>) e demais Linux</th>
+<th>Ubuntu (<a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A4</code></a>)</th>
 </tr>
 </thead>
 <tbody>
@@ -1555,7 +1507,7 @@
 <td>Abrir o console</td>
 <td>Chrome: <code>Ctrl+Shift+J</code>. Firefox: <code>Ctrl+Shift+K</code></td>
 <td>Safari: ativar o menu Desenvolver nos ajustes avançados e usar <code>Cmd+Option+C</code></td>
-<td>Firefox: <code>Ctrl+Shift+K</code>. Chrome: <code>Ctrl+Shift+J</code></td>
+<td>Firefox: <code>Ctrl+Shift+K</code></td>
 </tr>
 <tr>
 <td>Capturar a tela</td>
@@ -1579,7 +1531,7 @@
 <td>Versão do navegador</td>
 <td><code>chrome://version</code> ou <code>about:support</code></td>
 <td>Menu Safari, Sobre o Safari</td>
-<td><code>chrome://version</code> ou <code>about:support</code></td>
+<td><code>about:support</code></td>
 </tr>
 <tr>
 <td>Versão do sistema</td>
@@ -1589,7 +1541,7 @@
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 12. Guia de operações por ambiente. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<p><em>Tabela 11. Guia de operações por ambiente. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
 <h2 id="4-procedimento-de-m6">4. Procedimento de M6<a class="headerlink" href="#4-procedimento-de-m6" title="Link para esta seção">&para;</a></h2>
 <p><a id="m6"></a></p>
 <h3 id="41-unidade-de-observacao-e-universo">4.1 Unidade de observação e universo<a class="headerlink" href="#41-unidade-de-observacao-e-universo" title="Link para esta seção">&para;</a></h3>
@@ -1599,11 +1551,11 @@
 <h3 id="43-passos-de-execucao">4.3 Passos de execução<a class="headerlink" href="#43-passos-de-execucao" title="Link para esta seção">&para;</a></h3>
 <ol>
 <li>Conferir a preparação do ambiente (PA-1 a PA-10) e abrir uma sessão limpa, sem abas extras.</li>
-<li>Configurar <code>J2</code>, maximizar a janela e registrar o resultado do comando de <a href="#35-resolucao-e-janela">3.5</a> (<a href="#37-guia-de-operacoes-por-ambiente">guia de operações</a>).</li>
+<li>Configurar <code>J2</code>, maximizar a janela e registrar o resultado do comando de <a href="#34-resolucao-e-janela">3.4</a> (<a href="#36-guia-de-operacoes-por-ambiente">guia de operações</a>).</li>
 <li>Registrar data e hora de início e seguir o roteiro do fluxo na <a href="#6-roteiros-passo-a-passo">seção 6</a>, sem desvios.</li>
 <li>A cada ponto de verificação, o observador marca atendido ou não atendido. Em caso de não atendimento, registra a ocorrência com a captura de tela.</li>
 <li>Ao final, registrar a hora de término e a captura do estado final do fluxo (saída observável da <a href="../../fase-1/escopo-da-avaliacao/#fluxos">Tabela 1 da Fase 1</a>).</li>
-<li>Classificar o resultado da tentativa conforme a Tabela 13.</li>
+<li>Classificar o resultado da tentativa conforme a Tabela 12.</li>
 <li>Se houver falha, aplicar a reprodução de <a href="#46-reproducao-de-falhas">4.6</a>.</li>
 <li>Preencher a linha da combinação na <a href="../../fase-4/registro-adaptabilidade/#registro-m6"><code>tabela de M6</code></a> do registro.</li>
 </ol>
@@ -1638,9 +1590,9 @@
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 13. Códigos de resultado de uma execução de <a href="../../fase-2/metricas/#16-m6-execucao-por-ambiente"><code>M6</code></a>. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<p><em>Tabela 12. Códigos de resultado de uma execução de <a href="../../fase-2/metricas/#16-m6-execucao-por-ambiente"><code>M6</code></a>. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
 <h3 id="44-preparacao-normal-e-ajuste-extraordinario">4.4 Preparação normal e ajuste extraordinário<a class="headerlink" href="#44-preparacao-normal-e-ajuste-extraordinario" title="Link para esta seção">&para;</a></h3>
-<p>A Fase 2 exige distinguir a preparação normal do ensaio de um ajuste extraordinário necessário para usar o produto. A Tabela 14 separa as duas categorias.</p>
+<p>A Fase 2 exige distinguir a preparação normal do ensaio de um ajuste extraordinário necessário para usar o produto. A Tabela 13 separa as duas categorias.</p>
 <table>
 <thead>
 <tr>
@@ -1671,13 +1623,13 @@
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 14. Preparação normal e ajuste extraordinário. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<p><em>Tabela 13. Preparação normal e ajuste extraordinário. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
 <h3 id="45-combinacoes-inviaveis">4.5 Combinações inviáveis<a class="headerlink" href="#45-combinacoes-inviaveis" title="Link para esta seção">&para;</a></h3>
 <p>Uma combinação é <code>I</code> somente quando a incompatibilidade entre <strong>ferramentas e sistema</strong> é conhecida e documentada <strong>antes</strong> da coleta, com justificativa. O que foi descoberto durante a execução e atribuído à plataforma é <code>F</code>. A combinação <code>I</code> não é automaticamente falha da plataforma e reduz <code>N</code>. Se o conjunto <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL1</code></a>–<a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL3</code></a> de algum ambiente <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a>–<a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A4</code></a> ficar inviável, o julgamento de <a href="../../fase-2/questoes-hipoteses/#41-q5-adaptacao-entre-sistemas-operacionais-e-navegadores"><code>Q5</code></a> nesse ambiente é <strong>inconclusivo</strong> e o percentual é apresentado como parcial.</p>
 <h3 id="46-reproducao-de-falhas">4.6 Reprodução de falhas<a class="headerlink" href="#46-reproducao-de-falhas" title="Link para esta seção">&para;</a></h3>
 <p>Para evitar que um evento isolado decida o resultado, uma falha observada é repetida <strong>até duas vezes</strong>, cada uma em sessão nova e com o mesmo perfil. A falha é <strong>confirmada</strong> quando ocorre em pelo menos 2 das 3 execuções. Se ocorrer em apenas uma, é registrada como intermitente, a combinação é <code>C</code> e a ocorrência fica anotada para a discussão. As três tentativas ficam nas colunas <code>T1</code> a <code>T3</code> da tabela de <a href="../../fase-2/metricas/#16-m6-execucao-por-ambiente"><code>M6</code></a> do registro.</p>
 <h3 id="47-calculo-e-julgamento-de-q5-e-h5">4.7 Cálculo e julgamento de Q5 e H5<a class="headerlink" href="#47-calculo-e-julgamento-de-q5-e-h5" title="Link para esta seção">&para;</a></h3>
-<p>A fórmula é a da <a href="../../fase-2/metricas/#16-m6-execucao-por-ambiente"><code>ficha de M6</code></a>, <code>M6 = 100 × C/N</code>, em que <code>C</code> é o número de combinações com resultado final <code>C</code> e <code>N</code>, o de combinações elegíveis testadas (16 menos as <code>I</code>). A Tabela 15 converte contagens em notas para <code>N = 16</code>, conforme a <a href="../../fase-2/criterios-julgamento/#2-metricas-percentuais">Tabela 2 de Critérios de julgamento</a> <a href="#s9">S9</a>.</p>
+<p>A fórmula é a da <a href="../../fase-2/metricas/#16-m6-execucao-por-ambiente"><code>ficha de M6</code></a>, <code>M6 = 100 × C/N</code>, em que <code>C</code> é o número de combinações com resultado final <code>C</code> e <code>N</code>, o de combinações elegíveis testadas (16 menos as <code>I</code>). A Tabela 14 converte contagens em notas para <code>N = 16</code>, conforme a <a href="../../fase-2/criterios-julgamento/#2-metricas-percentuais">Tabela 2 de Critérios de julgamento</a> <a href="#s9">S9</a>.</p>
 <table>
 <thead>
 <tr>
@@ -1714,7 +1666,7 @@
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 15. Notas de <a href="../../fase-2/metricas/#16-m6-execucao-por-ambiente"><code>M6</code></a> em contagens absolutas. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a>, com base em <a href="../../fase-2/criterios-julgamento/#2-metricas-percentuais">Critérios de julgamento</a></em></p>
+<p><em>Tabela 14. Notas de <a href="../../fase-2/metricas/#16-m6-execucao-por-ambiente"><code>M6</code></a> em contagens absolutas. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a>, com base em <a href="../../fase-2/criterios-julgamento/#2-metricas-percentuais">Critérios de julgamento</a></em></p>
 <ul>
 <li><strong><a href="../../fase-2/questoes-hipoteses/#41-q5-adaptacao-entre-sistemas-operacionais-e-navegadores"><code>H5</code></a></strong> é sustentada na amostra quando ao menos 90% das combinações são concluídas (15 de 16 com <code>N = 16</code>) e atende às condições de verificação de <a href="../../fase-2/questoes-hipoteses/#41-q5-adaptacao-entre-sistemas-operacionais-e-navegadores"><code>Q5</code></a>. Caso contrário é não sustentada, ou inconclusiva se faltarem dados válidos ou cobertura (<a href="../../fase-2/questoes-hipoteses/#6-interpretacao-das-hipoteses">estados da hipótese</a>).</li>
 <li><strong><a href="../../fase-2/questoes-hipoteses/#41-q5-adaptacao-entre-sistemas-operacionais-e-navegadores"><code>Q5</code></a></strong> é atendida quando <a href="../../fase-2/metricas/#16-m6-execucao-por-ambiente"><code>M6</code></a> tem nota 2 ou 3 <strong>e</strong> nenhum fluxo essencial é impedido. Para essa regra, tratam-se como essenciais <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL1</code></a>–<a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL3</code></a>, que a Fase 1 define como a jornada central de estudo; <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL4</code></a> é secundário. Uma falha confirmada em <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL1</code></a>–<a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL3</code></a> em qualquer ambiente impede o atendimento de <a href="../../fase-2/questoes-hipoteses/#41-q5-adaptacao-entre-sistemas-operacionais-e-navegadores"><code>Q5</code></a>, mesmo com percentual alto.</li>
@@ -1732,15 +1684,15 @@
 <h3 id="53-passos-de-execucao">5.3 Passos de execução<a class="headerlink" href="#53-passos-de-execucao" title="Link para esta seção">&para;</a></h3>
 <ol>
 <li>Conferir a preparação (PA-1 a PA-10).</li>
-<li>Configurar a dimensão (<code>J1</code> ou <code>J2</code>), maximizar a janela e registrar o resultado do comando de <a href="#35-resolucao-e-janela">3.5</a>.</li>
+<li>Configurar a dimensão (<code>J1</code> ou <code>J2</code>), maximizar a janela e registrar o resultado do comando de <a href="#34-resolucao-e-janela">3.4</a>.</li>
 <li>Percorrer o roteiro do fluxo (<a href="#6-roteiros-passo-a-passo">seção 6</a>).</li>
 <li>Em <strong>cada ponto de verificação</strong>, conferir o inventário de controles essenciais (<a href="#54-inventario-de-controles-essenciais">5.4</a>): o conteúdo está visível e legível e o controle está presente e operável sem recurso externo ao uso normal.</li>
-<li>Registrar cada problema como ocorrência, com a gravidade da Tabela 17 e a captura de tela.</li>
+<li>Registrar cada problema como ocorrência, com a gravidade da Tabela 16 e a captura de tela.</li>
 <li>Classificar a combinação (<code>C</code> ou <code>F</code>) e preencher a linha da combinação na <a href="../../fase-4/registro-adaptabilidade/#registro-m7"><code>tabela de M7</code></a> do registro.</li>
 </ol>
 <p>Uma combinação é <code>C</code> quando o roteiro é concluído e <strong>nenhum</strong> problema de gravidade <code>Gr2</code> ou <code>Gr3</code> é registrado. Os códigos <code>I</code> e <code>X</code> e a reprodução em 2 de 3 seguem <a href="#43-passos-de-execucao">4.3</a>, <a href="#45-combinacoes-inviaveis">4.5</a> e <a href="#46-reproducao-de-falhas">4.6</a>.</p>
 <h3 id="54-inventario-de-controles-essenciais">5.4 Inventário de controles essenciais<a class="headerlink" href="#54-inventario-de-controles-essenciais" title="Link para esta seção">&para;</a></h3>
-<p>A Tabela 16 lista o conteúdo e os controles que <a href="../../fase-2/metricas/#17-m7-adaptacao-ao-tamanho-da-janela"><code>M7</code></a> exige preservados. A descrição é funcional, pois os rótulos da interface podem mudar. O avaliador registra o rótulo real de cada item na <a href="../../fase-4/registro-adaptabilidade/#registro-rotulos">tabela de rótulos</a> do registro, durante a preparação.</p>
+<p>A Tabela 15 lista o conteúdo e os controles que <a href="../../fase-2/metricas/#17-m7-adaptacao-ao-tamanho-da-janela"><code>M7</code></a> exige preservados. A descrição é funcional, pois os rótulos da interface podem mudar. O avaliador registra o rótulo real de cada item na <a href="../../fase-4/registro-adaptabilidade/#registro-rotulos">tabela de rótulos</a> do registro, durante a preparação.</p>
 <table>
 <thead>
 <tr>
@@ -1822,7 +1774,7 @@
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 16. Conteúdo e controles essenciais por fluxo. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a>, com base nas saídas observáveis do <a href="../../fase-1/escopo-da-avaliacao/#fluxos">escopo</a></em></p>
+<p><em>Tabela 15. Conteúdo e controles essenciais por fluxo. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a>, com base nas saídas observáveis do <a href="../../fase-1/escopo-da-avaliacao/#fluxos">escopo</a></em></p>
 <h3 id="55-problemas-de-adaptacao-e-gravidade">5.5 Problemas de adaptação e gravidade<a class="headerlink" href="#55-problemas-de-adaptacao-e-gravidade" title="Link para esta seção">&para;</a></h3>
 <p>Rolagem vertical normal da página <strong>não</strong> é problema. O que se registra é perda ou prejuízo de conteúdo e de controles essenciais.</p>
 <table>
@@ -1855,10 +1807,10 @@
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 17. Gravidade dos problemas de adaptação à janela. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<p><em>Tabela 16. Gravidade dos problemas de adaptação à janela. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
 <p>Para a mesma regra, em <a href="../../fase-2/metricas/#16-m6-execucao-por-ambiente"><code>M6</code></a>, um impedimento é um ponto de verificação não atendido que bloqueia a etapa seguinte do roteiro (<code>F-BLQ</code>).</p>
 <h3 id="56-calculo-e-julgamento-de-q6-e-h6">5.6 Cálculo e julgamento de Q6 e H6<a class="headerlink" href="#56-calculo-e-julgamento-de-q6-e-h6" title="Link para esta seção">&para;</a></h3>
-<p>A fórmula é a da <a href="../../fase-2/metricas/#17-m7-adaptacao-ao-tamanho-da-janela"><code>ficha de M7</code></a>, <code>M7 = 100 × C/N</code>, com <code>N = 32</code> menos as <code>I</code>. A Tabela 18 converte contagens em notas, pelas mesmas faixas <a href="#s9">S9</a>.</p>
+<p>A fórmula é a da <a href="../../fase-2/metricas/#17-m7-adaptacao-ao-tamanho-da-janela"><code>ficha de M7</code></a>, <code>M7 = 100 × C/N</code>, com <code>N = 32</code> menos as <code>I</code>. A Tabela 17 converte contagens em notas, pelas mesmas faixas <a href="#s9">S9</a>.</p>
 <table>
 <thead>
 <tr>
@@ -1900,7 +1852,7 @@
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 18. Notas de <a href="../../fase-2/metricas/#17-m7-adaptacao-ao-tamanho-da-janela"><code>M7</code></a> em contagens absolutas. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a>, com base em <a href="../../fase-2/criterios-julgamento/#2-metricas-percentuais">Critérios de julgamento</a></em></p>
+<p><em>Tabela 17. Notas de <a href="../../fase-2/metricas/#17-m7-adaptacao-ao-tamanho-da-janela"><code>M7</code></a> em contagens absolutas. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a>, com base em <a href="../../fase-2/criterios-julgamento/#2-metricas-percentuais">Critérios de julgamento</a></em></p>
 <ul>
 <li>A <strong>nota de <a href="../../fase-2/metricas/#17-m7-adaptacao-ao-tamanho-da-janela"><code>M7</code></a></strong> usa as 32 combinações, como na ficha da métrica.</li>
 <li><strong><a href="../../fase-2/questoes-hipoteses/#42-q6-adaptacao-a-tamanhos-de-janela"><code>H6</code></a></strong> fala em "combinações essenciais". Por isso é verificada no subconjunto <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL1</code></a>–<a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL3</code></a> (24 combinações), em que são necessárias ao menos 22 combinações preservadas, e o resultado dos dois recortes é apresentado.</li>
@@ -1909,7 +1861,7 @@
 <h2 id="6-roteiros-passo-a-passo">6. Roteiros passo a passo<a class="headerlink" href="#6-roteiros-passo-a-passo" title="Link para esta seção">&para;</a></h2>
 <p>Cada roteiro é único e serve às duas métricas: em <a href="../../fase-2/metricas/#16-m6-execucao-por-ambiente"><code>M6</code></a> conta a conclusão de todos os pontos de verificação (<code>P</code>); em <a href="../../fase-2/metricas/#17-m7-adaptacao-ao-tamanho-da-janela"><code>M7</code></a> conta também a presença e a operabilidade dos controles essenciais (<code>CE</code>) em cada ponto. O ponto de partida é a página inicial da plataforma, com a conta <code>D6</code> autenticada.</p>
 <h3 id="61-roteiro-fl1-navegacao-em-cursos">6.1 Roteiro <code>FL1</code> — navegação em cursos<a class="headerlink" href="#61-roteiro-fl1-navegacao-em-cursos" title="Link para esta seção">&para;</a></h3>
-<p>A Tabela 19 apresenta o roteiro de <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL1</code></a>.</p>
+<p>A Tabela 18 apresenta o roteiro de <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL1</code></a>.</p>
 <table>
 <thead>
 <tr>
@@ -1946,9 +1898,9 @@
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 19. Roteiro de <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL1</code></a>. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a>, com base no <a href="../../fase-1/escopo-da-avaliacao/#fluxos">escopo</a></em></p>
+<p><em>Tabela 18. Roteiro de <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL1</code></a>. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a>, com base no <a href="../../fase-1/escopo-da-avaliacao/#fluxos">escopo</a></em></p>
 <h3 id="62-roteiro-fl2-videoaulas">6.2 Roteiro <code>FL2</code> — videoaulas<a class="headerlink" href="#62-roteiro-fl2-videoaulas" title="Link para esta seção">&para;</a></h3>
-<p>A Tabela 20 apresenta o roteiro de <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL2</code></a>.</p>
+<p>A Tabela 19 apresenta o roteiro de <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL2</code></a>.</p>
 <table>
 <thead>
 <tr>
@@ -1991,10 +1943,10 @@
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 20. Roteiro de <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL2</code></a>. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a>, com base no <a href="../../fase-1/escopo-da-avaliacao/#fluxos">escopo</a></em></p>
+<p><em>Tabela 19. Roteiro de <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL2</code></a>. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a>, com base no <a href="../../fase-1/escopo-da-avaliacao/#fluxos">escopo</a></em></p>
 <p>O avanço do tempo, e não o áudio, comprova a reprodução, pois ambientes virtuais podem não ter dispositivo de som. Como <a href="../../fase-1/requisitos-de-avaliacao/#requisitante"><code>D4</code></a> é escolhido com legenda e transcrição, a ausência delas em um ambiente é falha de ponto de verificação, não "não disponível".</p>
 <h3 id="63-roteiro-fl3-exercicios">6.3 Roteiro <code>FL3</code> — exercícios<a class="headerlink" href="#63-roteiro-fl3-exercicios" title="Link para esta seção">&para;</a></h3>
-<p>A Tabela 21 apresenta o roteiro de <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL3</code></a>.</p>
+<p>A Tabela 20 apresenta o roteiro de <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL3</code></a>.</p>
 <table>
 <thead>
 <tr>
@@ -2031,9 +1983,9 @@
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 21. Roteiro de <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL3</code></a>. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a>, com base no <a href="../../fase-1/escopo-da-avaliacao/#fluxos">escopo</a></em></p>
+<p><em>Tabela 20. Roteiro de <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL3</code></a>. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a>, com base no <a href="../../fase-1/escopo-da-avaliacao/#fluxos">escopo</a></em></p>
 <h3 id="64-roteiro-fl4-progresso-do-estudante">6.4 Roteiro <code>FL4</code> — progresso do estudante<a class="headerlink" href="#64-roteiro-fl4-progresso-do-estudante" title="Link para esta seção">&para;</a></h3>
-<p>A Tabela 22 apresenta o roteiro de <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL4</code></a>.</p>
+<p>A Tabela 21 apresenta o roteiro de <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL4</code></a>.</p>
 <table>
 <thead>
 <tr>
@@ -2058,7 +2010,7 @@
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 22. Roteiro de <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL4</code></a>. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a>, com base no <a href="../../fase-1/escopo-da-avaliacao/#fluxos">escopo</a></em></p>
+<p><em>Tabela 21. Roteiro de <a href="../../fase-1/escopo-da-avaliacao/#fluxos"><code>FL4</code></a>. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a>, com base no <a href="../../fase-1/escopo-da-avaliacao/#fluxos">escopo</a></em></p>
 <p>Os pontos de verificação são comuns a todos os ambientes. O roteiro deve ser validado em um ensaio piloto não oficial em <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a>, cujos resultados <strong>não</strong> entram nas métricas, e lido por um avaliador que não o escreveu (<a href="#10-rastreabilidade-com-a-issue-25">seção 10</a>).</p>
 <h2 id="7-validade-atribuicao-e-interrupcao">7. Validade, atribuição e interrupção<a class="headerlink" href="#7-validade-atribuicao-e-interrupcao" title="Link para esta seção">&para;</a></h2>
 <h3 id="71-validade-de-uma-execucao">7.1 Validade de uma execução<a class="headerlink" href="#71-validade-de-uma-execucao" title="Link para esta seção">&para;</a></h3>
@@ -2066,14 +2018,14 @@
 <ul>
 <li>a versão do navegador e do sistema coincide com a registrada na preparação.</li>
 <li>o perfil é novo e sem extensões.</li>
-<li>a resolução confere com <a href="#35-resolucao-e-janela">3.5</a>.</li>
+<li>a resolução confere com <a href="#34-resolucao-e-janela">3.4</a>.</li>
 <li>os dados <a href="../../fase-1/requisitos-de-avaliacao/#requisitante"><code>D1</code></a>–<code>D6</code> são os congelados.</li>
 <li>há executor, observador, data, hora e captura de tela do estado final.</li>
 <li>a plataforma estava disponível.</li>
 </ul>
 <p>Falhando algum item, a execução é <code>X</code> e deve ser refeita.</p>
 <h3 id="72-atribuicao-de-causa">7.2 Atribuição de causa<a class="headerlink" href="#72-atribuicao-de-causa" title="Link para esta seção">&para;</a></h3>
-<p>Só falhas atribuídas à plataforma contam como <code>F</code>. A Tabela 23 resume os indícios e o tratamento de cada causa.</p>
+<p>Só falhas atribuídas à plataforma contam como <code>F</code>. A Tabela 22 resume os indícios e o tratamento de cada causa.</p>
 <table>
 <thead>
 <tr>
@@ -2105,11 +2057,11 @@
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 23. Atribuição de causa das falhas. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<p><em>Tabela 22. Atribuição de causa das falhas. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
 <h3 id="73-interrupcao">7.3 Interrupção<a class="headerlink" href="#73-interrupcao" title="Link para esta seção">&para;</a></h3>
 <p>A execução é interrompida e marcada <code>X</code> em caso de perda de conexão, travamento da máquina virtual, sessão expirada por inatividade do avaliador ou indisponibilidade do serviço. Uma falha da própria plataforma, como o travamento do navegador reproduzido em 2 de 3 execuções, não é interrupção: é <code>F</code>.</p>
 <h2 id="8-formularios-e-modelos-de-registro">8. Formulários e modelos de registro<a class="headerlink" href="#8-formularios-e-modelos-de-registro" title="Link para esta seção">&para;</a></h2>
-<p>Os formulários são tabelas em Markdown na página <a href="../../fase-4/registro-adaptabilidade/"><code>Registro de execuções (M6 e M7)</code></a>, editadas por <em>pull request</em> durante a Fase 4. Isso mantém os dados brutos no repositório e visíveis na GitPage, sem depender de planilhas externas. A Tabela 24 lista as partes do registro.</p>
+<p>Os formulários são tabelas em Markdown na página <a href="../../fase-4/registro-adaptabilidade/"><code>Registro de execuções (M6 e M7)</code></a>, editadas por <em>pull request</em> durante a Fase 4. Isso mantém os dados brutos no repositório e visíveis na GitPage, sem depender de planilhas externas. A Tabela 23 lista as partes do registro.</p>
 <table>
 <thead>
 <tr>
@@ -2131,7 +2083,7 @@
 </tr>
 <tr>
 <td><a href="../../fase-4/registro-adaptabilidade/#registro-resolucao">Resolução verificada</a></td>
-<td>Resultado do comando de 3.5 por ambiente e dimensão</td>
+<td>Resultado do comando de 3.4 por ambiente e dimensão</td>
 <td style="text-align: right;">8</td>
 </tr>
 <tr>
@@ -2156,11 +2108,11 @@
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 24. Partes do registro de execuções. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<p><em>Tabela 23. Partes do registro de execuções. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
 <p><strong>Evidências e rastreabilidade do dado bruto à métrica.</strong> Todo registro é indexado pelo identificador da combinação (<code>M6-A1-FL2</code>, <code>M7-A1-J1-FL2</code>). Cada captura segue o padrão <code>&lt;id_combinacao&gt;_&lt;tentativa&gt;_&lt;AAAAMMDD&gt;.png</code>, por exemplo, <code>M6-A1-FL2_t1_20261112.png</code>, e a coluna de evidência cita esse nome. A coluna de ocorrência cita o <code>id_ocorrencia</code>, que também aparece na tabela de ocorrências. Assim, é possível ir da métrica calculada à linha de registro, à captura ou gravação e à ocorrência. O local de armazenamento das evidências deve ser definido antes da coleta.</p>
 <h2 id="9-calculo-interpretacao-e-relato">9. Cálculo, interpretação e relato<a class="headerlink" href="#9-calculo-interpretacao-e-relato" title="Link para esta seção">&para;</a></h2>
 <h3 id="91-formulas">9.1 Fórmulas<a class="headerlink" href="#91-formulas" title="Link para esta seção">&para;</a></h3>
-<p>A Tabela 25 apresenta as fórmulas de <a href="../../fase-2/metricas/#16-m6-execucao-por-ambiente"><code>M6</code></a> e <a href="../../fase-2/metricas/#17-m7-adaptacao-ao-tamanho-da-janela"><code>M7</code></a>.</p>
+<p>A Tabela 24 apresenta as fórmulas de <a href="../../fase-2/metricas/#16-m6-execucao-por-ambiente"><code>M6</code></a> e <a href="../../fase-2/metricas/#17-m7-adaptacao-ao-tamanho-da-janela"><code>M7</code></a>.</p>
 <table>
 <thead>
 <tr>
@@ -2185,18 +2137,18 @@
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 25. Fórmulas de <a href="../../fase-2/metricas/#16-m6-execucao-por-ambiente"><code>M6</code></a> e <a href="../../fase-2/metricas/#17-m7-adaptacao-ao-tamanho-da-janela"><code>M7</code></a>. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a>, com base nas <a href="../../fase-2/metricas/">fichas das métricas</a></em></p>
+<p><em>Tabela 24. Fórmulas de <a href="../../fase-2/metricas/#16-m6-execucao-por-ambiente"><code>M6</code></a> e <a href="../../fase-2/metricas/#17-m7-adaptacao-ao-tamanho-da-janela"><code>M7</code></a>. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a>, com base nas <a href="../../fase-2/metricas/">fichas das métricas</a></em></p>
 <h3 id="92-interpretacao">9.2 Interpretação<a class="headerlink" href="#92-interpretacao" title="Link para esta seção">&para;</a></h3>
 <ol>
 <li>Calcular <a href="../../fase-2/metricas/#16-m6-execucao-por-ambiente"><code>M6</code></a> e <a href="../../fase-2/metricas/#17-m7-adaptacao-ao-tamanho-da-janela"><code>M7</code></a> a partir das tabelas do registro, conferindo à mão ao menos uma linha de cada.</li>
-<li>Converter o percentual em nota pela Tabela 15 e pela Tabela 18.</li>
+<li>Converter o percentual em nota pela Tabela 14 e pela Tabela 17.</li>
 <li>Verificar a regra de fluxo essencial impedido (<a href="#47-calculo-e-julgamento-de-q5-e-h5">4.7</a>, <a href="#56-calculo-e-julgamento-de-q6-e-h6">5.6</a>).</li>
 <li>Classificar <a href="../../fase-2/questoes-hipoteses/#41-q5-adaptacao-entre-sistemas-operacionais-e-navegadores"><code>H5</code></a> e <a href="../../fase-2/questoes-hipoteses/#42-q6-adaptacao-a-tamanhos-de-janela"><code>H6</code></a> como sustentada, não sustentada ou inconclusiva.</li>
 <li>Relatar as matrizes ambiente × fluxo (<a href="../../fase-2/metricas/#16-m6-execucao-por-ambiente"><code>M6</code></a>) e ambiente × dimensão × fluxo (<a href="../../fase-2/metricas/#17-m7-adaptacao-ao-tamanho-da-janela"><code>M7</code></a>), as contagens absolutas, as ocorrências por gravidade e as versões testadas.</li>
 <li>Redigir as conclusões dentro dos <a href="../../fase-1/escopo-da-avaliacao/#limites-de-validade">limites de validade</a>: valem para os ambientes, versões e período registrados, não para outros navegadores, sistemas ou dispositivos móveis.</li>
 </ol>
 <h3 id="93-consistencia-entre-os-metodos-desta-fase-e-a-especificacao-da-fase-2">9.3 Consistência entre os métodos desta fase e a especificação da Fase 2<a class="headerlink" href="#93-consistencia-entre-os-metodos-desta-fase-e-a-especificacao-da-fase-2" title="Link para esta seção">&para;</a></h3>
-<p>A Tabela 26 explicita a coerência entre o que a Fase 2 especifica <a href="#s8">S8</a>, <a href="#s9">S9</a> e o que a Fase 3 usa para obter e julgar cada métrica.</p>
+<p>A Tabela 25 explicita a coerência entre o que a Fase 2 especifica <a href="#s8">S8</a>, <a href="#s9">S9</a> e o que a Fase 3 usa para obter e julgar cada métrica.</p>
 <table>
 <thead>
 <tr>
@@ -2248,9 +2200,9 @@
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 26. Consistência entre a especificação da Fase 2 e os métodos da Fase 3. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<p><em>Tabela 25. Consistência entre a especificação da Fase 2 e os métodos da Fase 3. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
 <h3 id="94-da-medicao-a-decisao-e-as-acoes">9.4 Da medição à decisão e às ações<a class="headerlink" href="#94-da-medicao-a-decisao-e-as-acoes" title="Link para esta seção">&para;</a></h3>
-<p>O propósito da Fase 1 é apoiar a decisão <a href="../../fase-1/requisitos-de-avaliacao/#requisitante"><code>D1</code></a>. A Tabela 27 indica como cada resultado de <a href="../../fase-2/metricas/#16-m6-execucao-por-ambiente"><code>M6</code></a> e <a href="../../fase-2/metricas/#17-m7-adaptacao-ao-tamanho-da-janela"><code>M7</code></a> se traduz no desfecho de <a href="../../fase-1/requisitos-de-avaliacao/#requisitante"><code>D1</code></a> e em uma ação para a coordenação. A decisão final também depende de <a href="../../fase-2/metricas/#11-m1-tempo-observavel-por-etapa"><code>M1</code></a>–<a href="../../fase-2/metricas/#15-m5-dados-transferidos"><code>M5</code></a>.</p>
+<p>O propósito da Fase 1 é apoiar a decisão <a href="../../fase-1/requisitos-de-avaliacao/#requisitante"><code>D1</code></a>. A Tabela 26 indica como cada resultado de <a href="../../fase-2/metricas/#16-m6-execucao-por-ambiente"><code>M6</code></a> e <a href="../../fase-2/metricas/#17-m7-adaptacao-ao-tamanho-da-janela"><code>M7</code></a> se traduz no desfecho de <a href="../../fase-1/requisitos-de-avaliacao/#requisitante"><code>D1</code></a> e em uma ação para a coordenação. A decisão final também depende de <a href="../../fase-2/metricas/#11-m1-tempo-observavel-por-etapa"><code>M1</code></a>–<a href="../../fase-2/metricas/#15-m5-dados-transferidos"><code>M5</code></a>.</p>
 <table>
 <thead>
 <tr>
@@ -2287,9 +2239,9 @@
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 27. Tradução dos resultados de <a href="../../fase-2/metricas/#16-m6-execucao-por-ambiente"><code>M6</code></a> e <a href="../../fase-2/metricas/#17-m7-adaptacao-ao-tamanho-da-janela"><code>M7</code></a> em desfechos de <a href="../../fase-1/requisitos-de-avaliacao/#requisitante"><code>D1</code></a> e ações. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a>, com base nos desfechos de <a href="../../fase-1/requisitos-de-avaliacao/#requisitante">Requisitos de avaliação</a></em></p>
+<p><em>Tabela 26. Tradução dos resultados de <a href="../../fase-2/metricas/#16-m6-execucao-por-ambiente"><code>M6</code></a> e <a href="../../fase-2/metricas/#17-m7-adaptacao-ao-tamanho-da-janela"><code>M7</code></a> em desfechos de <a href="../../fase-1/requisitos-de-avaliacao/#requisitante"><code>D1</code></a> e ações. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a>, com base nos desfechos de <a href="../../fase-1/requisitos-de-avaliacao/#requisitante">Requisitos de avaliação</a></em></p>
 <h2 id="10-rastreabilidade-com-a-issue-25">10. Rastreabilidade com a issue #25<a class="headerlink" href="#10-rastreabilidade-com-a-issue-25" title="Link para esta seção">&para;</a></h2>
-<p>A Tabela 28 relaciona as tarefas e os critérios de aceite da parte de adaptabilidade da issue <a href="#s16">S16</a> ao local onde são atendidos.</p>
+<p>A Tabela 27 relaciona as tarefas e os critérios de aceite da parte de adaptabilidade da issue <a href="#s16">S16</a> ao local onde são atendidos.</p>
 <table>
 <thead>
 <tr>
@@ -2304,11 +2256,11 @@
 </tr>
 <tr>
 <td>Especificar testes de compatibilidade entre sistemas operacionais e navegadores</td>
-<td><a href="#4-procedimento-de-m6">4</a>, <a href="#32-ambientes-complementares">3.2</a></td>
+<td><a href="#4-procedimento-de-m6">4</a></td>
 </tr>
 <tr>
 <td>Definir procedimentos nas resoluções 1366 × 768 e 1920 × 1080</td>
-<td><a href="#35-resolucao-e-janela">3.5</a>, <a href="#5-procedimento-de-m7">5</a></td>
+<td><a href="#34-resolucao-e-janela">3.4</a>, <a href="#5-procedimento-de-m7">5</a></td>
 </tr>
 <tr>
 <td>Estabelecer critérios para identificar problemas de adaptação e impedimentos</td>
@@ -2336,11 +2288,11 @@
 </tr>
 <tr>
 <td>Critério de aceite: instrumentos, condições e dados de teste identificados</td>
-<td><a href="#33-instrumentos">3.3</a>, <a href="#34-preparacao-do-ambiente">3.4</a>, <a href="#36-requisitos-conhecimento-do-avaliador-e-massa-de-dados">3.6</a></td>
+<td><a href="#32-instrumentos">3.2</a>, <a href="#33-preparacao-do-ambiente">3.3</a>, <a href="#35-requisitos-conhecimento-do-avaliador-e-massa-de-dados">3.5</a></td>
 </tr>
 <tr>
 <td>Critério de aceite: outro avaliador reproduz os procedimentos</td>
-<td>Roteiros, guia de operações (<a href="#37-guia-de-operacoes-por-ambiente">3.7</a>) e registro; validação pelo ensaio piloto de <a href="#64-roteiro-fl4-progresso-do-estudante">6.4</a></td>
+<td>Roteiros, guia de operações (<a href="#36-guia-de-operacoes-por-ambiente">3.6</a>) e registro; validação pelo ensaio piloto de <a href="#64-roteiro-fl4-progresso-do-estudante">6.4</a></td>
 </tr>
 <tr>
 <td>Critério de aceite: rastreabilidade explícita com métricas e critérios da Fase 2</td>
@@ -2348,8 +2300,8 @@
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 28. Rastreabilidade entre a issue #25 (adaptabilidade) e este artefato. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
-<p>A Tabela 29 relaciona os critérios de avaliação das Fases 3 e 4 (<a href="../../criterios/fase3/">Fase 3</a> <a href="#s14">S14</a> e <a href="../../criterios/fase4/">Fase 4</a> <a href="#s15">S15</a>) ao que este artefato oferece.</p>
+<p><em>Tabela 27. Rastreabilidade entre a issue #25 (adaptabilidade) e este artefato. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<p>A Tabela 28 relaciona os critérios de avaliação das Fases 3 e 4 (<a href="../../criterios/fase3/">Fase 3</a> <a href="#s14">S14</a> e <a href="../../criterios/fase4/">Fase 4</a> <a href="#s15">S15</a>) ao que este artefato oferece.</p>
 <table>
 <thead>
 <tr>
@@ -2362,12 +2314,12 @@
 <tr>
 <td><code>F3-C1</code> Método e repetibilidade</td>
 <td>Método justificado, roteiros com pontos de verificação, regras de classificação e guia de operações que dispensam conhecimento prévio</td>
-<td><a href="#11-justificativa-do-metodo">1.1</a>, <a href="#37-guia-de-operacoes-por-ambiente">3.7</a>, <a href="#4-procedimento-de-m6">4</a> a <a href="#6-roteiros-passo-a-passo">6</a></td>
+<td><a href="#11-justificativa-do-metodo">1.1</a>, <a href="#36-guia-de-operacoes-por-ambiente">3.6</a>, <a href="#4-procedimento-de-m6">4</a> a <a href="#6-roteiros-passo-a-passo">6</a></td>
 </tr>
 <tr>
 <td><code>F3-C2</code> Recursos e ambiente</td>
 <td>Requisitos de hardware e software, conhecimento do avaliador, massa de dados justificada</td>
-<td><a href="#3-ambiente-de-teste-e-instrumentos">3</a>, <a href="#36-requisitos-conhecimento-do-avaliador-e-massa-de-dados">3.6</a></td>
+<td><a href="#3-ambiente-de-teste-e-instrumentos">3</a>, <a href="#35-requisitos-conhecimento-do-avaliador-e-massa-de-dados">3.5</a></td>
 </tr>
 <tr>
 <td><code>F3-C3</code> Cronograma</td>
@@ -2392,7 +2344,7 @@
 <tr>
 <td><code>F4-C2</code> Dados brutos</td>
 <td>Registro indexado por combinação, nomenclatura de evidências e gravação de sessões</td>
-<td><a href="#8-formularios-e-modelos-de-registro">8</a>, <a href="#33-instrumentos">3.3</a></td>
+<td><a href="#8-formularios-e-modelos-de-registro">8</a>, <a href="#32-instrumentos">3.2</a></td>
 </tr>
 <tr>
 <td><code>F4-C3</code> Análise e respostas GQM</td>
@@ -2411,7 +2363,7 @@
 </tr>
 </tbody>
 </table>
-<p><em>Tabela 29. Contribuição deste artefato aos critérios das Fases 3 e 4. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
+<p><em>Tabela 28. Contribuição deste artefato aos critérios das Fases 3 e 4. Fonte: Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a> e <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
 <h2 id="referencias">Referências<a class="headerlink" href="#referencias" title="Link para esta seção">&para;</a></h2>
 <p><a id="s1"></a></p>
 <blockquote>

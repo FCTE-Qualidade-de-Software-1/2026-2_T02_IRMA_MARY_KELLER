@@ -627,20 +627,19 @@
 <li><a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a>: Windows 11 Pro + Google Chrome (motor Blink);</li>
 <li><a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A2</code></a>: Windows 11 Pro + Mozilla Firefox (motor Gecko);</li>
 <li><a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A3</code></a>: macOS + Apple Safari (motor WebKit);</li>
-<li><a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A4</code></a>: Ubuntu 26.04 LTS + Mozilla Firefox (motor Gecko).</li>
-<li>Ambientes Linux complementares (<a href="../procedimentos-adaptabilidade/#32-ambientes-complementares"><code>AC1</code></a> a <a href="../procedimentos-adaptabilidade/#32-ambientes-complementares"><code>AC3</code></a>): Para aprofundar a observação da adaptabilidade em sistemas abertos amplamente utilizados no ambiente desktop, são preparadas distribuições Linux adicionais (Fedora, Arch Linux e openSUSE Leap). Seus resultados são relatados de forma complementar, sem alterar o denominador formal de cálculo de <a href="../../fase-2/metricas/#16-m6-execucao-por-ambiente"><code>M6</code></a> definido na Fase 2 <a href="#s4">S4</a>.</li>
+<li><a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A4</code></a>: Ubuntu 26.04/26.10 + Mozilla Firefox (motor Gecko).</li>
 </ol>
-<p>Os ambientes complementares são opcionais e seus resultados são relatados separadamente, conforme o procedimento de adaptabilidade <a href="#s6">S6</a>. A cobertura formal de <a href="../../fase-2/metricas/#16-m6-execucao-por-ambiente"><code>M6</code></a> e <a href="../../fase-2/metricas/#17-m7-adaptacao-ao-tamanho-da-janela"><code>M7</code></a> utiliza <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a> a <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A4</code></a>. A navegação por teclado e por leitor de tela (<a href="../../fase-2/metricas/#18-m8-execucao-por-teclado"><code>M8</code></a> e <a href="../../fase-2/metricas/#19-m9-execucao-com-leitor-de-tela"><code>M9</code></a>) é avaliada em <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a>, <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A3</code></a> e <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A4</code></a>. Em <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a>, a resolução de 1366 × 768 é utilizada para o ensaio de ampliação a 200% e as verificações separadas de contraste textual e alto contraste (<a href="../../fase-2/metricas/#110-m10-preservacao-com-ampliacao"><code>M10</code></a> e <a href="../../fase-2/metricas/#111-m11-conformidade-de-contraste"><code>M11</code></a>). As sessões de apreensibilidade (<a href="../../fase-2/metricas/#112-m12-conclusao-autonoma-por-estudantes-novos"><code>M12</code></a> a <a href="../../fase-2/metricas/#114-m14-tempo-de-conclusao-autonoma"><code>M14</code></a>) também utilizam <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a> <a href="#s10">S10</a>.</p>
+<p>A cobertura formal de <a href="../../fase-2/metricas/#16-m6-execucao-por-ambiente"><code>M6</code></a> e <a href="../../fase-2/metricas/#17-m7-adaptacao-ao-tamanho-da-janela"><code>M7</code></a> utiliza <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a> a <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A4</code></a>. A navegação por teclado e por leitor de tela (<a href="../../fase-2/metricas/#18-m8-execucao-por-teclado"><code>M8</code></a> e <a href="../../fase-2/metricas/#19-m9-execucao-com-leitor-de-tela"><code>M9</code></a>) é avaliada em <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a>, <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A3</code></a> e <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A4</code></a>. Em <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a>, a resolução de 1366 × 768 é utilizada para o ensaio de ampliação a 200% e as verificações separadas de contraste textual e alto contraste (<a href="../../fase-2/metricas/#110-m10-preservacao-com-ampliacao"><code>M10</code></a> e <a href="../../fase-2/metricas/#111-m11-conformidade-de-contraste"><code>M11</code></a>). As sessões de apreensibilidade (<a href="../../fase-2/metricas/#112-m12-conclusao-autonoma-por-estudantes-novos"><code>M12</code></a> a <a href="../../fase-2/metricas/#114-m14-tempo-de-conclusao-autonoma"><code>M14</code></a>) também utilizam <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a> <a href="#s10">S10</a>.</p>
 <h2 id="2-virtualizacao-e-padronizacao-dos-recursos-de-hardware">2. Virtualização e padronização dos recursos de hardware<a class="headerlink" href="#2-virtualizacao-e-padronizacao-dos-recursos-de-hardware" title="Link para esta seção">&para;</a></h2>
 <p>Com o objetivo de garantir a padronização e a comparabilidade dos recursos de hardware aos quais cada sistema convidado tem acesso — simulando de forma controlada computadores com recursos limitados típicos do cenário de escolas públicas <a href="#s1">S1</a> —, todos os ambientes, com exceção do macOS, são executados sob virtualização.</p>
 <ul>
 <li><code>Recursos alocados:</code> Cada ambiente virtualizado recebe estritamente a cota padronizada de <code>4 GB de memória RAM</code> e <code>4 vCPUs</code>, mantendo coerência com o perfil de computador com recursos limitados estabelecido nos <a href="../../fase-1/requisitos-de-avaliacao/">Requisitos de avaliação</a> <a href="#s3">S3</a> e nas justificativas de <a href="../../fase-2/criterios-julgamento/">Critérios de julgamento</a> <a href="#s8">S8</a>.</li>
-<li><code>Ambientes Linux:</code> A gestão da virtualização é provida pelo hipervisor <code>QEMU/KVM</code>, com interface de gerenciamento via <a href="https://apps.gnome.org/pt-BR/Boxes/">GNOME Boxes</a>.</li>
+<li><code>Ambiente Linux</code> (<a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A4</code></a>): A gestão da virtualização é provida pelo hipervisor <code>QEMU/KVM</code>, com interface de gerenciamento via <a href="https://apps.gnome.org/pt-BR/Boxes/">GNOME Boxes</a>.</li>
 <li>Ambientes Windows (<a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a> e <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A2</code></a>): A execução virtualizada do Windows 11 Pro utiliza conteinerização orientada pelo Docker, com interface de gerenciamento via <a href="https://www.winboat.app/">Winboat</a>.</li>
 <li>Ambiente macOS (<a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A3</code></a>): Em virtude de restrições de licenciamento e suporte de virtualização para a plataforma Apple, o ambiente <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A3</code></a> é executado em máquina física dedicada, cujas especificações de processador e memória são devidamente anotadas no registro de preparação.</li>
 </ul>
 <h2 id="3-sistemas-operacionais-e-navegadores">3. Sistemas operacionais e navegadores<a class="headerlink" href="#3-sistemas-operacionais-e-navegadores" title="Link para esta seção">&para;</a></h2>
-<p>A Tabela 1 apresenta a lista dos sistemas operacionais e as versões dos navegadores estáveis vigentes utilizadas durante os ensaios. O Arch Linux, por adotar modelo de atualização contínua (<em>rolling release</em>), não possui numeração fixa de versão do sistema.</p>
+<p>A Tabela 1 apresenta a lista dos sistemas operacionais e as versões dos navegadores estáveis vigentes utilizadas durante os ensaios.</p>
 <table>
 <thead>
 <tr>
@@ -690,37 +689,10 @@
 <td>Virtualizado (QEMU/KVM / GNOME Boxes)</td>
 <td>4 GB RAM, 4 vCPUs</td>
 </tr>
-<tr>
-<td style="text-align: center;"><a href="../procedimentos-adaptabilidade/#32-ambientes-complementares"><code>AC1</code></a></td>
-<td>Fedora 44</td>
-<td>Chrome / Firefox</td>
-<td>Blink / Gecko</td>
-<td style="text-align: center;">156.0 / 159.0</td>
-<td>Virtualizado (QEMU/KVM / GNOME Boxes)</td>
-<td>4 GB RAM, 4 vCPUs</td>
-</tr>
-<tr>
-<td style="text-align: center;"><a href="../procedimentos-adaptabilidade/#32-ambientes-complementares"><code>AC2</code></a></td>
-<td>Arch Linux (<em>rolling</em>)</td>
-<td>Chrome / Firefox</td>
-<td>Blink / Gecko</td>
-<td style="text-align: center;">156.0 / 159.0</td>
-<td>Virtualizado (QEMU/KVM / GNOME Boxes)</td>
-<td>4 GB RAM, 4 vCPUs</td>
-</tr>
-<tr>
-<td style="text-align: center;"><a href="../procedimentos-adaptabilidade/#32-ambientes-complementares"><code>AC3</code></a></td>
-<td>openSUSE Leap 16.1</td>
-<td>Chrome / Firefox</td>
-<td>Blink / Gecko</td>
-<td style="text-align: center;">156.0 / 153.5</td>
-<td>Virtualizado (QEMU/KVM / GNOME Boxes)</td>
-<td>4 GB RAM, 4 vCPUs</td>
-</tr>
 </tbody>
 </table>
 <p><em>Tabela 1. Sistemas operacionais, navegadores e recursos por ambiente. Fonte: Elaborada por: <a href="https://github.com/JAugustoM">José Augusto</a></em></p>
-<p>As máquinas virtuais e seus respectivos navegadores são atualizados via gerenciador de pacotes na etapa de preparação formal antes do início das medições oficiais (verificação <a href="../procedimentos-adaptabilidade/#34-preparacao-do-ambiente"><code>PA-1</code></a> / <a href="../procedimentos-desempenho/#34-preparacao-do-ambiente-checklist-pd-1-a-pd-10"><code>PD-1</code></a>), congelando-se a data e desativando-se atualizações automáticas durante a coleta de dados da Fase 4.</p>
+<p>As máquinas virtuais e seus respectivos navegadores são atualizados via gerenciador de pacotes na etapa de preparação formal antes do início das medições oficiais (verificação <a href="../procedimentos-adaptabilidade/#33-preparacao-do-ambiente"><code>PA-1</code></a> / <a href="../procedimentos-desempenho/#34-preparacao-do-ambiente-checklist-pd-1-a-pd-10"><code>PD-1</code></a>), congelando-se a data e desativando-se atualizações automáticas durante a coleta de dados da Fase 4.</p>
 <h2 id="4-ferramentas-de-medicao-diagnostico-e-apoio-aos-ensaios">4. Ferramentas de medição, diagnóstico e apoio aos ensaios<a class="headerlink" href="#4-ferramentas-de-medicao-diagnostico-e-apoio-aos-ensaios" title="Link para esta seção">&para;</a></h2>
 <p>Para a condução dos testes de eficiência de desempenho, adaptabilidade e acessibilidade, a equipe utiliza um conjunto integrado de ferramentas de instrumentação, inspeção e diagnóstico. A Tabela 2 relaciona essas ferramentas, especificando sua finalidade e sua aplicação no estudo. Conforme diretriz do plano de testes, as ferramentas são empregadas em suas distribuições nativas ou integradas aos ambientes, sem fixação antecipada de versões isoladas.</p>
 <table>
@@ -779,9 +751,9 @@
 <tr>
 <td><code>Utilitários Linux de Monitoramento (top, htop, systemd-cgtop)</code></td>
 <td>Monitores do sistema Linux</td>
-<td>Monitoramento de consumo de recursos nos ambientes Linux para verificação da estabilidade dos sistemas convidados</td>
+<td>Monitoramento de consumo de recursos no ambiente Linux para verificação da estabilidade do sistema convidado</td>
 <td>Verificação de integridade operacional</td>
-<td>Ambientes <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A4</code></a> e complementares (<a href="../procedimentos-adaptabilidade/#32-ambientes-complementares"><code>AC1</code></a>–<a href="../procedimentos-adaptabilidade/#32-ambientes-complementares"><code>AC3</code></a>)</td>
+<td>Ambiente <a href="../../fase-1/escopo-da-avaliacao/#ambientes"><code>A4</code></a></td>
 </tr>
 <tr>
 <td><code>Emulador de Limitação de Rede (Network Throttling)</code></td>
