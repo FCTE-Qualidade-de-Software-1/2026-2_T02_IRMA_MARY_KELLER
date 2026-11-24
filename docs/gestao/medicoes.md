@@ -1,6 +1,6 @@
-# Procedimento de medição
+# Procedimento de medições
 
-Este artefato descreve como a medição é executada: quais dados entram, o passo a passo de cada rodada e em que datas ela ocorre.
+Este artefato descreve como a medição é executada: quais dados entram, o passo a passo de cada rodada, em que datas ela ocorre e histórico de medições.
  
 <a id="responsavel"></a>
 
@@ -13,7 +13,7 @@ A Tabela 1 lista os dados necessários, onde ficam, quem os alimenta e quais med
 | Dado | Fonte | Quem alimenta | Quando | Medidas que usam |
 |---|---|---|---|---|
 | ID, Janela, Estimativa, estado, datas de fechamento e reabertura, labels | Issues e pull requests do GitHub | Responsável pela issue | Ao criar, fechar ou reabrir a issue | `CP1`, `CP2`, `DP1`, `RC2` |
-| Horas por integrante e por issue | Tabela de Contribuição no corpo da issue (colunas `Usuário`, `Data`, `Horas Trabalhadas`; ver [Registro de Horas](horas.md)) | Cada integrante | Até 12h do dia da medição | `RC1`, `RC2` |
+| Horas por integrante e por issue | Tabela de Contribuição no corpo da issue, ver [Registro de Horas](#2-registro-manual-das-horas-trabalhadas) | Cada integrante | Sempre que realizar alguma alteração | `RC1`, `RC2` |
 | Nível por critério da rubrica | `assets/dados/gestao/autoavaliacao.csv` (colunas `data,fase,criterio,nivel,evidencia`) | Revisor | Em [Mg-3](#pontos) | `DP2` |
 | Uso de IA | [Uso de IA](uso_de_ia.md) | Quem usou a ferramenta | No momento do uso | Evidência para os critérios de uso de IA na autoavaliação (`DP2`) |
  
@@ -21,18 +21,37 @@ A Tabela 1 lista os dados necessários, onde ficam, quem os alimenta e quais med
  
 No `autoavaliacao.csv`, `criterio` é o código da rubrica (por exemplo, `F1-C6`) e `nivel` é um de Insuficiente, Regular, Satisfatório ou Excelente (ou Crítico, Insuficiente, Bom, Adequado), que correspondem, nesta ordem, às quatro opções da rubrica da professora, da primeira à última.
  
-## 2. Passos operacionais
+## 2. Registro Manual das Horas trabalhadas
 
-Os passos abaixo são seguidos a cada ponto de medição:
- 
-1. Até as 12h do dia da medição, cada membro lança suas horas na Tabela de Contribuição das issues em que trabalhou.
-2. O [Responsável](#responsavel) confere as pré-condições: issues fechadas com Janela, Estimativa e revisão registrada; horas lançadas fora de issues; labels `correcao` aplicadas onde devidas. Pendências são cobradas das duplas donas antes do cálculo.
-3. O [Responsável](#responsavel) gera a página de acompanhamento. O script `assets/scripts/consolida_horas.py` roda automaticamente no build do ProperDocs (`uv run properdocs build` ou `serve`), lê as issues pela API do GitHub e publica [Medições Consolidadas](horas_consolidadas.md). Defina `GITHUB_TOKEN` no ambiente ou em um arquivo `.env` na raiz (não versionado) para evitar o limite de requisições. Os cálculos seguem as fórmulas de [3. Medidas e indicadores por categoria](plano_de_medicao.md#3-medidas-e-indicadores-por-categoria). A cada medição, confere-se à mão ao menos uma medida (por exemplo, o `CP1`) contra o resultado gerado.
-4. O [Responsável](#responsavel) registra os valores consolidados na tabela de histórico ([seção 7.4](#historico)), indicando ponto de medição, data, valores das medidas base, valor derivado, nível e cor.
-5. Em Mg-1, Mg-2 e Mg-3, o revisor preenche ou valida o `assets/dados/gestao/autoavaliacao.csv` para a fase correspondente, com um nível e uma evidência (link para o trecho do artigo, da GitPage ou do repositório) por critério. Antes disso, o Responsável confere o [registro de uso de IA](uso_de_ia.md).
-6. O [Responsável](#responsavel) interpreta cada medida amarela ou vermelha: registra causa provável e decisão conforme as [Regras de Decisão](plano_de_medicao.md#regras), e abre issue de ação quando houver trabalho corretivo a fazer.
-7. Medidas "sem dados" ou "com ressalva" são registradas como tal, com o motivo.
-8. O resultado é comunicado ao grupo no mesmo dia e commitado por pull request.
+1. Abra a issue em que trabalhou. Ela deve ter sido criada com o [template de atividade planejada](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/.github/ISSUE_TEMPLATE/atividade_planejada.md), que contém a seção **Tabela de Contribuição**.
+2. Acrescente **uma linha por dia** em que trabalhou na issue:
+   - `Usuário`: seu usuário do GitHub (por exemplo, `@usuario`).
+   - `Data`: no formato `DD/MM/AAAA`.
+   - `Horas Trabalhadas`: número decimal, em múltiplos de 0,25 (por exemplo, `1.5`, `0.75`).
+3. Lance as horas **até as 12h do dia de cada ponto de medição** (Mg-1 a Mg-3; datas no plano).
+4. O script de consolidação lê as tabelas das issues pela API do GitHub a cada build da página. Não há arquivo a versionar.
+
+### Regras
+
+- Conte tudo o que é trabalho do projeto: escrita, pesquisa, revisão do trabalho de outro membro, reuniões, preparação de slides e a conferência de textos gerados por IA.
+- Em trabalho de dupla, cada integrante lança as **suas** horas, em linhas próprias. Não divida nem some as da dupla.
+- Não registre horas estimadas aqui. A estimativa fica no campo **Estimativa** da issue.
+- Se a atividade ainda não tem issue, crie a issue primeiro. Reuniões e tarefas de gestão também precisam de uma issue de apoio com Estimativa.
+- Horas lançadas fora de uma issue não são contabilizadas e diminuem o `RC3`.
+- Para corrigir um lançamento, edite a linha da tabela na issue. O histórico de edições fica registrado pelo GitHub.
+
+### Exemplo de preenchimento
+
+Valores fictícios, apenas para mostrar o formato. Não copiar para a sua issue.
+
+```markdown
+### Tabela de Contribuição
+
+| Usuário  | Data       | Horas Trabalhadas |
+| :------- | :--------: | :---------------: |
+| @usuario | 01/01/2026 | 1.5               |
+| @usuario | 02/01/2026 | 0.75              |
+```
 
 <a id="pontos"></a>
 
@@ -43,8 +62,8 @@ A Tabela 2 apresenta as datas das medições, sua finalidade e as medidas calcul
 | Id da Medição | Data | Finalidade | Medidas |
 |---|---|---|---|
 | Mg-1 | 26/10/2026 (seg) | Medição da Entrega 1 (Fases 1 e 2) | `CP1`, `CP2`, `DP1`, `DP2`, `RC1`, `RC2`, `Pa` |
-| Mg-2 | 09/11/2026 (seg) | Medição do Ponto de Controle 2 (PC2) | `CP1`, `CP2`, `DP1`, `DP2`, `RC1`, `RC2`, `Pa` |
-| Mg-3 | 18/11/2026 (qua) | Medição da Entrega 2 Final | `CP1`, `CP2`, `DP1`, `DP2`, `RC1`, `RC2`, `Pa` |
+| Mg-2 | 16/11/2026 (seg) | Medição do Ponto de Controle 2 (PC2) | `CP1`, `CP2`, `DP1`, `DP2`, `RC1`, `RC2`, `Pa` |
+| Mg-3 | 24/11/2026 (qua) | Medição da Entrega 2 Final | `CP1`, `CP2`, `DP1`, `DP2`, `RC1`, `RC2`, `Pa` |
 
 *Tabela 2. Pontos de medição previstos. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
 
@@ -65,6 +84,20 @@ Executado em 26/10/2026 sobre as issues e commits das Fases 1 e 2.
 | **RC1** Esforço | $\sum Hr = 32,00\text{ h}$, $n = 6$ | $Hm = 32,00 \div 6$ | **32,00 h** (média 5,33 h/membro) | Informativo | Sem cor | Volume compatível com a carga prevista para a Entrega 1; esforço distribuído entre todos os integrantes. |
 | **RC2** Variação | $Ee = 20,00\text{ h}$, $Er = 20,00\text{ h}$ | $Ve = (0 \div 20) \times 100$ | **0,0%** | Adequado | Verde | Estimativas em issues fechadas com estimativa explícita bateram rigorosamente com os lançamentos. |
 | **Pa** Cobertura | $Ar = 11$, $Ac = 13$ | $Pa = (11 \div 13) \times 100$ | **84,6%** | Insuficiente | Amarelo | Duas issues concluídas sem apontamento na Tabela de Contribuição. Decisão: completar os lançamentos retroativos dos membros pendentes. |
+
+### Ponto Mg-2: Ponto de Controle 2 (16/11/2026)
+
+Executado em 16/11/2026 sobre as issues e commits das Fases 3 e 4(parcial) com alterações graduais ao longo do executado.
+
+| Medida | Medida Base / Valores Brutos | Medida Derivada | Valor | Nível | Cor | Interpretação Técnica e Decisão |
+|---|---|---|:---:|:---:|:---:|---|
+| **CP1** Progresso | $Ac = 17$, $Ap = 17$ | $Ppp = (17 \div 17) \times 100$ | **100%** | Adequado | Verde | 100% das 17 atividades previstas para o ponto de controle 2 fase 3 e pouco da fase 4 |
+| **CP2** Prazo | $Acp = 16$, $Ac = 17$ | $Pacp = (16 \div 17) \times 100$ | **94,1%** | Adequado | Verde | 94,1% das 17 atividades previstas para o ponto de controle 2 fase 3 e pouco da fase 4 |
+| **DP1** Retrabalho | $Ir = 0$, $Ic = 0$, $If = 13$ | $Pri = (0 \div 13) \times 100$ | **35,3%** | Insuficiente | Amarelo | Mesmas issues da Mg-1, mas a decisão de fixar janelas mais realistas e registrar formalmente no corpo de novas issues permanece |
+| **DP2** Efetividade | $Ca = 23$, $Cb = 0$, $Ci = 0$, $Cc = 0$, $Ct = 23$ | $Qcic = 0$ <br> $PCa = 100\%$ | **Qcic: 0** <br> **PCa: ---%** | --- | --- | Optamos por fazer essa aferição apenas no Mg-3 |
+| **RC1** Esforço | $\sum Hr = 82,80\text{ h}$, $n = 6$ | $Hm = 82,80 \div 6$ | **82,80 h** (média 13,80 h/membro) | Informativo | Sem cor | Volume um pouco acima do esperado, subestimamos a fase 3 e as execuções da fase 4 |
+| **RC2** Variação | $Ee = 56,00\text{ h}$, $Er = 67,00\text{ h}$ | $Ve = (11 \div 56) \times 100$ | **19,6%** | Bom | Verde | Estimativas em issues fechadas com estimativa explícita não coincidiram mas ainda estão dentro do ±50% previstos |
+| **Pa** Cobertura | $Ar = 17$, $Ac = 17$ | $Pa = (17 \div 17) \times 100$ | **100%** | Adequado | Verde | Todas as issues tiveram horas registradas |
 
 <a id="padroes-issues"></a>
 

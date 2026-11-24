@@ -1,4 +1,4 @@
-# Registro de execuções (M6 e M7)
+# Registro de execuções de adaptabilidade (M6 e M7)
 
 **Versão 1.5**
 
@@ -334,7 +334,7 @@ A Tabela 17 registra o desfecho de [`D1`](../fase-1/requisitos-de-avaliacao.md#r
 | Versão | Data | Descrição | Responsável | Revisor |
 |:---:|:---:|---|---|---|
 | 1.0 | 07/11/2026 | Estrutura dos formulários de registro de `M6` e `M7`, sem dados coletados. | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
-| 1.1 | 14/11/2026 | Sessão 1 de avaliação de adaptabilidade [`A1`](#registro-preparacao), [`A2`](#registro-preparacao) e [`A4`](#registro-preparacao) | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | A definir |
+| 1.1 | 14/11/2026 | Sessão 1 de avaliação de adaptabilidade [`A1`](#registro-preparacao), [`A2`](#registro-preparacao) e [`A4`](#registro-preparacao) | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
 | 1.2 | 14/11/2026 | Computação dos dados tratados para preenchimento das tabelas | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
 | 1.3 | 15/11/2026 | Resumo parcial de `M6` e `M7` ([`A1`](#registro-preparacao), [`A2`](#registro-preparacao) e [`A4`](#registro-preparacao)), julgamento provisório, regra de `Gr2` sem repetição e correções de formatação. | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
 | 1.4 | 17/11/2026 | Registro de dados brutos da sessão A3 | [Luisa de Souza](https://github.com/luisa12ll) e [Pedro Lucas](https://github.com/Pwdrinho) |[Geovanna Umbelino](https://github.com/GeovannaUmbelino) |

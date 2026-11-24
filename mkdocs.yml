@@ -62,15 +62,14 @@ nav:
       - Matriz de rastreabilidade: fase-3/matriz-rastreabilidade.md
   - Fase 4:
       - Visão Geral: fase-4/index.md
-      - Resultados da Avaliação de Desempenho: fase-4/registro-desempenho.md
+      - Registro de Execução de Eficiência de Desempenho: fase-4/registro-desempenho.md
       - Registro de Execução de Adaptabilidade: fase-4/registro-adaptabilidade.md
-      - Registro de Acessibilidade: fase-4/registro-acessibilidade.md
-      - Registro de Apreensibilidade: fase-4/registro-apreensibilidade.md
+      - Registro de Execução de Acessibilidade: fase-4/registro-acessibilidade.md
+      - Registro de Execução de Apreensibilidade: fase-4/registro-apreensibilidade.md
   - Gestão:
       - Plano de medição: gestao/plano_de_medicao.md
       - Painel PSM/CID: gestao/horas_consolidadas.md
       - Procedimento de medição: gestao/medicoes.md
-      - Registro de horas: gestao/horas.md
       - Uso de IA: gestao/uso_de_ia.md
       - Critérios Fase 1: criterios/fase1.md
       - Critérios Fase 2: criterios/fase2.md

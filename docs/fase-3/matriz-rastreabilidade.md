@@ -12,7 +12,7 @@ A rastreabilidade permite verificar como cada medida responde às questões e ao
 | [`G2`](../fase-2/objetivos.md#g2) | Adaptabilidade | [`Q5`](../fase-2/questoes-hipoteses.md#41-q5-adaptacao-entre-sistemas-operacionais-e-navegadores)–[`Q6`](../fase-2/questoes-hipoteses.md#42-q6-adaptacao-a-tamanhos-de-janela) | [`M6`](../fase-2/metricas.md#16-m6-execucao-por-ambiente)–[`M7`](../fase-2/metricas.md#17-m7-adaptacao-ao-tamanho-da-janela) |
 | [`G3`](../fase-2/objetivos.md#g3) | Acessibilidade e apreensibilidade | [`Q7`](../fase-2/questoes-hipoteses.md#51-q7-navegacao-por-teclado)–[`Q11`](../fase-2/questoes-hipoteses.md#55-q11-apreensibilidade) | [`M8`](../fase-2/metricas.md#18-m8-execucao-por-teclado)–[`M14`](../fase-2/metricas.md#114-m14-tempo-de-conclusao-autonoma) |
 
-*Tabela 1: Hierarquia GQM considerada no planejamento. Fonte: elaboração de [`Camila Silva Cavalcante`](https://github.com/CamilaSilvaC) e [`Geovanna Alves Umbelino`](https://github.com/GeovannaUmbelino).*
+*Tabela 1: Hierarquia GQM considerada no planejamento. Fonte: elaboração de [Camila Silva Cavalcante](https://github.com/CamilaSilvaC) e [Geovanna Alves Umbelino](https://github.com/GeovannaUmbelino).*
 
 ## 2. Correspondência entre métricas e procedimentos
 
@@ -35,7 +35,7 @@ A tabela apresenta a relação entre cada medida, os fluxos observados e o proce
 | [`G3`](../fase-2/objetivos.md#g3) | [`Q11`](../fase-2/questoes-hipoteses.md#55-q11-apreensibilidade) | [`M13`](../fase-2/metricas.md#113-m13-taxa-de-erros-operacionais) | [`FL1`](../fase-1/escopo-da-avaliacao.md#fluxos)–[`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos) | [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes) | Acessibilidade e apreensibilidade §5 | [`Faixas, menor é melhor`](../fase-2/criterios-julgamento.md#2-metricas-percentuais) |
 | [`G3`](../fase-2/objetivos.md#g3) | [`Q11`](../fase-2/questoes-hipoteses.md#55-q11-apreensibilidade) | [`M14`](../fase-2/metricas.md#114-m14-tempo-de-conclusao-autonoma) | [`FL1`](../fase-1/escopo-da-avaliacao.md#fluxos)–[`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos) | [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes) | Acessibilidade e apreensibilidade §5 | [`Faixas de tempo`](../fase-2/criterios-julgamento.md#3-tempo-e-consumo-de-recursos) |
 
-*Tabela 2: Relação entre objetivos, questões, métricas e condições de avaliação. Fonte: elaboração de [`Camila Silva Cavalcante`](https://github.com/CamilaSilvaC) e [`Geovanna Alves Umbelino`](https://github.com/GeovannaUmbelino).*
+*Tabela 2: Relação entre objetivos, questões, métricas e condições de avaliação. Fonte: elaboração de [Camila Silva Cavalcante](https://github.com/CamilaSilvaC) e [Geovanna Alves Umbelino](https://github.com/GeovannaUmbelino).*
 
 Para [`M8`](../fase-2/metricas.md#18-m8-execucao-por-teclado) a [`M14`](../fase-2/metricas.md#114-m14-tempo-de-conclusao-autonoma), os procedimentos e os formulários F1 a F7 estão especificados no roteiro de acessibilidade e apreensibilidade, em correspondência com as fichas da Fase 2.
 
@@ -49,11 +49,11 @@ Para [`M8`](../fase-2/metricas.md#18-m8-execucao-por-teclado) a [`M14`](../fase-
 | [`M10`](../fase-2/metricas.md#110-m10-preservacao-com-ampliacao)–[`M11`](../fase-2/metricas.md#111-m11-conformidade-de-contraste) | [`FL1`](../fase-1/escopo-da-avaliacao.md#fluxos)–[`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos) | [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes) | Zoom, contraste e alto contraste, com métodos separados |
 | [`M12`](../fase-2/metricas.md#112-m12-conclusao-autonoma-por-estudantes-novos)–[`M14`](../fase-2/metricas.md#114-m14-tempo-de-conclusao-autonoma) | [`FL1`](../fase-1/escopo-da-avaliacao.md#fluxos)–[`FL3`](../fase-1/escopo-da-avaliacao.md#fluxos) | [`A1`](../fase-1/escopo-da-avaliacao.md#ambientes); 3–5 participantes iniciantes | Sessões com formulários F2–F4 e dados anonimizados |
 
-*Tabela 3. Cobertura planejada por fluxo e ambiente. Fonte: elaboração de [`Camila Silva Cavalcante`](https://github.com/CamilaSilvaC) e [`Geovanna Alves Umbelino`](https://github.com/GeovannaUmbelino).*
+*Tabela 3. Cobertura planejada por fluxo e ambiente. Fonte: elaboração de [Camila Silva Cavalcante](https://github.com/CamilaSilvaC) e [Geovanna Alves Umbelino](https://github.com/GeovannaUmbelino).*
 
 ## Histórico de versões
 
 | Versão | Data | Descrição | Responsável | Revisor |
 |:---:|:---:|---|---|---|
-| 1.0 | 14/11/2026 | Mapeamento das métricas M1 a M14 aos objetivos, questões, fluxos, ambientes, procedimentos e critérios de julgamento. | [`Camila Silva`](https://github.com/CamilaSilvaC) e [`Geovanna Alves`](https://github.com/GeovannaUmbelino) | [`Pedro Lucas`](https://github.com/Pwdrinho) |
+| 1.0 | 14/11/2026 | Mapeamento das métricas M1 a M14 aos objetivos, questões, fluxos, ambientes, procedimentos e critérios de julgamento. | [Camila Silva](https://github.com/CamilaSilvaC) e [Geovanna Alves](https://github.com/GeovannaUmbelino) | [Pedro Lucas](https://github.com/Pwdrinho) |
 | 1.1 | 15/11/2026 | Padronização dos destaques dos links da matriz, incluindo objetivos, questões, métricas, ambientes e critérios de julgamento. | [Camila Silva](https://github.com/CamilaSilvaC) e [Geovanna Alves](https://github.com/GeovannaUmbelino) | [Pedro Lucas](https://github.com/Pwdrinho) |
