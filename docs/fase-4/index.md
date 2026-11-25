@@ -12,6 +12,8 @@ A Tabela 1 reúne os artefatos disponíveis nesta fase e indica a cobertura de c
 |---|---|---|---|
 | [Registro de execução de adaptabilidade](registro-adaptabilidade.md) | Formulários de preparação, execuções, ocorrências, evidências e julgamento | [`M6`](../fase-2/metricas.md#16-m6-execucao-por-ambiente), [`M7`](../fase-2/metricas.md#17-m7-adaptacao-ao-tamanho-da-janela) | Versão 1.2 |
 | [Resultados da avaliação de desempenho](registro-desempenho.md) | Registros da coleta, auditorias complementares, consolidação estatística e julgamento | [`M1`](../fase-2/metricas.md#11-m1-tempo-observavel-por-etapa), [`M2`](../fase-2/metricas.md#12-m2-taxa-de-conclusao-dos-fluxos), [`M3`](../fase-2/metricas.md#13-m3-utilizacao-de-cpu), [`M4`](../fase-2/metricas.md#14-m4-pico-de-memoria), [`M5`](../fase-2/metricas.md#15-m5-dados-transferidos) | Versão 1.4 |
+| [Registro de execução e análise da apreensibilidade](registro-apreensibilidade.md) | Execução com voluntários, coleta, análise e julgamento da apreensibilidade | [`M12`](../fase-2/metricas.md#112-m12-conclusao-autonoma-por-estudantes-novos), [`M13`](../fase-2/metricas.md#113-m13-taxa-de-erros-operacionais), [`M14`](../fase-2/metricas.md#114-m14-tempo-de-conclusao-autonoma) | Versão 1.4 |
+| [Propostas de melhoria e ajustes no protótipo de alta fidelidade](propostas-melhoria-prototipo.md) | Melhorias no protótipo fundamentadas nos resultados de apreensibilidade e adaptabilidade | [`M13`](../fase-2/metricas.md#113-m13-taxa-de-erros-operacionais) | Versão 1.1 |
 
 *Tabela 1. Artefatos da Fase 4. Fonte: elaboração da equipe com base na documentação do projeto.*
 
