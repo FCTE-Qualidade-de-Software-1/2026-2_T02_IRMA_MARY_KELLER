@@ -1,0 +1,828 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Avaliação de qualidade do produto Khan Academy segundo a família SQuaRE, com gestão por medição PSM/CID.">
+      
+      
+      
+        <link rel="canonical" href="https://fcte-qualidade-de-software-1.github.io/2026-2_T02_IRMA_MARY_KELLER/fase-4/propostas-melhoria-prototipo/">
+      
+      
+        <link rel="prev" href="../registro-apreensibilidade/">
+      
+      
+        <link rel="next" href="../../gestao/plano_de_medicao/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/img/marca.svg">
+      <meta name="generator" content="mkdocs-ProperDocs 1.6.7, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>Propostas de melhoria do protótipo - Avaliação Khan Academy</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Lato";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/khan.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#propostas-de-melhoria-e-ajustes" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      <header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <a href="../.." title="Avaliação Khan Academy" class="khan-marca" aria-label="Avaliação Khan Academy" data-md-component="logo">
+      <img src="../../assets/img/logo_khan_simbolo.png" alt="Logo do Khan Academy" width="32" height="32">
+      <span class="khan-marca__texto">
+        <strong>Avaliação Khan Academy</strong>
+        <small>Qualidade de Software 1 · T02</small>
+      </span>
+    </a>
+    <ul class="khan-abas">
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../..">Início</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../fase-1/">Fase 1</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../fase-2/">Fase 2</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../fase-3/">Fase 3</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item khan-abas__item--ativa">
+          <a href="../">Fase 4</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../gestao/plano_de_medicao/">Gestão</a>
+        </li>
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        <li class="khan-abas__item">
+          <a href="../../gestao/artigo/">Artigo</a>
+        </li>
+      
+    </ul>
+    <div class="khan-header__espaco"></div>
+    
+      <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Mudar para o modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Mudar para o modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER" class="khan-botao-repo" title="Repositório da equipe no GitHub">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215m-6.56 0a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"/></svg>
+      <span>Repositório</span>
+    </a>
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary khan-trilha" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Avaliação Khan Academy" class="md-nav__button md-logo" aria-label="Avaliação Khan Academy" data-md-component="logo">
+      
+  <img src="../../assets/img/logo_khan_simbolo.png" alt="logo">
+
+    </a>
+    Avaliação Khan Academy
+  </label>
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  <ul class="khan-trilha__secoes">
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../..">Início</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../fase-1/">Fase 1</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../fase-2/">Fase 2</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../fase-3/">Fase 3</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../" aria-current="true">Fase 4</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../gestao/plano_de_medicao/">Gestão</a></li>
+    
+      
+      
+        
+      
+        
+      
+        
+      
+      <li><a href="../../gestao/artigo/">Artigo</a></li>
+    
+  </ul>
+  
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    <ol class="khan-trilha__passos">
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--feito">
+          <a href="../">
+            <span class="khan-trilha__bolinha">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>
+            </span>
+            <span>Visão Geral</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--feito">
+          <a href="../registro-desempenho/">
+            <span class="khan-trilha__bolinha">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>
+            </span>
+            <span>Registro de Execução de Eficiência de Desempenho</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--feito">
+          <a href="../registro-adaptabilidade/">
+            <span class="khan-trilha__bolinha">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>
+            </span>
+            <span>Registro de Execução de Adaptabilidade</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--feito">
+          <a href="../registro-acessibilidade/">
+            <span class="khan-trilha__bolinha">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>
+            </span>
+            <span>Registro de Execução de Acessibilidade</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--feito">
+          <a href="../registro-apreensibilidade/">
+            <span class="khan-trilha__bolinha">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>
+            </span>
+            <span>Registro de Execução de Apreensibilidade</span>
+          </a>
+        </li>
+      
+        
+        <li class="khan-trilha__passo khan-trilha__passo--atual">
+          <a href="./" aria-current="page">
+            <span class="khan-trilha__bolinha">
+              6
+            </span>
+            <span>Propostas de melhoria do protótipo</span>
+          </a>
+        </li>
+      
+    </ol>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Nesta página">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Nesta página
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Introdução
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-fundamentacao-das-melhorias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Fundamentação das melhorias
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-ajustes-propostos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Ajustes propostos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Ajustes propostos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-busca-e-selecao-de-cursos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1. Busca e seleção de cursos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-identificacao-dos-tipos-de-conteudo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2. Identificação dos tipos de conteúdo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-visibilidade-das-dicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3. Visibilidade das dicas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-adequacao-do-feedback-apos-respostas-corretas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4. Adequação do feedback após respostas corretas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-prototipo-de-alta-fidelidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Protótipo de alta fidelidade
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Protótipo de alta fidelidade">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#navegacao-e-verificacao-das-melhorias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navegação e verificação das melhorias
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualizacao-do-prototipo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visualização do protótipo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-consideracoes-finais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Considerações finais
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referências
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Histórico de versões
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="propostas-de-melhoria-e-ajustes">Propostas de melhoria e ajustes<a class="headerlink" href="#propostas-de-melhoria-e-ajustes" title="Link para esta seção">&para;</a></h1>
+<p><strong>Versão 1.1</strong></p>
+<h2 id="1-introducao">1. Introdução<a class="headerlink" href="#1-introducao" title="Link para esta seção">&para;</a></h2>
+<p>Este artefato apresenta ajustes propostos para a interface da Khan Academy com base nos problemas identificados durante a <a href="../registro-apreensibilidade/">avaliação de apreensibilidade</a> e na <a href="../registro-adaptabilidade/">análise de adaptabilidade</a>.</p>
+<p>O objetivo é demonstrar como os resultados das avaliações orientaram melhorias na experiência dos usuários, representadas em um protótipo de alta fidelidade desenvolvido no Figma. As modificações buscam tornar determinadas interações mais claras, previsíveis e coerentes com as necessidades observadas durante a execução das tarefas avaliadas.</p>
+<p>As propostas preservam a identidade visual e a organização geral da Khan Academy, concentrando as alterações nos elementos associados às dificuldades observadas. Dessa forma, o protótipo procura demonstrar soluções pontuais, sem propor uma reformulação completa da plataforma.</p>
+<h2 id="2-fundamentacao-das-melhorias">2. Fundamentação das melhorias<a class="headerlink" href="#2-fundamentacao-das-melhorias" title="Link para esta seção">&para;</a></h2>
+<p>A avaliação de apreensibilidade evidenciou dificuldades na localização de cursos, na identificação de conteúdos e no acesso às dicas dos exercícios (<a href="../registro-apreensibilidade/#tabela-3-f3">registros F3</a>).</p>
+<p>Os resultados da <a href="../../fase-2/metricas/#113-m13-taxa-de-erros-operacionais"><code>M13</code></a> indicaram que <strong>46,67% das primeiras tentativas elegíveis apresentaram pelo menos um erro operacional</strong>, com maior incidência nas tarefas <a href="../../fase-1/escopo-da-avaliacao/#fluxos">T2</a> e <a href="../../fase-1/escopo-da-avaliacao/#fluxos">T3</a>, ambas com 60%.</p>
+<p>Esses resultados apontam oportunidades de melhoria na forma como a interface comunica as opções disponíveis e orienta o usuário durante a navegação. Em determinadas situações, os participantes precisaram explorar diferentes caminhos ou corrigir ações realizadas anteriormente para alcançar seus objetivos.</p>
+<p>Além desses resultados, a análise de adaptabilidade identificou uma inadequação no feedback apresentado após a conclusão de exercícios com utilização prévia de todas as dicas. Essa observação também orientou uma proposta de adequação do feedback ao estado de interação, considerando as informações que o usuário já recebeu durante a resolução.</p>
+<p>Essas evidências fundamentaram as melhorias representadas no protótipo, procurando estabelecer uma relação direta entre os problemas observados e as alterações propostas.</p>
+<h2 id="3-ajustes-propostos">3. Ajustes propostos<a class="headerlink" href="#3-ajustes-propostos" title="Link para esta seção">&para;</a></h2>
+<h3 id="31-busca-e-selecao-de-cursos">3.1. Busca e seleção de cursos<a class="headerlink" href="#31-busca-e-selecao-de-cursos" title="Link para esta seção">&para;</a></h3>
+<p><strong>Problema identificado:</strong> Durante a <a href="../../fase-1/escopo-da-avaliacao/#fluxos">T1</a>, participantes encontraram dificuldades para localizar o curso de Matemática do 6º ano, recorrendo a diferentes termos de pesquisa, filtros e páginas de resultados.</p>
+<p>A dificuldade esteve relacionada à identificação do resultado mais adequado à pesquisa, exigindo atenção adicional para distinguir o curso desejado de outros conteúdos apresentados.</p>
+<p><strong>Melhoria proposta:</strong> Priorizar resultados correspondentes à série/ano pesquisada, com identificação clara do curso, da unidade e do tipo de conteúdo. Os filtros permanecem visíveis para facilitar o refinamento da busca.</p>
+<p>No protótipo, a apresentação dos resultados procura destacar a correspondência com o termo pesquisado, permitindo que o usuário reconheça o curso relevante com maior facilidade. A interação de pesquisa também preserva o comportamento de expansão do campo de busca presente na interface original.</p>
+<p><strong>Resultado esperado:</strong> Reduzir o esforço necessário para localizar o curso solicitado e facilitar a identificação de resultados relevantes, diminuindo a necessidade de percorrer opções que não correspondem ao objetivo da pesquisa.</p>
+<h3 id="32-identificacao-dos-tipos-de-conteudo">3.2. Identificação dos tipos de conteúdo<a class="headerlink" href="#32-identificacao-dos-tipos-de-conteudo" title="Link para esta seção">&para;</a></h3>
+<p><strong>Problema identificado:</strong> Na <a href="../../fase-1/escopo-da-avaliacao/#fluxos">T2</a>, três participantes acessaram exercícios quando pretendiam abrir videoaulas, precisando corrigir o percurso de navegação (<a href="../registro-apreensibilidade/#tabela-3-f3">registros F3</a>).</p>
+<p>Essa ocorrência evidencia uma dificuldade de reconhecimento dos diferentes tipos de atividade, especialmente quando sua identificação depende predominantemente de elementos gráficos.</p>
+<p><strong>Melhoria proposta:</strong> Acrescentar rótulos textuais que identifiquem os conteúdos como <strong>Vídeo</strong>, <strong>Artigo</strong> ou <strong>Exercício</strong>.</p>
+<p>Os rótulos funcionam como uma informação complementar aos ícones existentes, permitindo que o usuário identifique a natureza do conteúdo antes de selecioná-lo. A proposta não modifica a organização principal da página, apenas torna mais explícita uma informação importante para a navegação.</p>
+<p><strong>Resultado esperado:</strong> Facilitar o reconhecimento dos conteúdos e reduzir seleções equivocadas, contribuindo para que o usuário escolha a atividade correspondente ao seu objetivo.</p>
+<h3 id="33-visibilidade-das-dicas">3.3. Visibilidade das dicas<a class="headerlink" href="#33-visibilidade-das-dicas" title="Link para esta seção">&para;</a></h3>
+<p><strong>Problema identificado:</strong> Na <a href="../../fase-1/escopo-da-avaliacao/#fluxos">T3</a>, os participantes apresentaram dificuldades para descobrir como acessar as dicas. A funcionalidade dependia do estado da resposta, mas essa condição não era suficientemente evidente (<a href="../registro-apreensibilidade/#tabela-3-f3">registros F3</a>).</p>
+<p>A apresentação das dicas somente em determinados momentos da interação dificultava a descoberta da funcionalidade e limitava a possibilidade de solicitar auxílio antes de responder.</p>
+<p><strong>Melhoria proposta:</strong> Manter o acesso às dicas <strong>visível e disponível desde o início da questão</strong>, permitindo que o usuário consulte as orientações tanto antes quanto depois de enviar uma resposta, independentemente de ela estar correta ou incorreta.</p>
+<p>No protótipo, o botão de dicas permanece acessível durante a resolução. Ao selecioná-lo, o usuário pode visualizar orientações progressivas, sem perder as alternativas que já marcou. Dessa forma, a funcionalidade passa a oferecer suporte durante todo o processo, e não apenas após uma tentativa incorreta.</p>
+<p><strong>Resultado esperado:</strong> Facilitar a descoberta e a utilização das dicas, ampliar a autonomia do usuário durante a resolução dos exercícios e diminuir a necessidade de orientação externa.</p>
+<h3 id="34-adequacao-do-feedback-apos-respostas-corretas">3.4. Adequação do feedback após respostas corretas<a class="headerlink" href="#34-adequacao-do-feedback-apos-respostas-corretas" title="Link para esta seção">&para;</a></h3>
+<p><strong>Problema identificado:</strong> Após uma resposta correta, a plataforma apresenta uma mensagem positiva acompanhada da opção de visualizar a resolução passo a passo. Entretanto, essa opção também aparece quando o usuário já consultou todas as dicas e visualizou a resolução completa, tornando a ação redundante.</p>
+<p>Nessa situação, o feedback deixa de considerar adequadamente o histórico de interação do usuário, oferecendo uma opção que não acrescenta novas informações.</p>
+<p><strong>Melhoria proposta:</strong> Diferenciar o feedback de acordo com o estado de utilização das dicas, considerando se o usuário já teve acesso à resolução completa antes de confirmar sua resposta.</p>
+<table>
+<thead>
+<tr>
+<th>Situação</th>
+<th>Feedback proposto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Resposta correta sem visualizar todas as dicas</td>
+<td>Manter a mensagem positiva e a opção de consultar a resolução passo a passo.</td>
+</tr>
+<tr>
+<td>Resposta correta após visualizar todas as dicas</td>
+<td>Confirmar o acerto, informar que a resolução já foi visualizada e oferecer a opção de avançar para a próxima pergunta.</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabela 1. Estados de feedback propostos após respostas corretas. Fonte: elaborada por <a href="https://github.com/CamilaSilvaC">Camila Cavalcante</a> e <a href="https://github.com/GeovannaUmbelino">Geovanna Umbelino</a>.</em></p>
+<p>Essa mudança busca adequar a resposta da interface às ações anteriormente realizadas pelo usuário, evitando a apresentação de opções sem efeito útil.</p>
+<p>Para representar esse comportamento, o protótipo também contempla a seleção e o envio de respostas, incluindo situações em que o usuário responde incorretamente. Nesses casos, é apresentado um feedback de erro, com possibilidades de revisar as alternativas ou consultar as dicas antes de realizar outra tentativa. Essa interação permite demonstrar os diferentes estados da questão até sua conclusão.</p>
+<p><strong>Resultado esperado:</strong> Tornar o feedback mais coerente, compreensível e adequado ao contexto de interação, evitando informações repetitivas e oferecendo orientações compatíveis com o percurso realizado pelo usuário.</p>
+<h2 id="4-prototipo-de-alta-fidelidade">4. Protótipo de alta fidelidade<a class="headerlink" href="#4-prototipo-de-alta-fidelidade" title="Link para esta seção">&para;</a></h2>
+<p>O protótipo reúne as propostas de busca e seleção de cursos, identificação dos tipos de conteúdo, acesso às dicas e adequação do feedback ao percurso realizado pelo usuário.</p>
+<h3 id="navegacao-e-verificacao-das-melhorias">Navegação e verificação das melhorias<a class="headerlink" href="#navegacao-e-verificacao-das-melhorias" title="Link para esta seção">&para;</a></h3>
+<p>A navegação pelo protótipo inicia-se na página principal da Khan Academy, seguindo para a pesquisa do curso de Matemática do 6º ano e a identificação dos diferentes tipos de conteúdo. Em seguida, o fluxo permite acessar o exercício, selecionar e enviar respostas, consultar as dicas antes ou depois do envio e observar os feedbacks apresentados para respostas corretas ou incorretas. Também é possível verificar como o feedback se adapta conforme a resolução completa tenha sido consultada ou não.</p>
+<h3 id="visualizacao-do-prototipo">Visualização do protótipo<a class="headerlink" href="#visualizacao-do-prototipo" title="Link para esta seção">&para;</a></h3>
+<div style="width: 100%; margin: 24px 0;">
+  <iframe
+    src="https://embed.figma.com/proto/jwvkPL3ZlOstD6ii0L4h1X?embed-host=github-pages&node-id=55-72&starting-point-node-id=55%3A72&scaling=contain&content-scaling=fixed&page-id=0%3A1"
+    title="Protótipo interativo de alta fidelidade — Khan Academy"
+    width="100%"
+    height="720"
+    style="border: 1px solid #d9dfe7; border-radius: 8px;"
+    allowfullscreen
+    loading="lazy">
+  </iframe>
+</div>
+
+<p><strong>Acesso ao protótipo:</strong> <a href="https://www.figma.com/proto/jwvkPL3ZlOstD6ii0L4h1X?node-id=55-72&amp;scaling=contain&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=55%3A72">Abrir protótipo interativo — Khan Academy (Figma)</a>.</p>
+<h2 id="5-consideracoes-finais">5. Considerações finais<a class="headerlink" href="#5-consideracoes-finais" title="Link para esta seção">&para;</a></h2>
+<p>Os ajustes propostos procuram responder às dificuldades identificadas na avaliação, principalmente na encontrabilidade dos cursos, na identificação de conteúdos, na descoberta das dicas e na adequação do feedback ao contexto do usuário.</p>
+<p>O protótipo estabelece uma relação entre os problemas observados e possíveis soluções de interface, contribuindo para a discussão de melhorias na usabilidade da Khan Academy. A possibilidade de navegar pelas telas e experimentar diferentes respostas também permite visualizar, de maneira prática, como as modificações podem influenciar a interação.</p>
+<p>Sua principal contribuição é apresentar alternativas fundamentadas que poderão ser avaliadas posteriormente quanto à eficácia, à clareza e à adequação às necessidades dos usuários. Dessa forma, as propostas constituem uma representação das melhorias identificadas, sem pressupor que seus benefícios já tenham sido comprovados por uma nova avaliação.</p>
+<h2 id="referencias">Referências<a class="headerlink" href="#referencias" title="Link para esta seção">&para;</a></h2>
+<ul>
+<li><a href="../registro-apreensibilidade/">Avaliação de apreensibilidade — Fase 4</a>.</li>
+<li><a href="../registro-adaptabilidade/">Registro de execução de adaptabilidade — Fase 4</a>.</li>
+<li><a href="../../fase-2/metricas/#113-m13-taxa-de-erros-operacionais">Métrica M13 — Taxa de erros operacionais</a>.</li>
+<li><a href="../../fase-3/procedimentos-acessibilidade-apreensibilidade/">Procedimentos de acessibilidade e apreensibilidade — Fase 3</a>.</li>
+<li>KHAN ACADEMY. <a href="https://pt.khanacademy.org/">Plataforma Khan Academy</a>.</li>
+</ul>
+<h2 id="historico-de-versoes">Histórico de versões<a class="headerlink" href="#historico-de-versoes" title="Link para esta seção">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Versão</th>
+<th style="text-align: center;">Data</th>
+<th>Descrição</th>
+<th>Responsável</th>
+<th>Revisor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;">23/11/2026</td>
+<td>Criação do artefato com fundamentação, propostas de melhoria, protótipo e limitações.</td>
+<td><a href="https://github.com/CamilaSilvaC">Camila Cavalcante</a> e <a href="https://github.com/GeovannaUmbelino">Geovanna Umbelino</a></td>
+<td><a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
+</tr>
+<tr>
+<td style="text-align: center;">1.1</td>
+<td style="text-align: center;">24/11/2026</td>
+<td>Complementação das descrições, atualização do funcionamento das dicas e inclusão do protótipo interativo incorporado e das orientações de navegação.</td>
+<td><a href="https://github.com/CamilaSilvaC">Camila Cavalcante</a></td>
+<td><a href="https://github.com/GeovannaUmbelino">Geovanna Umbelino</a></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.top", "toc.follow", "search.suggest", "search.highlight", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+        <script src="../../js/mathjax.js"></script>
+      
+        <script src="../../js/khan.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
