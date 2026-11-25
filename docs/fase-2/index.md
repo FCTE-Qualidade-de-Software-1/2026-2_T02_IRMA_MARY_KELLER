@@ -84,4 +84,4 @@ A especificação de medição elaborada nesta fase desdobra-se nas etapas segui
 | 1.3 | 21/10/2026 | Ajustes na padronização | [Camila Cavalcante](https://github.com/CamilaSilvaC) | [Pedro Lucas](https://github.com/Pwdrinho) |
 | 1.4 | 26/10/2026 | Padronização do artefato | [Pedro Lucas](https://github.com/Pwdrinho) | [Camila Cavalcante](https://github.com/CamilaSilvaC) |
 | 1.5 | 24/11/2026 | Consolida rastros com fase 1 e com as fases posteriores | [Pedro Lucas](https://github.com/Pwdrinho) | [Camila Silva](https://github.com/CamilaSilvaC) |
-| 1.6 | 24/11/2026 | Corrige a referência aos critérios da Fase 2. | [Enzo Menali](https://github.com/menali17) | A definir |
+| 1.6 | 24/11/2026 | Corrige a referência aos critérios da Fase 2. | [Enzo Menali](https://github.com/menali17) | [Camila Silva](https://github.com/CamilaSilvaC) |
