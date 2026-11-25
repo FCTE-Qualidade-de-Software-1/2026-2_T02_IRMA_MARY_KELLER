@@ -506,6 +506,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#encadeamento-com-as-fases-3-e-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Encadeamento com as Fases 3 e 4
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#referencias" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -548,9 +559,9 @@
 
 
 <h1 id="fase-2-especificacao-da-avaliacao-gqm">Fase 2: Especificação da avaliação (GQM)<a class="headerlink" href="#fase-2-especificacao-da-avaliacao-gqm" title="Link para esta seção">&para;</a></h1>
-<p><strong>Versão 1.4</strong></p>
+<p><strong>Versão 1.6</strong></p>
 <p>A Fase 2 transforma as características priorizadas na <a href="../fase-1/">Fase 1</a> em uma estrutura de medição por meio do método <em>Goal-Question-Metric</em> (GQM) <a href="#s5">S5</a>. Cada objetivo de medição é desdobrado em questões de avaliação, relacionadas a hipóteses de investigação e respondidas por métricas. Para interpretar as medidas, também são previstos níveis de pontuação e critérios de julgamento.</p>
-<p>Nesta etapa, são especificados <strong>3 <a href="objetivos/#objetivo">objetivos</a> (G1-G3), 11 <a href="questoes-hipoteses/">questões</a> (Q1-Q11), 11 <a href="questoes-hipoteses/">hipóteses</a> (H1-H11) e 14 métricas (M1-M14)</strong>. A Fase 2 estabelece como a qualidade será avaliada; os resultados das medições permanecem <strong>a coletar na Fase 4</strong>.</p>
+<p>Nesta etapa, são especificados <strong>3 <a href="objetivos/#objetivo">objetivos</a> (G1-G3), 11 <a href="questoes-hipoteses/">questões</a> (Q1-Q11), 11 <a href="questoes-hipoteses/">hipóteses</a> (H1-H11) e 14 <a href="metricas/">métricas</a> (M1-M14)</strong>. A Fase 2 estabelece como a qualidade será avaliada, cujos procedimentos operacionais são detalhados na <a href="../fase-3/">Fase 3</a> e cujos resultados empíricos são apurados na <a href="../fase-4/">Fase 4</a>.</p>
 <h2 id="organizacao-da-fase-2">Organização da Fase 2<a class="headerlink" href="#organizacao-da-fase-2" title="Link para esta seção">&para;</a></h2>
 <p>A <strong>Tabela 1</strong> apresenta os temas da documentação, a pessoa responsável pela issue de especificação GQM e o acesso a cada página.</p>
 <table>
@@ -601,6 +612,12 @@
 </ul>
 <p>Conforme o <a href="../fase-1/escopo-da-avaliacao/">escopo da Fase 1</a>, a avaliação contempla <strong>somente a versão web em computadores</strong>, sem aplicativos nativos ou navegadores de dispositivos móveis. Os fluxos são <a href="../fase-1/escopo-da-avaliacao/#fluxos"><code>FL1</code></a> (navegação em cursos), <a href="../fase-1/escopo-da-avaliacao/#fluxos"><code>FL2</code></a> (videoaulas), <a href="../fase-1/escopo-da-avaliacao/#fluxos"><code>FL3</code></a> (exercícios) e <a href="../fase-1/escopo-da-avaliacao/#fluxos"><code>FL4</code></a> (consulta ao progresso pelo próprio estudante). G1 e G3 avaliam <a href="../fase-1/escopo-da-avaliacao/#fluxos"><code>FL1</code></a> a <a href="../fase-1/escopo-da-avaliacao/#fluxos"><code>FL3</code></a>; G2 avalia <a href="../fase-1/escopo-da-avaliacao/#fluxos"><code>FL1</code></a> a <a href="../fase-1/escopo-da-avaliacao/#fluxos"><code>FL4</code></a>. Painéis de pais, responsáveis, professores e administradores permanecem fora do objeto. Os ambientes direcionados são <a href="../fase-1/escopo-da-avaliacao/#ambientes"><code>A1</code></a> (Windows e Chrome), <a href="../fase-1/escopo-da-avaliacao/#ambientes"><code>A2</code></a> (Windows e Firefox), <a href="../fase-1/escopo-da-avaliacao/#ambientes"><code>A3</code></a> (macOS e Safari) e <a href="../fase-1/escopo-da-avaliacao/#ambientes"><code>A4</code></a> (Ubuntu e Firefox), com NVDA, VoiceOver, Orca e navegação por teclado nas combinações previstas. As condições detalhadas de coleta serão confirmadas no planejamento dos ensaios.</p>
 <p>As métricas da Fase 2 são <strong>adaptações propostas tomando a ISO/IEC 25023:2016 como referência</strong> <a href="#s4">S4</a>. Seus nomes e fórmulas não devem ser interpretados como transcrições literais da norma.</p>
+<h2 id="encadeamento-com-as-fases-3-e-4">Encadeamento com as Fases 3 e 4<a class="headerlink" href="#encadeamento-com-as-fases-3-e-4" title="Link para esta seção">&para;</a></h2>
+<p>A especificação de medição elaborada nesta fase desdobra-se nas etapas seguintes do ciclo de avaliação:</p>
+<ul>
+<li><strong>Operacionalização na <a href="../fase-3/">Fase 3</a>:</strong> As métricas <code>M1</code> a <code>M14</code> são traduzidas em roteiros de teste nos <a href="../fase-3/procedimentos-desempenho/">Procedimentos de Desempenho</a>, <a href="../fase-3/procedimentos-adaptabilidade/">Procedimentos de Adaptabilidade</a> e <a href="../fase-3/procedimentos-acessibilidade-apreensibilidade/">Procedimentos de Acessibilidade e Apreensibilidade</a>, integrados pela <a href="../fase-3/matriz-rastreabilidade/">Matriz de Rastreabilidade</a>.</li>
+<li><strong>Coleta e Julgamento na <a href="../fase-4/">Fase 4</a>:</strong> As medições de campo e laboratoriais são documentadas no <a href="../fase-4/registro-desempenho/">Registro de Desempenho</a>, <a href="../fase-4/registro-adaptabilidade/">Registro de Adaptabilidade</a>, <a href="../fase-4/registro-acessibilidade/">Registro de Acessibilidade</a> e <a href="../fase-4/registro-apreensibilidade/">Registro de Apreensibilidade</a>, confrontando as hipóteses <code>H1</code> a <code>H11</code> contra os <a href="criterios-julgamento/">critérios de julgamento</a>.</li>
+</ul>
 <h2 id="referencias">Referências<a class="headerlink" href="#referencias" title="Link para esta seção">&para;</a></h2>
 <p><a id="s1"></a></p>
 <blockquote>
@@ -621,10 +638,10 @@
 <p><a id="s5"></a></p>
 <blockquote>
 <p>[S5] BASILI, Victor R.; CALDIERA, Gianluigi; ROMBACH, H. Dieter. The Goal Question Metric Approach. In: <strong>Encyclopedia of Software Engineering</strong>. John Wiley &amp; Sons, 1994. p. 528-532. </p>
-</blockquote>
-<p><a id="s6"></a></p>
-<blockquote>
-<p>[S6] Critérios de avaliação da Fase 2. Disciplina Qualidade de Software 1, UnB/FGA, 2026/2. Disponível em: <a href="../criterios/fase2/">Critérios de avaliação da Fase 2</a>.</p>
+<p><a href="../fase-1/">Visão geral da fase 1</a>. Requisitos da avaliação. Propósito, modelo e requisitos priorizados.</p>
+<p><a href="../fase-3/">Visão geral da Fase 3</a>. Planejamento operacional, cronograma, ambientes de testes e procedimentos detalhados de medição.</p>
+<p><a href="../fase-4/">Visão geral da Fase 4</a>. Execução dos ensaios, registros de medições, evidências brutas e julgamento dos resultados.</p>
+<p><a href="../criterios/fase2/">Critérios de avaliação da Fase 2</a>. Disciplina Qualidade de Software 1, UnB/FGA, 2026/2.</p>
 </blockquote>
 <h2 id="historico-de-versoes">Histórico de versões<a class="headerlink" href="#historico-de-versoes" title="Link para esta seção">&para;</a></h2>
 <table>
@@ -672,6 +689,20 @@
 <td style="text-align: left;">Padronização do artefato</td>
 <td style="text-align: left;"><a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
 <td style="text-align: left;"><a href="https://github.com/CamilaSilvaC">Camila Cavalcante</a></td>
+</tr>
+<tr>
+<td style="text-align: center;">1.5</td>
+<td style="text-align: center;">24/11/2026</td>
+<td style="text-align: left;">Consolida rastros com fase 1 e com as fases posteriores</td>
+<td style="text-align: left;"><a href="https://github.com/Pwdrinho">Pedro Lucas</a></td>
+<td style="text-align: left;"><a href="https://github.com/CamilaSilvaC">Camila Silva</a></td>
+</tr>
+<tr>
+<td style="text-align: center;">1.6</td>
+<td style="text-align: center;">24/11/2026</td>
+<td style="text-align: left;">Corrige a referência aos critérios da Fase 2.</td>
+<td style="text-align: left;"><a href="https://github.com/menali17">Enzo Menali</a></td>
+<td style="text-align: left;"><a href="https://github.com/CamilaSilvaC">Camila Silva</a></td>
 </tr>
 </tbody>
 </table>

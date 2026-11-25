@@ -16,7 +16,7 @@
         <link rel="prev" href="../horas_consolidadas/">
       
       
-        <link rel="next" href="../horas/">
+        <link rel="next" href="../uso_de_ia/">
       
       
         
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#procedimento-de-medicao" class="md-skip">
+        <a href="#procedimento-de-medicoes" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -396,8 +396,6 @@
     
       
     
-      
-    
     <ol class="khan-trilha__passos">
       
         
@@ -432,19 +430,9 @@
       
         
         <li class="khan-trilha__passo khan-trilha__passo--pendente">
-          <a href="../horas/">
-            <span class="khan-trilha__bolinha">
-              4
-            </span>
-            <span>Registro de horas</span>
-          </a>
-        </li>
-      
-        
-        <li class="khan-trilha__passo khan-trilha__passo--pendente">
           <a href="../uso_de_ia/">
             <span class="khan-trilha__bolinha">
-              5
+              4
             </span>
             <span>Uso de IA</span>
           </a>
@@ -454,7 +442,7 @@
         <li class="khan-trilha__passo khan-trilha__passo--pendente">
           <a href="../../criterios/fase1/">
             <span class="khan-trilha__bolinha">
-              6
+              5
             </span>
             <span>Critérios Fase 1</span>
           </a>
@@ -464,7 +452,7 @@
         <li class="khan-trilha__passo khan-trilha__passo--pendente">
           <a href="../../criterios/fase2/">
             <span class="khan-trilha__bolinha">
-              7
+              6
             </span>
             <span>Critérios Fase 2</span>
           </a>
@@ -474,7 +462,7 @@
         <li class="khan-trilha__passo khan-trilha__passo--pendente">
           <a href="../../criterios/fase3/">
             <span class="khan-trilha__bolinha">
-              8
+              7
             </span>
             <span>Critérios Fase 3</span>
           </a>
@@ -484,7 +472,7 @@
         <li class="khan-trilha__passo khan-trilha__passo--pendente">
           <a href="../../criterios/fase4/">
             <span class="khan-trilha__bolinha">
-              9
+              8
             </span>
             <span>Critérios Fase 4</span>
           </a>
@@ -531,13 +519,41 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-passos-operacionais" class="md-nav__link">
+  <a href="#2-registro-manual-das-horas-trabalhadas" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Passos operacionais
+        2. Registro Manual das Horas trabalhadas
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="2. Registro Manual das Horas trabalhadas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regras" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regras
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-de-preenchimento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemplo de preenchimento
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -569,6 +585,17 @@
     <span class="md-ellipsis">
       
         Ponto Mg-1: Entrega 1 (26/10/2026)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ponto-mg-2-ponto-de-controle-2-16112026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ponto Mg-2: Ponto de Controle 2 (16/11/2026)
       
     </span>
   </a>
@@ -639,8 +666,8 @@
   
 
 
-<h1 id="procedimento-de-medicao">Procedimento de medição<a class="headerlink" href="#procedimento-de-medicao" title="Link para esta seção">&para;</a></h1>
-<p>Este artefato descreve como a medição é executada: quais dados entram, o passo a passo de cada rodada e em que datas ela ocorre.</p>
+<h1 id="procedimento-de-medicoes">Procedimento de medições<a class="headerlink" href="#procedimento-de-medicoes" title="Link para esta seção">&para;</a></h1>
+<p>Este artefato descreve como a medição é executada: quais dados entram, o passo a passo de cada rodada, em que datas ela ocorre e histórico de medições.</p>
 <p><a id="responsavel"></a></p>
 <p><strong>Responsável pela execução:</strong> Antes de cada ponto de medição, a equipe designa o integrante responsável pela coleta, validação e consolidação dos dados. Todos os integrantes devem registrar suas horas até as 12h do dia da medição. O responsável verifica as pendências, executa o script, registra os resultados e documenta as decisões decorrentes.</p>
 <h2 id="1-dados-de-entrada">1. Dados de entrada<a class="headerlink" href="#1-dados-de-entrada" title="Link para esta seção">&para;</a></h2>
@@ -665,9 +692,9 @@
 </tr>
 <tr>
 <td>Horas por integrante e por issue</td>
-<td>Tabela de Contribuição no corpo da issue (colunas <code>Usuário</code>, <code>Data</code>, <code>Horas Trabalhadas</code>; ver <a href="../horas/">Registro de Horas</a>)</td>
+<td>Tabela de Contribuição no corpo da issue, ver <a href="#2-registro-manual-das-horas-trabalhadas">Registro de Horas</a></td>
 <td>Cada integrante</td>
-<td>Até 12h do dia da medição</td>
+<td>Sempre que realizar alguma alteração</td>
 <td><code>RC1</code>, <code>RC2</code></td>
 </tr>
 <tr>
@@ -688,18 +715,34 @@
 </table>
 <p><em>Tabela 1. Dados de entrada das medições. Fonte: Elaborado por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a></em></p>
 <p>No <code>autoavaliacao.csv</code>, <code>criterio</code> é o código da rubrica (por exemplo, <code>F1-C6</code>) e <code>nivel</code> é um de Insuficiente, Regular, Satisfatório ou Excelente (ou Crítico, Insuficiente, Bom, Adequado), que correspondem, nesta ordem, às quatro opções da rubrica da professora, da primeira à última.</p>
-<h2 id="2-passos-operacionais">2. Passos operacionais<a class="headerlink" href="#2-passos-operacionais" title="Link para esta seção">&para;</a></h2>
-<p>Os passos abaixo são seguidos a cada ponto de medição:</p>
+<h2 id="2-registro-manual-das-horas-trabalhadas">2. Registro Manual das Horas trabalhadas<a class="headerlink" href="#2-registro-manual-das-horas-trabalhadas" title="Link para esta seção">&para;</a></h2>
 <ol>
-<li>Até as 12h do dia da medição, cada membro lança suas horas na Tabela de Contribuição das issues em que trabalhou.</li>
-<li>O <a href="#responsavel">Responsável</a> confere as pré-condições: issues fechadas com Janela, Estimativa e revisão registrada; horas lançadas fora de issues; labels <code>correcao</code> aplicadas onde devidas. Pendências são cobradas das duplas donas antes do cálculo.</li>
-<li>O <a href="#responsavel">Responsável</a> gera a página de acompanhamento. O script <code>assets/scripts/consolida_horas.py</code> roda automaticamente no build do ProperDocs (<code>uv run properdocs build</code> ou <code>serve</code>), lê as issues pela API do GitHub e publica <a href="../horas_consolidadas/">Medições Consolidadas</a>. Defina <code>GITHUB_TOKEN</code> no ambiente ou em um arquivo <code>.env</code> na raiz (não versionado) para evitar o limite de requisições. Os cálculos seguem as fórmulas de <a href="../plano_de_medicao/#3-medidas-e-indicadores-por-categoria">3. Medidas e indicadores por categoria</a>. A cada medição, confere-se à mão ao menos uma medida (por exemplo, o <code>CP1</code>) contra o resultado gerado.</li>
-<li>O <a href="#responsavel">Responsável</a> registra os valores consolidados na tabela de histórico (<a href="#historico">seção 7.4</a>), indicando ponto de medição, data, valores das medidas base, valor derivado, nível e cor.</li>
-<li>Em Mg-1, Mg-2 e Mg-3, o revisor preenche ou valida o <code>assets/dados/gestao/autoavaliacao.csv</code> para a fase correspondente, com um nível e uma evidência (link para o trecho do artigo, da GitPage ou do repositório) por critério. Antes disso, o Responsável confere o <a href="../uso_de_ia/">registro de uso de IA</a>.</li>
-<li>O <a href="#responsavel">Responsável</a> interpreta cada medida amarela ou vermelha: registra causa provável e decisão conforme as <a href="../plano_de_medicao/#regras">Regras de Decisão</a>, e abre issue de ação quando houver trabalho corretivo a fazer.</li>
-<li>Medidas "sem dados" ou "com ressalva" são registradas como tal, com o motivo.</li>
-<li>O resultado é comunicado ao grupo no mesmo dia e commitado por pull request.</li>
+<li>Abra a issue em que trabalhou. Ela deve ter sido criada com o <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/.github/ISSUE_TEMPLATE/atividade_planejada.md">template de atividade planejada</a>, que contém a seção <strong>Tabela de Contribuição</strong>.</li>
+<li>Acrescente <strong>uma linha por dia</strong> em que trabalhou na issue:</li>
+<li><code>Usuário</code>: seu usuário do GitHub (por exemplo, <code>@usuario</code>).</li>
+<li><code>Data</code>: no formato <code>DD/MM/AAAA</code>.</li>
+<li><code>Horas Trabalhadas</code>: número decimal, em múltiplos de 0,25 (por exemplo, <code>1.5</code>, <code>0.75</code>).</li>
+<li>Lance as horas <strong>até as 12h do dia de cada ponto de medição</strong> (Mg-1 a Mg-3; datas no plano).</li>
+<li>O script de consolidação lê as tabelas das issues pela API do GitHub a cada build da página. Não há arquivo a versionar.</li>
 </ol>
+<h3 id="regras">Regras<a class="headerlink" href="#regras" title="Link para esta seção">&para;</a></h3>
+<ul>
+<li>Conte tudo o que é trabalho do projeto: escrita, pesquisa, revisão do trabalho de outro membro, reuniões, preparação de slides e a conferência de textos gerados por IA.</li>
+<li>Em trabalho de dupla, cada integrante lança as <strong>suas</strong> horas, em linhas próprias. Não divida nem some as da dupla.</li>
+<li>Não registre horas estimadas aqui. A estimativa fica no campo <strong>Estimativa</strong> da issue.</li>
+<li>Se a atividade ainda não tem issue, crie a issue primeiro. Reuniões e tarefas de gestão também precisam de uma issue de apoio com Estimativa.</li>
+<li>Horas lançadas fora de uma issue não são contabilizadas e diminuem o <code>RC3</code>.</li>
+<li>Para corrigir um lançamento, edite a linha da tabela na issue. O histórico de edições fica registrado pelo GitHub.</li>
+</ul>
+<h3 id="exemplo-de-preenchimento">Exemplo de preenchimento<a class="headerlink" href="#exemplo-de-preenchimento" title="Link para esta seção">&para;</a></h3>
+<p>Valores fictícios, apenas para mostrar o formato. Não copiar para a sua issue.</p>
+<div class="highlight"><pre><span></span><code><span class="gu">### Tabela de Contribuição</span>
+
+| Usuário  | Data       | Horas Trabalhadas |
+| :------- | :--------: | :---------------: |
+| <span class="ni">@usuario</span> | 01/01/2026 | 1.5               |
+| <span class="ni">@usuario</span> | 02/01/2026 | 0.75              |
+</code></pre></div>
 <p><a id="pontos"></a></p>
 <h2 id="3-pontos-de-medicao-previstos">3. Pontos de medição previstos<a class="headerlink" href="#3-pontos-de-medicao-previstos" title="Link para esta seção">&para;</a></h2>
 <p>A Tabela 2 apresenta as datas das medições, sua finalidade e as medidas calculadas em cada uma.</p>
@@ -721,13 +764,13 @@
 </tr>
 <tr>
 <td>Mg-2</td>
-<td>09/11/2026 (seg)</td>
+<td>16/11/2026 (seg)</td>
 <td>Medição do Ponto de Controle 2 (PC2)</td>
-<td><code>CP1</code>, <code>CP2</code>, <code>DP1</code>, <code>DP2</code>, <code>RC1</code>, <code>RC2</code>, <code>Pa</code></td>
+<td><code>CP1</code>, <code>CP2</code>, <code>DP1</code>, <code>RC1</code>, <code>RC2</code>, <code>Pa</code>; <code>DP2</code> não aferido</td>
 </tr>
 <tr>
 <td>Mg-3</td>
-<td>18/11/2026 (qua)</td>
+<td>24/11/2026 (ter)</td>
 <td>Medição da Entrega 2 Final</td>
 <td><code>CP1</code>, <code>CP2</code>, <code>DP1</code>, <code>DP2</code>, <code>RC1</code>, <code>RC2</code>, <code>Pa</code></td>
 </tr>
@@ -816,6 +859,87 @@
 </tr>
 </tbody>
 </table>
+<h3 id="ponto-mg-2-ponto-de-controle-2-16112026">Ponto Mg-2: Ponto de Controle 2 (16/11/2026)<a class="headerlink" href="#ponto-mg-2-ponto-de-controle-2-16112026" title="Link para esta seção">&para;</a></h3>
+<p>Executado em 16/11/2026 sobre as issues e commits das Fases 3 e 4(parcial) com alterações graduais ao longo do executado.</p>
+<table>
+<thead>
+<tr>
+<th>Medida</th>
+<th>Medida Base / Valores Brutos</th>
+<th>Medida Derivada</th>
+<th style="text-align: center;">Valor</th>
+<th style="text-align: center;">Nível</th>
+<th style="text-align: center;">Cor</th>
+<th>Interpretação Técnica e Decisão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CP1</strong> Progresso</td>
+<td><span class="arithmatex">\(Ac = 17\)</span>, <span class="arithmatex">\(Ap = 17\)</span></td>
+<td><span class="arithmatex">\(Ppp = (17 \div 17) \times 100\)</span></td>
+<td style="text-align: center;"><strong>100%</strong></td>
+<td style="text-align: center;">Adequado</td>
+<td style="text-align: center;">Verde</td>
+<td>100% das 17 atividades previstas para o ponto de controle 2 fase 3 e pouco da fase 4</td>
+</tr>
+<tr>
+<td><strong>CP2</strong> Prazo</td>
+<td><span class="arithmatex">\(Acp = 16\)</span>, <span class="arithmatex">\(Ac = 17\)</span></td>
+<td><span class="arithmatex">\(Pacp = (16 \div 17) \times 100\)</span></td>
+<td style="text-align: center;"><strong>94,1%</strong></td>
+<td style="text-align: center;">Adequado</td>
+<td style="text-align: center;">Verde</td>
+<td>94,1% das 17 atividades previstas para o ponto de controle 2 fase 3 e pouco da fase 4</td>
+</tr>
+<tr>
+<td><strong>DP1</strong> Retrabalho</td>
+<td><span class="arithmatex">\(Ir = 0\)</span>, <span class="arithmatex">\(Ic = 0\)</span>, <span class="arithmatex">\(If = 13\)</span></td>
+<td><span class="arithmatex">\(Pri = (0 \div 13) \times 100\)</span></td>
+<td style="text-align: center;"><strong>0,0%</strong></td>
+<td style="text-align: center;">Adequado</td>
+<td style="text-align: center;">Verde</td>
+<td>Com os valores registrados, nenhuma issue apresenta retrabalho formal; o total de issues fechadas ainda precisa ser conferido.</td>
+</tr>
+<tr>
+<td><strong>DP2</strong> Efetividade</td>
+<td>Não aferido</td>
+<td>Não calculada</td>
+<td style="text-align: center;">Não aferido</td>
+<td style="text-align: center;">Sem classificação</td>
+<td style="text-align: center;">Sem cor</td>
+<td>Aferição adiada para Mg-3; os dados de Mg-1 não representam esta rodada.</td>
+</tr>
+<tr>
+<td><strong>RC1</strong> Esforço</td>
+<td><span class="arithmatex">\(\sum Hr = 82,80\text{ h}\)</span>, <span class="arithmatex">\(n = 6\)</span></td>
+<td><span class="arithmatex">\(Hm = 82,80 \div 6\)</span></td>
+<td style="text-align: center;"><strong>82,80 h</strong> (média 13,80 h/membro)</td>
+<td style="text-align: center;">Informativo</td>
+<td style="text-align: center;">Sem cor</td>
+<td>Total registrado a conferir com os lançamentos individuais, pois não é múltiplo de 0,25 h como exige o procedimento.</td>
+</tr>
+<tr>
+<td><strong>RC2</strong> Variação</td>
+<td><span class="arithmatex">\(Ee = 56,00\text{ h}\)</span>, <span class="arithmatex">\(Er = 67,00\text{ h}\)</span></td>
+<td><span class="arithmatex">\(Ve = (11 \div 56) \times 100\)</span></td>
+<td style="text-align: center;"><strong>19,6%</strong></td>
+<td style="text-align: center;">Bom</td>
+<td style="text-align: center;">Verde</td>
+<td>O esforço realizado superou a estimativa em 11 h; o desvio de 19,6% está na faixa Bom de <code>RC2</code>.</td>
+</tr>
+<tr>
+<td><strong>Pa</strong> Cobertura</td>
+<td><span class="arithmatex">\(Ar = 17\)</span>, <span class="arithmatex">\(Ac = 17\)</span></td>
+<td><span class="arithmatex">\(Pa = (17 \div 17) \times 100\)</span></td>
+<td style="text-align: center;"><strong>100%</strong></td>
+<td style="text-align: center;">Adequado</td>
+<td style="text-align: center;">Verde</td>
+<td>Todas as issues tiveram horas registradas</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Pendência de validação da Mg-2:</strong> conferir o conjunto de issues usado em <code>DP1</code> (<code>If = 13</code>, enquanto <code>CP1</code> registra <code>Ac = 17</code>) e a soma das horas de <code>RC1</code> contra as tabelas de contribuição. Os valores brutos foram mantidos até essa conferência.</p>
 <p><a id="padroes-issues"></a></p>
 <h2 id="5-padrao-de-texto-para-issues-determinacao-de-dp1-e-criterios">5. Padrão de texto para issues (Determinação de DP1 e Critérios)<a class="headerlink" href="#5-padrao-de-texto-para-issues-determinacao-de-dp1-e-criterios" title="Link para esta seção">&para;</a></h2>
 <p>Para assegurar a confiabilidade da medição automatizada pelo script <code>consolida_horas.py</code>, todas as issues devem conter blocos padronizados de metadados:</p>
