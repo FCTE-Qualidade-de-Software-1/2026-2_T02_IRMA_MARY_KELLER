@@ -1,6 +1,6 @@
 # Fase 1: Planejamento da avaliação
 
-**Versão 1.1**
+**Versão 1.2**
 
 A Fase 1 estabelece os requisitos da avaliação da Khan Academy. Nesta etapa, são definidos o propósito e o uso pretendido dos resultados, o produto e seu contexto de uso, as partes interessadas, as características de qualidade priorizadas e o recorte dos ensaios. A documentação também explicita o que pode ser observado externamente, os elementos excluídos e os limites de validade das conclusões.
 
@@ -28,7 +28,13 @@ O objeto dos ensaios é a **plataforma web acessada por navegadores em computado
 
 Os ambientes [`A1`](escopo-da-avaliacao.md#ambientes) a [`A4`](escopo-da-avaliacao.md#ambientes) contemplam combinações dirigidas de Windows, macOS e Ubuntu com Chrome, Firefox e Safari. A acessibilidade inclui navegação por teclado e leitores de tela nas combinações previstas e, no ambiente [`A1`](escopo-da-avaliacao.md#ambientes), inspeções separadas com zoom de 200% e alto contraste do Windows para o perfil de baixa visão. Esses procedimentos não representam todas as pessoas com deficiência nem comprovam conformidade integral com as WCAG.
 
-Os requisitos definidos nesta etapa orientam a estrutura GQM da [Fase 2](../fase-2/index.md): [`R1`](requisitos-de-avaliacao.md#4-rastreabilidade-caracteristica-interessado-e-justificativa) e [`R2`](requisitos-de-avaliacao.md#4-rastreabilidade-caracteristica-interessado-e-justificativa) fundamentam [`G1`](../fase-2/objetivos.md#g1), [`R3`](requisitos-de-avaliacao.md#4-rastreabilidade-caracteristica-interessado-e-justificativa) fundamenta [`G2`](../fase-2/objetivos.md#g2), e [`R4`](requisitos-de-avaliacao.md#4-rastreabilidade-caracteristica-interessado-e-justificativa) e [`R5`](requisitos-de-avaliacao.md#4-rastreabilidade-caracteristica-interessado-e-justificativa) fundamentam [`G3`](../fase-2/objetivos.md#g3). Assim, objetivos, questões e métricas devem permanecer coerentes com o propósito, os stakeholders, os fluxos, os ambientes e os limites estabelecidos na Fase 1.
+## Encadeamento com as Fases 2, 3 e 4
+
+Os requisitos definidos nesta etapa orientam toda a cadeia de avaliação:
+
+1. **Especificação (Fase 2):** Os requisitos definidos nessa etapa fundamentam a elaboração da estrutura GQM na [Fase 2](../fase-2/index.md), na qual [`R1`](requisitos-de-avaliacao.md#4-rastreabilidade-caracteristica-interessado-e-justificativa) e [`R2`](requisitos-de-avaliacao.md#4-rastreabilidade-caracteristica-interessado-e-justificativa) definem [`G1`](../fase-2/objetivos.md#g1), [`R3`](requisitos-de-avaliacao.md#4-rastreabilidade-caracteristica-interessado-e-justificativa) define [`G2`](../fase-2/objetivos.md#g2), e [`R4`](requisitos-de-avaliacao.md#4-rastreabilidade-caracteristica-interessado-e-justificativa) e [`R5`](requisitos-de-avaliacao.md#4-rastreabilidade-caracteristica-interessado-e-justificativa) definem [`G3`](../fase-2/objetivos.md#g3).
+2. **Operacionalização (Fase 3):** Conectam-se aos métodos, ambientes e instrumentos formais descritos no [Plano de Avaliação da Fase 3](../fase-3/index.md), garantindo que os procedimentos de ensaio reflitam as restrições e o contexto de uso levantados.
+3. **Execução e Julgamento (Fase 4):** Asseguram que as evidências brutas e decisões documentadas na [Fase 4: Execução e Resultados](../fase-4/index.md) respondam diretamente às decisões [`D1` a `D4`](requisitos-de-avaliacao.md#13-requisitante-e-destinatarios-dos-resultados) estabelecidas para o requisitante.
 
 ## Referências
 
@@ -42,7 +48,13 @@ Os requisitos definidos nesta etapa orientam a estrutura GQM da [Fase 2](../fase
 
 > [Escopo da avaliação](escopo-da-avaliacao.md). Objetos, fluxos, ambientes, profundidade, exclusões, limites de validade e relação com os ODS.
 
-> [Critérios de avaliação da Fase 1](../criterios/fase1.md), disciplina Qualidade de Software 1, UnB/FGA, 2026/2.
+> [Visão geral da Fase 2](../fase-2/index.md). Especificação GQM. Objetivos, questões, hipóteses e métricas de qualidade.
+
+> [Visão geral da Fase 3](../fase-3/index.md). Planejamento operacional, cronograma, ambientes de testes e procedimentos detalhados de medição.
+
+> [Visão geral da Fase 4](../fase-4/index.md). Execução dos ensaios, registros de medições, evidências brutas e julgamento dos resultados.
+
+> [Critérios de avaliação da Fase 1](../criterios/fase1.md). Disciplina Qualidade de Software 1, UnB/FGA, 2026/2.
 
 ## Histórico de versões
 
@@ -50,3 +62,4 @@ Os requisitos definidos nesta etapa orientam a estrutura GQM da [Fase 2](../fase
 | :---: | :---: | :--- | :--- | :--- |
 | 1.0 | 20/10/2026 | Estruturação da visão geral da Fase 1, organização dos artefatos e síntese da delimitação e da rastreabilidade com a Fase 2. | [Enzo Menali](https://github.com/menali17) | [Luisa de Souza](https://github.com/luisa12ll) |
 | 1.1 | 26/10/2026 | Padronização e inserção de hyperlinks | [Pedro Lucas](https://github.com/Pwdrinho) | [Enzo Menali](https://github.com/menali17) |
+| 1.2 | 24/11/2026 | Consolida rastros com fases posteriores | [Pedro Lucas](https://github.com/Pwdrinho) | [Camila Silva](https://github.com/CamilaSilvaC) |

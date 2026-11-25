@@ -185,8 +185,6 @@ Esta seção indica onde ficam armazenadas as evidências que permitem conferir 
 |---|---|
 | [Issues](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues) | GitHub: Issues e suas respectivas labels |
 | [Commits](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/commits/main/) e [pull requests](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/pulls) com revisão | GitHub: Pull requests |
-| [Autoavaliação](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/tree/main/assets/dados/gestao/) | `assets/dados/gestao/` |
-| [Registro de Horas (consolidado)](horas_consolidadas.md) | Gerado no build por `assets/scripts/consolida_horas.py` |
 | [Medições, interpretações e decisões](medicoes.md) | `docs/gestao/medicoes.md` |
 | [Script de consolidação](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/blob/main/assets/scripts/consolida_horas.py) | `assets/scripts/consolida_horas.py` |
 | [Uso de IA](uso_de_ia.md) | `docs/gestao/uso_de_ia.md` |

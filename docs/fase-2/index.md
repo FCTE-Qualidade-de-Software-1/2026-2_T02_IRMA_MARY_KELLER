@@ -1,10 +1,10 @@
 # Fase 2: Especificação da avaliação (GQM)
 
-**Versão 1.4**
+**Versão 1.6**
 
 A Fase 2 transforma as características priorizadas na [Fase 1](../fase-1/index.md) em uma estrutura de medição por meio do método *Goal-Question-Metric* (GQM) [S5](#s5). Cada objetivo de medição é desdobrado em questões de avaliação, relacionadas a hipóteses de investigação e respondidas por métricas. Para interpretar as medidas, também são previstos níveis de pontuação e critérios de julgamento.
 
-Nesta etapa, são especificados **3 [objetivos](objetivos.md#objetivo) (G1-G3), 11 [questões](questoes-hipoteses.md) (Q1-Q11), 11 [hipóteses](questoes-hipoteses.md) (H1-H11) e 14 métricas (M1-M14)**. A Fase 2 estabelece como a qualidade será avaliada; os resultados das medições permanecem **a coletar na Fase 4**.
+Nesta etapa, são especificados **3 [objetivos](objetivos.md#objetivo) (G1-G3), 11 [questões](questoes-hipoteses.md) (Q1-Q11), 11 [hipóteses](questoes-hipoteses.md) (H1-H11) e 14 [métricas](metricas.md) (M1-M14)**. A Fase 2 estabelece como a qualidade será avaliada, cujos procedimentos operacionais são detalhados na [Fase 3](../fase-3/index.md) e cujos resultados empíricos são apurados na [Fase 4](../fase-4/index.md).
 
 ## Organização da Fase 2
 
@@ -36,6 +36,13 @@ Conforme o [escopo da Fase 1](../fase-1/escopo-da-avaliacao.md), a avaliação c
 
 As métricas da Fase 2 são **adaptações propostas tomando a ISO/IEC 25023:2016 como referência** [S4](#s4). Seus nomes e fórmulas não devem ser interpretados como transcrições literais da norma.
 
+## Encadeamento com as Fases 3 e 4
+
+A especificação de medição elaborada nesta fase desdobra-se nas etapas seguintes do ciclo de avaliação:
+
+- **Operacionalização na [Fase 3](../fase-3/index.md):** As métricas `M1` a `M14` são traduzidas em roteiros de teste nos [Procedimentos de Desempenho](../fase-3/procedimentos-desempenho.md), [Procedimentos de Adaptabilidade](../fase-3/procedimentos-adaptabilidade.md) e [Procedimentos de Acessibilidade e Apreensibilidade](../fase-3/procedimentos-acessibilidade-apreensibilidade.md), integrados pela [Matriz de Rastreabilidade](../fase-3/matriz-rastreabilidade.md).
+- **Coleta e Julgamento na [Fase 4](../fase-4/index.md):** As medições de campo e laboratoriais são documentadas no [Registro de Desempenho](../fase-4/registro-desempenho.md), [Registro de Adaptabilidade](../fase-4/registro-adaptabilidade.md), [Registro de Acessibilidade](../fase-4/registro-acessibilidade.md) e [Registro de Apreensibilidade](../fase-4/registro-apreensibilidade.md), confrontando as hipóteses `H1` a `H11` contra os [critérios de julgamento](criterios-julgamento.md).
+
 ## Referências
 
 <a id="s1"></a>
@@ -58,9 +65,13 @@ As métricas da Fase 2 são **adaptações propostas tomando a ISO/IEC 25023:201
 
 > [S5] BASILI, Victor R.; CALDIERA, Gianluigi; ROMBACH, H. Dieter. The Goal Question Metric Approach. In: **Encyclopedia of Software Engineering**. John Wiley & Sons, 1994. p. 528-532. 
 
-<a id="s6"></a>
+> [Visão geral da fase 1](../fase-1/index.md). Requisitos da avaliação. Propósito, modelo e requisitos priorizados.
 
-> [S6] Critérios de avaliação da Fase 2. Disciplina Qualidade de Software 1, UnB/FGA, 2026/2. Disponível em: [Critérios de avaliação da Fase 2](../criterios/fase2.md).
+> [Visão geral da Fase 3](../fase-3/index.md). Planejamento operacional, cronograma, ambientes de testes e procedimentos detalhados de medição.
+
+> [Visão geral da Fase 4](../fase-4/index.md). Execução dos ensaios, registros de medições, evidências brutas e julgamento dos resultados.
+
+> [Critérios de avaliação da Fase 2](../criterios/fase2.md). Disciplina Qualidade de Software 1, UnB/FGA, 2026/2.
 
 
 ## Histórico de versões
@@ -72,3 +83,5 @@ As métricas da Fase 2 são **adaptações propostas tomando a ISO/IEC 25023:201
 | 1.2 | 21/10/2026 | Alinhamento da visão geral aos fluxos, ambientes e exclusões definidos na Fase 1. | [Enzo Menali](https://github.com/menali17) | [Pedro Lucas](https://github.com/Pwdrinho) |
 | 1.3 | 21/10/2026 | Ajustes na padronização | [Camila Cavalcante](https://github.com/CamilaSilvaC) | [Pedro Lucas](https://github.com/Pwdrinho) |
 | 1.4 | 26/10/2026 | Padronização do artefato | [Pedro Lucas](https://github.com/Pwdrinho) | [Camila Cavalcante](https://github.com/CamilaSilvaC) |
+| 1.5 | 24/11/2026 | Consolida rastros com fase 1 e com as fases posteriores | [Pedro Lucas](https://github.com/Pwdrinho) | [Camila Silva](https://github.com/CamilaSilvaC) |
+| 1.6 | 24/11/2026 | Corrige a referência aos critérios da Fase 2. | [Enzo Menali](https://github.com/menali17) | [Camila Silva](https://github.com/CamilaSilvaC) |

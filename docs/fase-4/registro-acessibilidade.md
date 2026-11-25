@@ -1,4 +1,4 @@
-# Registro de execuções de acessibilidade (M8–M11)
+# Registro de execuções de acessibilidade (M8 a M11)
 
 Este documento reúne a preparação dos ambientes, sessões e formulários de coleta de acessibilidade da versão web da **Khan Academy**, no recorte de `M8` (teclado), `M9` (leitores de tela), `M10` (ampliação a 200%) e `M11` (contraste textual e alto contraste).
 
@@ -485,7 +485,7 @@ A avaliação demonstrou que a ampliação de 200% preservou as tarefas essencia
 | Versão | Data | Descrição | Responsável | Revisor |
 |:---:|:---:|---|---|---|
 | 1.0 | 22/11/2026 | Estrutura de registro M8/M9 e preparação do ambiente A3, com observações, barreiras e evidências da avaliadora. | [Luisa de Souza](https://github.com/luisa12ll) | [Enzo Menali](https://github.com/menali17) |
-| 1.1 | **22/11/2026** | Consolidação de A1/A3/A4; M8–M11, F5/F6/F7, resultados, barreiras B-01 a B-18, julgamento Q7–Q10/H7–H10, referências e inventário de evidências para integração posterior. | [Enzo Menali](https://github.com/menali17)| [Luisa de Souza](https://github.com/luisa12ll) |
+| 1.1 | 22/11/2026 | Consolidação de A1/A3/A4; M8–M11, F5/F6/F7, resultados, barreiras B-01 a B-18, julgamento Q7–Q10/H7–H10, referências e inventário de evidências para integração posterior. | [Enzo Menali](https://github.com/menali17)| [Luisa de Souza](https://github.com/luisa12ll) |
 
 
 

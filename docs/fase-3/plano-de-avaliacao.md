@@ -79,5 +79,5 @@ Os resultados serão apresentados juntamente com seus registros de origem, prese
 
 | Versão | Data | Descrição | Responsável | Revisor |
 |:---:|:---:|---|---|---|
-| 1.0 | 14/11/2026 | Definição do escopo e dos métodos de avaliação de desempenho, adaptabilidade e usabilidade, incluindo as condições de execução e as regras de registro, tratamento e julgamento dos resultados. | [`Camila Silva`](https://github.com/CamilaSilvaC) e [`Geovanna Alves`](https://github.com/GeovannaUmbelino) | [`Pedro Lucas`](https://github.com/Pwdrinho) |
+| 1.0 | 14/11/2026 | Definição do escopo e dos métodos de avaliação de desempenho, adaptabilidade e usabilidade, incluindo as condições de execução e as regras de registro, tratamento e julgamento dos resultados. | [Camila Silva](https://github.com/CamilaSilvaC) e [Geovanna Alves](https://github.com/GeovannaUmbelino) | [Pedro Lucas](https://github.com/Pwdrinho) |
 | 1.1 | 15/11/2026 | Inclusão de links para fluxos, ambientes, métricas, questões e objetivos, padronização dos destaques e atualização das referências ao ambiente consolidado e ao registro da Fase 4. | [Camila Silva](https://github.com/CamilaSilvaC) e [Geovanna Alves](https://github.com/GeovannaUmbelino) | [Pedro Lucas](https://github.com/Pwdrinho) |

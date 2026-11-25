@@ -460,6 +460,6 @@ As respostas descrevem a experiência relatada e não entram no cálculo de [`M1
 
 | Versão | Data | Descrição | Responsável | Revisor |
 |---|---|---|---|---|
-| 1.0 | 13/11/2026 | Elaboração dos procedimentos de inspeção automatizada, testes manuais de acessibilidade e testes com voluntários, com rastreabilidade para [`M8`](../fase-2/metricas.md#18-m8-execucao-por-teclado) a [`M14`](../fase-2/metricas.md#114-m14-tempo-de-conclusao-autonoma) | [`Luisa de Souza`](https://github.com/luisa12ll) | [`Enzo Menali`](https://github.com/menali17) |
-| 1.1 | 13/11/2026 | Revisão do consentimento, tarefas, auditorias, contraste e fontes das tabelas | [`Enzo Menali`](https://github.com/menali17) |  [`Luisa de Souza`](https://github.com/luisa12ll) |
+| 1.0 | 13/11/2026 | Elaboração dos procedimentos de inspeção automatizada, testes manuais de acessibilidade e testes com voluntários, com rastreabilidade para [`M8`](../fase-2/metricas.md#18-m8-execucao-por-teclado) a [`M14`](../fase-2/metricas.md#114-m14-tempo-de-conclusao-autonoma) | [Luisa de Souza](https://github.com/luisa12ll) | [Enzo Menali](https://github.com/menali17) |
+| 1.1 | 13/11/2026 | Revisão do consentimento, tarefas, auditorias, contraste e fontes das tabelas | [Enzo Menali](https://github.com/menali17) |  [Luisa de Souza](https://github.com/luisa12ll) |
 | 1.2 | 15/11/2026 | Inclusão de links de rastreabilidade e padronização do destaque dos links no procedimento. | [Camila Silva](https://github.com/CamilaSilvaC) e [Geovanna Alves](https://github.com/GeovannaUmbelino) | [Pedro Lucas](https://github.com/Pwdrinho) |

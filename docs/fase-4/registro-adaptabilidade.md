@@ -1,6 +1,6 @@
-# Registro de execuções (M6 e M7)
+# Registro de execuções de adaptabilidade (M6 e M7)
 
-**Versão 1.5**
+**Versão 1.6**
 
 Esta página reúne os formulários de registro da avaliação de adaptabilidade definida em [Procedimentos de avaliação de adaptabilidade](../fase-3/procedimentos-adaptabilidade.md) [S1](#s1). As tabelas são preenchidas na Fase 4, por *pull request*, conforme cada execução. Esta versão já traz a preparação e as execuções de 14/11/2026 nos ambientes [`A1`](#registro-preparacao), [`A2`](#registro-preparacao) e [`A4`](#registro-preparacao) e as de 17/11/2026 no ambiente [`A3`](#registro-preparacao).
 
@@ -21,7 +21,7 @@ A Tabela 1 identifica cada ambiente, com os dados já conhecidos do [ambiente de
 
 *Tabela 1. Identificação dos ambientes de teste. Fonte: Elaborada por: [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM), com base no [ambiente de testes](../fase-3/ambiente-de-testes.md)*
 
-A Tabela 2 registra as verificações de [preparação](../fase-3/procedimentos-adaptabilidade.md#34-preparacao-do-ambiente). Marque `S` quando atendida.
+A Tabela 2 registra as verificações de [preparação](../fase-3/procedimentos-adaptabilidade.md#33-preparacao-do-ambiente). Marque `S` quando atendida.
 
 | ID | `PA-1` | `PA-2` | `PA-3` | `PA-4` | `PA-5` | `PA-6` | `PA-7` | `PA-8` | `PA-9` | `PA-10` | Observações |
 |---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|---|
@@ -110,7 +110,7 @@ A Tabela 6 registra as características do ambiente [`A4`](#registro-preparacao)
 
 ## 2. Dados de teste congelados e rótulos dos controles
 
-A Tabela 7 registra os dados de teste da [preparação](../fase-3/procedimentos-adaptabilidade.md#34-preparacao-do-ambiente), iguais em todos os ambientes.
+A Tabela 7 registra os dados de teste da [preparação](../fase-3/procedimentos-adaptabilidade.md#33-preparacao-do-ambiente), iguais em todos os ambientes.
 
 | ID | Dado | Valor congelado | Data do congelamento |
 |---|---|---|---|
@@ -148,7 +148,7 @@ A Tabela 8 registra o rótulo real de cada item do [inventário de controles ess
 
 ## 3. Resolução verificada
 
-A Tabela 9 registra o resultado do comando de [3.5](../fase-3/procedimentos-adaptabilidade.md#35-resolucao-e-janela) ao início das sessões de cada ambiente e dimensão. Se algum valor mudar durante a coleta, acrescente uma linha com a data.
+A Tabela 9 registra o resultado do comando de [3.4](../fase-3/procedimentos-adaptabilidade.md#34-resolucao-e-janela) ao início das sessões de cada ambiente e dimensão. Se algum valor mudar durante a coleta, acrescente uma linha com a data.
 
 | Ambiente | Dimensão | `screen` (largura × altura) | `inner` (largura × altura) | `dpr` | Data |
 |---|---|---|---|---|---|
@@ -163,7 +163,7 @@ A Tabela 9 registra o resultado do comando de [3.5](../fase-3/procedimentos-adap
 
 *Tabela 9. Resolução e viewport verificados por ambiente e dimensão. Fonte: Elaborada por: [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM)*
 
-O `inner` das sessões não pôde ser recuperado do vídeo, e os valores anotados na hora foram descartados por estarem incorretos. A validade das execuções segue por `screen` e `dpr` ([3.5](../fase-3/procedimentos-adaptabilidade.md#35-resolucao-e-janela)). Como o dado era apenas para registro sem influenciar nada na avaliação foi decidido manter como não registrado, ao invés de inventar um dado.
+O `inner` das sessões não pôde ser recuperado do vídeo, e os valores anotados na hora foram descartados por estarem incorretos. A validade das execuções segue por `screen` e `dpr` ([3.4](../fase-3/procedimentos-adaptabilidade.md#34-resolucao-e-janela)). Como o dado era apenas para registro sem influenciar nada na avaliação foi decidido manter como não registrado, ao invés de inventar um dado.
 
 <a id="registro-m6"></a>
 
@@ -334,8 +334,9 @@ A Tabela 17 registra o desfecho de [`D1`](../fase-1/requisitos-de-avaliacao.md#r
 | Versão | Data | Descrição | Responsável | Revisor |
 |:---:|:---:|---|---|---|
 | 1.0 | 07/11/2026 | Estrutura dos formulários de registro de `M6` e `M7`, sem dados coletados. | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
-| 1.1 | 14/11/2026 | Sessão 1 de avaliação de adaptabilidade [`A1`](#registro-preparacao), [`A2`](#registro-preparacao) e [`A4`](#registro-preparacao) | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | A definir |
+| 1.1 | 14/11/2026 | Sessão 1 de avaliação de adaptabilidade [`A1`](#registro-preparacao), [`A2`](#registro-preparacao) e [`A4`](#registro-preparacao) | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
 | 1.2 | 14/11/2026 | Computação dos dados tratados para preenchimento das tabelas | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
 | 1.3 | 15/11/2026 | Resumo parcial de `M6` e `M7` ([`A1`](#registro-preparacao), [`A2`](#registro-preparacao) e [`A4`](#registro-preparacao)), julgamento provisório, regra de `Gr2` sem repetição e correções de formatação. | [Pedro Lucas](https://github.com/Pwdrinho) e [José Augusto](https://github.com/JAugustoM) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
 | 1.4 | 17/11/2026 | Registro de dados brutos da sessão A3 | [Luisa de Souza](https://github.com/luisa12ll) e [Pedro Lucas](https://github.com/Pwdrinho) |[Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
 | 1.5 | 21/11/2026 | Resumo e julgamento com os quatro ambientes, após novas repetições das ocorrências Gr2, que permaneceram intermitentes. | [Pedro Lucas](https://github.com/Pwdrinho) |[Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
+| 1.6 | 24/11/2026 | Corrige os links para preparação e resolução no procedimento de adaptabilidade. | [Enzo Menali](https://github.com/menali17) | [Pedro Lucas](https://github.com/Pwdrinho) |
