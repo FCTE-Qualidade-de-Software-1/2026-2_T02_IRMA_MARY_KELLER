@@ -1,6 +1,6 @@
 # Fichas das métricas GQM
 
-**Versão 1.5**
+**Versão 1.6**
 
 As fichas abaixo especificam as métricas externas propostas para a avaliação **exclusivamente da versão web da Khan Academy em computadores**. Cada ficha segue a organização do exemplo fornecido: questão respondida, definição, fórmula, unidade, fonte, procedimento de coleta, interpretação, justificativa e níveis. Os 14 indicadores M1-M14 correspondem às [questões](questoes-hipoteses.md) Q1-Q11.
 
@@ -203,7 +203,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
-**Procedimento operacional (Fase 3):** [Procedimentos de avaliação de acessibilidade](../fase-3/procedimentos-acessibilidade-apreensibilidade.md#4-roteiros-de-inspecao-e-testes-manuais-de-acessibilidade).
+**Procedimento operacional (Fase 3):** [Procedimentos de avaliação de acessibilidade](../fase-3/procedimentos-acessibilidade-apreensibilidade.md#43-navegacao-por-teclado-m8).
 
 **Registro de execução (Fase 4):** [Registro de execução de acessibilidade](../fase-4/registro-acessibilidade.md).
 ---
@@ -228,7 +228,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
-**Procedimento operacional (Fase 3):** [Procedimentos de avaliação de acessibilidade](../fase-3/procedimentos-acessibilidade-apreensibilidade.md#4-roteiros-de-inspecao-e-testes-manuais-de-acessibilidade).
+**Procedimento operacional (Fase 3):** [Procedimentos de avaliação de acessibilidade](../fase-3/procedimentos-acessibilidade-apreensibilidade.md#44-leitor-de-tela-m9).
 
 **Registro de execução (Fase 4):** [Registro de execução de acessibilidade](../fase-4/registro-acessibilidade.md).
 ---
@@ -253,7 +253,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
-**Procedimento operacional (Fase 3):** [Procedimentos de avaliação de acessibilidade](../fase-3/procedimentos-acessibilidade-apreensibilidade.md#4-roteiros-de-inspecao-e-testes-manuais-de-acessibilidade).
+**Procedimento operacional (Fase 3):** [Procedimentos de avaliação de acessibilidade](../fase-3/procedimentos-acessibilidade-apreensibilidade.md#45-ampliacao-de-200-m10).
 
 **Registro de execução (Fase 4):** [Registro de execução de acessibilidade](../fase-4/registro-acessibilidade.md).
 ---
@@ -278,7 +278,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
-**Procedimento operacional (Fase 3):** [Procedimentos de avaliação de acessibilidade](../fase-3/procedimentos-acessibilidade-apreensibilidade.md#4-roteiros-de-inspecao-e-testes-manuais-de-acessibilidade).
+**Procedimento operacional (Fase 3):** [Procedimentos de avaliação de acessibilidade](../fase-3/procedimentos-acessibilidade-apreensibilidade.md#46-contraste-e-alto-contraste-m11).
 
 **Registro de execução (Fase 4):** [Registro de execução de acessibilidade](../fase-4/registro-acessibilidade.md).
 ---
@@ -303,7 +303,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
-**Procedimento operacional (Fase 3):** [Procedimentos de testes com voluntários](../fase-3/procedimentos-acessibilidade-apreensibilidade.md#5-testes-de-apreensibilidade-com-voluntarios).
+**Procedimento operacional (Fase 3):** [Procedimentos de testes com voluntários](../fase-3/procedimentos-acessibilidade-apreensibilidade.md#5-testes-com-voluntarios).
 
 **Registro de execução (Fase 4):** [Registro de execução de apreensibilidade](../fase-4/registro-apreensibilidade.md).
 ---
@@ -328,7 +328,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
-**Procedimento operacional (Fase 3):** [Procedimentos de testes com voluntários](../fase-3/procedimentos-acessibilidade-apreensibilidade.md#5-testes-de-apreensibilidade-com-voluntarios).
+**Procedimento operacional (Fase 3):** [Procedimentos de testes com voluntários](../fase-3/procedimentos-acessibilidade-apreensibilidade.md#5-testes-com-voluntarios).
 
 **Registro de execução (Fase 4):** [Registro de execução de apreensibilidade](../fase-4/registro-apreensibilidade.md).
 ---
@@ -353,7 +353,7 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 
 **Níveis de pontuação:** Aplicar as faixas quantitativas e as regras de bloqueio da seção [Níveis de pontuação e critérios de julgamento](criterios-julgamento.md), definidas antes da coleta.
 
-**Procedimento operacional (Fase 3):** [Procedimentos de testes com voluntários](../fase-3/procedimentos-acessibilidade-apreensibilidade.md#5-testes-de-apreensibilidade-com-voluntarios).
+**Procedimento operacional (Fase 3):** [Procedimentos de testes com voluntários](../fase-3/procedimentos-acessibilidade-apreensibilidade.md#5-testes-com-voluntarios).
 
 **Registro de execução (Fase 4):** [Registro de execução de apreensibilidade](../fase-4/registro-apreensibilidade.md).
 
@@ -393,3 +393,4 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 | 1.3 | 26/10/2026 | Padronização | [Pedro Lucas](https://github.com/Pwdrinho) | [Camila Cavalcante](https://github.com/CamilaSilvaC) |
 | 1.4 | 24/11/2026 | Adiciona rastros com a fase 3 e resultados da fase 4 | [Camila Cavalcante](https://github.com/CamilaSilvaC) | A definir |
 | 1.5 | 24/11/2026 | Alinha a versão exibida ao histórico e sinaliza a revisão ainda não informada. | [Enzo Menali](https://github.com/menali17) | A definir |
+| 1.6 | 24/11/2026 | Corrige os links das métricas M8 a M14 para os procedimentos correspondentes. | [Enzo Menali](https://github.com/menali17) | A definir |

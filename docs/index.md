@@ -19,6 +19,8 @@ hide:
 
 <div class="inicio-conteudo" markdown>
 
+Consulte também a [decisão sobre o modelo de artigo](gestao/artigo.md) e a [página do artigo](artigo/README.md).
+
 ## Equipe
 
 <div class="inicio-equipe">
@@ -39,6 +41,7 @@ hide:
 | 1.2 | 21/10/2026 | Corrige links do sumário | [Pedro Lucas](https://github.com/Pwdrinho) | [Luisa de Souza](https://github.com/luisa12ll) |
 | 1.3 | 26/10/2026 | Adiciona link release entrega 1 | [Pedro Lucas](https://github.com/Pwdrinho) | [Luisa de Souza](https://github.com/luisa12ll) |
 | 1.4 | 06/11/2026 | Aplica o tema visual Khan, reorganiza a página inicial e corrige o link da release | [Luisa de Souza](https://github.com/luisa12ll) | [Pedro Lucas](https://github.com/Pwdrinho) |
+| 1.5 | 24/11/2026 | Inclui caminhos textuais para os documentos do artigo. | [Enzo Menali](https://github.com/menali17) | A definir |
 
 <p class="legenda"><em>Tabela 1. Histórico de versões da página inicial.</em><br>Elaborada por: <a href="https://github.com/Pwdrinho">Pedro Lucas</a></p>
 

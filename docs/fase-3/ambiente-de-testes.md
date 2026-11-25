@@ -1,6 +1,6 @@
 # Ambientes e recursos de avaliação
 
-**Versão 1.2**
+**Versão 1.3**
 
 Este documento define e descreve a infraestrutura de ambientes, virtualização, navegadores e ferramentas utilizadas na condução dos ensaios de avaliação da versão web da Khan Academy em computadores. Ele operacionaliza os requisitos da [Fase 1](../fase-1/index.md) [S1](#s1) (especialmente o [escopo da avaliação](../fase-1/escopo-da-avaliacao.md#ambientes) [S2](#s2) e os [requisitos de avaliação](../fase-1/requisitos-de-avaliacao.md) [S3](#s3)), fornece a base instrumental para as métricas da [Fase 2](../fase-2/index.md) [S4](#s4) e atende aos critérios de avaliação da Fase 3 ([Critérios QSW — Fase 3](../criterios/fase3.md), com destaque para [`F3-C2`](../criterios/fase3.md) e [`F3-C8`](../criterios/fase3.md)) [S5](#s5).
 
@@ -41,7 +41,7 @@ A Tabela 1 apresenta a lista dos sistemas operacionais e as versões dos navegad
 
 *Tabela 1. Sistemas operacionais, navegadores e recursos por ambiente. Fonte: Elaborada por: [José Augusto](https://github.com/JAugustoM)*
 
-As máquinas virtuais e seus respectivos navegadores são atualizados via gerenciador de pacotes na etapa de preparação formal antes do início das medições oficiais (verificação [`PA-1`](procedimentos-adaptabilidade.md#33-preparacao-do-ambiente) / [`PD-1`](procedimentos-desempenho.md#34-preparacao-do-ambiente-checklist-pd-1-a-pd-10)), congelando-se a data e desativando-se atualizações automáticas durante a coleta de dados da Fase 4.
+As máquinas virtuais e seus respectivos navegadores são atualizados via gerenciador de pacotes na etapa de preparação formal antes do início das medições oficiais (verificação [`PA-1`](procedimentos-adaptabilidade.md#33-preparacao-do-ambiente) / [`PD-1`](procedimentos-desempenho.md#24-preparacao-do-ambiente-checklist-pd-1-a-pd-10)), congelando-se a data e desativando-se atualizações automáticas durante a coleta de dados da Fase 4.
 
 ## 4. Ferramentas de medição, diagnóstico e apoio aos ensaios
 
@@ -139,3 +139,4 @@ Para os ensaios de apreensibilidade, devem ser preparados cartões com as tarefa
 | 1.0 | 04/11/2026 | Estruturação inicial do ambiente de testes e quadro básico de ferramentas e versões. | [José Augusto](https://github.com/JAugustoM) | [Pedro Lucas](https://github.com/Pwdrinho) |
 | 1.1 | 08/11/2026 | Adequação do estilo aos padrões da Fase 3, detalhamento das modalidades de virtualização, especificação dos perfis de rede e expansão das ferramentas de medição (Lighthouse, DevTools, monitores) sem fixação prévia de versões. | [José Augusto](https://github.com/JAugustoM) | [Pedro Lucas](https://github.com/Pwdrinho) |
 | 1.2 | 15/11/2026 | Consolidação de Ambientes e recursos, com cobertura de acessibilidade e apreensibilidade, preparação da coleta, instrumentos e revisão dos links. | [Camila Silva](https://github.com/CamilaSilvaC) e [Geovanna Alves](https://github.com/GeovannaUmbelino) | [Pedro Lucas](https://github.com/Pwdrinho) |
+| 1.3 | 24/11/2026 | Corrige o destino do link para a preparação dos testes de desempenho. | [Enzo Menali](https://github.com/menali17) | A definir |

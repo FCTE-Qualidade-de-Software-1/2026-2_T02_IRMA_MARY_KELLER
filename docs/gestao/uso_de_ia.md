@@ -1,6 +1,6 @@
 # Uso de IA
 
-Versão 1.9
+Versão 2.0
 
 ## 1. Para que serve
 
@@ -42,6 +42,7 @@ Registre **no momento do uso**, não no fim do projeto: reconstruir o que foi fe
 | `2026-11-14` | [Camila Cavalcante](https://github.com/CamilaSilvaC) | ChatGPT (OpenAI) | Revisar a ortografia, a acentuação e a pontuação dos textos, além de auxiliar na organização e na padronização das tabelas em Markdown | [#27](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/27) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) | Foram comparadas as sugestões de ortografia, acentuação e pontuação com o texto original e incorporou as correções que preservavam o sentido dos trechos. As tabelas foram comparadas com as versões de origem para conferir os dados e visualizadas no MkDocs para verificar a formatação. |
 | `2026-11-14` | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) | ChatGPT (OpenAI) | Utilizada para  melhorar e corrigir alguns textos, organizar as tabelas e auxiliar na identificação e verificação de links. | [#27](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/27) | [Camila Cavalcante](https://github.com/CamilaSilvaC) | A equipe realizou a revisão manual dos textos sugeridos, conferiu os dados apresentados nas tabelas, acessou os links para verificar se estavam corretos e relacionados ao conteúdo |
 | `2026-11-15` | [Pedro Lucas](https://github.com/Pwdrinho) | Claude (Sonnet 5.5) | Utilizei como apoio na formatação das tabelas, na verificação dos hyperlinks e em correções macros do procedimento e do registro de adaptabilidade (M6 e M7), como numeração, consistência entre seções e aplicação das regras de classificação, mantendo as decisões e a revisão final com a equipe | [#25](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_IRMA_MARY_KELLER/issues/25) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) | Conferiu a numeração das tabelas, os hyperlinks e as referências cruzadas contra o procedimento, e as regras de classificação (`C`, `F` e `Gr2` sem repetição) contra as seções 4.6 e 5.3; ajustou o que divergia, mantendo as decisões e o julgamento com a equipe. |
+| `2026-11-21` | [Enzo Menali](https://github.com/menali17) | ChatGPT | Utilizado como guia e revisão do roteiro de coleta de dados | `registro-acessibilidade.md` | [Pedro Lucas](https://github.com/Pwdrinho) | Revisão e documentação das coletas |
 
 ### 3.1 Regras
 
@@ -82,3 +83,4 @@ A última frase só deve permanecer se o registro a sustentar integralmente.
 | 1.7 | 15/11/2026 | Registro do uso de IA na revisão ortográfica, na padronização das tabelas e na conferência de links da revisão documental da issue #27. | [Camila Silva](https://github.com/CamilaSilvaC) e [Geovanna Alves](https://github.com/GeovannaUmbelino) | [Pedro Lucas](https://github.com/Pwdrinho) |
 | 1.8 | 15/11/2026 | Registro do apoio de IA nos artefatos de adaptabilidade; preenchimento de revisor e de conferência das linhas | [Pedro Lucas](https://github.com/Pwdrinho) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
 | 1.9 | 24/11/2026 | Atualização do link para as instruções de registro de horas após a reorganização da gestão. | [Enzo Menali](https://github.com/menali17) | A definir |
+| 2.0 | 24/11/2026 | Inclui o registro do apoio de IA na revisão do roteiro de coleta de acessibilidade. | [Enzo Menali](https://github.com/menali17) | A definir |
