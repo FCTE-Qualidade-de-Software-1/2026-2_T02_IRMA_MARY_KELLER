@@ -1,10 +1,10 @@
 # Artefato: Decisão sobre o Modelo de Artigo Científico
 
-**Versão 1.1**
+**Versão 1.3**
 
-<a class="cartao-arquivo" href="../../artigo/QSW_Aval_Qualidade_de_Produto_Khan_Academy_Entrega_2.pdf" target="_blank" rel="noopener">
+<a class="cartao-arquivo" href="../../docs/artigo/QSW_Aval_Qualidade_de_Produto_Khan_Academy_entrega_final.pdf" target="_blank" rel="noopener">
   <span class="cartao-arquivo__icone">PDF</span>
-  <span class="cartao-arquivo__texto"><strong>Artigo da Entrega 2</strong></span>
+  <span class="cartao-arquivo__texto"><strong>Artigo da Entrega Final</strong></span>
   <span class="cartao-arquivo__acao">Abrir artigo</span>
 </a>
 
@@ -42,3 +42,5 @@ Dessa forma, a adoção do modelo ACM foi definida como uma decisão coletiva, a
 |---|---|---|---|---|
 | 1.0 | 15/10/2026 | Criação do artefato artigo com contextualização e justificativa | [Pedro Lucas](https://github.com/Pwdrinho) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
 | 1.1 | 26/10/2026 | Adiciona pdf do artigo entrega 1 | [Pedro Lucas](https://github.com/Pwdrinho) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
+| 1.2 | 15/11/2026 | Adiciona pdf do artigo entrega 2 |[Camila Cavalcante](https://github.com/CamilaSilvaC)  | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
+| 1.3 | 24/11/2026 | Adiciona pdf do artigo entrega final | [Geovanna Umbelino](https://github.com/GeovannaUmbelino)  | [Camila Cavalcante](https://github.com/CamilaSilvaC)  |
