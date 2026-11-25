@@ -2,7 +2,7 @@
 
 **Versão 1.3**
 
-<a class="cartao-arquivo" href="../../docs/artigo/QSW_Aval_Qualidade_de_Produto_Khan_Academy_entrega_final.pdf" target="_blank" rel="noopener">
+<a class="cartao-arquivo" href="../../artigo/QSW_Aval_Qualidade_de_Produto_Khan_Academy_entrega_final.pdf" target="_blank" rel="noopener">
   <span class="cartao-arquivo__icone">PDF</span>
   <span class="cartao-arquivo__texto"><strong>Artigo da Entrega Final</strong></span>
   <span class="cartao-arquivo__acao">Abrir artigo</span>
