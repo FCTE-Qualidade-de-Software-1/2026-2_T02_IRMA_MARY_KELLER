@@ -1,6 +1,6 @@
 # Fichas das métricas GQM
 
-**Versão 1.3**
+**Versão 1.5**
 
 As fichas abaixo especificam as métricas externas propostas para a avaliação **exclusivamente da versão web da Khan Academy em computadores**. Cada ficha segue a organização do exemplo fornecido: questão respondida, definição, fórmula, unidade, fonte, procedimento de coleta, interpretação, justificativa e níveis. Os 14 indicadores M1-M14 correspondem às [questões](questoes-hipoteses.md) Q1-Q11.
 
@@ -391,4 +391,5 @@ As fichas abaixo especificam as métricas externas propostas para a avaliação 
 | 1.1 | 20/10/2026 | Inclusão dos indicadores complementares de conclusão, erros e tempo sem alterar Q1-Q11. | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |[Pedro Lucas](https://github.com/Pwdrinho) |
 | 1.2 | 21/10/2026 | Inclusão das referências utilizadas para elaborar o artefato |  [Camila Cavalcante](https://github.com/CamilaSilvaC) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
 | 1.3 | 26/10/2026 | Padronização | [Pedro Lucas](https://github.com/Pwdrinho) | [Camila Cavalcante](https://github.com/CamilaSilvaC) |
-| 1.4 | 24/11/2026 | Adiciona rastros com a fase 3 e resultados da fase 4 | [Camila Cavalcante](https://github.com/CamilaSilvaC) |
+| 1.4 | 24/11/2026 | Adiciona rastros com a fase 3 e resultados da fase 4 | [Camila Cavalcante](https://github.com/CamilaSilvaC) | A definir |
+| 1.5 | 24/11/2026 | Alinha a versão exibida ao histórico e sinaliza a revisão ainda não informada. | [Enzo Menali](https://github.com/menali17) | A definir |

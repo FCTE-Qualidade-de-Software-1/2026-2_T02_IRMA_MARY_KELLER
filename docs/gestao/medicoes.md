@@ -62,8 +62,8 @@ A Tabela 2 apresenta as datas das medições, sua finalidade e as medidas calcul
 | Id da Medição | Data | Finalidade | Medidas |
 |---|---|---|---|
 | Mg-1 | 26/10/2026 (seg) | Medição da Entrega 1 (Fases 1 e 2) | `CP1`, `CP2`, `DP1`, `DP2`, `RC1`, `RC2`, `Pa` |
-| Mg-2 | 16/11/2026 (seg) | Medição do Ponto de Controle 2 (PC2) | `CP1`, `CP2`, `DP1`, `DP2`, `RC1`, `RC2`, `Pa` |
-| Mg-3 | 24/11/2026 (qua) | Medição da Entrega 2 Final | `CP1`, `CP2`, `DP1`, `DP2`, `RC1`, `RC2`, `Pa` |
+| Mg-2 | 16/11/2026 (seg) | Medição do Ponto de Controle 2 (PC2) | `CP1`, `CP2`, `DP1`, `RC1`, `RC2`, `Pa`; `DP2` não aferido |
+| Mg-3 | 24/11/2026 (ter) | Medição da Entrega 2 Final | `CP1`, `CP2`, `DP1`, `DP2`, `RC1`, `RC2`, `Pa` |
 
 *Tabela 2. Pontos de medição previstos. Fonte: Elaborado por: [Pedro Lucas](https://github.com/Pwdrinho)*
 
@@ -93,11 +93,13 @@ Executado em 16/11/2026 sobre as issues e commits das Fases 3 e 4(parcial) com a
 |---|---|---|:---:|:---:|:---:|---|
 | **CP1** Progresso | $Ac = 17$, $Ap = 17$ | $Ppp = (17 \div 17) \times 100$ | **100%** | Adequado | Verde | 100% das 17 atividades previstas para o ponto de controle 2 fase 3 e pouco da fase 4 |
 | **CP2** Prazo | $Acp = 16$, $Ac = 17$ | $Pacp = (16 \div 17) \times 100$ | **94,1%** | Adequado | Verde | 94,1% das 17 atividades previstas para o ponto de controle 2 fase 3 e pouco da fase 4 |
-| **DP1** Retrabalho | $Ir = 0$, $Ic = 0$, $If = 13$ | $Pri = (0 \div 13) \times 100$ | **35,3%** | Insuficiente | Amarelo | Mesmas issues da Mg-1, mas a decisão de fixar janelas mais realistas e registrar formalmente no corpo de novas issues permanece |
-| **DP2** Efetividade | $Ca = 23$, $Cb = 0$, $Ci = 0$, $Cc = 0$, $Ct = 23$ | $Qcic = 0$ <br> $PCa = 100\%$ | **Qcic: 0** <br> **PCa: ---%** | --- | --- | Optamos por fazer essa aferição apenas no Mg-3 |
-| **RC1** Esforço | $\sum Hr = 82,80\text{ h}$, $n = 6$ | $Hm = 82,80 \div 6$ | **82,80 h** (média 13,80 h/membro) | Informativo | Sem cor | Volume um pouco acima do esperado, subestimamos a fase 3 e as execuções da fase 4 |
-| **RC2** Variação | $Ee = 56,00\text{ h}$, $Er = 67,00\text{ h}$ | $Ve = (11 \div 56) \times 100$ | **19,6%** | Bom | Verde | Estimativas em issues fechadas com estimativa explícita não coincidiram mas ainda estão dentro do ±50% previstos |
+| **DP1** Retrabalho | $Ir = 0$, $Ic = 0$, $If = 13$ | $Pri = (0 \div 13) \times 100$ | **0,0%** | Adequado | Verde | Com os valores registrados, nenhuma issue apresenta retrabalho formal; o total de issues fechadas ainda precisa ser conferido. |
+| **DP2** Efetividade | Não aferido | Não calculada | Não aferido | Sem classificação | Sem cor | Aferição adiada para Mg-3; os dados de Mg-1 não representam esta rodada. |
+| **RC1** Esforço | $\sum Hr = 82,80\text{ h}$, $n = 6$ | $Hm = 82,80 \div 6$ | **82,80 h** (média 13,80 h/membro) | Informativo | Sem cor | Total registrado a conferir com os lançamentos individuais, pois não é múltiplo de 0,25 h como exige o procedimento. |
+| **RC2** Variação | $Ee = 56,00\text{ h}$, $Er = 67,00\text{ h}$ | $Ve = (11 \div 56) \times 100$ | **19,6%** | Bom | Verde | O esforço realizado superou a estimativa em 11 h; o desvio de 19,6% está na faixa Bom de `RC2`. |
 | **Pa** Cobertura | $Ar = 17$, $Ac = 17$ | $Pa = (17 \div 17) \times 100$ | **100%** | Adequado | Verde | Todas as issues tiveram horas registradas |
+
+**Pendência de validação da Mg-2:** conferir o conjunto de issues usado em `DP1` (`If = 13`, enquanto `CP1` registra `Ac = 17`) e a soma das horas de `RC1` contra as tabelas de contribuição. Os valores brutos foram mantidos até essa conferência.
 
 <a id="padroes-issues"></a>
 

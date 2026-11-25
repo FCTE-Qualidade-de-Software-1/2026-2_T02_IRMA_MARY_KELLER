@@ -1,6 +1,6 @@
 # Uso de IA
 
-Versão 1.8
+Versão 1.9
 
 ## 1. Para que serve
 
@@ -49,7 +49,7 @@ Registre **no momento do uso**, não no fim do projeto: reconstruir o que foi fe
 - Dados, medições, referências e valores de limiares não podem vir da IA sem confirmação em fonte. Se a fonte não foi encontrada, o item fica como "a coletar".
 - Trecho literal de qualquer fonte vai entre aspas e com citação.
 - Não colocar nas ferramentas dados pessoais de entrevistados ou material de entrevista que identifique pessoas (LGPD).
-- O tempo gasto conferindo o resultado da IA conta nas horas da issue (ver [Registro de Horas](horas.md)).
+- O tempo gasto conferindo o resultado da IA conta nas horas da issue (ver [Registro manual das horas trabalhadas](medicoes.md#2-registro-manual-das-horas-trabalhadas)).
 
 ### 3.2 Como escrever a última coluna
 
@@ -81,3 +81,4 @@ A última frase só deve permanecer se o registro a sustentar integralmente.
 | 1.6 | 13/11/2026 | Registro do apoio de IA nos procedimentos de acessibilidade e apreensibilidade da Fase 3 | [Luisa de Souza](https://github.com/luisa12ll) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
 | 1.7 | 15/11/2026 | Registro do uso de IA na revisão ortográfica, na padronização das tabelas e na conferência de links da revisão documental da issue #27. | [Camila Silva](https://github.com/CamilaSilvaC) e [Geovanna Alves](https://github.com/GeovannaUmbelino) | [Pedro Lucas](https://github.com/Pwdrinho) |
 | 1.8 | 15/11/2026 | Registro do apoio de IA nos artefatos de adaptabilidade; preenchimento de revisor e de conferência das linhas | [Pedro Lucas](https://github.com/Pwdrinho) | [Geovanna Umbelino](https://github.com/GeovannaUmbelino) |
+| 1.9 | 24/11/2026 | Atualização do link para as instruções de registro de horas após a reorganização da gestão. | [Enzo Menali](https://github.com/menali17) | A definir |

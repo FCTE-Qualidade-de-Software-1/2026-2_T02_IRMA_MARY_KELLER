@@ -1,6 +1,6 @@
 # Fase 2: Especificação da avaliação (GQM)
 
-**Versão 1.5**
+**Versão 1.6**
 
 A Fase 2 transforma as características priorizadas na [Fase 1](../fase-1/index.md) em uma estrutura de medição por meio do método *Goal-Question-Metric* (GQM) [S5](#s5). Cada objetivo de medição é desdobrado em questões de avaliação, relacionadas a hipóteses de investigação e respondidas por métricas. Para interpretar as medidas, também são previstos níveis de pontuação e critérios de julgamento.
 
@@ -71,7 +71,7 @@ A especificação de medição elaborada nesta fase desdobra-se nas etapas segui
 
 > [Visão geral da Fase 4](../fase-4/index.md). Execução dos ensaios, registros de medições, evidências brutas e julgamento dos resultados.
 
-> [Critérios de avaliação da Fase 2](../criterios/fase2.md). Disciplina Qualidade de Software 1, UnB/FGA, 2026/2. Disponível em: 
+> [Critérios de avaliação da Fase 2](../criterios/fase2.md). Disciplina Qualidade de Software 1, UnB/FGA, 2026/2.
 
 
 ## Histórico de versões
@@ -84,3 +84,4 @@ A especificação de medição elaborada nesta fase desdobra-se nas etapas segui
 | 1.3 | 21/10/2026 | Ajustes na padronização | [Camila Cavalcante](https://github.com/CamilaSilvaC) | [Pedro Lucas](https://github.com/Pwdrinho) |
 | 1.4 | 26/10/2026 | Padronização do artefato | [Pedro Lucas](https://github.com/Pwdrinho) | [Camila Cavalcante](https://github.com/CamilaSilvaC) |
 | 1.5 | 24/11/2026 | Consolida rastros com fase 1 e com as fases posteriores | [Pedro Lucas](https://github.com/Pwdrinho) | [Camila Silva](https://github.com/CamilaSilvaC) |
+| 1.6 | 24/11/2026 | Corrige a referência aos critérios da Fase 2. | [Enzo Menali](https://github.com/menali17) | A definir |
