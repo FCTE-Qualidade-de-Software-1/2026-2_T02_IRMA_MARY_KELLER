@@ -1,4 +1,4 @@
-# Registro de execução e análise da apreensibilidade
+# Registro de execuções e análise da apreensibilidade (M12 a M14)
 
 **Versão 1.4**
 
