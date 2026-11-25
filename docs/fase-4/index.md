@@ -14,6 +14,7 @@ A Tabela 1 reúne os artefatos disponíveis nesta fase e indica a cobertura de c
 | [Registro de execuções de adaptabilidade](registro-adaptabilidade.md) | Formulários de preparação, execuções, ocorrências, evidências e julgamento | [`M6`](../fase-2/metricas.md#16-m6-execucao-por-ambiente), [`M7`](../fase-2/metricas.md#17-m7-adaptacao-ao-tamanho-da-janela) | Versão 1.5 |
 | [Registro de execuções de acessibilidade](registro-acessibilidade.md) | Inspeções manuais com teclado e leitor de tela, testes de zoom e alto contraste, relatórios axe e Lighthouse | [`M8`](../fase-2/metricas.md#18-m8-execucao-por-teclado) a [`M11`](../fase-2/metricas.md#111-m11-conformidade-de-contraste) | Versão 1.1 |
 | [Registro de execuções e análise da apreensibilidade](registro-apreensibilidade.md) | Registros de sessões com voluntários (F2 a F4), autonomia, erros operacionais e tempos de conclusão | [`M12`](../fase-2/metricas.md#112-m12-conclusao-autonoma-por-estudantes-novos) a [`M14`](../fase-2/metricas.md#114-m14-tempo-de-conclusao-autonoma) | Versão 1.4 |
+| [Propostas de melhoria e ajustes no protótipo de alta fidelidade](propostas-melhoria-prototipo.md) | Melhorias no protótipo fundamentadas nos resultados de apreensibilidade e adaptabilidade | [`M13`](../fase-2/metricas.md#113-m13-taxa-de-erros-operacionais) | Versão 1.1 |
 
 *Tabela 1. Artefatos da Fase 4. Fonte: elaboração da equipe com base na documentação do projeto.*
 
